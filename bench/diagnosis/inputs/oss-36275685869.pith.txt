@@ -1,0 +1,180 @@
+pith · <log> · 1,867 lines → 1148 groups · ~68.2k → ~4.0k tokens (94.1% smaller)
+
+jobs: Compile & Hygiene
+levels: error 146 · warn 185 · notable 87 · info 1,334
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Compile & Hygiene
+L429      [9121] ℹ tests 8
+L430      [5cf4] ℹ suites 3
+L431      [3abf] ℹ pass 8
+L432    ✱ [7a20] ℹ fail 0
+L433      [462e] ℹ cancelled 0
+L434      [faec] ℹ skipped 0
+L435      [9272] ℹ todo 0
+L437      [769b] ▶ Run npm exec -- npm-run-all2 -lp core-ci hygiene eslint valid-layers-check define-class-fields-check vscode-dts-compile-check tsec-compile-check test-build-scripts
+   …
+L712      [853d] [test-build-scripts       ] ✔ API proposal registry (92.270285ms)
+L713      [6e5f] [test-build-scripts       ] ▶ API proposal registry tasks
+L714      [bb75] [test-build-scripts       ]   ✔ core-ci awaits the check exactly once before all consumers (14.631188ms)
+L715    ✱ [20f7] [test-build-scripts       ]   ✔ a failed check stops the actual core-ci task before any consumer runs (5.41799ms)
+L716      [e2a4] [test-build-scripts       ] (node:18749) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+L717      [7231] [test-build-scripts       ] (Use `node --trace-deprecation ...` to show where the warning was created)
+L718      [75ba] [test-build-scripts       ] [22:16:46] Finished compilation api-proposal-names with 0 errors after 133 ms (×6, last L741)
+   …
+L892      [ede7] [test-build-scripts       ]   ✔ the identity includes key order, default messages and commit (3.000499ms)
+L893      [d62b] [test-build-scripts       ]   ✔ missing metadata fails packaging instead of producing a shared fallback identity (1.464533ms)
+L894      [9f42] [test-build-scripts       ] ✔ NLS metadata identity (12.135781ms)
+L895    ✱ [be8a] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-0NvWyR --loglevel=error failed (attempt 1/3): (×2, last L901)
+L896    ✱ [e3e8] [test-build-scripts       ] npm pack failed (×8, last L1116)
+L897      [ecfb] [test-build-scripts       ] exit status: 1 (×24, last L1108)
+L898      [4d48] [test-build-scripts       ] stderr: (×24, last L1111)
+L899    ✱ [21fb] [test-build-scripts       ] npm error code ECONNRESET (×4, last L1017)
+L900      [13b6] [test-build-scripts       ] Retrying in 0ms... (×28, last L1118)
+L901    ✱ [be8a] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-0NvWyR --loglevel=error failed (attempt 2/3):
+L902    ✱ [e3e8] [test-build-scripts       ] npm pack failed
+L905    ✱ [21fb] [test-build-scripts       ] npm error code ECONNRESET
+L907      [d6d5] [test-build-scripts       ] [ensureNpmPackage] Materialized @github/copilot-darwin-arm64@1.0.73 in /tmp/vscode-npm-package-test-0eA80b/node_modules/@github/copilot-darwin-arm64
+L908    ✱ [90e6] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-utVFqB --loglevel=error failed (attempt 1/3):
+L909    ✱ [e3e8] [test-build-scripts       ] npm pack failed
+L910      [a40c] [test-build-scripts       ] code: ECONNRESET (×4, last L1117)
+L912      [4007] [test-build-scripts       ] [ensureNpmPackage] Materialized @github/copilot-darwin-arm64@1.0.73 in /tmp/vscode-npm-package-test-Of8ENE/node_modules/@github/copilot-darwin-arm64
+L913    ✱ [89be] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-6AqIMa --loglevel=error failed (attempt 1/3): (×2, last L922)
+L914    ✱ [aa08] [test-build-scripts       ] pack failure 1 (×20, last L1107)
+L916      [8c55] [test-build-scripts       ] stdout: (×20, last L1109)
+L917      [52ea] [test-build-scripts       ] npm output (×20, last L1110)
+L919    ✱ [1ff4] [test-build-scripts       ] npm error code EAI_AGAIN (×4, last L1040)
+L920    ✱ [cdba] [test-build-scripts       ] request failed (×20, last L1113)
+L922    ✱ [89be] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-6AqIMa --loglevel=error failed (attempt 2/3):
+L923    ✱ [aa08] [test-build-scripts       ] pack failure 2
+   …
+L928    ✱ [1ff4] [test-build-scripts       ] npm error code EAI_AGAIN
+L929    ✱ [cdba] [test-build-scripts       ] request failed
+L931    ✱ [c287] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-Tkqpmg --loglevel=error failed (attempt 1/3): (×2, last L940)
+L932    ✱ [aa08] [test-build-scripts       ] pack failure 1
+L937    ✱ [c162] [test-build-scripts       ] npm ERR! code ETIMEDOUT (×4, last L1058)
+L938    ✱ [cdba] [test-build-scripts       ] request failed
+L940    ✱ [c287] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-Tkqpmg --loglevel=error failed (attempt 2/3):
+   …
+L946    ✱ [c162] [test-build-scripts       ] npm ERR! code ETIMEDOUT
+L947    ✱ [cdba] [test-build-scripts       ] request failed
+L949    ✱ [efea] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-3QW7aR --loglevel=error failed (attempt 1/3): (×2, last L958)
+L950    ✱ [aa08] [test-build-scripts       ] pack failure 1
+L955    ✱ [41f2] [test-build-scripts       ] npm error code E408 (×8, last L1094)
+L956    ✱ [cdba] [test-build-scripts       ] request failed
+L958    ✱ [efea] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-3QW7aR --loglevel=error failed (attempt 2/3):
+   …
+L964    ✱ [41f2] [test-build-scripts       ] npm error code E408
+L965    ✱ [cdba] [test-build-scripts       ] request failed
+L967    ✱ [ff2a] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-PuPqGl --loglevel=error failed (attempt 1/3): (×2, last L976)
+L968    ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L982    ✱ [41f2] [test-build-scripts       ] npm error code E429
+L983    ✱ [cdba] [test-build-scripts       ] request failed
+L985    ✱ [6d05] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-J59SGT --loglevel=error failed (attempt 1/3): (×2, last L994)
+L986    ✱ [aa08] [test-build-scripts       ] pack failure 1
+L991    ✱ [a37c] [test-build-scripts       ] npm error code E503 (×4, last L1112)
+L992    ✱ [cdba] [test-build-scripts       ] request failed
+L994    ✱ [6d05] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-J59SGT --loglevel=error failed (attempt 2/3):
+   …
+L1000   ✱ [a37c] [test-build-scripts       ] npm error code E503
+L1001   ✱ [cdba] [test-build-scripts       ] request failed
+L1003   ✱ [f5ed] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-5D6O4L --loglevel=error failed (attempt 1/3):
+L1004   ✱ [e3e8] [test-build-scripts       ] npm pack failed
+L1007   ✱ [9aa6] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-j1eppe --loglevel=error failed (attempt 1/3): (×2, last L1013)
+L1008   ✱ [e3e8] [test-build-scripts       ] npm pack failed
+   …
+L1017   ✱ [21fb] [test-build-scripts       ] npm error code ECONNRESET
+L1019     [6ca5] [test-build-scripts       ] [materializeNpmPackageVersion] Materialized @github/copilot-darwin-arm64@1.0.73 in /tmp/vscode-npm-package-test-RVpgrC/node_modules/@github/copilot-darwin-arm64
+L1020   ✱ [4221] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-Zv5VLc --loglevel=error failed (attempt 1/3):
+L1021   ✱ [e3e8] [test-build-scripts       ] npm pack failed
+L1024     [db22] [test-build-scripts       ] [materializeNpmPackageVersion] Materialized @github/copilot-darwin-arm64@1.0.73 in /tmp/vscode-npm-package-test-0POHRM/node_modules/@github/copilot-darwin-arm64
+L1025   ✱ [1186] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-JTbvp5 --loglevel=error failed (attempt 1/3): (×2, last L1034)
+L1026   ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L1040   ✱ [1ff4] [test-build-scripts       ] npm error code EAI_AGAIN
+L1041   ✱ [cdba] [test-build-scripts       ] request failed
+L1043   ✱ [a4b2] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-oaoCB7 --loglevel=error failed (attempt 1/3): (×2, last L1052)
+L1044   ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L1058   ✱ [c162] [test-build-scripts       ] npm ERR! code ETIMEDOUT
+L1059   ✱ [cdba] [test-build-scripts       ] request failed
+L1061   ✱ [07ef] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-mzJvej --loglevel=error failed (attempt 1/3): (×2, last L1070)
+L1062   ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L1076   ✱ [41f2] [test-build-scripts       ] npm error code E408
+L1077   ✱ [cdba] [test-build-scripts       ] request failed
+L1079   ✱ [2aa8] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-NM2izY --loglevel=error failed (attempt 1/3): (×2, last L1088)
+L1080   ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L1094   ✱ [41f2] [test-build-scripts       ] npm error code E429
+L1095   ✱ [cdba] [test-build-scripts       ] request failed
+L1097   ✱ [7fb8] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-s8mo1H --loglevel=error failed (attempt 1/3): (×2, last L1106)
+L1098   ✱ [aa08] [test-build-scripts       ] pack failure 1
+   …
+L1112   ✱ [a37c] [test-build-scripts       ] npm error code E503
+L1113   ✱ [cdba] [test-build-scripts       ] request failed
+L1115   ✱ [b15e] [test-build-scripts       ] [packNpmPackage] npm pack @github/copilot-darwin-arm64@1.0.73 --pack-destination /tmp/vscode-npm-package-JtHZdA --loglevel=error failed (attempt 1/3):
+L1116   ✱ [e3e8] [test-build-scripts       ] npm pack failed
+   (+12 more lines here: `pith show <id>` or grep the raw file)
+   …
+L1822     [8a85] [core-ci                  ] [mangle-privates] server-main.js: 4 classes, 6 fields, 21 edits, 783ms
+L1823     [91ad] [core-ci                  ] [mangle-privates] Total: 4 classes, 6 fields, 21 edits, 783ms
+L1824     [ace3] [core-ci                  ] [resources] Copying to /mnt/vss/_work/vscode/vscode/out-vscode-reh-min for target 'server'...
+L1825     [ad14] [core-ci                  ] [resources] Copied 18 files (×2, last L1825)
+L1826     [2dc0f] [core-ci                  ] [svg] 0 files: 0 -> 0 bytes
+L1827     [16e4] [core-ci                  ] [bundle] Done in 46934ms (8 bundles)
+L1828     [90ce] [core-ci                  ] (×6, last L1828)
+L1829     [d2e9] [core-ci                  ] ✓ Total: 46974ms (×2, last L1829)
+L1830     [c0b3] [core-ci                  ] [22:19:06] Finished esbuild-vscode-reh-min after 50203 ms
+L1831     [f14d] [core-ci                  ] [nls] Extracted 22326 messages from 1722 modules (×2, last L1831)
+L1832     [2971] [eslint                   ] Killed
+L1833   ✱ [8f11] ERROR: "eslint" exited with 137.
+L1834   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L1121   ERRO [c8a8] [test-build-scripts       ]     ✔ retries transient pack failures and verifies the recovered tarball (79.292465ms) (×2, last L1144)
+L1123   ERRO [4baa] [test-build-scripts       ]     ✔ bounds retries for EAI_AGAIN and preserves the final npm failure (10.69188ms) (×2, last L1146)
+L1124   ERRO [61d4] [test-build-scripts       ]     ✔ bounds retries for ETIMEDOUT and preserves the final npm failure (8.930863ms) (×2, last L1147)
+L1125   ERRO [b912] [test-build-scripts       ]     ✔ bounds retries for E408 and preserves the final npm failure (8.396068ms) (×4, last L1149)
+L1127   ERRO [d44f] [test-build-scripts       ]     ✔ bounds retries for E503 and preserves the final npm failure (12.042257ms) (×2, last L1150)
+L1137   ERRO [7176] [test-build-scripts       ]     ✔ does not retry a permanent process error despite transient npm output (2.567097ms) (×2, last L1160)
+L1140   ERRO [b35c] [test-build-scripts       ]     ✔ does not retry an integrity failure after a recovered pack (2.90835ms) (×2, last L1163)
+L1141   ERRO [9084] [test-build-scripts       ]     ✔ does not retry extraction failures and cleans up the target (4.477729ms) (×2, last L1164)
+L1205   ERRO [69e9] [test-build-scripts       ]   ✔ failed key conversion does not remove a concurrent input (723.120338ms)
+L1206   ERRO [14aa] [test-build-scripts       ]   ✔ key conversion preserves OpenSSL failures and cleans temporary files (1136.525752ms)
+L1207   ERRO [ee24] [test-build-scripts       ]   ✔ key conversion cleans up after write failures (1890.805253ms)
+L1208   ERRO [a70d] [test-build-scripts       ]   ✔ key conversion cleans up after read failures (2096.064365ms)
+L1209   ERRO [33d6] [test-build-scripts       ]   ✔ key conversion surfaces cleanup failures (947.111145ms)
+L1210   ERRO [765c] [test-build-scripts       ]   ✔ key conversion preserves both conversion and cleanup failures (307.056608ms)
+L1270   ERRO [b33f] [test-build-scripts       ]   ✔ failed certificates conversion does not remove a concurrent input (820.480926ms)
+L1770   ERRO [a6b4] [test-build-scripts       ] ℹ fail 0
+
+== END OF OUTPUT
+L1807     [48cd] [core-ci                  ] [transpile] Done in 27961ms
+L1808     [90ce] [core-ci                  ]
+L1809     [d2e9] [core-ci                  ] ✓ Total: 27997ms
+L1810     [4088] [core-ci                  ] [22:18:16] Finished esbuild-out-build after 30912 ms
+L1811     [1dab] [core-ci                  ] [22:18:16] Starting esbuild-vscode-min ...
+L1812     [a0b6] [core-ci                  ] [22:18:16] Starting esbuild-vscode-reh-min ...
+L1813     [d846] [core-ci                  ] [22:18:16] Starting esbuild-vscode-reh-web-min ...
+L1814     [6515] [core-ci                  ] [clean] out-vscode-reh-web-min
+L1815     [b356] [core-ci                  ] [bundle] src → out-vscode-reh-web-min (target: server-web) (minify) (nls) (mangle-privates)
+L1816     [f6f5] [core-ci                  ] [clean] out-vscode-reh-min
+L1817     [709c] [core-ci                  ] [bundle] src → out-vscode-reh-min (target: server) (minify) (nls) (mangle-privates)
+L1818     [45f1] [core-ci                  ] [clean] out-vscode-min
+L1819     [3eee] [core-ci                  ] [bundle] src → out-vscode-min (target: desktop) (minify) (nls) (mangle-privates)
+L1820     [f14d] [core-ci                  ] [nls] Extracted 2728 messages from 181 modules
+L1821     [7604] [core-ci                  ] [bundle] Syntax check passed for 6 post-processed JS files
+
+== MOST FREQUENT OTHER LINES
+×58      [1f25] Updating files:  42% (8293/19436)
+×21      [b4f3] [test-build-scripts       ]
+×16      [2ce1] [test-build-scripts       ] [resources] Copied 5 files
+×14      [3112] [test-build-scripts       ] [22:16:46] Starting <anonymous> ...
+×13      [4293] env:
+×13      [6720] [test-build-scripts       ] [22:16:46] Finished <anonymous> after 2 ms
+×10      [d605] [test-build-scripts       ] [standalone] Compiling 3 standalone files...
+
+(not shown: 1031 groups, 1,282 lines - including 16 error groups, 16 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

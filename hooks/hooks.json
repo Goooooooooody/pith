@@ -1,0 +1,28 @@
+{
+  "description": "pith: keep huge pastes out of context, point Claude at CI run summaries, and summarise giant command output",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "P=\"${CLAUDE_PLUGIN_ROOT}/bin/pith\"; if command -v python3 >/dev/null 2>&1; then python3 \"$P\" hook prompt; else python \"$P\" hook prompt; fi",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "P=\"${CLAUDE_PLUGIN_ROOT}/bin/pith\"; if command -v python3 >/dev/null 2>&1; then python3 \"$P\" hook post-bash; else python \"$P\" hook post-bash; fi",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

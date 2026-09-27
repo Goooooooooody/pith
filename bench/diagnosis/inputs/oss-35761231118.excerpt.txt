@@ -1,0 +1,251 @@
+Ascii Spec - windows 2.7	UNKNOWN STEP	﻿2026-09-22T17:32:52.6869990Z Current runner version: '2.337.0'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7072480Z ##[group]Runner Image Provisioner
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7073748Z Hosted Compute Agent
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7074563Z Version: 20260828.587
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7075478Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7076630Z Build Date: 2026-08-28T16:44:25Z
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7077849Z Worker ID: {6bea1366-d258-40b3-9aed-82a5164d8f92}
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7078897Z Azure Region: northcentralus
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7079781Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7081753Z ##[group]Operating System
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7082694Z Microsoft Windows Server 2025
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7083560Z 10.0.26100
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7084327Z Datacenter
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7085059Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7085805Z ##[group]Runner Image
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7086677Z Image: windows-2025-vs2026
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7087528Z Version: 20260907.229.1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7089835Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260907.229/images/windows/Windows2025-VS2026-Readme.md
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7092559Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260907.229
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7094109Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7095747Z ##[group]GITHUB_TOKEN Permissions
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7098929Z Contents: read
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7099736Z Metadata: read
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7100477Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7103392Z Secret source: None
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7104648Z Cache mode: write
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7105845Z Prepare workflow directory
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.7972192Z Prepare all required actions
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:52.8042021Z Getting action download info
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:53.0755669Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:53.2684507Z Download action repository 'ruby/setup-ruby@v1' (SHA:e8944e80fb94b20106697132f8c20c665fab29e9)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:53.9719447Z Complete job name: Ascii Spec - windows 2.7
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6465568Z ##[group]Run actions/checkout@v7
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6466936Z with:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6467586Z   repository: rubocop/rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6475467Z   token: ***
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6476188Z   ssh-strict: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6476871Z   ssh-user: git
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6477542Z   persist-credentials: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6478287Z   clean: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6478978Z   sparse-checkout-cone-mode: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6479804Z   fetch-depth: 1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6480462Z   fetch-tags: false
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6481209Z   show-progress: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6481926Z   lfs: false
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6482561Z   submodules: false
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6483259Z   set-safe-directory: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6484411Z   allow-unsafe-pr-checkout: false
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.6485657Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.9230419Z Syncing repository: rubocop/rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.9232970Z ##[group]Getting Git version info
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:54.9233907Z Working directory is 'D:\a\rubocop\rubocop'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.0328758Z [command]"C:\Program Files\Git\bin\git.exe" version
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.5443593Z git version 2.55.0.windows.5
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.5516156Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.5551823Z Temporarily overriding HOME='D:\a\_temp\724f9940-1782-4e59-9f47-caba5017a004' before making global git config changes
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.5553943Z Adding repository directory to the temporary git global config as a safe directory
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.5555632Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rubocop\rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.7273695Z Deleting the contents of 'D:\a\rubocop\rubocop'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.7279947Z ##[group]Determining repository object format
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.7282073Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.7284061Z ##[group]Initializing the repository
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.7292110Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\rubocop\rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.9257719Z Initialized empty Git repository in D:/a/rubocop/rubocop/.git/
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:55.9340012Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/rubocop/rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.1544975Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.1551433Z ##[group]Disabling automatic garbage collection
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.1555378Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.2624229Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.2624861Z ##[group]Setting up auth
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.2625333Z Removing SSH command configuration
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.2639502Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:56.4249458Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:58.5246137Z Removing HTTP extra header
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:58.5269742Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:58.6263469Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:59.4004121Z Removing includeIf entries pointing to credentials config files
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:59.4014525Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:59.4316374Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:59.9660911Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:32:59.9979478Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/rubocop/rubocop/.git.path D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.0318354Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/rubocop/rubocop/.git/worktrees/*.path D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.0767068Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.1082833Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.1464439Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.1465418Z ##[group]Fetching the repository
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:00.1480542Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d5f69b7a18aeba434a12ee0086dd3771c75b35bf:refs/remotes/pull/15745/merge
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4730076Z From https://github.com/rubocop/rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4730871Z  * [new ref]         d5f69b7a18aeba434a12ee0086dd3771c75b35bf -> pull/15745/merge
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4775901Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4776358Z ##[group]Determining the checkout info
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4777151Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.4790624Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.5252356Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.5561611Z ##[group]Checking out the ref
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:02.5570450Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/15745/merge
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1489810Z Note: switching to 'refs/remotes/pull/15745/merge'.
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1491536Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1491882Z You are in 'detached HEAD' state. You can look around, make experimental
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1492530Z changes and commit them, and you can discard any commits you make in this
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1492985Z state without impacting any branches by switching back to a branch.
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1493270Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1493448Z If you want to create a new branch to retain commits you create, you may
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1493893Z do so (now or later) by using -c with the switch command. Example:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494166Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494327Z   git switch -c <new-branch-name>
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494493Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494593Z Or undo this operation with:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494741Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494825Z   git switch -
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1494938Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1495146Z Turn off this advice by setting config variable advice.detachedHead to false
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1495496Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1495927Z HEAD is now at d5f69b7 Merge bdcd543b49b9641fc094449de6a26863b5262dae into edb40881d6d2e39e8360fadcbf3a2ecc91ed3cf4
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1604422Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.1969687Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2243065Z d5f69b7a18aeba434a12ee0086dd3771c75b35bf
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2801356Z ##[group]Run ruby/setup-ruby@v1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2801707Z with:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2801915Z   ruby-version: 2.7
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2802139Z   bundler-cache: true
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2804826Z   token: ***
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.2805016Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.4418707Z ##[group]Downloading Ruby
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.4420330Z https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.8-1/rubyinstaller-2.7.8-1-x64.7z
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.7555427Z Took   0.31 seconds
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.7557672Z ##[endgroup]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:33:03.7558116Z ##[group]Extracting  Ruby
+Ascii Spec - windows 2.7	UNKNOWN
+
+... [197756 characters truncated] ...
+
+scii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1892836Z      3.1) Failure/Error: expect(exit_status).to eq(0)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893035Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893106Z             expected: 0
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893294Z                  got: 2
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893409Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893492Z             (compared using ==)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1893967Z           # ./spec/rubocop/cli/autocorrect_spec.rb:1873:in `block (2 levels) in <top (required)>'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1894439Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1894534Z      3.2) Failure/Error:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1894895Z                 expect(File.read('example.rb')).to eq(<<~RUBY)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1895303Z                   # comment
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1895597Z                   def func1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1895908Z                     do_something
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1896185Z                   end
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1896377Z             
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1896549Z                   def func2
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1896737Z                     do_1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1896924Z                     do_2
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1897111Z                   end
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1897215Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1897616Z             expected: #<Encoding:UTF-8> "# comment\ndef func1\n  do_something\nend\n\ndef func2\n  do_1\n  do_2\nend\n"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1898255Z                  got: #<Encoding:US-ASCII> "def func1; do_something end # comment\ndef func2() do_1; do_2; end\n"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1898602Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1898686Z             (compared using ==)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1899165Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1899249Z             Diff:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1899441Z             @@ -1,9 +1,2 @@
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1899653Z             -# comment
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1899834Z             -def func1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1900028Z             -  do_something
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1900226Z             -end
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1900399Z             -
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1900565Z             -def func2
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1900910Z             -  do_1
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1901137Z             -  do_2
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1901399Z             -end
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1901603Z             +def func1; do_something end # comment
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1901881Z             +def func2() do_1; do_2; end
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1902297Z           # ./spec/rubocop/cli/autocorrect_spec.rb:1874:in `block (2 levels) in <top (required)>'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1902625Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1902706Z      3.3) Failure/Error:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1902938Z                 expect($stdout.string).to eq(<<~RESULT)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1903214Z             
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1903446Z                   4   Layout/TrailingWhitespace [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1903763Z                   3   Style/Semicolon [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1904084Z                   2   Layout/IndentationConsistency [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1904432Z                   2   Style/SingleLineMethods [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1904752Z                   1   Layout/DefEndAlignment [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1905089Z                   1   Layout/EmptyLineBetweenDefs [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1905424Z                   1   Style/DefWithParentheses [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1905797Z                   1   Style/TrailingBodyOnMethodDefinition [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1906051Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1906777Z             expected: #<Encoding:UTF-8> "\n4   Layout/TrailingWhitespace [Safe Correctable]\n3   Style/Semicolon [Safe Correctable]\n2   Layo...ectable]\n1   Style/TrailingBodyOnMethodDefinition [Safe Correctable]\n--\n15  Total in 1 files\n\n"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1907993Z                  got: #<Encoding:US-ASCII> "\n--\n0  Total in 0 files\n\n"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908242Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908332Z             (compared using ==)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908477Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908548Z             Diff:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908660Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908738Z             @@ -1,11 +1,3 @@
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1908942Z              
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1909168Z             -4   Layout/TrailingWhitespace [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1909475Z             -3   Style/Semicolon [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1909797Z             -2   Layout/IndentationConsistency [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1910126Z             -2   Style/SingleLineMethods [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1910447Z             -1   Layout/DefEndAlignment [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1910769Z             -1   Layout/EmptyLineBetweenDefs [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1911097Z             -1   Style/DefWithParentheses [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1911566Z             -1   Style/TrailingBodyOnMethodDefinition [Safe Correctable]
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1911882Z              --
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1912066Z             -15  Total in 1 files
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1912280Z             +0  Total in 0 files
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.1912653Z           # ./spec/rubocop/cli/autocorrect_spec.rb:1885:in `block (2 levels) in <top (required)>'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2815101Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2815683Z Finished in 5 minutes 58 seconds (files took 6.78 seconds to load)
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2816315Z 33898 examples, 3 failures, 192 pending
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2816589Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2816673Z Failed examples:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2816793Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2817342Z rspec ./spec/rubocop/cli/autocorrect_spec.rb:3199 # RuboCop::CLI --autocorrect corrects `Layout/RedundantLineBreak` and `Style/SingleLineMethods` offenses
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2818459Z rspec ./spec/rubocop/cli/autocorrect_spec.rb:3345 # RuboCop::CLI --autocorrect avoids adding extra spaces when both `Style/Semicolon` and `Style/SingleLineMethods`both apply
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2819375Z rspec ./spec/rubocop/cli/autocorrect_spec.rb:1857 # RuboCop::CLI --autocorrect can correct single line methods
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2819760Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2819853Z Randomized with seed 39431
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:17.2820005Z 
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.2707810Z ##[error]Process completed with exit code 1.
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.3009558Z Post job cleanup.
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.4818976Z [command]"C:\Program Files\Git\bin\git.exe" version
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5100826Z git version 2.55.0.windows.5
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5162564Z Temporarily overriding HOME='D:\a\_temp\1d498f5c-d014-411c-b40c-073bc43fd830' before making global git config changes
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5163294Z Adding repository directory to the temporary git global config as a safe directory
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5174299Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rubocop\rubocop
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5481849Z Removing SSH command configuration
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5494117Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:18.5804766Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.1927316Z Removing HTTP extra header
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.1938347Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.2266002Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8223067Z Removing includeIf entries pointing to credentials config files
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8241393Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8522823Z includeif.gitdir:D:/a/rubocop/rubocop/.git.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8523526Z includeif.gitdir:D:/a/rubocop/rubocop/.git/worktrees/*.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8523971Z includeif.gitdir:/github/workspace/.git.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8524361Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8566793Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/rubocop/rubocop/.git.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8873049Z D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.8925760Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/rubocop/rubocop/.git.path D\:\\a\\_temp\\git\-credentials\-243f3b9d\-1440\-4425\-bfae\-64321fcf984f\.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.9273251Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/rubocop/rubocop/.git/worktrees/*.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.9555174Z D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.9604463Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/rubocop/rubocop/.git/worktrees/*.path D\:\\a\\_temp\\git\-credentials\-243f3b9d\-1440\-4425\-bfae\-64321fcf984f\.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:19.9920980Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.0177566Z /github/runner_temp/git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.0217471Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-243f3b9d\-1440\-4425\-bfae\-64321fcf984f\.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.0521249Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.0778756Z /github/runner_temp/git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.0855482Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-243f3b9d\-1440\-4425\-bfae\-64321fcf984f\.config
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.1167252Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.6915749Z Removing credentials config 'D:\a\_temp\git-credentials-243f3b9d-1440-4425-bfae-64321fcf984f.config'
+Ascii Spec - windows 2.7	UNKNOWN STEP	2026-09-22T17:40:20.7118931Z Cleaning up orphan processes

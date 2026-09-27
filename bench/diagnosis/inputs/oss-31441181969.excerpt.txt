@@ -1,0 +1,206 @@
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	﻿2026-08-10T23:10:41.2103357Z Current runner version: '2.336.0'
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2137534Z ##[group]Runner Image Provisioner
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2138932Z Hosted Compute Agent
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2140036Z Version: 20260707.563
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2141115Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2142311Z Build Date: 2026-07-07T19:33:50Z
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2143384Z Worker ID: {0cde5105-84d4-4f10-9e46-6a518f25ad5c}
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2144681Z Azure Region: eastus
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2145566Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2147380Z ##[group]Operating System
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2148491Z Ubuntu
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2149288Z 24.04.4
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2150320Z LTS
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2151197Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2152041Z ##[group]Runner Image
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2153030Z Image: ubuntu-24.04
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2153874Z Version: 20260720.247.2
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2155918Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2158344Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2160223Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2161848Z ##[group]GITHUB_TOKEN Permissions
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2164825Z Contents: read
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2165745Z Metadata: read
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2166590Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2169939Z Secret source: None
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2172051Z Prepare workflow directory
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2867831Z Prepare all required actions
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.2935060Z Getting action download info
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.4720831Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.6770915Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.8827399Z Uses: tokio-rs/tokio/.github/workflows/uring-kernel-version-test.yml@refs/pull/8357/merge (f040cf0b8612b354c9d8de2897c30ef4c7cb1bca)
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.8832280Z ##[group] Inputs
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.8832824Z   kernel_version: 4.19.325
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.8833333Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.8833873Z Complete job name: Test io_uring on Linux 4.19.325 / build
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9512192Z ##[group]Run actions/checkout@v7
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9512987Z with:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9513426Z   repository: tokio-rs/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9517430Z   token: ***
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9517872Z   ssh-strict: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9518301Z   ssh-user: git
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9518738Z   persist-credentials: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9519208Z   clean: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9519856Z   sparse-checkout-cone-mode: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9520384Z   fetch-depth: 1
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9520802Z   fetch-tags: false
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9521233Z   show-progress: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9521677Z   lfs: false
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9522075Z   submodules: false
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9522513Z   set-safe-directory: true
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9523008Z   allow-unsafe-pr-checkout: false
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9523847Z env:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9524253Z   KERNEL_VERSION: 4.19.325
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:41.9524715Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0485071Z Syncing repository: tokio-rs/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0486902Z ##[group]Getting Git version info
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0487559Z Working directory is '/home/runner/work/tokio/tokio'
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0488530Z [command]/usr/bin/git version
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0530807Z git version 2.54.0
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0549389Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0559556Z Temporarily overriding HOME='/home/runner/work/_temp/8db0a42c-b1b0-4129-a458-dba93dc01b78' before making global git config changes
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0565090Z Adding repository directory to the temporary git global config as a safe directory
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0566292Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tokio/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0605500Z Deleting the contents of '/home/runner/work/tokio/tokio'
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0608970Z ##[group]Determining repository object format
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0610798Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0611586Z ##[group]Initializing the repository
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0614698Z [command]/usr/bin/git init /home/runner/work/tokio/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0687331Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0688378Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0690968Z hint: to use in all of your new repositories, which will suppress this warning,
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0691724Z hint: call:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0692113Z hint:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0692621Z hint: 	git config --global init.defaultBranch <name>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0693232Z hint:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0694086Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0695553Z hint: 'development'. The just-created branch can be renamed via this command:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0696507Z hint:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0696915Z hint: 	git branch -m <name>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0697400Z hint:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0698018Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0699035Z Initialized empty Git repository in /home/runner/work/tokio/tokio/.git/
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0701188Z [command]/usr/bin/git remote add origin https://github.com/tokio-rs/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0737690Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0741402Z ##[group]Disabling automatic garbage collection
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0742076Z [command]/usr/bin/git config --local gc.auto 0
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0769414Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0770431Z ##[group]Setting up auth
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0770955Z Removing SSH command configuration
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0775557Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.0808095Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1105422Z Removing HTTP extra header
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1111137Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1144892Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1368756Z Removing includeIf entries pointing to credentials config files
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1374521Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1408281Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1642510Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1678627Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/tokio/tokio/.git.path /home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1708381Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1748616Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1782526Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1813886Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1814652Z ##[group]Fetching the repository
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.1822848Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f040cf0b8612b354c9d8de2897c30ef4c7cb1bca:refs/remotes/pull/8357/merge
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6770772Z From https://github.com/tokio-rs/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6772319Z  * [new ref]         f040cf0b8612b354c9d8de2897c30ef4c7cb1bca -> pull/8357/merge
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6811091Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6818221Z ##[group]Determining the checkout info
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6819530Z ##[endgroup]
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6820656Z [command]/usr/bin/git sparse-checkout disable
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6864588Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6895023Z ##[group]Checking out the ref
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:10:42.6898330Z [command]/usr/bin/git checkout --progress --force refs/remot
+
+... [249233 characters truncated] ...
+
+CoreGuard>::block_on<core::pin::Pin<&mut core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>>::{closure#0}, core::option::Option<()>>::{closure#0}>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1208286Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/context.rs:187:17
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1209402Z   20: <tokio::runtime::scheduler::current_thread::CoreGuard>::enter::<<tokio::runtime::scheduler::current_thread::CoreGuard>::block_on<core::pin::Pin<&mut core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>>::{closure#0}, core::option::Option<()>>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1211331Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/scheduler/current_thread/mod.rs:904:27
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1212601Z   21: <tokio::runtime::scheduler::current_thread::CoreGuard>::block_on::<core::pin::Pin<&mut core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1218928Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/scheduler/current_thread/mod.rs:815:24
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1220555Z   22: <tokio::runtime::scheduler::current_thread::CurrentThread>::block_on::<core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>::{closure#0}
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1221824Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/scheduler/current_thread/mod.rs:215:33
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1224607Z   23: tokio::runtime::context::runtime::enter_runtime::<<tokio::runtime::scheduler::current_thread::CurrentThread>::block_on<core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>::{closure#0}, ()>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1226091Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/context/runtime.rs:65:16
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1230348Z   24: <tokio::runtime::scheduler::current_thread::CurrentThread>::block_on::<core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1232301Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/scheduler/current_thread/mod.rs:203:9
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1235347Z   25: <tokio::runtime::runtime::Runtime>::block_on_inner::<core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1237028Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/runtime.rs:379:52
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1240067Z   26: <tokio::runtime::runtime::Runtime>::block_on::<core::pin::Pin<&mut dyn core::future::future::Future<Output = ()>>>
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1241757Z              at ./home/runner/work/tokio/tokio/tokio/src/runtime/runtime.rs:348:18
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1242906Z   27: fs_uring_read::cancel_op_future
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1245090Z              at ./home/runner/work/tokio/tokio/tokio/tests/fs_uring_read.rs:164:32
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1246458Z   28: fs_uring_read::cancel_op_future::{closure#0}
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1248528Z              at ./home/runner/work/tokio/tokio/tokio/tests/fs_uring_read.rs:135:28
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1251820Z   29: <fs_uring_read::cancel_op_future::{closure#0} as core::ops::function::FnOnce<()>>::call_once
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1254263Z              at ./rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library/core/src/ops/function.rs:250:5
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1257089Z   30: <fn() -> core::result::Result<(), alloc::string::String> as core::ops::function::FnOnce<()>>::call_once
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1259438Z              at ./rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library/core/src/ops/function.rs:250:5
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1262001Z note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1262427Z 
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1263748Z 
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1264419Z failures:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1267070Z     cancel_op_future
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1273061Z 
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1300272Z test result: FAILED. 3 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 25.36s
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1300905Z 
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1376628Z [   68.844939] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00006500
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1377389Z [   68.844939] 
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1381196Z [   68.845515] CPU: 0 PID: 1 Comm: init Not tainted 4.19.325 #1
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1384376Z [   68.845704] Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1386354Z [   68.846136] Call Trace:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1397776Z [   68.847239]  dump_stack+0x50/0x63
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1398994Z [   68.847384]  panic+0xee/0x23a
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1400264Z [   68.847488]  do_exit.cold+0xa6/0xb2
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1401397Z [   68.847614]  do_group_exit+0x2e/0xa0
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1402520Z [   68.847724]  __x64_sys_exit_group+0xf/0x10
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1403882Z [   68.847862]  do_syscall_64+0x43/0x100
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1405296Z [   68.847972]  entry_SYSCALL_64_after_hwframe+0x5c/0xc1
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1410064Z [   68.848450] RIP: 0033:0x4474cd
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1417347Z [   68.848831] Code: 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 00 f3 0f 1e fa 48 c7 c6 e0 ff ff ff ba e7 00 00 00 eb 07 66 0f 1f 44 00 00 f4 89 d0 0f 05 <48> 3d 00 f0 ff ff 76 f3 f7 d8 64 89 06 eb ec 0f 1f 40 00 f3 0f 1e
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1419366Z [   68.849264] RSP: 002b:00007ffff9420a38 EFLAGS: 00000202 ORIG_RAX: 00000000000000e7
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1421821Z [   68.849513] RAX: ffffffffffffffda RBX: 0000000000000004 RCX: 00000000004474cd
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1423792Z [   68.849734] RDX: 00000000000000e7 RSI: ffffffffffffffe0 RDI: 0000000000000065
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1425908Z [   68.849948] RBP: 00007ffff9420b30 R08: 00007ffff9420b40 R09: 00007ffff9420c60
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1427941Z [   68.850152] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000003
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1430036Z [   68.850356] R13: 00007ffff9420ce8 R14: 00000000005fc848 R15: 0000000000000000
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1439722Z [   68.851189] Kernel Offset: 0x26800000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:54.1442776Z [   68.851734] Rebooting in 1 seconds..
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.1804460Z tests reported failures
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.1817688Z ##[error]Process completed with exit code 1.
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.1956624Z Post job cleanup.
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2793006Z [command]/usr/bin/git version
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2840198Z git version 2.54.0
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2876249Z Temporarily overriding HOME='/home/runner/work/_temp/9117eeb8-58a6-42d0-b9fb-f401925b3833' before making global git config changes
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2877517Z Adding repository directory to the temporary git global config as a safe directory
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2880290Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tokio/tokio
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2911018Z Removing SSH command configuration
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2918283Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.2952269Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3185259Z Removing HTTP extra header
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3189449Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3222770Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3448832Z Removing includeIf entries pointing to credentials config files
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3454230Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3482900Z includeif.gitdir:/home/runner/work/tokio/tokio/.git.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3483625Z includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3484296Z includeif.gitdir:/github/workspace/.git.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3484862Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3491395Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/tokio/tokio/.git.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3513745Z /home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3523615Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/tokio/tokio/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-13f33442\-6239\-410c\-9845\-4b8fe480e077\.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3559041Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3582925Z /home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3591506Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-13f33442\-6239\-410c\-9845\-4b8fe480e077\.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3632242Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3654378Z /github/runner_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3661283Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-13f33442\-6239\-410c\-9845\-4b8fe480e077\.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3692151Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3713856Z /github/runner_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3722684Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-13f33442\-6239\-410c\-9845\-4b8fe480e077\.config
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3757158Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.3996697Z Removing credentials config '/home/runner/work/_temp/git-credentials-13f33442-6239-410c-9845-4b8fe480e077.config'
+Test io_uring on Linux 4.19.325 / build	UNKNOWN STEP	2026-08-10T23:14:55.4182016Z Cleaning up orphan processes

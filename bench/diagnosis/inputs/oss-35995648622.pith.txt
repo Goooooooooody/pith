@@ -1,0 +1,174 @@
+pith · <log> · 41,430 lines → 8468 groups · ~1338.3k → ~4.1k tokens (99.7% smaller)
+
+jobs: Linux | Java 21; Linux | Java 27; Linux | Java 17
+levels: error 1,081 · warn 578 · notable 43 · info 33,652 · debug 224
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Linux | Java 21
+L1095     [bed8] Package 'php-symfony-doctrine-bridge' is not installed, so not removed (×3, last L27604)
+L1096     [977c] Package 'php-symfony-dom-crawler' is not installed, so not removed (×3, last L27605)
+L1097     [c34c] Package 'php-symfony-dotenv' is not installed, so not removed (×3, last L27606)
+L1098   ✱ [8de0] Package 'php-symfony-error-handler' is not installed, so not removed (×3, last L27607)
+L1099     [cc7c] Package 'php-symfony-event-dispatcher' is not installed, so not removed (×3, last L27608)
+L1100     [fd5a] Package 'php-symfony-form' is not installed, so not removed (×3, last L27609)
+L1101     [4ef6] Package 'php-symfony-framework-bundle' is not installed, so not removed (×3, last L27610)
+   …
+L2138     [be9f] > Task :build-plugin:spring-boot-gradle-plugin:npmSetup SKIPPED (×3, last L28694)
+L2139     [8065] > Task :platform:spring-boot-dependencies:createResolvedBom (×3, last L28648)
+L2141     [cf9c] > Task :build-plugin:spring-boot-antlib:integrationTest (×3, last L28662)
+L2142   ✱ [6346] Trying to override old definition of task fail (×3, last L28663)
+L2143     [d6ce] Trying to override old definition of datatype resources (×3, last L28664)
+L2144     [9663] Trying to override old definition of task buildnumber (×3, last L28665)
+L2146     [aa7a] > Task :test-support:spring-boot-test-support:compileJava FROM-CACHE (×3, last L28667)
+   …
+L5964     [5b8e] > Task :module:spring-boot-actuator-autoconfigure:testClasses (×14, last L36262)
+L5965     [654d] > Task :module:spring-boot-actuator-autoconfigure:checkstyleTest FROM-CACHE (×21, last L32409)
+L5966     [4b01] > Task :module:spring-boot-actuator-autoconfigure:checkstyleTestFixtures FROM-CACHE (×3, last L32410)
+L5967   ✱ [fcbd] *** java.lang.instrument ASSERTION FAILED ***: "!errorOutstanding" with message transform method call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 884 (×3, last L5969)
+L5968   ✱ [fcbd] *** java.lang.instrument ASSERTION FAILED ***: "!errorOutstanding" with message transform method call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 884
+L5969   ✱ [fcbd] *** java.lang.instrument ASSERTION FAILED ***: "!errorOutstanding" with message transform method call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 884
+   …
+L11616  ✱ [9bdc] FAILURE: Build failed with an exception. (×3, last L41225)
+L11617    [3e253] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10. (×3, last L41235)
+L11619    [b3e8] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins. (×3, last L41237)
+L11621    [ea8a] For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation. (×3, last L41239)
+L11622    [7c49] 5318 actionable tasks: 3878 executed, 1440 from cache (×3, last L41240)
+L11624    [c8a0] * What went wrong: (×3, last L41227)
+L11625  ✱ [7831] Execution failed for task ':build-plugin:spring-boot-gradle-plugin:dockerTest'. (×3, last L41228)
+L11626    [0fd5] > There were failing tests. See the report at: file:///home/runner/work/spring-boot/spring-boot/build-plugin/spring-boot-gradle-plugin/build/reports/tests/dockerTest/index.html (×3, last L41229)
+L11628  ✱ [aa92] BUILD FAILED in 48m 45s (×3, last L41231)
+L11630    [f920] Publishing Build Scan to Develocity... (×3, last L41242)
+L11631    [42d0] gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-scans/build-1790250920011.json (×3, last L41243)
+L11632    [46c28] https://ge.spring.io/s/s5jnbj6ewa6m6
+L11634  ✱ [eead] ##[error]Process completed with exit code 1. (×3, last L41247)
+-- job: Linux | Java 27
+L13852    [cb39] ▶ Run ./gradlew build (×3, last L28544)
+   …
+L21531    [6ac3] > Task :module:spring-boot-webflux-test:checkArchitectureTestJava (×2, last L37167)
+L21532    [7da3] > Task :module:spring-boot-webflux-test:checkAutoConfigureImports (×2, last L37168)
+L21534    [1742] > Task :build-plugin:spring-boot-gradle-plugin:dockerTest (×500, last L40205)
+L21536  ✱ [70a1] BootBuildImageIntegrationTests > buildsImageWithMultipleCommandLineEnvironments() > Gradle 9.8.0-20260824065828+0000 FAILED (×44, last L25964)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:476
+L21539    [a6e31] > Task :module:spring-boot-webflux-test:checkCompileClasspathForProhibitedDependencies (×10, last L37177)
+L21540    [4df9] > Task :module:spring-boot-webflux-test:checkFormatMain FROM-CACHE
+L21541    [6bec] > Task :module:spring-boot-webflux-test:checkFormatTest FROM-CACHE
+   …
+L21583    [d187] > Task :module:spring-boot-webmvc:checkstyleTestFixtures FROM-CACHE
+L21584    [afea] OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended (×376, last L40213)
+L21588  ✱ [aa7c] BootBuildImageIntegrationTests > buildsImageWithMultipleCommandLineEnvironments() > Gradle 9.8.0-20260824065828+0000 --configuration-cache FAILED (×44, last L25992)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:476
+L21591  ✱ [70a1] BootBuildImageIntegrationTests > buildsImageWithBuildpacksFromImages() > Gradle 9.8.0-20260824065828+0000 FAILED
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:263
+L21594  ✱ [aa7c] BootBuildImageIntegrationTests > buildsImageWithBuildpacksFromImages() > Gradle 9.8.0-20260824065828+0000 --configuration-cache FAILED
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:263
+L21597  ✱ [70a1] BootBuildImageIntegrationTests > buildsImageWithApplicationDirectory() > Gradle 9.8.0-20260824065828+0000 FAILED
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:416
+L21600  ✱ [aa7c] BootBuildImageIntegrationTests > buildsImageWithApplicationDirectory() > Gradle 9.8.0-20260824065828+0000 --configuration-cache FAILED
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:416
+L21603  ✱ [ad7e] BootBuildImageIntegrationTests > buildsImageWithCustomName() > Gradle 9.8.0-20260824065828+0000 FAILED (×4, last L25487)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:149
+L21606  ✱ [d764] BootBuildImageIntegrationTests > buildsImageWithCustomName() > Gradle 9.8.0-20260824065828+0000 --configuration-cache FAILED (×4, last L25490)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:149
+L21609    [6ad2] > Task :module:spring-boot-webmvc:test (×2, last L37289)
+L21610    [44aa] > Task :module:spring-boot-webflux:check (×2, last L37299)
+L21611    [35fe] > Task :module:spring-boot-webflux:build (×2, last L37300)
+L21615  ✱ [debb] BootBuildImageIntegrationTests > buildsImageWithBinding() > Gradle 9.8.0-20260824065828+0000 FAILED (×4, last L25519)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:279
+L21618  ✱ [9a9b] BootBuildImageIntegrationTests > buildsImageWithBinding() > Gradle 9.8.0-20260824065828+0000 --configuration-cache FAILED (×4, last L25526)
+          java.lang.AssertionError at BootBuildImageIntegrationTests.java:279
+L21621    [64e8] > Task :module:spring-boot-webmvc-test:javadoc FROM-CACHE
+L21622    [656c] > Task :module:spring-boot-webmvc-test:javadocJar (×2, last L37302)
+L21623    [ce6e] > Task :module:spring-boot-webmvc-test:sourcesJar (×2, last L37303)
+   …
+L21910    [2ce68] 2026-09-24T12:13:58.555Z  INFO 81517 --- [MQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 6.3.2 (localhost, ID:runnervmtr4k5-36927-1790252035681-0:1) is shutting down (×2, last L37724)
+L21911    [2a39] 2026-09-24T12:13:58.575Z  INFO 81517 --- [MQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped (×2, last L37725)
+L21912  ✱ [f621] 2026-09-24T12:13:58.572Z  INFO 81517 --- [m://localhost#2] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection (×2, last L37750)
+L21914  ✱ [1949] jakarta.jms.JMSException: peer (vm://localhost#3) stopped. (×4, last L37752)
+          Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#3) stopped.
+          ... 8 common frames omitted
+          at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:67) ~[activemq-client-6.3.2.jar:6.3.2]
+          at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:2081) ~[activemq-client-6.3.2.jar:6.3.2]
+          at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:2094) ~[activemq-client-6.3.2.jar:6.3.2]
+          at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:119) ~[activemq-client-6.3.2.jar:6.3.2]
+          at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126) ~[activemq-client-6.3.2.jar:6.3.2]
+          (+9 frames hidden)
+   …
+L26314  ✱ [9bdc] FAILURE: Build failed with an exception.
+L26317  ✱ [7831] Execution failed for task ':build-plugin:spring-boot-gradle-plugin:dockerTest'.
+L26320  ✱ [aa92] BUILD FAILED in 33m 7s
+L26324    [8354] https://ge.spring.io/s/mjzxpwfskokgw
+L26326  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Linux | Java 17
+L34406    [33514] > Task :module:spring-boot-kafka:dockerTestClasses (×3, last L34406)
+L34407    [41e6] > Task :module:spring-boot-kafka:checkstyleDockerTest FROM-CACHE (×3, last L34407)
+L34409    [4033] > Task :documentation:spring-boot-docs:compileTestJava (×2, last L34409)
+L34410  ✱ [8688] Could not load entry 9016cd6ef331439b59b9d4b43879faa9 from remote build cache: Loading entry from 'https://ge.spring.io/cache/9016cd6ef331439b59b9d4b43879faa9' failed (×2, last L34426)
+L34412    [132f] > Task :documentation:spring-boot-docs:processTestResources (×3, last L34412)
+L34413    [4d81] > Task :documentation:spring-boot-docs:checkArchitectureTestJava (×3, last L34413)
+L34414    [b2fd] > Task :documentation:spring-boot-docs:checkArchitectureTestKotlin NO-SOURCE (×3, last L34414)
+   …
+L41228  ✱ [7831] Execution failed for task ':build-plugin:spring-boot-gradle-plugin:dockerTest'.
+L41231  ✱ [aa92] BUILD FAILED in 52m 36s
+L41233    [cb9c] [Incubating] Problems report is available at: file:///home/runner/work/spring-boot/spring-boot/build/reports/problems/problems-report.html (×3, last L41233)
+L41244    [8c8c] https://ge.spring.io/s/rnz5ksxmbf736
+L41246    [2207] The remote build cache was disabled during the build due to errors.
+L41247  ✱ [eead] ##[error]Process completed with exit code 1.
+   …
+L41277    [58ca] echo "RUN_URL=https://github.com/spring-projects/spring-boot/actions/runs/35995648622" >> "$GITHUB_ENV" (×3, last L41277)
+L41278    [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×18, last L41299)
+L41279    [4293] env: (×24, last L41300)
+          JAVA_HOME: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+          JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Liberica_jdk/17.0.20-10/x64
+          JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+          (+9 lines)
+   …
+L41297  ✱ [efcf] ▶ Run curl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/35995648622|main | Linux | Java 17> failed*  [<https://ge.spring.io/s/rnz5ksxmbf736|Build Scan>]"}' || true
+   (+3 more lines here: `pith show <id>` or grep the raw file)
+
+== OTHER ERRORS & WARNINGS
+L7314   ERRO [61ef] BootBuildImageIntegrationTests > buildsImageWithMultipleCommandLineEnvironments() > Gradle 8.14.5 FAILED (×264, last L39913)
+L7327   ERRO [9e31] BootBuildImageIntegrationTests > buildsImageWithMultipleCommandLineEnvironments() > Gradle 9.7.0 --configuration-cache FAILED (×88, last L39916)
+L7374   ERRO [3647] BootBuildImageIntegrationTests > buildsImageWithCustomName() > Gradle 8.14.5 FAILED (×24, last L39102)
+L7397   ERRO [d061] BootBuildImageIntegrationTests > buildsImageWithCustomName() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39128)
+L7400   ERRO [b7fc] BootBuildImageIntegrationTests > buildsImageWithBinding() > Gradle 8.14.5 FAILED (×24, last L39145)
+L7409   ERRO [b285] BootBuildImageIntegrationTests > buildsImageWithBinding() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39166)
+L7618   ERRO [a134] BootBuildImageIntegrationTests > buildsImageWithVolumeCaches() > Gradle 8.14.5 FAILED (×24, last L39631)
+L7627   ERRO [4e51] BootBuildImageIntegrationTests > buildsImageWithVolumeCaches() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39638)
+L7630   ERRO [f681] BootBuildImageIntegrationTests > buildsImageWithNetworkModeNone() > Gradle 8.14.5 FAILED (×24, last L39651)
+L7651   ERRO [2205] BootBuildImageIntegrationTests > buildsImageWithNetworkModeNone() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39666)
+L7672   ERRO [0edc] BootBuildImageIntegrationTests > buildsImageWithTrustBuilder() > Gradle 8.14.5 FAILED (×24, last L39717)
+L7685   ERRO [1e59] BootBuildImageIntegrationTests > buildsImageWithTrustBuilder() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39720)
+L7707   ERRO [e836] BootBuildImageIntegrationTests > buildsImageWithBindCaches() > Gradle 8.14.5 FAILED (×24, last L39729)
+L7731   ERRO [cb2b] BootBuildImageIntegrationTests > buildsImageWithBindCaches() > Gradle 9.7.0 --configuration-cache FAILED (×8, last L39755)
+L7734   ERRO [36b6] BootBuildImageIntegrationTests > buildsImageWithCreatedDate() > Gradle 8.14.5 FAILED (×24, last L39804)
+L11234  ERRO [deca5] 384 tests completed, 352 failed (×5, last L40859)
+
+== END OF OUTPUT
+L40862    [89639] There were failing tests. See the report at: file:///home/runner/work/spring-boot/spring-boot/build-plugin/spring-boot-maven-plugin/build/reports/tests/intTest/index.html
+L40863    [3481] gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/build-1790250947201.json
+L40865    [5c8c] Found test failures in 2 test tasks:
+L40867    [e0e3] :build-plugin:spring-boot-gradle-plugin:dockerTest
+L41221    [6238a] :build-plugin:spring-boot-maven-plugin:intTest
+L41225    [9bdc] FAILURE: Build failed with an exception.
+L41227    [c8a0] * What went wrong:
+L41253    [938a] Prepare all required actions
+L41254    [7c0d] ▶ Run ./.github/actions/send-notification
+L41255    [8d65] with:
+L41260    [4293] env:
+L41275    [f649] ▶ Run echo "BUILD_SCAN= [<https://ge.spring.io/s/rnz5ksxmbf736|Build Scan>]" >> "$GITHUB_ENV"
+L41276    [bc1d] echo "BUILD_SCAN= [<https://ge.spring.io/s/rnz5ksxmbf736|Build Scan>]" >> "$GITHUB_ENV"
+L41321    [221f] {
+L41331    [555e] 100   586    0   405  100   181    517    231 --:--:-- --:--:-- --:--:--   748
+
+== MOST FREQUENT OTHER LINES
+×458     [f0b37] > Task :smoke-test:spring-boot-smoke-test-activemq-embedded:checkCompileClasspathForProhibitedDependencies
+×360     [c03f] (Reading database ... 5%
+×267     [5153] > Task :starter:spring-boot-starter-micrometer-metrics:compileJava NO-SOURCE
+×267     [c76d] > Task :starter:spring-boot-starter-oauth2-authorization-server:<redacted> NO-SOURCE
+×267     [c0a4] > Task :starter:spring-boot-starter-activemq-test:classes UP-TO-DATE
+×267     [eb6b] > Task :starter:spring-boot-starter-activemq-test:extractLegalResources
+×267     [cbf2] > Task :starter:spring-boot-starter-activemq-test:jar
+×267     [19dc] > Task :starter:spring-boot-starter-activemq-test:starterMetadata
+
+(not shown: 8316 groups, 31,187 lines - including 51 error groups, 372 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

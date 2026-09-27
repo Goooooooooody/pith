@@ -1,0 +1,61 @@
+pith · <log> · 366 lines → 192 groups · ~9.9k → ~1.1k tokens (89.4% smaller)
+
+jobs: Go tests
+levels: error 3 · warn 1 · notable 6 · info 279
+raw: <removed for evaluation>
+jev (jev-latest): hid 140/192 groups as confident noise · 1 requests · 2,918 tokens · $0.0001 · 0.4s
+most likely root cause: [7eff] rc=0.44 (confidence 0.42, cause visible p=0.34)
+
+== LIKELY ROOT CAUSE (jev rc=0.44)
+[7eff] ERROR ×1  act=0.81 val=2.6/4 rc=0.44  L332  job: Go tests
+  make: *** [Makefile.common:406: /go/bin/promu] Error 2
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Go tests
+L318      [6f97] GOMEMLIMIT=13098762KiB
+L321      [8856] ▶ Run make promu
+L322      [1820] make promu
+   …
+L327      [0286] curl -s -L https://github.com/prometheus/promu/releases/download/v0.20.0/promu-0.20.0.linux-amd64.tar.gz | tar -xvzf - -C /tmp/tmp.GMquzwG8Nq
+L329      [c266] gzip: stdin: unexpected end of file
+L330      [3401] tar: Child returned status 1
+L331    ✱ [703e] tar: Error is not recoverable: exiting now
+L332    ✱ [7eff] make: *** [Makefile.common:406: /go/bin/promu] Error 2
+L333    ✱ [eead] ##[error]Process completed with exit code 2.
+
+== OTHER ERRORS & WARNINGS
+L169    WARN [eeea] hint: of your new repositories, which will suppress this warning, call:
+L262    NOTA [3aa8] shell: bash --noprofile --norc -e -o pipefail {0} (×4, last L323)
+L280    NOTA [d313] Cache not found for input keys: Linux-go-race-e4992e6b1803bbde049362dd65fd8210a819b42abdf0264306bfc418fc362042, Linux-go-race-
+L296    NOTA [62a0] Cache not found for input keys: Linux-npm-, Linux-npm-
+
+== END OF OUTPUT
+L240      [6721] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-e393789b\-3268\-4ef8\-a78d\-8ed33a715bf1\.config
+L241      [ddf3] [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+L243      [6c51] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-e393789b\-3268\-4ef8\-a78d\-8ed33a715bf1\.config
+L269      [36f8] Go tests	UNKNOWN STEP	/go/pkg/mod
+L280      [d313] Cache not found for input keys: Linux-go-race-e4992e6b1803bbde049362dd65fd8210a819b42abdf0264306bfc418fc362042, Linux-go-race-
+L284      [8d65] with:
+L289      [f8ab] Go tests	UNKNOWN STEP
+L291      [9bd6] fail-on-cache-miss: false
+L296      [62a0] Cache not found for input keys: Linux-npm-, Linux-npm-
+L301      [0d5c] cgroup=$(awk -F':' '{print $3}' /proc/self/cgroup)
+L302      [071b] cgroup_mem_limit=$(< "/sys/fs/cgroup/${cgroup}/memory.max")
+L303      [f1cc] if [[ "${cgroup_mem_limit}" != "max" ]] ; then
+L307      [3115] awk -v "ratio=${ratio}" '$1 == "MemTotal:" {printf "GOMEMLIMIT=%.0fKiB\n", $2 * ratio}' /proc/meminfo >> "$GITHUB_ENV"
+L323      [3aa8] shell: bash --noprofile --norc -e -o pipefail {0}
+L324      [4293] env:
+
+== MOST FREQUENT OTHER LINES
+×11      [31fc] b4e4c0127190: Pull complete
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [ea25] '1.48'
+×2       [54b0] Temporarily overriding HOME='/__w/_temp/121af014-b6b7-455f-b68a-9127f7abb9e4' before making global git config changes
+
+(not shown: 18 groups, 19 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

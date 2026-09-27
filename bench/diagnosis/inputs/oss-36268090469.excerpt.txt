@@ -1,0 +1,89 @@
+lint title	UNKNOWN STEP	﻿2026-09-26T20:02:00.7340246Z Current runner version: '2.337.0'
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7365803Z ##[group]Runner Image Provisioner
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7366769Z Hosted Compute Agent
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7367413Z Version: 20260828.587
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7368064Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7368860Z Build Date: 2026-08-28T16:44:25Z
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7369559Z Worker ID: {bfb58e37-fabf-4bf8-bc6b-39e2437bd8d2}
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7370290Z Azure Region: westcentralus
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7371316Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7372842Z ##[group]Operating System
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7373574Z Ubuntu
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7374133Z 24.04.5
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7374674Z LTS
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7375302Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7375862Z ##[group]Runner Image
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7376495Z Image: ubuntu-24.04
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7377080Z Version: 20260920.314.1
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7378370Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7380041Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7381486Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7384371Z ##[group]GITHUB_TOKEN Permissions
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7386636Z Actions: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7387275Z ArtifactMetadata: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7387882Z Attestations: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7388533Z Checks: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7389088Z CodeQuality: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7389741Z Contents: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7390324Z Deployments: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7391131Z Discussions: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7391772Z Drives: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7392322Z Issues: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7392965Z Metadata: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7393536Z Models: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7394177Z Packages: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7394798Z Pages: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7395340Z PullRequests: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7395939Z RepositoryProjects: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7396635Z SecurityEvents: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7397224Z Statuses: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7397828Z VulnerabilityAlerts: read
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7398492Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7400606Z Secret source: None
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7402088Z Cache mode: write
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7402817Z Prepare workflow directory
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7745033Z Prepare all required actions
+lint title	UNKNOWN STEP	2026-09-26T20:02:00.7792334Z Getting action download info
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.0774860Z Download action repository 'denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282' (SHA:667a34cdef165d8d2b2e98dde39547c9daac7282)
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7236370Z Complete job name: lint title
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7984018Z ##[group]Run denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7985672Z with:
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7986138Z   deno-version: canary
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7986632Z   deno-binary-name: deno
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7987138Z   cache: false
+lint title	UNKNOWN STEP	2026-09-26T20:02:01.7987828Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:02.0575775Z Going to install canary version b157cd27e153f0a3e2ef10a6a31edfd105fcbf93.
+lint title	UNKNOWN STEP	2026-09-26T20:02:02.0602088Z Downloading Deno from https://dl.deno.land/canary/b157cd27e153f0a3e2ef10a6a31edfd105fcbf93/deno-x86_64-unknown-linux-gnu.zip.
+lint title	UNKNOWN STEP	2026-09-26T20:02:02.7912433Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/3ea35f92-d4c6-4bf9-826a-fec6e3bcf7b3
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.5524771Z Cached Deno to /opt/hostedtoolcache/deno/0.0.0-b157cd27e153f0a3e2ef10a6a31edfd105fcbf93/x64.
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.5646436Z Installation complete.
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.5824557Z ##[group]Run deno run https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js "$PR_TITLE"
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.5825638Z ^[[36;1mdeno run https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js "$PR_TITLE"^[[0m
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.6130633Z shell: /usr/bin/bash -e {0}
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.6131424Z env:
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.6131798Z   PR_TITLE: raw-private/raw-public KeyObject export format
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.6132226Z ##[endgroup]
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.6485177Z ^[[0m^[[32mDownload^[[0m https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8554427Z PR title: raw-private/raw-public KeyObject export format
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8555793Z The PR title must start with one of the following prefixes:
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8556353Z 
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8556581Z   - chore
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8556937Z   - fix
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8557210Z   - feat
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8557471Z   - perf
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8557795Z   - ci
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8558053Z   - cleanup
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8560284Z   - docs
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8560701Z   - bench
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8561368Z   - build
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8561782Z   - refactor
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8562220Z   - test
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8562655Z   - Revert 
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8563134Z   - Reland 
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8563552Z   - BREAKING
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8563848Z 
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8564280Z Please fix the PR title according to https://www.conventionalcommits.org
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8592154Z ##[error]Process completed with exit code 1.
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.8700111Z Post job cleanup.
+lint title	UNKNOWN STEP	2026-09-26T20:02:03.9922355Z Caching is not enabled. Caching is skipped.
+lint title	UNKNOWN STEP	2026-09-26T20:02:04.0049580Z Cleaning up orphan processes

@@ -1,0 +1,275 @@
+Ruby	UNKNOWN STEP	﻿2026-09-21T11:24:22.3159196Z Current runner version: '2.337.0'
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3175123Z ##[group]Runner Image Provisioner
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3175722Z Hosted Compute Agent
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3176092Z Version: 20260828.587
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3176480Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3176988Z Build Date: 2026-08-28T16:44:25Z
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3177400Z Worker ID: {9530483b-7f95-4cd1-a63a-b54b0e96af27}
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3177822Z Azure Region: centralus
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3178258Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3178993Z ##[group]Operating System
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3179433Z Ubuntu
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3179892Z 24.04.5
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3180200Z LTS
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3180567Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3180906Z ##[group]Runner Image
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3181323Z Image: ubuntu-24.04
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3181687Z Version: 20260907.300.1
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3182490Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3183388Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3184007Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3184739Z ##[group]GITHUB_TOKEN Permissions
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3185915Z Contents: read
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3186306Z Metadata: read
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3186669Z Packages: read
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3187053Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3188279Z Secret source: None
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3188869Z Cache mode: write
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3189344Z Prepare workflow directory
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3426111Z Prepare all required actions
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.3457093Z Getting action download info
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.6072507Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Ruby	UNKNOWN STEP	2026-09-21T11:24:22.6920525Z Download action repository 'ruby/setup-ruby@v1' (SHA:a0102e0972be65f351c307e2d64b9314a57c8073)
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1257302Z Complete job name: Ruby
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1710793Z ##[group]Run actions/checkout@v7
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1711234Z with:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1711490Z   repository: rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1713505Z   token: ***
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1713750Z   ssh-strict: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1714000Z   ssh-user: git
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1714257Z   persist-credentials: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1714537Z   clean: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1714798Z   sparse-checkout-cone-mode: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1715097Z   fetch-depth: 1
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1715352Z   fetch-tags: false
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1715609Z   show-progress: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1715864Z   lfs: false
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1716105Z   submodules: false
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1716364Z   set-safe-directory: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1716658Z   allow-unsafe-pr-checkout: false
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.1717028Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2379277Z Syncing repository: rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2380677Z ##[group]Getting Git version info
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2381157Z Working directory is '/home/runner/work/rubocop/rubocop'
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2381788Z [command]/usr/bin/git version
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2454384Z git version 2.55.0
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2466183Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2473236Z Temporarily overriding HOME='/home/runner/work/_temp/7877b9d2-23ba-4c48-afe0-d1f321afd032' before making global git config changes
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2474354Z Adding repository directory to the temporary git global config as a safe directory
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2476521Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2517620Z Deleting the contents of '/home/runner/work/rubocop/rubocop'
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2519875Z ##[group]Determining repository object format
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2520868Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2521291Z ##[group]Initializing the repository
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2523536Z [command]/usr/bin/git init /home/runner/work/rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2628975Z hint: Using 'master' as the name for the initial branch. This default branch name
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2630043Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2630581Z hint: to use in all of your new repositories, which will suppress this warning,
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2631004Z hint: call:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2631237Z hint:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2631534Z hint: 	git config --global init.defaultBranch <name>
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2631894Z hint:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2632267Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2633090Z hint: 'development'. The just-created branch can be renamed via this command:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2633604Z hint:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2633882Z hint: 	git branch -m <name>
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2634248Z hint:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2634791Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2635690Z Initialized empty Git repository in /home/runner/work/rubocop/rubocop/.git/
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2639486Z [command]/usr/bin/git remote add origin https://github.com/rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2678187Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2678645Z ##[group]Disabling automatic garbage collection
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2680677Z [command]/usr/bin/git config --local gc.auto 0
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2703255Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2703753Z ##[group]Setting up auth
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2704076Z Removing SSH command configuration
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2706871Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.2731154Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3056091Z Removing HTTP extra header
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3060174Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3084430Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3252192Z Removing includeIf entries pointing to credentials config files
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3255998Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3285187Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3468351Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-41483f9e-2c76-401f-8eed-b086eb673bb5.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3497187Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rubocop/rubocop/.git.path /home/runner/work/_temp/git-credentials-41483f9e-2c76-401f-8eed-b086eb673bb5.config
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3521210Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-41483f9e-2c76-401f-8eed-b086eb673bb5.config
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3549204Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-41483f9e-2c76-401f-8eed-b086eb673bb5.config
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3574144Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-41483f9e-2c76-401f-8eed-b086eb673bb5.config
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3595519Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3596157Z ##[group]Fetching the repository
+Ruby	UNKNOWN STEP	2026-09-21T11:24:23.3600856Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +37315aac4e5a87facc13b9912132d2ddf8cc7389:refs/remotes/pull/15739/merge
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5208659Z From https://github.com/rubocop/rubocop
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5209992Z  * [new ref]         37315aac4e5a87facc13b9912132d2ddf8cc7389 -> pull/15739/merge
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5219095Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5220124Z ##[group]Determining the checkout info
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5220894Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5221357Z [command]/usr/bin/git sparse-checkout disable
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5262013Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5294161Z ##[group]Checking out the ref
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.5297147Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/15739/merge
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6321100Z Note: switching to 'refs/remotes/pull/15739/merge'.
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6326921Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6327585Z You are in 'detached HEAD' state. You can look around, make experimental
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6328891Z changes and commit them, and you can discard any commits you make in this
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6330370Z state without impacting any branches by switching back to a branch.
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6331139Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6331703Z If you want to create a new branch to retain commits you create, you may
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6332879Z do so (now or later) by using -c with the switch command. Example:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6333596Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6333902Z   git switch -c <new-branch-name>
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6334366Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6334633Z Or undo this operation with:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6335039Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6335282Z   git switch -
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6335607Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6336176Z Turn off this advice by setting config variable advice.detachedHead to false
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6336995Z 
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6337890Z HEAD is now at 37315aa Merge e96d8e2fe8a0687553e2ef1ff5934a99a4558cf8 into 7b1e12b488478cbd4c68d86cfa13c658f6ddb9cf
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6341038Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6369485Z [command]/usr/bin/git log -1 --format=%H
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6390013Z 37315aac4e5a87facc13b9912132d2ddf8cc7389
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6645464Z ##[group]Run ruby/setup-ruby@v1
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6646252Z with:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6646868Z   ruby-version: ruby
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6647560Z   bundler-cache: true
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6653742Z   token: ***
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.6654366Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7459891Z ##[group]Modifying PATH
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7464559Z Entries added to PATH to use selected Ruby:
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7475038Z   /opt/hostedtoolcache/Ruby/4.0.7/x64/bin
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7476858Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7478295Z ##[group]Downloading Ruby
+Ruby	UNKNOWN STEP	2026-09-21T11:24:24.7480295Z https://github.com/ruby/ruby-builder/releases/download/ruby-4.0.7/ruby-4.0.7-ubuntu-24.04-x64.tar.gz
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.2671181Z Took   0.52 seconds
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.2672289Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.2672706Z ##[group]Extracting  Ruby
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.2687290Z [command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/4.0.7 -f /home/runner/work/_temp/267da204-757a-4f5b-a0aa-45aac4cc2019
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7001048Z Took   0.43 seconds
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7002040Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7002517Z ##[group]Print Ruby version
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7010599Z [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/ruby --version
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7078830Z ruby 4.0.7 (2026-09-15 revision 229531a6cf) +PRISM [x86_64-linux]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7085804Z Took   0.01 seconds
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7086469Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7087003Z ##[group]Installing Bundler
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7090346Z Using Bundler shipped with ruby-4.0.7
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7090989Z Took   0.00 seconds
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7091567Z ##[endgroup]
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7091878Z > bundle install
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7093916Z Setting BUNDLER_VERSION=4 for "bundle config|lock" commands below to ensure Bundler 4 is used
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.7103772Z [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/bundle config set --local path /home/runner/work/rubocop/rubocop/vendor/bundle
+Ruby	UNKNOWN STEP	2026-09-21T11:24:25.8061568Z [command]/opt/ho
+
+... [42945 characters truncated] ...
+
+WN STEP	2026-09-21T11:24:25.1881215Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:25.1882756Z ##[group]Fetching the repository
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:25.1888670Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +37315aac4e5a87facc13b9912132d2ddf8cc7389:refs/remotes/pull/15739/merge
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3176752Z From https://github.com/rubocop/rubocop
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3178501Z  * [new ref]         37315aac4e5a87facc13b9912132d2ddf8cc7389 -> pull/15739/merge
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3180452Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3181194Z ##[group]Determining the checkout info
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3181988Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3186873Z [command]/usr/bin/git sparse-checkout disable
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3233764Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3262221Z ##[group]Checking out the ref
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.3266792Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/15739/merge
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4634033Z Note: switching to 'refs/remotes/pull/15739/merge'.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4634888Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4635576Z You are in 'detached HEAD' state. You can look around, make experimental
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4638353Z changes and commit them, and you can discard any commits you make in this
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4639437Z state without impacting any branches by switching back to a branch.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4640211Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4640863Z If you want to create a new branch to retain commits you create, you may
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4641743Z do so (now or later) by using -c with the switch command. Example:
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4642173Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4642451Z   git switch -c <new-branch-name>
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4642802Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4643075Z Or undo this operation with:
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4643414Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4643673Z   git switch -
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4644228Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4644677Z Turn off this advice by setting config variable advice.detachedHead to false
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4645171Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4645733Z HEAD is now at 37315aa Merge e96d8e2fe8a0687553e2ef1ff5934a99a4558cf8 into 7b1e12b488478cbd4c68d86cfa13c658f6ddb9cf
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4648085Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4690921Z [command]/usr/bin/git log -1 --format=%H
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4716745Z 37315aac4e5a87facc13b9912132d2ddf8cc7389
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4876161Z ##[group]Run gem build
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4876974Z ^[[36;1mgem build^[[0m
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4877375Z ^[[36;1mgem install ./rubocop-*.gem --no-document^[[0m
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4877953Z ^[[36;1mgem install rubocop-performance rubocop-rake rubocop-rspec --no-document^[[0m
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4921154Z shell: /usr/bin/bash -e {0}
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:26.4921497Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:27.2233095Z   Successfully built RubyGem
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:27.2237096Z   Name: rubocop
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:27.2237428Z   Version: 1.91.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:27.2237804Z   File: rubocop-1.91.0.gem
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2537302Z Successfully installed unicode-emoji-4.3.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2537920Z Successfully installed unicode-display_width-3.3.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2538575Z Successfully installed ruby-progressbar-1.13.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2539073Z Successfully installed ast-2.4.3
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2539509Z Successfully installed parser-3.3.12.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2540099Z Successfully installed rubocop-ast-1.50.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2540572Z Successfully installed regexp_parser-2.12.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2541030Z Successfully installed rainbow-3.1.1
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2541488Z Successfully installed parallel-2.2.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2541937Z Successfully installed lint_roller-1.1.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2542470Z Successfully installed language_server-protocol-3.17.0.6
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2543029Z Successfully installed rubocop-1.91.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:28.2543409Z 12 gems installed
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1511682Z Successfully installed rubocop-performance-1.27.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1512552Z Successfully installed rubocop-rake-0.7.1
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1515254Z Successfully installed rubocop-rspec-3.10.2
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1515651Z 3 gems installed
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1620792Z ##[group]Run rubocop
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1621046Z ^[[36;1mrubocop^[[0m
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1661744Z shell: /usr/bin/bash -e {0}
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:29.1662030Z ##[endgroup]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:30.0563383Z `AllCops/UseProjectIndex` is enabled but the `rubydex` gem is not installed.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:30.0564021Z Analyses that use the project index will be skipped. Add `gem 'rubydex'` to your Gemfile.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:24:30.0591902Z Inspecting 1768 files
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7805250Z .................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................C......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7812601Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7812761Z Offenses:
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7812977Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7813505Z spec/rubocop/cli/autocorrect_spec.rb:363:101: C: Layout/LineLength: Line is too long. [106/100]
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7814847Z                      '--only', 'Style/MethodCallWithArgsParentheses,Layout/MultilineMethodCallBraceLayout'
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7815884Z                                                                                                     ^^^^^^
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7816581Z 
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7816791Z 1768 files inspected, 1 offense detected
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.7898556Z ##[error]Process completed with exit code 1.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8039266Z Post job cleanup.
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8865546Z [command]/usr/bin/git version
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8910494Z git version 2.55.0
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8943024Z Temporarily overriding HOME='/home/runner/work/_temp/c20a3ee6-bce7-451f-87f2-387119d72dda' before making global git config changes
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8943956Z Adding repository directory to the temporary git global config as a safe directory
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8948264Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8979019Z Removing SSH command configuration
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.8984957Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9020006Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9259070Z Removing HTTP extra header
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9263926Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9297766Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9529019Z Removing includeIf entries pointing to credentials config files
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9534685Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9563399Z includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9564066Z includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9564578Z includeif.gitdir:/github/workspace/.git.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9564956Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9571313Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9594117Z /home/runner/work/_temp/git-credentials-a052bbc7-9497-4efa-826a-ebcc50843fa2.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9604516Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-a052bbc7\-9497\-4efa\-826a\-ebcc50843fa2\.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9638415Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9660724Z /home/runner/work/_temp/git-credentials-a052bbc7-9497-4efa-826a-ebcc50843fa2.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9669774Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-a052bbc7\-9497\-4efa\-826a\-ebcc50843fa2\.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9739727Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9761872Z /github/runner_temp/git-credentials-a052bbc7-9497-4efa-826a-ebcc50843fa2.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9770278Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-a052bbc7\-9497\-4efa\-826a\-ebcc50843fa2\.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9802766Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9824633Z /github/runner_temp/git-credentials-a052bbc7-9497-4efa-826a-ebcc50843fa2.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9831680Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-a052bbc7\-9497\-4efa\-826a\-ebcc50843fa2\.config
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:19.9866552Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:20.0114875Z Removing credentials config '/home/runner/work/_temp/git-credentials-a052bbc7-9497-4efa-826a-ebcc50843fa2.config'
+Ruby without Bundler	UNKNOWN STEP	2026-09-21T11:25:20.0294411Z Cleaning up orphan processes

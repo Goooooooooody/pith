@@ -1,0 +1,160 @@
+pith · <log> · 27,813 lines → 2491 groups · ~2724.6k → ~4.1k tokens (99.8% smaller)
+
+jobs: aarch64-darwin: with shared libraries / build; x86_64-linux: with shared libraries and perfetto / build; x86_64-darwin: with shared libraries / build; aarch64-linux: with shared openssl-3.6.4 / build; aarch64-linux: with shared openssl-3.5.8 / build; aarch64-linux: with shared openssl-fips-3.5.8 / build; aarch64-linux: with shared openssl-3.0.22 / build; aarch64-linux: with shared boringssl-0.20260803.0 / build
+levels: error 2,052 · warn 1,673 · notable 357 · info 9,707 · debug 3,636
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: aarch64-darwin: with shared libraries / build
+L396      [7c63] HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history (×2, last L6920)
+L397      [503a] HISTSIZE=2000 (×2, last L6921)
+L398      [4afa] SAVEHIST=1000 (×2, last L6922)
+L400    ✱ [57d7] # Beep on error (×2, last L6924)
+L401      [82f3] setopt BEEP (×2, last L6925)
+L403      [39ec] # Use keycodes (generated via zkbd) if present, otherwise fallback on (×2, last L6927)
+L404      [a2ec] # values from terminfo (×2, last L6928)
+   …
+L3342     [787c] [       OK ] EnvironmentTest.WorkerInEnvironmentWithoutSnapshot (27 ms) (×176, last L27627)
+L3343     [3e43] [ RUN      ] EnvironmentTest.StopFromExitHandlerDoesNotLeakIntoNextEnvironment (×176, last L27625)
+L3344     [85e2] /Users/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim/out/Release/cctest:1 (×2, last L9921)
+L3345   ✱ [0f47] throw new Error('uncaught') (×9, last L27550)
+          ^
+L3348   ✱ [e25e] Error: uncaught (×9, last L27553)
+          at …/out/Release/cctest:1:7
+          (+2 frames hidden)
+   …
+L3474     [51ec] [ RUN      ] LRUCache.ComplexTypes (×9, last L27792)
+L3475     [c2a2] [       OK ] LRUCache.ComplexTypes (0 ms) (×9, last L27793)
+L3476     [0c21] [----------] 10 tests from LRUCache (0 ms total) (×9, last L27794)
+L3478     [7d67] [----------] 2 tests from NodeApiTest (×9, last L27796)
+L3479     [f6a9] [ RUN      ] NodeApiTest.CreateNodeApiEnv (×9, last L27797)
+L3480     [4523] [       OK ] NodeApiTest.CreateNodeApiEnv (32 ms) (×9, last L27798)
+L3481     [17a8] [ RUN      ] NodeApiTest.AsyncCallbacksEnterOwnContext (×9, last L27799)
+L3482     [9402] [       OK ] NodeApiTest.AsyncCallbacksEnterOwnContext (43 ms) (×9, last L27800)
+L3483     [96cd] [----------] 2 tests from NodeApiTest (76 ms total) (×9, last L27801)
+L3485     [fed8] [----------] 20 tests from NodeCrypto (×9, last L27803)
+L3486     [1f83] [ RUN      ] NodeCrypto.NewRootCertStore (×9, last L27804)
+L3487     [62e2] make: Leaving directory '/Users/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim' (×2, last L10064)
+L3488   ✱ [eead] ##[error]Process completed with exit code 2. (×9, last L27808)
+-- job: x86_64-linux: with shared libraries and perfetto / build
+L4056     [e080] ▶ Run nix-shell \ (×9, last L25406)
+   …
+L5098     [a71b] [5/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -MMD -MF obj/src/node_js2c.builtin_info.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -DV8_USE_PERFETTO -D__STDC_FORMAT_MACROS -DNODE_JS2C_USE_S
+L5099     [bf2b] [6/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -MMD -MF obj/deps/ncrypto/ncrypto_engine.engine.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -DV8_USE_PERFETTO -D__STDC_FORMAT_MACROS -DNCRYPTO
+L5100     [e67c] [7/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -MMD -MF obj/tools/node_js2c.js2c.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -DV8_USE_PERFETTO -D__STDC_FORMAT_MACROS -DNODE_JS2C_USE_STRING_
+L5101   ✱ [8a6c] [8/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -pthread -rdynamic -m64 -o node_js2c -Wl,--start-group obj/tools/node_js2c.js2c.o obj/src/node_js2c.embedded_data.o obj/src/node_js2c.builtin_info.o  -L/nix/store/4q3lydn0anq5qyzpxm5xyxnxqxn5nj7c-zlib-1.3.2-static/lib
+L5102     [e69d] [9/288] touch obj/node_base.actions_depends.stamp (×7, last L26422)
+L5103     [293c] [10/288] cd ../../; /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/bin/python3 deps/inspector_protocol/convert_protocol_to_json.py src/inspector/node_protocol.pdl /home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim/out/Release/gen/src/node_protocol.json (×7, last L26423)
+L5104     [ec5f] [11/288] cd ../../; /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/bin/python3 deps/inspector_protocol/concatenate_protocols.py deps/v8/include/js_protocol.pdl /home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim/out/Release/gen/src/node_protocol.json /home/runner/work/_ (×7, last L26424)
+   …
+L5116     [60bb5] [23/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -MMD -MF obj/deps/inspector_protocol/crdtp/crdtp.status.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -DV8_USE_PERFETTO -D__STDC_FORMAT_MACROS 
+L5117     [0674] [24/288] /nix/store/smaaalyh58vv9w4ywsq8d26fjvhiv7r6-sccache-0.17.0/bin/sccache g++ -MMD -MF obj/deps/inspector_protocol/crdtp/crdtp.json.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -DV8_USE_PERFETTO -D__STDC_FORMAT_MACROS -I
+   (+222 more lines here: `pith show <id>` or grep the raw file)
+   …
+L6479   ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped) (×7, last L27805)
+L6480   ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2 (×9, last L27806)
+L6481     [ed19] make: Leaving directory '/home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim' (×7, last L27807)
+L6482   ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: x86_64-darwin: with shared libraries / build
+L8079   ✱ [273b] [2/221] /nix/store/0glyfl4fifpcz9hak8rj59cz9fh4s3ma-sccache-0.15.0/bin/sccache clang++ -MMD -MF obj/tools/node_js2c.js2c.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DNODE_WITHOUT_NODE_OPTIONS -DICU_NO_USER_DATA_OVERRIDE -D_DARWIN_USE_64_BIT_INODE=1 -DN (×2, last L8079)
+L8080   ✱ [65d5] [3/221] /nix/store/0glyfl4fifpcz9hak8rj59cz9fh4s3ma-sccache-0.15.0/bin/sccache clang -MMD -MF obj/test/overlapped-checker/overlapped-checker.main_unix.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DNODE_WITHOUT_NODE_OPTIONS -DICU_NO_USER_DATA_OVERRIDE -D (×2, last L8080)
+L8081   ✱ [303e] [4/221] /nix/store/0glyfl4fifpcz9hak8rj59cz9fh4s3ma-sccache-0.15.0/bin/sccache clang -MMD -MF obj/test/nop/nop.nop.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DNODE_WITHOUT_NODE_OPTIONS -DICU_NO_USER_DATA_OVERRIDE -D_DARWIN_USE_64_BIT_INODE=1 -I/nix/st (×2, last L8081)
+L8082   ✱ [d4c1] [5/221] /nix/store/0glyfl4fifpcz9hak8rj59cz9fh4s3ma-sccache-0.15.0/bin/sccache clang -Wl,-search_paths_first -mmacosx-version-min=13.5 -arch x86_64 -L./ -stdlib=libc++ -o overlapped-checker obj/test/overlapped-checker/overlapped-checker.main_unix.o  -L/nix/store/11rdc563ypfsax3ix9iaynq8kp5bygpb-zlib
+L8083     [f1cc] ld: warning: dylib (/nix/store/dirj1864x4yg3z2iwvdcmfnllq2kpfim-llhttp-9.4.3/lib/libllhttp.dylib) was built for newer macOS version (14.0) than being linked (13.5) (×14, last L8998)
+L8084     [fa17] ld: warning: dylib (/nix/store/h1fh3m1qzirfhwczl1q8b8zqmkwmj6l9-libuv-1.52.1/lib/libuv.dylib) was built for newer macOS version (14.0) than being linked (13.5) (×14, last L8999)
+L8085     [6674] ld: warning: object file (/nix/store/11rdc563ypfsax3ix9iaynq8kp5bygpb-zlib-1.3.2-static/lib/libz.a(adler32.o)) was built for newer macOS version (14.0) than being linked (13.5) (×14, last L8983)
+   …
+L8195     [c55d] ld: warning: dylib (/nix/store/8g6whmndiwyaid0dl87wq3bgdbw6m2n1-icu4c-76.1/lib/libicui18n.dylib) was built for newer macOS version (14.0) than being linked (13.5) (×14, last L9095)
+   (+6 more lines here: `pith show <id>` or grep the raw file)
+   …
+L10058  ✱ [4565] make[1]: *** [Makefile:659: test-ci] Segmentation fault: 11 (×2, last L10058)
+L10060  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L10065  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared openssl-3.6.4 / build
+L10159    [4293] env: (×57, last L25425)
+          FLAKY_TESTS: keep_retrying
+          TAR_DIR: /home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim
+          INPUT_EXTRA_NIX_CONFIG: sandbox = true
+          (+7 lines)
+   …
+L10171    [21d8] ▶ Enabling KVM support (×7, last L24963)
+L10172    [0c36] KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm" (×7, last L24964)
+L10173  ✱ [87a7] Failed to open the device 'kvm': Invalid argument (×6, last L24965)
+L10174    [e748] KVM is not available (×6, last L24966)
+L10176    [5fe5] ▶ Installing Nix (×9, last L24968)
+L10177    [5173] installer options: --no-channel-add --nix-extra-conf-file /tmp/tmp.SforusAiuc/nix.conf --daemon --daemon-user-count 8
+   …
+L13011  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L13012  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L13014  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared openssl-3.5.8 / build
+L15974  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L15975  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L15977  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared openssl-fips-3.5.8 / build
+L18925  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L18926  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L18928  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared openssl-3.0.22 / build
+L21876  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L21878  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L21879  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared boringssl-0.20260803.0 / build
+L23708    [71ab] [240/288] g++ -MMD -MF obj/tools/snapshot/node_mksnapshot.node_mksnapshot.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 -DNODE_OPENSSL_CONF_NAME=nodejs_conf -DICU_NO_USER_DATA_OVERRIDE -D__STDC_FORMAT_MACROS -DNODE_WANT_INTERNALS=1 -DHAVE_OPENSSL=1 -DNODE_USE_NODE_CODE_CACHE=1 -DHAVE_INSPECT (×6, last L26659)
+L23709    [70ed] [241/288] rm -f obj/libnode_base.a && ar rcsT  obj/libnode_base.a obj/gen/node_base.node_javascript.o obj/gen/src/node/inspector/protocol/node_base.Protocol.o obj/gen/src/node/inspector/protocol/node_base.NodeWorker.o obj/gen/src/node/inspector/protocol/node_base.NodeTracing.o obj/gen/src/node/inspe (×7, last L26660)
+L23710    [a842] [242/288] touch obj/node_mksnapshot.actions_depends.stamp (×9, last L26661)
+L23711  ✱ [3b79] [243/288] g++ -pthread -rdynamic -Wl,-z,relro -Wl,-z,now -o node_mksnapshot -Wl,--start-group obj/src/node_mksnapshot.node_snapshot_stub.o obj/tools/snapshot/node_mksnapshot.node_mksnapshot.o obj/libnode_base.a obj/deps/ncrypto/libncrypto.a obj/deps/inspector_protocol/libcrdtp.a  -L/nix/store/in0l4c
+L23712    [4b31] [244/288] cd ../../; /home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim/out/Release/node_mksnapshot /home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim/out/Release/gen/node_snapshot.cc (×7, last L26663)
+L23713    [0c94] [245/288] touch obj/embedtest.compile_depends.stamp (×9, last L26664)
+L23714    [f266] [246/288] touch obj/cctest.compile_depends.stamp (×9, last L26665)
+   …
+L24854  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L24855  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L24857  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: aarch64-linux: with shared openssl-4.0.2 / build
+L27805  ✱ [1863] make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+L27806  ✱ [ddb6] make: *** [Makefile:689: run-ci] Error 2
+L27808  ✱ [eead] ##[error]Process completed with exit code 2.
+
+== OTHER ERRORS & WARNINGS
+L1557   ERRO [090d] [1/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -MMD -MF obj/src/node_js2c.embedded_data.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=6 (×2, last L8078)
+L1560   ERRO [168a] [4/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -MMD -MF obj/src/node_js2c.builtin_info.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=64 (×2, last L8197)
+L1564   ERRO [c3ec] [8/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang -Wl,-search_paths_first -mmacosx-version-min=13.5 -arch arm64 -L./ -stdlib=libc++ -o overlapped
+L1611   ERRO [cce2] ld: warning: dylib (/nix/store/zkdragx96sd6r3m82001snqmwmd0dp5g-abseil-cpp-20260107.1/lib/libabsl_random_seed_gen_exception.dylib) was built for newer macOS version (14.0) than bei (×14, last L9028)
+L1625   ERRO [cdd7] ld: warning: dylib (/nix/store/zkdragx96sd6r3m82001snqmwmd0dp5g-abseil-cpp-20260107.1/lib/libabsl_strerror.dylib) was built for newer macOS version (14.0) than being linked (13.5) (×14, last L9043)
+L1671   ERRO [c5e3] [9/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -Wl,-search_paths_first -mmacosx-version-min=13.5 -arch arm64 -L./ -stdlib=libc++ -o node_js2
+L1779   ERRO [b520] [11/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang -Wl,-search_paths_first -mmacosx-version-min=13.5 -arch arm64 -L./ -stdlib=libc++ -o nop obj/t
+L1887   ERRO [6e58] [13/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -MMD -MF obj/src/api/node_base.async_resource.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_
+L1888   ERRO [53ff] [14/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -MMD -MF obj/src/api/node_base.callback.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_BITS=6
+L1889   ERRO [f7c4] [15/221] /nix/store/g2gqhibqv6w58iz9287l1yr2zbjigs0y-sccache-0.17.0/bin/sccache clang++ -MMD -MF obj/src/api/node_base.embed_helpers.o.d -D_GLIBCXX_USE_CXX11_ABI=1 -D_FILE_OFFSET_B
+
+== END OF OUTPUT
+L27779    [b42f] [       OK ] LRUCache.Eviction (0 ms)
+L27780    [8493] [ RUN      ] LRUCache.GetMovesToFront
+L27781    [29f7] [       OK ] LRUCache.GetMovesToFront (0 ms)
+L27782    [95b4] [ RUN      ] LRUCache.Erase
+L27783    [4134] [       OK ] LRUCache.Erase (0 ms)
+L27784    [7d76] [ RUN      ] LRUCache.Exists
+L27785    [a74f] [       OK ] LRUCache.Exists (0 ms)
+L27786    [ecdc] [ RUN      ] LRUCache.Size
+L27787    [15ad] [       OK ] LRUCache.Size (0 ms)
+L27788    [9a5d] [ RUN      ] LRUCache.ZeroSizeCache
+L27789    [2723] [       OK ] LRUCache.ZeroSizeCache (0 ms)
+L27790    [119b] [ RUN      ] LRUCache.OneSizeCache
+L27791    [895a] [       OK ] LRUCache.OneSizeCache (0 ms)
+L27792    [51ec] [ RUN      ] LRUCache.ComplexTypes
+L27793    [c2a2] [       OK ] LRUCache.ComplexTypes (0 ms)
+
+== MOST FREQUENT OTHER LINES
+×891     [6800] [11:00:25.150] DEBUG (caching): Collected chunk 1 {"itemsInChunk":10}
+×711     [189a] [11:01:06.286] DEBUG (parallel): Chunk 1/78 completed {"generator":"html"}
+×711     [6ac3] [11:01:06.287] DEBUG (html): Wrote 10/775 pages
+×702     [ddc0] [11:00:35.440] DEBUG (parallel): Chunk 1/78 completed {"generator":"jsx-ast"}
+×568     [8661] copying path '/nix/store/hag5gkldnm761spgxkc0k36ac9mg5720-nbytes-0.1.4' from 'https://cache.nixos.org'...
+×135     [2c3c] copying path '/nix/store/mghq9xq8fz6khk23360n1fwjxzfw6fmx-gtest-1.18.0-dev' from 'https://cache.nixos.org'...
+×95      [a04c] copying path '/nix/store/dw4jj87r8qcdmw8njmc76q9y4w07p57a-source' from 'https://cache.nixos.org'...
+×86      [b776] { [122 bytes data]
+×72      [ebb1] [ RUN      ] LinkedBindingTest.PermissionModelDeniesLinkedBindingTest
+×72      [b8af] [       OK ] LinkedBindingTest.PermissionModelDeniesLinkedBindingTest (29 ms)
+
+(not shown: 2393 groups, 12,430 lines - including 807 error groups, 1,952 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

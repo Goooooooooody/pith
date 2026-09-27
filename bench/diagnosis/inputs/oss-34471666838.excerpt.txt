@@ -1,0 +1,205 @@
+Check spelling of all files with codespell	UNKNOWN STEP	﻿2026-09-16T12:43:47.1907197Z Current runner version: '2.337.0'
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1926421Z ##[group]Runner Image Provisioner
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1927112Z Hosted Compute Agent
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1927526Z Version: 20260828.587
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1928016Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1928768Z Build Date: 2026-08-28T16:44:25Z
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1929269Z Worker ID: {014f2329-547f-4e13-9153-aa928305b9eb}
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1929790Z Azure Region: centralus
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1930194Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1931333Z ##[group]Operating System
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1931785Z Ubuntu
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1932172Z 24.04.5
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1932511Z LTS
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1932889Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1933261Z ##[group]Runner Image
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1933667Z Image: ubuntu-24.04
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1934079Z Version: 20260907.300.1
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1934980Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1936015Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1936659Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1937456Z ##[group]GITHUB_TOKEN Permissions
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1939541Z Contents: read
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1939939Z Metadata: read
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1940303Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1941893Z Secret source: None
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1942502Z Cache mode: write
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.1943218Z Prepare workflow directory
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.2184143Z Prepare all required actions
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.2233064Z Getting action download info
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:47.4670562Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:48.1766340Z Download action repository 'codespell-project/actions-codespell@v2' (SHA:8f01853be192eb0f849a5c7d721450e7a467c579)
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:48.5170233Z Complete job name: Check spelling of all files with codespell
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:48.5535752Z ##[group]Build container for action use: '/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile'.
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:48.7916058Z ##[command]/usr/bin/docker build -t c6f659:c1d373aaa83843bcad4cc88750d71982 -f "/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile" "/home/runner/work/_actions/codespell-project/actions-codespell/v2"
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1565412Z #0 building with "default" instance using docker driver
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1566109Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1566291Z #1 [internal] load build definition from Dockerfile
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1566712Z #1 transferring dockerfile: 325B done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1567138Z #1 DONE 0.0s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1567265Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.1567513Z #2 [internal] load metadata for docker.io/library/python:3.13-alpine
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.4495740Z #2 ...
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.4496191Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.4496480Z #3 [auth] library/python:pull token for registry-1.docker.io
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.4497788Z #3 DONE 0.0s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.5996510Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:53.5997577Z #2 [internal] load metadata for docker.io/library/python:3.13-alpine
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.6823439Z #2 DONE 1.7s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.8333789Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.8334646Z #4 [internal] load .dockerignore
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.8701313Z #4 transferring context:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9914703Z #4 transferring context: 2B done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9915465Z #4 DONE 0.2s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9915641Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9915983Z #5 [1/3] FROM docker.io/library/python:3.13-alpine@sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9916703Z #5 resolve docker.io/library/python:3.13-alpine@sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9917396Z #5 sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a 10.30kB / 10.30kB done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9917992Z #5 sha256:46ee549c88617e9bc8acb843a326f1a5c0fa5608d7f9703509efe6d53b55f318 1.74kB / 1.74kB done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:54.9919015Z #5 sha256:fcb753fcfaff996c017312d4db8963910277948b5ec88dbcceb17e2fc347160d 5.28kB / 5.28kB done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.2474864Z #5 ...
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.2475342Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.2500590Z #6 [internal] load build context
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.2515772Z #6 transferring context: 7.97kB done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.2517738Z #6 DONE 0.4s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.3911185Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.3912049Z #5 [1/3] FROM docker.io/library/python:3.13-alpine@sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.3912863Z #5 sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 0B / 408.09kB 0.5s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.3913412Z #5 sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3 0B / 15.21MB 0.5s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.3914144Z #5 sha256:b04626f2ffdb09c6430b484993db7c8cbecc0f67a3fce6265bb08fda7bffef2a 247B / 247B 0.5s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.5906013Z #5 sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 408.09kB / 408.09kB 0.7s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.5906716Z #5 sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3 15.21MB / 15.21MB 0.7s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.9300844Z #5 sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 408.09kB / 408.09kB 0.7s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.9301921Z #5 sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3 15.21MB / 15.21MB 0.9s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:55.9302726Z #5 extracting sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 0.2s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:56.6155674Z #5 extracting sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 0.7s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:57.3173620Z #5 extracting sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:58.2833421Z #5 extracting sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3 0.8s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:58.6472527Z #5 extracting sha256:b04626f2ffdb09c6430b484993db7c8cbecc0f67a3fce6265bb08fda7bffef2a
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:58.7982266Z #5 extracting sha256:b04626f2ffdb09c6430b484993db7c8cbecc0f67a3fce6265bb08fda7bffef2a done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:58.8595795Z #5 DONE 4.0s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:59.0113938Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:59.0114632Z #7 [2/3] COPY LICENSE         README.md         entrypoint.sh         codespell-problem-matcher/codespell-matcher.json         requirements.txt         /code/
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:59.2062943Z #7 DONE 0.3s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:59.3583843Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:43:59.3584676Z #8 [3/3] RUN pip install --no-cache-dir -r /code/requirements.txt
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.0950550Z #8 4.887 Collecting codespell>=2.2.4 (from codespell[toml]>=2.2.4->-r /code/requirements.txt (line 1))
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.3127153Z #8 4.937   Downloading codespell-2.4.3-py3-none-any.whl.metadata (16 kB)
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.3127623Z #8 4.954 Downloading codespell-2.4.3-py3-none-any.whl (340 kB)
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.4133405Z #8 5.205 Installing collected packages: codespell
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.5167300Z #8 5.309 Successfully installed codespell-2.4.3
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.6677532Z #8 5.309 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:04.9229991Z #8 DONE 5.7s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.0894000Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.0894940Z #9 exporting to image
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.0895289Z #9 exporting layers
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.2830826Z #9 exporting layers 0.3s done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.4409215Z #9 writing image sha256:9dc76208200c490953d7fb9f7c910127c5d7449cc2e28fba65f3964a21122a26 done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.4410776Z #9 naming to docker.io/library/c6f659:c1d373aaa83843bcad4cc88750d71982 done
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.4411110Z #9 DONE 0.4s
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5074499Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5316884Z ##[group]Run actions/checkout@v7
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5317315Z with:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5317580Z   repository: rubocop/rubocop
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5319921Z   token: ***
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5320172Z   ssh-strict: true
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5320402Z   ssh-user: git
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5320639Z   persist-credentials: true
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5320897Z   clean: true
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5321172Z   sparse-checkout-cone-mode: true
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5321450Z   fetch-depth: 1
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5321669Z   fetch-tags: false
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.5321908Z   show-progress: true
+Check spelling of all files with codespe
+
+... [7459 characters truncated] ...
+
+e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.9627262Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.9644199Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.9661609Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.9662105Z ##[group]Fetching the repository
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:05.9667201Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +35d57df59a55c9cae48c6301f193873247065b3c:refs/remotes/pull/15667/merge
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3468906Z From https://github.com/rubocop/rubocop
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3469539Z  * [new ref]         35d57df59a55c9cae48c6301f193873247065b3c -> pull/15667/merge
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3473414Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3473883Z ##[group]Determining the checkout info
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3474340Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3479940Z [command]/usr/bin/git sparse-checkout disable
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3536393Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3537783Z ##[group]Checking out the ref
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.3540286Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/15667/merge
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4322566Z Note: switching to 'refs/remotes/pull/15667/merge'.
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4323445Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4323871Z You are in 'detached HEAD' state. You can look around, make experimental
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4324838Z changes and commit them, and you can discard any commits you make in this
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4325526Z state without impacting any branches by switching back to a branch.
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4326053Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4326526Z If you want to create a new branch to retain commits you create, you may
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4327113Z do so (now or later) by using -c with the switch command. Example:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4327386Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4327548Z   git switch -c <new-branch-name>
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4327817Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4327954Z Or undo this operation with:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4328201Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4328327Z   git switch -
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4328883Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4329206Z Turn off this advice by setting config variable advice.detachedHead to false
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4329482Z 
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4329831Z HEAD is now at 35d57df Merge 9be7fafea854e1efa45cafc99ae8cab2d14a4a8d into 321bd65b90f1b947017c5649f83e5aa8c35d947d
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4331163Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4370767Z [command]/usr/bin/git log -1 --format=%H
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4390125Z 35d57df59a55c9cae48c6301f193873247065b3c
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4554066Z ##[group]Run codespell-project/actions-codespell@v2
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4554402Z with:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4554632Z   skip: ./.git
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4554847Z ##[endgroup]
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:07.4635599Z ##[command]/usr/bin/docker run --name c6f659c1d373aaa83843bcad4cc88750d71982_c1ceb7 --label c6f659 --workdir /github/workspace --rm -e "INPUT_BUILTIN" -e "INPUT_CHECK_FILENAMES" -e "INPUT_CHECK_HIDDEN" -e "INPUT_CONFIG" -e "INPUT_EXCLUDE_FILE" -e "INPUT_IGNORE_WORDS_FILE" -e "INPUT_IGNORE_WORDS_LIST" -e "INPUT_URI_IGNORE_WORDS_LIST" -e "INPUT_PATH" -e "INPUT_SKIP" -e "INPUT_ONLY_WARN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "GITHUB_ARTIFACTS" -e "GITHUB_ARTIFACTS_LIST" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_CACHE_MODE" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/rubocop/rubocop":"/github/workspace" c6f659:c1d373aaa83843bcad4cc88750d71982
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4009704Z Running codespell on '' with the following options...
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4010139Z Builtin dictionaries ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4010518Z Check filenames? ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4010797Z Check hidden? ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4011037Z Config ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4011278Z Exclude file ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4011553Z Ignore words file ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4011824Z Ignore words list ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4012088Z Ignore URI words list ''
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4012349Z Skipping './.git'
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:08.4012640Z Resulting CLI options  --skip ./.git
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:09.7222587Z 2
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:09.7277173Z ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:360: currrent ==> current
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:09.7284144Z ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:361: currrent ==> current
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:09.7325313Z Codespell found one or more problems
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:09.9574593Z Post job cleanup.
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0215004Z [command]/usr/bin/git version
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0242997Z git version 2.55.0
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0265191Z Temporarily overriding HOME='/home/runner/work/_temp/a7d989ba-2f7c-4d13-bf78-cbfc7f792be2' before making global git config changes
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0266262Z Adding repository directory to the temporary git global config as a safe directory
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0269126Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0291470Z Removing SSH command configuration
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0295890Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0322122Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0473309Z Removing HTTP extra header
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0477287Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0499262Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0639544Z Removing includeIf entries pointing to credentials config files
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.0643375Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1063299Z includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1063751Z includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1064258Z includeif.gitdir:/github/workspace/.git.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1064700Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1071012Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1089829Z /home/runner/work/_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1097268Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rubocop/rubocop/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-019952c8\-eea0\-494e\-9776\-41d04508707b\.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1125139Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1144891Z /home/runner/work/_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1151989Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rubocop/rubocop/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-019952c8\-eea0\-494e\-9776\-41d04508707b\.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1176491Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1192554Z /github/runner_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1196911Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-019952c8\-eea0\-494e\-9776\-41d04508707b\.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1218744Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1234720Z /github/runner_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1239315Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-019952c8\-eea0\-494e\-9776\-41d04508707b\.config
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1261700Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1410295Z Removing credentials config '/home/runner/work/_temp/git-credentials-019952c8-eea0-494e-9776-41d04508707b.config'
+Check spelling of all files with codespell	UNKNOWN STEP	2026-09-16T12:44:10.1523308Z Cleaning up orphan processes

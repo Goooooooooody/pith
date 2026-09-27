@@ -1,0 +1,152 @@
+pith · <log> · 1,919 lines → 1231 groups · ~69.8k → ~2.3k tokens (96.7% smaller)
+
+jobs: Test io_uring on Linux 4.19.325 / build
+levels: fatal 2 · error 14 · warn 15 · notable 22 · info 1,319
+raw: <removed for evaluation>
+jev (jev-latest): hid 940/1000 groups as confident noise (231 rarest groups not scored) · 1 requests · 3,037 tokens · $0.0001 · 0.7s
+most likely root cause: [41ba] rc=0.83 (confidence 0.81, cause visible p=0.29)
+
+== LIKELY ROOT CAUSE (jev rc=0.83)
+[41ba] FATAL ×2  act=0.89 val=3.2/4 rc=0.83  L1698 … L1790  job: Test io_uring on Linux 4.19.325 / build
+  thread 'cancel_op_future' (2413) panicked at tokio/tests/fs_uring_read.rs:148:13:
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Test io_uring on Linux 4.19.325 / build
+L798      [c522] shell: /usr/bin/bash -e {0} (×3, last L1151)
+L799      [4293] env: (×6, last L1225)
+          KERNEL_VERSION: 4.19.325
+L802      [81f4] info: downloading component rust-std
+          Updating crates.io index
+          Locking 185 packages to latest compatible versions
+          Adding criterion v0.5.1 (available: v0.8.2)
+          (+6 lines)
+   …
+L812    ✱ [2dde] Downloaded quick-error v1.2.3
+L813      [bc21] Downloaded tracing-attributes v0.1.31
+L814      [b68e] Downloaded autocfg v1.5.1
+L815      [02df] Downloaded gimli v0.32.3
+   …
+L900      [35df] Downloaded libc v0.2.189
+L901      [6a71] Downloaded linux-raw-sys v0.12.1
+          Compiling proc-macro2 v1.0.107
+          Compiling libc v0.2.189
+          Compiling quote v1.0.47
+          (+47 lines)
+   …
+L952      [b8d6] warning: unused import: `self::read_uring::read_uring`
+          --> tokio/src/fs/mod.rs:308:20
+          |
+          308 |     pub(crate) use self::read_uring::read_uring;
+          (+8 lines)
+   …
+L965    ✱ [476d] Compiling quick-error v1.2.3
+L966      [2387] Compiling anstyle v1.0.14
+L967      [812b] Compiling gimli v0.32.3
+L968      [4b36] Compiling bit-vec v0.8.0
+   …
+L1171     [c384] ./bin/tests/fs_uring_runtime_shutdown-7480297043cba25f
+L1172     [b5a0] ./bin/tests/fs_remove_dir_all-7c53d4e37d3fb6f1
+L1173     [c97c] ./bin/tests/fs_uring_file_read-ea8f22d588a61ed2
+L1174   ✱ [5aa3] ./bin/tests/fs_file_join_error-4bd4cf4760f9aa26
+L1175     [7860] ./bin/tests/fs_try_exists-0f1f07a41694a01a
+L1176     [f4bb] ./bin/tests/fs_symlink_dir_windows-07af4880ded075bf
+L1177     [bf0b] ./bin/tests/fs_uring_statx-04411416d582b3c5
+   …
+L1196     [4371] ▶ Run set -euo pipefail
+   …
+L1211     [de9d] fi (×3, last L1223)
+L1213     [eacd] if [ "$tee_status" -ne 0 ]; then
+          echo "tee exited with status $tee_status"
+          exit "$tee_status"
+L1218   ✱ [b868] if grep -q "test result: FAILED" qemu-output.log; then
+          echo "tests reported failures"
+          exit 1
+L1221     [6da2] else
+          echo "all tests passed"
+L1224     [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+   …
+L1369     [f9c8] [    1.501300] ACPI: Enabled 2 GPEs in block 00 to 0F
+L1370     [5732] [    1.540888] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+L1371     [245a] [    1.541675] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+L1372   ✱ [66bf] [    1.542588] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+L1373   ✱ [9c4d] [    1.543446] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+L1374     [7989] [    1.546076] PCI host bridge to bus 0000:00
+L1375     [bd5a] [    1.546373] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+L1376     [bc59] [    1.546668] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+   …
+L1510     [a669] [   10.351269] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+L1511     [7bea] [   10.363949] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+L1512     [d7a0] [   10.365131] cfg80211: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+L1513   ✱ [efae] [   10.366303] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+L1514   ✱ [1dbd] [   10.366843] cfg80211: failed to load regulatory.db
+L1515     [d27f] [   10.367911] ALSA device list:
+L1516     [ea41] [   10.368011]   No soundcards found.
+L1517     [1c96] [   10.483347] Freeing unused kernel image memory: 1256K (×3, last L1520)
+   …
+L1683     [d872] test test_file_read_with_smaller_buf ... ok
+L1685     [dd23] test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.25s (×18, last L1685)
+L1688     [aa28] running 4 tests (×11, last L1688)
+L1689   ✱ [0ccb] test cancel_op_future ... FAILED
+L1690     [92bc] test read_many_files ... ok
+L1691     [f72d] test read_small_large_files ... ok
+L1692     [49a7] test shutdown_runtime_while_performing_io_uring_ops ... ok (×9, last L1692)
+L1694   ✱ [e85e] failures: (×2, last L1858)
+L1696     [6239] ---- cancel_op_future stdout ----
+L1698   ✱ [41ba] thread 'cancel_op_future' (2413) panicked at tokio/tests/fs_uring_read.rs:148:13: (×2, last L1790)
+L1699     [82215] ready; value = Ok([20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 2
+L1700     [191b] stack backtrace: (×2, last L1792)
+          0: __rustc::rust_begin_unwind
+          at ./rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library/std/src/panicking.rs:689:5
+          1: core::panicking::panic_fmt
+          (+84 lines)
+   …
+L1788     [69a4] note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace. (×2, last L1855)
+   …
+L1874     [add4] [   68.847972]  entry_SYSCALL_64_after_hwframe+0x5c/0xc1
+L1875     [6b17] [   68.848450] RIP: 0033:0x4474cd
+L1876     [018b] [   68.848831] Code: 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 00 f3 0f 1e fa 48 c7 c6 e0 ff ff ff ba e7 00 00 00 eb 07 66 0f 1f 44 00 00 f4 89 d0 0f 05 <48> 3d 00 f0 ff ff 76 f3 f7 d8 64 89 06 eb ec 0f 1f 40 00 f3 0f 1e
+L1877     [acf4] [   68.849264] RSP: 002b:00007ffff9420a38 EFLAGS: 00000202 ORIG_RAX: 00000000000000e7
+L1878     [a06e] [   68.849513] RAX: ffffffffffffffda RBX: 0000000000000004 RCX: 00000000004474cd
+L1879     [632a] [   68.849734] RDX: 00000000000000e7 RSI: ffffffffffffffe0 RDI: 0000000000000065
+L1880     [175c] [   68.849948] RBP: 00007ffff9420b30 R08: 00007ffff9420b40 R09: 00007ffff9420c60
+L1881     [013f] [   68.850152] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000003
+L1882     [e042] [   68.850356] R13: 00007ffff9420ce8 R14: 00000000005fc848 R15: 0000000000000000
+L1883     [9cf0] [   68.851189] Kernel Offset: 0x26800000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+L1884     [b695] [   68.851734] Rebooting in 1 seconds..
+L1885   ✱ [badd] tests reported failures
+L1886   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L1861   ERRO [565e] test result: FAILED. 3 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 25.36s
+L1197   NOTA [c99a] set -euo pipefail
+
+== END OF OUTPUT
+L1678     [8919] test test_file_read_seek_back ... ok
+L1679     [5f1e] test test_file_read_then_write ... ok
+L1680     [8097] test test_file_read_to_end ... ok
+L1681     [bd7b] test test_file_read_to_string ... ok
+L1682     [8edf] test test_file_read_with_bigger_buf ... ok
+L1790     [41ba] thread 'cancel_op_future' (2413) panicked at tokio/tests/fs_uring_read.rs:159:17:
+L1791     [c1ff] called `Option::unwrap()` on a `None` value
+L1866     [b029] [   68.845704] Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
+L1867     [d5fb] [   68.846136] Call Trace:
+L1868     [6000] [   68.847239]  dump_stack+0x50/0x63
+L1869     [a435] [   68.847384]  panic+0xee/0x23a
+L1870     [f81c] [   68.847488]  do_exit.cold+0xa6/0xb2
+L1871     [8220] [   68.847614]  do_group_exit+0x2e/0xa0
+L1872     [8246] [   68.847724]  __x64_sys_exit_group+0xf/0x10
+L1873     [a0e7] [   68.847862]  do_syscall_64+0x43/0x100
+
+== MOST FREQUENT OTHER LINES
+×3       [50c6] set -e
+×2       [8d65] with:
+×2       [8399] Removing SSH command configuration
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [66c6] Removing HTTP extra header
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [96f6] Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+(not shown: 211 groups, 213 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

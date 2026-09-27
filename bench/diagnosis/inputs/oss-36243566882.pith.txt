@@ -1,0 +1,123 @@
+pith · <log> · 4,347 lines → 1545 groups · ~215.1k → ~4.0k tokens (98.1% smaller)
+
+jobs: CI image checks / Static checks
+levels: error 99 · warn 51 · notable 27 · info 863 · debug 2,117
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: CI image checks / Static checks
+L683      [4293] env: (×40, last L2202)
+          PYTHON_MAJOR_MINOR_VERSION: 3.10
+          UPGRADE_TO_NEWER_DEPENDENCIES: false
+          GITHUB_TOKEN: ***
+          (+6 lines)
+   …
+L695      [2a3d] ▶ Run function check_dep() { (×2, last L1040)
+L696      [6b10] function check_dep() { (×2, last L1041)
+          local cmd=$1
+L698    ✱ [29e4] $(type -P $cmd > /dev/null 2>&1) || { echo "::error ::$cmd is required for this action"; missing_dep=true; } (×2, last L1043)
+          }
+L701      [58ab] check_dep python3 (×2, last L1046)
+L702      [8895] check_dep gh (×2, last L1047)
+L703      [92b2] check_dep jq (×2, last L1048)
+   …
+L1398     [67cc] 2026-09-26T13:39:20.035768Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-airflowctl-command-coverage (×66, last L2530)
+L1399     [49a9] 2026-09-26T13:39:20.035799Z TRACE The `language_version` constraint is replaced by `requires_python` from PEP 723 metadata (×200, last L2525)
+L1400     [7643] 2026-09-26T13:39:20.035807Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=insert-license (×26, last L2394)
+L1401   ✱ [8d1c] 2026-09-26T13:39:20.035844Z TRACE Failed to extract metadata from entry for hook `insert-license`: failed to read from file `/home/runner/.cache/prek/repos/c5108aaecd579bfe/insert_license`: No such file or directory (os error 2) (×26, last L2395)
+L1402     [276f] 2026-09-26T13:39:20.035863Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=update-chart-dependencies (×2, last L2305)
+L1404     [ee5a] 2026-09-26T13:39:20.035905Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=pretty-format-json (×2, last L2307)
+L1405   ✱ [c11a] 2026-09-26T13:39:20.035931Z TRACE Failed to extract metadata from entry for hook `pretty-format-json`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/pretty-format-json`: No such file or directory (os error 2) (×2, last L2308)
+L1406     [c9a3] 2026-09-26T13:39:20.035937Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=lint-helm-chart (×2, last L2309)
+L1408     [855e] 2026-09-26T13:39:20.035973Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=validate-chart-annotations (×2, last L2311)
+   …
+L1503     [95ed] 2026-09-26T13:39:20.037815Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=blacken-docs (×2, last L2406)
+L1504     [f7df] 2026-09-26T13:39:20.037818Z TRACE Skipping reading PEP 723 metadata for hook `blacken-docs` because it already has `additional_dependencies` (×2, last L2407)
+L1505     [066b] 2026-09-26T13:39:20.037821Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-merge-conflict (×2, last L2408)
+L1506   ✱ [cecf] 2026-09-26T13:39:20.037848Z TRACE Failed to extract metadata from entry for hook `check-merge-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-merge-conflict`: No such file or directory (os error 2) (×2, last L2409)
+L1507     [60c4] 2026-09-26T13:39:20.037853Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=debug-statements (×2, last L2410)
+L1508   ✱ [a641] 2026-09-26T13:39:20.037874Z TRACE Failed to extract metadata from entry for hook `debug-statements`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/debug-statement-hook`: No such file or directory (os error 2) (×2, last L2411)
+L1509     [4ef9] 2026-09-26T13:39:20.037882Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-builtin-literals (×2, last L2412)
+L1510   ✱ [677d] 2026-09-26T13:39:20.037905Z TRACE Failed to extract metadata from entry for hook `check-builtin-literals`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-builtin-literals`: No such file or directory (os error 2) (×2, last L2413)
+L1511     [f1da] 2026-09-26T13:39:20.037910Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=detect-private-key (×2, last L2414)
+L1512   ✱ [0268] 2026-09-26T13:39:20.037933Z TRACE Failed to extract metadata from entry for hook `detect-private-key`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/detect-private-key`: No such file or directory (os error 2) (×2, last L2415)
+L1513     [c404] 2026-09-26T13:39:20.037939Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=end-of-file-fixer (×2, last L2416)
+L1514   ✱ [7a5c] 2026-09-26T13:39:20.037961Z TRACE Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end-of-file-fixer`: No such file or directory (os error 2) (×2, last L2417)
+L1515     [e90e] 2026-09-26T13:39:20.037966Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=mixed-line-ending (×2, last L2418)
+L1516   ✱ [5ebf] 2026-09-26T13:39:20.037988Z TRACE Failed to extract metadata from entry for hook `mixed-line-ending`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/mixed-line-ending`: No such file or directory (os error 2) (×2, last L2419)
+L1517     [fec9] 2026-09-26T13:39:20.037993Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-executables-have-shebangs (×2, last L2420)
+L1518   ✱ [107c] 2026-09-26T13:39:20.038015Z TRACE Failed to extract metadata from entry for hook `check-executables-have-shebangs`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-executables-have-shebangs`: No such file or directory (os error 2) (×2, last L2421)
+L1519     [c3b3] 2026-09-26T13:39:20.038021Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-xml (×2, last L2422)
+L1520   ✱ [ea7d] 2026-09-26T13:39:20.038042Z TRACE Failed to extract metadata from entry for hook `check-xml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-xml`: No such file or directory (os error 2) (×2, last L2423)
+L1521     [9c95] 2026-09-26T13:39:20.038048Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=trailing-whitespace (×2, last L2424)
+L1522   ✱ [146a] 2026-09-26T13:39:20.038071Z TRACE Failed to extract metadata from entry for hook `trailing-whitespace`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/trailing-whitespace-fixer`: No such file or directory (os error 2) (×2, last L2425)
+L1523     [0473] 2026-09-26T13:39:20.038080Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=yamllint (×2, last L2426)
+L1524   ✱ [b78a] 2026-09-26T13:39:20.038106Z TRACE Failed to extract metadata from entry for hook `yamllint`: failed to read from file `/home/runner/.cache/prek/repos/1bcd628e7a453ccb/yamllint`: Is a directory (os error 21) (×2, last L2427)
+L1525     [3dad] 2026-09-26T13:39:20.038112Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=flynt (×2, last L2428)
+L1526   ✱ [1129] 2026-09-26T13:39:20.038137Z TRACE Failed to extract metadata from entry for hook `flynt`: failed to read from file `/home/runner/.cache/prek/repos/3df42751b3211eab/flynt`: No such file or directory (os error 2) (×2, last L2429)
+L1527     [cff4] 2026-09-26T13:39:20.038144Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=codespell (×2, last L2430)
+L1528   ✱ [956f] 2026-09-26T13:39:20.038170Z TRACE Failed to extract metadata from entry for hook `codespell`: failed to read from file `/home/runner/.cache/prek/repos/06c49daf87679929/bash`: No such file or directory (os error 2) (×2, last L2431)
+L1529     [eb4e] 2026-09-26T13:39:20.038177Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=zizmor (×2, last L2432)
+L1530   ✱ [372e] 2026-09-26T13:39:20.038206Z TRACE Failed to extract metadata from entry for hook `zizmor`: failed to read from file `/home/runner/.cache/prek/repos/0107f03f3ef7610f/zizmor`: No such file or directory (os error 2) (×2, last L2433)
+   …
+L1621     [58be] 2026-09-26T13:39:20.040038Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=check-execution-api-versions (×2, last L2524)
+L1623     [9e5c] 2026-09-26T13:39:20.040076Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=generate-tasksdk-datamodels (×2, last L2526)
+L1624   ✱ [ed47] 2026-09-26T13:39:20.040108Z TRACE Failed to extract metadata from entry for hook `generate-tasksdk-datamodels`: failed to read from file `/home/runner/work/airflow/airflow/uv`: No such file or directory (os error 2) (×2, last L2527)
+L1625     [b86f] 2026-09-26T13:39:20.040116Z TRACE Skipping pyproject.toml metadata extraction because language_version is already configured hook=generate-airflowctl-datamodels (×2, last L2528)
+L1626   ✱ [c87d] 2026-09-26T13:39:20.040141Z TRACE Failed to extract metadata from entry for hook `generate-airflowctl-datamodels`: failed to read from file `/home/runner/work/airflow/airflow/bash`: No such file or directory (os error 2) (×2, last L2529)
+   (+2 more lines here: `pith show <id>` or grep the raw file)
+   …
+L1799     [a86d] ✓ providers/common/ai
+          Compile / format / lint HITL Review UI..................................................................Passed
+          Compile Common AI provider assets.......................................................................Passed
+L1802     [d699] ✓ providers/common/compat
+          Check common.compat sdk TYPE_CHECKING matches runtime maps..............................................Passed
+L1804   ✱ [4a56] × providers/edge3
+          Generate the FastAPI API spec for Edge..................................................................Passed
+          Compile / format / lint edge UI.........................................................................Passed
+L1807   ✱ [c19e] Update migration ref doc for Edge3......................................................................Failed
+L1808     [2e37] - hook id: update-migration-references-edge3
+L1809     [2343] - exit code: 1
+          Running command: breeze shell --python 3.10 --backend sqlite --executor LocalExecutor --quiet --restart --skip-image-upgrade-check --tty disabled --skip-environment-initialization --project-name prek 
+          With environment:
+   …
+L1980     [4249] docker inspect ghcr.io/apache/airflow/main/ci/python3.10
+L1982     [631d] Cleaning .pyc and __pycache__
+L1983     [c960] Traceback (most recent call last):
+          File "/home/runner/.local/bin/breeze", line 10, in <module>
+          sys.exit(main())
+          File "/home/runner/.local/share/uv/tools/apache-airflow-breeze/lib/python3.10/site-packages/rich_click/rich_command.py", line 401, in __call__
+          (+21 lines)
+   …
+L2198   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L1676   ERRO [bfb2] ▶ Run type -P python3 > /dev/null 2>&1 || { echo "::error ::python3 is required for this action"; exit 1; }
+L1677   ERRO [711c] type -P python3 > /dev/null 2>&1 || { echo "::error ::python3 is required for this action"; exit 1; }
+L1779   ERRO [2b0c] ▶ Run prek --all-files --show-diff-on-failure --color always
+L1780   ERRO [3ee9] prek --all-files --show-diff-on-failure --color always
+L2008   ERRO [5a7d] OSError: [Errno 39] Directory not empty: '/home/runner/work/airflow/airflow/dev/breeze/src/airflow_breeze/commands/__pycache__'
+L2734   ERRO [8437] 2026-09-26T13:40:53.013400Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `insert-license`: failed to read from file `/home/r (×12, last L3326)
+L3340   ERRO [6510] 2026-09-26T13:44:56.501952Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-merge-conflict`: failed to read from file `/
+L3342   ERRO [0e7c] 2026-09-26T13:44:56.501990Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `debug-statements`: failed to read from file `/home
+L3344   ERRO [74b9] 2026-09-26T13:44:56.502027Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-builtin-literals`: failed to read from file 
+L3346   ERRO [6dc8] 2026-09-26T13:44:56.502066Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `detect-private-key`: failed to read from file `/ho
+L3348   ERRO [649f6] 2026-09-26T13:44:56.502104Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/hom
+L3350   ERRO [e7c1] 2026-09-26T13:44:56.502145Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `mixed-line-ending`: failed to read from file `/hom
+L118    WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L66     NOTA [d543] Unable to find image 'bash:latest' locally
+
+== END OF OUTPUT
+L4306     [d447] 2026-09-26T13:47:50.306903Z  INFO run{hook_id=generate-tasksdk-datamodels language=python}: close time.busy=1.51ms time.idle=13.3s
+L4309     [fc36] 2026-09-26T13:47:50.332009Z DEBUG Running priority group with priority 103: ["generate-airflowctl-datamodels"]
+L4310     [9de3] 2026-09-26T13:47:50.332056Z TRACE Files for hook `generate-airflowctl-datamodels` after filtering matched=true filenames=0
+L4311     [8fce] 2026-09-26T13:47:50.332187Z TRACE run{hook_id=generate-airflowctl-datamodels language=python}: Running generate-airflowctl-datamodels total_files=0 concurrency=1
+L4312     [8100] 2026-09-26T13:47:50.332294Z TRACE run{hook_id=generate-airflowctl-datamodels language=python}: Executing `cd /home/runner/work/airflow/airflow && /usr/bin/bash -c  uv run -p 3.12 --no-dev --no-progres
+L4314     [aa98] 2026-09-26T13:47:55.315668Z  INFO run{hook_id=generate-airflowctl-datamodels language=python}: close time.busy=736µs time.idle=4.98s
+L4317     [b522] 2026-09-26T13:47:55.340554Z DEBUG Running priority group with priority 104: ["check-contextmanager-class-decorators"]
+L4318     [253d] 2026-09-26T13:47:55.341519Z TRACE matching_filenames{hook="check-contextmanager-class-decorators"}: close time.busy=952µs time.idle=840ns
+L4319     [bef1] 2026-09-26T13:47:55.341545Z TRACE Files for hook `check-contextmanager-class-decorators` after filtering matched=true filenames=3537
+L4320     [6ef3] 2026-09-26T13:47:55.341618Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Found shebang: ["python3"]
+L4321     [e903] 2026-09-26T13:47:55.341681Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Running check-contextmanager-class-decorators total_files=3537 concurrency=4
+
+(not shown: 1459 groups, 2,534 lines - including 10 error groups, 13 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

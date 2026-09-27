@@ -1,0 +1,200 @@
+pith · <log> · 3,118 lines → 1333 groups · ~132.3k → ~4.1k tokens (96.9% smaller)
+
+jobs: test (linux, ubuntu-latest, 2, 3, (3/3))
+levels: error 457 · warn 19 · notable 85 · info 1,452
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: test (linux, ubuntu-latest, 2, 3, (3/3))
+L845      [1b72] ▶ Run deno task --cwd tests/node_compat/runner test --report
+   …
+L1105     [d8bd] ci hash took 331ms
+L1106     [286a] hashy: main/tag build, running tests (will commit on success)
+L1107     [be39] shard 3/3: running 1849/5482 tests
+          Running node_compat
+   …
+L1111   ✱ [a2e2] test node_compat::sequential::test-worker-eventlooputil.js ... fail (10001ms)
+L1112     [a829] test node_compat::sequential::test-pipe.js ... ok (209ms)
+L1113     [b97c] test node_compat::sequential::test-stream2-fs.js ... ok (91ms)
+L1114     [bd04] test node_compat::sequential::test-gc-http-client.js ... ok (1227ms)
+L1115   ✱ [abc9] test node_compat::sequential::test-module-loading.js ... fail (126ms)
+L1116   ✱ [4084] test node_compat::sequential::test-util-debug.js ... fail (319ms)
+L1117   ✱ [de5d] test node_compat::sequential::test-cpu-prof-worker-argv.js ... fail (977ms)
+L1118     [2a97] test node_compat::sequential::test-deprecation-flags.js ... fail (152ms)
+L1119     [49b6] test node_compat::sequential::test-cli-syntax-require.js ... ignored
+L1120     [f4c6] test node_compat::sequential::test-http2-large-file.js ... ok (254ms)
+L1121     [4336] test node_compat::sequential::test-http-server-keep-alive-timeout-slow-client-headers.js ... ok (1817ms) (×3, last L1147)
+L1122   ✱ [53b2] test node_compat::sequential::test-http2-max-session-memory.js ... fail (10001ms)
+L1123     [d2e2] test node_compat::sequential::test-debugger-custom-port.js ... ignored
+L1124   ✱ [f747] test node_compat::sequential::test-http2-timeout-large-write-file.js ... fail (153ms) (×2, last L1145)
+   (+31 more lines here: `pith show <id>` or grep the raw file)
+   …
+L1185     [23e1] test index.js modules ids and relative loading
+L1186     [6a91] test index.js in a folder with a trailing slash
+L1187     [9ed2] (node:4091) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/runner/work/deno/deno/tests/node_compat/runner/suite/test/fixtures/packages/missing-main/package.json' of 'doesnotexist.js'. Please either fix that or report it to the module author
+L1188   ✱ [e0bd] error: Uncaught (in promise) AssertionError: Expected values to be strictly deep-equal:
+L1189     [21fb] + actual - expected (×3, last L1292)
+          Comparison {
+L1192     [4985] +   code: 'MODULE_NOT_FOUND'
+L1193     [f8a9] -   code: 'ERR_INVALID_PACKAGE_CONFIG'
+          }
+   …
+L1206     [17f3] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/sequential/test-module-loading.js
+L1207     [2a09] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-module-loading.js
+L1209     [17db] ---- node_compat::sequential::test-util-debug.js ----
+L1211   ✱ [0860] error: Uncaught (in promise) AssertionError: The expression evaluated to a falsy value: (×2, last L1377)
+          assert(!c)
+          assert(!c);
+          ^
+          at ChildProcess.<anonymous> (file://…/test/sequential/test-util-debug.js:102:5)
+          at ChildProcess.<anonymous> (file://…/test/common/index.js:509:15)
+          at ChildProcess.emit (ext:deno_node/_events.mjs:4:461)
+          at maybeClose (ext:deno_node/internal/child_process.ts:1:4906)
+          at ext:deno_node/internal/child_process.ts:1:9865
+   …
+L1223     [10ea] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/sequential/test-util-debug.js
+L1224     [a160] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-util-debug.js
+L1226     [b8b0] ---- node_compat::sequential::test-cpu-prof-worker-argv.js ----
+L1228   ✱ [0407] error: Uncaught (in promise) AssertionError: Expected values to be strictly equal: (×4, last L1351)
+L1230     [7872] 0 !== 1 (×2, last L1353)
+          assert.strictEqual(profiles.length, 1);
+          ^
+          at Object.<anonymous> (file:///home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-cpu-prof-worker-argv.js:36:10)
+          (+6 lines)
+   …
+L1324     [c172] watch mode - inspect ... should start debugger on inner process => ext:deno_node/testing.ts:1:23191 (×2, last L1338)
+L1325   ✱ [f9d4] error: AssertionError: The expression evaluated to a falsy value:
+          assert.ok(new Set(pids).size >= restarts + 1)
+          assert.ok(new Set(pids).size >= restarts + 1);
+          ^
+          at NodeTestContext.<anonymous> (file://…/test/sequential/test-watch-mode-inspect.mjs:63:12)
+   …
+L1333     [6f0c] watch mode - inspect => ./test/sequential/test-watch-mode-inspect.mjs:41:1 (×2, last L1339)
+L1334   ✱ [7e2b] error: Promise resolution is still pending but the event loop has already resolved.
+          FAILURES
+   …
+L1341   ✱ [933b] FAILED | 0 passed | 1 failed (1 step) (372ms)
+L1344   ✱ [580f] error: Test failed
+L1346     [727f] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno test -A --quiet --unsafe-proto --no-check test/sequential/test-watch-mode-inspect.mjs
+L1347     [b0cc] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-watch-mode-inspect.mjs
+L1349     [ed24] ---- node_compat::sequential::test-runner-run-inspect.mjs ----
+   …
+L1360     [a967] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/sequential/test-runner-run-inspect.mjs
+L1361     [f448] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-runner-run-inspect.mjs
+L1363     [d057] ---- node_compat::sequential::test-cluster-net-listen-ipv6only-none.js ----
+L1365   ✱ [f73d] error: Uncaught Error: listen EADDRINUSE: address already in use 0.0.0.0:12346
+          at Server._setupListenHandle [as _listen2] (ext:deno_node/net.ts:1:29118)
+          at _listenInCluster (ext:deno_node/net.ts:1:25828)
+          at doListen (ext:deno_node/net.ts:1:26410)
+          at processTicksAndRejections (ext:core/01_core.js:381:17)
+          at drainTicks (ext:core/01_core.js:432:5)
+   …
+L1372     [6498] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/sequential/test-cluster-net-listen-ipv6only-none.js
+L1373     [88a1] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-cluster-net-listen-ipv6only-none.js
+L1375     [450a] ---- node_compat::sequential::test-diagnostic-dir-cpu-prof.js ----
+L1377   ✱ [0860] error: Uncaught (in promise) AssertionError: The expression evaluated to a falsy value:
+          assert(fs.existsSync(dir))
+          assert(fs.existsSync(dir));
+          ^
+          at Object.<anonymous> (file://…/test/sequential/test-diagnostic-dir-cpu-prof.js:42:3)
+          (+6 frames hidden)
+   …
+L1391     [ed84] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/sequential/test-diagnostic-dir-cpu-prof.js
+L1392     [88c9] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/sequential/test-diagnostic-dir-cpu-prof.js
+L1394   ✱ [9e6b] ---- node_compat::pummel::test-fs-readfile-tostring-fail.js ----
+L1396   ✱ [38d3] error: Uncaught Error: Cannot create a string longer than 0x1fffffe8 characters
+          at decodeUtf8 (ext:deno_node/internal/buffer.mjs:1:9784)
+          at Buffer.toString (ext:deno_node/internal/buffer.mjs:1:10222)
+          at readFileMaybeDecode (ext:deno_node/fs.ts:1:8507)
+          at u.path (ext:deno_node/fs.ts:1:9937)
+   …
+L3028     [0d60] test node_compat::parallel::test-process-exit-code-validation.js ... ok (3525ms) (×324, last L3028)
+L3029     [54fe] test node_compat::test-runner::test-output-output-cli.mjs ... ignored
+L3030     [4c7d] test node_compat::test-runner::test-output-tap-escape.mjs ... ok (325ms)
+L3031   ✱ [b1e1] test node_compat::test-runner::test-output-dot-reporter.mjs ... fail (364ms)
+L3032   ✱ [a4d4] test node_compat::test-runner::test-output-coverage-width-infinity-uncovered-lines.mjs ... fail (229ms) (×17, last L3067)
+L3033     [1a37] test node_compat::test-runner::test-output-hooks-with-no-global-test.mjs ... ok (210ms) (×4, last L3053)
+L3034   ✱ [9c5e] test node_compat::test-runner::test-output-hooks.mjs ... fail (279ms)
+L3036   ✱ [a4d4] test node_compat::test-runner::test-output-randomize-nested-scenarios-output-cli-none.mjs ... fail (197ms)
+L3039   ✱ [a4d4] test node_compat::test-runner::test-watch-rename-isolation-process.mjs ... fail (10007ms)
+L3040   ✱ [a4d4] test node_compat::test-runner::test-watch-create-isolation-process.mjs ... fail (10315ms)
+L3041   ✱ [a4d4] test node_compat::test-runner::test-watch-no-file-isolation-process.mjs ... fail (10205ms)
+L3042   ✱ [f916] test node_compat::test-runner::test-output-arbitrary-output.mjs ... fail (1134ms)
+L3043   ✱ [f385] test node_compat::test-runner::test-output-suite-skip-hooks.mjs ... fail (398ms)
+L3044   ✱ [a4d4] test node_compat::test-runner::test-output-coverage-width-100-uncovered-lines.mjs ... fail (205ms)
+L3045     [5713] test node_compat::test-runner::test-output-assertion-color-tty.mjs ... ok (165ms)
+L3046   ✱ [a4d4] test node_compat::test-runner::test-output-coverage-width-80-uncovered-lines.mjs ... fail (841ms)
+L3047   ✱ [a4d4] test node_compat::test-runner::test-output-filtered-suite-throws.mjs ... fail (396ms)
+L3048   ✱ [a4d4] test node_compat::test-runner::test-output-abort-runs-after-hook.mjs ... fail (990ms)
+L3049   ✱ [482c] test node_compat::test-runner::test-output-coverage-with-mock.mjs ... fail (353ms)
+L3050   ✱ [a4d4] test node_compat::test-runner::test-output-coverage-width-150-uncovered-lines.mjs ... fail (350ms)
+L3051     [60d9] test node_compat::test-runner::test-output-no-refs.mjs ... ok (1446ms)
+L3052   ✱ [11b3] test node_compat::test-runner::test-output-coverage-width-80.mjs ... fail (612ms) (×3, last L3064)
+L3054   ✱ [a4d4] test node_compat::test-runner::test-output-unfinished-suite-async-error.mjs ... fail (323ms)
+L3055     [2d36] test node_compat::test-runner::test-run-watch-cwd.mjs ... ok (1026ms)
+L3056   ✱ [1a7e] test node_compat::test-runner::test-output-test-timeout-flag.mjs ... fail (10067ms)
+L3057   ✱ [a4d4] test node_compat::test-runner::test-output-filtered-suite-order.mjs ... fail (10146ms)
+L3058   ✱ [a4d4] test node_compat::test-runner::test-output-coverage-with-mock-cjs.mjs ... fail (10960ms)
+L3059   ✱ [b267] test node_compat::test-runner::test-output-output.mjs ... fail (10378ms)
+L3060   ✱ [88ea] test node_compat::test-runner::test-output-abort-hooks.mjs ... fail (10705ms)
+L3061   ✱ [11b3] test node_compat::test-runner::test-output-coverage-width-100.mjs ... fail (10664ms)
+L3062   ✱ [a4d4] test node_compat::test-runner::test-run-watch-different-cwd-rename.mjs ... fail (11258ms)
+L3063   ✱ [a4d4] test node_compat::test-runner::test-watch-run-repeatedly-isolation-none.mjs ... fail (11191ms)
+L3064   ✱ [11b3] test node_compat::test-runner::test-output-coverage-width-40.mjs ... fail (10627ms)
+L3065   ✱ [16fd] test node_compat::test-runner::test-run-watch-rename.mjs ... fail (11087ms)
+L3066   ✱ [a4d4] test node_compat::test-runner::test-output-test-runner-watch-spec.mjs ... fail (10931ms)
+L3067   ✱ [a4d4] test node_compat::test-runner::test-output-async-test-scheduling.mjs ... fail (1506ms)
+L3068   ✱ [eead] ##[error]Process completed with exit code 143.
+L3069   ✱ [1041] ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+
+== OTHER ERRORS & WARNINGS
+L1126   ERRO [dc31] test node_compat::sequential::test-perf-hooks.js ... fail (89ms)
+L1128   ERRO [ee3f] test node_compat::sequential::test-net-better-error-messages-port.js ... ok (111ms)
+L1129   ERRO [7c30] test node_compat::sequential::test-fs-watch.js ... fail (10001ms)
+L1134   ERRO [08a4] test node_compat::sequential::test-watch-mode-inspect.mjs ... fail (499ms)
+L1137   ERRO [cc1c] test node_compat::sequential::test-net-connect-local-error.js ... ok (99ms)
+L1143   ERRO [8ce6] test node_compat::sequential::test-runner-run-inspect.mjs ... fail (435ms)
+L1146   ERRO [db15] test node_compat::sequential::test-diagnostic-dir-cpu-prof.js ... fail (927ms)
+L1152   ERRO [7c22] test node_compat::pummel::test-fs-readfile-tostring-fail.js ... fail (779ms)
+L1171   ERRO [e85e] failures:
+L1320   ERRO [2cc2] watch mode - inspect ... FAILED (370ms)
+L1402   ERRO [834b] Command: NODE_TEST_KNOWN_GLOBALS=0 NODE_SKIP_FLAG_CHECK=1 NODE_OPTIONS='' deno run -A --quiet --unsafe-proto test/pummel/test-fs-readfile-tostring-fail.js
+L1403   ERRO [e80c] Test file: /home/runner/work/deno/deno/tests/node_compat/runner/suite/test/pummel/test-fs-readfile-tostring-fail.js
+L1405   ERRO [552c] failed tests:
+L1426   ERRO [27ad] test node_compat::pseudo-tty::test-assert-colors.js ... fail (124ms)
+L1427   ERRO [549f] test node_compat::pseudo-tty::test-handle-wrap-hasref-tty.js ... fail (84ms)
+L1432   ERRO [079f] test node_compat::abort::test-abort-fatal-error.js ... ignored
+L1439   ERRO [8398] test node_compat::module-hooks::test-async-loader-hooks-throw-error.mjs ... ignored
+L1444   ERRO [8488] test node_compat::abort::test-abort-uncaught-exception.js ... ok (2695ms)
+L1455   ERRO [5e36] test node_compat::module-hooks::test-module-hooks-custom-conditions-cjs.js ... fail (149ms)
+L1489   ERRO [5175] test node_compat::parallel::test-https-agent-keylog.js ... fail (191ms)
+L1492   ERRO [dec9] test node_compat::parallel::test-sync-io-option.js ... fail (155ms)
+L1493   ERRO [8c35] test node_compat::parallel::test-fs-existssync-memleak-longpath.js ... fail (107ms) (×93, last L3023)
+L1503   ERRO [a866] test node_compat::parallel::test-net-boundsocket.js ... fail (108ms)
+
+== END OF OUTPUT
+L2996     [39fe] test node_compat::parallel::test-tls-finished.js ... ok (243ms)
+L2997     [351a] test node_compat::parallel::test-internal-validators-validateport.js ... ignored
+L3011     [750e] test node_compat::parallel::test-quic-stream-body-pooled-buffer.mjs ... ok (214ms)
+L3012     [29c7] test node_compat::parallel::test-zlib-close-in-ondata.js ... ok (182ms)
+L3013     [bc54] test node_compat::parallel::test-http-date-header.js ... ok (287ms)
+L3016     [c07d] test node_compat::parallel::test-event-emitter-subclass.js ... ok (195ms)
+L3017     [402c] test node_compat::parallel::test-child-process-stdin-ipc.js ... ok (251ms)
+L3018     [a34f] test node_compat::parallel::test-child-process-fork.js ... ok (309ms)
+L3021     [0a22] test node_compat::parallel::test-stream-pipe-unpipe-streams.js ... ok (212ms)
+L3023     [8c35] test node_compat::parallel::test-vfs-fs-promises-stat-no-throw.js ... fail (160ms)
+L3024     [0d60] test node_compat::parallel::test-readable-from-web-enqueue-then-close.js ... ok (173ms)
+L3025     [bf37] test node_compat::parallel::test-net-blocklist.js ... ok (184ms)
+L3026     [3f5d] test node_compat::parallel::test-stream-writable-writable.js ... ok (164ms)
+L3027     [0cc10] test node_compat::parallel::test-timers-user-call.js ... ok (195ms)
+L3038     [5d55] test node_compat::test-runner::test-run-watch-emit-restarted.mjs ... ok (196ms)
+
+== MOST FREQUENT OTHER LINES
+×16      [5102] test node_compat::module-hooks::test-async-loader-hooks-source-maps-cjs.mjs ... ignored
+×16      [d518] test node_compat::module-hooks::test-module-hooks-load-builtin-override-module.js ... ok (169ms)
+×9       [1f25] Updating files:  91% (13701/14896)
+×6       [4293] env:
+×5       [de9d] fi
+×5       [6ffe] test node_compat::module-hooks::test-module-hooks-load-url-change-import.mjs ... ok (146ms)
+
+(not shown: 1216 groups, 1,322 lines - including 241 error groups, 290 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

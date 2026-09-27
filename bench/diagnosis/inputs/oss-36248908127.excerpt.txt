@@ -1,0 +1,290 @@
+Go tests	UNKNOWN STEP	﻿2026-09-26T14:33:27.7569231Z Current runner version: '2.337.0'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7606686Z ##[group]Runner Image Provisioner
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7608750Z Hosted Compute Agent
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7609797Z Version: 20260828.587
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7610874Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7612337Z Build Date: 2026-08-28T16:44:25Z
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7613617Z Worker ID: {32c5deb9-0715-43f9-b607-33baa2ae06c3}
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7614957Z Azure Region: eastus
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7616184Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7618974Z ##[group]Operating System
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7620783Z Ubuntu
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7621719Z 24.04.5
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7622708Z LTS
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7623624Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7624571Z ##[group]Runner Image
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7625800Z Image: ubuntu-24.04
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7627061Z Version: 20260920.314.1
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7630053Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7632846Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7634729Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7636551Z ##[group]GITHUB_TOKEN Permissions
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7639900Z Contents: read
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7640830Z Metadata: read
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7641770Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7644720Z Secret source: Actions
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7646136Z Cache mode: write
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.7647859Z Prepare workflow directory
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.8131753Z Prepare all required actions
+Go tests	UNKNOWN STEP	2026-09-26T14:33:27.8181464Z Getting action download info
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.0698614Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.1871000Z Download action repository 'prometheus/promci-setup@55bd31fe92710532260eb57c554f2697363285c5' (SHA:55bd31fe92710532260eb57c554f2697363285c5)
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.4109773Z Getting action download info
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.5307661Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.6519410Z Download action repository 'docker/setup-qemu-action@96fe6ef7f33517b61c61be40b68a1882f3264fb8' (SHA:96fe6ef7f33517b61c61be40b68a1882f3264fb8)
+Go tests	UNKNOWN STEP	2026-09-26T14:33:28.8050270Z Download action repository 'docker/setup-buildx-action@bb05f3f5519dd87d3ba754cc423b652a5edd6d2c' (SHA:bb05f3f5519dd87d3ba754cc423b652a5edd6d2c)
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.0355675Z Complete job name: Go tests
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.0867610Z ##[group]Checking docker version
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.0880512Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1714394Z '1.48'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1724225Z Docker daemon API version: '1.48'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1724804Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1883339Z '1.48'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1896082Z Docker client API version: '1.48'
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1903251Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1905956Z ##[group]Clean up resources from previous jobs
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.1912461Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=58e6e5"
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2059717Z ##[command]/usr/bin/docker network prune --force --filter "label=58e6e5"
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2195995Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2196407Z ##[group]Create local container network
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2207275Z ##[command]/usr/bin/docker network create --label 58e6e5 github_network_ee969a64d81640a7b26b2f5993614c27
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2700445Z 08d3dc9bd6abdd3278663a6df0db76dd0f6b787c40c627c55b2dc071c3ad906f
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2720869Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2744835Z ##[group]Starting job container
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.2767888Z ##[command]/usr/bin/docker pull quay.io/prometheus/golang-builder:1.27-base
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6549055Z 1.27-base: Pulling from prometheus/golang-builder
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6556722Z b4e4c0127190: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6557896Z a92704c122dd: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6559291Z 4affab289c15: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6559853Z a982fcd27eb6: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6560394Z 05cb7019d226: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6560938Z 4f4fb700ef54: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6561500Z 0c6c5607bb89: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6562078Z 19b041bb6799: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6562636Z 7f520039b299: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6563159Z c63712b9fdee: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6563494Z ca11958a8bc2: Pulling fs layer
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6563811Z a982fcd27eb6: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6564091Z 05cb7019d226: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6564372Z 4f4fb700ef54: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6564644Z 0c6c5607bb89: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6564910Z 19b041bb6799: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6565166Z c63712b9fdee: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.6565426Z 7f520039b299: Waiting
+Go tests	UNKNOWN STEP	2026-09-26T14:33:29.8568171Z a92704c122dd: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.3595570Z b4e4c0127190: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.3596772Z b4e4c0127190: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.4305639Z 05cb7019d226: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.4670458Z 4f4fb700ef54: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.4671664Z 4f4fb700ef54: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.5383565Z 0c6c5607bb89: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.5391034Z 0c6c5607bb89: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.9627523Z a982fcd27eb6: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.9628310Z a982fcd27eb6: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.9724914Z 19b041bb6799: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:30.9725483Z 19b041bb6799: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.0664499Z 7f520039b299: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.0665230Z 7f520039b299: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.1723384Z ca11958a8bc2: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.1724360Z ca11958a8bc2: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.6694819Z c63712b9fdee: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:31.6695444Z c63712b9fdee: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:32.3254487Z b4e4c0127190: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:32.8224179Z a92704c122dd: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:33:54.9768570Z 4affab289c15: Verifying Checksum
+Go tests	UNKNOWN STEP	2026-09-26T14:33:54.9769112Z 4affab289c15: Download complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:03.6201253Z 4affab289c15: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:08.9352921Z a982fcd27eb6: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:08.9436591Z 05cb7019d226: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:08.9523431Z 4f4fb700ef54: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:08.9607100Z 0c6c5607bb89: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:09.3186729Z 19b041bb6799: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:09.3590608Z 7f520039b299: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.2767945Z c63712b9fdee: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.2896780Z ca11958a8bc2: Pull complete
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.2926837Z Digest: sha256:7eeded2a35a4ce199f4e108cf81f1b89b5a0df1366233da673a36f12b436f95b
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.2938343Z Status: Downloaded newer image for quay.io/prometheus/golang-builder:1.27-base
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.2946176Z quay.io/prometheus/golang-builder:1.27-base
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.3028577Z ##[command]/usr/bin/docker create --name 7dbd3e06cd01492797aa0cb6f0f8045b_quayioprometheusgolangbuilder127base_b96616 --label 58e6e5 --workdir /__w/prometheus/prometheus --network github_network_ee969a64d81640a7b26b2f5993614c27  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/2.337.0/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" quay.io/prometheus/golang-builder:1.27-base "-f" "/dev/null"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.3302186Z 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.3327707Z ##[command]/usr/bin/docker start 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5179480Z 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5207267Z ##[command]/usr/bin/docker ps --all --filter id=33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5328122Z 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 Up Less than a second
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5346574Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5473415Z HOME=/github/home
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5473890Z GITHUB_ACTIONS=true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5474273Z CI=true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5475039Z PATH=/go/bin:/usr/local/go/bin:/usr/local/lib/pnpm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5475698Z YQ_VERSION=4.52.2
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5476158Z YQ_URL=https://github.com/mikefarah/yq/releases/download/v4.52.2/yq_linux_amd64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5476842Z YQ_SUM=a74bd266990339e0c48a2103534aef692abf99f19390d12c2b0ce6830385c459
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5477587Z GOLANG_VERSION=1.27.1
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5478256Z GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.27.1.linux-amd64.tar.gz
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5479448Z GOLANG_DOWNLOAD_SHA256=63d339f0da5ab53635a56f2490a7984dfe12dfcff22ad749f63edaf590168445
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5480431Z GOPATH=/go
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5480838Z GOTESTSUM_VERSION=1.13.0
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5482009Z GOTESTSUM_URL=https://github.com/gotestyourself/gotestsum/releases/download/v1.13.0/gotestsum_1.13.0_linux_amd64.tar.gz
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5483586Z GOTESTSUM_SUM=11ccddeaf708ef228889f9fe2f68291a75b27013ddfc3b18156e094f5f40e8ee
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5484499Z PNPM_VERSION=11.3.0
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5485293Z PNPM_URL=https://github.com/pnpm/pnpm/releases/download/v11.3.0/pnpm-linux-x64.tar.gz
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5486456Z PNPM_SUM=6eb506b53297eb1186ba0cbff1577bb26d17713835a01a5342dcafae550827ce
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5500770Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5510813Z ##[group]Waiting for all services to be ready
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5512538Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5818492Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5819652Z with:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5819893Z   persist-credentials: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5820181Z   repository: prometheus/prometheus
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5823015Z   token: ***
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5823230Z   ssh-strict: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5823447Z   ssh-user: git
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5823653Z   clean: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5823885Z   sparse-checkout-cone-mode: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5824149Z   fetch-depth: 1
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5824356Z   fetch-tags: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5824661Z   show-progress: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5824906Z   lfs: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5825096Z   submodules: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5825314Z   set-safe-directory: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5825571Z   allow-unsafe-pr-checkout: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5826107Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.5889502Z ##[command]/usr/bin/docker exec  33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 sh -c "cat /etc/*release | grep ^ID"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.7824309Z Syncing repository: prometheus/prometheus
+Go tests	UNKNOWN STEP	2026-09-26T14:34:10.7825671Z ##[group]Getting Git version info
+Go tests	UNKNOWN STEP	2026-09-26T1
+
+... [9716 characters truncated] ...
+
+ometheus/.git/worktrees/*.path
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6330480Z /__w/_temp/git-credentials-e393789b-3268-4ef8-a78d-8ed33a715bf1.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6340304Z [command]/usr/bin/git config --local --unset includeif.gitdir:/__w/prometheus/prometheus/.git/worktrees/*.path \/__w\/_temp\/git\-credentials\-e393789b\-3268\-4ef8\-a78d\-8ed33a715bf1\.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6370908Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6394486Z /github/runner_temp/git-credentials-e393789b-3268-4ef8-a78d-8ed33a715bf1.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6405845Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-e393789b\-3268\-4ef8\-a78d\-8ed33a715bf1\.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6436791Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6460222Z /github/runner_temp/git-credentials-e393789b-3268-4ef8-a78d-8ed33a715bf1.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6469140Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-e393789b\-3268\-4ef8\-a78d\-8ed33a715bf1\.config
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6509246Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6733387Z Removing credentials config '/__w/_temp/git-credentials-e393789b-3268-4ef8-a78d-8ed33a715bf1.config'
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.6739432Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7012468Z ##[group]Run prometheus/promci-setup@55bd31fe92710532260eb57c554f2697363285c5
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7012918Z with:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7013115Z   enable_npm: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7013340Z   cache_key_suffix: race
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7013575Z   enable_go: true
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7013793Z   enable_docker_multibuild: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7014045Z   memlimit_ratio: 0.8
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7014281Z   clean-runner-disk: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7014507Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7102441Z ##[start-action display=Aggressive cleanup;id=__prometheus_promci-setup.__run]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7122019Z ##[end-action id=__prometheus_promci-setup.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7124149Z ##[start-action display=Resolve Go cache paths;id=__prometheus_promci-setup.go-cache-paths]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7163369Z ##[group]Run echo "build=$(go env GOCACHE)" >> "$GITHUB_OUTPUT"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7163918Z ^[[36;1mecho "build=$(go env GOCACHE)" >> "$GITHUB_OUTPUT"^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7164325Z ^[[36;1mecho "mod=$(go env GOMODCACHE)" >> "$GITHUB_OUTPUT"^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7168863Z shell: bash --noprofile --norc -e -o pipefail {0}
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7169205Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.7997645Z ##[end-action id=__prometheus_promci-setup.go-cache-paths;outcome=success;conclusion=success;duration_ms=87]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:11.8000838Z ##[start-action display=Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9;id=__prometheus_promci-setup.__actions_cache]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0465804Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0466183Z with:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0466435Z   path: /github/home/.cache/go-build
+Go tests	UNKNOWN STEP	/go/pkg/mod
+Go tests	UNKNOWN STEP	
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0466935Z   key: Linux-go-race-e4992e6b1803bbde049362dd65fd8210a819b42abdf0264306bfc418fc362042
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0467695Z   restore-keys: Linux-go-race-
+Go tests	UNKNOWN STEP	
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0467982Z   enableCrossOsArchive: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0468262Z   fail-on-cache-miss: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0468502Z   lookup-only: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0468724Z   save-always: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0468948Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.0473238Z ##[command]/usr/bin/docker exec  33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 sh -c "cat /etc/*release | grep ^ID"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3284535Z Cache not found for input keys: Linux-go-race-e4992e6b1803bbde049362dd65fd8210a819b42abdf0264306bfc418fc362042, Linux-go-race-
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3390156Z ##[end-action id=__prometheus_promci-setup.__actions_cache;outcome=success;conclusion=success;duration_ms=538]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3392869Z ##[start-action display=Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9;id=__prometheus_promci-setup.__actions_cache_2]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3924968Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3925332Z with:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3925526Z   path: ~/.npm
+Go tests	UNKNOWN STEP	
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3925727Z   key: Linux-npm-
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3925963Z   restore-keys: Linux-npm-
+Go tests	UNKNOWN STEP	
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3926214Z   enableCrossOsArchive: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3926462Z   fail-on-cache-miss: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3926692Z   lookup-only: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3926907Z   save-always: false
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3927118Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.3931135Z ##[command]/usr/bin/docker exec  33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 sh -c "cat /etc/*release | grep ^ID"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6641171Z Cache not found for input keys: Linux-npm-, Linux-npm-
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6732656Z ##[end-action id=__prometheus_promci-setup.__actions_cache_2;outcome=success;conclusion=success;duration_ms=333]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6735005Z ##[start-action display=Set GOMEMLIMIT;id=__prometheus_promci-setup.__run_2]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6755629Z ##[group]Run ratio=0.8
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6755897Z ^[[36;1mratio=0.8^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6756182Z ^[[36;1mcgroup=$(awk -F':' '{print $3}' /proc/self/cgroup)^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6756809Z ^[[36;1mcgroup_mem_limit=$(< "/sys/fs/cgroup/${cgroup}/memory.max")^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6757226Z ^[[36;1mif [[ "${cgroup_mem_limit}" != "max" ]] ; then^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6758210Z ^[[36;1m  echo "${cgroup_mem_limit}" | awk -v "ratio=${ratio}" '{printf "GOMEMLIMIT=%.0fKiB\n", $1 / 1024 * ratio}' >> "$GITHUB_ENV"^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6758752Z ^[[36;1m  exit 0^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6758962Z ^[[36;1mfi^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6759429Z ^[[36;1mawk -v "ratio=${ratio}" '$1 == "MemTotal:" {printf "GOMEMLIMIT=%.0fKiB\n", $2 * ratio}' /proc/meminfo >> "$GITHUB_ENV"^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6760098Z shell: bash --noprofile --norc -e -o pipefail {0}
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.6760404Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7347767Z ##[end-action id=__prometheus_promci-setup.__run_2;outcome=success;conclusion=success;duration_ms=61]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7350880Z ##[start-action display=Run echo "GOMEMLIMIT=${GOMEMLIMIT}";id=__prometheus_promci-setup.__run_3]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7370423Z ##[group]Run echo "GOMEMLIMIT=${GOMEMLIMIT}"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7370780Z ^[[36;1mecho "GOMEMLIMIT=${GOMEMLIMIT}"^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7371230Z shell: bash --noprofile --norc -e -o pipefail {0}
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7371539Z env:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7371729Z   GOMEMLIMIT: 13098762KiB
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7371957Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7884438Z GOMEMLIMIT=13098762KiB
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7917852Z ##[end-action id=__prometheus_promci-setup.__run_3;outcome=success;conclusion=success;duration_ms=56]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7920472Z ##[start-action display=Run make promu;id=__prometheus_promci-setup.__run_4]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7953731Z ##[group]Run make promu
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7953989Z ^[[36;1mmake promu^[[0m
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7954396Z shell: bash --noprofile --norc -e -o pipefail {0}
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7954707Z env:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7954901Z   GOMEMLIMIT: 13098762KiB
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.7955131Z ##[endgroup]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:12.8962503Z curl -s -L https://github.com/prometheus/promu/releases/download/v0.20.0/promu-0.20.0.linux-amd64.tar.gz | tar -xvzf - -C /tmp/tmp.GMquzwG8Nq
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9638653Z 
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9639143Z gzip: stdin: unexpected end of file
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9641827Z tar: Child returned status 1
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9642305Z tar: Error is not recoverable: exiting now
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9645437Z make: *** [Makefile.common:406: /go/bin/promu] Error 2
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9688750Z ##[error]Process completed with exit code 2.
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9695362Z ##[end-action id=__prometheus_promci-setup.__run_4;outcome=failure;conclusion=failure;duration_ms=4177]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9700206Z ##[start-action display=Set up QEMU;id=__prometheus_promci-setup.__docker_setup-qemu-action]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9715690Z ##[end-action id=__prometheus_promci-setup.__docker_setup-qemu-action;outcome=skipped;conclusion=skipped;duration_ms=0]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9718181Z ##[start-action display=Set up buildx;id=__prometheus_promci-setup.__docker_setup-buildx-action]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9721133Z ##[end-action id=__prometheus_promci-setup.__docker_setup-buildx-action;outcome=skipped;conclusion=skipped;duration_ms=0]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9869480Z Post job cleanup.
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9873810Z ##[start-action display=Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9;id=__74adb177-c80a-4eb4-8f08-60ac346c7544.__actions_cache_2]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9875950Z ##[end-action id=__74adb177-c80a-4eb4-8f08-60ac346c7544.__actions_cache_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9878482Z ##[start-action display=Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9;id=__74adb177-c80a-4eb4-8f08-60ac346c7544.__actions_cache]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9880585Z ##[end-action id=__74adb177-c80a-4eb4-8f08-60ac346c7544.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9959377Z Post job cleanup.
+Go tests	UNKNOWN STEP	2026-09-26T14:34:16.9966776Z ##[command]/usr/bin/docker exec  33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64 sh -c "cat /etc/*release | grep ^ID"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1730408Z [command]/usr/bin/git version
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1770029Z git version 2.39.5
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1809797Z Temporarily overriding HOME='/__w/_temp/2d810a7f-dc72-4c4e-a43d-7dc833f14de9' before making global git config changes
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1811109Z Adding repository directory to the temporary git global config as a safe directory
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1825295Z [command]/usr/bin/git config --global --add safe.directory /__w/prometheus/prometheus
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1854171Z Removing SSH command configuration
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1859762Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.1893743Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2120618Z Removing HTTP extra header
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2121974Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2159529Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2374628Z Removing includeIf entries pointing to credentials config files
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2382073Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2410669Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2768148Z Stop and remove container: 7dbd3e06cd01492797aa0cb6f0f8045b_quayioprometheusgolangbuilder127base_b96616
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.2773274Z ##[command]/usr/bin/docker rm --force 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.3934592Z 33597c7af33a72a6c6c5e80343859ae0f52ff38b903aed01655a22b1a5538b64
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.3964565Z Remove container network: github_network_ee969a64d81640a7b26b2f5993614c27
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.3969353Z ##[command]/usr/bin/docker network rm github_network_ee969a64d81640a7b26b2f5993614c27
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.4973541Z github_network_ee969a64d81640a7b26b2f5993614c27
+Go tests	UNKNOWN STEP	2026-09-26T14:34:17.5046558Z Cleaning up orphan processes

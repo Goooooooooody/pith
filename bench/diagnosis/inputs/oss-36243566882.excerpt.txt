@@ -1,0 +1,206 @@
+CI image checks / Static checks	UNKNOWN STEP	﻿2026-09-26T13:36:18.3335608Z Current runner version: '2.337.0'
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3369160Z ##[group]Runner Image Provisioner
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3370266Z Hosted Compute Agent
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3370920Z Version: 20260828.587
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3371580Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3372406Z Build Date: 2026-08-28T16:44:25Z
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3373443Z Worker ID: {6585370e-3a91-4fd8-bb21-2ce4184e9a52}
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3374236Z Azure Region: centralus
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3374865Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3377401Z ##[group]Operating System
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3378209Z Ubuntu
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3378732Z 22.04.5
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3379334Z LTS
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3379839Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3380429Z ##[group]Runner Image
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3381103Z Image: ubuntu-22.04-arm
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3381711Z Version: 20260920.137.1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3383698Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22-arm64/20260920.137/images/ubuntu/Ubuntu2204-Arm64-Readme.md
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3385360Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22-arm64%2F20260920.137
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3386433Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3387662Z ##[group]GITHUB_TOKEN Permissions
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3391348Z Contents: read
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3391991Z Metadata: read
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3392585Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3395980Z Secret source: Actions
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3397042Z Cache mode: write
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.3398139Z Prepare workflow directory
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.4001849Z Prepare all required actions
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.4052243Z Getting action download info
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.6755051Z Download action repository 'actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0' (SHA:9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0)
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9111311Z Uses: apache/airflow/.github/workflows/ci-image-checks.yml@refs/heads/chart/v1-2x-test (4419d2665eb7ff768a7a25fe0a6315a3d33653f4)
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9117826Z ##[group] Inputs
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9118755Z   runners: ["ubuntu-22.04-arm"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9119462Z   platform: linux/arm64
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9120122Z   run-mypy: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9121177Z   mypy-checks: ['mypy-airflow-core', 'mypy-providers', 'mypy-dev', 'mypy-task-sdk', 'mypy-devel-common', 'mypy-airflow-ctl']
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9122433Z   python-versions-list-as-string: 3.10 3.11 3.12 3.13 3.14
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9123666Z   branch: main
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9124310Z   canary-run: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9124996Z   default-python-version: 3.10
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9125677Z   docs-list-as-string: 
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9126338Z   upgrade-to-newer-dependencies: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9127194Z   basic-checks-only: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9127870Z   latest-versions-only: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9128525Z   ci-image-build: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9129298Z   skip-prek-hooks: identity,update-uv-lock
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9130133Z   include-success-outputs: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9130971Z   debug-resources: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9131605Z   docs-build: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9132192Z   run-api-codegen: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9132947Z   default-postgres-version: 14
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9133943Z   run-coverage: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9134606Z   use-uv: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9135253Z   source-head-repo: apache/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9135929Z   source-head-ref: 
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9136629Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9137287Z Complete job name: CI image checks / Static checks
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9901391Z ##[group]Run docker run -v "${GITHUB_WORKSPACE}:/workspace" -u 0:0 bash -c "rm -rf /workspace/*"
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9903229Z ^[[36;1mdocker run -v "${GITHUB_WORKSPACE}:/workspace" -u 0:0 bash -c "rm -rf /workspace/*"^[[0m
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9934629Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9936620Z env:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9937232Z   PYTHON_MAJOR_MINOR_VERSION: 3.10
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9938075Z   UPGRADE_TO_NEWER_DEPENDENCIES: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9942185Z   GITHUB_TOKEN: ***
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:18.9943736Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:19.2470551Z Unable to find image 'bash:latest' locally
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:19.7443728Z latest: Pulling from library/bash
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:19.9105147Z a9986cd6f37d: Pulling fs layer
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:19.9107712Z 594bf6c8986d: Pulling fs layer
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:19.9109478Z d06fe48c2bbf: Pulling fs layer
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.0608823Z d06fe48c2bbf: Verifying Checksum
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.0611455Z d06fe48c2bbf: Download complete
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.1114851Z 594bf6c8986d: Verifying Checksum
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.1450114Z a9986cd6f37d: Verifying Checksum
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.1451435Z a9986cd6f37d: Download complete
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:20.2217913Z a9986cd6f37d: Pull complete
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:21.8980960Z 594bf6c8986d: Pull complete
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:21.9086290Z d06fe48c2bbf: Pull complete
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:21.9120553Z Digest: sha256:61962062d969cb46dfc2bad061d36342406fa485f64f246aa7e95693ca07df1f
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:21.9132667Z Status: Downloaded newer image for bash:latest
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1254753Z ##[group]Run actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1255498Z with:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1255875Z   persist-credentials: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1256200Z   repository: apache/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1258907Z   token: ***
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1259221Z   ssh-strict: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1259582Z   ssh-user: git
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1259902Z   clean: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1260191Z   sparse-checkout-cone-mode: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1260610Z   fetch-depth: 1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1260919Z   fetch-tags: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1261279Z   show-progress: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1261606Z   lfs: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1261871Z   submodules: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1262272Z   set-safe-directory: true
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1262658Z   allow-unsafe-pr-checkout: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1263294Z env:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1263656Z   PYTHON_MAJOR_MINOR_VERSION: 3.10
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1264026Z   UPGRADE_TO_NEWER_DEPENDENCIES: false
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1266904Z   GITHUB_TOKEN: ***
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.1267222Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2086406Z Syncing repository: apache/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2088401Z ##[group]Getting Git version info
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2088987Z Working directory is '/home/runner/work/airflow/airflow'
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2089848Z [command]/usr/bin/git version
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2120900Z git version 2.55.0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2139858Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2149738Z Temporarily overriding HOME='/home/runner/work/_temp/1e238e48-1d40-441f-b957-32386fe3750f' before making global git config changes
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2150718Z Adding repository directory to the temporary git global config as a safe directory
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2153790Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/airflow/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2187525Z Deleting the contents of '/home/runner/work/airflow/airflow'
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2191116Z ##[group]Determining repository object format
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2192713Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2197945Z ##[group]Initializing the repository
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2198464Z [command]/usr/bin/git init /home/runner/work/airflow/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2269484Z hint: Using 'master' as the name for the initial branch. This default branch name
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2270715Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2271684Z hint: to use in all of your new repositories, which will suppress this warning,
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2272482Z hint: call:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2273309Z hint:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2273947Z hint: 	git config --global init.defaultBranch <name>
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2274666Z hint:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2275302Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2276099Z hint: 'development'. The just-created branch can be renamed via this command:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2276994Z hint:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2277567Z hint: 	git branch -m <name>
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2278778Z hint:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2279501Z hint: Disable this message with "git config set advice.defaultBranchName false"
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2280409Z Initialized empty Git repository in /home/runner/work/airflow/airflow/.git/
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2282597Z [command]/usr/bin/git remote add origin https://github.com/apache/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2314233Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2314943Z ##[group]Disabling automatic garbage collection
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2317385Z [command]/usr/bin/git config --local gc.auto 0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2345567Z ##[endgroup]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2346255Z ##[group]Setting up auth
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:36:22.2346713Z 
+
+... [830485 characters truncated] ...
+
+/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9390079Z 2026-09-26T13:47:27.764671Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=335µs time.idle=10.5ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9390340Z 2026-09-26T13:47:27.764733Z DEBUG Running priority group with priority 95: ["update-uv-lock"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9390624Z 2026-09-26T13:47:27.764754Z DEBUG Running priority group with priority 100: ["check-template-fields-valid"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9390978Z 2026-09-26T13:47:27.766074Z TRACE matching_filenames{hook="check-template-fields-valid"}: close time.busy=1.31ms time.idle=744ns
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9391447Z 2026-09-26T13:47:27.766088Z TRACE Files for hook `check-template-fields-valid` after filtering matched=true filenames=3
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9391772Z 2026-09-26T13:47:27.766151Z TRACE run{hook_id=check-template-fields-valid language=python}: Found shebang: ["python"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9392228Z 2026-09-26T13:47:27.766199Z TRACE run{hook_id=check-template-fields-valid language=python}: Running check-template-fields-valid total_files=3 concurrency=1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9393284Z 2026-09-26T13:47:27.766318Z TRACE run{hook_id=check-template-fields-valid language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-XeVCXw10tFC4BEEW748b/bin/python /home/runner/work/airflow/airflow/scripts/ci/prek/check_template_fields.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9393664Z 2026-09-26T13:47:36.894461Z  INFO run{hook_id=check-template-fields-valid language=python}: close time.busy=1.75ms time.idle=9.13s
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9394424Z 2026-09-26T13:47:36.894532Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9394906Z 2026-09-26T13:47:36.922208Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=327µs time.idle=27.4ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9395204Z 2026-09-26T13:47:36.922268Z DEBUG Running priority group with priority 101: ["check-execution-api-versions"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9395629Z 2026-09-26T13:47:36.922591Z TRACE matching_filenames{hook="check-execution-api-versions"}: close time.busy=303µs time.idle=976ns
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9395961Z 2026-09-26T13:47:36.922607Z TRACE Files for hook `check-execution-api-versions` after filtering matched=true filenames=22
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9396284Z 2026-09-26T13:47:36.922675Z TRACE run{hook_id=check-execution-api-versions language=python}: Found shebang: ["python"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9396747Z 2026-09-26T13:47:36.922730Z TRACE run{hook_id=check-execution-api-versions language=python}: Running check-execution-api-versions total_files=22 concurrency=1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9397668Z 2026-09-26T13:47:36.922841Z TRACE run{hook_id=check-execution-api-versions language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-XeVCXw10tFC4BEEW748b/bin/python /home/runner/work/airflow/airflow/scripts/ci/prek/check_execution_api_versions.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9398113Z 2026-09-26T13:47:36.988667Z  INFO run{hook_id=check-execution-api-versions language=python}: close time.busy=647µs time.idle=65.4ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9398871Z 2026-09-26T13:47:36.988725Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9399294Z 2026-09-26T13:47:36.999140Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=318µs time.idle=10.1ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9399585Z 2026-09-26T13:47:36.999210Z DEBUG Running priority group with priority 102: ["generate-tasksdk-datamodels"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9399908Z 2026-09-26T13:47:36.999284Z TRACE Files for hook `generate-tasksdk-datamodels` after filtering matched=true filenames=0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9400518Z 2026-09-26T13:47:36.999395Z TRACE run{hook_id=generate-tasksdk-datamodels language=python}: Running generate-tasksdk-datamodels total_files=0 concurrency=1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9401565Z 2026-09-26T13:47:36.999521Z TRACE run{hook_id=generate-tasksdk-datamodels language=python}: Executing `cd /home/runner/work/airflow/airflow && /opt/hostedtoolcache/Python/3.10.21/arm64/bin/uv run -p 3.12 --no-progress --active --group codegen --package apache-airflow-task-sdk --directory task-sdk -s dev/generate_task_sdk_models.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9401927Z 2026-09-26T13:47:50.306903Z  INFO run{hook_id=generate-tasksdk-datamodels language=python}: close time.busy=1.51ms time.idle=13.3s
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9402803Z 2026-09-26T13:47:50.306963Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9403421Z 2026-09-26T13:47:50.331951Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=309µs time.idle=24.7ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9403743Z 2026-09-26T13:47:50.332009Z DEBUG Running priority group with priority 103: ["generate-airflowctl-datamodels"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9404086Z 2026-09-26T13:47:50.332056Z TRACE Files for hook `generate-airflowctl-datamodels` after filtering matched=true filenames=0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9404563Z 2026-09-26T13:47:50.332187Z TRACE run{hook_id=generate-airflowctl-datamodels language=python}: Running generate-airflowctl-datamodels total_files=0 concurrency=1
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9405475Z 2026-09-26T13:47:50.332294Z TRACE run{hook_id=generate-airflowctl-datamodels language=python}: Executing `cd /home/runner/work/airflow/airflow && /usr/bin/bash -c  uv run -p 3.12 --no-dev --no-progress --active --group codegen --package apache-airflow-ctl --directory airflow-ctl/ datamodel-codegen &&
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9406478Z  uv run -p 3.12 --no-dev --no-progress --active --group codegen --package apache-airflow-ctl --directory airflow-ctl/ datamodel-codegen --input="../airflow-core/src/airflow/api_fastapi/auth/managers/simple/openapi/v2-simple-auth-manager-generated.yaml" --output="src/airflowctl/api/datamodels/auth_generated.py"`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9406979Z 2026-09-26T13:47:55.315668Z  INFO run{hook_id=generate-airflowctl-datamodels language=python}: close time.busy=736µs time.idle=4.98s
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9407737Z 2026-09-26T13:47:55.315739Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9408164Z 2026-09-26T13:47:55.340493Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=318µs time.idle=24.4ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9408485Z 2026-09-26T13:47:55.340554Z DEBUG Running priority group with priority 104: ["check-contextmanager-class-decorators"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9408964Z 2026-09-26T13:47:55.341519Z TRACE matching_filenames{hook="check-contextmanager-class-decorators"}: close time.busy=952µs time.idle=840ns
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9409343Z 2026-09-26T13:47:55.341545Z TRACE Files for hook `check-contextmanager-class-decorators` after filtering matched=true filenames=3537
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9409734Z 2026-09-26T13:47:55.341618Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Found shebang: ["python3"]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9410280Z 2026-09-26T13:47:55.341681Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Running check-contextmanager-class-decorators total_files=3537 concurrency=4
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9411288Z 2026-09-26T13:47:55.341891Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-tA3Q49gGntB8ep9zTSYl/bin/python3 /home/runner/work/airflow/airflow/scripts/ci/prek/check_contextmanager_class_decorators.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9412469Z 2026-09-26T13:47:55.342442Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-tA3Q49gGntB8ep9zTSYl/bin/python3 /home/runner/work/airflow/airflow/scripts/ci/prek/check_contextmanager_class_decorators.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9413603Z 2026-09-26T13:47:55.342923Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-tA3Q49gGntB8ep9zTSYl/bin/python3 /home/runner/work/airflow/airflow/scripts/ci/prek/check_contextmanager_class_decorators.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9414751Z 2026-09-26T13:47:55.343419Z TRACE run{hook_id=check-contextmanager-class-decorators language=python}: Executing `cd /home/runner/work/airflow/airflow && /home/runner/.cache/prek/hooks/python-tA3Q49gGntB8ep9zTSYl/bin/python3 /home/runner/work/airflow/airflow/scripts/ci/prek/check_contextmanager_class_decorators.py`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9415162Z 2026-09-26T13:47:56.709111Z  INFO run{hook_id=check-contextmanager-class-decorators language=python}: close time.busy=5.21ms time.idle=1.36s
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9415912Z 2026-09-26T13:47:56.709258Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/airflow/airflow`
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9416394Z 2026-09-26T13:47:56.719111Z TRACE diff_worktree{path="/home/runner/work/airflow/airflow"}: close time.busy=361µs time.idle=9.50ms
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9515655Z Post job cleanup.
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9519135Z ##[start-action display=Setup python;id=__da969bd2-6718-4940-9e23-8e105cfb724f.__actions_setup-python]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9520844Z ##[end-action id=__da969bd2-6718-4940-9e23-8e105cfb724f.__actions_setup-python;outcome=skipped;conclusion=skipped;duration_ms=0]
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:56.9581348Z Post job cleanup.
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0304834Z [command]/usr/bin/git version
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0353645Z git version 2.55.0
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0386797Z Temporarily overriding HOME='/home/runner/work/_temp/6768e7d6-8766-4d9b-9d11-5f3ed072fb3a' before making global git config changes
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0387270Z Adding repository directory to the temporary git global config as a safe directory
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0391558Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/airflow/airflow
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0425531Z Removing SSH command configuration
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0432133Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0464697Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0693741Z Removing HTTP extra header
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0699249Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0733610Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0968185Z Removing includeIf entries pointing to credentials config files
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.0975046Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.1011433Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+CI image checks / Static checks	UNKNOWN STEP	2026-09-26T13:47:57.1403816Z Cleaning up orphan processes

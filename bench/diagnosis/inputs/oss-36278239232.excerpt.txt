@@ -1,0 +1,158 @@
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	﻿2026-09-26T23:15:18.2199589Z Current runner version: '2.336.0'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2205302Z Runner name: 'linux.google.tpuv7x.1-bc22z-runner-rn6r9'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2206220Z Runner group name: 'ml-central1-general-a'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2207156Z Machine name: 'linux'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2209617Z ##[group]GITHUB_TOKEN Permissions
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2211830Z Contents: read
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2212369Z Metadata: read
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2212880Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2214743Z Secret source: Actions
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2215675Z Cache mode: write
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2216389Z Prepare workflow directory
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2589002Z Prepare all required actions
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.2629983Z Getting action download info
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:18.5119408Z Download action repository 'pytorch/test-infra@main' (SHA:2ce5619243cb9830663c97ba8a6473ddcc903807)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:19.6437606Z Download action repository 'pytorch/pytorch@main' (SHA:e05fe833c16bbaf1b8cb626271205f0f3bfeb329)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:25.5486217Z Download action repository 'aws-actions/configure-aws-credentials@ececac1a45f3b08a01d2dd070d28d111c5fe6722' (SHA:ececac1a45f3b08a01d2dd070d28d111c5fe6722)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:25.8842507Z Download action repository 'seemethere/upload-artifact-s3@baba72d0712b404f646cebe0730933554ebce96a' (SHA:baba72d0712b404f646cebe0730933554ebce96a)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:26.2964934Z Getting action download info
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:26.4654163Z Getting action download info
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:26.6209573Z Getting action download info
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:26.7310561Z Download action repository 'astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b' (SHA:08807647e7069bb48b6ef5acd8ec9567f424441b)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.1514051Z Getting action download info
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.2658725Z Download action repository 'nick-fields/retry@v3.0.0' (SHA:7152eba30c6575329ac0576536151aca5a72780e)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5509815Z Uses: pytorch/pytorch/.github/workflows/_tpu-test.yml@refs/heads/main (e05fe833c16bbaf1b8cb626271205f0f3bfeb329)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5512905Z ##[group] Inputs
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5513239Z   build-environment: linux-jammy-py3.12-gcc11-pallas-tpu
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5513776Z   test-matrix: {"include": [{"config": "inductor-pallas-tpu", "shard": 1, "num_shards": 1, "runner": "linux.google.tpuv7x.1"}]}
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5514607Z   docker-image: 308535385114.dkr.ecr.us-east-1.amazonaws.com/pytorch/ci-image:pytorch-linux-jammy-tpu-py3.12-pallas-6d6d9d464d429612b7fd49e4fbb7ad6a6210b9f2
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5515204Z   sync-tag: 
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5515889Z   timeout-minutes: 240
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5516119Z   use-gha: 
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5516314Z   aws-role-to-assume: 
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5516538Z   s3-bucket: gha-artifacts
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5516933Z   disable-monitor: false
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5517162Z   monitor-log-interval: 5
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5517408Z   monitor-data-collect-interval: 1
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5517665Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5518052Z Complete job name: pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5953089Z ##[group]Run pytorch/test-infra/.github/actions/setup-ssh@main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5953567Z with:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5955778Z   github-secret: ***
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5956345Z   instructions: All testing is done inside the container, to start an interactive session run:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	  docker exec -it $(docker container ps --format '{{.ID}}') bash
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5956928Z   activate-with-label: false
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5957169Z   label: with-ssh
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5957396Z   remove-existing-keys: true
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5957628Z   fail-silently: true
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5957946Z env:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5958132Z   GIT_DEFAULT_BRANCH: main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.5958347Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6740008Z (node:865) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6741035Z Please see https://github.com/pytorch/pytorch/wiki/Debugging-using-with-ssh-for-Github-Actions for more info.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6741687Z (Use `node --trace-deprecation ...` to show where the warning was created)
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6742411Z Not on pull request and ciflow reference could not be extracted, skipping adding ssh keys
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6995112Z ##[group]Run pytorch/pytorch/.github/actions/setup-linux@main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6995480Z with:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6995690Z   submodules: false
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6997985Z   github-token: ***
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6998217Z   checkout-mode: treeless
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6998457Z env:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6998662Z   GIT_DEFAULT_BRANCH: main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.6998898Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7057027Z ##[start-action display=Fix workspace permissions;id=setup-linux.__run]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7071846Z ##[end-action id=setup-linux.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7073831Z ##[start-action display=Ack Git cache ownership;id=setup-linux.__run_2]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7077338Z ##[end-action id=setup-linux.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7078986Z ##[start-action display=Checkout PyTorch;id=setup-linux.__pytorch_pytorch]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7219737Z ##[group]Run pytorch/pytorch/.github/actions/checkout-pytorch@main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7220124Z with:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7220456Z   no-sudo: true
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7220679Z   checkout-mode: treeless
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7220948Z   submodules: false
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7221162Z   fetch-depth: 0
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7221384Z   sparse-checkout-cone-mode: true
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7221625Z env:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7221815Z   GIT_DEFAULT_BRANCH: main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7222043Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7227915Z ##[start-action display=Check if in a container runner;id=setup-linux.__pytorch_pytorch.check_container_runner]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7252246Z ##[group]Run echo "IN_CONTAINER_RUNNER=$(if [ -f /.inarc ] || [ -f /.incontainer ]; then echo true ; else echo false; fi)" >> "$GITHUB_OUTPUT"
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7253056Z ^[[36;1mecho "IN_CONTAINER_RUNNER=$(if [ -f /.inarc ] || [ -f /.incontainer ]; then echo true ; else echo false; fi)" >> "$GITHUB_OUTPUT"^[[0m
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7261557Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7261898Z env:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7262097Z   GIT_DEFAULT_BRANCH: main
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7262314Z ##[endgroup]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:15:27.7331167Z ##[end-action id=setup-linux.__pytorch_pytorch.check_contai
+
+... [7892624 characters truncated] ...
+
+las-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:21.8486548Z 31f2259cb7946d94c04bda66f017a67877ce1cd1df1b4743ba496ad19b3c858d
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:21.8486860Z 
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5150966Z Deleted Images:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5154670Z untagged: 308535385114.dkr.ecr.us-east-1.amazonaws.com/pytorch/ci-image:pytorch-linux-jammy-tpu-py3.12-pallas-6d6d9d464d429612b7fd49e4fbb7ad6a6210b9f2
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5155472Z deleted: sha256:5f94644f301e490791e44f3104abeea9bdc611b687ac640abde0e220c3a405a8
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5155971Z deleted: sha256:2285172d04765ecd17395f316307ff5255e1cf2f7c0c2cd59e0cb23c0e4ab1cf
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5156458Z deleted: sha256:586fe3dbf2230551fbf053e0ab8a8f5284da04f5a185764c355db41eb3f1b487
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5156749Z 
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5187445Z Total reclaimed space: 59.71GB
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5206483Z ##[end-action id=__pytorch_test-infra_3.__run_2;outcome=success;conclusion=success;duration_ms=34650]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5291070Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5481786Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5537971Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.5616567Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.6591895Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.6668367Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.6671818Z ##[start-action display=Log in to ECR;id=__a1221363-976a-4e36-b95c-b5ac56bdd30e.ecr-login]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.6707865Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.7023788Z Logging out of registry 308535385114.dkr.ecr.us-east-1.amazonaws.com
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.7199003Z ##[end-action id=__a1221363-976a-4e36-b95c-b5ac56bdd30e.ecr-login;outcome=success;conclusion=success;duration_ms=52]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.7201209Z ##[start-action display=Configure AWS credentials via OIDC;id=__a1221363-976a-4e36-b95c-b5ac56bdd30e.configure-oidc]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:23.7241340Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1096884Z ##[end-action id=__a1221363-976a-4e36-b95c-b5ac56bdd30e.configure-oidc;outcome=success;conclusion=success;duration_ms=1389]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1241149Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1244361Z ##[start-action display=Install uv (EC2);id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_test-infra]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1303174Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1306293Z ##[start-action display=Setup uv;id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_test-infra.setup-uv]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1308843Z ##[end-action id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_test-infra.setup-uv;outcome=skipped;conclusion=skipped;duration_ms=0]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1314647Z ##[end-action id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_test-infra;outcome=success;conclusion=success;duration_ms=6]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1317140Z ##[start-action display=Checkout PyTorch;id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_pytorch]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1415598Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1418902Z ##[start-action display=Checkout PyTorch;id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_pytorch.first-checkout-attempt]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.1462079Z Post job cleanup.
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2149998Z [command]/usr/bin/git version
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2181344Z git version 2.54.0
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2203011Z Copying '/home/runner/.gitconfig' to '/home/runner/_work/_temp/933b8435-8c2f-4dee-9bfb-b97f177f9c7a/.gitconfig'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2209295Z Temporarily overriding HOME='/home/runner/_work/_temp/933b8435-8c2f-4dee-9bfb-b97f177f9c7a' before making global git config changes
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2210002Z Adding repository directory to the temporary git global config as a safe directory
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2213478Z [command]/usr/bin/git config --global --add safe.directory /home/runner/_work/pytorch/pytorch
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2233211Z Removing SSH command configuration
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2237561Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2268014Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2473038Z Removing HTTP extra header
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2477898Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2500666Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2678996Z Removing includeIf entries pointing to credentials config files
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2686936Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2702634Z includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2703089Z includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git/worktrees/*.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2703490Z includeif.gitdir:/github/workspace/.git.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2703852Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2708891Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2723777Z /home/runner/_work/_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2730911Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git.path /home/runner/_work/_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2753691Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git/worktrees/*.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2768123Z /home/runner/_work/_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2774429Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/_work/pytorch/pytorch/.git/worktrees/*.path /home/runner/_work/_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2795865Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2809687Z /github/runner_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2814641Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2835270Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2850230Z /github/runner_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2886654Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.2913713Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.3100581Z Removing credentials config '/home/runner/_work/_temp/git-credentials-013493b0-90c5-4dea-b0d2-993b333fa0cb.config'
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.3151503Z ##[end-action id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_pytorch.first-checkout-attempt;outcome=success;conclusion=success;duration_ms=173]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.3154788Z ##[end-action id=__46faea91-8acf-40c2-8080-2c372f0963dd.__pytorch_pytorch;outcome=success;conclusion=success;duration_ms=183]
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.3215722Z Cleaning up orphan processes
+pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)	UNKNOWN STEP	2026-09-26T23:29:25.3250861Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4, aws-actions/amazon-ecr-login@062b18b96a7aff071d4dc91bc00c4c1a7945b076, aws-actions/configure-aws-credentials@ececac1a45f3b08a01d2dd070d28d111c5fe6722, nick-fields/retry@v3.0.0, pytorch/test-infra/.github/actions/setup-ssh@main, seemethere/download-artifact-s3@v4, seemethere/upload-artifact-s3@baba72d0712b404f646cebe0730933554ebce96a, seemethere/upload-artifact-s3@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

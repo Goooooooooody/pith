@@ -1,0 +1,250 @@
+Go tests on Windows	UNKNOWN STEP	﻿2026-09-26T01:51:51.5956095Z Current runner version: '2.337.0'
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5982363Z ##[group]Runner Image Provisioner
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5983195Z Hosted Compute Agent
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5983711Z Version: 20260828.587
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5984282Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5984981Z Build Date: 2026-08-28T16:44:25Z
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5985597Z Worker ID: {72da9d72-dde7-4ada-a850-8f6ee4f7a5ea}
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5986279Z Azure Region: westus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5986788Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5988176Z ##[group]Operating System
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5988805Z Microsoft Windows Server 2025
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5989358Z 10.0.26100
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5989821Z Datacenter
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5990282Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5990751Z ##[group]Runner Image
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5991330Z Image: windows-2025-vs2026
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5991867Z Version: 20260922.246.2
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5993331Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260922.246/images/windows/Windows2025-VS2026-Readme.md
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5994892Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260922.246
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5995816Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5997306Z ##[group]GITHUB_TOKEN Permissions
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.5999574Z Contents: read
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6000145Z Metadata: read
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6000684Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6002730Z Secret source: None
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6003612Z Cache mode: write
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6004300Z Prepare workflow directory
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6369771Z Prepare all required actions
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.6418626Z Getting action download info
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:51.9906718Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.1204685Z Download action repository 'actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e' (SHA:b7ad1dad31e06c5925ef5d2fc7ad053ef454303e)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.6905451Z Complete job name: Go tests on Windows
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8379043Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8380328Z with:
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8380820Z   persist-credentials: false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8381385Z   repository: prometheus/prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8386042Z   token: ***
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8387064Z   ssh-strict: true
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8387549Z   ssh-user: git
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8387981Z   clean: true
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8388447Z   sparse-checkout-cone-mode: true
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8388999Z   fetch-depth: 1
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8389446Z   fetch-tags: false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8389913Z   show-progress: true
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8390383Z   lfs: false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8390807Z   submodules: false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8391280Z   set-safe-directory: true
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8391802Z   allow-unsafe-pr-checkout: false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.8392665Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.9874566Z Syncing repository: prometheus/prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.9876810Z ##[group]Getting Git version info
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:52.9877528Z Working directory is 'D:\a\prometheus\prometheus'
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.1244652Z [command]"C:\Program Files\Git\bin\git.exe" version
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.4904835Z git version 2.55.0.windows.5
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.4956597Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.4973051Z Temporarily overriding HOME='D:\a\_temp\7690088f-a1b9-4d53-b10e-5125d172cd69' before making global git config changes
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.4975317Z Adding repository directory to the temporary git global config as a safe directory
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.4982900Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\prometheus\prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.5646497Z Deleting the contents of 'D:\a\prometheus\prometheus'
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.5652132Z ##[group]Determining repository object format
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.5654671Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.5656957Z ##[group]Initializing the repository
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.5666894Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\prometheus\prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.6527341Z Initialized empty Git repository in D:/a/prometheus/prometheus/.git/
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.6583858Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/prometheus/prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7262749Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7264418Z ##[group]Disabling automatic garbage collection
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7271758Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7562757Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7565021Z ##[group]Setting up auth
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7567114Z Removing SSH command configuration
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7574760Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:53.7877424Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.2820179Z Removing HTTP extra header
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.2829330Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.3131995Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.8814900Z Removing includeIf entries pointing to credentials config files
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.8825535Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:55.9134873Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.4267088Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-90bea528-d3b8-47ea-bf15-1ad83608a80a.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.4583630Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/prometheus/prometheus/.git.path D:\a\_temp\git-credentials-90bea528-d3b8-47ea-bf15-1ad83608a80a.config
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.4894937Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/prometheus/prometheus/.git/worktrees/*.path D:\a\_temp\git-credentials-90bea528-d3b8-47ea-bf15-1ad83608a80a.config
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.5262636Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-90bea528-d3b8-47ea-bf15-1ad83608a80a.config
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.5566287Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-90bea528-d3b8-47ea-bf15-1ad83608a80a.config
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.5860634Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.5861595Z ##[group]Fetching the repository
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:56.5878382Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9b337d64b76f644a998289cb4b8cdaa015356640:refs/remotes/pull/19839/merge
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5063959Z From https://github.com/prometheus/prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5066116Z  * [new ref]         9b337d64b76f644a998289cb4b8cdaa015356640 -> pull/19839/merge
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5110348Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5111360Z ##[group]Determining the checkout info
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5112569Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5124424Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5586844Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5886576Z ##[group]Checking out the ref
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:58.5894898Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/19839/merge
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1713027Z Note: switching to 'refs/remotes/pull/19839/merge'.
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1714124Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1714696Z You are in 'detached HEAD' state. You can look around, make experimental
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1715486Z changes and commit them, and you can discard any commits you make in this
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1716323Z state without impacting any branches by switching back to a branch.
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1716727Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1717632Z If you want to create a new branch to retain commits you create, you may
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1718323Z do so (now or later) by using -c with the switch command. Example:
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1718632Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1718851Z   git switch -c <new-branch-name>
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1719099Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1719243Z Or undo this operation with:
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1719432Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1719580Z   git switch -
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1719830Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1720101Z Turn off this advice by setting config variable advice.detachedHead to false
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1720495Z 
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1720896Z HEAD is now at 9b337d6 Merge a6079d929b70bc108ca54020d68b727d7e5b98e3 into 270db29150547af8dc2f7695382068525c95361c
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.1839154Z ##[endgroup]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2267586Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2549881Z 9b337d64b76f644a998289cb4b8cdaa015356640
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2592976Z ##[group]Removing auth
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2593404Z Removing SSH command configuration
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2601110Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.2916215Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.8493409Z Removing HTTP extra header
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.8502181Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:51:59.8806198Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:52:00.4691530Z Removing includeIf entries pointing to credentials config files
+Go tests on Windows	UNKNOWN STEP	2026-09-26T01:52:00.4700091Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^include
+
+... [9825958 characters truncated] ...
+
+estSanitizeFullLabelName/label_with_colons (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9768091Z     --- PASS: TestSanitizeFullLabelName/label_with_unicode_characters (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9768272Z     --- PASS: TestSanitizeFullLabelName/only_digits (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9768769Z     --- PASS: TestSanitizeFullLabelName/label_with_mixed_invalid_characters_at_start (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769082Z     --- PASS: TestSanitizeFullLabelName/label_with_consecutive_digits_at_start (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769243Z === RUN   TestSubsequenceScore
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769359Z === RUN   TestSubsequenceScore/empty_pattern
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769461Z === RUN   TestSubsequenceScore/empty_text
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769558Z === RUN   TestSubsequenceScore/exact_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769664Z === RUN   TestSubsequenceScore/prefix_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769770Z === RUN   TestSubsequenceScore/substring_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9769961Z === RUN   TestSubsequenceScore/fuzzy_match_picks_best_starting_position
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770185Z === RUN   TestSubsequenceScore/prefers_later_position_with_better_consecutive_run
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770380Z === RUN   TestSubsequenceScore/longer_prefix_match_stays_below_exact_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770518Z === RUN   TestSubsequenceScore/pattern_longer_than_text
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770717Z === RUN   TestSubsequenceScore/pattern_longer_in_runes_than_multi-byte_text
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770877Z === RUN   TestSubsequenceScore/non-ASCII_pattern_with_ASCII_text
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9770997Z === RUN   TestSubsequenceScore/no_subsequence_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9771117Z === RUN   TestSubsequenceScore/unicode_exact_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9771235Z === RUN   TestSubsequenceScore/unicode_prefix_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9771342Z === RUN   TestSubsequenceScore/unicode_no_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9771780Z === RUN   TestSubsequenceScore/unicode_first_char_matches_but_pattern_cannot_complete
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9772002Z === RUN   TestSubsequenceScore/unicode_fuzzy_match_with_gap_between_intervals
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9772652Z === RUN   TestSubsequenceScore/mixed_ascii_and_unicode
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9772901Z === RUN   TestSubsequenceScore/unicode_chars_sharing_leading_utf-8_byte_do_not_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773035Z === RUN   TestSubsequenceScore/single_char_exact_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773214Z === RUN   TestSubsequenceScore/consecutive_match_with_leading_gap
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773364Z === RUN   TestSubsequenceScore/repeated_chars_use_greedy_match
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773469Z --- PASS: TestSubsequenceScore (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773666Z     --- PASS: TestSubsequenceScore/empty_pattern (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773832Z     --- PASS: TestSubsequenceScore/empty_text (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9773991Z     --- PASS: TestSubsequenceScore/exact_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9774214Z     --- PASS: TestSubsequenceScore/prefix_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9774396Z     --- PASS: TestSubsequenceScore/substring_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9774682Z     --- PASS: TestSubsequenceScore/fuzzy_match_picks_best_starting_position (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9775014Z     --- PASS: TestSubsequenceScore/prefers_later_position_with_better_consecutive_run (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9775669Z     --- PASS: TestSubsequenceScore/longer_prefix_match_stays_below_exact_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9775968Z     --- PASS: TestSubsequenceScore/pattern_longer_than_text (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9776276Z     --- PASS: TestSubsequenceScore/pattern_longer_in_runes_than_multi-byte_text (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9776524Z     --- PASS: TestSubsequenceScore/non-ASCII_pattern_with_ASCII_text (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9776722Z     --- PASS: TestSubsequenceScore/no_subsequence_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9776913Z     --- PASS: TestSubsequenceScore/unicode_exact_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9777197Z     --- PASS: TestSubsequenceScore/unicode_prefix_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9777505Z     --- PASS: TestSubsequenceScore/unicode_no_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9777869Z     --- PASS: TestSubsequenceScore/unicode_first_char_matches_but_pattern_cannot_complete (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9778176Z     --- PASS: TestSubsequenceScore/unicode_fuzzy_match_with_gap_between_intervals (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9778382Z     --- PASS: TestSubsequenceScore/mixed_ascii_and_unicode (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9778776Z     --- PASS: TestSubsequenceScore/unicode_chars_sharing_leading_utf-8_byte_do_not_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779069Z     --- PASS: TestSubsequenceScore/single_char_exact_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779326Z     --- PASS: TestSubsequenceScore/consecutive_match_with_leading_gap (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779566Z     --- PASS: TestSubsequenceScore/repeated_chars_use_greedy_match (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779676Z === RUN   TestSubsequenceScoreProperties
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779805Z --- PASS: TestSubsequenceScoreProperties (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9779864Z PASS
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780020Z ok  	github.com/prometheus/prometheus/util/strutil	0.224s
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780203Z ?   	github.com/prometheus/prometheus/util/testrecord	[no test files]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780292Z === RUN   TestAppendable
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780390Z --- PASS: TestAppendable (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780475Z === RUN   TestAppendable_Then
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780580Z --- PASS: TestAppendable_Then (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780666Z === RUN   TestSample_RequireEqual
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780774Z --- PASS: TestSample_RequireEqual (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9780901Z === RUN   TestConcurrentAppender_ReturnsErrAppender
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781062Z --- PASS: TestConcurrentAppender_ReturnsErrAppender (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781200Z === RUN   TestConcurrentAppenderV2_ReturnsErrAppender
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781361Z --- PASS: TestConcurrentAppenderV2_ReturnsErrAppender (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781467Z === RUN   TestReorderExpectedForStaleness
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781625Z === RUN   TestReorderExpectedForStaleness/no_staleness_markers
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9781851Z === RUN   TestReorderExpectedForStaleness/with_staleness_markers
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9782069Z === RUN   TestReorderExpectedForStaleness/with_staleness_markers_wrong_order
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9782364Z === RUN   TestReorderExpectedForStaleness/with_staleness_markers_wrong_order_but_not_consecutive
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9782498Z --- PASS: TestReorderExpectedForStaleness (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9782824Z     --- PASS: TestReorderExpectedForStaleness/no_staleness_markers (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9783223Z     --- PASS: TestReorderExpectedForStaleness/with_staleness_markers (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9783541Z     --- PASS: TestReorderExpectedForStaleness/with_staleness_markers_wrong_order (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784030Z     --- PASS: TestReorderExpectedForStaleness/with_staleness_markers_wrong_order_but_not_consecutive (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784124Z === RUN   TestSampleIsStale
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784219Z --- PASS: TestSampleIsStale (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784280Z PASS
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784441Z ok  	github.com/prometheus/prometheus/util/teststorage	0.037s
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784618Z ?   	github.com/prometheus/prometheus/util/testutil	[no test files]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784732Z === RUN   TestGenerateRecordsStartTimestamps
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9784957Z === RUN   TestGenerateRecordsStartTimestamps/with_start_timestamp
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9785145Z === RUN   TestGenerateRecordsStartTimestamps/without_start_timestamp
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9785284Z --- PASS: TestGenerateRecordsStartTimestamps (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9785553Z     --- PASS: TestGenerateRecordsStartTimestamps/with_start_timestamp (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9785830Z     --- PASS: TestGenerateRecordsStartTimestamps/without_start_timestamp (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9785890Z PASS
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786031Z ok  	github.com/prometheus/prometheus/util/testwal	0.043s
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786206Z ?   	github.com/prometheus/prometheus/util/treecache	[no test files]
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786282Z === RUN   TestPool
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786382Z === RUN   TestPool/provides_correct_values
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786469Z === RUN   TestPool/is_not_racy
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786628Z     pool_test.go:79: Done 1000000 iterations
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786722Z === RUN   TestPool/does_not_allocate
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786813Z === RUN   TestPool/zero_value_is_valid
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9786908Z --- PASS: TestPool (0.08s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787130Z     --- PASS: TestPool/provides_correct_values (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787254Z     --- PASS: TestPool/is_not_racy (0.08s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787401Z     --- PASS: TestPool/does_not_allocate (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787547Z     --- PASS: TestPool/zero_value_is_valid (0.00s)
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787608Z PASS
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787758Z ok  	github.com/prometheus/prometheus/util/zeropool	0.108s
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:08.9787820Z FAIL
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:14.2642248Z ##[error]Process completed with exit code 1.
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:14.4184953Z Post job cleanup.
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.3767201Z [command]"C:\Program Files\Git\bin\git.exe" version
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.4232429Z git version 2.55.0.windows.5
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.4678766Z Temporarily overriding HOME='D:\a\_temp\0f3dc40f-b187-471c-95f5-d7927a8b0195' before making global git config changes
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.4680029Z Adding repository directory to the temporary git global config as a safe directory
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.4718527Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\prometheus\prometheus
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.5067951Z Removing SSH command configuration
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.5079127Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:21.5519515Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.2054941Z Removing HTTP extra header
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.2064616Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.2373457Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.7502446Z Removing includeIf entries pointing to credentials config files
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.7517120Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:23.7815664Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Go tests on Windows	UNKNOWN STEP	2026-09-26T02:06:24.3881166Z Cleaning up orphan processes

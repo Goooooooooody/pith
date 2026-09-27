@@ -1,0 +1,112 @@
+pith · <log> · 1,219 lines → 525 groups · ~44.4k → ~2.0k tokens (95.5% smaller)
+
+jobs: Playwright E2E tests (1/8)
+levels: error 8 · warn 5 · notable 11 · info 665
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 364/525 groups as confident noise · 2 requests · 11,432 tokens · $0.0005 · 1.1s
+most likely root cause: [c8c3] rc=0.85 (confidence 0.84, cause visible p=0.58)
+
+== LIKELY ROOT CAUSE (jev rc=0.85)
+[c8c3] ERROR ×1  act=0.84 val=3.1/4 rc=0.85  L1004  job: Playwright E2E tests (1/8)
+  1) [admin] › e2e-playwright/plugin-e2e/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins
+    Error: Error while verifying @grafana/plugin-e2e scenarios: Expected variable edit page to display certain label names after query execution.
+    See https:/…/plugin-e2e/plugin-e2e-api-tests/README.md for more information.
+    Expected: To find preview of values: __name__, action, active, address}
+    Received: Error: expect(locator).toBeVisible() failed
+    Locator: locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+    Call log:
+    - Expect "toBeVisible" with timeout 10000ms
+    - waiting for locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+    > 30 |       ).toDisplayPreviews(prometheusLabels.data);
+    Error Context: playwright-test-results/variableEditPage-plugin-e2-98ad9--query-with-mocked-response-admin-retry1/error-context.md
+    at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+    at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Playwright E2E tests (1/8)
+L512      [e91b] ➤ YN0004: │ tree-sitter@npm:0.21.1 lists build scripts, but all build scripts have been disabled. (×2, last L513)
+L514      [655c] ➤ YN0004: │ unrs-resolver@npm:1.11.1 lists build scripts, but all build scripts have been disabled.
+L515    ✱ [d8e2] ➤ YN0007: │ msw@npm:2.10.4 [c815a] must be built because it never has been before or the last one failed
+L517      [4757] ➤ YN0000: └ Completed in 27s 659ms (×3, last L517)
+L518      [140f] ➤ YN0000: · Done with warnings in 30s 106ms
+L520      [9e1b] ▶ Run yarn e2e:plugin:build
+   …
+L981      [42b3] To view the server logs, wait for this job to complete and downloaded the 'grafana-server-log-1' artifact. (×2, last L981)
+L982      [f841] ▶ Run yarn e2e:playwright --shard=1/8 --reporter=dot,blob --output=playwright-test-results
+L983      [5cf8] yarn e2e:playwright --shard=1/8 --reporter=dot,blob --output=playwright-test-results
+   …
+L999      [9d4b] Running 95 tests using 4 workers, shard 1 of 8
+L1000     [9374] ····················································OFREP endpoint not called - OpenFeature may not be enabled
+L1001     [437b] ·········×············F·····
+L1002     [bbc4] ················
+L1004   ✱ [c8c3] 1) [admin] › e2e-playwright/plugin-e2e/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins
+          Error: Error while verifying @grafana/plugin-e2e scenarios: Expected variable edit page to display certain label names after query execution.
+          See https:/…/plugin-e2e/plugin-e2e-api-tests/README.md for more information.
+          Expected: To find preview of values: __name__, action, active, address}
+          Received: Error: expect(locator).toBeVisible() failed
+          Locator: locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+          Expected: visible
+          Timeout: 10000ms
+          Error: element(s) not found
+          Call log:
+          - Expect "toBeVisible" with timeout 10000ms
+          - waiting for locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+          > 30 |       ).toDisplayPreviews(prometheusLabels.data);
+          Error Context: playwright-test-results/variableEditPage-plugin-e2-98ad9--query-with-mocked-response-admin-retry1/error-context.md
+          at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+          at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+   …
+L1094   ✱ [b2637] 1 failed
+          [admin] › e2e-playwright/plugin-e2e/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins
+L1096     [ea47] 94 passed (3.1m)
+L1097   ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L1119)
+L1098   ✱ [d6f3] ▶ Run echo "Tests in this shard failed."
+L1099   ✱ [8a9d] echo "Tests in this shard failed."
+L1100     [fdf0] echo ""
+L1101     [6ff7] echo "View combined logs and HTML report in the 'Playwright test report' job once all tests finish."
+L1102     [3133] exit 1
+L1103     [c522] shell: /usr/bin/bash -e {0} (×8, last L1103)
+L1104     [4293] env: (×25, last L1163)
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+          (+7 lines)
+   …
+L1116   ✱ [137e] Tests in this shard failed.
+L1118     [37a7] View combined logs and HTML report in the 'Playwright test report' job once all tests finish.
+L1119   ✱ [eead] ##[error]Process completed with exit code 1.
+L1120     [ac10] ▶ Run actions/upload-artifact@v7 (×2, last L1153)
+
+== OTHER ERRORS & WARNINGS
+L598    WARN [a203] (node:4698) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods (×2, last L643)
+L724    NOTA [4371] ▶ Run set -euo pipefail
+L725    NOTA [c99a] set -euo pipefail
+L949    NOTA [2aab] ▶ Run timeout=60
+L950    NOTA [4bb5] timeout=60
+
+== END OF OUTPUT
+L949      [2aab] ▶ Run timeout=60
+L950      [4bb5] timeout=60
+L953      [efe6] while ! curl -s -f http://localhost:3001/health > /dev/null 2>&1; do
+L984      [c522] shell: /usr/bin/bash -e {0}
+L1153     [ac10] ▶ Run actions/upload-artifact@v7
+L1154     [8d65] with:
+L1163     [4293] env:
+L1185     [0c00] Artifact download URL: https://github.com/grafana/grafana/actions/runs/36270941090/artifacts/10915417925
+
+== MOST FREQUENT OTHER LINES
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [6e5d] digest-mismatch: error
+×1       [6d2d] Playwright E2E tests (1/8)	UNKNOWN STEP	﻿2026-09-26T21:00:05.8283747Z Current runner version: '2.337.0'
+×1       [70cc] Runner name: 'ubuntu-x64-large_i-0ed99695b66391434'
+
+(not shown: 126 groups, 126 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

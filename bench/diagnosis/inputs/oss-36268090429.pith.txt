@@ -1,0 +1,145 @@
+pith · <log> · 3,942 lines → 322 groups · ~139.6k → ~1.8k tokens (98.7% smaller)
+
+jobs: lint debug linux-x86_64; ci status
+levels: error 23 · warn 9 · notable 16 · info 585
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: lint debug linux-x86_64
+L338      [8b79] ▶ Run deno run --allow-write --allow-read --allow-run --allow-net ./tools/format.js --check
+   …
+L370      [8d87] Compiling https://plugins.dprint.dev/typescript-0.96.0.wasm
+L371      [216f] Compiling https://plugins.dprint.dev/markdown-0.21.1.wasm
+L372      [0d37] from /home/runner/work/deno/deno/ext/node/polyfills/internal/crypto/keys.ts:
+          4    4| //·deno-lint-ignore-file·no-explicit-any
+          5    5|
+          6    6| (function·()·{
+          (+297 lines)
+   …
+L754    ✱ [8048] 216|-······//·@ts-expect-error·__proto__·is·magic
+          217|-······__proto__:·null,
+          218|-······configurable:·true,
+          219|-······value:·"KeyObject",
+          220|-····},
+          221|-··});
+          222|-
+          223|-··function·getKeyObjectHandle(key:·KeyObject,·ctx:·number)·{
+          224|-····if·(ctx·===·kCreatePrivate)·{
+          197     |+··equals(otherKeyObject:·KeyObject):·boolean·{
+          198     |+····if·(!isKeyObject(otherKeyObject))·{
+   …
+L765      [2f5b] 199  225| ······throw·new·ERR_INVALID_ARG_TYPE(
+          226|-········"key",
+          227|-········["string",·"ArrayBuffer",·"Buffer",·"TypedArray",·"DataView"],
+          228|-········key,
+          (+3 lines)
+   …
+L772      [0574] 203  229| ······); (×5, last L2203)
+L773      [b2a1] 204  230| ····} (×17, last L2809)
+   …
+L788      [db11] 208  243| (×53, last L2814)
+          244|-····return·key[kHandle];
+          209     |+··export(_options?:·unknown):·string·|·Buffer·|·JsonWebKey·{
+          210     |+····notImplemented("crypto.KeyObject.prototype.export");
+   …
+L792      [21ca] 211  245| ··} (×17, last L2813)
+          212     |+}
+   …
+L803    ✱ [8c4c] 216     |+····//·@ts-expect-error·__proto__·is·magic
+          217     |+····__proto__:·null,
+          218     |+····configurable:·true,
+          219     |+····value:·"KeyObject",
+          220     |+··},
+          221     |+});
+          222     |+
+          223     |+function·getKeyObjectHandle(key:·KeyObject,·ctx:·number)·{
+          224     |+··if·(ctx·===·kCreatePrivate)·{
+          225     |+····throw·new·ERR_INVALID_ARG_TYPE(
+          226     |+······"key",
+          227     |+······["string",·"ArrayBuffer",·"Buffer",·"TypedArray",·"DataView"],
+          228     |+······key,
+   …
+L816      [5cb5] 229  253| ····); (×2, last L1729)
+          254|-····const·isPublic·=·ctx·===·kConsumePublic·||·ctx·===·kCreatePublic;
+          230     |+··}
+   …
+L3858     [565f] 659 659| })(); (×2, last L3858)
+L3859     [60d1] -- (×2, last L3859)
+L3860     [59cb] Found 2 not formatted files.
+L3861   ✱ [eead] ##[error]Process completed with exit code 20. (×2, last L3941)
+-- job: ci status
+L3925     [6871] Contents: read (×2, last L3925)
+L3926     [b807] Metadata: read (×2, last L3926)
+L3928     [8cc2] Secret source: None (×2, last L3928)
+L3929     [f1c4] Cache mode: write (×2, last L3929)
+L3930     [7900] Prepare workflow directory (×2, last L3930)
+L3931     [938a] Prepare all required actions (×2, last L3931)
+L3932     [519e] Complete job name: ci status
+L3933     [7bbd] ▶ Run if [[ "true" == "true" ]]; then
+L3934     [1b3d] if [[ "true" == "true" ]]; then
+          echo 'CI failed'
+          exit 1
+L3937     [de9d] fi (×7, last L3937)
+L3938     [c522] shell: /usr/bin/bash -e {0}
+L3940   ✱ [6934] CI failed
+L3941   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L1570   ERRO [9166] 667     |+······"error:1E08010C:DECODER·routines::unsupported",
+L1575   ERRO [b8f5] 671  651| ··}
+L1611   ERRO [ad4b] 701  660| (×2, last L2156)
+L1618   ERRO [ead5] 667|-········"error:1E08010C:DECODER·routines::unsupported",
+L1650   ERRO [cfb2] 730  671| ····}
+L1921   ERRO [79f0] 874  819| ········throw·new·DOMException(
+L1924   ERRO [1391] 876  821| ··········"DataError",
+L2660   ERRO [102f] 14|-····Error,
+L2929   ERRO [892d] 159|-········throw·new·Error(`Invalid·digest:·${algorithm}`); (×2, last L3134)
+L3009   ERRO [c90d] 193 209| ······}·catch·(err)·{
+L3021   ERRO [9ec7] 196 219| ········throw·err;
+L3310   ERRO [bf57] 369|-····callback?:·(error:·Error·|·null,·data:·Buffer)·=>·void,
+L3558   ERRO [4ed6] 501    |+··callback?:·(error:·Error·|·null,·result:·boolean)·=>·void,
+L3569   ERRO [d0a1] 501|-····callback?:·(error:·Error·|·null,·result:·boolean)·=>·void,
+L3754   ERRO [f34a] 598 604| ······)·{
+L3824   ERRO [16a7] 635 642| ····}
+L71     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L159    WARN [a5ec] (node:2302) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×2, last L181)
+L160    WARN [1673] (Use `node --trace-deprecation ...` to show where the warning was created) (×2, last L182)
+L162    WARN [442c] (node:2302) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are n (×2, last L184)
+L358    WARN [9ff0] ╭ Warning
+L3903   WARN [d2a9] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: ./.github/mtime_cache, actions/cache/restore@0057852bfaa89a5
+L38     NOTA [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×11, last L340)
+L204    NOTA [77e5] * invalid: 0
+L221    NOTA [1bcb] curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused -fsSL \
+L1120   NOTA [cdf2] 399  422| ········throw·new·ERR_INVALID_ARG_TYPE(
+L1240   NOTA [f564] 472  484| ··········throw·new·ERR_INVALID_ARG_VALUE(option("cipher",·objName),·cipher);
+
+== END OF OUTPUT
+L3907     [5ec4] Version: 20260828.587
+L3908     [8858] Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+L3909     [f3f1] Build Date: 2026-08-28T16:44:25Z
+L3910     [d5f1] Worker ID: {70e2534e-3913-4507-94a9-4088a135d8bd}
+L3911     [122d] Azure Region: westus
+L3913     [e9e1] ▶ Operating System
+L3914     [06b2] Ubuntu
+L3915     [e00d] 24.04.5
+L3916     [7704] LTS
+L3918     [4713] ▶ Runner Image
+L3919     [45ff] Image: ubuntu-24.04
+L3920     [32f7] Version: 20260920.314.1
+L3921     [5cec] Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+L3922     [d7a6] Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+L3924     [27d2] ▶ GITHUB_TOKEN Permissions
+
+== MOST FREQUENT OTHER LINES
+×61      [0a0c] 1027 1027|
+×18      [44d3] 1044 1045| ····}
+×13      [831e] 1045 1046| ··}
+×9       [50c4] 397  420| ······}
+×8       [cabc] Received 160043319 of 160043319 (100.0%), 202.2 MBs/sec
+×6       [a096] 1015 1005| ······}
+×5       [8d65] with:
+×5       [4293] env:
+×4       [a71a] hint:
+×4       [0d35] 371  350| ······return·{
+
+(not shown: 221 groups, 270 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

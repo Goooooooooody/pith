@@ -1,0 +1,59 @@
+pith · <log> · 251 lines → 164 groups · ~9.4k → ~940 tokens (90.0% smaller)
+
+jobs: Check spelling of all files with codespell
+levels: error 2 · warn 2 · info 196
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Check spelling of all files with codespell
+L199      [dcd5] ▶ Run codespell-project/actions-codespell@v2
+   …
+L204      [3173] Running codespell on '' with the following options...
+L205      [2d8c] Builtin dictionaries ''
+L206      [96a5] Check filenames? ''
+L207      [672a] Check hidden? ''
+L208      [6137] Config ''
+L209      [187a] Exclude file ''
+L210      [63b6] Ignore words file ''
+L211      [df10] Ignore words list ''
+L212      [338d] Ignore URI words list ''
+L213      [728f] Skipping './.git'
+L214      [fe27] Resulting CLI options  --skip ./.git
+L215      [d01c] 2
+L216    ✱ [fa98] ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:360: currrent ==> current (×2, last L217)
+L217    ✱ [fa98] ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:361: currrent ==> current
+
+== OTHER ERRORS & WARNINGS
+L91     WARN [4a34] #8 5.309 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable
+L134    WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+
+== END OF OUTPUT
+L177      [0931] [command]/usr/bin/git checkout --progress --force refs/remotes/pull/15667/merge
+L178      [172a] Note: switching to 'refs/remotes/pull/15667/merge'.
+L180      [daee] You are in 'detached HEAD' state. You can look around, make experimental
+L181      [0262] changes and commit them, and you can discard any commits you make in this
+L182      [b280] state without impacting any branches by switching back to a branch.
+L184      [e105] If you want to create a new branch to retain commits you create, you may
+L185      [8755] do so (now or later) by using -c with the switch command. Example:
+L189      [cee5] Or undo this operation with:
+L193      [60ef] Turn off this advice by setting config variable advice.detachedHead to false
+L195      [358a] HEAD is now at 35d57df Merge 9be7fafea854e1efa45cafc99ae8cab2d14a4a8d into 321bd65b90f1b947017c5649f83e5aa8c35d947d
+L197      [24a7] [command]/usr/bin/git log -1 --format=%H
+L198      [d656] 35d57df59a55c9cae48c6301f193873247065b3c
+L200      [8d65] with:
+L203      [a16b] ##[command]/usr/bin/docker run --name c6f659c1d373aaa83843bcad4cc88750d71982_c1ceb7 --label c6f659 --workdir /github/workspace --rm -e "INPUT_BUILTIN" -e "INPUT_CHECK_FILENAMES" -e "INPUT_CHECK_HIDDEN
+L218      [ca1a] Codespell found one or more problems
+
+== MOST FREQUENT OTHER LINES
+×9       [c417] #1 DONE 0.0s
+×4       [a71a] hint:
+×3       [abab] #5 sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a 10.30kB / 10.30kB done
+×2       [5b30] #2 [internal] load metadata for docker.io/library/python:3.13-alpine
+×2       [3fe7] #2 ...
+×2       [9a07] #5 [1/3] FROM docker.io/library/python:3.13-alpine@sha256:7415fbc3c9e4979cc717d92377ab2bc7b2b4a2af1ac03cc52b5f3f88efedaf3a
+×2       [1144] #5 extracting sha256:a8754e842af47bb367714de3fec4bbc455aa684e0aacc1aa7e7364fbcd4416c1 0.7s done
+×2       [e6c0] #5 extracting sha256:1246c75eb338cb1302c85931f1c4b19360ecc0295730d8e6c143feefc6d875d3
+×2       [8963] [command]/usr/bin/git version
+×2       [4e5e] git version 2.55.0
+
+(not shown: 106 groups, 118 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

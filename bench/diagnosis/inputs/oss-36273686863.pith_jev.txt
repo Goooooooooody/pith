@@ -1,0 +1,113 @@
+pith · <log> · 10,503 lines → 5145 groups · ~617.5k → ~2.5k tokens (99.6% smaller)
+
+jobs: cargo test (linux, release)
+levels: fatal 4 · error 31 · warn 7 · notable 9 · info 10,077
+raw: <removed for evaluation>
+jev (jev-latest): hid 920/1000 groups as confident noise (4145 rarest groups not scored) · 1 requests · 4,763 tokens · $0.0002 · 0.9s
+most likely root cause: [eded] rc=0.62 (confidence 0.60, cause visible p=0.59)
+
+== LIKELY ROOT CAUSE (jev rc=0.62)
+[eded] ERROR ×4  act=0.87 val=3.3/4 rc=0.62  L9872 … L10480  job: cargo test (linux, release)
+  error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+    cause: Failed to query Python interpreter
+    cause: failed to rename file from …/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to …/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: cargo test (linux, release)
+L553      [885f] ▶ Run uv run --locked --only-dev cargo nextest run --cargo-profile profiling --all-features
+   …
+L1660     [d6a1] PASS [   0.026s] (1024/9421) ruff_linter linter::tests::test_semantic_errors::path_new_write_to_debug_py_pythonversion_py312_expects (×17, last L1660)
+L1661     [2043] PASS [   0.026s] (1025/9421) ruff_linter linter::tests::test_shebang_noqa::_on_line_three_r_usr_bin_env_python_noqa_d100_expects (×3, last L1662)
+L1663   ✱ [307e] SLOW [>  1.000s] (─────────) ruff_annotate_snippets::examples custom_error (×9, last L3278)
+L1664     [e3b6] SLOW [>  1.000s] (─────────) ruff_annotate_snippets::examples elide_header (×9, last L3279)
+L1665     [c485] SLOW [>  1.000s] (─────────) ruff_annotate_snippets::examples custom_level (×4, last L2203)
+L1666     [66f4] SLOW [>  1.000s] (─────────) ruff_annotate_snippets::examples expected_type (×9, last L3280)
+   …
+L3548     [ccf9] PASS [   0.029s] (2810/9421) ruff_linter rules::pyflakes::tests::f401_preview_refined_submodule_handling_diffs::rule_unusedimport_path_new_f401_5_py_expects (×48, last L3834)
+L3550     [7d51] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples elide_header (×4, last L4534)
+L3551   ✱ [64f2] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples custom_error (×8, last L6247)
+L3552     [265a] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples expected_type (×25, last L10230)
+L3553     [3a33] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples highlight_source (×15, last L7609)
+L3554     [1b1f] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples multi_suggestion (×28, last L10413)
+   …
+L9858     [23f7] PASS [   0.093s] (8930/9421) ty_python_semantic::mdtest mdtest::exception/basic.md
+L9859     [ae04] PASS [   0.089s] (8931/9421) ty_python_semantic::mdtest mdtest::exhaustiveness_checking.md
+L9860     [610e] PASS [   0.073s] (8932/9421) ty_python_semantic::mdtest mdtest::expression/boolean.md
+L9861   ✱ [60ee] FAIL [   0.072s] (8933/9421) ty_python_semantic::mdtest mdtest::external/attrs.md (×2, last L10453)
+L9862     [f6a6] stdout ─── (×2, last L10454)
+          running 1 test
+          test mdtest::external/attrs.md ... FAILED
+          failures:
+          (+1 lines)
+   …
+L9870   ✱ [8df9] test panicked: Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2): (×2, last L10462)
+L9871     [cb76] warning: `VIRTUAL_ENV=/home/runner/work/ruff/ruff/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead (×4, last L10479)
+L9872   ✱ [eded] error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3` (×4, last L10480)
+          cause: Failed to query Python interpreter
+          cause: failed to rename file from …/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to …/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+   …
+L9878   ✱ [e85e] failures: (×2, last L10470)
+          mdtest::external/attrs.md
+L9881   ✱ [565e] test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s (×2, last L10473)
+L9883     [22fc] stderr ─── (×2, last L10475)
+L9885   ✱ [20696] thread '<unnamed>' (76676) panicked at crates/ty_test/src/lib.rs:160:10: (×2, last L10477)
+L9886   ✱ [ed36] Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2): (×2, last L10478)
+L9888   ✱ [eded] error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+          cause: Failed to query Python interpreter
+          cause: failed to rename file from …/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to …/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+   …
+L10462  ✱ [8df9] test panicked: Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2):
+L10464  ✱ [eded] error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+          cause: Failed to query Python interpreter
+          cause: failed to rename file from …/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to …/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+   …
+L10470  ✱ [e85e] failures:
+          mdtest::external/attrs.md
+L10473  ✱ [565e] test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+L10477  ✱ [20696] thread '<unnamed>' (76676) panicked at crates/ty_test/src/lib.rs:160:10:
+L10478  ✱ [ed36] Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2):
+L10480  ✱ [eded] error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+          cause: Failed to query Python interpreter
+          cause: failed to rename file from …/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to …/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+   …
+L10484    [0467] note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace (×2, last L10484)
+L10486  ✱ [008b] error: test run failed
+L10487  ✱ [eead] ##[error]Process completed with exit code 100.
+
+== OTHER ERRORS & WARNINGS
+L464    WARN [2119] /home/runner/work/ruff/ruff/crates/ty_completion_eval/truth/deprecated-deprioritized/pyproject.toml
+L465    WARN [044f] /home/runner/work/ruff/ruff/crates/ty_completion_eval/truth/deprecated-deprioritized/uv.lock
+L339    NOTA [2656] wget -O- --timeout=10 --waitretry=3 --retry-connrefused --progress=dot:mega https://github.com/rui314/mold/releases/download/v2.41.0/mold-2.41.0-$(uname -m)-linux.tar.gz | $SUDO ta
+L365    NOTA [1316] + wget -O- --timeout=10 --waitretry=3 --retry-connrefused --progress=dot:mega https://github.com/rui314/mold/releases/download/v2.41.0/mold-2.41.0-x86_64-linux.tar.gz
+L10391  NOTA [06043] SLOW [>  1.000s] (─────────) ty_server::e2e pull_diagnostics::invalid_syntax_with_syntax_errors_disabled (×2, last L10400)
+
+== END OF OUTPUT
+L10361    [c204] PASS [   0.002s] (9385/9421) ty_site_packages tests::finds_system_site_packages
+L10374    [012c] PASS [   0.002s] (9398/9421) ty_site_packages tests::reject_env_that_does_not_exist
+L10377    [594e] PASS [   0.003s] (9401/9421) ty_site_packages tests::site_packages_paths_display
+L10383    [b577] PASS [   0.003s] (9407/9421) ty_site_packages tests::uses_symlink_target_layout
+L10388    [819d] PASS [  34.772s] (9412/9421) ruff_annotate_snippets::examples expected_type
+L10400    [06043] SLOW [>  2.000s] (─────────) ty_server::e2e pull_diagnostics::invalid_syntax_with_syntax_errors_disabled
+L10411    [c03b] SLOW [>  2.000s] (─────────) ty_server::e2e workspace_folders::remove_only_workspace
+L10412    [b75d] PASS [   2.029s] (9418/9421) ty_server::e2e workspace_folders::remove_only_workspace
+L10413    [1b1f] SLOW [> 37.000s] (─────────) ruff_annotate_snippets::examples multi_suggestion
+L10416    [372f] PASS [  37.743s] (9419/9421) ruff_annotate_snippets::examples multi_suggestion
+L10418    [ecee] SLOW [>  4.000s] (─────────) ty_server::e2e pull_diagnostics::workspace_diagnostic_long_polling_suspend_change_suspend_cycle
+L10421    [1bc2] SLOW [> 40.000s] (─────────) ruff_annotate_snippets::examples multislice
+L10422    [0f37] PASS [  40.666s] (9421/9421) ruff_annotate_snippets::examples multislice
+L10453    [60ee] FAIL [   0.072s] (8933/9421) ty_python_semantic::mdtest mdtest::external/attrs.md
+L10454    [f6a6] stdout ───
+
+== MOST FREQUENT OTHER LINES
+×22      [68b2] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples format
+×18      [06e0] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples id_hyperlink
+×11      [b6d3] SLOW [> 10.000s] (─────────) ruff_annotate_snippets::examples highlight_message
+×7       [0deb] PASS [   0.003s] ( 966/9421) ruff_linter fix::edits::tests::add_to_dunder_all_test::_1_into_empty_tuple_adding_a_trailing_comma
+×7       [d21f] SLOW [>  1.000s] (─────────) ruff_annotate_snippets::examples struct_name_as_context
+×4       [8d65] with:
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+
+(not shown: 4174 groups, 4,183 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

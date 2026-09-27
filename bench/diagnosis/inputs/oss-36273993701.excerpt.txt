@@ -1,0 +1,252 @@
+PR - test-pr-check-2	UNKNOWN STEP	﻿2026-09-26T21:45:46.1743640Z Current runner version: '2.337.0'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1765104Z ##[group]Runner Image Provisioner
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1765710Z Hosted Compute Agent
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1766099Z Version: 20260828.587
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1766530Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1767027Z Build Date: 2026-08-28T16:44:25Z
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1767491Z Worker ID: {d78d3749-b98f-4afe-acff-5a4aae75c05d}
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1767934Z Azure Region: centralus
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1768281Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1769155Z ##[group]Operating System
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1769567Z Ubuntu
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1769886Z 24.04.5
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1770256Z LTS
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1770597Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1770960Z ##[group]Runner Image
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1771349Z Image: ubuntu-24.04
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1771687Z Version: 20260920.314.1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1772539Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1773578Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1774303Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1775110Z ##[group]GITHUB_TOKEN Permissions
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1776418Z Contents: read
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1776764Z Metadata: read
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1777180Z Packages: read
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1777573Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1779059Z Secret source: None
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1779683Z Cache mode: write
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.1780166Z Prepare workflow directory
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.2811574Z Prepare all required actions
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.2859541Z Getting action download info
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.5106233Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:46.8096058Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.0468288Z Complete job name: PR - test-pr-check-2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.0967753Z ##[group]Run git config --global core.autocrlf false
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.0968278Z ^[[36;1mgit config --global core.autocrlf false^[[0m
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1244883Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1245545Z env:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1245912Z   TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1246342Z   TOOLSTATE_REPO_ACCESS_TOKEN: 
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1246677Z   CI_JOB_NAME: test-pr-check-2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1246969Z   CI_JOB_DOC_URL: 
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1247244Z   GITHUB_WORKFLOW_RUN_ID: 36273993701
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1247568Z   GITHUB_REPOSITORY: rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1247903Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1248281Z   HEAD_SHA: dc2f701f3e70e052c208b619055e742a2b2ddf6a
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1250793Z   DOCKER_TOKEN: ***
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1251090Z   SCCACHE_BUCKET: rust-lang-ci-sccache2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1251456Z   SCCACHE_REGION: us-west-1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1251800Z   CACHE_DOMAIN: ci-caches.rust-lang.org
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1252126Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1866567Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1867309Z with:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1867720Z   fetch-depth: 2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1868143Z   repository: rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1871590Z   token: ***
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1871992Z   ssh-strict: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1872391Z   ssh-user: git
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1872796Z   persist-credentials: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1873254Z   clean: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1874041Z   sparse-checkout-cone-mode: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1874526Z   fetch-tags: false
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1874922Z   show-progress: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1875397Z   lfs: false
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1875757Z   submodules: false
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1876147Z   set-safe-directory: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1876595Z   allow-unsafe-pr-checkout: false
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1877070Z env:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1877890Z   TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1878631Z   TOOLSTATE_REPO_ACCESS_TOKEN: 
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1879113Z   CI_JOB_NAME: test-pr-check-2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1879780Z   CI_JOB_DOC_URL: 
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1880222Z   GITHUB_WORKFLOW_RUN_ID: 36273993701
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1880754Z   GITHUB_REPOSITORY: rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1881303Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1881951Z   HEAD_SHA: dc2f701f3e70e052c208b619055e742a2b2ddf6a
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1886172Z   DOCKER_TOKEN: ***
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1886673Z   SCCACHE_BUCKET: rust-lang-ci-sccache2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1887226Z   SCCACHE_REGION: us-west-1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1887726Z   CACHE_DOMAIN: ci-caches.rust-lang.org
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.1888256Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2569387Z Syncing repository: rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2570707Z ##[group]Getting Git version info
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2571259Z Working directory is '/home/runner/work/rust/rust'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2572301Z [command]/usr/bin/git version
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2572757Z git version 2.55.0
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2574338Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2577893Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/fd06f5bb-aad4-44c8-a4ef-9e9422a2bdea/.gitconfig'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2785044Z Temporarily overriding HOME='/home/runner/work/_temp/fd06f5bb-aad4-44c8-a4ef-9e9422a2bdea' before making global git config changes
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2786959Z Adding repository directory to the temporary git global config as a safe directory
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.2791157Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rust/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4001995Z Deleting the contents of '/home/runner/work/rust/rust'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4004801Z ##[group]Determining repository object format
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4006124Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4006542Z ##[group]Initializing the repository
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4009499Z [command]/usr/bin/git init /home/runner/work/rust/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4298196Z hint: Using 'master' as the name for the initial branch. This default branch name
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4299475Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4306406Z hint: to use in all of your new repositories, which will suppress this warning,
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4307727Z hint: call:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4308090Z hint:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4308604Z hint: 	git config --global init.defaultBranch <name>
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4309174Z hint:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4309712Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4310572Z hint: 'development'. The just-created branch can be renamed via this command:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4311231Z hint:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4311601Z hint: 	git branch -m <name>
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4312029Z hint:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4312585Z hint: Disable this message with "git config set advice.defaultBranchName false"
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4313211Z Initialized empty Git repository in /home/runner/work/rust/rust/.git/
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4314948Z [command]/usr/bin/git remote add origin https://github.com/rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4390630Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4391305Z ##[group]Disabling automatic garbage collection
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4394250Z [command]/usr/bin/git config --local gc.auto 0
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4582169Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4582695Z ##[group]Setting up auth
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4583037Z Removing SSH command configuration
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4586685Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4612984Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4902427Z Removing HTTP extra header
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4906916Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.4929436Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.5099585Z Removing includeIf entries pointing to credentials config files
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.5103613Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.5130429Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.5306047Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.5783802Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rust/rust/.git.path /home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.6304697Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.7178971Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.7273316Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.7368576Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.7370051Z ##[group]Fetching the repository
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:47.7374450Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=2 origin +a3bf6b44d6f594237887a4116163624e9c5b24ea:refs/remotes/pull/163384/merge
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:57.3922573Z From https://github.com/rust-lang/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:57.3923259Z  * [new ref]             a3bf6b44d6f594237887a4116163624e9c5b24ea -> pull/163384/merge
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:45:57.3929265Z #
+
+... [436329 characters truncated] ...
+
+PROTOCOL: sparse
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8605648Z   HEAD_SHA: dc2f701f3e70e052c208b619055e742a2b2ddf6a
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8606943Z   DOCKER_TOKEN: ***
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607063Z   SCCACHE_BUCKET: rust-lang-ci-sccache2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607205Z   SCCACHE_REGION: us-west-1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607355Z   CACHE_DOMAIN: ci-caches.rust-lang.org
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607502Z   CARGO_UNSTABLE_BUILD_DIR_NEW_LAYOUT: true
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607645Z   PR_CI_JOB: 1
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607752Z   IMAGE: test-pr-check-2
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8607869Z ##[endgroup]
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8667804Z disk usage:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8677940Z Filesystem       Size  Used Avail Use% Mounted on
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8678196Z /dev/root        145G   71G   74G  49% /
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8678423Z tmpfs            7.9G   84K  7.9G   1% /dev/shm
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8678635Z tmpfs            3.2G  1.1M  3.2G   1% /run
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8678787Z tmpfs            5.0M     0  5.0M   0% /run/lock
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8678956Z /dev/nvme0n1p16  881M   64M  756M   8% /boot
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8679114Z /dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8679276Z tmpfs            1.6G   12K  1.6G   1% /run/user/1001
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.8750155Z Post job cleanup.
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9324643Z [command]/usr/bin/git version
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9357032Z git version 2.55.0
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9375664Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/8ed64544-f022-45bf-b57b-a7343d13fbd9/.gitconfig'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9381198Z Temporarily overriding HOME='/home/runner/work/_temp/8ed64544-f022-45bf-b57b-a7343d13fbd9' before making global git config changes
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9381840Z Adding repository directory to the temporary git global config as a safe directory
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9385065Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rust/rust
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9412822Z Removing SSH command configuration
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9416709Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9442066Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9633059Z Entering 'library/backtrace'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9670018Z Entering 'src/doc/book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9709817Z Entering 'src/doc/edition-guide'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9743224Z Entering 'src/doc/embedded-book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9778633Z Entering 'src/doc/nomicon'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9814081Z Entering 'src/doc/reference'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9849612Z Entering 'src/doc/rust-by-example'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9885055Z Entering 'src/gcc'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:06.9986308Z Entering 'src/llvm-project'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0115434Z Entering 'src/tools/cargo'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0160305Z Entering 'src/tools/enzyme'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0197992Z Entering 'src/tools/rustc-perf'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0254725Z Removing HTTP extra header
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0258816Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0286949Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0475459Z Entering 'library/backtrace'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0515333Z Entering 'src/doc/book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0551751Z Entering 'src/doc/edition-guide'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0587988Z Entering 'src/doc/embedded-book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0622080Z Entering 'src/doc/nomicon'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0656948Z Entering 'src/doc/reference'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0691417Z Entering 'src/doc/rust-by-example'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0729890Z Entering 'src/gcc'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0833578Z Entering 'src/llvm-project'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.0966711Z Entering 'src/tools/cargo'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1015051Z Entering 'src/tools/enzyme'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1051960Z Entering 'src/tools/rustc-perf'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1113123Z Removing includeIf entries pointing to credentials config files
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1120691Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1144132Z includeif.gitdir:/home/runner/work/rust/rust/.git.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1144670Z includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1145086Z includeif.gitdir:/github/workspace/.git.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1145644Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1153380Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rust/rust/.git.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1175037Z /home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1185227Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rust/rust/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-bd9160e3\-911e\-4036\-9a08\-fe21f1d414aa\.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1218773Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1247157Z /home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1254599Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-bd9160e3\-911e\-4036\-9a08\-fe21f1d414aa\.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1286929Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1306935Z /github/runner_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1313547Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-bd9160e3\-911e\-4036\-9a08\-fe21f1d414aa\.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1343024Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1362990Z /github/runner_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1369619Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-bd9160e3\-911e\-4036\-9a08\-fe21f1d414aa\.config
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1400250Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1604189Z Entering 'library/backtrace'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1621611Z file:/home/runner/work/rust/rust/.git/modules/library/backtrace/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1637864Z Entering 'src/doc/book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1653362Z file:/home/runner/work/rust/rust/.git/modules/src/doc/book/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1673431Z Entering 'src/doc/edition-guide'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1689834Z file:/home/runner/work/rust/rust/.git/modules/src/doc/edition-guide/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1705764Z Entering 'src/doc/embedded-book'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1721279Z file:/home/runner/work/rust/rust/.git/modules/src/doc/embedded-book/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1736495Z Entering 'src/doc/nomicon'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1751192Z file:/home/runner/work/rust/rust/.git/modules/src/doc/nomicon/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1766559Z Entering 'src/doc/reference'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1781354Z file:/home/runner/work/rust/rust/.git/modules/src/doc/reference/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1797613Z Entering 'src/doc/rust-by-example'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1812973Z file:/home/runner/work/rust/rust/.git/modules/src/doc/rust-by-example/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1829175Z Entering 'src/gcc'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1844586Z file:/home/runner/work/rust/rust/.git/modules/src/gcc/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1926521Z Entering 'src/llvm-project'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.1944345Z file:/home/runner/work/rust/rust/.git/modules/src/llvm-project/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2048346Z Entering 'src/tools/cargo'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2067802Z file:/home/runner/work/rust/rust/.git/modules/src/tools/cargo/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2088795Z Entering 'src/tools/enzyme'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2104971Z file:/home/runner/work/rust/rust/.git/modules/src/tools/enzyme/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2122149Z Entering 'src/tools/rustc-perf'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2137842Z file:/home/runner/work/rust/rust/.git/modules/src/tools/rustc-perf/config	remote.origin.url
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2177393Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/library/backtrace/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2206238Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/book/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2230064Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/edition-guide/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2254471Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/embedded-book/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2278319Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/nomicon/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2309064Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/reference/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2333399Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/rust-by-example/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2355499Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/gcc/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2377370Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/llvm-project/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2398092Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/cargo/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2419932Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/enzyme/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2442388Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/rustc-perf/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2461859Z Removing credentials config '/home/runner/work/_temp/git-credentials-bd9160e3-911e-4036-9a08-fe21f1d414aa.config'
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2578225Z Cleaning up orphan processes
+PR - test-pr-check-2	UNKNOWN STEP	2026-09-26T21:51:07.2790535Z Terminate orphan process: pid (2074) (python3)

@@ -1,0 +1,257 @@
+lint debug linux-x86_64	UNKNOWN STEP	﻿2026-09-26T20:02:14.6048822Z Current runner version: '2.337.0'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6076876Z ##[group]Runner Image Provisioner
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6077719Z Hosted Compute Agent
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6078722Z Version: 20260828.587
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6079515Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6080280Z Build Date: 2026-08-28T16:44:25Z
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6081014Z Worker ID: {ed96b7ce-f27a-43c1-b0ad-1a52f6c36516}
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6081773Z Azure Region: eastus2
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6082381Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6083959Z ##[group]Operating System
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6084652Z Ubuntu
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6085244Z 24.04.5
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6085778Z LTS
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6086325Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6086968Z ##[group]Runner Image
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6087563Z Image: ubuntu-24.04
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6088315Z Version: 20260920.314.1
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6089747Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6091426Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6092429Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6093589Z ##[group]GITHUB_TOKEN Permissions
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6095753Z Contents: read
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6096357Z Metadata: read
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6097026Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6099541Z Secret source: None
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6100626Z Cache mode: write
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6101712Z Prepare workflow directory
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6498638Z Prepare all required actions
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.6546436Z Getting action download info
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:14.9176033Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.0332013Z Download action repository 'actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.2140869Z Download action repository 'dsherret/rust-toolchain-file@3551321aa44dd44a0393eb3b6bdfbc5d25ecf621' (SHA:3551321aa44dd44a0393eb3b6bdfbc5d25ecf621)
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.3260439Z Download action repository 'denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282' (SHA:667a34cdef165d8d2b2e98dde39547c9daac7282)
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.6102782Z Complete job name: lint debug linux-x86_64
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.6785439Z ##[group]Run git config --global core.symlinks true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.6786236Z ^[[36;1mgit config --global core.symlinks true^[[0m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.6786924Z ^[[36;1mgit config --global fetch.parallel 32^[[0m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7070702Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7071759Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7652602Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7653379Z with:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7653799Z   fetch-depth: 5
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7654240Z   submodules: false
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7654692Z   repository: denoland/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7658671Z   token: ***
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7659135Z   ssh-strict: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7659577Z   ssh-user: git
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7660017Z   persist-credentials: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7660503Z   clean: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7660941Z   sparse-checkout-cone-mode: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7661465Z   fetch-tags: false
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7661908Z   show-progress: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7662356Z   lfs: false
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7662772Z   set-safe-directory: true
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.7663241Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8657748Z Syncing repository: denoland/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8660924Z ##[group]Getting Git version info
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8662225Z Working directory is '/home/runner/work/deno/deno'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8663984Z [command]/usr/bin/git version
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8664978Z git version 2.55.0
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8679704Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8691080Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/7d723804-0b32-4dff-ab70-94d70c2bbb4a/.gitconfig'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8700648Z Temporarily overriding HOME='/home/runner/work/_temp/7d723804-0b32-4dff-ab70-94d70c2bbb4a' before making global git config changes
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8702543Z Adding repository directory to the temporary git global config as a safe directory
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8704800Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/deno/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8739175Z Deleting the contents of '/home/runner/work/deno/deno'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8743415Z ##[group]Initializing the repository
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8747607Z [command]/usr/bin/git init /home/runner/work/deno/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8866088Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8867885Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8869793Z hint: to use in all of your new repositories, which will suppress this warning,
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8871068Z hint: call:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8871551Z hint:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8872071Z hint: 	git config --global init.defaultBranch <name>
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8872711Z hint:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8873293Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8874225Z hint: 'development'. The just-created branch can be renamed via this command:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8875018Z hint:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8875455Z hint: 	git branch -m <name>
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8875925Z hint:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8876593Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8877739Z Initialized empty Git repository in /home/runner/work/deno/deno/.git/
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8880990Z [command]/usr/bin/git remote add origin https://github.com/denoland/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8932041Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8932807Z ##[group]Disabling automatic garbage collection
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8937666Z [command]/usr/bin/git config --local gc.auto 0
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8968517Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8969923Z ##[group]Setting up auth
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8971270Z Removing SSH command configuration
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.8976834Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9009702Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9373805Z Removing HTTP extra header
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9381155Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9412523Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9629650Z Removing includeIf entries pointing to credentials config files
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9635438Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9669042Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9888469Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9926068Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/deno/deno/.git.path /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9957328Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/deno/deno/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:15.9992126Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:16.0028343Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:16.0055864Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:16.0056714Z ##[group]Fetching the repository
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:16.0064643Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=5 origin +16784e4decf1a4b76da7272612293672518b439d:refs/remotes/pull/36912/merge
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9900138Z From https://github.com/denoland/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9902538Z  * [new ref]           16784e4decf1a4b76da7272612293672518b439d -> pull/36912/merge
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9907349Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9908449Z ##[group]Determining the checkout info
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9909371Z ##[endgroup]
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9914270Z [command]/usr/bin/git sparse-checkout disable
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9967069Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9995821Z ##[group]Checking out the ref
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:18.9999535Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/36912/merge
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9806631Z Note: switching to 'refs/remotes/pull/36912/merge'.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9807278Z 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9807737Z You are in 'detached HEAD' state. You can look around, make experimental
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9809066Z changes and commit them, and you can discard any commits you make in this
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9809998Z state without impacting any branches by switching back to a branch.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9810554Z 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9810942Z If you want to create a new branch to retain commits you create, you may
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9811858Z do so (now or later) by using -c with the switch command. Example:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9812324Z 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9812537Z   git switch -c <new-branch-name>
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9812868Z 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9813146Z Or undo this operation with:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.9813487Z 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:02:19.98136
+
+... [528470 characters truncated] ...
+
+t debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2654529Z     639|^[[38;5;9m-^[[39m^[[38;5;9m······}·else·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2654890Z     640|^[[38;5;9m-^[[39m^[[38;5;9m········throw·err;^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2655139Z     641|^[[38;5;9m-^[[39m^[[38;5;9m······}^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2655457Z 631    |^[[38;5;10m+^[[39m^[[38;5;10m····if·(callback)·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2655831Z 632    |^[[38;5;10m+^[[39m^[[38;5;10m······setTimeout(()·=>·callback(null,·result));^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2656168Z 633    |^[[38;5;10m+^[[39m^[[38;5;10m····}·else·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2656540Z 634    |^[[38;5;10m+^[[39m^[[38;5;10m······return·result;^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2656667Z 635 642| ····}
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2656998Z 636    |^[[38;5;10m+^[[39m^[[38;5;10m··}·catch·(err)·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2657437Z 637    |^[[38;5;10m+^[[39m^[[38;5;10m····if·(callback)·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2657790Z 638    |^[[38;5;10m+^[[39m^[[38;5;10m······setTimeout(()·=>·callback(err,·false));^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2658298Z 639    |^[[38;5;10m+^[[39m^[[38;5;10m····}·else·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2658653Z 640    |^[[38;5;10m+^[[39m^[[38;5;10m······throw·err;^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2658894Z 641    |^[[38;5;10m+^[[39m^[[38;5;10m····}^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2659118Z 642 643| ··}
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2659285Z 643    |^[[38;5;10m+^[[39m^[[38;5;10m}^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2659369Z 644 644| 
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2659540Z     645|^[[38;5;9m-^[[39m^[[38;5;9m··return·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2659691Z 645    |^[[38;5;10m+^[[39m^[[38;5;10mreturn·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2660035Z 646    |^[[38;5;10m+^[[39m^[[38;5;10m··signOneShot,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2660382Z 647    |^[[38;5;10m+^[[39m^[[38;5;10m··verifyOneShot,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2660657Z 648    |^[[38;5;10m+^[[39m^[[38;5;10m··Sign,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2660900Z 649    |^[[38;5;10m+^[[39m^[[38;5;10m··Verify,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2661207Z 650    |^[[38;5;10m+^[[39m^[[38;5;10m··SignImpl,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2661391Z 651    |^[[38;5;10m+^[[39m^[[38;5;10m··VerifyImpl,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2661558Z 652    |^[[38;5;10m+^[[39m^[[38;5;10m··default:·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2661705Z 653 646| ····signOneShot,
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2661948Z 654 647| ····verifyOneShot,
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2662153Z 655 648| ····Sign,
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2662382Z 656 649| ····Verify,
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2662669Z     650|^[[38;5;9m-^[[39m^[[38;5;9m····SignImpl,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2662920Z     651|^[[38;5;9m-^[[39m^[[38;5;9m····VerifyImpl,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2663219Z     652|^[[38;5;9m-^[[39m^[[38;5;9m····default:·{^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2663413Z     653|^[[38;5;9m-^[[39m^[[38;5;9m······signOneShot,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2663606Z     654|^[[38;5;9m-^[[39m^[[38;5;9m······verifyOneShot,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2663814Z     655|^[[38;5;9m-^[[39m^[[38;5;9m······Sign,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2664133Z     656|^[[38;5;9m-^[[39m^[[38;5;9m······Verify,^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2664416Z     657|^[[38;5;9m-^[[39m^[[38;5;9m····},^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2664668Z     658|^[[38;5;9m-^[[39m^[[38;5;9m··};^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2664863Z 657    |^[[38;5;10m+^[[39m^[[38;5;10m··},^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2665313Z 658    |^[[38;5;10m+^[[39m^[[38;5;10m};^[[39m
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2665423Z 659 659| })();
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:03.2665503Z --
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:20.9715737Z Found ^[[1m2^[[0m not formatted files.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.0101528Z ##[error]Process completed with exit code 20.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.0206802Z Post job cleanup.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.1404104Z Caching is not enabled. Caching is skipped.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.1538315Z Post job cleanup.
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2412943Z [command]/usr/bin/git version
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2449693Z git version 2.55.0
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2482705Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/fc55e5c8-1d12-47b4-913d-bbce67715cb2/.gitconfig'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2492882Z Temporarily overriding HOME='/home/runner/work/_temp/fc55e5c8-1d12-47b4-913d-bbce67715cb2' before making global git config changes
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2494569Z Adding repository directory to the temporary git global config as a safe directory
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2499132Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/deno/deno
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2531221Z Removing SSH command configuration
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2537518Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2570793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2796480Z Entering 'tests/util/std'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2864493Z Removing HTTP extra header
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2869619Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.2902407Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3127269Z Entering 'tests/util/std'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3185311Z Removing includeIf entries pointing to credentials config files
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3193766Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3225982Z includeif.gitdir:/home/runner/work/deno/deno/.git.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3227282Z includeif.gitdir:/home/runner/work/deno/deno/.git/worktrees/*.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3228805Z includeif.gitdir:/github/workspace/.git.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3229806Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3237055Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/deno/deno/.git.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3261342Z /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3273879Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/deno/deno/.git.path /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3310472Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/deno/deno/.git/worktrees/*.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3335786Z /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3344594Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/deno/deno/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3379058Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3400537Z /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3408477Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3440822Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3462552Z /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3472446Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3511138Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3756595Z Entering 'tests/util/std'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3773237Z file:/home/runner/work/deno/deno/.git/modules/tests/util/std/config	remote.origin.url
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3807742Z [command]/usr/bin/git config --file /home/runner/work/deno/deno/.git/modules/tests/util/std/config --name-only --get-regexp ^includeIf\.gitdir:
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.3835086Z Removing credentials config '/home/runner/work/_temp/git-credentials-fa68a7a6-27c0-4ca3-9024-49f5c085744c.config'
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.4034759Z Cleaning up orphan processes
+lint debug linux-x86_64	UNKNOWN STEP	2026-09-26T20:03:21.4452375Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: ./.github/mtime_cache, actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+ci status	UNKNOWN STEP	﻿2026-09-26T21:07:03.3695735Z Current runner version: '2.337.0'
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3722699Z ##[group]Runner Image Provisioner
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3723906Z Hosted Compute Agent
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3724562Z Version: 20260828.587
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3725201Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3726034Z Build Date: 2026-08-28T16:44:25Z
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3726719Z Worker ID: {70e2534e-3913-4507-94a9-4088a135d8bd}
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3727496Z Azure Region: westus
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3728086Z ##[endgroup]
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3729890Z ##[group]Operating System
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3730631Z Ubuntu
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3731160Z 24.04.5
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3731693Z LTS
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3732266Z ##[endgroup]
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3732815Z ##[group]Runner Image
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3733760Z Image: ubuntu-24.04
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3734340Z Version: 20260920.314.1
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3735774Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3737318Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3738368Z ##[endgroup]
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3739450Z ##[group]GITHUB_TOKEN Permissions
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3742057Z Contents: read
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3742688Z Metadata: read
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3743511Z ##[endgroup]
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3745958Z Secret source: None
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3746933Z Cache mode: write
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.3748043Z Prepare workflow directory
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.4106210Z Prepare all required actions
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.4237465Z Complete job name: ci status
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.5210397Z ##[group]Run if [[ "true" == "true" ]]; then
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.5211801Z ^[[36;1mif [[ "true" == "true" ]]; then^[[0m
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.5212876Z ^[[36;1m  echo 'CI failed'^[[0m
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.5214310Z ^[[36;1m  exit 1^[[0m
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.5215401Z ^[[36;1mfi^[[0m
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.6192195Z shell: /usr/bin/bash -e {0}
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.6193841Z ##[endgroup]
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.6464543Z CI failed
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.6490704Z ##[error]Process completed with exit code 1.
+ci status	UNKNOWN STEP	2026-09-26T21:07:03.6711122Z Cleaning up orphan processes

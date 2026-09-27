@@ -1,0 +1,200 @@
+pith · <log> · 4,005 lines → 1974 groups · ~116.6k → ~4.0k tokens (96.6% smaller)
+
+jobs: PR - test-pr-check-2
+levels: error 36 · warn 29 · notable 28 · info 2,546
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 867/1000 groups as confident noise (974 rarest groups not scored) · 2 requests · 8,173 tokens · $0.0003 · 1.1s
+most likely root cause: [91fe] rc=0.76 (confidence 0.75, cause visible p=0.70)
+
+== LIKELY ROOT CAUSE (jev rc=0.76)
+[91fe] ERROR ×1  act=0.84 val=3.5/4 rc=0.76  L3856  job: PR - test-pr-check-2
+  error[E0382]: use of moved value: `niche_optimizations`
+    --> compiler/rustc_ty_utils/src/layout.rs:790:21
+    |                 ------------------- move occurs because `niche_optimizations` has type `NicheOptimizations`, which does not implement the `Copy` trait
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: PR - test-pr-check-2
+L551      [c14e] 5344	./src/tools/rustfmt/tests/target
+L552      [6580] 5192	./src/tools/rust-analyzer/crates/parser
+L553      [1bcf] 4832	./src/tools/rust-analyzer/crates/parser/test_data
+L554    ✱ [8135] 4804	./src/tools/miri/tests/fail
+L555      [eede] 4668	./tests/rustdoc-html
+L556      [0e73] 4544	./src/librustdoc
+L557      [53ae] 4344	./tests/ui/suggestions
+   …
+L731      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×25, last L3884)
+L732      [4293] env: (×26, last L3885)
+          TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+          TOOLSTATE_REPO_ACCESS_TOKEN:
+          CI_JOB_NAME: test-pr-check-2
+          (+12 lines)
+   …
+L749      [80ab] Attempting with retry: sh -c git submodule deinit -f  src/doc/nomicon src/tools/cargo src/doc/reference src/doc/book src/doc/rust-by-example src/doc/edition-guide src/llvm-project src/doc/embedded-book library/backtrace src/tools/rustc-perf src/tools/enzyme src/gcc &&     git submodule sync &&     g
+L750    ✱ [92cb] error: could not lock config file .git/modules/library/backtrace/config: No such file or directory
+L751      [8453] warning: Could not unset core.worktree setting in submodule 'library/backtrace'
+L752      [dd61] Cleared directory 'library/backtrace'
+L753    ✱ [ba40] error: could not lock config file .git/modules/src/doc/book/config: No such file or directory
+L754      [b7d3] warning: Could not unset core.worktree setting in submodule 'src/doc/book'
+L755      [da15] Cleared directory 'src/doc/book'
+L756    ✱ [70b6] error: could not lock config file .git/modules/src/doc/edition-guide/config: No such file or directory
+L757      [b055] warning: Could not unset core.worktree setting in submodule 'src/doc/edition-guide'
+L758      [e491] Cleared directory 'src/doc/edition-guide'
+L759    ✱ [53c9] error: could not lock config file .git/modules/src/doc/embedded-book/config: No such file or directory
+L760      [5a6b] warning: Could not unset core.worktree setting in submodule 'src/doc/embedded-book'
+L761      [1291] Cleared directory 'src/doc/embedded-book'
+L762    ✱ [045a] error: could not lock config file .git/modules/src/doc/nomicon/config: No such file or directory
+L763      [f8db] warning: Could not unset core.worktree setting in submodule 'src/doc/nomicon'
+L764      [5ea1] Cleared directory 'src/doc/nomicon'
+L765    ✱ [74be] error: could not lock config file .git/modules/src/doc/reference/config: No such file or directory
+L766      [aa3a] warning: Could not unset core.worktree setting in submodule 'src/doc/reference'
+L767      [ea82] Cleared directory 'src/doc/reference'
+L768    ✱ [251a] error: could not lock config file .git/modules/src/doc/rust-by-example/config: No such file or directory
+L769      [1d3d0] warning: Could not unset core.worktree setting in submodule 'src/doc/rust-by-example'
+L770      [9ffe] Cleared directory 'src/doc/rust-by-example'
+L771    ✱ [1f5a] error: could not lock config file .git/modules/src/gcc/config: No such file or directory
+L772      [54e3] warning: Could not unset core.worktree setting in submodule 'src/gcc'
+L773      [30e7] Cleared directory 'src/gcc'
+L774    ✱ [63dc] error: could not lock config file .git/modules/src/llvm-project/config: No such file or directory
+L775      [a329] warning: Could not unset core.worktree setting in submodule 'src/llvm-project'
+L776      [6503] Cleared directory 'src/llvm-project'
+L777    ✱ [e4d2] error: could not lock config file .git/modules/src/tools/cargo/config: No such file or directory
+L778      [a196] warning: Could not unset core.worktree setting in submodule 'src/tools/cargo'
+L779      [0b1f] Cleared directory 'src/tools/cargo'
+L780    ✱ [1e1b] error: could not lock config file .git/modules/src/tools/enzyme/config: No such file or directory
+L781      [eb0b] warning: Could not unset core.worktree setting in submodule 'src/tools/enzyme'
+L782      [5c8a] Cleared directory 'src/tools/enzyme'
+L783    ✱ [dbc6] error: could not lock config file .git/modules/src/tools/rustc-perf/config: No such file or directory
+L784      [6c2d] warning: Could not unset core.worktree setting in submodule 'src/tools/rustc-perf'
+L785      [1a58] Cleared directory 'src/tools/rustc-perf'
+L786      [4720] Submodule 'library/backtrace' (https://github.com/rust-lang/backtrace-rs.git) registered for path 'library/backtrace'
+   …
+L1709     [a9af] #9 4.589   libboost-regex1.74.0 libbrotli1 libc-dev-bin libc6 libc6-dev libcc1-0
+L1710     [b19d] #9 4.589   libcrypt-dev libctf-nobfd0 libctf0 libcurl3-gnutls libcurl4
+L1711     [6862] #9 4.589   libdebuginfod-common libdebuginfod1 libdpkg-perl libdw1 libelf1
+L1712   ✱ [8f0f] #9 4.589   liberror-perl libexpat1 libgcc-11-dev libgdbm-compat4 libgdbm6 libglib2.0-0
+L1713     [a18f] #9 4.589   libgomp1 libicu70 libipt2 libisl23 libitm1 libjsoncpp25 libldap-2.5-0
+L1714     [fbae] #9 4.589   liblsan0 libmagic-mgc libmagic1 libmpc3 libmpdec3 libmpfr6 libnghttp2-14
+L1715     [7d82] #9 4.589   libnsl-dev libperl5.34 libpsl5 libpython3-stdlib libpython3.10
+   …
+L1752     [85f3] #9 4.809   libatomic1 libbabeltrace1 libbinutils libboost-regex1.74.0 libbrotli1
+L1753     [8b42] #9 4.809   libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0
+L1754     [15c7] #9 4.809   libcurl3-gnutls libcurl4 libdebuginfod-common libdebuginfod1 libdpkg-perl
+L1755   ✱ [123a] #9 4.809   libdw1 libelf1 liberror-perl libexpat1 libgcc-11-dev libgdbm-compat4
+L1756     [1f35] #9 4.809   libgdbm6 libglib2.0-0 libgomp1 libicu70 libipt2 libisl23 libitm1
+L1757     [bbcf] #9 4.809   libjsoncpp25 libldap-2.5-0 liblsan0 libmagic-mgc libmagic1 libmpc3 libmpdec3
+L1758     [9565] #9 4.809   libmpfr6 libnghttp2-14 libnsl-dev libperl5.34 libpsl5 libpython3-stdlib
+   …
+L1885     [cfec] #9 10.35 Get:112 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-regex1.74.0 amd64 1.74.0-14ubuntu3 [511 kB]
+L1886     [d465] #9 10.42 Get:113 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsource-highlight4v5 amd64 3.1.9-4.1build2 [207 kB]
+L1887     [f72a] #9 10.54 Get:114 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gdb amd64 12.1-0ubuntu1~22.04.2 [3920 kB]
+L1888   ✱ [6531] #9 10.56 Get:115 http://archive.ubuntu.com/ubuntu jammy/main amd64 liberror-perl all 0.17029-1 [26.5 kB]
+L1889     [b02c9] #9 10.56 Get:116 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.17 [954 kB]
+L1890     [3882] #9 10.56 Get:117 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.17 [3174 kB]
+L1891     [6a81] #9 10.57 Get:118 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.6 [237 kB]
+   …
+L2364     [82d0] #9 21.03 Selecting previously unselected package gdb.
+L2365     [c129] #9 21.03 Preparing to unpack .../099-gdb_12.1-0ubuntu1~22.04.2_amd64.deb ...
+L2366     [ce03] #9 21.03 Unpacking gdb (12.1-0ubuntu1~22.04.2) ...
+L2367   ✱ [3991] #9 21.38 Selecting previously unselected package liberror-perl.
+L2368   ✱ [d71d] #9 21.38 Preparing to unpack .../100-liberror-perl_0.17029-1_all.deb ...
+L2369   ✱ [719a] #9 21.39 Unpacking liberror-perl (0.17029-1) ...
+L2370     [da51] #9 21.50 Selecting previously unselected package git-man.
+L2371     [5cab] #9 21.51 Preparing to unpack .../101-git-man_1%3a2.34.1-1ubuntu1.17_all.deb ...
+L2372     [fcc4] #9 21.52 Unpacking git-man (1:2.34.1-1ubuntu1.17) ...
+   …
+L2570     [af64] #9 28.81 Setting up libdebuginfod1:amd64 (0.186-1ubuntu0.1) ...
+L2571     [b8d5] #9 28.81 Setting up python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+L2572     [eb2c] #9 28.88 Setting up gcc (4:11.2.0-1ubuntu1) ...
+L2573   ✱ [568b] #9 28.89 Setting up liberror-perl (0.17029-1) ...
+L2574     [7bd4] #9 28.89 Setting up g++-mingw-w64-i686 (10.3.0-14ubuntu1+24.3) ...
+L2575     [b413] #9 28.89 Setting up gdb (12.1-0ubuntu1~22.04.2) ...
+L2576     [0768] #9 28.90 Setting up pkg-config (0.29.2-1ubuntu3) ...
+   …
+L2894     [34e6] apicid		: 0 (×4, last L2978)
+L2895     [efa0] initial apicid	: 0 (×4, last L2979)
+L2896     [3508] fpu		: yes (×4, last L2980)
+L2897   ✱ [e766] fpu_exception	: yes (×4, last L2981)
+L2898     [1486] cpuid level	: 28 (×4, last L2982)
+L2899     [1b113] wp		: yes (×4, last L2983)
+L2900     [4aa7] flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_ (×4, last L2984)
+   …
+L3074     [f211] ▶ Checking stage1 compiler artifacts{rustc-main, rustc_abi, rustc_arena, rustc_ast, rustc_ast_ir, rustc_ast_lowering, rustc_ast_passes, rustc_ast_pretty, rustc_attr_ir, rustc_attr_parsing, rustc_baked_icu_data, rustc_borrowck, rustc_builtin_macros, rustc_codegen_llvm, rustc_codegen_ssa, rustc_const_
+          Updating crates.io index
+          Downloading crates ...
+          Downloaded adler2 v2.0.1
+          (+185 lines)
+   …
+L3267     [a5ad] [RUSTC-TIMING] build_script_build test:false 0.102 (×26, last L3782)
+L3268     [44bf4] [RUSTC-TIMING] cfg_if test:false 0.012
+          Checking memchr v2.8.0
+   (+5 more lines here: `pith show <id>` or grep the raw file)
+   …
+L3851     [d07a] [RUSTC-TIMING] rustc_mir_transform test:false 5.035
+          Checking rustc_ty_utils v0.0.0 (/checkout/compiler/rustc_ty_utils)
+L3853     [35e4] [RUSTC-TIMING] rustc_passes test:false 0.988
+          Checking rustc_traits v0.0.0 (/checkout/compiler/rustc_traits)
+L3855     [ea6e] [RUSTC-TIMING] rustc_mir_build test:false 2.467
+L3856   ✱ [91fe] error[E0382]: use of moved value: `niche_optimizations`
+          --> compiler/rustc_ty_utils/src/layout.rs:790:21
+          |                 ------------------- move occurs because `niche_optimizations` has type `NicheOptimizations`, which does not implement the `Copy` trait
+   …
+L3868   ✱ [69eb] For more information about this error, try `rustc --explain E0382`.
+L3869     [975e] [RUSTC-TIMING] rustc_ty_utils test:false 0.804
+L3870   ✱ [dc57] error: could not compile `rustc_ty_utils` (lib) due to 1 previous error
+L3871     [8717] warning: build failed, waiting for other jobs to finish...
+L3872     [57d3] [RUSTC-TIMING] rustc_traits test:false 0.137
+L3873     [4abf] [RUSTC-TIMING] rustc_hir_typeck test:false 4.732
+L3874   ✱ [655c] Bootstrap failed while executing `check`
+L3875     [d889] Currently active steps:
+L3876     [2ffa] check::Rustc { check_kind: Check, build_compiler: CompilerForCheck { build_compiler: Compiler { stage: 0, host: x86_64-unknown-linux-gnu, forced_compiler: false }, rustc_rmeta_sysroot: None, std_rmeta_sysroot: None }, target: x86_64-unknown-linux-gnu, crates: ["rustc-main", "rustc_abi", "rustc_arena
+L3877     [a3ba] Build completed unsuccessfully in 0:01:01
+          local time: Sat Sep 26 21:51:05 UTC 2026
+          network time: Sat, 26 Sep 2026 21:51:05 GMT
+L3880   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L3271   ERRO [3b67] [RUSTC-TIMING] stable_deref_trait test:false 0.017
+L3304   ERRO [d100] [RUSTC-TIMING] build_script_build test:false 0.070
+L3366   ERRO [c251] [RUSTC-TIMING] thiserror test:false 0.031 (×3, last L3767)
+L3630   ERRO [1d7b] [RUSTC-TIMING] rustc_fs_util test:false 0.042
+L3636   ERRO [7c95] [RUSTC-TIMING] serde_path_to_error test:false 0.215
+L2459   WARN [d7ca] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzma.1.gz because associated file /usr/share/man/man1/xz.1.gz (of link group lzma) doesn't exist
+L2460   WARN [12c8] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/unlzma.1.gz because associated file /usr/share/man/man1/unxz.1.gz (of link group lzma) doesn't exist
+L2461   WARN [a886] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcat.1.gz because associated file /usr/share/man/man1/xzcat.1.gz (of link group lzma) doesn't exist
+L2462   WARN [0612] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzmore.1.gz because associated file /usr/share/man/man1/xzmore.1.gz (of link group lzma) doesn't exist
+L2463   WARN [f3b8] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzless.1.gz because associated file /usr/share/man/man1/xzless.1.gz (of link group lzma) doesn't exist
+L2466   WARN [4c28] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzgrep.1.gz because associated file /usr/share/man/man1/xzgrep.1.gz (of link group lzma) doesn't exist
+L2467   WARN [a205] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzegrep.1.gz because associated file /usr/share/man/man1/xzegrep.1.gz (of link group lzma) doesn't exist
+L2468   WARN [422d] #9 27.05 update-alternatives: warning: skip creation of /usr/share/man/man1/lzfgrep.1.gz because associated file /usr/share/man/man1/xzfgrep.1.gz (of link group lzma) doesn't exist
+L2694   NOTA [249d] Attempting with retry: make prepare
+
+== END OF OUTPUT
+L3830     [17dc] [RUSTC-TIMING] rustc_public test:false 1.419
+L3831     [48a4] [RUSTC-TIMING] rustc_trait_selection test:false 5.900
+L3835     [fa36] [RUSTC-TIMING] rustc_query_impl test:false 5.244
+L3837     [e644] [RUSTC-TIMING] rustc_sanitizers test:false 0.388
+L3839     [d457] [RUSTC-TIMING] rustc_lint test:false 2.753
+L3841     [ce53] [RUSTC-TIMING] rustc_const_eval test:false 3.046
+L3843     [be8a] [RUSTC-TIMING] rustc_codegen_ssa test:false 2.897
+L3845     [7066] [RUSTC-TIMING] rustc_hir_analysis test:false 5.244
+L3847     [6ffa3] [RUSTC-TIMING] rustc_codegen_llvm test:false 3.064
+L3849     [45f5] [RUSTC-TIMING] rustc_borrowck test:false 4.925
+L3881     [666e] ▶ Run echo "disk usage:"
+L3882     [a39d] echo "disk usage:"
+L3883     [b6c7] df -h
+L3885     [4293] env:
+L3906     [75d0] tmpfs            3.2G  1.1M  3.2G   1% /run
+
+== MOST FREQUENT OTHER LINES
+×8       [8684] ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED=1
+×6       [d5ab] GOROOT_1_24_X64=/opt/hostedtoolcache/go/1.24.13/x64
+×4       [98be] bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso spectre_v2_user
+×2       [8399] Removing SSH command configuration
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [66c6] Removing HTTP extra header
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+
+(not shown: 965 groups, 977 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

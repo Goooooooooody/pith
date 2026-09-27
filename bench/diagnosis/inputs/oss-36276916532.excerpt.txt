@@ -1,0 +1,247 @@
+Sqlite Enterprise (7/16)	UNKNOWN STEP	﻿2026-09-26T22:43:49.7293372Z Current runner version: '2.337.0'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7300010Z Runner name: 'ubuntu-x64-large-io_i-014f56470254b9185'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7300910Z Runner group name: 'self-hosted-prod'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7301982Z Machine name: 'ip-172-16-81-217'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7319609Z ##[group]Operating System
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7320314Z Distribution: Ubuntu 24.04.5 LTS
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7320904Z Architecture: x86_64
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7321493Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7322255Z ##[group]Runner Image
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7322820Z AMI id: ami-01ac2d2a283f2d22a
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7323402Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7323899Z ##[group]EC2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7324496Z Instance type: m6id.2xlarge
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7325071Z Availability zone: us-east-2a
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7325643Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7326770Z ##[group]GITHUB_TOKEN Permissions
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7328685Z Contents: read
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7329248Z Metadata: read
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7330211Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7332559Z Secret source: Actions
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7333473Z Cache mode: write
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7334234Z Prepare workflow directory
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7696373Z Prepare all required actions
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:49.7744691Z Getting action download info
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:50.0571039Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:51.4005603Z Download action repository 'grafana/shared-workflows@46f48da11e78ebdba7a8747ae456b11062fac83e' (SHA:46f48da11e78ebdba7a8747ae456b11062fac83e)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.0094677Z Getting action download info
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.1639923Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.4368269Z Complete job name: Sqlite Enterprise (7/16)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.4903761Z A job started hook has been configured by the self-hosted runner administrator
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.6063220Z ##[group]Run '/opt/actions-runner/hook_job_started.sh'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.6097129Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.6098683Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:52.6378901Z Running job-started scripts
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7327467Z Done
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7677080Z ##[group]Run actions/checkout@v5
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7678254Z with:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7679194Z   persist-credentials: false
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7680283Z   repository: grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7688907Z   token: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7689835Z   ssh-strict: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7690768Z   ssh-user: git
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7691877Z   clean: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7692854Z   sparse-checkout-cone-mode: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7693940Z   fetch-depth: 1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7694862Z   fetch-tags: false
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7695802Z   show-progress: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7696772Z   lfs: false
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7697651Z   submodules: false
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7698597Z   set-safe-directory: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7699770Z   allow-unsafe-pr-checkout: false
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7700864Z env:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7701883Z   TESTCONTAINERS_RYUK_DISABLED: true
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7703283Z   PC_SQLITE_ENTERPRISE_AWS_ACCESS_KEY_ID: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7705004Z   PC_SQLITE_ENTERPRISE_AWS_SECRET_ACCESS_KEY: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7717779Z   PC_SQLITE_ENTERPRISE_AWS_SESSION_TOKEN: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7719051Z   PC_SQLITE_ENTERPRISE_AWS_REGION: us-west-2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7720397Z   PC_SQLITE_ENTERPRISE_AWS_PROFILE: sqlite_enterprise-admin
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7721870Z   PC_SQLITE_ENTERPRISE_SSH_HOST: 52.89.82.158
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7723352Z   PC_SQLITE_ENTERPRISE_SSH_KEY: /home/ubuntu/.ssh/sqlite_enterprise-admin
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7725518Z   PC_SQLITE_ENTERPRISE_NPM_TOKEN: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7727699Z   PC_SQLITE_ENTERPRISE_PYPI_TOKEN: ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.7728800Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.8663512Z Syncing repository: grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.8666094Z ##[group]Getting Git version info
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.8667482Z Working directory is '/opt/actions-runner/_work/grafana/grafana'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:53.8669870Z [command]/usr/bin/git version
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0612939Z git version 2.55.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0632961Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0646073Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/6a237df0-6622-4081-a436-96de8b064d91' before making global git config changes
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0648828Z Adding repository directory to the temporary git global config as a safe directory
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0651099Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0769937Z Deleting the contents of '/opt/actions-runner/_work/grafana/grafana'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0773966Z ##[group]Initializing the repository
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0777255Z [command]/usr/bin/git init /opt/actions-runner/_work/grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0890681Z hint: Using 'master' as the name for the initial branch. This default branch name
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0893860Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0896986Z hint: to use in all of your new repositories, which will suppress this warning,
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0899650Z hint: call:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0901150Z hint:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0903094Z hint: 	git config --global init.defaultBranch <name>
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0905213Z hint:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0907167Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0910315Z hint: 'development'. The just-created branch can be renamed via this command:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0912781Z hint:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0913673Z hint: 	git branch -m <name>
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0914633Z hint:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0915899Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0918101Z Initialized empty Git repository in /opt/actions-runner/_work/grafana/grafana/.git/
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0922110Z [command]/usr/bin/git remote add origin https://github.com/grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0948667Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0950398Z ##[group]Disabling automatic garbage collection
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0952189Z [command]/usr/bin/git config --local gc.auto 0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0977129Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0978605Z ##[group]Setting up auth
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.0982111Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.1009249Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.3902691Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.3932583Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4165078Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4198175Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4424383Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4459478Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4461099Z ##[group]Fetching the repository
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:54.4472540Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +65945991d35518dcce850dcf4960b912aa78a881:refs/remotes/origin/main
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3766215Z From https://github.com/grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3766933Z  * [new ref]           65945991d35518dcce850dcf4960b912aa78a881 -> origin/main
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3769371Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3769820Z ##[group]Determining the checkout info
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3771842Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3783502Z [command]/usr/bin/git sparse-checkout disable
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3835594Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3861336Z ##[group]Checking out the ref
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:56.3864989Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4197135Z Updating files:  69% (16264/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4314106Z Updating files:  70% (16487/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4434604Z Updating files:  71% (16722/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4590465Z Updating files:  72% (16958/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4748012Z Updating files:  73% (17193/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.4912394Z Updating files:  74% (17429/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5033653Z Updating files:  75% (17664/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5148120Z Updating files:  76% (17900/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5307593Z Updating files:  77% (18136/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5418555Z Updating files:  78% (18371/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5567972Z Updating files:  79% (18607/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5694888Z Updating files:  80% (18842/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5835411Z Updating files:  81% (19078/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.5963733Z Updating files:  82% (19313/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6084364Z Updating files:  83% (19549/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6204772Z Updating files:  84% (19784/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6309809Z Updating files:  85% (20020/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6499649Z Updating files:  86% (20255/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6636622Z Updating files:  87% (20491/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:43:57.6784597Z Updating files:  88% (20726/23552)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:4
+
+... [2885554 characters truncated] ...
+
+	UNKNOWN STEP	2026-09-26T22:45:17.7041387Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.3194380Z go: downloading github.com/google/subcommands v1.2.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.3219150Z go: downloading github.com/grafana/cuetsy v0.1.11
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.3306277Z go: downloading github.com/grafana/codejen v0.0.4
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.3347101Z go: downloading github.com/grafana/cog v0.1.23
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.3391328Z go: downloading github.com/dave/dst v0.27.4
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.4815691Z go: downloading github.com/yudai/gojsondiff v1.0.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5022449Z go: downloading github.com/testcontainers/testcontainers-go v0.43.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5522303Z go: downloading github.com/madflojo/testcerts v1.5.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5526789Z go: downloading pgregory.net/rapid v1.3.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5801970Z go: downloading github.com/DATA-DOG/go-sqlmock v1.5.2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5803263Z go: downloading github.com/grafana/grafana-openapi-client-go v0.0.0-20231213163343-bd475d63fb79
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.5905166Z go: downloading github.com/grafana/e2e v0.1.2-0.20260309174126-b5393d4e610f
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.6000848Z go: downloading github.com/grafana/grafana-api-golang-client v0.27.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.6622944Z go: downloading github.com/grafana/nanogit/gittest v1.4.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.6623880Z go: downloading github.com/migueleliasweb/go-github-mock v1.5.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.6853233Z go: downloading github.com/xlab/treeprint v1.2.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.6904812Z go: downloading github.com/kr/text v0.2.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.7347363Z go: downloading github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.7353265Z go: downloading github.com/yudai/golcs v0.0.0-20170316035057-ecda9a501e82
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.7673552Z go: downloading golang.org/x/mod v0.41.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.8145514Z go: downloading github.com/google/go-github/v73 v73.0.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.8382007Z go: downloading github.com/emicklei/proto v1.14.3
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.8385989Z go: downloading github.com/protocolbuffers/txtpbfmt v0.0.0-20220428173112-74888fd59c2b
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.8972172Z go: downloading github.com/golang/glog v1.2.5
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9005650Z go: downloading github.com/goccy/go-yaml v1.19.2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9069623Z go: downloading github.com/cpuguy83/dockercfg v0.3.2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9070735Z go: downloading github.com/moby/go-archive v0.3.3
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9072219Z go: downloading github.com/moby/moby/api v1.55.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9073061Z go: downloading github.com/containerd/errdefs v1.0.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9073483Z go: downloading github.com/containerd/platforms v0.2.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:19.9553916Z go: downloading github.com/moby/moby/client v0.5.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0255375Z go: downloading github.com/moby/patternmatcher v0.6.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0311574Z go: downloading github.com/opencontainers/image-spec v1.1.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0469963Z go: downloading github.com/containerd/log v0.1.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0690679Z go: downloading github.com/moby/sys/sequential v0.7.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0695747Z go: downloading github.com/moby/sys/user v0.4.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0912400Z go: downloading github.com/moby/sys/userns v0.1.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.0930986Z go: downloading github.com/containerd/errdefs/pkg v0.3.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1155108Z go: downloading github.com/distribution/reference v0.6.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1164623Z go: downloading github.com/docker/go-connections v0.7.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1279506Z go: downloading github.com/opencontainers/go-digest v1.0.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1283220Z go: downloading github.com/magiconair/properties v1.8.10
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1283997Z go: downloading github.com/shirou/gopsutil/v4 v4.26.6
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1284715Z go: downloading github.com/moby/term v0.5.2
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1285459Z go: downloading github.com/moby/docker-image-spec v1.3.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.1961284Z go: downloading github.com/tklauser/go-sysconf v0.3.16
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:20.2252830Z go: downloading github.com/tklauser/numcpus v0.11.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:28.4726140Z go: downloading github.com/Bose/minisentinel v0.0.0-20200130220412-917c5a9223bb
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:28.4726973Z go: downloading github.com/alicebob/miniredis/v2 v2.38.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:45:28.6716061Z go: downloading github.com/yuin/gopher-lua v1.1.1
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:48:30.9066791Z ok  	github.com/grafana/grafana/pkg/extensions/apiserver/registry/iam/globalrole/legacy	1.444s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0200690Z ok  	github.com/grafana/grafana/pkg/extensions/apiserver/tests/scim	15.034s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0202154Z ok  	github.com/grafana/grafana/pkg/registry/apis/secret/encryption/manager	0.620s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0203232Z ok  	github.com/grafana/grafana/pkg/services/auth/jwt	1.031s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0204177Z ok  	github.com/grafana/grafana/pkg/services/ngalert/notifier	1.365s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0205169Z ok  	github.com/grafana/grafana/pkg/services/quota/quotaimpl	2.955s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:50:42.0206119Z ok  	github.com/grafana/grafana/pkg/services/team/teamimpl	0.889s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5236212Z ok  	github.com/grafana/grafana/pkg/storage/unified/testing	66.262s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5237224Z ok  	github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/inhibitionrule	12.536s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5238004Z --- FAIL: TestIntegrationSearchPermissionFiltering (0.58s)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5239254Z     --- FAIL: TestIntegrationSearchPermissionFiltering/search_permission_filtering_with_dual_writer_mode_5 (0.58s)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5242474Z         testinfra.go:81: Using test database type sqlite3 host  port  user  name  path /home/ubuntu/.cache/grafana-test/grafana-test-2205360134.db
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5243152Z         testinfra.go:81: 
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5243928Z             	Error Trace:	/opt/actions-runner/_work/grafana/grafana/pkg/tests/testinfra/testinfra.go:150
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5245116Z             	            				/opt/actions-runner/_work/grafana/grafana/pkg/tests/testinfra/testinfra.go:81
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5246196Z             	            				/opt/actions-runner/_work/grafana/grafana/pkg/tests/apis/helper.go:126
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5247256Z             	            				/opt/actions-runner/_work/grafana/grafana/pkg/tests/apis/helper.go:120
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5248442Z             	            				/opt/actions-runner/_work/grafana/grafana/pkg/tests/apis/dashboard/search_test.go:444
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5249468Z             	            				/opt/hostedtoolcache/go/1.26.6/x64/src/runtime/asm_amd64.s:1771
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5250036Z             	Error:      	Received unexpected error:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5253310Z             	            	unable to start dualwrite service due to migration error: unified storage data migration failed: migration failed (id = preferences migration): migration failed for org 1 (default): resource_history_delete.sql: Exec with 3 input arguments and 0 output destination arguments: database is locked (5) (SQLITE_BUSY); query: DELETE
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5254837Z             	            	    FROM "resource_history"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5255627Z             	            	    WHERE "namespace" = ? AND "group" = ? AND "resource" = ?
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5256544Z             	Test:       	TestIntegrationSearchPermissionFiltering/search_permission_filtering_with_dual_writer_mode_5
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5257069Z FAIL
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5257410Z FAIL	github.com/grafana/grafana/pkg/tests/apis/dashboard	42.941s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5257949Z ok  	github.com/grafana/grafana/pkg/tests/apis/provisioning	48.950s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5258472Z ok  	github.com/grafana/grafana/pkg/tests/apis/provisioning/maxfilesize	5.549s
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:33.5258969Z FAIL
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:34.7902700Z ##[error]Process completed with exit code 1.
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:34.7988008Z Post job cleanup.
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:34.8085605Z ##[start-action display=Report Go cache sizes;id=__c6b469cc-ee1c-48b0-a019-a5d6edd18abb.__self]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:34.8109315Z Post job cleanup.
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.4340020Z GOMODCACHE: 4.2G (/home/ubuntu/go/pkg/mod)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.5099178Z GOCACHE:    14G (/home/ubuntu/.cache/go-build)
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.5144950Z ##[end-action id=__c6b469cc-ee1c-48b0-a019-a5d6edd18abb.__self;outcome=success;conclusion=success;duration_ms=705]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.5147538Z ##[start-action display=Run actions/setup-go@v6.5.0;id=__c6b469cc-ee1c-48b0-a019-a5d6edd18abb.__actions_setup-go]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.5150124Z ##[end-action id=__c6b469cc-ee1c-48b0-a019-a5d6edd18abb.__actions_setup-go;outcome=skipped;conclusion=skipped;duration_ms=0]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.5217352Z Post job cleanup.
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6212568Z [command]/usr/bin/git version
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6248214Z git version 2.55.0
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6280841Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/f90e2395-b108-4598-bf6b-765911319b8b' before making global git config changes
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6282540Z Adding repository directory to the temporary git global config as a safe directory
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6286955Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/grafana/grafana
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6320465Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6350168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6625487Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6654530Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6912076Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.6940749Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7278355Z A job completed hook has been configured by the self-hosted runner administrator
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7369921Z ##[group]Run '/opt/actions-runner/hook_job_completed.sh'
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7395271Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7395652Z ##[endgroup]
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7456156Z Running job-completed scripts
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7456597Z Done
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7516645Z Cleaning up orphan processes
+Sqlite Enterprise (7/16)	UNKNOWN STEP	2026-09-26T22:51:35.7891201Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: ./.github/actions/report-go-cache-sizes. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

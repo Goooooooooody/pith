@@ -1,0 +1,245 @@
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	﻿2026-09-26T19:47:01.7527619Z Current runner version: '2.337.0'
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7562414Z ##[group]Runner Image Provisioner
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7563726Z Hosted Compute Agent
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7564853Z Version: 20260828.587
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7565916Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7567165Z Build Date: 2026-08-28T16:44:25Z
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7568467Z Worker ID: {23133b53-dd52-4b43-b037-25caecb10fef}
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7570013Z Azure Region: eastus2
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7571125Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7573356Z ##[group]Operating System
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7574428Z Ubuntu
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7575411Z 24.04.5
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7576226Z LTS
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7577198Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7578181Z ##[group]Runner Image
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7579465Z Image: ubuntu-24.04
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7580532Z Version: 20260920.314.1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7582591Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7585370Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7587035Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7589338Z ##[group]GITHUB_TOKEN Permissions
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7592288Z Contents: read
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7593254Z Metadata: read
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7594209Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7597280Z Secret source: None
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7599129Z Cache mode: write
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.7600403Z Prepare workflow directory
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.8164236Z Prepare all required actions
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:01.8242567Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:02.0757710Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:02.1731637Z Download action repository 'home-assistant/core@c2b9bf5acec1838fe2526947a408d46b230aacc0' (SHA:c2b9bf5acec1838fe2526947a408d46b230aacc0)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:07.3782401Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:07.5734417Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:07.7382095Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:07.8371035Z Download action repository 'awalsh128/cache-apt-pkgs-action@553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9' (SHA:553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.0548762Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.1650215Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.2768392Z Download action repository 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.3955341Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.5097245Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.6170769Z Download action repository 'astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4' (SHA:bec219d24cd3e171d82865faccec33120bb574f4)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.8821705Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:08.9931504Z Getting action download info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.1836659Z Complete job name: Run tests Python 3.14.5 (4)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2616135Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2616949Z with:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2617275Z   persist-credentials: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2617606Z   repository: home-assistant/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2620856Z   token: ***
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2621160Z   ssh-strict: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2621422Z   ssh-user: git
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2621672Z   clean: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2621949Z   sparse-checkout-cone-mode: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2622262Z   fetch-depth: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2622511Z   fetch-tags: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2622762Z   show-progress: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2623037Z   lfs: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2623548Z   submodules: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2623810Z   set-safe-directory: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2624107Z   allow-unsafe-pr-checkout: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2624776Z env:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2625044Z   CACHE_VERSION: 4
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2625304Z   MYPY_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2625620Z   HA_SHORT_VERSION: 2026.10
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2625922Z   ADDITIONAL_PYTHON_VERSIONS: []
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2626512Z   MARIADB_VERSIONS: ['mariadb:10.3.32','mariadb:10.6.10','mariadb:10.11.2','mariadb:11.4.9','mariadb:11.8.8','mariadb:12.3.3','mysql:8.0.32']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2627225Z   POSTGRESQL_VERSIONS: ['postgres:12.22','postgres:15.19', 'postgres:18.6']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2627800Z   SQLITE_VERSIONS: [{"version": "3.40.1", "year": "2022"}, {"version": "3.53.4", "year": "2026"}]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2628548Z   RECORDER_TEST_DIRS: tests/components/history tests/components/logbook tests/components/recorder tests/components/sensor
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2629522Z   UV_CACHE_DIR: /tmp/uv-cache
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2629832Z   APT_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2630104Z   SQLALCHEMY_WARN_20: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2630383Z   PYTHONASYNCIODEBUG: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2630641Z   HASS_CI: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.2630878Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3596847Z Syncing repository: home-assistant/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3598389Z ##[group]Getting Git version info
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3599132Z Working directory is '/home/runner/work/core/core'
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3599907Z [command]/usr/bin/git version
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3690777Z git version 2.55.0
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3747968Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3754251Z Temporarily overriding HOME='/home/runner/work/_temp/6c21ad64-9e33-4a2e-bde7-0b18914b2cb6' before making global git config changes
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3755343Z Adding repository directory to the temporary git global config as a safe directory
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3760913Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3808242Z Deleting the contents of '/home/runner/work/core/core'
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3812111Z ##[group]Determining repository object format
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3813569Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3814288Z ##[group]Initializing the repository
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3818138Z [command]/usr/bin/git init /home/runner/work/core/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3934875Z hint: Using 'master' as the name for the initial branch. This default branch name
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3935931Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3936801Z hint: to use in all of your new repositories, which will suppress this warning,
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3937323Z hint: call:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3937600Z hint:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3938200Z hint: 	git config --global init.defaultBranch <name>
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3939133Z hint:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3939890Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3941022Z hint: 'development'. The just-created branch can be renamed via this command:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3941958Z hint:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3942523Z hint: 	git branch -m <name>
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3943095Z hint:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3943899Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3945406Z Initialized empty Git repository in /home/runner/work/core/core/.git/
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.3952230Z [command]/usr/bin/git remote add origin https://github.com/home-assistant/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4000800Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4001639Z ##[group]Disabling automatic garbage collection
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4005551Z [command]/usr/bin/git config --local gc.auto 0
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4036216Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4037375Z ##[group]Setting up auth
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4038058Z Removing SSH command configuration
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4043311Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4074554Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4442198Z Removing HTTP extra header
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4447369Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4479612Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4699854Z Removing includeIf entries pointing to credentials config files
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4705258Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4737129Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4959355Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-33bf132a-49a2-47de-8d9c-c0997e3a6fb0.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.4997381Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git.path /home/runner/work/_temp/git-credentials-33bf132a-49a2-47de-8d9c-c0997e3a6fb0.config
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.5031341Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-33bf132a-49a2-47de-8d9c-c0997e3a6fb0.config
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:47:09.5069415Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-33bf132a-49a2-47de-8d9c-c0997e3a6fb0.config
+Run tests Python 3.14
+
+... [396972 characters truncated] ...
+
+un tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3735633Z 2.55s setup    tests/components/matter/test_sensor.py::test_sensors
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3736095Z 2.19s setup    tests/components/matter/test_lock.py::test_locks
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3736546Z 2.11s setup    tests/components/matter/test_select.py::test_selects
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3737001Z 2.11s setup    tests/components/matter/test_cover.py::test_covers
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3737457Z 2.10s setup    tests/components/matter/test_switch.py::test_switches
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3737910Z 2.08s setup    tests/components/matter/test_fan.py::test_fans
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3738346Z 2.08s setup    tests/components/matter/test_button.py::test_buttons
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3738800Z 2.08s setup    tests/components/matter/test_light.py::test_lights
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3739618Z 2.07s setup    tests/components/matter/test_climate.py::test_climates
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3740091Z 2.07s setup    tests/components/matter/test_siren.py::test_sirens
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3740525Z 2.07s setup    tests/components/matter/test_event.py::test_events
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3740964Z 2.07s setup    tests/components/matter/test_number.py::test_numbers
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3741559Z 2.05s setup    tests/components/matter/test_vacuum.py::test_vacuum
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3742068Z 2.05s setup    tests/components/matter/test_water_heater.py::test_water_heaters
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3742395Z 
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3742507Z (26641 durations < 1s hidden.)
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3742845Z =========================== short test summary info ============================
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:01.3743901Z ERROR tests/components/switchbot/test_init.py::test_exception_handling_for_device_initialization[exception0-Switchbot device initialization failed because of incorrect configuration parameters: wrong model] - KeyError: 'path'
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1052351Z ##[error]Process completed with exit code 1.
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1126855Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1127313Z with:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1127538Z   name: pytest-365016-3.14.5-4
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1127818Z   path: pytest-*.txt
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1128063Z   overwrite: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1128305Z   if-no-files-found: warn
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1128563Z   compression-level: 6
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1128824Z   include-hidden-files: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1129380Z   archive: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1129602Z env:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1129802Z   CACHE_VERSION: 4
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1130041Z   MYPY_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1130478Z   HA_SHORT_VERSION: 2026.10
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1130747Z   ADDITIONAL_PYTHON_VERSIONS: []
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1131313Z   MARIADB_VERSIONS: ['mariadb:10.3.32','mariadb:10.6.10','mariadb:10.11.2','mariadb:11.4.9','mariadb:11.8.8','mariadb:12.3.3','mysql:8.0.32']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1132034Z   POSTGRESQL_VERSIONS: ['postgres:12.22','postgres:15.19', 'postgres:18.6']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1132589Z   SQLITE_VERSIONS: [{"version": "3.40.1", "year": "2022"}, {"version": "3.53.4", "year": "2026"}]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1133316Z   RECORDER_TEST_DIRS: tests/components/history tests/components/logbook tests/components/recorder tests/components/sensor
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1133893Z   UV_CACHE_DIR: /tmp/uv-cache
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1134159Z   APT_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1134406Z   SQLALCHEMY_WARN_20: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1134658Z   PYTHONASYNCIODEBUG: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1134899Z   HASS_CI: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1135141Z   CACHE_KEY: 22a3147dd785dad2d35c5a5e68b7c7d9
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1135545Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1135909Z   UV_PYTHON: 3.14.5
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.1136138Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.2647802Z With the provided path, there will be 1 file uploaded
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.3495088Z Artifact name is valid!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.3495930Z Root directory input is valid!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.5331059Z Uploading artifact: pytest-365016-3.14.5-4.zip
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.5374831Z Beginning upload of artifact content to blob storage
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.6163958Z Uploaded bytes 7720
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.6325590Z Finished uploading artifact content to blob storage!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.6327055Z SHA256 digest of uploaded artifact is 08aa7e445708f14c35935d8cbc59991481a4f9188cc28e68f421ce4663e64ea7
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.6328128Z Finalizing artifact upload
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8601147Z Artifact pytest-365016-3.14.5-4 successfully finalized. Artifact ID 10914686249
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8602618Z Artifact pytest-365016-3.14.5-4 has been successfully uploaded! Final size is 7720 bytes. Artifact ID is 10914686249
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8606528Z Artifact download URL: https://github.com/home-assistant/core/actions/runs/36266953271/artifacts/10914686249
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8766241Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8766699Z with:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8766939Z   name: test-results-full-3.14.5-4
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8767237Z   path: junit.xml
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8767481Z   if-no-files-found: warn
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8767750Z   compression-level: 6
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8768007Z   overwrite: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8768255Z   include-hidden-files: false
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8768529Z   archive: true
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8768752Z env:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8769329Z   CACHE_VERSION: 4
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8769602Z   MYPY_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8769870Z   HA_SHORT_VERSION: 2026.10
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8770149Z   ADDITIONAL_PYTHON_VERSIONS: []
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8770731Z   MARIADB_VERSIONS: ['mariadb:10.3.32','mariadb:10.6.10','mariadb:10.11.2','mariadb:11.4.9','mariadb:11.8.8','mariadb:12.3.3','mysql:8.0.32']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8771484Z   POSTGRESQL_VERSIONS: ['postgres:12.22','postgres:15.19', 'postgres:18.6']
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8772059Z   SQLITE_VERSIONS: [{"version": "3.40.1", "year": "2022"}, {"version": "3.53.4", "year": "2026"}]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8772807Z   RECORDER_TEST_DIRS: tests/components/history tests/components/logbook tests/components/recorder tests/components/sensor
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8773408Z   UV_CACHE_DIR: /tmp/uv-cache
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8773689Z   APT_CACHE_VERSION: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8773942Z   SQLALCHEMY_WARN_20: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8774195Z   PYTHONASYNCIODEBUG: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8774443Z   HASS_CI: 1
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8774701Z   CACHE_KEY: 22a3147dd785dad2d35c5a5e68b7c7d9
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8775101Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8775473Z   UV_PYTHON: 3.14.5
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:04.8775724Z ##[endgroup]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.0182824Z With the provided path, there will be 1 file uploaded
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.0187642Z Artifact name is valid!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.0188266Z Root directory input is valid!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.2185057Z Uploading artifact: test-results-full-3.14.5-4.zip
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.2229697Z Beginning upload of artifact content to blob storage
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.3349890Z Uploaded bytes 138707
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.3501623Z Finished uploading artifact content to blob storage!
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.3502487Z SHA256 digest of uploaded artifact is 6f8cba4573a1c01713dc443dab16ece3011eda032bba1ce386d87951eacbefab
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.3503495Z Finalizing artifact upload
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5622114Z Artifact test-results-full-3.14.5-4 successfully finalized. Artifact ID 10914676358
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5623117Z Artifact test-results-full-3.14.5-4 has been successfully uploaded! Final size is 138707 bytes. Artifact ID is 10914676358
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5626500Z Artifact download URL: https://github.com/home-assistant/core/actions/runs/36266953271/artifacts/10914676358
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5867076Z Post job cleanup.
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5872026Z ##[start-action display=Set up uv and managed Python;id=__ec5e1b50-af79-4547-b762-2dc9bcc9d011.python]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5920785Z Post job cleanup.
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5923690Z ##[start-action display=Set up uv;id=__ec5e1b50-af79-4547-b762-2dc9bcc9d011.python.uv]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5925828Z ##[end-action id=__ec5e1b50-af79-4547-b762-2dc9bcc9d011.python.uv;outcome=skipped;conclusion=skipped;duration_ms=0]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5931279Z ##[end-action id=__ec5e1b50-af79-4547-b762-2dc9bcc9d011.python;outcome=success;conclusion=success;duration_ms=5]
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.5996943Z Post job cleanup.
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6839463Z [command]/usr/bin/git version
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6877389Z git version 2.55.0
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6915156Z Temporarily overriding HOME='/home/runner/work/_temp/c0c9a739-1aad-4f75-a10a-72c95e9996d9' before making global git config changes
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6916656Z Adding repository directory to the temporary git global config as a safe directory
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6922157Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6953015Z Removing SSH command configuration
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6959323Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.6993916Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7237816Z Removing HTTP extra header
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7244042Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7279276Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7519415Z Removing includeIf entries pointing to credentials config files
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7526048Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7561527Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run tests Python 3.14.5 (4)	UNKNOWN STEP	2026-09-26T19:57:05.7986125Z Cleaning up orphan processes

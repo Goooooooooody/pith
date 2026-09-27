@@ -1,0 +1,236 @@
+Compile & Hygiene	UNKNOWN STEP	﻿2026-09-26T22:15:55.4152633Z Current runner version: '2.337.0'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4158576Z Runner name: '71e31116c000001'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4159379Z Runner group name: 'Default'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4160238Z Machine name: '71e31116c000001'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4179128Z ##[group]Operating System
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4179879Z Ubuntu
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4180386Z 22.04.5
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4180980Z LTS
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4181718Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4182238Z ##[group]Runner Image
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4182888Z Image: ubuntu-22.04
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4183429Z Version: 20260105.207.1
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4184498Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260105.207/images/ubuntu/Ubuntu2204-Readme.md
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4185806Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260105.207
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4186669Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4187242Z ##[group]1ES Hosted Pool
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4187823Z SKU: Standard_D8ds_v5
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4188615Z Image: 1espt-ubuntu-22.04-x64
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4189285Z Image Version: 158.0.0
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4189864Z Local IP: 10.1.0.17
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4190415Z Public Outgoing IP(s): 20.109.121.176
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4191281Z Interactive Mode: False
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4191878Z Request Id: 108497862290
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4192480Z Pool Name: 1es-vscode-oss-ubuntu-22.04-x64
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4193162Z Location: eastus2
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4193705Z Work Folder: /mnt/vss/_work
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4194312Z Resource Provider: VmssResourceProvider
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4194966Z Worker Build Version: 32097764
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4195572Z Network Isolation Policy: None
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4196182Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4197351Z ##[group]GITHUB_TOKEN Permissions
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4199752Z Contents: read
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4200309Z Metadata: read
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4200977Z PullRequests: read
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4201726Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4203795Z Secret source: Actions
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4204686Z Cache mode: write
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4205663Z Prepare workflow directory
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4568984Z Prepare all required actions
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.4616882Z Getting action download info
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:55.7199742Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.0288055Z Download action repository 'actions/setup-node@820762786026740c76f36085b0efc47a31fe5020' (SHA:820762786026740c76f36085b0efc47a31fe5020)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.2457391Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.6392836Z Complete job name: Compile & Hygiene
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7324346Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7325904Z with:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7326664Z   lfs: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7327481Z   repository: microsoft/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7335027Z   token: ***
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7335952Z   ssh-strict: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7336865Z   ssh-user: git
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7337876Z   persist-credentials: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7338897Z   clean: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7339850Z   sparse-checkout-cone-mode: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7340935Z   fetch-depth: 1
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7341958Z   fetch-tags: false
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7342929Z   show-progress: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7343893Z   submodules: false
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7344813Z   set-safe-directory: true
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7345885Z   allow-unsafe-pr-checkout: false
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7347194Z env:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7348051Z   VSCODE_QUALITY: oss
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.7348963Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.8289581Z Syncing repository: microsoft/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.8292363Z ##[group]Getting Git version info
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.8293663Z Working directory is '/mnt/vss/_work/vscode/vscode'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.8295564Z [command]/usr/bin/git version
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.9437746Z git version 2.52.0
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:56.9496481Z [command]/usr/bin/git lfs version
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5876872Z git-lfs/3.7.1 (GitHub; linux amd64; go 1.24.4)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5887710Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5898442Z Temporarily overriding HOME='/mnt/vss/_work/_temp/3d0a3f1b-da57-47ed-877d-6a06bdb28f3c' before making global git config changes
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5899667Z Adding repository directory to the temporary git global config as a safe directory
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5902509Z [command]/usr/bin/git config --global --add safe.directory /mnt/vss/_work/vscode/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5936179Z Deleting the contents of '/mnt/vss/_work/vscode/vscode'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5939347Z ##[group]Determining repository object format
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5940842Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5941851Z ##[group]Initializing the repository
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.5944843Z [command]/usr/bin/git init /mnt/vss/_work/vscode/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6386661Z hint: Using 'master' as the name for the initial branch. This default branch name
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6387531Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6388467Z hint: to use in all of your new repositories, which will suppress this warning,
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6389224Z hint: call:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6389823Z hint:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6390505Z hint: 	git config --global init.defaultBranch <name>
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6391325Z hint:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6392040Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6392920Z hint: 'development'. The just-created branch can be renamed via this command:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6393664Z hint:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6394261Z hint: 	git branch -m <name>
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6394860Z hint:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6395606Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6432143Z Initialized empty Git repository in /mnt/vss/_work/vscode/vscode/.git/
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6441812Z [command]/usr/bin/git remote add origin https://github.com/microsoft/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6518653Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6519789Z ##[group]Disabling automatic garbage collection
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6520906Z [command]/usr/bin/git config --local gc.auto 0
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6549848Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6550971Z ##[group]Setting up auth
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6551920Z Removing SSH command configuration
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6554713Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.6582880Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7110030Z Removing HTTP extra header
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7114433Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7150737Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7379476Z Removing includeIf entries pointing to credentials config files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7383499Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7409528Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7633779Z [command]/usr/bin/git config --file /mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7668273Z [command]/usr/bin/git config --local includeIf.gitdir:/mnt/vss/_work/vscode/vscode/.git.path /mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7695650Z [command]/usr/bin/git config --local includeIf.gitdir:/mnt/vss/_work/vscode/vscode/.git/worktrees/*.path /mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7723022Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7750193Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7775949Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.7778765Z [command]/usr/bin/git lfs install --local
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.8245641Z Updated Git hooks.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.8246340Z Git LFS initialized.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.8255320Z ##[group]Fetching the repository
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:15:57.8260951Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0d6fce9ba925077dce9c15e6d3d182af4955a577:refs/remotes/pull/338147/merge
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3757379Z From https://github.com/microsoft/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3759086Z  * [new ref]           0d6fce9ba925077dce9c15e6d3d182af4955a577 -> pull/338147/merge
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3903543Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3904545Z ##[group]Determining the checkout info
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3905189Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3905804Z ##[group]Fetching LFS objects
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.3909735Z [command]/usr/bin/git lfs fetch origin refs/remotes/pull/338147/merge
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:00.4141674Z Fetching reference refs/remotes/pull/338147/merge
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:02.7316763Z ##[endgroup]
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:02.7319849Z [command]/usr/bin/git sparse-checkout disable
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:02.7409428Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:02.7440385Z ##[group]Checking out the ref
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:02.7443708Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/338147/merge
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.7713408Z Updating files:  42% (8293/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.7834867Z Updating files:  43% (8358/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.7977257Z Updating files:  44% (8552/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.8107648Z Updating files:  45% (8747/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.8250976Z Updating files:  46% (8941/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.8327770Z Updating files:  47% (9135/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.8400026Z Updating files:  48% (9330/19436)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:16:03.8583250Z Updating files:  49% (9524/19436)
+Co
+
+... [242828 characters truncated] ...
+
+8Z [core-ci                  ] [22:17:04] Starting ^[[36mcompile-non-native-extensions-build^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.1562308Z [core-ci                  ] [22:17:04] Finished ^[[36mcompile-non-native-extensions-build^[[39m after ^[[35m0 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.1564384Z [core-ci                  ] [22:17:04] Starting ^[[36mcompile-extension-media-build^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.3968171Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/esbuild.webview.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.4062809Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/ipynb/esbuild.notebook.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.5721574Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/esbuild.notebook.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.6444322Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/notebook-renderers/esbuild.notebook.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.7714240Z [core-ci                  ] [22:17:04] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/notebook/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.7906758Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/simple-browser/esbuild.webview.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.8216449Z [core-ci                  ] [22:17:04] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/preview-src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.8804193Z [core-ci                  ] [22:17:04] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/ipynb/notebook-src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.9014233Z [core-ci                  ] [22:17:04] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-math/esbuild.notebook.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.9241517Z [core-ci                  ] [22:17:04] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-math/notebook/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:04.9766736Z [core-ci                  ] [22:17:04] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/markdown-editor-src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:05.5481542Z [core-ci                  ] [22:17:05] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/notebook-renderers/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:05.5764102Z [core-ci                  ] [22:17:05] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/simple-browser/preview-src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:07.8499465Z [core-ci                  ] [22:17:07] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/markdown-language-features/esbuild.markdownEditor.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.1470984Z [core-ci                  ] [22:17:08] Finished ^[[32mtypechecking extension media (tsgo)^[[39m /mnt/vss/_work/vscode/vscode/extensions/mermaid-markdown-features/preview-src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.4934315Z [core-ci                  ] [22:17:08] Finished ^[[32mesbuilding extension media^[[39m /mnt/vss/_work/vscode/vscode/extensions/mermaid-markdown-features/esbuild.webview.mts with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.4938662Z [core-ci                  ] [22:17:08] Finished ^[[36mcompile-extension-media-build^[[39m after ^[[35m4339 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.4943536Z [core-ci                  ] [22:17:08] Starting ^[[36mbuild-date-file^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.5036388Z [core-ci                  ] [22:17:08] Finished ^[[36mbuild-date-file^[[39m after ^[[35m9 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:08.5037727Z [core-ci                  ] [22:17:08] Starting ^[[36mtsgo-typecheck^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:45.8354399Z [core-ci                  ] [22:17:45] Finished ^[[32mtsgo-typecheck^[[39m /mnt/vss/_work/vscode/vscode/src/tsconfig.json with 0 errors.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:45.8356079Z [core-ci                  ] [22:17:45] Finished ^[[36mtsgo-typecheck^[[39m after ^[[35m37331 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:45.8358889Z [core-ci                  ] [22:17:45] Starting ^[[36mesbuild-out-build^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:48.6030148Z [core-ci                  ] [clean] out-build
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:48.6386620Z [core-ci                  ] [transpile] src → out-build
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:17:50.2244208Z [core-ci                  ] [transpile] Found 9399 files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:12.3516479Z [core-ci                  ] [resources] Copying all non-TS files to out-build...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.6093275Z [core-ci                  ] [resources] Copied 2161 files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.6124151Z [core-ci                  ] [transpile] Done in 27961ms
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.6132382Z [core-ci                  ] 
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.6133698Z [core-ci                  ] ✓ Total: 27997ms
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.7466914Z [core-ci                  ] [22:18:16] Finished ^[[36mesbuild-out-build^[[39m after ^[[35m30912 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.7470988Z [core-ci                  ] [22:18:16] Starting ^[[36mesbuild-vscode-min^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.7703724Z [core-ci                  ] [22:18:16] Starting ^[[36mesbuild-vscode-reh-min^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:16.8023754Z [core-ci                  ] [22:18:16] Starting ^[[36mesbuild-vscode-reh-web-min^[[39m ...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:18.8327711Z [core-ci                  ] [clean] out-vscode-reh-web-min
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:18.8422904Z [core-ci                  ] [bundle] src → out-vscode-reh-web-min (target: server-web) (minify) (nls) (mangle-privates)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:19.7253115Z [core-ci                  ] [clean] out-vscode-reh-min
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:19.7659147Z [core-ci                  ] [bundle] src → out-vscode-reh-min (target: server) (minify) (nls) (mangle-privates)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:19.9225384Z [core-ci                  ] [clean] out-vscode-min
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:19.9325147Z [core-ci                  ] [bundle] src → out-vscode-min (target: desktop) (minify) (nls) (mangle-privates)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:18:48.8204278Z [core-ci                  ] [nls] Extracted 2728 messages from 181 modules
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.2655451Z [core-ci                  ] [bundle] Syntax check passed for 6 post-processed JS files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.2684844Z [core-ci                  ] [mangle-privates] server-main.js: 4 classes, 6 fields, 21 edits, 783ms
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.2686023Z [core-ci                  ] [mangle-privates] Total: 4 classes, 6 fields, 21 edits, 783ms
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.2687398Z [core-ci                  ] [resources] Copying to /mnt/vss/_work/vscode/vscode/out-vscode-reh-min for target 'server'...
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.3136451Z [core-ci                  ] [resources] Copied 18 files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.6957602Z [core-ci                  ] [svg] 0 files: 0 -> 0 bytes
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.7033007Z [core-ci                  ] [bundle] Done in 46934ms (8 bundles)
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.7034151Z [core-ci                  ] 
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.7035244Z [core-ci                  ] ✓ Total: 46974ms
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:06.9724542Z [core-ci                  ] [22:19:06] Finished ^[[36mesbuild-vscode-reh-min^[[39m after ^[[35m50203 ms^[[39m
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:19:57.3517408Z [core-ci                  ] [nls] Extracted 22326 messages from 1722 modules
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:12.4083413Z [eslint                   ] Killed
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:13.7112620Z ERROR: "eslint" exited with 137.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:13.8894126Z ##[error]Process completed with exit code 1.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.1946912Z Post job cleanup.
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4383159Z [command]/usr/bin/git version
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4513692Z git version 2.52.0
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4552768Z Temporarily overriding HOME='/mnt/vss/_work/_temp/23b8f0b2-b478-47fe-a31a-939e1b03169e' before making global git config changes
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4554015Z Adding repository directory to the temporary git global config as a safe directory
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4558135Z [command]/usr/bin/git config --global --add safe.directory /mnt/vss/_work/vscode/vscode
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4604591Z Removing SSH command configuration
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4611701Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.4647226Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5150307Z Removing HTTP extra header
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5155071Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5185228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5437553Z Removing includeIf entries pointing to credentials config files
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5442531Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5466528Z includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5471964Z includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git/worktrees/*.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5472722Z includeif.gitdir:/github/workspace/.git.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5473465Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5475126Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5495040Z /mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5503672Z [command]/usr/bin/git config --local --unset includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git.path \/mnt\/vss\/_work\/_temp\/git\-credentials\-49f39bf0\-0d38\-4443\-a2ce\-302932db68ae\.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5543579Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git/worktrees/*.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5567383Z /mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5577329Z [command]/usr/bin/git config --local --unset includeif.gitdir:/mnt/vss/_work/vscode/vscode/.git/worktrees/*.path \/mnt\/vss\/_work\/_temp\/git\-credentials\-49f39bf0\-0d38\-4443\-a2ce\-302932db68ae\.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5610045Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5630980Z /github/runner_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5637813Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-49f39bf0\-0d38\-4443\-a2ce\-302932db68ae\.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5665840Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5685737Z /github/runner_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5692499Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-49f39bf0\-0d38\-4443\-a2ce\-302932db68ae\.config
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5723019Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.5968067Z Removing credentials config '/mnt/vss/_work/_temp/git-credentials-49f39bf0-0d38-4443-a2ce-302932db68ae.config'
+Compile & Hygiene	UNKNOWN STEP	2026-09-26T22:26:14.6162285Z Cleaning up orphan processes

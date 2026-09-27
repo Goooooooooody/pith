@@ -1,0 +1,317 @@
+cargo hawk	UNKNOWN STEP	﻿2026-09-26T20:26:10.5092463Z Current runner version: '2.337.0'
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5096720Z Runner name: 'github-ubuntu-24.04-x86_64-4-1002722111'
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5097294Z Runner group name: 'default'
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5109107Z ##[group]Runner Image Provisioner
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5109616Z Hosted Compute Agent
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5109950Z Version: 20260828.587
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5110333Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5110788Z Build Date: 2026-08-28T16:44:25Z
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5111199Z Worker ID: {9f445bf5-ff56-41d3-a91b-744a9e16ebb3}
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5111631Z Azure Region: westus3
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5111957Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5112655Z ##[group]Operating System
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5113046Z Ubuntu
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5113344Z 24.04.5
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5113664Z LTS
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5113972Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5114317Z ##[group]Runner Image
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5114708Z Image: ubuntu-24.04
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5115170Z Version: 20260920.314.1
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5115834Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5116634Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5117216Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5117823Z ##[group]GITHUB_TOKEN Permissions
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5119052Z Contents: read
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5119411Z Metadata: read
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5119769Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5120953Z Secret source: Actions
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5121518Z Cache mode: write
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5121951Z Prepare workflow directory
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5351411Z Prepare all required actions
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.5380551Z Getting action download info
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.8210028Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:10.9139487Z Download action repository 'Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6' (SHA:6323deb102c322ba6fcbdcafc7e3dddab59af2b6)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.6721151Z Complete job name: cargo hawk
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7145967Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7146487Z with:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7146741Z   persist-credentials: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7147039Z   repository: astral-sh/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7149353Z   token: ***
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7149593Z   ssh-strict: true
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7149844Z   ssh-user: git
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7150085Z   clean: true
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7150340Z   sparse-checkout-cone-mode: true
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7150633Z   fetch-depth: 1
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7150884Z   fetch-tags: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7151137Z   show-progress: true
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7151391Z   lfs: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7151633Z   submodules: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7151899Z   set-safe-directory: true
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7152192Z   allow-unsafe-pr-checkout: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7152584Z env:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7152831Z   UV_LOCKED: 1
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7153076Z   CARGO_INCREMENTAL: 0
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7153363Z   CARGO_NET_RETRY: 10
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7153631Z   CARGO_PROFILE_DEV_LTO: false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7153920Z   CARGO_PROFILE_DEV_OPT_LEVEL: 0
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7154211Z   CARGO_TERM_COLOR: always
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7154481Z   HAWK_VERSION: 0.1.13
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7154741Z   RUSTUP_MAX_RETRIES: 10
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7155009Z   PACKAGE_NAME: ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7155263Z   PYTHON_VERSION: 3.14
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7155524Z   NEXTEST_PROFILE: ci
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7155788Z   MDTEST_EXTERNAL: 1
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7156052Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7788618Z Syncing repository: astral-sh/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7789661Z ##[group]Getting Git version info
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7790019Z Working directory is '/home/runner/work/ruff/ruff'
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7790574Z [command]/usr/bin/git version
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7857189Z git version 2.55.0
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7867503Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7873652Z Temporarily overriding HOME='/home/runner/work/_temp/ba0a13cb-1aae-47a1-99e2-0f8e5af1eb17' before making global git config changes
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7876428Z Adding repository directory to the temporary git global config as a safe directory
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7877115Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ruff/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7913882Z Deleting the contents of '/home/runner/work/ruff/ruff'
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7915757Z ##[group]Determining repository object format
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7916599Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7917007Z ##[group]Initializing the repository
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.7919136Z [command]/usr/bin/git init /home/runner/work/ruff/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8004722Z hint: Using 'master' as the name for the initial branch. This default branch name
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8005315Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8005959Z hint: to use in all of your new repositories, which will suppress this warning,
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8006643Z hint: call:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8007052Z hint:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8007592Z hint: 	git config --global init.defaultBranch <name>
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8008220Z hint:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8009090Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8009792Z hint: 'development'. The just-created branch can be renamed via this command:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8010331Z hint:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8010643Z hint: 	git branch -m <name>
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8011104Z hint:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8011644Z hint: Disable this message with "git config set advice.defaultBranchName false"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8012254Z Initialized empty Git repository in /home/runner/work/ruff/ruff/.git/
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8014714Z [command]/usr/bin/git remote add origin https://github.com/astral-sh/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8051770Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8052319Z ##[group]Disabling automatic garbage collection
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8053745Z [command]/usr/bin/git config --local gc.auto 0
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8075705Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8076619Z ##[group]Setting up auth
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8077159Z Removing SSH command configuration
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8078984Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8100716Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8367910Z Removing HTTP extra header
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8370782Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8391620Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8548082Z Removing includeIf entries pointing to credentials config files
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8550919Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8572040Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8729465Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-73016a57-3f65-472d-8591-1d985a39af38.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8754619Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ruff/ruff/.git.path /home/runner/work/_temp/git-credentials-73016a57-3f65-472d-8591-1d985a39af38.config
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8777458Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ruff/ruff/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-73016a57-3f65-472d-8591-1d985a39af38.config
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8804424Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-73016a57-3f65-472d-8591-1d985a39af38.config
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8828236Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-73016a57-3f65-472d-8591-1d985a39af38.config
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8849452Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8850420Z ##[group]Fetching the repository
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:11.8854110Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +8ea563e9575c0b7bf8f6f93911f3db18a9fa5f62:refs/remotes/pull/28499/merge
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1925144Z From https://github.com/astral-sh/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1925719Z  * [new ref]         8ea563e9575c0b7bf8f6f93911f3db18a9fa5f62 -> pull/28499/merge
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1929219Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1929780Z ##[group]Determining the checkout info
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1930412Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1933627Z [command]/usr/bin/git sparse-checkout disable
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1971548Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1992550Z ##[group]Checking out the ref
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.1994184Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/28499/merge
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6546502Z Note: switching to 'refs/remotes/pull/28499/merge'.
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6547008Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6547370Z You are in 'detached HEAD' state. You can look around, make experimental
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6548040Z changes and commit them, and you can discard any commits you make in this
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6548698Z state without impacting any branches by switching back to a branch.
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6549104Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6549391Z If you want to create a new branch to retain commits you create, you may
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6549853Z do so (now or later) by using -c with the switch command. Example:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6550081Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6550306Z   git switch -c <new-branch-name>
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6550665Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6550867Z Or undo this operation with:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6551055Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6551522Z   git switch -
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6551840Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6552138Z Turn off this advice by setting config variable advice.detachedHead to false
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6552413Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6552787Z HEAD is now at 8ea563e Merge 4045df29854d6eac171d56ade5f9d4c9207681a1 into 1e92f537e426617a62ab16257cb435c7e15ca7b2
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6566247Z ##[endgroup]
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6601192Z [command]/usr/bin/git log -1 --format=%H
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6619605Z 8ea563e9575c0b7bf8f6f93911f3db18a9fa5f62
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6628731Z ##[group]Removing auth
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6629006Z Removing SSH command configuration
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6634229Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6651495Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:26:16.6818616Z Removing HTTP extra header
+
+... [63976 characters truncated] ...
+
+	2026-09-26T20:28:35.8679532Z     Checking wasm-bindgen-test v0.3.73
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:36.2919575Z     Checking tracing-indicatif v0.3.14
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:43.1439526Z     Checking ruff_graph v0.0.15 (/home/runner/work/ruff/ruff/crates/ruff_graph)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:43.3549656Z     Checking ruff_workspace v0.0.15 (/home/runner/work/ruff/ruff/crates/ruff_workspace)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:45.4240136Z     Checking ruff_markdown v0.0.15 (/home/runner/work/ruff/ruff/crates/ruff_markdown)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:45.5319792Z     Checking ruff_server v0.0.15 (/home/runner/work/ruff/ruff/crates/ruff_server)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:46.0369635Z     Checking ruff_wasm v0.16.9 (/home/runner/work/ruff/ruff/crates/ruff_wasm)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:46.3530134Z     Checking ruff_mdtest v0.0.0 (/home/runner/work/ruff/ruff/crates/ruff_mdtest)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:53.7700218Z     Checking ty_project v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_project)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:53.8639825Z     Checking ty_test v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_test)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:56.1479497Z     Checking ty_ide v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_ide)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:57.5679546Z     Checking ruff_benchmark v0.0.0 (/home/runner/work/ruff/ruff/crates/ruff_benchmark)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:28:57.7599563Z     Checking ty_server v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_server)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:29:00.6519600Z     Checking ruff_dev v0.0.0 (/home/runner/work/ruff/ruff/crates/ruff_dev)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:29:02.4035857Z     Checking ty_completion_eval v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_completion_eval)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:29:02.8309751Z     Checking ty_completion_bench v0.0.0 (/home/runner/work/ruff/ruff/crates/ty_completion_bench)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:29:11.7650506Z     Finished `dev` profile [unoptimized + debuginfo] target(s) in 47.45s
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7391410Z error[hawk::unnecessary_restricted_visibility]: `path::ModuleDirectory::<'db>::exists_at` has explicit restricted visibility but all compiled uses fit within the defining module; it can be private
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7391889Z   --> crates/ty_module_resolver/src/path.rs:303:5
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7392049Z     |
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7392164Z 303 |     pub(crate) fn exists_at(
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7392323Z     |     ^^^ restricted-visibility declaration
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7392539Z     = help: remove this declaration's visibility modifier
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7392666Z 
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7393250Z hawk: 1 finding(s) for 6 configured production binaries and workspace non-production targets on the host target
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:27.7393566Z   hawk::unnecessary_restricted_visibility: 1 (ty_module_resolver: 1)
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1231266Z ##[error]Process completed with exit code 1.
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1328712Z Post job cleanup.
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1832009Z [command]/usr/bin/git version
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1860331Z git version 2.55.0
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1880911Z Temporarily overriding HOME='/home/runner/work/_temp/a2be5888-eba8-42fc-a90b-ce5156ba61f9' before making global git config changes
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1881527Z Adding repository directory to the temporary git global config as a safe directory
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1883704Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ruff/ruff
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1907022Z Removing SSH command configuration
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1911008Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.1934117Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2105784Z Removing HTTP extra header
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2108715Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2130694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2293846Z Removing includeIf entries pointing to credentials config files
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2297489Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2319044Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cargo hawk	UNKNOWN STEP	2026-09-26T20:30:28.2602527Z Cleaning up orphan processes
+all required checks passed	UNKNOWN STEP	﻿2026-09-26T20:31:21.5047031Z Current runner version: '2.337.0'
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5055460Z Runner name: 'github-ubuntu-24.04-x86_64-2-1002722191'
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5056668Z Runner group name: 'default'
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5077230Z ##[group]Runner Image Provisioner
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5078370Z Hosted Compute Agent
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5079146Z Version: 20260828.587
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5079982Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5080956Z Build Date: 2026-08-28T16:44:25Z
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5081832Z Worker ID: {c59b5223-d1b8-4ce2-8b3b-3aeda32f8cec}
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5083043Z Azure Region: westus
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5083796Z ##[endgroup]
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5085508Z ##[group]Operating System
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5086431Z Ubuntu
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5087101Z 24.04.5
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5087851Z LTS
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5088512Z ##[endgroup]
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5089186Z ##[group]Runner Image
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5090030Z Image: ubuntu-24.04
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5090936Z Version: 20260920.314.1
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5092753Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5094627Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5095962Z ##[endgroup]
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5097273Z ##[group]GITHUB_TOKEN Permissions
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5099433Z Contents: read
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5100160Z Metadata: read
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5100911Z ##[endgroup]
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5103478Z Secret source: Actions
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5104679Z Cache mode: write
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5105823Z Prepare workflow directory
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5781260Z Prepare all required actions
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.5855606Z Complete job name: all required checks passed
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7176948Z ##[group]Run failing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7179649Z ^[[36;1mfailing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')^[[0m
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7181423Z ^[[36;1mif [ -n "$failing" ]; then^[[0m
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7182480Z ^[[36;1m  echo "$failing"^[[0m
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7183692Z ^[[36;1m  exit 1^[[0m
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:21.7184462Z ^[[36;1mfi^[[0m
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2418125Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2419350Z env:
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2419906Z   UV_LOCKED: 1
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2420475Z   CARGO_INCREMENTAL: 0
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2421083Z   CARGO_NET_RETRY: 10
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2421690Z   CARGO_PROFILE_DEV_LTO: false
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2422646Z   CARGO_PROFILE_DEV_OPT_LEVEL: 0
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2423408Z   CARGO_TERM_COLOR: always
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2424057Z   HAWK_VERSION: 0.1.13
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2424665Z   RUSTUP_MAX_RETRIES: 10
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2425262Z   PACKAGE_NAME: ruff
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2425847Z   PYTHON_VERSION: 3.14
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2426461Z   NEXTEST_PROFILE: ci
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2431166Z   MDTEST_EXTERNAL: 1
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2438980Z   NEEDS_JSON: {
+all required checks passed	UNKNOWN STEP	  "determine_changes": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {
+all required checks passed	UNKNOWN STEP	      "parser": "false",
+all required checks passed	UNKNOWN STEP	      "linter": "false",
+all required checks passed	UNKNOWN STEP	      "formatter": "false",
+all required checks passed	UNKNOWN STEP	      "code": "true",
+all required checks passed	UNKNOWN STEP	      "py-fuzzer": "false",
+all required checks passed	UNKNOWN STEP	      "playground": "false",
+all required checks passed	UNKNOWN STEP	      "benchmarks": "false",
+all required checks passed	UNKNOWN STEP	      "fuzz": "false",
+all required checks passed	UNKNOWN STEP	      "ty": "true",
+all required checks passed	UNKNOWN STEP	      "release": "false",
+all required checks passed	UNKNOWN STEP	      "comparison_base": "1e92f537e426617a62ab16257cb435c7e15ca7b2"
+all required checks passed	UNKNOWN STEP	    }
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-fmt": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-clippy": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-deny": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "hawk": {
+all required checks passed	UNKNOWN STEP	    "result": "failure",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-test-linux": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-test-wasm": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "cargo-build-msrv": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "shellcheck": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "scripts": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "prek": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "docs": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  },
+all required checks passed	UNKNOWN STEP	  "python-package": {
+all required checks passed	UNKNOWN STEP	    "result": "success",
+all required checks passed	UNKNOWN STEP	    "outputs": {}
+all required checks passed	UNKNOWN STEP	  }
+all required checks passed	UNKNOWN STEP	}
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.2447043Z ##[endgroup]
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.3520844Z hawk: failure
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.3533053Z ##[error]Process completed with exit code 1.
+all required checks passed	UNKNOWN STEP	2026-09-26T20:31:22.3653636Z Cleaning up orphan processes

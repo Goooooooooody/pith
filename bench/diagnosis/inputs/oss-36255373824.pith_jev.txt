@@ -1,0 +1,70 @@
+pith · <log> · 482 lines → 179 groups · ~12.4k → ~1.2k tokens (89.9% smaller)
+
+jobs: flake8; black
+levels: error 3 · warn 2 · notable 3 · info 333
+raw: <removed for evaluation>
+jev (jev-latest): hid 143/179 groups as confident noise · 1 requests · 2,343 tokens · $0.0001 · 0.4s
+most likely root cause: [820d] rc=0.72 (confidence 0.71, cause visible p=0.55)
+
+== LIKELY ROOT CAUSE (jev rc=0.72)
+[820d] ERROR ×1  act=0.60 val=2.7/4 rc=0.72  L211  job: flake8
+  ##[error]./tests/extra_regress/tests.py:478:89: E501 line too long (91 > 88 characters)
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: flake8
+L198      [e1c2] ▶ Run liskin/gh-problem-matcher-wrap@d31bb388d13cf879e93f878cb2550299f0afb460
+   ...
+L210      [7581] [command]/opt/hostedtoolcache/Python/3.14.7/x64/bin/flake8
+L211    ✱ [820d] ##[error]./tests/extra_regress/tests.py:478:89: E501 line too long (91 > 88 characters)
+L212    ✱ [46c0] ##[error]The process '/opt/hostedtoolcache/Python/3.14.7/x64/bin/flake8' failed with exit code 1
+-- job: black
+L396      [1cb5] ▶ Run # Even when black fails, do not close the shell
+   ...
+L451      [9c91] +                order_by=[
+L452      [e67b] +                    "extra_regress_testobject.first",
+L453      [9598] +                    "random()",
+L454      [49fc] +                    "second",
+L455      [899a] +                    "-extra_regress_testobject.first",
+L456      [7f8d] +                    "-random()",
+L457      [c3e3] +                    "-second",
+L458      [5833] +                ]
+L459      [5f7d] +            )
+          self.assertEqual(ctx.filename, __file__)
+L461      [f921] would reformat /home/runner/work/django/django/tests/extra_regress/tests.py
+L463      [f57a] Oh no! 💥 💔 💥
+L464      [f4b3] 1 file would be reformatted, 2930 files would be left unchanged.
+L465    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L397    NOTA [4e87] # Even when black fails, do not close the shell
+
+== END OF OUTPUT
+L368      [9456] includeif.gitdir:/home/runner/work/django/django/.git.path
+L369      [50c0] includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+L372      [8d5a] [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git.path
+L374      [3941] [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+L375      [f274] [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+L377      [cb2a] [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb95
+L380      [c1b8] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+L381      [ddf3] [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+L383      [c27c] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+L385      [f305] Removing credentials config '/home/runner/work/_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config'
+L388      [8d65] with:
+L397      [4e87] # Even when black fails, do not close the shell
+L412      [b777] if [ "${INPUT_SUMMARY}" == "true" ]; then
+L422      [4293] env:
+L446      [9e09] -                "-extra_regress_testobject.first",
+
+== MOST FREQUENT OTHER LINES
+×6       [8399] Removing SSH command configuration
+×6       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×6       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×6       [66c6] Removing HTTP extra header
+×6       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×6       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×6       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+×2       [93e5] ▶ Setting up auth
+×2       [daee] You are in 'detached HEAD' state. You can look around, make experimental
+
+(not shown: 4 groups, 4 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

@@ -1,0 +1,729 @@
+[
+ {
+  "repo": "apache/airflow",
+  "run_id": "36274054072",
+  "url": "https://github.com/apache/airflow/actions/runs/36274054072",
+  "workflow": "Tests (AMD)",
+  "category": "lint-format",
+  "root_cause": "Two prek static-check hooks failed. The main one is check-provider-yaml-valid: the new module airflow.providers.common.ai.sandbox.islo defines IsloHook, but providers/common/ai/provider.yaml does not list it in any resource section. Ruff also failed because it auto-fixed a stray blank line in islo.py, so files were modified.",
+  "must_keep": [
+   "hook id: check-provider-yaml-valid",
+   "Module `airflow.providers.common.ai.sandbox.islo` contains hooks",
+   "but is not registered in any resource section of providers/common/ai/provider.yaml.",
+   "Found 1 error (1 fixed, 0 remaining).",
+   "diff --git a/providers/common/ai/src/airflow/providers/common/ai/sandbox/islo.py"
+  ],
+  "file": "bench/logs/apache__airflow__36274054072.log"
+ },
+ {
+  "repo": "apache/airflow",
+  "run_id": "36243566882",
+  "url": "https://github.com/apache/airflow/actions/runs/36243566882",
+  "workflow": "Tests",
+  "category": "flaky-or-unknown",
+  "root_cause": "In the Static checks job, the prek hook `update-migration-references-edge3` (Update migration ref doc for Edge3) was the only hook that failed. It crashed when `breeze shell` ran cleanup_python_generated_files(): shutil.rmtree raised OSError [Errno 39] Directory not empty on dev/breeze/src/airflow_breeze/commands/__pycache__. This looks like a race with other hooks running at the same time, not a problem in the code change.",
+  "must_keep": [
+   "OSError: [Errno 39] Directory not empty: '/home/runner/work/airflow/airflow/dev/breeze/src/airflow_breeze/commands/__pycache__'",
+   "hook id: update-migration-references-edge3",
+   "in cleanup_python_generated_files"
+  ],
+  "file": "bench/logs/apache__airflow__36243566882.log"
+ },
+ {
+  "repo": "apache/airflow",
+  "run_id": "36227248243",
+  "url": "https://github.com/apache/airflow/actions/runs/36227248243",
+  "workflow": "Tests (ARM)",
+  "category": "test-failure",
+  "root_cause": "One test failed in the ARM Core test suite (LatestBoto, Postgres 14, Python 3.10): airflow-core/tests/unit/jobs/test_triggerer_job.py::test_trigger_log[trigger1-1-0]. The test expected '0 triggers currently running' in the triggerer's stdout, but the only output was a warning that the triggerer's async thread was blocked for 300 seconds. This looks like a timing- or load-related flake on the ARM runner rather than a real regression.",
+  "must_keep": [
+   "test_trigger_log[trigger1-1-0]",
+   "- assert '0 triggers currently running' in \"2026-09-26T08:19:09.964005Z [info     ] Triggerer's async thread was blocked for 300.00 seconds",
+   "airflow-core/tests/unit/jobs/test_triggerer_job.py"
+  ],
+  "file": "bench/logs/apache__airflow__36227248243.log"
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "run_id": "36273686863",
+  "url": "https://github.com/astral-sh/ruff/actions/runs/36273686863",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "One of 9421 nextest tests failed: ty_python_semantic mdtest `external/attrs.md`. It panicked because `uv sync` exited with code 2 while setting up the test's virtual environment. uv could not query the Python interpreter because renaming a temp file in its shared interpreter cache (~/.cache/uv/interpreter-v4) failed with ENOENT. This looks like a race or flake in the uv cache, not a code regression.",
+  "must_keep": [
+   "test mdtest::external/attrs.md ... FAILED",
+   "test panicked: Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2):",
+   "error: Failed to inspect Python interpreter from first executable in the search path",
+   "cause: failed to rename file from /home/runner/.cache/uv/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to"
+  ],
+  "file": "bench/logs/astral-sh__ruff__36273686863.log"
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "run_id": "36190147719",
+  "url": "https://github.com/astral-sh/ruff/actions/runs/36190147719",
+  "workflow": "ty ecosystem-analyzer",
+  "category": "dependency-install",
+  "root_cause": "The ecosystem-analyzer's `uv pip install` failed while installing dependencies for the mongo-python-driver project, because that project requires uv ==0.12.12 and the runner has uv 0.12.11. The uncaught CalledProcessError (exit status 2) crashed the analyzer, and the job exited with code 1.",
+  "must_keep": [
+   "error: Required uv version `==0.12.12` does not match the running version `0.12.11`.",
+   "ERROR - Failed to install project mongo-python-driver",
+   "subprocess.CalledProcessError: Command '['uv', 'pip', 'install', '--python'"
+  ],
+  "file": "bench/logs/astral-sh__ruff__36190147719.log"
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "run_id": "36269494895",
+  "url": "https://github.com/astral-sh/ruff/actions/runs/36269494895",
+  "workflow": "CI",
+  "category": "lint-format",
+  "root_cause": "The cargo hawk lint job failed with one finding: hawk::unnecessary_restricted_visibility. `ModuleDirectory::exists_at` in crates/ty_module_resolver/src/path.rs:303 is declared pub(crate), but every use is inside its own module, so it should be private. The \"all required checks passed\" job then failed because hawk had failed.",
+  "must_keep": [
+   "error[hawk::unnecessary_restricted_visibility]: `path::ModuleDirectory::<'db>::exists_at` has explicit restricted visibility",
+   "--> crates/ty_module_resolver/src/path.rs:303:5",
+   "hawk::unnecessary_restricted_visibility: 1 (ty_module_resolver: 1)"
+  ],
+  "file": "bench/logs/astral-sh__ruff__36269494895.log"
+ },
+ {
+  "repo": "denoland/deno",
+  "run_id": "36268090469",
+  "url": "https://github.com/denoland/deno/actions/runs/36268090469",
+  "workflow": "pr",
+  "category": "lint-format",
+  "root_cause": "The PR title check in the \"lint title\" job failed. tools/verify_pr_title.js rejected the title \"raw-private/raw-public KeyObject export format\" because it does not start with a conventional-commit prefix such as feat or fix, so the step exited with code 1.",
+  "must_keep": [
+   "The PR title must start with one of the following prefixes:",
+   "PR title: raw-private/raw-public KeyObject export format",
+   "Please fix the PR title according to https://www.conventionalcommits.org"
+  ],
+  "file": "bench/logs/denoland__deno__36268090469.log"
+ },
+ {
+  "repo": "denoland/deno",
+  "run_id": "36268090429",
+  "url": "https://github.com/denoland/deno/actions/runs/36268090429",
+  "workflow": "ci",
+  "category": "lint-format",
+  "root_cause": "The \"lint debug linux-x86_64\" job's format check (./tools/format.js --check, which runs dprint) found 2 files that are not formatted: ext/node/polyfills/internal/crypto/keys.ts and sig.ts. Their indentation doesn't match, apparently because of an added or removed `(function () {` IIFE wrapper. The step exited with code 20, and then the \"ci status\" aggregate job failed with exit code 1.",
+  "must_keep": [
+   "Found ^[[1m2^[[0m not formatted files.",
+   "/home/runner/work/deno/deno/ext/node/polyfills/internal/crypto/keys.ts:",
+   "/home/runner/work/deno/deno/ext/node/polyfills/internal/crypto/sig.ts:",
+   "##[error]Process completed with exit code 20.",
+   "deno run --allow-write --allow-read --allow-run --allow-net ./tools/format.js --check"
+  ],
+  "file": "bench/logs/denoland__deno__36268090429.log"
+ },
+ {
+  "repo": "denoland/deno",
+  "run_id": "36234815695",
+  "url": "https://github.com/denoland/deno/actions/runs/36234815695",
+  "workflow": "node_compat_test",
+  "category": "infra-network",
+  "root_cause": "The runner got a shutdown signal (it was cancelled or stopped) while the node_compat 'Run tests' step was still running. The test process was killed with SIGTERM, which gives exit code 143. The many individual node_compat test failures appear to be expected report-mode failures that are normally uploaded as a report, so they did not end the job.",
+  "must_keep": [
+   "##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.",
+   "##[error]Process completed with exit code 143.",
+   "Re-evaluate condition on job cancellation for step: 'Run tests'."
+  ],
+  "file": "bench/logs/denoland__deno__36234815695.log"
+ },
+ {
+  "repo": "django/django",
+  "run_id": "36276720398",
+  "url": "https://github.com/django/django/actions/runs/36276720398",
+  "workflow": "Docs",
+  "category": "lint-format",
+  "root_cause": "The docs job's `make black` step (blacken-docs) failed. It found a Python code block in docs/ref/models/querysets.txt that wasn't formatted to Black's style and rewrote it. The Makefile target exited with Error 123, which failed the job with exit code 2.",
+  "must_keep": [
+   "./ref/models/querysets.txt: Rewriting...",
+   "Code blocks in documentation must be reformatted with blacken-docs",
+   "make: *** [Makefile:175: black] Error 123"
+  ],
+  "file": "bench/logs/django__django__36276720398.log"
+ },
+ {
+  "repo": "django/django",
+  "run_id": "36255373824",
+  "url": "https://github.com/django/django/actions/runs/36255373824",
+  "workflow": "Linters",
+  "category": "lint-format",
+  "root_cause": "Both linter jobs failed on the same file. flake8 reported E501 (line too long, 91 > 88 characters) at tests/extra_regress/tests.py:478. black would reformat the TestObject.objects.extra(order_by=[...]) call in that same test file.",
+  "must_keep": [
+   "./tests/extra_regress/tests.py:478:89: E501 line too long (91 > 88 characters)",
+   "would reformat /home/runner/work/django/django/tests/extra_regress/tests.py",
+   "1 file would be reformatted, 2930 files would be left unchanged.",
+   "-            TestObject.objects.extra(order_by=["
+  ],
+  "file": "bench/logs/django__django__36255373824.log"
+ },
+ {
+  "repo": "django/django",
+  "run_id": "36254876116",
+  "url": "https://github.com/django/django/actions/runs/36254876116",
+  "workflow": "Tests",
+  "category": "test-failure",
+  "root_cause": "The test queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null failed in both the Windows and Ubuntu SQLite jobs (Python 3.14 and 3.14t). A NOT IN exclude against a list containing NULL returned ['i1', None] when the test expected ['i1'], so each run ended FAILED (failures=1) with exit code 1.",
+  "must_keep": [
+   "FAIL: test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null)",
+   "AssertionError: Lists differ: ['i1', None] != ['i1']",
+   "line 3556, in test_col_not_in_list_containing_null",
+   "FAILED (failures=1, skipped=1605, expected failures=4)"
+  ],
+  "file": "bench/logs/django__django__36254876116.log"
+ },
+ {
+  "repo": "dotnet/runtime",
+  "run_id": "36068958756",
+  "url": "https://github.com/dotnet/runtime/actions/runs/36068958756",
+  "workflow": "Format jit codebase",
+  "category": "lint-format",
+  "root_cause": "The jit-format check failed on both Windows and Linux because clang-format found formatting violations in src/coreclr/jit/fgwasm.cpp. A comment around lines 351-352 goes past the column limit and has to be re-wrapped, so the job fails and asks for the format patch to be applied.",
+  "must_keep": [
+   "clang-format: there are formatting errors in D:\\a\\runtime\\runtime\\runtime\\src\\coreclr\\jit\\fgwasm.cpp",
+   "// Multiple try entries in an SCC is currently not supported. These cases appear to be relatively rare,",
+   "##[error]Format job found errors, please apply the format patch.",
+   "clang-format: there are formatting errors in /__w/runtime/runtime/runtime/src/coreclr/jit/fgwasm.cpp"
+  ],
+  "file": "bench/logs/dotnet__runtime__36068958756.log"
+ },
+ {
+  "repo": "dotnet/runtime",
+  "run_id": "36067993543",
+  "url": "https://github.com/dotnet/runtime/actions/runs/36067993543",
+  "workflow": "Format jit codebase",
+  "category": "lint-format",
+  "root_cause": "Both the Windows and Linux \"Format jit codebase\" jobs failed because clang-format found formatting problems in src/coreclr/jit/fgwasm.cpp. A comment at lines 351-352 goes past the column limit and needs rewrapping. The format job then errored and asked for the format patch to be applied.",
+  "must_keep": [
+   "clang-format: there are formatting errors in D:\\a\\runtime\\runtime\\runtime\\src\\coreclr\\jit\\fgwasm.cpp",
+   "// Multiple try entries in an SCC is currently not supported. These cases appear to be relatively rare,",
+   "clang-format: there are formatting errors in /__w/runtime/runtime/runtime/src/coreclr/jit/fgwasm.cpp",
+   "##[error]Format job found errors, please apply the format patch."
+  ],
+  "file": "bench/logs/dotnet__runtime__36067993543.log"
+ },
+ {
+  "repo": "facebook/react",
+  "run_id": "36203490409",
+  "url": "https://github.com/react/react/actions/runs/36203490409",
+  "workflow": "(DevTools) Regression Tests",
+  "category": "test-failure",
+  "root_cause": "DevTools regression tests failed on React 17.0, 18.0 and 18.2 because Store snapshots no longer match. The printed Suspense nodes now show a different uniqueSuspenders value (for example uniqueSuspenders={true} where the snapshot expects it to be absent or false). This broke store-test.js (Lazy/Suspense tests) and storeStressSync-test.js, with 27 snapshots failing per job.",
+  "must_keep": [
+   "● Store › Lazy › should support Lazy components that are unmounted before they finish loading in (createRoot)",
+   "+   <Suspense name=\"App\" uniqueSuspenders={true} rects={null}>",
+   "● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)",
+   "+   <Suspense name=\"Unknown\" uniqueSuspenders={true} rects={[]}>",
+   "Tests:       4 failed, 437 skipped, 180 passed, 621 total"
+  ],
+  "file": "bench/logs/facebook__react__36203490409.log"
+ },
+ {
+  "repo": "facebook/react",
+  "run_id": "36050486108",
+  "url": "https://github.com/react/react/actions/runs/36050486108",
+  "workflow": "(Runtime) Build and Test",
+  "category": "test-failure",
+  "root_cause": "The new test 'suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers' in ReactDOMViewTransition-test.js is gated with '@gate enableViewTransition'. In the www (classic/modern, dev/prod) variant=false configs that flag is off, so the test is expected to fail, but it passed. The result is 'Gated test was expected to fail, but it passed.' in all 4 shards.",
+  "must_keep": [
+   "FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js",
+   "[GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document",
+   "Gated test was expected to fail, but it passed.",
+   "// @gate enableViewTransition"
+  ],
+  "file": "bench/logs/facebook__react__36050486108.log"
+ },
+ {
+  "repo": "grafana/grafana",
+  "run_id": "36276916532",
+  "url": "https://github.com/grafana/grafana/actions/runs/36276916532",
+  "workflow": "Integration Tests",
+  "category": "test-failure",
+  "root_cause": "Integration test TestIntegrationSearchPermissionFiltering/search_permission_filtering_with_dual_writer_mode_5 (pkg/tests/apis/dashboard) failed during server setup: the dualwrite service could not start because the unified storage preferences migration hit a SQLite \"database is locked (SQLITE_BUSY)\" error on a DELETE from resource_history. This looks like a flaky SQLite lock contention issue, not a logic regression.",
+  "must_keep": [
+   "--- FAIL: TestIntegrationSearchPermissionFiltering/search_permission_filtering_with_dual_writer_mode_5",
+   "unable to start dualwrite service due to migration error: unified storage data migration failed",
+   "database is locked (5) (SQLITE_BUSY); query: DELETE",
+   "FAIL\tgithub.com/grafana/grafana/pkg/tests/apis/dashboard"
+  ],
+  "file": "bench/logs/grafana__grafana__36276916532.log"
+ },
+ {
+  "repo": "grafana/grafana",
+  "run_id": "36270941090",
+  "url": "https://github.com/grafana/grafana/actions/runs/36270941090",
+  "workflow": "End-to-end tests",
+  "category": "test-failure",
+  "root_cause": "The Playwright E2E test 'plugin-e2e-api-tests admin › variable query with mocked response' (variableEditPage.spec.ts:20) failed on both attempts: after running the variable query, the variable editor's \"Preview of values\" element never appeared within the 10s timeout, so the toDisplayPreviews assertion failed. That one test failure made shard 1/8 exit with code 1.",
+  "must_keep": [
+   "variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins",
+   "Error while verifying @grafana/plugin-e2e scenarios: Expected variable edit page to display certain label names after query execution.",
+   "Expected: To find preview of values: __name__, action, active, address}",
+   "locator('[data-testid=\"data-testid Variable editor Preview of Values option\"]').or(",
+   "Error: element(s) not found"
+  ],
+  "file": "bench/logs/grafana__grafana__36270941090.log"
+ },
+ {
+  "repo": "grafana/grafana",
+  "run_id": "36270940699",
+  "url": "https://github.com/grafana/grafana/actions/runs/36270940699",
+  "workflow": "golangci-lint",
+  "category": "lint-format",
+  "root_cause": "golangci-lint failed on a single staticcheck SA1019 finding: pkg/registry/apis/query/query_chunked.go:32 calls the deprecated features.IsEnabled (FeatureToggles.IsEnabled) where the OpenFeature client should be used instead.",
+  "must_keep": [
+   "pkg/registry/apis/query/query_chunked.go:32:25: SA1019: features.IsEnabled is deprecated",
+   "if features == nil || !features.IsEnabled(ctx, featuremgmt.FlagDatasourcesChunkedQueryStreaming)"
+  ],
+  "file": "bench/logs/grafana__grafana__36270940699.log"
+ },
+ {
+  "repo": "home-assistant/core",
+  "run_id": "36271776910",
+  "url": "https://github.com/home-assistant/core/actions/runs/36271776910",
+  "workflow": "CI",
+  "category": "lint-format",
+  "root_cause": "The ruff-format pre-commit hook (run via prek) failed because homeassistant/components/onkyo/media_player.py wasn't formatted. A multi-line `elif (...)` condition should be collapsed onto one line. Because the hook changed files, prek exited with code 1.",
+  "must_keep": [
+   "- hook id: ruff-format",
+   "files were modified by this hook",
+   "diff --git a/homeassistant/components/onkyo/media_player.py b/homeassistant/components/onkyo/media_player.py",
+   "elif source is InputSource.MAIN_SOURCE and self._zone is not Zone.MAIN:",
+   "##[error]prek exited with code 1"
+  ],
+  "file": "bench/logs/home-assistant__core__36271776910.log"
+ },
+ {
+  "repo": "home-assistant/core",
+  "run_id": "36266953271",
+  "url": "https://github.com/home-assistant/core/actions/runs/36266953271",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "All 8888 tests passed, but the switchbot test test_exception_handling_for_device_initialization[exception0-...wrong model] errored at teardown. The hass fixture re-raised a leftover background task error: the switchbot lock's update() tried to connect over BLE after the entry had already failed with ConfigEntryNotReady. When bleak's BlueZ client was constructed with a mock BLEDevice whose details had no \"path\", it raised KeyError: 'path'. The test does not mock or cancel the device update and connection.",
+  "must_keep": [
+   "ERROR tests/components/switchbot/test_init.py::test_exception_handling_for_device_initialization[exception0",
+   "_ ERROR at teardown of test_exception_handling_for_device_initialization[exception0",
+   "self._device_path = address_or_ble_device.details[\"path\"]",
+   "venv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py:79: KeyError",
+   "venv/lib/python3.14/site-packages/switchbot/devices/device.py:914: in update"
+  ],
+  "file": "bench/logs/home-assistant__core__36266953271.log"
+ },
+ {
+  "repo": "home-assistant/core",
+  "run_id": "36266583973",
+  "url": "https://github.com/home-assistant/core/actions/runs/36266583973",
+  "workflow": "CI",
+  "category": "lint-format",
+  "root_cause": "The hassfest validation failed. The new integration terrestream_local declares quality scale tier bronze, but its quality_scale rule \"brands\" is still marked \"todo\", so hassfest flagged it as invalid (Invalid integrations: 1) and exited 1. Everything else in the output is only a warning.",
+  "must_keep": [
+   "Invalid integrations: 1",
+   "Integration terrestream_local:",
+   "* [ERROR] [QUALITY_SCALE] Quality scale tier bronze requires quality scale rules to be met:"
+  ],
+  "file": "bench/logs/home-assistant__core__36266583973.log"
+ },
+ {
+  "repo": "microsoft/vscode",
+  "run_id": "36275685724",
+  "url": "https://github.com/microsoft/vscode/actions/runs/36275685724",
+  "workflow": "Component Fixtures",
+  "category": "test-failure",
+  "root_cause": "The Component Fixtures Screenshots job failed on purpose. The rendered screenshots for fixtures labelled blocks-ci (NewSessionChatBackground Dark and Light) changed, and two new blocks-ci fixtures were added, so the hashes no longer match the committed test/componentFixtures/blocks-ci-screenshots.md. The check step then ran exit 1. No fixture errored.",
+  "must_keep": [
+   "##[error]blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content.",
+   "sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Dark: 1207 px changed, max Δ64",
+   "sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Light: 3796 px changed, max Δ51",
+   "Compare result: 8 changed, 2 added, 0 removed, 0 errored."
+  ],
+  "file": "bench/logs/microsoft__vscode__36275685724.log"
+ },
+ {
+  "repo": "microsoft/vscode",
+  "run_id": "36275685869",
+  "url": "https://github.com/microsoft/vscode/actions/runs/36275685869",
+  "workflow": "Code OSS",
+  "category": "infra-network",
+  "root_cause": "In the Compile & Hygiene job, the eslint task run in parallel by npm-run-all2 was killed with SIGKILL (exit 137, almost certainly the runner running out of memory while core-ci, hygiene and the other tasks ran at the same time). That made the step fail with exit code 1. The npm pack and esbuild errors earlier in the log come from test-build-scripts tests that are expected to hit those errors, and that suite reports \"fail 0\".",
+  "must_keep": [
+   "[eslint                   ] Killed",
+   "ERROR: \"eslint\" exited with 137.",
+   "##[error]Process completed with exit code 1."
+  ],
+  "file": "bench/logs/microsoft__vscode__36275685869.log"
+ },
+ {
+  "repo": "nodejs/node",
+  "run_id": "36258601360",
+  "url": "https://github.com/nodejs/node/actions/runs/36258601360",
+  "workflow": "Test macOS",
+  "category": "flaky-or-unknown",
+  "root_cause": "No diagnosable cause in the log. The macOS job's `make build-ci` step is still compiling ICU when the log ends abruptly at 17:27:07, about 7 minutes into the build. There is no compiler error, no make error, no test failure and no ##[error] line, which points to cancellation (for example a concurrency supersede), a runner loss or a truncated log.",
+  "must_keep": [
+   "Run make -C node build-ci -j$(getconf _NPROCESSORS_ONLN) V=1 CONFIG_FLAGS=\"--error-on-warn --v8-enable-temporal-support\"",
+   "icutools/deps/icu-small/source/stubdata/stubdata.o ../deps/icu-small/source/stubdata/stubdata.cpp"
+  ],
+  "file": "bench/logs/nodejs__node__36258601360.log"
+ },
+ {
+  "repo": "nodejs/node",
+  "run_id": "36251710861",
+  "url": "https://github.com/nodejs/node/actions/runs/36251710861",
+  "workflow": "Linters",
+  "category": "lint-format",
+  "root_cause": "The Linters lint-js-and-md job failed because ESLint found one error in doc/api/process.md: at line 2758:15 a code example uses the global 'process' instead of importing it, which breaks the no-restricted-globals rule. That made `make lint-js` fail.",
+  "must_keep": [
+   "2758:15  error  Unexpected use of 'process'. Import 'process' instead of using the global  no-restricted-globals",
+   "/home/runner/work/node/node/doc/api/process.md",
+   "make: *** [Makefile:1537: lint-js] Error 1"
+  ],
+  "file": "bench/logs/nodejs__node__36251710861.log"
+ },
+ {
+  "repo": "nodejs/node",
+  "run_id": "36237136887",
+  "url": "https://github.com/nodejs/node/actions/runs/36237136887",
+  "workflow": "Test Shared libraries",
+  "category": "test-failure",
+  "root_cause": "In all 9 shared-library jobs (Linux and macOS, every OpenSSL/BoringSSL variant), the C++ cctest binary crashes with a segfault in the gtest case NodeCrypto.NewRootCertStore. That kills make test-ci and gives exit code 2. The earlier \"Error: uncaught\" lines come from a test that deliberately throws and still reports OK (EnvironmentTest.StopFromExitHandlerDoesNotLeakIntoNextEnvironment), so they are not the cause.",
+  "must_keep": [
+   "[ RUN      ] NodeCrypto.NewRootCertStore",
+   "make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)",
+   "make[1]: *** [Makefile:659: test-ci] Segmentation fault: 11"
+  ],
+  "file": "bench/logs/nodejs__node__36237136887.log"
+ },
+ {
+  "repo": "prometheus/prometheus",
+  "run_id": "36248908127",
+  "url": "https://github.com/prometheus/prometheus/actions/runs/36248908127",
+  "workflow": "CI",
+  "category": "infra-network",
+  "root_cause": "During promci setup, the `make promu` step failed. It downloads the promu v0.20.0 tarball from GitHub releases with curl and pipes it into tar, and the download came back empty or cut short, so gzip hit an unexpected end of file and make exited with Error 2. This is an infra/network download failure, not a code or test failure.",
+  "must_keep": [
+   "gzip: stdin: unexpected end of file",
+   "promu/releases/download/v0.20.0/promu-0.20.0.linux-amd64.tar.gz | tar -xvzf -",
+   "make: *** [Makefile.common:406: /go/bin/promu] Error 2"
+  ],
+  "file": "bench/logs/prometheus__prometheus__36248908127.log"
+ },
+ {
+  "repo": "prometheus/prometheus",
+  "run_id": "36209829722",
+  "url": "https://github.com/prometheus/prometheus/actions/runs/36209829722",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "In the Windows Go test job, the scrape package test TestTargetDisappearsAfterProviderRemoved failed. Its testify Eventually check at scrape/manager_test.go:1473 (Error Trace starting at line 1413) reported \"Condition never satisfied\" within the 1s timeout. Because of that failure, `FAIL github.com/prometheus/prometheus/scrape` was printed and the job ended with exit code 1. The short 1s window suggests a timing-sensitive flake on the Windows runner.",
+  "must_keep": [
+   "--- FAIL: TestTargetDisappearsAfterProviderRemoved (1.00s)",
+   "Error:      \tCondition never satisfied",
+   "Error Trace:\tD:/a/prometheus/prometheus/scrape/manager_test.go:1413",
+   "FAIL\tgithub.com/prometheus/prometheus/scrape\t35.702s"
+  ],
+  "file": "bench/logs/prometheus__prometheus__36209829722.log"
+ },
+ {
+  "repo": "prometheus/prometheus",
+  "run_id": "36066640942",
+  "url": "https://github.com/prometheus/prometheus/actions/runs/36066640942",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "Go unit tests in the promql package fail in every test job (amd64, 386, race, Windows, Go 1.26). A new PromQL warning, \"input range too short for metric name\", is now emitted in cases where the tests expect no annotations. TestRateAnnotations/no_info_annotations_when_selecting_one_sample and four TestEvaluations functions.test cases for irate/idelta (lines 266, 278, 349, 361) fail as a result.",
+  "must_keep": [
+   "--- FAIL: TestRateAnnotations/no_info_annotations_when_selecting_one_sample",
+   "actual  : [PromQL warning: input range too short for metric name \"series\" (1:6)]",
+   "--- FAIL: TestEvaluations/testdata/functions.test/line_266/irate(http_requests_nan[15m1s])",
+   "unexpected warning annotations evaluating query \"irate(http_requests_nan[15m1s])\" (line 266)",
+   "FAIL\tgithub.com/prometheus/prometheus/promql\t13.448s"
+  ],
+  "file": "bench/logs/prometheus__prometheus__36066640942.log"
+ },
+ {
+  "repo": "python/cpython",
+  "run_id": "36274688465",
+  "url": "https://github.com/python/cpython/actions/runs/36274688465",
+  "workflow": "Tests",
+  "category": "test-failure",
+  "root_cause": "The Windows free-threading x64 test job exited with code 3 (\"FAILURE then ENV CHANGED\"). On the first pass, test_manager and test_threads failed barrier-timeout assertions (0 != 5), and test_free_threading timed out after 10 minutes in test_heapq.test_racing_heappushpop. All three passed on re-run, but test_asyncio.test_sslproto still hit an uncaught thread exception on re-run: ConnectionAbortedError [WinError 10053] during ssl unwrap in test_shutdown_corrupted_ssl_sends_close_notify. Because regrtest treats a changed environment as fatal, the job failed.",
+  "must_keep": [
+   "test.test_asyncio.test_sslproto failed (env changed)",
+   "ProactorStartTLSTests.test_shutdown_corrupted_ssl_sends_close_notify) ... Warning -- Uncaught thread exception: AssertionError",
+   "[WinError 10053] An established connection was aborted by the software in your host machine",
+   "test_racing_heappushpop (test.test_free_threading.test_heapq.TestHeapq.test_racing_heappushpop) ... Timeout (0:10:00)!",
+   "Result: ^[[1;31mFAILURE^[[0m then ^[[33mENV CHANGED^[[0m"
+  ],
+  "file": "bench/logs/python__cpython__36274688465.log"
+ },
+ {
+  "repo": "python/cpython",
+  "run_id": "36247444282",
+  "url": "https://github.com/python/cpython/actions/runs/36247444282",
+  "workflow": "Lint",
+  "category": "lint-format",
+  "root_cause": "The prek (pre-commit) lint run failed because the trailing-whitespace hook found trailing whitespace in Lib/_ast_unparse.py. The whitespace is on a blank line after visit_Attribute, around line 936. The hook rewrote the file, so prek exited with code 1.",
+  "must_keep": [
+   "- hook id: trailing-whitespace",
+   "Fixing Lib/_ast_unparse.py",
+   "diff --git a/Lib/_ast_unparse.py b/Lib/_ast_unparse.py",
+   "##[error]prek exited with code 1"
+  ],
+  "file": "bench/logs/python__cpython__36247444282.log"
+ },
+ {
+  "repo": "python/cpython",
+  "run_id": "36271677183",
+  "url": "https://github.com/python/cpython/actions/runs/36271677183",
+  "workflow": "Tests",
+  "category": "test-failure",
+  "root_cause": "In the Sanitizers / UBSan job, test_venv failed with one error. test_venv.BasicTest.test_multiprocessing started a Pool in the new venv's python, and pool.apply_async(...).get(3) raised multiprocessing.context.TimeoutError. The subprocess then exited with status 1, regrtest reported FAILURE (exit code 2), and the all-green gate failed because build-san is required.",
+  "must_keep": [
+   "test_venv failed (1 error)",
+   "multiprocessing.context.TimeoutError",
+   ": test_multiprocessing (test.test_venv.BasicTest.test_multiprocessing)",
+   "print(pool.apply_async(\"Python\".lower).get(3)); pool.terminate()'] returned non-zero exit status 1."
+  ],
+  "file": "bench/logs/python__cpython__36271677183.log"
+ },
+ {
+  "repo": "pytorch/pytorch",
+  "run_id": "36278239232",
+  "url": "https://github.com/pytorch/pytorch/actions/runs/36278239232",
+  "workflow": "inductor-pallas",
+  "category": "build-compile",
+  "root_cause": "The torch_tpu Bazel build inside the inductor-pallas-tpu test job failed to compile. torch_tpu/eager/amp_policies.cc line 122 includes the header \"ATen/ops/qr_ops.h\", which this PyTorch build no longer provides (fatal error: file not found). As a result the //ci/wheel:torch_tpu_wheel target failed to build and the step exited with code 1.",
+  "must_keep": [
+   "Compiling torch_tpu/eager/amp_policies.cc failed: (Exit 1): clang failed",
+   "'ATen/ops/qr_ops.h' file not found",
+   "Target //ci/wheel:torch_tpu_wheel failed to build"
+  ],
+  "file": "bench/logs/pytorch__pytorch__36278239232.log"
+ },
+ {
+  "repo": "rails/rails",
+  "run_id": "36106982949",
+  "url": "https://github.com/rails/rails/actions/runs/36106982949",
+  "workflow": "Devcontainer smoke test",
+  "category": "dependency-install",
+  "root_cause": "The generated app's devcontainer refers to the base image ghcr.io/rails/devcontainer/images/ruby:3.4.11, which has not been published to GHCR (manifest unknown). docker pull failed on every retry, so the dev container build failed.",
+  "must_keep": [
+   "Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.",
+   "Error response from daemon: manifest unknown",
+   "##[error]Dev container build failed: Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11"
+  ],
+  "file": "bench/logs/rails__rails__36106982949.log"
+ },
+ {
+  "repo": "rails/rails",
+  "run_id": "35657573254",
+  "url": "https://github.com/rails/rails/actions/runs/35657573254",
+  "workflow": "Markdown API",
+  "category": "lint-format",
+  "root_cause": "The check-markdown-api.rb lint step failed because the PR adds new Ruby files under activesupport/lib/active_support/connection_pool* that do not start with the required `# :markup: markdown` header for Markdown API docs.",
+  "must_keep": [
+   "New Ruby files must use Markdown for their API documentation.",
+   "Please add `# :markup: markdown` at the top of:",
+   "activesupport/lib/active_support/connection_pool.rb",
+   "activesupport/lib/active_support/connection_pool/timed_stack.rb"
+  ],
+  "file": "bench/logs/rails__rails__35657573254.log"
+ },
+ {
+  "repo": "rails/rails",
+  "run_id": "35973080617",
+  "url": "https://github.com/rails/rails/actions/runs/35973080617",
+  "workflow": "Devcontainer smoke test",
+  "category": "dependency-install",
+  "root_cause": "The generated app's devcontainer points at the base image ghcr.io/rails/devcontainer/images/ruby:3.4.11, which isn't published on GHCR. Every docker pull failed with \"manifest unknown\", so the dev container build failed. The Rails code wasn't the problem.",
+  "must_keep": [
+   "Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.",
+   "Error response from daemon: manifest unknown",
+   "##[error]Dev container build failed: Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11"
+  ],
+  "file": "bench/logs/rails__rails__35973080617.log"
+ },
+ {
+  "repo": "rubocop/rubocop",
+  "run_id": "35761231118",
+  "url": "https://github.com/rubocop/rubocop/actions/runs/35761231118",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "Three RuboCop::CLI --autocorrect specs fail in the Windows Ruby 2.7 `rake ascii_spec` job. In each one the CLI exits with status 2 (error) where 0 was expected, so nothing gets autocorrected: the files stay unchanged and the summary reports '0 Total in 0 files'. The rest of the suite passes (33898 examples, 3 failures), and the job's exit code 1 comes from these failures.",
+  "must_keep": [
+   "rspec ./spec/rubocop/cli/autocorrect_spec.rb:3199 # RuboCop::CLI --autocorrect corrects `Layout/RedundantLineBreak`",
+   "rspec ./spec/rubocop/cli/autocorrect_spec.rb:3345 # RuboCop::CLI --autocorrect avoids adding extra spaces",
+   "rspec ./spec/rubocop/cli/autocorrect_spec.rb:1857 # RuboCop::CLI --autocorrect can correct single line methods",
+   "1.1) Failure/Error: expect(cli.run(['-a', '--only', 'Layout/RedundantLineBreak,Style/SingleLineMethods'])).to eq(0)",
+   "33898 examples, 3 failures, 192 pending"
+  ],
+  "file": "bench/logs/rubocop__rubocop__35761231118.log"
+ },
+ {
+  "repo": "rubocop/rubocop",
+  "run_id": "35593832541",
+  "url": "https://github.com/rubocop/rubocop/actions/runs/35593832541",
+  "workflow": "Linting",
+  "category": "lint-format",
+  "root_cause": "RuboCop's self-lint (rake internal_investigation) found one offense: spec/rubocop/cli/autocorrect_spec.rb line 363 is 106 characters long, over the 100-character Layout/LineLength limit. Both the \"Ruby\" and \"Ruby without Bundler\" jobs failed with exit code 1 because of it.",
+  "must_keep": [
+   "spec/rubocop/cli/autocorrect_spec.rb:363:101: C: Layout/LineLength: Line is too long. [106/100]",
+   "1768 files inspected, 1 offense detected"
+  ],
+  "file": "bench/logs/rubocop__rubocop__35593832541.log"
+ },
+ {
+  "repo": "rubocop/rubocop",
+  "run_id": "34471666838",
+  "url": "https://github.com/rubocop/rubocop/actions/runs/34471666838",
+  "workflow": "Spell Checking",
+  "category": "lint-format",
+  "root_cause": "The codespell check flagged the misspelling \"currrent\" (should be \"current\") on lines 360 and 361 of spec/rubocop/cop/lint/name_typo_spec.rb, so the Spell Checking job failed. The typo is most likely deliberate test data for the NameTypo cop, which means the file needs a codespell ignore entry.",
+  "must_keep": [
+   "./spec/rubocop/cop/lint/name_typo_spec.rb:360: currrent ==> current",
+   "./spec/rubocop/cop/lint/name_typo_spec.rb:361: currrent ==> current",
+   "Codespell found one or more problems"
+  ],
+  "file": "bench/logs/rubocop__rubocop__34471666838.log"
+ },
+ {
+  "repo": "rust-lang/rust",
+  "run_id": "36273993701",
+  "url": "https://github.com/rust-lang/rust/actions/runs/36273993701",
+  "workflow": "CI",
+  "category": "build-compile",
+  "root_cause": "The PR broke compilation of rustc_ty_utils: error E0382 (use of moved value `niche_optimizations`). The value is moved at compiler/rustc_ty_utils/src/layout.rs line 761 and used again at line 790, and its type NicheOptimizations does not implement Copy. Because of this the bootstrap `check` step failed.",
+  "must_keep": [
+   "use of moved value: `niche_optimizations`",
+   "compiler/rustc_ty_utils/src/layout.rs:790:21",
+   "could not compile `rustc_ty_utils` (lib) due to 1 previous error",
+   "Bootstrap failed while executing `check`"
+  ],
+  "file": "bench/logs/rust-lang__rust__36273993701.log"
+ },
+ {
+  "repo": "rust-lang/rust",
+  "run_id": "36273559187",
+  "url": "https://github.com/rust-lang/rust/actions/runs/36273559187",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "Three compiletest pretty-printer tests for autodiff failed in the stage2 `pretty` suite. autodiff_forward.rs and autodiff_reverse.rs produced expanded output that no longer matches their .pp files. inherent_impl.rs failed to expand at all: the `#[autodiff_reverse(df, ...)]` expansion raised E0433 \"cannot find module or crate `df`\" (the generated `df::Self` path is wrong).",
+  "must_keep": [
+   "test [pretty] tests/pretty/autodiff/autodiff_forward.rs ... FAILED",
+   "error: pretty-printed source does not match expected source",
+   "error[E0433]: cannot find module or crate `df` in this scope",
+   "test result: FAILED. 108 passed; 3 failed; 4 ignored",
+   "Some tests failed in compiletest suite=pretty mode=pretty"
+  ],
+  "file": "bench/logs/rust-lang__rust__36273559187.log"
+ },
+ {
+  "repo": "rust-lang/rust",
+  "run_id": "36273349795",
+  "url": "https://github.com/rust-lang/rust/actions/runs/36273349795",
+  "workflow": "CI",
+  "category": "build-compile",
+  "root_cause": "The PR broke the build: `./x check` failed while compiling `rustc_ty_utils`, which hit 7 E0599 errors. compiler/rustc_ty_utils/src/layout.rs calls LayoutCalculator methods that no longer exist (`array_like`, `scalable_vector_type`, `simd_type`) and uses NicheOptimizations variants that no longer exist (`Disable`/`Enable`). This looks like an API mismatch with the rustc_abi changes.",
+  "must_keep": [
+   "no method named `array_like` found for struct `LayoutCalculator<Cx>` in the current scope",
+   "compiler/rustc_ty_utils/src/layout.rs:526:32",
+   "no method named `scalable_vector_type` found for struct `LayoutCalculator<Cx>`",
+   "no variant, associated function, or constant named `Disable` found for enum `NicheOptimizations`",
+   "could not compile `rustc_ty_utils` (lib) due to 7 previous errors"
+  ],
+  "file": "bench/logs/rust-lang__rust__36273349795.log"
+ },
+ {
+  "repo": "spring-projects/spring-boot",
+  "run_id": "36121908499",
+  "url": "https://github.com/spring-projects/spring-boot/actions/runs/36121908499",
+  "workflow": "Run System Tests",
+  "category": "test-failure",
+  "root_cause": "PaketoBuilderTests.executableWarApp() in spring-boot-image-system-tests failed on all 4 attempts. The Testcontainers container for the Paketo-built WAR image never became ready: the HttpWaitStrategy timed out with java.net.ConnectException, which raised ContainerLaunchException, so the systemTest task failed.",
+  "must_keep": [
+   "PaketoBuilderTests > executableWarApp() FAILED",
+   "Caused by: org.rnorth.ducttape.TimeoutException at PaketoBuilderTests.java:243",
+   "Caused by: java.lang.RuntimeException at HttpWaitStrategy.java:312",
+   "Caused by: java.net.ConnectException at Net.java:-2",
+   "Execution failed for task ':system-test:spring-boot-image-system-tests:systemTest'."
+  ],
+  "file": "bench/logs/spring-projects__spring-boot__36121908499.log"
+ },
+ {
+  "repo": "spring-projects/spring-boot",
+  "run_id": "35995648622",
+  "url": "https://github.com/spring-projects/spring-boot/actions/runs/35995648622",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "The spring-boot-gradle-plugin dockerTest task failed on every Linux job: 352 of 384 BootBuildImageIntegrationTests failed with a bare java.lang.AssertionError (176 of 192 on the Java 27 job). Tests failing across every Gradle version and nearly every scenario points to the Docker/buildpack image-building environment rather than a single code bug. A few spring-boot-maven-plugin JarIntegrationTests also failed.",
+  "must_keep": [
+   "Execution failed for task ':build-plugin:spring-boot-gradle-plugin:dockerTest'.",
+   "384 tests completed, 352 failed",
+   "BootBuildImageIntegrationTests > buildsImageWithDefaultBuilder() > Gradle 9.7.0 --configuration-cache FAILED",
+   "java.lang.AssertionError at BootBuildImageIntegrationTests.java:78",
+   "JarIntegrationTests > whenADependencyHasSystemScopeItIsNotIncludedInTheRepackagedJar(MavenBuild) > apache-maven-3.6.3 FAILED"
+  ],
+  "file": "bench/logs/spring-projects__spring-boot__35995648622.log"
+ },
+ {
+  "repo": "tokio-rs/tokio",
+  "run_id": "32190633712",
+  "url": "https://github.com/tokio-rs/tokio/actions/runs/32190633712",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "Two jobs failed. (1) fmt: rustfmt reports formatting diffs in tokio/src/loom/std/barrier.rs:272, where a `handle.join().unwrap().expect(...)` chain should be on one line. (2) test tokio for wasm32-wasip2: the new unit test loom::std::barrier::tests::wait_timeout_rolls_back_arrival panics with \"failed to spawn thread ... Unsupported\" because wasm32-wasip2 has no thread support. The test needs to be cfg-gated off wasm.",
+  "must_keep": [
+   "Diff in /home/runner/work/tokio/tokio/tokio/src/loom/std/barrier.rs:272:",
+   "+        let b = handle.join().unwrap().expect(\"rendezvous timed out\");",
+   "test loom::std::barrier::tests::wait_timeout_rolls_back_arrival ...",
+   "failed to spawn thread: Os { code: 58, kind: Unsupported, message: \"Not supported\" }"
+  ],
+  "file": "bench/logs/tokio-rs__tokio__32190633712.log"
+ },
+ {
+  "repo": "tokio-rs/tokio",
+  "run_id": "31441181969",
+  "url": "https://github.com/tokio-rs/tokio/actions/runs/31441181969",
+  "workflow": "CI",
+  "category": "test-failure",
+  "root_cause": "In the io_uring job on Linux 4.19.325 (run under QEMU), the test cancel_op_future in tokio/tests/fs_uring_read.rs failed. It expected the read future to still be pending, but it was already Ready (Ok) at line 148:13. A second panic followed at line 159:17 (Option::unwrap() on None). The workflow grepped the QEMU output for \"test result: FAILED\" and exited 1.",
+  "must_keep": [
+   "test cancel_op_future ... FAILED",
+   "thread 'cancel_op_future' (2413) panicked at tokio/tests/fs_uring_read.rs:148:13:",
+   "ready; value = Ok([20, 20, 20, 20",
+   "test result: FAILED. 3 passed; 1 failed; 0 ignored"
+  ],
+  "file": "bench/logs/tokio-rs__tokio__31441181969.log"
+ },
+ {
+  "repo": "vercel/next.js",
+  "run_id": "36225499456",
+  "url": "https://github.com/vercel/next.js/actions/runs/36225499456",
+  "workflow": "Update Rspack test manifest",
+  "category": "config-secrets",
+  "root_cause": "Both Rspack manifest update jobs (production and development) failed because test/update-bundler-manifest.js calls `gh api /repos/vercel/next.js/actions/artifacts?...` without GH_TOKEN set in the environment. The gh CLI refused to run (exit code 4), so the script failed and the step exited 1.",
+  "must_keep": [
+   "gh: To use GitHub CLI in a GitHub Actions workflow, set the GH_TOKEN environment variable.",
+   "Error: Command failed with exit code 4 (EINTR): gh api /repos/vercel/next.js/actions/artifacts?name=test-results-rspack-production",
+   "Error: Command failed with exit code 4 (EINTR): gh api /repos/vercel/next.js/actions/artifacts?name=test-results-rspack-development",
+   "Error: Command failed: node test/update-bundler-manifest.js --bundler rspack --test-suite build --override"
+  ],
+  "file": "bench/logs/vercel__next.js__36225499456.log"
+ },
+ {
+  "repo": "vercel/next.js",
+  "run_id": "36219947061",
+  "url": "https://github.com/vercel/next.js/actions/runs/36219947061",
+  "workflow": "Rspack Next.js development integration tests",
+  "category": "test-failure",
+  "root_cause": "Many shards failed. In all 9 Integration shards, run-tests was given compiled test files under packages/next/dist (e.g. packages/next/dist/diagnostics/build-diagnostics.test.js). Jest's roots and testPathIgnorePatterns don't cover those paths, so every attempt ended with \"No tests found, exiting with code 1\" and the shard exited 1. The E2E/development shards failed separately on real Rspack test failures, e.g. 8 failures in edge-runtime-configurable-guards (the expected \"Dynamic Code Evaluation\" warning never appeared) and a `.failing` test in special-project-paths that unexpectedly passed.",
+  "must_keep": [
+   "No tests found, exiting with code 1",
+   "Pattern: packages/next/dist/diagnostics/build-diagnostics.test.js - 0 matches",
+   "packages/next/dist/diagnostics/build-diagnostics.test.js failed to pass within 2 retries",
+   "test/e2e/edge-runtime-configurable-guards/edge-runtime-configurable-guards.test.ts failed to pass within 2 retries",
+   "Failing test passed even though it was supposed to fail. Remove `.failing` to remove error."
+  ],
+  "file": "bench/logs/vercel__next.js__36219947061.log"
+ }
+]

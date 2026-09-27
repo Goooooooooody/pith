@@ -1,0 +1,134 @@
+pith · <log> · 4,030 lines → 917 groups · ~233.1k → ~4.0k tokens (98.3% smaller)
+
+jobs: Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization
+levels: error 35 · warn 8 · notable 78 · info 1,982 · debug 3
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization
+L1019     [4293] env: (×27, last L3977)
+          BACKEND: postgres
+          BACKEND_VERSION: 14
+          DB_RESET: true
+          (+28 lines)
+   …
+L1053     [2a3d] ▶ Run function check_dep() {
+L1054     [6b10] function check_dep() {
+          local cmd=$1
+L1056   ✱ [29e4] $(type -P $cmd > /dev/null 2>&1) || { echo "::error ::$cmd is required for this action"; missing_dep=true; }
+          }
+L1059     [58ab] check_dep python3
+L1060     [8895] check_dep gh
+L1061     [92b2] check_dep jq
+   …
+L2785     [03a7] 2026-09-26T08:15:25.378479878Z  2026-09-26 08:15:25.378 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+L2786     [9f30] 2026-09-26T08:15:25.381029659Z  2026-09-26 08:15:25.380 UTC [69] LOG:  database system was shut down at 2026-09-26 08:15:25 UTC
+L2787     [1710] 2026-09-26T08:15:25.384479798Z  2026-09-26 08:15:25.384 UTC [1] LOG:  database system is ready to accept connections
+L2788   ✱ [2511] 2026-09-26T08:19:59.836230900Z  2026-09-26 08:19:59.836 UTC [179] ERROR:  duplicate key value violates unique constraint "asset_state_store_pkey"
+L2789     [8fda] 2026-09-26T08:19:59.836277297Z  2026-09-26 08:19:59.836 UTC [179] DETAIL:  Key (asset_id, key)=(159, watermark) already exists.
+L2790     [0c69] 2026-09-26T08:19:59.836281009Z  2026-09-26 08:19:59.836 UTC [179] STATEMENT:  INSERT INTO asset_state_store (asset_id, key, value, updated_at, last_updated_by_kind, last_updated_by_dag_id, last_updated_by_run_id, last_updated_by_task_id, last_updated_by_map_index) VALUES ($1::INTEGER, $2::VARCHAR, $
+L2791   ✱ [5161] 2026-09-26T08:21:32.819583357Z  2026-09-26 08:21:32.819 UTC [390] ERROR:  duplicate key value violates unique constraint "uq_connection_test_request_active_conn"
+L2792     [a6ad] 2026-09-26T08:21:32.819618763Z  2026-09-26 08:21:32.819 UTC [390] DETAIL:  Key (active_connection_id)=(dupe) already exists.
+L2793     [39c2] 2026-09-26T08:21:32.819621723Z  2026-09-26 08:21:32.819 UTC [390] STATEMENT:  INSERT INTO connection_test_request (id, token, connection_id, state, result_message, created_at, updated_at, executor, queue, conn_type, host, login, schema, port, commit_on_success, is_encrypted, is_extra_encrypted, acti
+L2794   ✱ [d391] 2026-09-26T08:23:41.583222390Z  2026-09-26 08:23:41.583 UTC [468] ERROR:  duplicate key value violates unique constraint "dag_code_dag_version_id_uq"
+L2795     [316e] 2026-09-26T08:23:41.583273587Z  2026-09-26 08:23:41.583 UTC [468] DETAIL:  Key (dag_version_id)=(01a0dcd0-1d03-78ea-8a77-fd8124b9b382) already exists.
+L2796     [1a63] 2026-09-26T08:23:41.583276826Z  2026-09-26 08:23:41.583 UTC [468] STATEMENT:  INSERT INTO dag_code (id, dag_id, fileloc, created_at, last_updated, source_code, source_code_hash, dag_version_id) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITH TIME ZONE, $5::TIMESTAMP WITH TIME ZONE, $6
+L2797   ✱ [ba7e] 2026-09-26T08:23:45.907675989Z  2026-09-26 08:23:45.907 UTC [468] ERROR:  duplicate key value violates unique constraint "task_instance_composite_key" (×2, last L2800)
+L2798     [8d55] 2026-09-26T08:23:45.907714931Z  2026-09-26 08:23:45.907 UTC [468] DETAIL:  Key (dag_id, task_id, run_id, map_index)=(triggered_dag, first_task, manual__2026-09-26T08:23:45.892729+00:00, -1) already exists.
+L2799     [8bf8] 2026-09-26T08:23:45.907718139Z  2026-09-26 08:23:45.907 UTC [468] STATEMENT:  INSERT INTO task_instance (id, task_id, dag_id, run_id, map_index, try_number, max_tries, hostname, unixname, pool, pool_slots, queue, priority_weight, operator, custom_operator_name, executor_config, updated_at, context_c
+L2800   ✱ [ba7e] 2026-09-26T08:23:52.316309905Z  2026-09-26 08:23:52.316 UTC [468] ERROR:  duplicate key value violates unique constraint "task_instance_composite_key"
+L2801     [ea49] 2026-09-26T08:23:52.316349118Z  2026-09-26 08:23:52.316 UTC [468] DETAIL:  Key (dag_id, task_id, run_id, map_index)=(test_stale_data_error_dag, task1, test, -1) already exists.
+L2802     [5693] 2026-09-26T08:23:52.316353982Z  2026-09-26 08:23:52.316 UTC [468] STATEMENT:  INSERT INTO task_instance (id, task_id, dag_id, run_id, map_index, try_number, max_tries, hostname, unixname, pool, pool_slots, queue, priority_weight, operator, custom_operator_name, executor_config, updated_at, dag_versi
+L2803   ✱ [67d7] 2026-09-26T08:30:41.377906367Z  2026-09-26 08:30:41.377 UTC [833] ERROR:  duplicate key value violates unique constraint "task_state_store_uq"
+L2804     [7233] 2026-09-26T08:30:41.377948109Z  2026-09-26 08:30:41.377 UTC [833] DETAIL:  Key (dag_run_id, task_id, map_index, key)=(2504, test_task, -1, remote_job_id) already exists.
+L2805     [345a] 2026-09-26T08:30:41.377951428Z  2026-09-26 08:30:41.377 UTC [833] STATEMENT:  INSERT INTO task_state_store (dag_run_id, task_id, map_index, key, dag_id, run_id, value, updated_at, expires_at) VALUES ($1::INTEGER, $2::VARCHAR, $3::INTEGER, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::TIMES
+L2806   ✱ [b283] 2026-09-26T08:35:15.585449602Z  2026-09-26 08:35:15.585 UTC [1177] ERROR:  null value in column "dag_id" of relation "dag_run" violates not-null constraint
+L2807     [71f1] 2026-09-26T08:35:15.585507751Z  2026-09-26 08:35:15.585 UTC [1177] DETAIL:  Failing row contains (2765, null, 2016-01-01 00:00:00+00, test, manual, null, 2016-01-01 00:00:00+00, null, running, null, 2015-12-31 00:00:00+00, 2016-01-01 00:00:00+00, null, 3, 2026-09-26 08:35:15.584949+00, 0, TEST, null
+L2808     [cc7e] 2026-09-26T08:35:15.585513390Z  2026-09-26 08:35:15.585 UTC [1177] STATEMENT:  UPDATE dag_run SET dag_id=$1::VARCHAR, updated_at=$2::TIMESTAMP WITH TIME ZONE WHERE dag_run.id = $3::INTEGER
+L2809   ✱ [9450] 2026-09-26T08:36:58.646738260Z  2026-09-26 08:36:58.646 UTC [1281] ERROR:  update or delete on table "dag_version" violates foreign key constraint "task_instance_dag_version_id_fkey" on table "task_instance"
+L2810     [a203] 2026-09-26T08:36:58.646789009Z  2026-09-26 08:36:58.646 UTC [1281] DETAIL:  Key (id)=(01a0dcdc-4669-7334-922e-655fd489bbb0) is still referenced from table "task_instance".
+L2811     [8bdc] 2026-09-26T08:36:58.646792737Z  2026-09-26 08:36:58.646 UTC [1281] STATEMENT:  DELETE FROM dag_version USING _airflow_deleted__dag_version__20260926083658 WHERE dag_version.id = _airflow_deleted__dag_version__20260926083658.id
+   (+1 more lines here: `pith show <id>` or grep the raw file)
+   …
+L3514     [7742] airflow-core/tests/unit/utils/test_timeout_traceback.py ....                                                                                                                                       [ 99%]
+L3515     [3788] airflow-core/tests/unit/utils/test_trigger_rule.py .                                                                                                                                               [ 99%]
+L3516     [04ed] airflow-core/tests/unit/utils/test_types.py .                                                                                                                                                      [100%]
+L3518   ✱ [d879] ================================================================================================ FAILURES ================================================================================================ (×2, last L3657)
+L3519     [5d2c] _____________________________________________________________________________________ test_trigger_log[trigger1-1-0] _____________________________________________________________________________________ (×2, last L3658)
+L3520     [0413] airflow-core/tests/unit/jobs/test_triggerer_job.py:1248: in test_trigger_log (×2, last L3659)
+          assert f"{trigger_count} triggers currently running" in stdout
+L3522   ✱ [0505] E   assert '0 triggers currently running' in "2026-09-26T08:19:09.964005Z [info     ] Triggerer's async thread was blocked for 300.00 seconds, exceeding the config...get more information on overrunning coroutines. [airflow.jobs.triggerer_job_runner] loc=triggerer_job_runner.py:1101\n" (×2, last L3661)
+L3523     [f016] ------------------------------------------------------------------------ generated xml file: /files/test_result-core-postgres.xml ------------------------------------------------------------------------ (×2, last L3662)
+L3524     [80f7] ========================================================================================= slowest 100 durations ========================================================================================== (×2, last L3663)
+L3525     [949c] 11.20s call     airflow-core/tests/unit/jobs/test_scheduler_job.py::TestSchedulerJob::test_create_dag_runs_when_concurrent_asset_events_created (×4, last L3665)
+   …
+L3630     [a0e6] tests: total 2,009, unique 37 (×2, last L3769)
+          runtest: total 2,009, unique 37
+L3632     [96c8] Warnings saved into /files/warnings-core-postgres.txt file. (×2, last L3771)
+L3633     [40f4] ======================================================================================== short test summary info ========================================================================================= (×2, last L3772)
+L3634   ✱ [f0bb] FAILED airflow-core/tests/unit/jobs/test_triggerer_job.py::test_trigger_log[trigger1-1-0] - assert '0 triggers currently running' in "2026-09-26T08:19:09.964005Z [info     ] Triggerer's async thread was blocked for 300.00 seconds, exceeding the config...get more information on overrunning coroutines (×2, last L3773)
+L3635     [8238] ============================================================= 1 failed, 3637 passed, 36 skipped, 1 xfailed, 1 warning in 1325.84s (0:22:05) ============================================================== (×2, last L3774)
+L3637   ✱ [524f] Dumping logs on error (×2, last L3776)
+L3639     [63f2] ########################################################################################### (×6, last L3782)
+          Dumping logs from all the airflow tasks
+L3645   ✱ [956f] Test failed with 1. (×2, last L3784)
+L3646     [58d4] Wait 10 seconds for logs to find their way to stderr. (×2, last L3785)
+L3648     [e975] Dumping container logs: ['breeze-airflow-test-core-postgres-1'] for compose project breeze-airflow-test-core (cp. (×2, last L3787)
+L3650     [b65e] Dumping container log breeze-airflow-test-core-postgres-1 to /home/runner/work/airflow/airflow/files/container_logs_breeze-airflow-test-core-postgres-1_2026_26_09_08_38_07.log (×2, last L3789)
+   …
+L3795     [c13a] ──────────────────────────────────────────────────────────────────────────────── (×8, last L3807)
+L3796     [5843] HOW TO REPRODUCE LOCALLY (×4, last L3796)
+L3798     [adc4] # 1. Check out the same commit (×4, last L3798)
+L3799     [bff3] git checkout 1a51ed1b1f557852ca6b2b54aee67030234fc597 (×4, last L3799)
+L3801     [afa3] # 2. Build the CI image locally (×3, last L3801)
+L3802     [a6cf] breeze ci-image build --platform linux/amd64 --python 3.10 (×3, last L3802)
+L3804     [50da] # 3. Run the same Breeze command locally (×4, last L3804)
+L3805     [b293] breeze testing core-tests --backend postgres --db-reset --github-repository apache/airflow --mount-sources skip --parallel-test-types 'Core Other Serialization' --python 3.10 --run-in-parallel --total-test-timeout 3093 --upgrade-boto
+L3809     [d109] + RESULT=1
+L3810     [0d34] + set +x
+L3812   ✱ [7694] The core test All failed! Giving up
+L3814   ✱ [eead] ##[error]Process completed with exit code 1.
+L3815     [938a] Prepare all required actions (×4, last L3815)
+L3816     [a907] Getting action download info (×4, last L3816)
+
+== OTHER ERRORS & WARNINGS
+L3566   ERRO [6700] 6.30s call     airflow-core/tests/unit/models/test_dag.py::TestDag::test_dag_test_retry_callback_keeps_attempt_live[RuntimeError] (×2, last L3705)
+L3581   ERRO [8906] 5.95s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[taskflow-failure-unset] (×2, last L3720)
+L3595   ERRO [6c99] 5.80s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[taskflow-failure-custom] (×2, last L3734)
+L3604   ERRO [bedd] 5.71s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[classic-failure-constant] (×2, last L3743)
+L3610   ERRO [3660] 5.63s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[taskflow-failure-builtin] (×2, last L3749)
+L3612   ERRO [24f3] 5.62s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[classic-failure-unset] (×2, last L3751)
+L3618   ERRO [de6d] 5.52s call     airflow-core/tests/unit/models/test_mappedoperator.py::test_expand_mapped_task_instance_with_named_index[classic-failure-custom] (×2, last L3757)
+L180    WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L2779   WARN [694d] 2026-09-26T08:15:24.997378861Z  initdb: warning: enabling "trust" authentication for local connections
+L3062   WARN [064a] time="2026-09-26T08:15:23Z" level=warning msg="Warning: No resource found to remove for project \"breeze-airflow-test-core\"."
+L3380   WARN [6be8] warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+L3625   WARN [a0dc] =============================================================================== Warning summary. Total: 2,689, Unique: 62 ========================================================== (×2, last L3764)
+L59     NOTA [2db2] job-timeout-minutes: 65
+L1063   NOTA [2c3b] if [ "$missing_dep" == "true" ]; then
+
+== END OF OUTPUT
+L3954     [af32] Artifact name is valid!
+L3955     [8719] Root directory input is valid!
+L3956     [ddda] Uploading artifact: container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10.zip
+L3957     [1b36] Beginning upload of artifact content to blob storage
+L3958     [fce5] Uploaded bytes 1516
+L3959     [d3e5] Finished uploading artifact content to blob storage!
+L3960     [e64f] SHA256 digest of uploaded artifact is 77d26f7535d1029790d820b196e8ad88d694cf4951e452126d4782b45b8bb5fb
+L3961     [fdc8] Finalizing artifact upload
+L3962     [9d43] Artifact container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10 successfully finalized. Artifact ID 10902427970
+L3963     [2d33] Artifact container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10 has been successfully uploaded! Final size is 1516 bytes. Artifact ID is 10902427970
+L3964     [c24a] Artifact download URL: https://github.com/apache/airflow/actions/runs/36227248243/artifacts/10902427970
+L3967     [a85b] ▶ Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+L3968     [8d65] with:
+L3977     [4293] env:
+L4010     [8221] No files were found with the provided path: ./files/other_logs*. No artifacts will be uploaded.
+
+== MOST FREQUENT OTHER LINES
+×69      [c392] ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+×69      [f9b4] ───────────────────────────────────────────────────────────────────────────────────────── Time passed: 00:00:02 ────────────────────────────
+×66      [9a22] Progress: Core                          [...]
+×66      [1b25] Progress: Serialization                 ...... [ 93%]
+×65      [1d98] Progress: Other                         [...]
+
+(not shown: 814 groups, 1,567 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

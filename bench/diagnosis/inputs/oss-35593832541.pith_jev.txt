@@ -1,0 +1,60 @@
+pith · <log> · 682 lines → 189 groups · ~18.2k → ~1.0k tokens (94.4% smaller)
+
+jobs: Ruby; Ruby without Bundler
+levels: error 3 · warn 2 · info 354
+raw: <removed for evaluation>
+jev (jev-latest): hid 156/189 groups as confident noise · 1 requests · 2,188 tokens · $0.0001 · 0.4s
+most likely root cause: [109d] rc=0.54 (confidence 0.52, cause visible p=0.64)
+
+== LIKELY ROOT CAUSE (jev rc=0.54)
+[109d] INFO ×1  act=0.32 val=2.1/4 rc=0.54  L637  job: Ruby without Bundler
+  `AllCops/UseProjectIndex` is enabled but the `rubydex` gem is not installed.
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Ruby
+L395      [ebb0] 1 installed gem you directly depend on is looking for funding.
+          Run `bundle fund` for details
+L397      [931d] Took   3.23 seconds (×9, last L506)
+L398      [5240] ▶ Run bundle exec rake internal_investigation
+L399      [8d01] bundle exec rake internal_investigation
+L400      [c522] shell: /usr/bin/bash -e {0} (×3, last L635)
+L402      [2453] Running RuboCop...
+L403      [642e] Inspecting 1768 files (×2, last L639)
+L404    ✱ [47e2] RuboCop failed!
+L405      [3340] ............................................................................................................................................................................................................................................................................................................ (×2, last L640)
+L407      [0373] Offenses: (×2, last L642)
+L409      [a8d0] spec/rubocop/cli/autocorrect_spec.rb:363:101: C: Layout/LineLength: Line is too long. [106/100] (×2, last L644)
+          '--only', 'Style/MethodCallWithArgsParentheses,Layout/MultilineMethodCallBraceLayout'
+          ^^^^^^
+   …
+L413      [be05] 1768 files inspected, 1 offense detected (×2, last L648)
+L414    ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L649)
+-- job: Ruby without Bundler
+L632      [1331] 3 gems installed (×2, last L632)
+L633      [6ae2] ▶ Run rubocop
+L634      [d6ac] rubocop
+L637      [109d] `AllCops/UseProjectIndex` is enabled but the `rubydex` gem is not installed.
+L638      [63ee] Analyses that use the project index will be skipped. Add `gem 'rubydex'` to your Gemfile.
+   …
+L649    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== END OF OUTPUT
+L556      [d0dc] [command]/usr/bin/git config --local gc.auto 0
+L558      [93e5] ▶ Setting up auth
+L559      [8399] Removing SSH command configuration
+L560      [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+L561      [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+L562      [66c6] Removing HTTP extra header
+L563      [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+L564      [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://git
+L565      [5c50] Removing includeIf entries pointing to credentials config files
+L587      [daee] You are in 'detached HEAD' state. You can look around, make experimental
+L635      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×4       [8d65] with:
+×4       [ae83] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+×2       [0cc7] Working directory is '/home/runner/work/rubocop/rubocop'
+×2       [4d69] Deleting the contents of '/home/runner/work/rubocop/rubocop'
+×2       [fa8a] [command]/usr/bin/git init /home/runner/work/rubocop/rubocop
+×1       [aaec] Ruby without Bundler	UNKNOWN STEP	﻿2026-09-21T11:24:22.8934354Z Current runner version: '2.337.0'

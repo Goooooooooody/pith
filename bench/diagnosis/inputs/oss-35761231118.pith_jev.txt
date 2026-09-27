@@ -1,0 +1,188 @@
+pith · <log> · 1,538 lines → 368 groups · ~56.9k → ~3.9k tokens (93.2% smaller)
+
+jobs: Ascii Spec - windows 2.7
+levels: error 200 · info 192
+raw: <removed for evaluation>
+jev (jev-latest): hid 134/368 groups as confident noise · 1 requests · 14,094 tokens · $0.0006 · 0.8s
+most likely root cause: [5cb6] rc=0.36 (confidence 0.34, cause visible p=0.62)
+
+== LIKELY ROOT CAUSE (jev rc=0.36)
+[5cb6] ERROR ×1  act=0.72 val=2.7/4 rc=0.36  L1084  job: Ascii Spec - windows 2.7
+  150) RuboCop::Cop::Lint::DuplicateMethods cross-file detection with Active Support redefinition markers does not report redefinitions marked with Active Support markers when `ActiveSupportExtensionsEnabled` is enabled
+    # rubydex requires Ruby 3.2 or later.
+    # ./spec/rubocop/cop/lint/duplicate_methods_spec.rb:2175
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Ascii Spec - windows 2.7
+L361      [3340] ............................................................................................................................................................................................................................................................................................................
+L363    ✱ [7d8c] Pending: (Failures listed here are expected and do not affect your suite's status)
+L365    ✱ [d882] 1) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a nested class resolves the enclosing class through the lexical nesting
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:475
+   …
+L369    ✱ [27a8] 2) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the overridden implementation is not checkable does not register an offense when parent definitions disagree on arity
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:456
+   …
+L373    ✱ [a6ee] 3) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the overridden implementation is not checkable does not register an offense when no indexed ancestor defines the method
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:398
+   …
+L377    ✱ [d201] 4) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the overridden implementation is not checkable does not use a method the index attributes to `Object` as the target
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:411
+   …
+L381    ✱ [58e0] 5) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the overridden implementation is not checkable does not register an offense when the ancestry is not fully resolved
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:430
+   …
+L385    ✱ [484c] 6) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the overridden implementation is not checkable does not register an offense when the parent method is an attr writer pair
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:443
+   …
+L389    ✱ [6bb9] 7) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for optional and rest parameters accepts a call within the optional range
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:170
+   …
+L393    ✱ [dff3] 8) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for optional and rest parameters reports the minimum with a trailing plus for a rest parameter
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:203
+   …
+L397    ✱ [ece6] 9) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for optional and rest parameters registers an offense past the optional maximum
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:183
+   …
+L401    ✱ [f50f] 10) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with keyword arguments does not count keywords as positional when the parent declares them
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:242
+   …
+L405    ✱ [6fa3] 11) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with keyword arguments folds keywords into a positional hash when the parent has none
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:225
+   …
+L409    ✱ [be41] 12) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with keyword arguments skips a call that forwards a double splat
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:259
+   …
+L413    ✱ [7bca] 13) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with modules in the ancestry skips a method defined in a prepended module of the same class
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:306
+   …
+L417    ✱ [381c] 14) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with modules in the ancestry does not check `super` inside a method defined in a module
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:327
+   …
+L421    ✱ [60ad] 15) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index with modules in the ancestry resolves the implementation through an included module
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:278
+   …
+L425    ✱ [10b5] 16) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method registers an offense when too many arguments are given
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:60
+   …
+L429    ✱ [566d] 17) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method does not register an offense when arguments are forwarded
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:126
+   …
+L433    ✱ [83df] 18) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method does not register an offense when the arity matches
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:100
+   …
+L437    ✱ [86b4] 19) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method does not register an offense for bare `super`
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:113
+   …
+L441    ✱ [fd28] 20) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method registers an offense for `super()` with no arguments
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:80
+   …
+L445    ✱ [adcd] 21) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method ignores a trailing block-pass argument
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:139
+   …
+L449    ✱ [409b] 22) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index for a fixed-arity overridden method registers an offense when too few arguments are given
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:40
+   …
+L453    ✱ [9d36] 23) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the context is not statically known does not check `super` inside a singleton method
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:350
+   …
+L457    ✱ [b11f] 24) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the context is not statically known does not check `super` inside `define_method`
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:363
+   …
+L461    ✱ [fc22] 25) RuboCop::Cop::Lint::SuperArgumentMismatch with a project index when the context is not statically known checks `super` inside an ordinary block
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/super_argument_mismatch_spec.rb:376
+   …
+L465    ✱ [fcc3] 26) RuboCop::ProjectIndexLoader AllCops/ProjectIndexIncludesGems resolves ancestry through gem sources when enabled
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/project_index_loader_spec.rb:74
+   …
+L469    ✱ [b2f7] 27) RuboCop::ProjectIndexLoader AllCops/ProjectIndexIncludesGems keeps gem ancestry unresolved when disabled
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/project_index_loader_spec.rb:80
+   …
+L473    ✱ [8b90] 28) RuboCop::ResultCache cached result that was saved with no command line option when no option is given when a symlink is present in the cache location and symlink attack protection is disabled permits caching and prints no warning
+          # Symlinks not implemented on Windows
+          # ./spec/rubocop/result_cache_spec.rb:274
+   …
+L477    ✱ [df84] 29) RuboCop::ResultCache cached result that was saved with no command line option when no option is given when a symlink is present in the cache location and symlink attack protection is enabled prevents caching and prints a warning
+          # Symlinks not implemented on Windows
+          # ./spec/rubocop/result_cache_spec.rb:254
+   …
+L481    ✱ [1ae4] 30) RuboCop::ResultCache when the file is not a regular file is neither saved nor considered valid
+          # Device files are not stat-able on Windows
+          # ./spec/rubocop/result_cache_spec.rb:351
+   …
+L485    ✱ [6a37] 31) RuboCop::Cop::Lint::InheritException with a project index does not register an offense when the parent is not in the index
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/inherit_exception_spec.rb:266
+   …
+L489    ✱ [97b0] 32) RuboCop::Cop::Lint::InheritException with a project index registers an offense when `Exception` is inherited two hops away
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/inherit_exception_spec.rb:224
+   …
+L493    ✱ [e0d0] 33) RuboCop::Cop::Lint::InheritException with a project index does not register an offense when the parent inherits an unresolvable class
+          # rubydex requires Ruby 3.2 or later.
+          # ./spec/rubocop/cop/lint/inherit_exception_spec.rb:254
+   …
+L1494     [8242] Finished in 5 minutes 58 seconds (files took 6.78 seconds to load)
+L1495   ✱ [6e81] 33898 examples, 3 failures, 192 pending
+L1497   ✱ [605c] Failed examples:
+L1499     [5b58] rspec ./spec/rubocop/cli/autocorrect_spec.rb:3199 # RuboCop::CLI --autocorrect corrects `Layout/RedundantLineBreak` and `Style/SingleLineMethods` offenses
+L1500     [7f88] rspec ./spec/rubocop/cli/autocorrect_spec.rb:3345 # RuboCop::CLI --autocorrect avoids adding extra spaces when both `Style/Semicolon` and `Style/SingleLineMethods`both apply
+L1501     [b04f] rspec ./spec/rubocop/cli/autocorrect_spec.rb:1857 # RuboCop::CLI --autocorrect can correct single line methods
+L1503     [bf08] Randomized with seed 39431 (×2, last L1503)
+L1505   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L497    ERRO [9b37] 34) RuboCop::Cop::Lint::InheritException with a project index registers an offense without autocorrection when the parent inherits `Exception` in another file
+L501    ERRO [32fb] 35) RuboCop::Cop::Lint::InheritException with a project index does not register an offense when the parent inherits `StandardError` in another file
+L505    ERRO [9bb5] 36) RuboCop::Cop::Lint::ConstantResolution with a project index registers an offense when the constant is shadowed by the surrounding nesting
+L509    ERRO [70ad] 37) RuboCop::Cop::Lint::ConstantResolution with a project index does not register an offense when the constant resolves identically either way
+L513    ERRO [acd3] 38) RuboCop::Cop::Lint::ConstantResolution with a project index does not register an offense when the constant is not in the index
+L517    ERRO [f6bc] 39) RuboCop::Cop::Style::Documentation with a project index does not register an offense when the class is documented at another definition site
+L521    ERRO [f640] 40) RuboCop::Cop::Style::Documentation with a project index does not register an offense when an earlier definition in the same file is documented
+L525    ERRO [e4d3] 41) RuboCop::Cop::Style::Documentation with a project index registers an offense when no definition site is documented
+L529    ERRO [a0b3] 42) RuboCop::Cop::Style::Documentation with a project index resolves nested namespaces to the right declaration
+L533    ERRO [5fb8] 43) RuboCop::Cop::Style::Documentation with a project index registers an offense when the other definition only has directive comments
+L537    ERRO [8f28] 44) RuboCop::Cop::Style::Documentation with a project index registers an offense when only a different class with the same name is documented
+L541    ERRO [a65c] 45) RuboCop::Cop::Lint::ConstantReassignment cross-file detection reports a cross-file collision when only one file is inspected
+L545    ERRO [9c76] 46) RuboCop::Cop::Lint::ConstantReassignment cross-file detection does not report any offense when UseProjectIndex is disabled
+L549    ERRO [0718] 47) RuboCop::Cop::Lint::ConstantReassignment cross-file detection invalidates the cache when an indexed file changes
+
+== MOST FREQUENT OTHER LINES
+×2       [8d65] with:
+×2       [8399] Removing SSH command configuration
+×2       [fa13] [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+×2       [a9e1] [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCom
+×2       [66c6] Removing HTTP extra header
+×2       [29c9] [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4819] [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [e64e] [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.
+×1       [dd46] Ascii Spec - windows 2.7	UNKNOWN STEP	﻿2026-09-22T17:32:52.6869990Z Current runner version: '2.337.0'
+
+(not shown: 162 groups, 162 lines - including 149 error groups, 149 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

@@ -1,0 +1,85 @@
+pith · <log> · 1,807 lines → 664 groups · ~44.0k → ~1.5k tokens (96.6% smaller)
+
+jobs: Devcontainer smoke test
+levels: error 17 · warn 6 · notable 6 · info 677
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Devcontainer smoke test
+L1692     [6570] ▶ 🏗️ build container
+   ...
+L1701     [c9b9] services:
+          rails-app:
+          build:
+          context: /home/runner/work/rails/rails/myapp_sqlite
+          (+21 lines)
+   ...
+L1726     [c7fd] networks:
+          default:
+          name: myapp_sqlite_default
+   ...
+L1730     [c071] [2026-09-24T08:05:54.919Z] Start: Run: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1732   ✱ [c583] [2026-09-24T08:05:55.687Z] Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.
+L1736   ✱ [86cb] [2026-09-24T08:05:56.450Z] Error response from daemon: manifest unknown
+L1738   ✱ [178d] [2026-09-24T08:05:56.452Z] Retrying (Attempt 0) with error
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1744   ✱ [86cb] [2026-09-24T08:05:58.245Z] Error response from daemon: manifest unknown
+   ...
+L1758     [f641] [2026-09-24T08:06:00.988Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11 (×5, last L1766)
+L1760   ✱ [86cb] [2026-09-24T08:06:01.755Z] Error response from daemon: manifest unknown (×5, last L1768)
+L1762   ✱ [178d] [2026-09-24T08:06:01.757Z] Retrying (Attempt 3) with error (×5, last L1770)
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1764     [5fb4] ' (×5, last L1772)
+L1768   ✱ [86cb] [2026-09-24T08:06:03.512Z] Error response from daemon: manifest unknown
+L1770   ✱ [178d] [2026-09-24T08:06:03.514Z] Retrying (Attempt 4) with error
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1774   ✱ [85c1b] [2026-09-24T08:06:04.515Z] Command failed: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1775     [52f6] [2026-09-24T08:06:04.515Z] []
+L1776   ✱ [6412] [2026-09-24T08:06:04.515Z] Error response from daemon: No such image: ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1778   ✱ [7441] [2026-09-24T08:06:04.515Z] Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1780   ✱ [cf7d] ##[error]Dev container build failed: Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11 (exit code: undefined)
+L1782   ✱ [54e0] ##[error]Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1781   ✱ [4f6c] Devcontainer smoke test	UNKNOWN STEP	An error occurred building the container.
+
+== OTHER ERRORS & WARNINGS
+L67     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L118    WARN [a5ec] (node:2074) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×2, last L1785)
+L119    WARN [1673] (Use `node --trace-deprecation ...` to show where the warning was created) (×2, last L1786)
+L1807   WARN [2572] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, devcontainers/ci@8bf61b26e9c3a98f69cb6c
+L1000   NOTA [397d] Fetching timeout 0.6.1
+L1001   NOTA [ec29] Installing timeout 0.6.1
+L1038   NOTA [c88b] Fetching faraday-retry 1.0.4
+L1039   NOTA [5888] Installing faraday-retry 1.0.4
+L1316   NOTA [5f1b] Fetching minitest-retry 0.3.1
+L1317   NOTA [3255] Installing minitest-retry 0.3.1
+
+== END OF OUTPUT
+L1671     [8d65] with:
+L1685     [50c7] Starting...
+L1686     [58dc] Installing @devcontainers/cli...
+L1687     [2618] ** Installing @devcontainers/cli
+L1688     [05a9] [command]/usr/bin/bash -c npm install -g @devcontainers/cli@0
+L1690     [4609] added 1 package in 1s
+L1691     [df1b] Adding --cache-from ghcr.io/rails/smoke-test-devcontainer:sqlite3 to build args
+L1693     [52f5] About to run devcontainer build --workspace-folder /home/runner/work/rails/rails/myapp_sqlite --image-name ghcr.io/rails/smoke-test-devcontainer:sqlite3 --cache-from ghcr.io/rails/smoke-test-devcontai
+L1694     [a69d] [2026-09-24T08:05:52.572Z] @devcontainers/cli 0.89.0. Node.js v22.23.2. linux 6.17.0-1022-azure x64.
+L1698     [eb3c] [2026-09-24T08:05:54.858Z] Start: Run: docker compose -f /home/runner/work/rails/rails/myapp_sqlite/.devcontainer/compose.yaml --profile * config
+L1700     [a9e82] [2026-09-24T08:05:54.916Z] name: myapp_sqlite
+L1750     [f641] [2026-09-24T08:05:59.248Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1752     [86cb] [2026-09-24T08:05:59.986Z] Error response from daemon: manifest unknown
+L1754     [178d] [2026-09-24T08:05:59.988Z] Retrying (Attempt 2) with error
+L1756     [5fb4] '
+
+== MOST FREQUENT OTHER LINES
+×4       [a71a] hint:
+×4       [931d] Took   0.47 seconds
+×2       [8963] [command]/usr/bin/git version
+×2       [4e5e] git version 2.55.0
+×2       [d936] Temporarily overriding HOME='/home/runner/work/_temp/b7cd4182-9c18-4854-b3df-08426ce47d83' before making global git config changes
+×2       [90b0] Adding repository directory to the temporary git global config as a safe directory
+×2       [f23c] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+
+(not shown: 609 groups, 614 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

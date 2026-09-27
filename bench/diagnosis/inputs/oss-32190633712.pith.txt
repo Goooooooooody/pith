@@ -1,0 +1,136 @@
+pith · <log> · 1,565 lines → 322 groups · ~43.5k → ~2.2k tokens (94.9% smaller)
+
+jobs: fmt; test tokio for wasm32-wasip2
+levels: fatal 1 · error 15 · warn 3 · notable 42 · info 559
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: fmt
+L213      [4293] env: (×34, last L1191)
+          RUSTFLAGS: -Dwarnings
+          RUST_BACKTRACE: 1
+          RUSTUP_WINDOWS_PATH_ADD_BIN: 1
+          (+6 lines)
+   …
+L226      [4b14] ▶ Run if ! command -v rustup &>/dev/null; then (×2, last L827)
+L227      [491a] if ! command -v rustup &>/dev/null; then (×2, last L828)
+L228    ✱ [eb4f] curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused --location --silent --show-error --fail https://sh.rustup.rs | sh -s -- --default-toolchain none -y (×2, last L829)
+L229      [b7ac] echo "$CARGO_HOME/bin" >> $GITHUB_PATH (×2, last L830)
+L230      [de9d] fi (×15, last L1073)
+L231      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×26, last L1190)
+   …
+L496      [74ec] ▶ Run if ! rustfmt --check --edition 2021 $(git ls-files '*.rs'); then
+   …
+L546      [b6ee] -            .join() (×4, last L558)
+L547      [d2bf] -            .unwrap() (×4, last L559)
+L548      [d4c5] -            .expect("rendezvous timed out"); (×4, last L560)
+L549      [e35d] +        let b = handle.join().unwrap().expect("rendezvous timed out"); (×4, last L561)
+          assert!(a.is_leader() ^ b.is_leader());
+          }
+          }
+   …
+L553      [39de] Diff in /home/runner/work/tokio/tokio/tokio/src/loom/std/barrier.rs:272: (×4, last L553)
+          let a = barrier
+          .wait_timeout(Duration::from_secs(10))
+          .expect("rendezvous timed out");
+   …
+L557      [35f1] -        let b = handle (×4, last L557)
+   …
+L565      [6567] Please run `rustfmt --edition 2021 $(git ls-files '*.rs')` to fix rustfmt errors.
+L566      [4d09] See CONTRIBUTING.md for more details.
+L567    ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L1532)
+-- job: test tokio for wasm32-wasip2
+L1048     [be38] ▶ Run bail() {
+L1049     [fcf6] bail() {
+L1050   ✱ [b139] printf '::error::install-action: %s\n' "$*"
+L1051     [3133] exit 1
+          }
+L1053     [04e1] # If /bin/sh is dash, environment variable containing % is not imported, but is fine
+L1054     [878a] # because it also means that it will not be exposed to subprocess.
+   …
+L1188     [b4ce] ▶ Run cargo nextest run --target wasm32-wasip2 --features net,macros,rt,io-util
+L1189     [a5d9] cargo nextest run --target wasm32-wasip2 --features net,macros,rt,io-util
+   …
+L1301   ✱ [2dde] Downloaded quick-error v1.2.3
+L1302     [b68e] Downloaded autocfg v1.5.1
+L1303     [f539] Downloaded fixedbitset v0.5.7
+L1304     [06dc] Downloaded futures-executor v0.3.34
+   …
+L1448     [0ba4] PASS [   0.037s] ( 21/460) tokio runtime::metrics::histogram::test::linear_scale_resolution_100
+L1449     [476a] PASS [   0.041s] ( 22/460) tokio runtime::metrics::histogram::test::log_scale_resolution_1
+L1450     [e05e] PASS [   0.032s] ( 23/460) tokio runtime::metrics::histogram::test::log_scale_resolution_2
+L1451   ✱ [d63c] FAIL [   0.153s] ( 24/460) tokio loom::std::barrier::tests::wait_timeout_rolls_back_arrival
+L1452     [f6a6] stdout ───
+          running 1 test
+          test loom::std::barrier::tests::wait_timeout_rolls_back_arrival ...
+   …
+L1456     [22fc] stderr ───
+L1458   ✱ [eff6] thread 'main' (1) panicked at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library/std/src/thread/functions.rs:131:29:
+L1459   ✱ [b397] failed to spawn thread: Os { code: 58, kind: Unsupported, message: "Not supported" }
+L1460     [0467] note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+L1461   ✱ [1beb] Error: failed to run main module `/home/runner/work/tokio/tokio/target/wasm32-wasip2/debug/deps/tokio-ef380d78a7acf3f3.wasm`
+L1463   ✱ [b1c4] Caused by:
+          0: failed to invoke `run` function
+          1: error while executing at wasm backtrace:
+          0:  0xf8a7f - tokio-ef380d78a7acf3f3.wasm!abort
+          1:  0xf3100 - tokio-ef380d78a7acf3f3.wasm!std[3284c222fc8728bd]::sys::pal::wasi::abort_internal
+          2:  0xeec7b - tokio-ef380d78a7acf3f3.wasm!std[3284c222fc8728bd]::process::abort
+          (+17 frames hidden)
+   …
+L1486     [e528] note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information
+          2: wasm trap: wasm `unreachable` instruction executed
+L1489   ✱ [fb3c] Stack backtrace:
+          0: wasmtime_internal_core::error::backtrace::capture
+          1: wasmtime_internal_core::error::error::Error::new
+          2: wasmtime::runtime::trap::from_runtime_box
+          3: wasmtime::runtime::vm::traphandlers::catch_traps
+          4: wasmtime::runtime::func::Func::call_unchecked_raw
+          (+24 frames hidden)
+   …
+L1521   ✱ [a3e2] (test failed with exit code 134)
+L1523   ✱ [900e] Cancelling due to test failure: 3 tests still running
+L1524     [48a3] PASS [   0.040s] ( 25/460) tokio runtime::metrics::histogram::test::test_legacy_builder
+L1525     [8e06] PASS [   0.033s] ( 26/460) tokio runtime::task::core::header_lte_cache_line
+L1526     [c0e2] PASS [   0.032s] ( 27/460) tokio runtime::task::list::tests::test_id_not_broken
+L1527     [190b] ──────────── (×2, last L1527)
+          Summary [   0.294s] 27/460 tests run: 26 passed, 1 failed, 15 skipped
+L1529   ✱ [d63c] FAIL [   0.153s] ( 24/460) tokio loom::std::barrier::tests::wait_timeout_rolls_back_arrival (×2, last L1529)
+L1530     [0081] warning: 433/460 tests were not run due to test failure (run with --no-fail-fast to run all tests, or run with --max-fail)
+L1531   ✱ [008b] error: test run failed
+L1532   ✱ [eead] ##[error]Process completed with exit code 100.
+
+== OTHER ERRORS & WARNINGS
+L76     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning, (×2, last L677)
+L380    NOTA [fefc] ▶ Run # https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation (×2, last L981)
+L381    NOTA [753f] # https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation (×2, last L982)
+
+== END OF OUTPUT
+L1433     [51de] PASS [   0.036s] (  6/460) tokio io::util::lines::tests::assert_unpin
+L1434     [8a6f] PASS [   0.039s] (  7/460) tokio io::util::empty::tests::assert_unpin
+L1435     [8cbc] PASS [   0.043s] (  8/460) tokio io::util::chain::tests::assert_unpin
+L1436     [6deb] PASS [   0.038s] (  9/460) tokio io::util::sink::tests::assert_unpin
+L1437     [b683] PASS [   0.040s] ( 10/460) tokio io::util::repeat::tests::assert_unpin
+L1438     [69e0] PASS [   0.039s] ( 11/460) tokio io::util::split::tests::assert_unpin
+L1439     [460d] PASS [   0.036s] ( 12/460) tokio io::util::take::tests::assert_unpin
+L1440     [a9c3] PASS [   0.037s] ( 13/460) tokio runtime::metrics::histogram::h2_histogram::test::bucket_offset
+L1441     [b58e] PASS [   0.038s] ( 14/460) tokio runtime::metrics::histogram::h2_histogram::test::bucket_ranges_are_correct
+L1442     [203f] PASS [   0.040s] ( 15/460) tokio runtime::metrics::histogram::h2_histogram::test::bucket_computation_spot_check
+L1443     [d1df] PASS [   0.031s] ( 16/460) tokio runtime::metrics::histogram::h2_histogram::test::default_configuration_size
+L1444     [1d90] PASS [   0.036s] ( 17/460) tokio runtime::metrics::histogram::h2_histogram::test::last_bucket_goes_to_infinity
+L1445     [b199] PASS [   0.037s] ( 18/460) tokio runtime::metrics::histogram::h2_histogram::test::max_buckets_enforcement
+L1446     [f8ab] PASS [   0.031s] ( 19/460) tokio runtime::metrics::histogram::test::inc_by_more_than_one
+L1447     [2fd9] PASS [   0.036s] ( 20/460) tokio runtime::metrics::histogram::test::linear_scale_resolution_1
+
+== MOST FREQUENT OTHER LINES
+×8       [a71a] hint:
+×7       [8d65] with:
+×4       [8963] [command]/usr/bin/git version
+×4       [4e5e] git version 2.54.0
+×4       [d936] Temporarily overriding HOME='/home/runner/work/_temp/5bf44461-3629-4eac-8702-7316db128831' before making global git config changes
+×4       [90b0] Adding repository directory to the temporary git global config as a safe directory
+×4       [ac46] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tokio/tokio
+×4       [8399] Removing SSH command configuration
+×4       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×4       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+
+(not shown: 223 groups, 367 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

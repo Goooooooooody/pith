@@ -1,0 +1,288 @@
+Java 21	UNKNOWN STEP	﻿2026-09-25T10:03:56.2138606Z Current runner version: '2.337.0'
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2166877Z ##[group]Runner Image Provisioner
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2167798Z Hosted Compute Agent
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2168517Z Version: 20260828.587
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2169265Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2170307Z Build Date: 2026-08-28T16:44:25Z
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2171048Z Worker ID: {bf65a910-f099-4d80-9ed1-9bb5801a3fc1}
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2171813Z Azure Region: westus
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2172480Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2174241Z ##[group]Operating System
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2175023Z Ubuntu
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2175578Z 24.04.5
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2176108Z LTS
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2176753Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2177377Z ##[group]Runner Image
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2178060Z Image: ubuntu-24.04
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2178668Z Version: 20260920.314.1
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2180289Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2181963Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2183024Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2184159Z ##[group]GITHUB_TOKEN Permissions
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2186304Z Contents: read
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2186943Z Metadata: read
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2187611Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2190291Z Secret source: Actions
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2191454Z Cache mode: write
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2192233Z Prepare workflow directory
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2561880Z Prepare all required actions
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.2612284Z Getting action download info
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.6493688Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.8519825Z Complete job name: Java 21
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9228782Z ##[group]Run echo '{"storage-driver":"overlay2"}' | sudo tee /etc/docker/daemon.json
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9230189Z ^[[36;1mecho '{"storage-driver":"overlay2"}' | sudo tee /etc/docker/daemon.json^[[0m
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9231117Z ^[[36;1msudo systemctl restart docker^[[0m
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9541574Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9542805Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:56.9785019Z {"storage-driver":"overlay2"}
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5396800Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5397748Z with:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5398306Z   repository: spring-projects/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5402643Z   token: ***
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5403170Z   ssh-strict: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5403701Z   ssh-user: git
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5404229Z   persist-credentials: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5404808Z   clean: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5405345Z   sparse-checkout-cone-mode: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5405951Z   fetch-depth: 1
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5406462Z   fetch-tags: false
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5406991Z   show-progress: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5407523Z   lfs: false
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5408022Z   submodules: false
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5408588Z   set-safe-directory: true
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5409199Z   allow-unsafe-pr-checkout: false
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.5409951Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6458735Z Syncing repository: spring-projects/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6461740Z ##[group]Getting Git version info
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6462678Z Working directory is '/home/runner/work/spring-boot/spring-boot'
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6463937Z [command]/usr/bin/git version
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6578091Z git version 2.55.0
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6602132Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6614551Z Temporarily overriding HOME='/home/runner/work/_temp/73786c71-6ea6-4946-9747-826c01c9c1f8' before making global git config changes
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6616175Z Adding repository directory to the temporary git global config as a safe directory
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6621116Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spring-boot/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6678008Z Deleting the contents of '/home/runner/work/spring-boot/spring-boot'
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6682305Z ##[group]Determining repository object format
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6684027Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6684978Z ##[group]Initializing the repository
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6689209Z [command]/usr/bin/git init /home/runner/work/spring-boot/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6833363Z hint: Using 'master' as the name for the initial branch. This default branch name
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6835736Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6837857Z hint: to use in all of your new repositories, which will suppress this warning,
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6839556Z hint: call:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6841045Z hint:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6842263Z hint: 	git config --global init.defaultBranch <name>
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6843612Z hint:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6844876Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6846861Z hint: 'development'. The just-created branch can be renamed via this command:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6848414Z hint:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6849370Z hint: 	git branch -m <name>
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6850744Z hint:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6852150Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6854336Z Initialized empty Git repository in /home/runner/work/spring-boot/spring-boot/.git/
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6857811Z [command]/usr/bin/git remote add origin https://github.com/spring-projects/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6913402Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6915089Z ##[group]Disabling automatic garbage collection
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6917158Z [command]/usr/bin/git config --local gc.auto 0
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6956081Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6957739Z ##[group]Setting up auth
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6958857Z Removing SSH command configuration
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.6963675Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7001568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7413594Z Removing HTTP extra header
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7419385Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7458739Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7696933Z Removing includeIf entries pointing to credentials config files
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7698147Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7735207Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.7979363Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8022553Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/spring-boot/spring-boot/.git.path /home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8062075Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/spring-boot/spring-boot/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8100996Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8137323Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8169169Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8170856Z ##[group]Fetching the repository
+Java 21	UNKNOWN STEP	2026-09-25T10:03:57.8177314Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a3ad9fc54b423660846b903a07c509ee5f74ca16:refs/remotes/origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4168634Z From https://github.com/spring-projects/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4169395Z  * [new ref]           a3ad9fc54b423660846b903a07c509ee5f74ca16 -> origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4179174Z [command]/usr/bin/git branch --list --remote origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4206568Z   origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4215944Z [command]/usr/bin/git rev-parse refs/remotes/origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4242105Z a3ad9fc54b423660846b903a07c509ee5f74ca16
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4252171Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4253141Z ##[group]Determining the checkout info
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4254085Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4254653Z [command]/usr/bin/git sparse-checkout disable
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4314224Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4346976Z ##[group]Checking out the ref
+Java 21	UNKNOWN STEP	2026-09-25T10:04:00.4351999Z [command]/usr/bin/git checkout --progress --force -B 4.1.x refs/remotes/origin/4.1.x
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3219095Z Switched to a new branch '4.1.x'
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3225158Z branch '4.1.x' set up to track 'origin/4.1.x'.
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3255921Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3308904Z [command]/usr/bin/git log -1 --format=%H
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3338940Z a3ad9fc54b423660846b903a07c509ee5f74ca16
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3660126Z Prepare all required actions
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.3660865Z Getting action download info
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.5552200Z Download action repository 'jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be' (SHA:54081f138730dfa15788a46383842cd2f914a1be)
+Java 21	UNKNOWN STEP	2026-09-25T10:04:01.7982888Z Download action repository 'actions/setup-java@v6' (SHA:de7274f081f381c8f8158605e0321c36c376e2e6)
+Java 21	UNKNOWN STEP	2026-09-25T10:04:02.5033007Z Download action repository 'gradle/actions@9c971963bec38e04b3d30dcc455b5382be2fdbfb' (SHA:9c971963bec38e04b3d30dcc455b5382be2fdbfb)
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6684768Z ##[group]Run ./.github/actions/prepare-gradle-build
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6685281Z with:
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6685955Z   develocity-access-key: ***
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6686228Z   java-toolchain: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6686456Z   java-version: 21
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6686682Z   cache-read-only: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6686947Z   java-distribution: liberica
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6687252Z   java-early-access: false
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6687557Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6748821Z ##[start-action display=Free Disk Space;id=__self.__jlumbroso_free-disk-space]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6857982Z ##[group]Run jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6858410Z with:
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6858611Z   tool-cache: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6858833Z   docker-images: false
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6859065Z   android: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6859274Z   dotnet: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6859490Z   haskell: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6859880Z   large-packages: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6860115Z   swap-storage: true
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6860338Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6933993Z ##[start-action display=Run # ======;id=__self.__jlumbroso_free-disk-space.__run]
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6956722Z ##[group]Run # ======
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6957436Z ^[[36;1m^[[0m
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6957642Z ^[[36;1m# ======^[[0m
+Java 21	UNKNOWN STEP	2026-09-25T10:04:03.6957870Z ^[[36;1m# MACROS^[[0m
+Ja
+
+... [256076 characters truncated] ...
+
+EP	2026-09-25T10:26:28.9594237Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9594526Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9662461Z ##[end-action id=__self_2.__run;outcome=success;conclusion=success;duration_ms=15]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9664511Z ##[start-action display=Success Notification;id=__self_2.__run_2]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9667972Z ##[end-action id=__self_2.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9670077Z ##[start-action display=Failure Notification;id=__self_2.__run_3]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9691776Z ##[group]Run curl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/36121908499|4.1.x | System Tests | Java 21> failed*  [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]"}' || true
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9694161Z ^[[36;1mcurl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/36121908499|4.1.x | System Tests | Java 21> failed*  [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]"}' || true^[[0m
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9732697Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9733065Z env:
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9733484Z   JAVA_HOME: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9733955Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Liberica_jdk/21.0.12-10/x64
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9734423Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9734795Z   MAVEN_ARGS: -ntp
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9735051Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9735378Z   GRADLE_USER_HOME: /home/runner/.gradle
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9735682Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9749933Z   DEVELOCITY_ACCESS_KEY: ***
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9764289Z   GRADLE_ENTERPRISE_ACCESS_KEY: ***
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9764751Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9765262Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9765615Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9766007Z   BUILD_SCAN:  [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9766527Z   RUN_URL: https://github.com/spring-projects/spring-boot/actions/runs/36121908499
+Java 21	UNKNOWN STEP	2026-09-25T10:26:28.9766956Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.0042418Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.0043263Z                                  Dload  Upload   Total   Spent    Left  Speed
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.0043702Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4754084Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4754829Z 100   602    0   413  100   189    876    401 --:--:-- --:--:-- --:--:--  1278
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4760806Z {
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4761375Z   "name": "spaces/AAAAuk_dnXc/messages/Xbv6XCddZhA.Xbv6XCddZhA",
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4763362Z   "text": "\u003cusers/all\u003e *\u003chttps://github.com/spring-projects/spring-boot/actions/runs/36121908499|4.1.x | System Tests | Java 21\u003e failed*  [\u003chttps://ge.spring.io/s/lfafysujqy4zg|Build Scan\u003e]",
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4764498Z   "thread": {
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4764801Z     "name": "spaces/AAAAuk_dnXc/threads/Xbv6XCddZhA"
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4765146Z   },
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4765355Z   "space": {
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4765596Z     "name": "spaces/AAAAuk_dnXc"
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4765873Z   }
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4766078Z }
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4788137Z ##[end-action id=__self_2.__run_3;outcome=success;conclusion=success;duration_ms=511]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4792553Z ##[start-action display=Cancel Notification;id=__self_2.__run_4]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4799176Z ##[end-action id=__self_2.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4919051Z Post job cleanup.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.4923536Z ##[start-action display=Set Up Gradle;id=__887cc1d6-e7f9-4352-97e3-4fad2b75305e.__gradle_actions_2]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.5014319Z Post job cleanup.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9564543Z In post-action step
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9574932Z Basic Caching: This build uses the basic open-source caching provider. For faster builds and advanced features, consider switching to the Enhanced Caching provider. See https://github.com/gradle/actions/blob/main/DISTRIBUTION.md for details.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9581604Z ##[group]Generating Job Summary
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9585542Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9585551Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9585734Z <table>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9586043Z     <tr>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9586408Z         <th>Gradle Root Project</th>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9586860Z         <th>Requested Tasks</th>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9587266Z         <th>Gradle Version</th>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9587700Z         <th>Build Outcome</th>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9588403Z         <th>Build&nbsp;Scan®</th>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9588722Z     </tr>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9588926Z     <tr>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9589153Z         <td>spring-boot-build</td>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9589463Z         <td>systemTest</td>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9590182Z         <td align='center'>9.8.0</td>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9590636Z         <td align='center'>:x:</td>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9592353Z         <td><a href="https://ge.spring.io/s/lfafysujqy4zg" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/Build%20Scan%C2%AE-06A0CE?logo=Gradle" alt="Build Scan published" /></a></td>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9593738Z     </tr>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9594080Z </table>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9594818Z     
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9595456Z ============================
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9596652Z <h4>Gradle State Caching - 🛡️ Basic (read-only)</h4>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9597190Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9614617Z **[Basic Caching](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md#basic-caching)** uses the basic open-source caching provider. For faster builds and advanced features, consider the **[Enhanced Caching](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md#enhanced-caching)** provider.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9616742Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9616901Z <details>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9617476Z <summary>Entries: 0 restored, 0 saved - Expand for more details</summary>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9618037Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9619891Z [Cache was read-only](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md#using-the-cache-read-only) — by default, the action only writes to the cache for jobs running on the default branch.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9621340Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9621505Z <pre>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9621890Z Entry: Gradle User Home
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9622877Z     Requested Key : setup-java-Linux-x64-gradle-081c5096285370da01477bc80bb525e3dfea78b1aeac0cd5e55a07d491e15a37
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9623964Z     Restored  Key : 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9624434Z               Size: 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9624860Z               Time: 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9625325Z               (Entry not restored: no match found)
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9625875Z     Saved     Key : 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9626261Z               Size: 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9626628Z               Time: 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9627068Z               (Entry not saved: cache is read-only)
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9627594Z </pre>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9627947Z </details>
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9628146Z 
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9628636Z ##[endgroup]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9629036Z Completed post-action step
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9757050Z ##[end-action id=__887cc1d6-e7f9-4352-97e3-4fad2b75305e.__gradle_actions_2;outcome=success;conclusion=success;duration_ms=483]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9760039Z ##[start-action display=Set Up Java;id=__887cc1d6-e7f9-4352-97e3-4fad2b75305e.__actions_setup-java]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:29.9838501Z Post job cleanup.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.0662905Z ##[end-action id=__887cc1d6-e7f9-4352-97e3-4fad2b75305e.__actions_setup-java;outcome=success;conclusion=success;duration_ms=90]
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.0731288Z Post job cleanup.
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1605402Z [command]/usr/bin/git version
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1656781Z git version 2.55.0
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1695093Z Temporarily overriding HOME='/home/runner/work/_temp/e76c1ba7-5b55-4a54-a5fa-c0a8f9ee8a53' before making global git config changes
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1696547Z Adding repository directory to the temporary git global config as a safe directory
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1701250Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spring-boot/spring-boot
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1733991Z Removing SSH command configuration
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1740777Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.1774702Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2101290Z Removing HTTP extra header
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2106947Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2144681Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2393532Z Removing includeIf entries pointing to credentials config files
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2400611Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2429439Z includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2430932Z includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git/worktrees/*.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2431872Z includeif.gitdir:/github/workspace/.git.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2433081Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2439065Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2460585Z /home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2470914Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-59c9f3ee\-a7fa\-4758\-a8dd\-aeb3c5211b07\.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2506574Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git/worktrees/*.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2530223Z /home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2539340Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/spring-boot/spring-boot/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-59c9f3ee\-a7fa\-4758\-a8dd\-aeb3c5211b07\.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2572332Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2594570Z /github/runner_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2602084Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-59c9f3ee\-a7fa\-4758\-a8dd\-aeb3c5211b07\.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2633600Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2654641Z /github/runner_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2664507Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-59c9f3ee\-a7fa\-4758\-a8dd\-aeb3c5211b07\.config
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2699528Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.2963176Z Removing credentials config '/home/runner/work/_temp/git-credentials-59c9f3ee-a7fa-4758-a8dd-aeb3c5211b07.config'
+Java 21	UNKNOWN STEP	2026-09-25T10:26:30.3143453Z Cleaning up orphan processes

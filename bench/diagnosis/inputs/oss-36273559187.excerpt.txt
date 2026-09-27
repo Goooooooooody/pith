@@ -1,0 +1,232 @@
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	﻿2026-09-26T21:37:57.0321004Z Current runner version: '2.337.0'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0354296Z ##[group]Runner Image Provisioner
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0355404Z Hosted Compute Agent
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0356227Z Version: 20260828.587
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0356912Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0357626Z Build Date: 2026-08-28T16:44:25Z
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0358555Z Worker ID: {aeb1ee6d-8321-4701-9793-8eb3a306a274}
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0359258Z Azure Region: centralus
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0359926Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0362104Z ##[group]Operating System
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0363143Z Ubuntu
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0363903Z 24.04.5
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0364484Z LTS
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0365094Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0365673Z ##[group]Runner Image
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0366277Z Image: ubuntu-24.04-arm
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0367014Z Version: 20260920.129.1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0368412Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24-arm64/20260920.129/images/ubuntu/Ubuntu2404-Arm64-Readme.md
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0370106Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24-arm64%2F20260920.129
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0371090Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0372447Z ##[group]GITHUB_TOKEN Permissions
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0376210Z Contents: read
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0377137Z Metadata: read
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0377705Z Packages: read
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0378246Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0381912Z Secret source: None
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0383216Z Cache mode: write
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.0384220Z Prepare workflow directory
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.1012961Z Prepare all required actions
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.1066062Z Getting action download info
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.3499073Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.4785665Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.6662392Z Complete job name: PR - test-aarch64-gnu-llvm-21-1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7529399Z ##[group]Run git config --global core.autocrlf false
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7530503Z ^[[36;1mgit config --global core.autocrlf false^[[0m
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7631457Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7633200Z env:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7633983Z   TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7635045Z   TOOLSTATE_REPO_ACCESS_TOKEN: 
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7635722Z   CI_JOB_NAME: test-aarch64-gnu-llvm-21-1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7636360Z   CI_JOB_DOC_URL: 
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7637041Z   GITHUB_WORKFLOW_RUN_ID: 36273559187
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7637725Z   GITHUB_REPOSITORY: rust-lang/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7638514Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7639339Z   HEAD_SHA: f88732829d6ee4bdfc92cc2bf6b574136727c254
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7643610Z   DOCKER_TOKEN: ***
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7644368Z   SCCACHE_BUCKET: rust-lang-ci-sccache2
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7645140Z   SCCACHE_REGION: us-west-1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7645922Z   CACHE_DOMAIN: ci-caches.rust-lang.org
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.7646562Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8094663Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8095624Z with:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8096345Z   fetch-depth: 2
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8097019Z   repository: rust-lang/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8100915Z   token: ***
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8101538Z   ssh-strict: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8102089Z   ssh-user: git
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8103141Z   persist-credentials: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8103759Z   clean: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8104317Z   sparse-checkout-cone-mode: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8105100Z   fetch-tags: false
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8105668Z   show-progress: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8106334Z   lfs: false
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8106836Z   submodules: false
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8107389Z   set-safe-directory: true
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8108136Z   allow-unsafe-pr-checkout: false
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8109155Z env:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8109937Z   TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8110990Z   TOOLSTATE_REPO_ACCESS_TOKEN: 
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8111738Z   CI_JOB_NAME: test-aarch64-gnu-llvm-21-1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8112408Z   CI_JOB_DOC_URL: 
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8113223Z   GITHUB_WORKFLOW_RUN_ID: 36273559187
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8114004Z   GITHUB_REPOSITORY: rust-lang/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8114694Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8115533Z   HEAD_SHA: f88732829d6ee4bdfc92cc2bf6b574136727c254
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8119433Z   DOCKER_TOKEN: ***
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8120030Z   SCCACHE_BUCKET: rust-lang-ci-sccache2
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8120780Z   SCCACHE_REGION: us-west-1
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8121412Z   CACHE_DOMAIN: ci-caches.rust-lang.org
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8122150Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8936619Z Syncing repository: rust-lang/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8939033Z ##[group]Getting Git version info
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8939945Z Working directory is '/home/runner/work/rust/rust'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8941361Z [command]/usr/bin/git version
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8942010Z git version 2.55.0
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8947421Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8954672Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/dcb3c7f8-7895-4857-b9be-8b2b39e215f1/.gitconfig'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8961968Z Temporarily overriding HOME='/home/runner/work/_temp/dcb3c7f8-7895-4857-b9be-8b2b39e215f1' before making global git config changes
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8964043Z Adding repository directory to the temporary git global config as a safe directory
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8967338Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rust/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.8996777Z Deleting the contents of '/home/runner/work/rust/rust'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9000779Z ##[group]Determining repository object format
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9002256Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9003768Z ##[group]Initializing the repository
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9006616Z [command]/usr/bin/git init /home/runner/work/rust/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9074557Z hint: Using 'master' as the name for the initial branch. This default branch name
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9076018Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9077439Z hint: to use in all of your new repositories, which will suppress this warning,
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9078467Z hint: call:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9079150Z hint:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9080220Z hint: 	git config --global init.defaultBranch <name>
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9081087Z hint:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9082116Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9083757Z hint: 'development'. The just-created branch can be renamed via this command:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9084750Z hint:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9085622Z hint: 	git branch -m <name>
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9086406Z hint:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9087499Z hint: Disable this message with "git config set advice.defaultBranchName false"
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9088976Z Initialized empty Git repository in /home/runner/work/rust/rust/.git/
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9091834Z [command]/usr/bin/git remote add origin https://github.com/rust-lang/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9118187Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9119193Z ##[group]Disabling automatic garbage collection
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9120744Z [command]/usr/bin/git config --local gc.auto 0
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9151836Z ##[endgroup]
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9153056Z ##[group]Setting up auth
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9153902Z Removing SSH command configuration
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9157164Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9187843Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9450111Z Removing HTTP extra header
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9454640Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9484570Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9669792Z Removing includeIf entries pointing to credentials config files
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9675840Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9712828Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9916142Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T21:37:57.9957030Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rust/rust/.git.path /home/runner/work/_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config
+PR - 
+
+... [4661048 characters truncated] ...
+
+ 7.8G  100K  7.8G   1% /dev/shm
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1517556Z tmpfs           3.2G  1.1M  3.2G   1% /run
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1517813Z tmpfs           5.0M     0  5.0M   0% /run/lock
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1518124Z efivarfs        128M   13K  128M   1% /sys/firmware/efi/efivars
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1518433Z /dev/sda16      891M   63M  766M   8% /boot
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1518695Z /dev/sda15       98M  6.4M   92M   7% /boot/efi
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1518992Z tmpfs           1.6G   16K  1.6G   1% /run/user/1001
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.1646020Z Post job cleanup.
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9239863Z [command]/usr/bin/git version
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9318762Z git version 2.55.0
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9346923Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/c1f4350a-cb67-4114-ae87-d6fa67a84a8e/.gitconfig'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9357693Z Temporarily overriding HOME='/home/runner/work/_temp/c1f4350a-cb67-4114-ae87-d6fa67a84a8e' before making global git config changes
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9358740Z Adding repository directory to the temporary git global config as a safe directory
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9363310Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rust/rust
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9396353Z Removing SSH command configuration
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9402807Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9436914Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9690404Z Entering 'library/backtrace'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9744583Z Entering 'src/doc/book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:18.9947236Z Entering 'src/doc/edition-guide'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.0003294Z Entering 'src/doc/embedded-book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.0056123Z Entering 'src/doc/nomicon'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.0110213Z Entering 'src/doc/reference'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.0163657Z Entering 'src/doc/rust-by-example'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.0217358Z Entering 'src/gcc'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5520140Z Entering 'src/llvm-project'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5765104Z Entering 'src/tools/cargo'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5827241Z Entering 'src/tools/enzyme'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5880549Z Entering 'src/tools/rustc-perf'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5970940Z Removing HTTP extra header
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.5977208Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6015504Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6274671Z Entering 'library/backtrace'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6328240Z Entering 'src/doc/book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6383624Z Entering 'src/doc/edition-guide'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6434143Z Entering 'src/doc/embedded-book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6484711Z Entering 'src/doc/nomicon'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6534971Z Entering 'src/doc/reference'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6585838Z Entering 'src/doc/rust-by-example'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6637397Z Entering 'src/gcc'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.6838735Z Entering 'src/llvm-project'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7082974Z Entering 'src/tools/cargo'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7142953Z Entering 'src/tools/enzyme'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7194865Z Entering 'src/tools/rustc-perf'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7279652Z Removing includeIf entries pointing to credentials config files
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7287159Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7316341Z includeif.gitdir:/home/runner/work/rust/rust/.git.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7316948Z includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7317337Z includeif.gitdir:/github/workspace/.git.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7317678Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7326722Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rust/rust/.git.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7351141Z /home/runner/work/_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7361859Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rust/rust/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-559cc7b7\-c668\-4069\-bf06\-6e556aac6241\.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7399619Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7428498Z /home/runner/work/_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7436942Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rust/rust/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-559cc7b7\-c668\-4069\-bf06\-6e556aac6241\.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7472378Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7497371Z /github/runner_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7503666Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-559cc7b7\-c668\-4069\-bf06\-6e556aac6241\.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7537446Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7561402Z /github/runner_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7568298Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-559cc7b7\-c668\-4069\-bf06\-6e556aac6241\.config
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7604994Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7864695Z Entering 'library/backtrace'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7890538Z file:/home/runner/work/rust/rust/.git/modules/library/backtrace/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7912807Z Entering 'src/doc/book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7937704Z file:/home/runner/work/rust/rust/.git/modules/src/doc/book/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7964698Z Entering 'src/doc/edition-guide'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.7987833Z file:/home/runner/work/rust/rust/.git/modules/src/doc/edition-guide/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8010189Z Entering 'src/doc/embedded-book'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8032998Z file:/home/runner/work/rust/rust/.git/modules/src/doc/embedded-book/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8054853Z Entering 'src/doc/nomicon'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8078170Z file:/home/runner/work/rust/rust/.git/modules/src/doc/nomicon/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8099711Z Entering 'src/doc/reference'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8124562Z file:/home/runner/work/rust/rust/.git/modules/src/doc/reference/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8145706Z Entering 'src/doc/rust-by-example'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8169823Z file:/home/runner/work/rust/rust/.git/modules/src/doc/rust-by-example/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8191941Z Entering 'src/gcc'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8215574Z file:/home/runner/work/rust/rust/.git/modules/src/gcc/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8389280Z Entering 'src/llvm-project'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8417161Z file:/home/runner/work/rust/rust/.git/modules/src/llvm-project/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8632367Z Entering 'src/tools/cargo'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8659394Z file:/home/runner/work/rust/rust/.git/modules/src/tools/cargo/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8686420Z Entering 'src/tools/enzyme'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8708380Z file:/home/runner/work/rust/rust/.git/modules/src/tools/enzyme/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8732016Z Entering 'src/tools/rustc-perf'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8754934Z file:/home/runner/work/rust/rust/.git/modules/src/tools/rustc-perf/config	remote.origin.url
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8817304Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/library/backtrace/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8852812Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/book/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8884110Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/edition-guide/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8917333Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/embedded-book/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8949005Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/nomicon/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.8980482Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/reference/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9013354Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/doc/rust-by-example/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9047236Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/gcc/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9078888Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/llvm-project/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9111304Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/cargo/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9143328Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/enzyme/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9174124Z [command]/usr/bin/git config --file /home/runner/work/rust/rust/.git/modules/src/tools/rustc-perf/config --name-only --get-regexp ^includeIf\.gitdir:
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9200953Z Removing credentials config '/home/runner/work/_temp/git-credentials-559cc7b7-c668-4069-bf06-6e556aac6241.config'
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9351444Z Cleaning up orphan processes
+PR - test-aarch64-gnu-llvm-21-1	UNKNOWN STEP	2026-09-26T22:17:19.9777952Z Terminate orphan process: pid (2268) (python3)

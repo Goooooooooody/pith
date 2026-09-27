@@ -1,0 +1,150 @@
+pith · <log> · 1,052 lines → 459 groups · ~28.8k → ~4.0k tokens (86.1% smaller)
+
+jobs: Check hassfest
+levels: error 2 · warn 114 · notable 8 · info 459
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Check hassfest
+L674      [83c0] ▶ Run . venv/bin/activate
+   …
+L982      [29c8] Integration telegram_bot:
+L983      [2fc8] * [WARNING] [REQUIREMENTS] Version restrictions for httpx are too strict (>=0.27,<0.29) in python-telegram-bot
+L985      [4f33] Integration terrestream_local:
+L986    ✱ [0355] * [ERROR] [QUALITY_SCALE] Quality scale tier bronze requires quality scale rules to be met:
+          brands: todo
+L989      [fe22] Integration tibber:
+L990      [88a5] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in gql (×4, last L990)
+L992      [94a7] Integration toon:
+   …
+L1013     [80dc] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in whirlpool-sixth-sense
+L1015     [7b5d] Integration xiaomi_miio:
+L1016     [1510] * [WARNING] [REQUIREMENTS] Version restrictions for zeroconf are too strict (>=0,<1) in python-miio
+L1018     [b413] Integration xs1:
+L1019     [38b1] * [WARNING] [REQUIREMENTS] Package xs1-api-client has a forbidden top level directory 'tests' in homeassistant
+L1021     [47da] Integration zamg:
+L1022     [2f40] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in zamg
+L1024     [acba] Integration zha:
+L1025     [6768] * [WARNING] [REQUIREMENTS] Package coloredlogs should be replaced with colorlog in zigpy-znp
+L1026     [32b9] * [WARNING] [REQUIREMENTS] Package coloredlogs has a forbidden file 'coloredlogs.pth' in zigpy-znp
+L1027     [116d] * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in colorzero (×2, last L1027)
+L1028     [8dcf] * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in colorzero (×2, last L1028)
+L1030   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L90     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L732    WARN [40be] * [WARNING] [REQUIREMENTS] Package jaraco-net has a forbidden top level directory 'tests' in jaraco-abode
+L733    WARN [3d3b] * [WARNING] [REQUIREMENTS] Package jaraco-net has a forbidden top level directory 'docs' in jaraco-abode
+L736    WARN [3417] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in adax-local
+L737    WARN [73d5] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in adax
+L740    WARN [c217] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in airthings-cloud
+L743    WARN [a198] * [WARNING] [REQUIREMENTS] Version restrictions for zeroconf are too strict (>=0.143.0,<1.0.0) in altruistclient
+L746    WARN [e5dc] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in aiokafka
+L752    WARN [6684] * [WARNING] [REQUIREMENTS] Package azure-kusto-data has a forbidden file 'azure_kusto_data-4.5.1-py3.7-nspkg.pth' in homeassistant
+L753    WARN [2ee9] * [WARNING] [REQUIREMENTS] Package azure-kusto-ingest has a forbidden file 'azure_kusto_ingest-4.5.1-py3.7-nspkg.pth' in homeassistant
+L756    WARN [7e29] * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in pbr (×2, last L900)
+L757    WARN [b090] * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in pbr (×2, last L901)
+L760    WARN [97f7] * [WARNING] [REQUIREMENTS] Package coinbase-advanced-py has a forbidden top level directory 'tests' in homeassistant
+L761    WARN [a48f] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in coinbase-advanced-py
+L764    WARN [8330] * [WARNING] [REQUIREMENTS] Package pycontrol4 has a forbidden top level directory 'tests' in homeassistant
+L767    WARN [1fc0] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pydelijn
+L770    WARN [4ce5] * [WARNING] [REQUIREMENTS] Package dlms-cosem has a forbidden top level directory 'tests' in dsmr-parser
+L773    WARN [0aee] * [WARNING] [REQUIREMENTS] Package codecov should not be a runtime dependency in pyefergy
+L774    WARN [cddd] * [WARNING] [REQUIREMENTS] Package types-pytz should not be a runtime dependency in pyefergy
+L775    WARN [2337] * [WARNING] [REQUIREMENTS] Package coverage has a forbidden file 'a1_coverage.pth' in codecov
+L778    WARN [4ba0] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in sense-energy (×2, last L956)
+L781    WARN [c81e] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in energyid-webhooks
+L784    WARN [dc96] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in enturclient
+L787    WARN [ae9b] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pescea
+L790    WARN [0ddf] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pyevilgenius
+L793    WARN [040d] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in python-family-hub-local
+L796    WARN [9dce] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in ha-ffmpeg
+L799    WARN [abd5] * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in fitbit
+L800    WARN [eefb] * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in fitbit
+L803    WARN [32ee] * [WARNING] [REQUIREMENTS] Package pyflume has a forbidden top level directory 'tests' in homeassistant
+L806    WARN [e7fb] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in flux-led (×2, last L871)
+L809    WARN [62b9] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in foobot-async
+L812    WARN [9562] * [WARNING] [REQUIREMENTS] Package fortiosapi has a forbidden top level directory 'tests' in homeassistant
+L815    WARN [14f3] * [WARNING] [REQUIREMENTS] Package geniushub-client has a forbidden top level directory 'tests' in homeassistant
+L818    WARN [c1ec] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in geocachingapi
+L819    WARN [224b] * [WARNING] [REQUIREMENTS] Version restrictions for numpy are too strict (>=2.0.0,<2.8) in scipy
+L822    WARN [26e7] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in aiogithubapi
+L825    WARN [cbe6] * [WARNING] [REQUIREMENTS] Package coloredlogs should be replaced with colorlog in locationsharinglib
+L826    WARN [e91a] * [WARNING] [REQUIREMENTS] Package coloredlogs has a forbidden file 'coloredlogs.pth' in locationsharinglib
+L829    WARN [fc21] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in aioharmony
+L832    WARN [9591] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in here-routing
+L833    WARN [70be] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in here-transit
+L836    WARN [4825] * [WARNING] [REQUIREMENTS] Package coloredlogs should be replaced with colorlog in universal-silabs-flasher
+L837    WARN [f282] * [WARNING] [REQUIREMENTS] Package coloredlogs has a forbidden file 'coloredlogs.pth' in universal-silabs-flasher
+L840    WARN [7d2a] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in python-homewizard-energy
+L846    WARN [1a83] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in imeon-inverter-api
+L849    WARN [d24f] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in pyiqvia
+L852    WARN [673e] * [WARNING] [REQUIREMENTS] Package dataclasses-json should be removed (it can break in Python 3.15) in pyecotrend-ista
+L855    WARN [b5d1] * [WARNING] [REQUIREMENTS] Package aiokef has a forbidden top level directory 'tests' in homeassistant
+L856    WARN [9b6c] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in aiokef
+L859    WARN [7762] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in jsonrpc-websocket
+L862    WARN [86c0] * [WARNING] [REQUIREMENTS] Package pylacrosse has a forbidden top level directory 'tests' in homeassistant
+L865    WARN [955d] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in demetriek
+L868    WARN [aad5] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in ld2410-ble
+L874    WARN [6690] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in lektricowifi
+L877    WARN [3724] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in python-linkplay
+L880    WARN [bcda] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in loqedapi
+L883    WARN [f51c] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pymediaroom
+L886    WARN [0364] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pymetno (×2, last L916)
+L889    WARN [8e7c] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pymeteireann
+L892    WARN [da6a] * [WARNING] [REQUIREMENTS] Package microbeespy has a forbidden top level directory 'tests' in homeassistant
+L893    WARN [6a10] * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in microbeespy
+L894    WARN [75ad] * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in microbeespy
+L897    WARN [c4ec] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in mill-local
+L904    WARN [72e2] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in aiomodernforms
+L910    WARN [5bab] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in nibe
+L913    WARN [1bfe] * [WARNING] [REQUIREMENTS] Version restrictions for pandas are too strict (>=2.2.2,<3.0.0) in noaa-coops
+L919    WARN [9b4a] * [WARNING] [REQUIREMENTS] Package pyobihai has a forbidden top level directory 'tests' in homeassistant
+L922    WARN [3755] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in open-garage
+L925    WARN [64a8] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in pyoverkiz
+L928    WARN [958a] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in pyprosegur
+L931    WARN [ea62] * [WARNING] [REQUIREMENTS] Package py-dactyl has a forbidden top level directory 'tests' in homeassistant
+L934    WARN [9ce8] * [WARNING] [REQUIREMENTS] Version restrictions for Python are too strict (<3.16,>=3.10) in restrictedpython
+L937    WARN [ac42] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in radios
+L944    WARN [27ce] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in ring-doorbell
+L947    WARN [045c] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pyrmvtransport
+L950    WARN [6f8e] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in rokuecp
+L953    WARN [c7a8] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in screenlogicpy
+L959    WARN [3804] * [WARNING] [REQUIREMENTS] Package sensorpush-api has a forbidden top level directory 'test' in sensorpush-ha
+L962    WARN [1c9c] * [WARNING] [REQUIREMENTS] Package dataclasses-json should be removed (it can break in Python 3.15) in simplefin4py
+L965    WARN [1b75] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in simplisafe-python
+L968    WARN [a2fc] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in aioslimproto
+L971    WARN [d98f] * [WARNING] [REQUIREMENTS] Package pysmappee has a forbidden top level directory 'test' in homeassistant
+L974    WARN [58b9] * [WARNING] [REQUIREMENTS] Version restrictions for pymodbus are too strict (>=3.11.0,<4.0.0) in pysmarty2
+L977    WARN [a1e9] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in surepy
+L980    WARN [bfa8] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in gotailwind
+L993    WARN [5e99] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in toonapi
+
+== END OF OUTPUT
+L980      [bfa8] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in gotailwind
+L993      [5e99] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in toonapi
+L995      [5296] Integration travisci:
+L996      [572d] * [WARNING] [REQUIREMENTS] Package pytest should not be a runtime dependency in travispy
+L997      [340a] * [WARNING] [REQUIREMENTS] Package pytest should not be a runtime dependency in pytest-rerunfailures
+L999      [d7d4] Integration velbus:
+L1000     [85bb] * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in velbus-aio
+L1001     [e4df] * [WARNING] [REQUIREMENTS] Package caio has a forbidden top level directory 'tests' in aiofile
+L1003     [3e4d] Integration volkszaehler:
+L1004     [4f08] * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in volkszaehler
+L1006     [6e4c] Integration watergate:
+L1007     [ab95] * [WARNING] [REQUIREMENTS] Package watergate-local-api has a forbidden top level directory 'tests' in homeassistant
+L1009     [1650] Integration weatherflow_cloud:
+L1010     [abe7] * [WARNING] [REQUIREMENTS] Package dataclasses-json should be removed (it can break in Python 3.15) in weatherflow4py
+L1012     [2402] Integration whirlpool:
+
+== MOST FREQUENT OTHER LINES
+×34      [1f25] Updating files:  66% (18818/28215)
+×15      [4293] env:
+×8       [8d65] with:
+×7       [a907] Getting action download info
+×6       [cabc] Received 222562 of 222562 (100.0%), 3.3 MBs/sec
+×5       [8ada] done
+×4       [a71a] hint:
+×4       [bda6] Cache Size: ~0 MB (222562 B)
+
+(not shown: 328 groups, 365 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

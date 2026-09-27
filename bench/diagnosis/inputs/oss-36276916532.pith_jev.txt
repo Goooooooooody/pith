@@ -1,0 +1,152 @@
+pith · <log> · 13,143 lines → 11416 groups · ~728.9k → ~4.0k tokens (99.4% smaller)
+
+jobs: Sqlite Enterprise (7/16)
+levels: error 39 · warn 5 · notable 11,549 · info 1,182
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 5/1000 groups as confident noise (10416 rarest groups not scored) · 2 requests · 10,478 tokens · $0.0004 · 1.5s
+most likely root cause: [0049] rc=0.28 (confidence 0.26, cause visible p=0.45)
+
+== LIKELY ROOT CAUSE (jev rc=0.28)
+[0049] NOTABLE ×1  act=0.64 val=2.6/4 rc=0.28  L858  job: Sqlite Enterprise (7/16)
+  cp: cannot stat '/opt/actions-runner/_work/grafana/grafana-enterprise/src/pkg/operators/provisioning/enterprise_*': No such file or directory
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Sqlite Enterprise (7/16)
+L499      [d8ef] font_italic = DejaVuSansCondensed-Oblique.ttf
+L500      [c434] # The minimum pixel size that Grafana uses when rendering fonts. Default is `4`. (×2, last L965)
+L501      [f888] font_min_text_size = 4
+L502    ✱ [5218] # Maximum number of rendering request retries before returning an error. 0 means disabling the retry feature. (×2, last L967)
+L503      [edde] max_request_retries = 0
+L504      [207b] # Allowed domains to receive reports. Use * to allow all domains. Use a comma-separated list to allow multiple domains. Example: allowed_domains = grafana.com, example.org (×2, last L969)
+L505      [e34b] allowed_domains = *
+   …
+L574      [91b6] # Set the tenant id for Loki communications. Disabled by default. (×4, last L1037)
+L575      [9c20] # Mandatory to interact with Loki running in multi-tenant mode. (×4, last L1038)
+L576      [5d4b] tenant_id = (×4, last L935)
+L577    ✱ [1d2d] # The amount of times the HTTP or gRPC client will retry a failed request to Loki. The default is `10`. (×2, last L1040)
+L578      [23f9] retries = 10
+L579      [b5e5] # The timeout duration of an HTTP request or gRPC call to Loki. The default is `3s`. (×2, last L1042)
+L580      [4860] timeout = 3s
+   …
+L1561     [ca3b] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/testdata/tmpl2.tmpl: Cannot open: File exists
+L1562     [0024] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/examplefiles_test.go: Cannot open: File exists
+L1563     [e025] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/js_test.go: Cannot open: File exists
+L1564   ✱ [d4f9] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/error.go: Cannot open: File exists
+L1565     [db6f5] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/delim_string.go: Cannot open: File exists
+L1566     [fbee] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/js.go: Cannot open: File exists
+L1567     [49ff] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/html/template/element_string.go: Cannot open: File exists
+   …
+L2741     [0153] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/request_test.go: Cannot open: File exists
+L2742     [690c] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/csrf.go: Cannot open: File exists
+L2743     [97a4] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/async_test.go: Cannot open: File exists
+L2744   ✱ [084a] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/h2_error.go: Cannot open: File exists
+L2745     [2ee4] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/serve_test.go: Cannot open: File exists
+L2746     [a4ec] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/http/transfer.go: Cannot open: File exists
+L2747     [2c38] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/net/tcpsock_solaris.go: Cannot open: File exists
+   …
+L2969     [ccc7] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/statat_unix.go: Cannot open: File exists
+L2970     [cbcd] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/root_nonwindows.go: Cannot open: File exists
+L2971     [fd78] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/proc.go: Cannot open: File exists
+L2972   ✱ [e958] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/error.go: Cannot open: File exists
+L2973     [b133] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/dirent_wasip1.go: Cannot open: File exists
+L2974     [4e25] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/exec_windows_test.go: Cannot open: File exists
+L2975     [3265] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/os/file_wasip1.go: Cannot open: File exists
+   …
+L3902     [9afa8] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/env_sanitize.txt: Cannot open: File exists
+L3903     [ce43] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/build_issue68658.txt: Cannot open: File exists (×3, last L4150)
+L3904     [c9ec] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_get_downup_indirect.txt: Cannot open: File exists
+L3905   ✱ [f0f7] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/list_pkgconfig_error.txt: Cannot open: File exists
+L3906     [cbfc] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/list_bad_import.txt: Cannot open: File exists
+L3907     [2b0c] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_vendor_collision.txt: Cannot open: File exists
+L3908     [e597] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/work.txt: Cannot open: File exists
+   …
+L4234     [3bf8] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/cpu_profile_twice.txt: Cannot open: File exists
+L4235     [bdfb] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_lazy_test_horizon.txt: Cannot open: File exists
+L4236     [219d] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/cover_pattern.txt: Cannot open: File exists
+L4237   ✱ [873d] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/list_module_when_error.txt: Cannot open: File exists
+L4238     [1abe] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/build_git_sha256_go_get_branch.txt: Cannot open: File exists
+L4239     [535c] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_get_pseudo.txt: Cannot open: File exists
+L4240     [016fd] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_get_ambiguous_pkg.txt: Cannot open: File exists
+   …
+L4271     [88ce] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_get_issue48511.txt: Cannot open: File exists (×3, last L4554)
+L4272     [6664] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_gopkg_unstable.txt: Cannot open: File exists
+L4273     [8b0f] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/work_vendor_prune_all.txt: Cannot open: File exists
+L4274   ✱ [40cf] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/build_single_error.txt: Cannot open: File exists
+L4275     [564a] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/build_multi_main.txt: Cannot open: File exists
+L4276     [3e1b] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/test_match_only_tests.txt: Cannot open: File exists
+L4277     [c730] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/list_n_cover.txt: Cannot open: File exists
+   …
+L4304     [3563] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/test_timeout.txt: Cannot open: File exists
+   (+14 more lines here: `pith show <id>` or grep the raw file)
+   …
+L13089    [6848] ok  	github.com/grafana/grafana/pkg/services/auth/jwt	1.031s
+L13090    [319c] ok  	github.com/grafana/grafana/pkg/services/ngalert/notifier	1.365s
+L13091    [7bdd] ok  	github.com/grafana/grafana/pkg/services/quota/quotaimpl	2.955s
+L13092    [1656] ok  	github.com/grafana/grafana/pkg/services/team/teamimpl	0.889s
+L13093    [045d] ok  	github.com/grafana/grafana/pkg/storage/unified/testing	66.262s
+L13094    [5fb4b] ok  	github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/inhibitionrule	12.536s
+L13095  ✱ [6fb8] --- FAIL: TestIntegrationSearchPermissionFiltering (0.58s)
+          --- FAIL: TestIntegrationSearchPermissionFiltering/search_permission_filtering_with_dual_writer_mode_5 (0.58s)
+          testinfra.go:81: Using test database type sqlite3 host  port  user  name  path /home/ubuntu/.cache/grafana-test/grafana-test-2205360134.db
+          testinfra.go:81:
+          Error Trace:	…/tests/testinfra/testinfra.go:150
+          …/tests/testinfra/testinfra.go:81
+          …/tests/apis/helper.go:126
+          …/tests/apis/helper.go:120
+          …/apis/dashboard/search_test.go:444
+          …/src/runtime/asm_amd64.s:1771
+          Error:      	Received unexpected error:
+          unable to start dualwrite service due to migration error: unified storage data migration failed: migration failed (id = preferences migration): migration failed for org 1 (default): resource_history_delete.sql: Exec with 3 input arguments a
+          FROM "resource_history"
+   …
+L13110  ✱ [ffc9d] FAIL (×2, last L13114)
+L13111  ✱ [72b6] FAIL	github.com/grafana/grafana/pkg/tests/apis/dashboard	42.941s
+L13112    [a0ae] ok  	github.com/grafana/grafana/pkg/tests/apis/provisioning	48.950s
+L13113    [3613] ok  	github.com/grafana/grafana/pkg/tests/apis/provisioning/maxfilesize	5.549s
+L13114  ✱ [ffc9d] FAIL
+L13115  ✱ [eeadb] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L4307   ERRO [c278] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/test_setup_error.txt: Cannot open: File exists
+L4308   ERRO [92a0a] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_run_pkgerror.txt: Cannot open: File exists
+L4317   ERRO [bfba] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/cover_error.txt: Cannot open: File exists
+L4371   ERRO [57af] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/build_cgo_error.txt: Cannot open: File exists
+L4504   ERRO [c5b9] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/cmd_import_error.txt: Cannot open: File exists
+L4574   ERRO [f206] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/cgo_asm_error.txt: Cannot open: File exists
+L4575   ERRO [44f1] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/mod_tidy_error.txt: Cannot open: File exists
+L4604   ERRO [cb11] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/go/testdata/script/pattern_syntax_error.txt: Cannot open: File exists
+L7092   ERRO [7f9a] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/internal/fuzztest/testdata/script/test_fuzz_io_error.txt: Cannot open: 
+L7166   ERRO [fb94e] /usr/bin/tar: ../../../../../home/ubuntu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.linux-amd64/src/cmd/asm/internal/asm/testdata/duperror.s: Cannot open: File exists
+L12941  ERRO [9b596] /usr/bin/tar: Exiting with failure status due to previous errors
+L484    NOTA [8a66] rendering_timeout = 10s
+
+== END OF OUTPUT
+L13074    [58c5] go: downloading github.com/distribution/reference v0.6.0
+L13075    [d02c] go: downloading github.com/docker/go-connections v0.7.0
+L13076    [67347] go: downloading github.com/opencontainers/go-digest v1.0.0
+L13077    [c102] go: downloading github.com/magiconair/properties v1.8.10
+L13078    [575a] go: downloading github.com/shirou/gopsutil/v4 v4.26.6
+L13079    [b115] go: downloading github.com/moby/term v0.5.2
+L13080    [a30be] go: downloading github.com/moby/docker-image-spec v1.3.1
+L13081    [d06d] go: downloading github.com/tklauser/go-sysconf v0.3.16
+L13082    [b77d] go: downloading github.com/tklauser/numcpus v0.11.0
+L13083    [455d] go: downloading github.com/Bose/minisentinel v0.0.0-20200130220412-917c5a9223bb
+L13084    [e9bd] go: downloading github.com/alicebob/miniredis/v2 v2.38.0
+L13085    [2fee] go: downloading github.com/yuin/gopher-lua v1.1.1
+L13086    [2410] ok  	github.com/grafana/grafana/pkg/extensions/apiserver/registry/iam/globalrole/legacy	1.444s
+L13087    [1cdb] ok  	github.com/grafana/grafana/pkg/extensions/apiserver/tests/scim	15.034s
+L13088    [6852] ok  	github.com/grafana/grafana/pkg/registry/apis/secret/encryption/manager	0.620s
+
+== MOST FREQUENT OTHER LINES
+×31      [1f25] Updating files:  69% (16264/23552)
+×29      [cabc] Received 134217728 of 2838532879 (4.7%), 128.0 MBs/sec
+×13      [4293] env:
+×8       [024c] # Whatever happens first between `batch_wait_duration` and `batch_size_bytes` will trigger the batch to be sent to Loki.
+×7       [8d65] with:
+×7       [458b] enabled = false
+×4       [a71a] hint:
+×4       [a90a] # Set the communication protocol to use with Loki (can be grpc or http)
+×4       [63a9] # Set the address for writing logs to Loki (format must be host:port)
+×4       [d70c] # Defaults to true. If true, it establishes a secure connection to Loki
+
+(not shown: 11299 groups, 12,528 lines - including 13 error groups, 13 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

@@ -1,0 +1,217 @@
+cargo test (linux, release)	UNKNOWN STEP	﻿2026-09-26T21:45:08.8469765Z Current runner version: '2.337.0'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8555618Z Runner name: 'depot-nr0zdlpnp3'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8556493Z Runner group name: 'default'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8557208Z Machine name: 'depot-machine'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8558890Z ##[group]GITHUB_TOKEN Permissions
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8560368Z Contents: read
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8561190Z Metadata: read
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8561695Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8562191Z Secret source: Actions
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8562829Z Cache mode: write
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8564775Z Prepare workflow directory
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8805791Z Prepare all required actions
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:08.8836218Z Getting action download info
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:09.0663270Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:09.6351354Z Download action repository 'Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6' (SHA:6323deb102c322ba6fcbdcafc7e3dddab59af2b6)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:09.7823462Z Download action repository 'rui314/setup-mold@9c9c13bf4c3f1adef0cc596abc155580bcb04444' (SHA:9c9c13bf4c3f1adef0cc596abc155580bcb04444)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:09.8681970Z Download action repository 'astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7' (SHA:c18668ad3cf93ea998bef934396af7bb5c839dc7)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.1486933Z Complete job name: cargo test (linux, release)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2415380Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2417371Z with:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2418324Z   persist-credentials: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2419285Z   repository: astral-sh/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2425731Z   token: ***
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2426545Z   ssh-strict: true
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2427373Z   ssh-user: git
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2428167Z   clean: true
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2428978Z   sparse-checkout-cone-mode: true
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2429916Z   fetch-depth: 1
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2430806Z   fetch-tags: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2431759Z   show-progress: true
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2432602Z   lfs: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2433380Z   submodules: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2434193Z   set-safe-directory: true
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2435100Z   allow-unsafe-pr-checkout: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2436156Z env:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2436981Z   UV_LOCKED: 1
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2437783Z   CARGO_INCREMENTAL: 0
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2438689Z   CARGO_NET_RETRY: 10
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2439507Z   CARGO_PROFILE_DEV_LTO: false
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2440430Z   CARGO_PROFILE_DEV_OPT_LEVEL: 0
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2441412Z   CARGO_TERM_COLOR: always
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2442276Z   HAWK_VERSION: 0.1.13
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2443133Z   RUSTUP_MAX_RETRIES: 10
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2443988Z   PACKAGE_NAME: ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2444849Z   PYTHON_VERSION: 3.14
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2445680Z   NEXTEST_PROFILE: ci
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2446484Z   MDTEST_EXTERNAL: 1
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2505872Z   CARGO_PROFILE_PROFILING_DEBUG: line-tables-only
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:10.2507377Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:13.9550153Z Syncing repository: astral-sh/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:13.9553011Z ##[group]Getting Git version info
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:13.9553590Z Working directory is '/home/runner/work/ruff/ruff'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:13.9554346Z [command]/usr/bin/git version
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2274755Z git version 2.55.0
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2288634Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2295776Z Temporarily overriding HOME='/home/runner/work/_temp/f4037b9d-86c6-4a34-9b06-d97cd5f039c0' before making global git config changes
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2296769Z Adding repository directory to the temporary git global config as a safe directory
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2297603Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ruff/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2314055Z Deleting the contents of '/home/runner/work/ruff/ruff'
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2315783Z ##[group]Determining repository object format
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2316507Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2317013Z ##[group]Initializing the repository
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.2318892Z [command]/usr/bin/git init /home/runner/work/ruff/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3372306Z hint: Using 'master' as the name for the initial branch. This default branch name
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3373163Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3373568Z hint: to use in all of your new repositories, which will suppress this warning,
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3373896Z hint: call:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3374128Z hint:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3374386Z hint: 	git config --global init.defaultBranch <name>
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3374638Z hint:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3374886Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3375231Z hint: 'development'. The just-created branch can be renamed via this command:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3375517Z hint:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3375712Z hint: 	git branch -m <name>
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3375923Z hint:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3376169Z hint: Disable this message with "git config set advice.defaultBranchName false"
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3376690Z Initialized empty Git repository in /home/runner/work/ruff/ruff/.git/
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3380196Z [command]/usr/bin/git remote add origin https://github.com/astral-sh/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3410730Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3411354Z ##[group]Disabling automatic garbage collection
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3413143Z [command]/usr/bin/git config --local gc.auto 0
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3430024Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3430992Z ##[group]Setting up auth
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3431332Z Removing SSH command configuration
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3433144Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.3450168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6692854Z Removing HTTP extra header
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6696348Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6712401Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6837380Z Removing includeIf entries pointing to credentials config files
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6840451Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6858087Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.6985828Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d323f954-d701-468a-a6c5-1f6ef56fcf6e.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7004937Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ruff/ruff/.git.path /home/runner/work/_temp/git-credentials-d323f954-d701-468a-a6c5-1f6ef56fcf6e.config
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7020875Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ruff/ruff/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d323f954-d701-468a-a6c5-1f6ef56fcf6e.config
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7037008Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d323f954-d701-468a-a6c5-1f6ef56fcf6e.config
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7053284Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d323f954-d701-468a-a6c5-1f6ef56fcf6e.config
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7067076Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7067461Z ##[group]Fetching the repository
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:14.7071595Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c0f90637be1238026b41cd66397f851322784225:refs/remotes/pull/28845/merge
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3869018Z From https://github.com/astral-sh/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3870325Z  * [new ref]         c0f90637be1238026b41cd66397f851322784225 -> pull/28845/merge
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3872626Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3872925Z ##[group]Determining the checkout info
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3873223Z ##[endgroup]
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3877009Z [command]/usr/bin/git sparse-checkout disable
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3915332Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3929064Z ##[group]Checking out the ref
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.3930373Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/28845/merge
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6940696Z Note: switching to 'refs/remotes/pull/28845/merge'.
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6941502Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6941686Z You are in 'detached HEAD' state. You can look around, make experimental
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6941999Z changes and commit them, and you can discard any commits you make in this
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6942354Z state without impacting any branches by switching back to a branch.
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6942568Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6942709Z If you want to create a new branch to retain commits you create, you may
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6942992Z do so (now or later) by using -c with the switch command. Example:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943165Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943279Z   git switch -c <new-branch-name>
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943416Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943613Z Or undo this operation with:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943739Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6943834Z   git switch -
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6944033Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:45:15.6944187Z Turn off this advice by setting config variable advice.detachedHead to false
+cargo 
+
+... [2439895 characters truncated] ...
+
+ggestion^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:05.9117525Z ^[[33;1m        SLOW^[[0m [> 38.000s] (─────────) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmultislice^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:06.1845982Z ^[[33;1m        SLOW^[[0m [>  4.000s] (─────────) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_suspend_change_suspend_cycle^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:06.2232664Z ^[[32;1m        PASS^[[0m [   4.043s] (9420/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_suspend_change_suspend_cycle^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:06.9120972Z ^[[33;1m        SLOW^[[0m [> 39.000s] (─────────) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmultislice^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:07.9136863Z ^[[33;1m        SLOW^[[0m [> 40.000s] (─────────) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmultislice^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5335467Z ^[[32;1m        PASS^[[0m [  40.666s] (9421/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmultislice^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5337505Z ────────────
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5338010Z ^[[31;1m     Summary^[[0m [  41.657s] ^[[1m9421^[[0m tests run: ^[[1m9420^[[0m ^[[32;1mpassed^[[0m (^[[1m28^[[0m ^[[33;1mslow^[[0m), ^[[1m1^[[0m ^[[31;1mfailed^[[0m, ^[[1m44^[[0m ^[[33;1mskipped^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5338564Z ^[[33;1m        SLOW^[[0m [   4.241s] (1564/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mcustom_level^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5339072Z ^[[33;1m        SLOW^[[0m [   7.419s] (2176/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mstruct_name_as_context^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5339632Z ^[[33;1m        SLOW^[[0m [  10.680s] (3038/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mfooter^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5340043Z ^[[33;1m        SLOW^[[0m [  13.926s] (4468/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1melide_header^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5340543Z ^[[33;1m        SLOW^[[0m [  17.209s] (5564/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mcustom_error^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5341112Z ^[[33;1m        SLOW^[[0m [   1.221s] (5908/9421) ^[[35;1mty::cli^[[0m ^[[36mscripts::uv_metadata^[[0m^[[36m::^[[0m^[[34;1mcli_python_selects_script_interpreter_without_replacing_its_environment^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5341688Z ^[[33;1m        SLOW^[[0m [   1.258s] (5910/9421) ^[[35;1mty::cli^[[0m ^[[36mscripts::uv_metadata^[[0m^[[36m::^[[0m^[[34;1mimported_script_environment^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5342215Z ^[[33;1m        SLOW^[[0m [   1.337s] (5919/9421) ^[[35;1mty::cli^[[0m ^[[36mscripts::uv_metadata^[[0m^[[36m::^[[0m^[[34;1msynchronizes_imported_script_with_one_worker^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5342713Z ^[[33;1m        SLOW^[[0m [  20.948s] (6046/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mhighlight_message^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5343148Z ^[[33;1m        SLOW^[[0m [  24.400s] (6825/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mhighlight_source^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5343578Z ^[[33;1m        SLOW^[[0m [  27.803s] (7649/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mid_hyperlink^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5344037Z ^[[33;1m        SLOW^[[0m [   1.408s] (8896/9421) ^[[35;1mty_python_semantic::corpus^[[0m ^[[36mlinter_no_panic^[[0m^[[36m::^[[0m^[[34;1m_f_expects^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5344540Z ^[[33;1m        SLOW^[[0m [  31.375s] (8937/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mformat^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5344993Z ^[[33;1m        SLOW^[[0m [   1.090s] (8998/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/pytest.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5345497Z ^[[33;1m        SLOW^[[0m [   1.110s] (9006/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/strawberry.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5346035Z ^[[33;1m        SLOW^[[0m [   1.168s] (9011/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/pydantic_extra_search_paths.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5346556Z ^[[33;1m        SLOW^[[0m [   1.370s] (9032/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/sqlalchemy.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5347054Z ^[[33;1m        SLOW^[[0m [   2.074s] (9132/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/pydantic.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5347524Z ^[[33;1m        SLOW^[[0m [  34.772s] (9412/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mexpected_type^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5348020Z ^[[33;1m        SLOW^[[0m [   2.038s] (9413/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1minvalid_syntax_with_syntax_errors_disabled^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5348609Z ^[[33;1m        SLOW^[[0m [   2.033s] (9414/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_responds_on_shutdown^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5349216Z ^[[33;1m        SLOW^[[0m [   2.042s] (9415/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_responds_on_cancellation^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5349816Z ^[[33;1m        SLOW^[[0m [   2.042s] (9416/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_responds_on_change^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5350504Z ^[[33;1m        SLOW^[[0m [   2.050s] (9417/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_caching_unchanged_with_colon_in_path^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5351058Z ^[[33;1m        SLOW^[[0m [   2.029s] (9418/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mworkspace_folders^[[0m^[[36m::^[[0m^[[34;1mremove_only_workspace^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5351524Z ^[[33;1m        SLOW^[[0m [  37.743s] (9419/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmulti_suggestion^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5352096Z ^[[33;1m        SLOW^[[0m [   4.043s] (9420/9421) ^[[35;1mty_server::e2e^[[0m ^[[36mpull_diagnostics^[[0m^[[36m::^[[0m^[[34;1mworkspace_diagnostic_long_polling_suspend_change_suspend_cycle^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5352617Z ^[[33;1m        SLOW^[[0m [  40.666s] (9421/9421) ^[[35;1mruff_annotate_snippets::examples^[[0m ^[[34;1mmultislice^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5353072Z ^[[31;1m        FAIL^[[0m [   0.072s] (8933/9421) ^[[35;1mty_python_semantic::mdtest^[[0m ^[[36mmdtest^[[0m^[[36m::^[[0m^[[34;1mexternal/attrs.md^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5353459Z ^[[31;1m ^[[0m ^[[31;1mstdout^[[0m ^[[31;1m───^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5353606Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5353716Z     running 1 test
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5353890Z     test mdtest::external/attrs.md ... FAILED
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5354028Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5354105Z     failures:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5354200Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5354294Z     ---- mdtest::external/attrs.md ----
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5354632Z     test panicked: Failed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2):
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5355170Z     warning: `VIRTUAL_ENV=/home/runner/work/ruff/ruff/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5355723Z     error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5356099Z       cause: Failed to query Python interpreter
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5356593Z       cause: failed to rename file from /home/runner/.cache/uv/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to /home/runner/.cache/uv/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357042Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357078Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357113Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357188Z     failures:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357338Z         mdtest::external/attrs.md
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357468Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357643Z     test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5357911Z     ^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5358083Z ^[[31;1m ^[[0m ^[[31;1mstderr^[[0m ^[[31;1m───^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5358216Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5358413Z     ^[[0m^[[31;1mthread '<unnamed>' (76676) panicked at crates/ty_test/src/lib.rs:160:10:^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5358829Z     ^[[31;1mFailed to setup in-memory virtual environment with dependencies: `uv sync` failed with exit code Some(2):^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5359406Z     warning: `VIRTUAL_ENV=/home/runner/work/ruff/ruff/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5359955Z     error: Failed to inspect Python interpreter from first executable in the search path at `/home/runner/work/ruff/ruff/.venv/bin/python3`
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5360372Z       cause: Failed to query Python interpreter
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5360865Z       cause: failed to rename file from /home/runner/.cache/uv/interpreter-v4/4e3ddf3351280e7a/.tmpbqfU81 to /home/runner/.cache/uv/interpreter-v4/4e3ddf3351280e7a/570d2258a5537d7b.msgpack: No such file or directory (os error 2)
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5361287Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5361473Z     note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace^[[0m
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5361672Z 
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5372693Z ^[[31;1merror^[[0m: test run failed
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5422215Z ##[error]Process completed with exit code 100.
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.5514749Z Post job cleanup.
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6016000Z [command]/usr/bin/git version
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6043250Z git version 2.55.0
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6064374Z Temporarily overriding HOME='/home/runner/work/_temp/196e7c3b-6383-4bba-966e-069efa96c0c6' before making global git config changes
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6065378Z Adding repository directory to the temporary git global config as a safe directory
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6068102Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ruff/ruff
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6089368Z Removing SSH command configuration
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6092631Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6112295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6244563Z Removing HTTP extra header
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6246992Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6265720Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6390835Z Removing includeIf entries pointing to credentials config files
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6396041Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6414020Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cargo test (linux, release)	UNKNOWN STEP	2026-09-26T21:48:08.6628414Z Cleaning up orphan processes

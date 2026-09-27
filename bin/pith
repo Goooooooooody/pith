@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""Launcher used by the Claude Code plugin (bin/ is on the Bash tool's PATH) and by a git checkout."""
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir, "src"))
+
+from pith.cli import main  # noqa: E402
+
+sys.exit(main())

@@ -1,0 +1,153 @@
+pith · <log> · 58,769 lines → 18421 groups · ~2418.2k → ~4.0k tokens (99.8% smaller)
+
+jobs: Windows, SQLite, Python 3.14; Ubuntu, SQLite, Python 3.14t
+levels: error 152 · warn 57 · notable 389 · info 51,006
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Windows, SQLite, Python 3.14
+L16022    [f884] test_mixed_views_raise_error (async.tests.ViewTests.test_mixed_views_raise_error) ... ok (×2, last L49915)
+L16023    [17c6] test_options_handler_responds_correctly (async.tests.ViewTests.test_options_handler_responds_correctly) ... ok (×4, last L49916)
+L16024    [32af] test_views_are_correctly_marked (async.tests.ViewTests.test_views_are_correctly_marked) ... ok (×2, last L49917)
+L16025  ✱ [c351] CancelledError exception in shielded future (×4, last L46647)
+L16026  ✱ [369d] future: <Future finished exception=CancelledError()> (×4, last L46648)
+L16027  ✱ [f8e5] Traceback (most recent call last): (×8, last L58703)
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\concurrent\futures\thread.py", line 86, in run
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\concurrent\futures\thread.py", line 73, in run
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\site-packages\asgiref\sync.py", line 581, in thread_handler
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\site-packages\asgiref\sync.py", line 508, in func
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\site-packages\asgiref\sync.py", line 506, in run_child
+          (+18 frames hidden)
+   …
+L29336    [33f3] Importing application wsgi (×10, last L58621)
+L29337    [b689] Importing application xor_lookups (×10, last L58488)
+L29339    [ee292] ====================================================================== (×2, last L58700)
+L29340  ✱ [4c36] FAIL: test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null) (×2, last L58701)
+L29342  ✱ [f8e5] Traceback (most recent call last):
+          File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\unittest\case.py", line 58, in testPartExecutor
+          (+8 frames hidden)
+   …
+L29369  ✱ [034f] AssertionError: Lists differ: ['i1', None] != ['i1'] (×2, last L58730)
+L29371    [2c41] First list contains 1 additional elements. (×2, last L58732)
+L29372    [cc44] First extra element 1: (×2, last L58733)
+L29373    [e1959] None (×2, last L58734)
+L29376    [4b4d8] + ['i1'] (×2, last L58737)
+L29378    [af66] ---------------------------------------------------------------------- (×4, last L58739)
+L29379    [00ce] Ran 19852 tests in 297.263s (×2, last L58740)
+L29381  ✱ [259b3] FAILED (failures=1, skipped=1605, expected failures=4) (×2, last L58742)
+L29382    [1e08] Destroying test database for alias 'default' ('default_1.sqlite3')... (×2, last L58743)
+L29384    [c520] Destroying test database for alias 'default' ('default_2.sqlite3')... (×2, last L58744)
+L29386    [4c6a] Destroying test database for alias 'default' ('default_3.sqlite3')... (×2, last L58745)
+L29388    [c5235] Destroying test database for alias 'default' ('default_4.sqlite3')... (×2, last L58746)
+L29390    [91a54] Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')... (×2, last L58747)
+L29392    [f6c1] Destroying test database for alias 'other' ('other_1.sqlite3')... (×2, last L58748)
+L29394    [a59d] Destroying test database for alias 'other' ('other_2.sqlite3')... (×2, last L58749)
+L29396    [2ced] Destroying test database for alias 'other' ('other_3.sqlite3')... (×2, last L58750)
+L29398    [454cd] Destroying test database for alias 'other' ('other_4.sqlite3')... (×2, last L58751)
+L29400    [3327] Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')... (×2, last L58752)
+          OK
+L29403    [cc3ca] System check identified no issues (17 silenced). (×2, last L33332)
+L29404  ✱ [eeadb] ##[error]Process completed with exit code 1. (×2, last L58753)
+-- job: Ubuntu, SQLite, Python 3.14t
+L29823    [2f89] ▶ Run python -Wall tests/runtests.py -v2 (×2, last L29823)
+   …
+L58742  ✱ [259b3] FAILED (failures=1, skipped=1508, expected failures=4)
+L58753  ✱ [eeadb] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L9697   ERRO [b987] test_get_list_or_404_queryset_attribute_error (get_object_or_404.tests.GetObjectOr404Tests.test_get_list_or_404_queryset_attribute_error) (×4, last L35567)
+L13078  ERRO [0c72] test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null) ... FAIL (×2, last L33542)
+L14149  ERRO [b4d16] test_max_recursion_error (settings_tests.tests.ClassDecoratedTestCase.test_max_recursion_error) (×2, last L38160)
+L14583  ERRO [c53d] test_item_link_error (syndication_tests.tests.SyndicationFeedTest.test_item_link_error) (×2, last L42104)
+L14811  ERRO [eccd] test_form_error (test_client.tests.ClientTest.test_form_error) (×2, last L35077)
+L14873  ERRO [259b] test_response_raises_multi_arg_exception (test_client.tests.ClientTest.test_response_raises_multi_arg_exception) (×4, last L35201)
+L14912  ERRO [8bdd] test_view_with_exception (test_client.tests.ClientTest.test_view_with_exception) (×2, last L35178)
+L15272  ERRO [adfe] test_server_error (view_tests.tests.test_defaults.DefaultsTests.test_server_error) (×2, last L40368)
+L15538  ERRO [2816] test_run_from_argv_non_ascii_error (admin_scripts.tests.CommandTypes.test_run_from_argv_non_ascii_error) (×2, last L45577)
+L15975  ERRO [672e] test_attribute_error (admin_scripts.tests.ManageSettingsWithSettingsErrors.test_attribute_error) (×2, last L45757)
+L15979  ERRO [c987] test_import_error (admin_scripts.tests.ManageSettingsWithSettingsErrors.test_import_error) (×2, last L45761)
+L16090  ERRO [24a2] asyncio.exceptions.CancelledError (×6, last L46721)
+L16540  ERRO [6674] test_duplicate_table_error (backends.tests.BackendTestCase.test_duplicate_table_error) (×2, last L57004)
+L17304  ERRO [cd56] test_reading_post_data_raises_os_error (csrf_tests.tests.CsrfViewMiddlewareTests.test_reading_post_data_raises_os_error) (×4, last L45116)
+L17402  ERRO [f4430] test_reading_post_data_raises_os_error (csrf_tests.tests.CsrfViewMiddlewareUseSessionsTests.test_reading_post_data_raises_os_error) (×4, last L45214)
+L17830  ERRO [52ea9] test_file_chunks_error (file_storage.tests.CustomStorageTests.test_file_chunks_error) (×2, last L46049)
+L17876  ERRO [513c] test_file_chunks_error (file_storage.tests.DiscardingFalseContentStorageTests.test_file_chunks_error) (×2, last L46095)
+L18035  ERRO [70cc] test_file_chunks_error (file_storage.tests.FileStorageTests.test_file_chunks_error) (×2, last L46155)
+L18079  ERRO [3095] test_file_chunks_error (file_storage.tests.OverwritingStorageTests.test_file_chunks_error) (×2, last L46199)
+L19146  ERRO [68421] test_render_check_exception (forms_tests.widget_tests.test_checkboxinput.CheckboxInputTest.test_render_check_exception) (×2, last L48472)
+L19547  ERRO [8aa1] test_get_or_create_integrityerror (get_or_create.tests.GetOrCreateTransactionTests.test_get_or_create_integrityerror) (×2, last L46430)
+L20438  ERRO [3b32] test_bad_header_error (mail.test_deprecated.DeprecatedCompatibilityTests.test_bad_header_error) (×2, last L50767)
+L21301  ERRO [de7b] test_fail_silently_on_connection_error (mail.test_backends.SMTPBackendStoppedServerTests.test_fail_silently_on_connection_error) (×2, last L50756)
+L21738  ERRO [39ee] test_makemigrations_migration_path_output_valueerror (migrations.test_commands.MakeMigrationsTests.test_makemigrations_migration_path_output_valueerror) (×2, last L50451)
+L22634  ERRO [ef899] test_FILES_connection_error (requests_tests.tests.RequestsTests.test_FILES_connection_error) (×2, last L50049)
+L22643  ERRO [5030] test_POST_connection_error (requests_tests.tests.RequestsTests.test_POST_connection_error) (×2, last L50058)
+L23068  ERRO [b9fc] test_related_but_unselected_of_argument_raises_error (select_for_update.tests.SelectForUpdateTests.test_related_but_unselected_of_argument_raises_error) (×12, last L52068)
+L24340  ERRO [a0c2] test_templatetag_discovery_import_error (template_backends.test_django.DjangoTemplatesTests.test_templatetag_discovery_import_error) (×2, last L50239)
+L24370  ERRO [8508] test_backend_import_error (template_backends.test_utils.TemplateUtilsTests.test_backend_import_error) (×2, last L50269)
+L25991  ERRO [fc96] test_extend_self_error (template_tests.test_extends.ExtendsBehaviorTests.test_extend_self_error) (×2, last L55922)
+L26122  ERRO [dc40] test_compile_filter_expression_error (template_tests.tests.TemplateTests.test_compile_filter_expression_error) (×2, last L56053)
+L26124  ERRO [64b0] test_compile_tag_error (template_tests.tests.TemplateTests.test_compile_tag_error) (×2, last L56055)
+L26135  ERRO [cc6c] test_no_wrapped_exception (template_tests.tests.TemplateTests.test_no_wrapped_exception) (×2, last L56066)
+L26153  ERRO [c8f7] test_compile_filter_expression_error (template_tests.tests.DebugTemplateTests.test_compile_filter_expression_error) (×2, last L56084)
+L26155  ERRO [18c5] test_compile_tag_error (template_tests.tests.DebugTemplateTests.test_compile_tag_error) (×2, last L56086)
+L26166  ERRO [add2] test_no_wrapped_exception (template_tests.tests.DebugTemplateTests.test_no_wrapped_exception) (×2, last L56097)
+L26454  ERRO [ee67] test_run_suite_logs_seed_exception (test_runner.test_discover_runner.DiscoverRunnerTests.test_run_suite_logs_seed_exception) (×2, last L47351)
+L26541  ERRO [411a] test_debug_bubbles_error (test_utils.test_simpletestcase.DebugInvocationTests.test_debug_bubbles_error) (×2, last L46815)
+L26543  ERRO [8e34] test_debug_bubbles_post_teardown_error (test_utils.test_simpletestcase.DebugInvocationTests.test_debug_bubbles_post_teardown_error) (×4, last L46819)
+L26890  ERRO [9998] test_regex_compile_error (urlpatterns_reverse.test_localeregexdescriptor.LocaleRegexDescriptorPathLibTests.test_regex_compile_error) (×2, last L48783)
+L26895  ERRO [0cd6] test_regex_compile_error (urlpatterns_reverse.test_localeregexdescriptor.LocaleRegexDescriptorTests.test_regex_compile_error) (×2, last L48788)
+L26917  ERRO [31d7] test_no_urls_exception (urlpatterns_reverse.tests.NoURLPatternsTests.test_no_urls_exception) (×2, last L48850)
+L27348  ERRO [3fce] test_force_bytes_exception (utils_tests.test_encoding.TestEncodingUtils.test_force_bytes_exception) (×2, last L51577)
+L27353  ERRO [22e8] test_force_str_exception (utils_tests.test_encoding.TestEncodingUtils.test_force_str_exception) (×2, last L51582)
+L27635  ERRO [c891] test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests.test_handle_db_exception) (×2, last L53022)
+L27735  ERRO [19883] test_no_exception (view_tests.tests.test_debug.PlainTextReportTests.test_no_exception) (×2, last L53079)
+L27739  ERRO [5d48] test_request_and_exception (view_tests.tests.test_debug.PlainTextReportTests.test_request_and_exception) (×2, last L53083)
+L27910  ERRO [95a2] test_file_move_permissionerror (files.tests.FileMoveSafeTests.test_file_move_permissionerror) (×2, last L57146)
+L28078  ERRO [326c] test_encoding_error (view_tests.tests.test_debug.ExceptionReporterTests.test_encoding_error) (×2, last L53092)
+L28094  ERRO [09d4] test_no_exception (view_tests.tests.test_debug.ExceptionReporterTests.test_no_exception) (×2, last L53108)
+L28104  ERRO [9057a] test_request_and_exception (view_tests.tests.test_debug.ExceptionReporterTests.test_request_and_exception) (×2, last L53118)
+L28238  ERRO [4f51] test_multivalue_dict_key_error (view_tests.tests.test_debug.ExceptionReporterFilterTests.test_multivalue_dict_key_error) (×2, last L53327)
+L527    WARN [9f49] Importing application deprecation (×10, last L58690)
+L17604  WARN [77a4] test_all_keyword_only_params (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_all_keyword_only_params) (×2, last L56734)
+L17606  WARN [97bc] test_allows_reordering_keyword_only_params (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_allows_reordering_keyword_only_params) (×10, last L56760)
+L17608  WARN [fa2c] test_applied_to_lambda (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_applied_to_lambda) (×2, last L56738)
+L17610  WARN [33ca] test_async (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_async) (×2, last L56740)
+L17613  WARN [e6a8] test_bare_init (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_bare_init) (×2, last L56743)
+L17615  WARN [53be] test_class_methods (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_class_methods) (×2, last L56745)
+L17634  WARN [957a] test_some_keyword_only_params (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_some_keyword_only_params) (×2, last L56764)
+L17636  WARN [69c4] test_variable_kwargs (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_variable_kwargs) (×2, last L56766)
+L17638  WARN [7bc9] test_warning_source_location (deprecation.test_deprecate_posargs.DeprecatePosargsTests.test_warning_source_location) (×2, last L56768)
+L17644  WARN [e8a6] test_sync_to_async_uses_base_thread_and_connection (deprecation.test_middleware_mixin.MiddlewareMixinTests.test_sync_to_async_uses_base_thread_and_connection) (×2, last L56774)
+L17690  WARN [e3b6] test_class_definition_warnings (deprecation.tests.RenameMethodsTests.test_class_definition_warnings) (×2, last L56820)
+L17692  WARN [7f92] test_deprecated_subclass_renamed (deprecation.tests.RenameMethodsTests.test_deprecated_subclass_renamed) (×6, last L56831)
+L17696  WARN [9b6c] test_get_new_defined (deprecation.tests.RenameMethodsTests.test_get_new_defined) (×2, last L56826)
+L17698  WARN [1b84] test_get_old_defined (deprecation.tests.RenameMethodsTests.test_get_old_defined) (×2, last L56828)
+L20454  WARN [e78d] test_deprecated_on_import (mail.test_deprecated.DeprecationWarningTests.test_deprecated_on_import) (×2, last L50833)
+L29591  NOTA [0ba0] Version 3.14 was not found in the local cache
+
+== END OF OUTPUT
+L58694    [0bcc] Importing application resolve_url
+L58695    [95be] Importing application unmanaged_models
+L58696    [7562] Importing application model_options
+L58697    [d683] Importing application swappable_models
+L58698    [2568] Importing application raw_query
+L58700    [ee292] ======================================================================
+L58701    [4c36] FAIL: test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null)
+L58703    [f8e5] Traceback (most recent call last):
+L58730    [034f] AssertionError: Lists differ: ['i1', None] != ['i1']
+L58732    [2c41] First list contains 1 additional elements.
+L58733    [cc44] First extra element 1:
+L58734    [e1959] None
+L58736    [ac8d] - ['i1', None]
+L58737    [4b4d8] + ['i1']
+L58739    [af66] ----------------------------------------------------------------------
+
+== MOST FREQUENT OTHER LINES
+×170     [c208] Create a new function with partial application of the given arguments ... ok
+×136     [485b] test_add_constraint_percent_escaping (migrations.test_operations.OperationTests.test_add_constraint_percent_escaping) ... ok
+×136     [c5f0] test_add_field_both_defaults_preserves_db_default (schema.tests.SchemaTests.test_add_field_both_defaults_preserves_db_default) ... ok
+×106     [297c] test_json_fk_as_pk_natural_key_not_called (serializers.test_natural.NaturalKeySerializerTests.test_json_fk_as_pk_natural_key_not_called)
+×102     [58f99] test_add_auto_field_does_not_request_default (migrations.test_autodetector.AutodetectorTests.test_add_auto_field_does_not_request_default) .
+×100     [8ae0] test_aggregate_over_complex_annotation (aggregation.tests.AggregateTestCase.test_aggregate_over_complex_annotation) ... ok
+
+(not shown: 18307 groups, 50,525 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

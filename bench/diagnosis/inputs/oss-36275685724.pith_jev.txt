@@ -1,0 +1,129 @@
+pith · <log> · 4,509 lines → 3660 groups · ~138.1k → ~2.2k tokens (98.4% smaller)
+
+jobs: Screenshots; Screenshots & Tests
+levels: error 17 · warn 7 · notable 4 · info 4,130
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 945/1000 groups as confident noise (2660 rarest groups not scored) · 2 requests · 3,297 tokens · $0.0001 · 1.1s
+most likely root cause: [6104] rc=0.51 (confidence 0.49, cause visible p=0.66)
+
+== LIKELY ROOT CAUSE (jev rc=0.51)
+[6104] ERROR ×1  act=0.75 val=2.9/4 rc=0.51  L4409  job: Screenshots
+  ##[error]blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content.
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Screenshots
+L3998     [e448] MANIFEST="test/componentFixtures/.screenshots/current/manifest.json"
+L3999     [322d] if [ ! -f "$MANIFEST" ]; then
+          echo "::warning::No manifest found — render may have failed entirely"
+          exit 0
+L4003   ✱ [9857] # Log per-fixture errors but do not fail here — let later steps run
+L4004   ✱ [0019] # (artifact upload, diff, PR comment) so failures are debuggable.
+L4005   ✱ [946b] # The final "Fail if fixtures had errors" step turns this into a
+L4006   ✱ [fe66] # job failure.
+L4007   ✱ [d2db] if node -e "
+          const m = require('./$MANIFEST');
+          const errs = m.fixtures.filter(f => f.hasError);
+          if (!errs.length) { console.log('No fixture errors.'); process.exit(0); }
+          console.log(errs.length + ' fixture(s) with errors:');
+          for (const f of errs) {
+          const errorEvents = (f.events || []).filter(e => e.isError);
+   …
+L4014   ✱ [2646] const msg = errorEvents.map(e => e.message).join('; ') || 'unknown error';
+L4015   ✱ [5ee2] console.log('::error::' + f.fixtureId + ': ' + msg);
+L4016     [d4d4] for (const e of errorEvents) {
+          if (e.stack) { console.log('  stack: ' + e.stack); }
+          }
+L4019   ✱ [d136] const nonErrorEvents = (f.events || []).filter(e => !e.isError);
+L4020     [290ad] for (const e of nonErrorEvents) { console.log('  event: ' + JSON.stringify(e)); }
+          }
+L4022     [708b] process.exit(1);
+L4023     [02d8] "; then
+          echo "has_errors=false" >> "$GITHUB_OUTPUT"
+   …
+L4389     [a34a] result-encoding: json
+L4390     [87d9] retries: 0
+L4391     [0b84] retry-exempt-status-codes: 400,401,403,404,422
+L4392     [4293] env: (×18, last L4406)
+          NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-61cf97560124551360a66608881b61d693862193589d489a33734f21a4baa5e2
+          COMMENT_BODY_PATH: /tmp/comment-body.md
+          WORKFLOW_RUN_URL: https://github.com/microsoft/vscode/actions/runs/36275685724
+          (+2 lines)
+   …
+L4399   ✱ [9a36] ▶ Run echo "::error::blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content."
+L4400   ✱ [8356] echo "::error::blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content."
+L4401     [fdf0] echo ""
+L4402     [3efe] echo "Diff between committed and expected blocks-ci-screenshots.md:"
+L4403     [40ca] diff -u test/componentFixtures/blocks-ci-screenshots.md /tmp/blocks-ci-updated.md || true
+   …
+L4409   ✱ [6104] ##[error]blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content.
+L4411     [5320] Diff between committed and expected blocks-ci-screenshots.md:
+L4412     [8297] --- test/componentFixtures/blocks-ci-screenshots.md	2026-09-26 22:16:27.792299478 +0000
+L4413     [11de] +++ /tmp/blocks-ci-updated.md	2026-09-26 22:32:27.464948852 +0000
+L4414     [dc44] @@ -220,13 +220,13 @@
+          ![screenshot](https://hediet-screenshots.azurewebsites.net/images/d45768ef875bb18b3f9b712a569d6012c45471ffe1c15f7ba54a9a1623e063c4)
+          #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Dark
+   …
+L4418     [b26a] -![screenshot](https://hediet-screenshots.azurewebsites.net/images/4517e43220e3ad090e25ea7dfc493b4c4f428edf8858ec41ecf1e41c1f0b3bf2) (×2, last L4425)
+L4419     [14d6] +![screenshot](https://hediet-screenshots.azurewebsites.net/images/75f2af25406da9d02fc92f0bda36e7e22053ea804f74b18946c1053b6d6bb8b8) (×2, last L4426)
+          #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/DarkHighContrast
+          ![screenshot](https://hediet-screenshots.azurewebsites.net/images/5127c83d91aec7ec0776ea4d86d110d18e70c171100445e9ef2ceed836e19b04)
+          #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Light
+   …
+L4430   ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Screenshots & Tests
+L4491     [f1c4] Cache mode: write (×2, last L4491)
+L4492     [7900] Prepare workflow directory (×2, last L4492)
+L4493     [938a] Prepare all required actions (×3, last L4493)
+L4494     [64de] Complete job name: Screenshots & Tests
+L4495     [69af] ▶ Run if [[ 'success' != 'success' ||
+L4496     [d2ad] if [[ 'success' != 'success' ||
+          'failure' != 'success' ]]; then
+L4498   ✱ [6129] echo "::error::Component fixture checks failed."
+L4499     [bba6] echo "Playwright: success"
+L4500   ✱ [8583] echo "Screenshots: failure"
+L4501     [3133] exit 1 (×2, last L4501)
+L4502     [de9d] fi (×8, last L4502)
+L4503     [c522] shell: /usr/bin/bash -e {0} (×15, last L4503)
+L4505   ✱ [034d] ##[error]Component fixture checks failed.
+L4506     [deb0] Playwright: success
+L4507   ✱ [5004] Screenshots: failure
+L4508   ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L4508)
+
+== OTHER ERRORS & WARNINGS
+L338    WARN [df8b] npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+L339    WARN [9b1a] npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+L340    WARN [f1fa] npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+L341    WARN [cba3] npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+L342    WARN [a48c] npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+L343    WARN [67cd] npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+== END OF OUTPUT
+L4371     [30c2] Screenshots	UNKNOWN STEP	  await github.rest.issues.updateComment({
+L4374     [e5b2] Screenshots	UNKNOWN STEP	    comment_id: existing.id,
+L4377     [8261] Screenshots	UNKNOWN STEP	} else {
+L4378     [ac78] Screenshots	UNKNOWN STEP	  await github.rest.issues.createComment({
+L4379     [8046] Screenshots	UNKNOWN STEP	    owner: context.repo.owner,
+L4381     [aab5] Screenshots	UNKNOWN STEP	    issue_number: context.issue.number,
+L4384     [b4c5] Screenshots	UNKNOWN STEP	}
+L4385     [342e] Screenshots	UNKNOWN STEP
+L4386     [1a3c] github-token: ***
+L4387     [0f56] debug: false
+L4388     [385b] user-agent: actions/github-script
+L4405     [c522] shell: /usr/bin/bash -e {0}
+L4464     [34e5] Screenshots & Tests	UNKNOWN STEP	﻿2026-09-26T22:33:08.7443794Z Current runner version: '2.337.0'
+L4471     [fe5a] Azure Region: westcentralus
+L4490     [c07b] Secret source: Actions
+
+== MOST FREQUENT OTHER LINES
+×7       [8d65] with:
+×5       [6da2] else
+×2       [4c36] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+×2       [8399] Removing SSH command configuration
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [66c6] Removing HTTP extra header
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+
+(not shown: 2633 groups, 2,636 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

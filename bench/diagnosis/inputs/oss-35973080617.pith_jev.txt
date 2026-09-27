@@ -1,0 +1,73 @@
+pith · <log> · 1,807 lines → 664 groups · ~44.0k → ~1.3k tokens (97.1% smaller)
+
+jobs: Devcontainer smoke test
+levels: error 17 · warn 6 · notable 6 · info 677
+raw: <removed for evaluation>
+jev (jev-latest): hid 636/664 groups as confident noise · 1 requests · 1,767 tokens · $0.0001 · 0.5s
+most likely root cause: [c583] rc=0.53 (confidence 0.50, cause visible p=0.69)
+
+== LIKELY ROOT CAUSE (jev rc=0.53)
+[c583] ERROR ×1  act=0.82 val=3.0/4 rc=0.53  L1732  job: Devcontainer smoke test
+  [2026-09-24T08:05:55.687Z] Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Devcontainer smoke test
+L1692     [6570] ▶ 🏗️ build container
+   ...
+L1701     [c9b9] services:
+          rails-app:
+          build:
+          context: /home/runner/work/rails/rails/myapp_sqlite
+          (+21 lines)
+   ...
+L1726     [c7fd] networks:
+          default:
+          name: myapp_sqlite_default
+   ...
+L1730     [c071] [2026-09-24T08:05:54.919Z] Start: Run: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1732   ✱ [c583] [2026-09-24T08:05:55.687Z] Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.
+L1736   ✱ [86cb] [2026-09-24T08:05:56.450Z] Error response from daemon: manifest unknown
+L1738   ✱ [178d] [2026-09-24T08:05:56.452Z] Retrying (Attempt 0) with error
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1744   ✱ [86cb] [2026-09-24T08:05:58.245Z] Error response from daemon: manifest unknown
+   ...
+L1758     [f641] [2026-09-24T08:06:00.988Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11 (×5, last L1766)
+L1760   ✱ [86cb] [2026-09-24T08:06:01.755Z] Error response from daemon: manifest unknown (×5, last L1768)
+L1762   ✱ [178d] [2026-09-24T08:06:01.757Z] Retrying (Attempt 3) with error (×5, last L1770)
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1764     [5fb4] ' (×5, last L1772)
+L1768   ✱ [86cb] [2026-09-24T08:06:03.512Z] Error response from daemon: manifest unknown
+L1770   ✱ [178d] [2026-09-24T08:06:03.514Z] Retrying (Attempt 4) with error
+          'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1774   ✱ [85c1b] [2026-09-24T08:06:04.515Z] Command failed: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1775     [52f6] [2026-09-24T08:06:04.515Z] []
+L1776   ✱ [6412] [2026-09-24T08:06:04.515Z] Error response from daemon: No such image: ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1778   ✱ [7441] [2026-09-24T08:06:04.515Z] Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1780   ✱ [cf7d] ##[error]Dev container build failed: Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11 (exit code: undefined)
+L1782   ✱ [54e0] ##[error]Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+L1781   ✱ [4f6c] Devcontainer smoke test	UNKNOWN STEP	An error occurred building the container.
+
+== OTHER ERRORS & WARNINGS
+L118    WARN [a5ec] (node:2074) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×2, last L1785)
+L1807   WARN [2572] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, devcontainers/ci@8bf61b26e9c3a98f69cb6c
+L1000   NOTA [397d] Fetching timeout 0.6.1
+
+== END OF OUTPUT
+L1655     [5808] Created .kamal/secrets file
+L1656     [c74d] Created sample hooks in .kamal/hooks
+L1671     [8d65] with:
+L1752     [86cb] [2026-09-24T08:05:59.986Z] Error response from daemon: manifest unknown
+L1754     [178d] [2026-09-24T08:05:59.988Z] Retrying (Attempt 2) with error
+L1756     [5fb4] '
+
+== MOST FREQUENT OTHER LINES
+×2       [f23c] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×1       [301e] Devcontainer smoke test	UNKNOWN STEP	﻿2026-09-24T08:04:06.7964815Z Current runner version: '2.337.0'
+×1       [c07b] Secret source: Actions
+×1       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+×1       [93e5] ▶ Setting up auth
+×1       [a5ba2] The public API of some Rubyzip classes has been modernized to use named

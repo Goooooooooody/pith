@@ -1,0 +1,294 @@
+Sanitizers / UBSan	UNKNOWN STEP	﻿2026-09-26T21:04:46.3158255Z Current runner version: '2.337.0'
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3179477Z ##[group]Runner Image Provisioner
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3180143Z Hosted Compute Agent
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3180470Z Version: 20260828.587
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3180938Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3181346Z Build Date: 2026-08-28T16:44:25Z
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3181803Z Worker ID: {0849357f-4fa6-412a-8b36-73de26fbe9b9}
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3182260Z Azure Region: centralus
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3182638Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3183548Z ##[group]Operating System
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3183971Z Ubuntu
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3184274Z 26.04.1
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3184740Z LTS
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3185040Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3185408Z ##[group]Runner Image
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3185782Z Image: ubuntu-26.04
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3186100Z Version: 20260920.143.1
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3186990Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20260920.143/images/ubuntu/Ubuntu2604-Readme.md
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3187933Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20260920.143
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3188462Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3189350Z ##[group]GITHUB_TOKEN Permissions
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3190853Z Contents: read
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3191176Z Metadata: read
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3191613Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3193046Z Secret source: None
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3193712Z Cache mode: write
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3194175Z Prepare workflow directory
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3549912Z Prepare all required actions
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.3580792Z Getting action download info
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.5997623Z Download action repository 'actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0' (SHA:9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0)
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:46.8389283Z Download action repository 'actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7' (SHA:668228422ae6a00e4ad889ee87cd7109ec5666a7)
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.2405241Z Download action repository 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5239398Z Uses: python/cpython/.github/workflows/reusable-san.yml@refs/pull/158258/merge (bb8cd7c03909bbec120ca2790fc5c6069f1d7655)
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5242247Z ##[group] Inputs
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5242549Z   sanitizer: UBSan
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5243086Z   free-threading: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5243478Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5243755Z Complete job name: Sanitizers / UBSan
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5745332Z ##[group]Run actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5745916Z with:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5746180Z   persist-credentials: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5746489Z   repository: python/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5748778Z   token: ***
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5749156Z   ssh-strict: true
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5749416Z   ssh-user: git
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5749681Z   clean: true
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5749958Z   sparse-checkout-cone-mode: true
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5750262Z   fetch-depth: 1
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5750541Z   fetch-tags: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5750802Z   show-progress: true
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5751060Z   lfs: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5751304Z   submodules: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5751564Z   set-safe-directory: true
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5751859Z   allow-unsafe-pr-checkout: false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5752235Z env:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5752469Z   FORCE_COLOR: 1
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5752729Z   OPENSSL_VER: 3.5.8
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.5752990Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6795749Z Syncing repository: python/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6797007Z ##[group]Getting Git version info
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6797626Z Working directory is '/home/runner/work/cpython/cpython'
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6798260Z [command]/usr/bin/git version
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6798551Z git version 2.55.0
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6840489Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6846819Z Temporarily overriding HOME='/home/runner/work/_temp/8ee4d14c-30f4-442c-9aba-30c8f7946271' before making global git config changes
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6849708Z Adding repository directory to the temporary git global config as a safe directory
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6850673Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6937137Z Deleting the contents of '/home/runner/work/cpython/cpython'
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6939291Z ##[group]Determining repository object format
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6940396Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6941119Z ##[group]Initializing the repository
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.6943382Z [command]/usr/bin/git init /home/runner/work/cpython/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7180177Z hint: Using 'master' as the name for the initial branch. This default branch name
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7181559Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7182610Z hint: to use in all of your new repositories, which will suppress this warning,
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7183435Z hint: call:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7184184Z hint:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7184754Z hint: 	git config --global init.defaultBranch <name>
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7185405Z hint:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7185919Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7186792Z hint: 'development'. The just-created branch can be renamed via this command:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7187485Z hint:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7187870Z hint: 	git branch -m <name>
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7188302Z hint:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7188875Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7189986Z Initialized empty Git repository in /home/runner/work/cpython/cpython/.git/
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7191853Z [command]/usr/bin/git remote add origin https://github.com/python/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7267387Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7270160Z ##[group]Disabling automatic garbage collection
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7270566Z [command]/usr/bin/git config --local gc.auto 0
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7336584Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7337126Z ##[group]Setting up auth
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7337521Z Removing SSH command configuration
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7341009Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7366857Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7703464Z Removing HTTP extra header
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7707956Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7733235Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7929311Z Removing includeIf entries pointing to credentials config files
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7932814Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.7963796Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8176482Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d905d7a0-1c52-4633-9773-f4f882c955bb.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8269446Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/cpython/cpython/.git.path /home/runner/work/_temp/git-credentials-d905d7a0-1c52-4633-9773-f4f882c955bb.config
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8405901Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/cpython/cpython/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d905d7a0-1c52-4633-9773-f4f882c955bb.config
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8408614Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d905d7a0-1c52-4633-9773-f4f882c955bb.config
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8445325Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d905d7a0-1c52-4633-9773-f4f882c955bb.config
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8472903Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8473663Z ##[group]Fetching the repository
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:47.8478781Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bb8cd7c03909bbec120ca2790fc5c6069f1d7655:refs/remotes/pull/158258/merge
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8364763Z From https://github.com/python/cpython
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8365410Z  * [new ref]         bb8cd7c03909bbec120ca2790fc5c6069f1d7655 -> pull/158258/merge
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8368302Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8369162Z ##[group]Determining the checkout info
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8369584Z ##[endgroup]
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8373436Z [command]/usr/bin/git sparse-checkout disable
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8417785Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8442531Z ##[group]Checking out the ref
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:51.8445043Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/158258/merge
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3463086Z Note: switching to 'refs/remotes/pull/158258/merge'.
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3463545Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3463931Z You are in 'detached HEAD' state. You can look around, make experimental
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3464356Z changes and commit them, and you can discard any commits you make in this
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3464872Z state without impacting any branches by switching back to a branch.
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3465175Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3465397Z If you want to create a new branch to retain commits you create, you may
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3465794Z do so (now or later) by using -c with the switch command. Example:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466073Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466294Z   git switch -c <new-branch-name>
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466454Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466553Z Or undo this operation with:
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466697Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3466789Z   git switch -
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3467063Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3467298Z Turn off this advice by setting config variable advice.detachedHead to false
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3467614Z 
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-26T21:04:52.3467961Z HEAD is now at bb8cd7c Merge 4f2c58e455e767535d90da25ff24d21c06c9e83a into 1e8ff18a1215b711136b4377282e392583847d62
+Sanitizers / UBSan	UNKNOWN STEP	2026-09-2
+
+... [595477 characters truncated] ...
+
+utputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "build-san": {
+All required checks pass	UNKNOWN STEP	    "result": "failure",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "cross-build-linux": {
+All required checks pass	UNKNOWN STEP	    "result": "success",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "cifuzz": {
+All required checks pass	UNKNOWN STEP	    "result": "success",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  }
+All required checks pass	UNKNOWN STEP	}
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1442018Z env:
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1442339Z   FORCE_COLOR: 1
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1442682Z ##[endgroup]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1492095Z ##[start-action display=Decide whether the input jobs succeeded or failed;id=__re-actors_alls-green.outcome]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1532916Z ##[group]Run python -m normalize_needed_jobs_status \
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1533568Z ^[[36;1mpython -m normalize_needed_jobs_status \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1534062Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1534698Z ^[[36;1m  build-android, build-emscripten, build-ubuntu-ssltests, test-hypothesis, cifuzz,^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1535346Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1535673Z ^[[36;1m)" \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1536036Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1536407Z ^[[36;1m  check-docs,           ^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1536804Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1537129Z ^[[36;1m)" \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1537459Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1537811Z ^[[36;1m  {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1538163Z ^[[36;1m  "build-context": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1538564Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1538971Z ^[[36;1m    "outputs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1539369Z ^[[36;1m      "run-android": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1539981Z ^[[36;1m      "run-ci-fuzz": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1540427Z ^[[36;1m      "run-ci-fuzz-stdlib": "false",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1540883Z ^[[36;1m      "run-docs": "false",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1541307Z ^[[36;1m      "run-emscripten": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1541740Z ^[[36;1m      "run-ios": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1542154Z ^[[36;1m      "run-macos": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1542566Z ^[[36;1m      "run-tests": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1542991Z ^[[36;1m      "run-ubuntu": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1543516Z ^[[36;1m      "run-wasi": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1543948Z ^[[36;1m      "run-windows-tests": "true"^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1544372Z ^[[36;1m    }^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1544700Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1545257Z ^[[36;1m  "check-docs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1545653Z ^[[36;1m    "result": "skipped",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1546062Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1546452Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1546806Z ^[[36;1m  "check-autoconf-regen": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1547230Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1547639Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1548010Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1548363Z ^[[36;1m  "check-generated-files": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1548789Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1549191Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1549565Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1550008Z ^[[36;1m  "check-c-api-docs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1550422Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1550822Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1551190Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1551530Z ^[[36;1m  "build-windows": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1551926Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1552323Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1552695Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1553039Z ^[[36;1m  "build-macos": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1553429Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1553833Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1554194Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1554534Z ^[[36;1m  "build-ubuntu": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1554920Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1555317Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1555681Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1556050Z ^[[36;1m  "build-ubuntu-installed": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1556476Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1556866Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1557228Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1557580Z ^[[36;1m  "build-ubuntu-ssltests": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1558004Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1558403Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1558768Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1559098Z ^[[36;1m  "build-ios": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1559473Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1560263Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1560637Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1560981Z ^[[36;1m  "build-emscripten": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1561387Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1561788Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1562153Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1562483Z ^[[36;1m  "build-wasi": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1562861Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1563260Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1563622Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1563966Z ^[[36;1m  "test-hypothesis": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1564374Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1564770Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1565130Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1565473Z ^[[36;1m  "test-lazy-imports-all": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1565898Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1566298Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1566658Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1566991Z ^[[36;1m  "build-asan": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1567361Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1567753Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1568123Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1568487Z ^[[36;1m  "build-san": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1568860Z ^[[36;1m    "result": "failure",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1569253Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1569610Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1570078Z ^[[36;1m  "cross-build-linux": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1570483Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1570869Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1571233Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1571554Z ^[[36;1m  "cifuzz": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1571919Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1572311Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1572799Z ^[[36;1m  }^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1573120Z ^[[36;1m}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1573429Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1573751Z ^[[36;1m)"^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1833343Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1833885Z env:
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1834209Z   FORCE_COLOR: 1
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1834866Z   PYTHONPATH: /home/runner/work/_actions/re-actors/alls-green/05ac9388f0aebcb5727afa17fcccfecd6f8ec5fe/src
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.1835589Z ##[endgroup]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2205086Z # ❌ Some of the required to succeed jobs failed 😢😢😢
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2205777Z 
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2206222Z 🛈 All of the allowed to fail dependency jobs succeeded.
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2207183Z 🛈 Some of the allowed to be skipped jobs did not succeed.
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2208028Z 📝 Job statuses:
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2208734Z 📝 build-context → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2209894Z 📝 check-docs → ⬜ skipped [required to succeed or be skipped]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2210930Z 📝 check-autoconf-regen → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2211903Z 📝 check-generated-files → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2212858Z 📝 check-c-api-docs → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2213751Z 📝 build-windows → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2214627Z 📝 build-macos → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2215444Z 📝 build-ubuntu → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2216364Z 📝 build-ubuntu-installed → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2217343Z 📝 build-ubuntu-ssltests → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2218237Z 📝 build-ios → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2219106Z 📝 build-emscripten → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2220117Z 📝 build-wasi → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2220954Z 📝 test-hypothesis → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2221914Z 📝 test-lazy-imports-all → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2222811Z 📝 build-asan → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2223602Z 📝 build-san → ❌ failure [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2224692Z 📝 cross-build-linux → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2225527Z 📝 cifuzz → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2243943Z ##[error]Process completed with exit code 1.
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2318704Z ##[end-action id=__re-actors_alls-green.outcome;outcome=failure;conclusion=failure;duration_ms=82]
+All required checks pass	UNKNOWN STEP	2026-09-26T21:31:15.2423952Z Cleaning up orphan processes

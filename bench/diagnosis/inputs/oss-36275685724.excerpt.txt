@@ -1,0 +1,285 @@
+Screenshots	UNKNOWN STEP	﻿2026-09-26T22:16:16.0414670Z Current runner version: '2.337.0'
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0452510Z ##[group]Runner Image Provisioner
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0453809Z Hosted Compute Agent
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0454864Z Version: 20260828.587
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0455874Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0457224Z Build Date: 2026-08-28T16:44:25Z
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0458469Z Worker ID: {a580251b-f652-451d-b477-9b5415473bd4}
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0459626Z Azure Region: eastus
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0461040Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0463527Z ##[group]Operating System
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0464703Z Ubuntu
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0465608Z 24.04.5
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0466383Z LTS
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0467304Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0468208Z ##[group]Runner Image
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0469215Z Image: ubuntu-24.04
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0470433Z Version: 20260920.314.1
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0472616Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0475303Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0477018Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0479293Z ##[group]GITHUB_TOKEN Permissions
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0482530Z Contents: read
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0483489Z Metadata: read
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0484460Z PullRequests: write
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0485631Z Statuses: write
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0486583Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0489539Z Secret source: Actions
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0491385Z Cache mode: write
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0492979Z Prepare workflow directory
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.0967692Z Prepare all required actions
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.1038169Z Getting action download info
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.3239695Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.4380463Z Download action repository 'actions/setup-node@820762786026740c76f36085b0efc47a31fe5020' (SHA:820762786026740c76f36085b0efc47a31fe5020)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.5224925Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.5958546Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.8502733Z Complete job name: Screenshots
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9445757Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9446977Z with:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9447415Z   fetch-depth: 150
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9447881Z   repository: microsoft/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9452123Z   token: ***
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9452553Z   ssh-strict: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9452986Z   ssh-user: git
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9453433Z   persist-credentials: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9453920Z   clean: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9454356Z   sparse-checkout-cone-mode: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9454879Z   fetch-tags: false
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9455332Z   show-progress: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9455787Z   lfs: false
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9456202Z   submodules: false
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9456647Z   set-safe-directory: true
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9457149Z   allow-unsafe-pr-checkout: false
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:16.9457955Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0493918Z Syncing repository: microsoft/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0496726Z ##[group]Getting Git version info
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0498046Z Working directory is '/home/runner/work/vscode/vscode'
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0500241Z [command]/usr/bin/git version
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0581400Z git version 2.55.0
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0605607Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0619074Z Temporarily overriding HOME='/home/runner/work/_temp/45d19cb2-9f8a-494a-a545-ac50219388d2' before making global git config changes
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0621761Z Adding repository directory to the temporary git global config as a safe directory
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0627260Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0693094Z Deleting the contents of '/home/runner/work/vscode/vscode'
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0696763Z ##[group]Determining repository object format
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0698598Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0699882Z ##[group]Initializing the repository
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0704687Z [command]/usr/bin/git init /home/runner/work/vscode/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0825288Z hint: Using 'master' as the name for the initial branch. This default branch name
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0826875Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0828787Z hint: to use in all of your new repositories, which will suppress this warning,
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0830426Z hint: call:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0831245Z hint:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0832384Z hint: 	git config --global init.defaultBranch <name>
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0833781Z hint:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0835228Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0837470Z hint: 'development'. The just-created branch can be renamed via this command:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0839133Z hint:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0840311Z hint: 	git branch -m <name>
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0841345Z hint:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0842770Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0844894Z Initialized empty Git repository in /home/runner/work/vscode/vscode/.git/
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0848564Z [command]/usr/bin/git remote add origin https://github.com/microsoft/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0899072Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0899863Z ##[group]Disabling automatic garbage collection
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0903024Z [command]/usr/bin/git config --local gc.auto 0
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0933298Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0934730Z ##[group]Setting up auth
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0935328Z Removing SSH command configuration
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0942041Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.0975730Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1317387Z Removing HTTP extra header
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1325981Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1361081Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1582144Z Removing includeIf entries pointing to credentials config files
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1587131Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1618110Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1838998Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1874537Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git.path /home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1903851Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1937508Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1968129Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1996391Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.1997883Z ##[group]Fetching the repository
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:17.2002906Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=150 origin +0d6fce9ba925077dce9c15e6d3d182af4955a577:refs/remotes/pull/338147/merge
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4775738Z From https://github.com/microsoft/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4777006Z  * [new ref]             0d6fce9ba925077dce9c15e6d3d182af4955a577 -> pull/338147/merge
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4780646Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4781641Z ##[group]Determining the checkout info
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4782930Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4788973Z [command]/usr/bin/git sparse-checkout disable
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4840380Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4869397Z ##[group]Checking out the ref
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:25.4874084Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/338147/merge
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.5634438Z Updating files:  22% (4450/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.5929103Z Updating files:  23% (4471/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6038489Z Updating files:  24% (4665/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6226403Z Updating files:  25% (4859/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6336617Z Updating files:  26% (5054/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6459944Z Updating files:  27% (5248/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6562006Z Updating files:  28% (5443/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6686572Z Updating files:  29% (5637/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6784345Z Updating files:  30% (5831/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.6900646Z Updating files:  31% (6026/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7051648Z Updating files:  32% (6220/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7167118Z Updating files:  33% (6414/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7258401Z Updating files:  34% (6609/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7360841Z Updating files:  35% (6803/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7693742Z Updating files:  36% (6997/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.7869897Z Updating files:  37% (7192/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.8156250Z Updating files:  38% (7386/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.8305136Z Updating files:  39% (7581/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.8430774Z Updating files:  40% (7775/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.8582284Z Updating files:  41% (7969/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.8871923Z Updating files:  42% (8164/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9004094Z Updating files:  43% (8358/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9144452Z Updating files:  44% (8552/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9298252Z Updating files:  45% (8747/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9458726Z Updating files:  46% (8941/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9551613Z Updating files:  47% (9135/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9644905Z Updating files:  48% (9330/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9838325Z Updating files:  49% (9524/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:26.9987453Z Updating files:  50% (9718/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:27.0257874Z Updating files:  51% (9913/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:27.0336285Z Updating files:  52% (10107/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:27.0407222Z Updating files:  53% (10302/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:27.0474573Z Updating files:  54% (10496/19436)
+Screenshots	UNKNOWN STEP	2026-09-26T22:16:27.0542345Z Updating files:  55% (10
+
+... [522440 characters truncated] ...
+
+ STEP	    body,
+Screenshots	UNKNOWN STEP	  });
+Screenshots	UNKNOWN STEP	} else {
+Screenshots	UNKNOWN STEP	  await github.rest.issues.createComment({
+Screenshots	UNKNOWN STEP	    owner: context.repo.owner,
+Screenshots	UNKNOWN STEP	    repo: context.repo.repo,
+Screenshots	UNKNOWN STEP	    issue_number: context.issue.number,
+Screenshots	UNKNOWN STEP	    body,
+Screenshots	UNKNOWN STEP	  });
+Screenshots	UNKNOWN STEP	}
+Screenshots	UNKNOWN STEP	
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6846863Z   github-token: ***
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6847107Z   debug: false
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6847341Z   user-agent: actions/github-script
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6847629Z   result-encoding: json
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6847861Z   retries: 0
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6848108Z   retry-exempt-status-codes: 400,401,403,404,422
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6848412Z env:
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6848924Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-61cf97560124551360a66608881b61d693862193589d489a33734f21a4baa5e2
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6849549Z   COMMENT_BODY_PATH: /tmp/comment-body.md
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6849972Z   WORKFLOW_RUN_URL: https://github.com/microsoft/vscode/actions/runs/36275685724
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6850689Z   BASE_SHA: 949da6fcdcf06bfa017025df4200a17fbfcd86c7
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6851066Z   CURRENT_SHA: 0d6fce9ba925077dce9c15e6d3d182af4955a577
+Screenshots	UNKNOWN STEP	2026-09-26T22:32:59.6851383Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0382285Z ##[group]Run echo "::error::blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content."
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0383291Z ^[[36;1mecho "::error::blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content."^[[0m
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0384083Z ^[[36;1mecho ""^[[0m
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0384453Z ^[[36;1mecho "Diff between committed and expected blocks-ci-screenshots.md:"^[[0m
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0385104Z ^[[36;1mdiff -u test/componentFixtures/blocks-ci-screenshots.md /tmp/blocks-ci-updated.md || true^[[0m
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0385607Z ^[[36;1mexit 1^[[0m
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0447352Z shell: /usr/bin/bash -e {0}
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0447624Z env:
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0448169Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-61cf97560124551360a66608881b61d693862193589d489a33734f21a4baa5e2
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0448778Z ##[endgroup]
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0545878Z ##[error]blocks-ci screenshot hashes do not match committed file. See PR comment or job summary for the updated content.
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0552989Z 
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0553378Z Diff between committed and expected blocks-ci-screenshots.md:
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0554119Z --- test/componentFixtures/blocks-ci-screenshots.md	2026-09-26 22:16:27.792299478 +0000
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0554790Z +++ /tmp/blocks-ci-updated.md	2026-09-26 22:32:27.464948852 +0000
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0555167Z @@ -220,13 +220,13 @@
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0555857Z  ![screenshot](https://hediet-screenshots.azurewebsites.net/images/d45768ef875bb18b3f9b712a569d6012c45471ffe1c15f7ba54a9a1623e063c4)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0556516Z  
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0556892Z  #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Dark
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0557818Z -![screenshot](https://hediet-screenshots.azurewebsites.net/images/4517e43220e3ad090e25ea7dfc493b4c4f428edf8858ec41ecf1e41c1f0b3bf2)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0558963Z +![screenshot](https://hediet-screenshots.azurewebsites.net/images/75f2af25406da9d02fc92f0bda36e7e22053ea804f74b18946c1053b6d6bb8b8)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0559585Z  
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0560374Z  #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/DarkHighContrast
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0561413Z  ![screenshot](https://hediet-screenshots.azurewebsites.net/images/5127c83d91aec7ec0776ea4d86d110d18e70c171100445e9ef2ceed836e19b04)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0562051Z  
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0562435Z  #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/Light
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0563372Z -![screenshot](https://hediet-screenshots.azurewebsites.net/images/543fe2d7c3ffc753d8c929a368fcd6fc53dd7d47db67f135dbcb60b640fe0229)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0564518Z +![screenshot](https://hediet-screenshots.azurewebsites.net/images/1374fc7f1b93ebba81211ee149913f233bdf6cce460b77136bc6a05198f81edb)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0565144Z  
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0565559Z  #### sessions/chat/newWidget/newChatWidget/NewSessionChatBackground/LightHighContrast
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0566442Z  ![screenshot](https://hediet-screenshots.azurewebsites.net/images/910e709f9938aa20b92f584f46997475e2b6b5143ab7101cee1081ed00c226cc)
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0568680Z ##[error]Process completed with exit code 1.
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.0678372Z Post job cleanup.
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1487579Z [command]/usr/bin/git version
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1531029Z git version 2.55.0
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1574274Z Temporarily overriding HOME='/home/runner/work/_temp/3293b26a-de52-4097-b77e-e70b86072baa' before making global git config changes
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1575959Z Adding repository directory to the temporary git global config as a safe directory
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1580838Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1610317Z Removing SSH command configuration
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1616464Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1649369Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1894120Z Removing HTTP extra header
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1898916Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.1932680Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2171870Z Removing includeIf entries pointing to credentials config files
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2178237Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2205875Z includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2207035Z includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2208040Z includeif.gitdir:/github/workspace/.git.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2208948Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2215833Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2237510Z /home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2247947Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-3a1de944\-e73d\-4a93\-8a3d\-7d1cafcb4e51\.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2295440Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2311531Z /home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2323341Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-3a1de944\-e73d\-4a93\-8a3d\-7d1cafcb4e51\.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2355904Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2376069Z /github/runner_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2384296Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-3a1de944\-e73d\-4a93\-8a3d\-7d1cafcb4e51\.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2416338Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2436959Z /github/runner_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2445104Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-3a1de944\-e73d\-4a93\-8a3d\-7d1cafcb4e51\.config
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2478116Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2716871Z Removing credentials config '/home/runner/work/_temp/git-credentials-3a1de944-e73d-4a93-8a3d-7d1cafcb4e51.config'
+Screenshots	UNKNOWN STEP	2026-09-26T22:33:01.2855719Z Cleaning up orphan processes
+Screenshots & Tests	UNKNOWN STEP	﻿2026-09-26T22:33:08.7443794Z Current runner version: '2.337.0'
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7468581Z ##[group]Runner Image Provisioner
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7469437Z Hosted Compute Agent
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7470141Z Version: 20260828.587
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7470794Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7471606Z Build Date: 2026-08-28T16:44:25Z
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7472320Z Worker ID: {f22eac9c-bbdb-400c-959b-6e4a14b43c83}
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7473450Z Azure Region: westcentralus
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7474176Z ##[endgroup]
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7476049Z ##[group]Operating System
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7476845Z Ubuntu
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7477398Z 24.04.5
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7477910Z LTS
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7478471Z ##[endgroup]
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7479030Z ##[group]Runner Image
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7479649Z Image: ubuntu-24.04
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7480277Z Version: 20260920.314.1
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7481601Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7483690Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7484732Z ##[endgroup]
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7486169Z ##[group]GITHUB_TOKEN Permissions
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7488672Z Contents: read
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7489391Z Metadata: read
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7490210Z PullRequests: write
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7490906Z Statuses: write
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7491475Z ##[endgroup]
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7495385Z Secret source: Actions
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7496554Z Cache mode: write
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7497293Z Prepare workflow directory
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7842765Z Prepare all required actions
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:08.7947085Z Complete job name: Screenshots & Tests
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4654986Z ##[group]Run if [[ 'success' != 'success' ||
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4655797Z ^[[36;1mif [[ 'success' != 'success' ||^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4656489Z ^[[36;1m      'failure' != 'success' ]]; then^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4657247Z ^[[36;1m  echo "::error::Component fixture checks failed."^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4658005Z ^[[36;1m  echo "Playwright: success"^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4658644Z ^[[36;1m  echo "Screenshots: failure"^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4659237Z ^[[36;1m  exit 1^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.4659712Z ^[[36;1mfi^[[0m
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5695260Z shell: /usr/bin/bash -e {0}
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5696440Z ##[endgroup]
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5946024Z ##[error]Component fixture checks failed.
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5953810Z Playwright: success
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5954401Z Screenshots: failure
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.5965324Z ##[error]Process completed with exit code 1.
+Screenshots & Tests	UNKNOWN STEP	2026-09-26T22:33:09.6116327Z Cleaning up orphan processes

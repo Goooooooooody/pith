@@ -1,0 +1,286 @@
+analyze-shards (1)	UNKNOWN STEP	﻿2026-09-25T21:13:35.9439311Z Current runner version: '2.337.0'
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9447390Z Runner name: 'github-ubuntu-24.04-x86_64-32-1002717241'
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9448363Z Runner group name: 'default'
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9466667Z ##[group]Runner Image Provisioner
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9467457Z Hosted Compute Agent
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9468195Z Version: 20260828.587
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9468867Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9469669Z Build Date: 2026-08-28T16:44:25Z
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9470388Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9471676Z ##[group]Operating System
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9472415Z Ubuntu
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9472964Z 24.04.5
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9473603Z LTS
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9474214Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9474794Z ##[group]Runner Image
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9475700Z Image: ubuntu-24.04
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9476296Z Version: 20260920.314.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9477640Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9479192Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9480234Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9481388Z ##[group]GITHUB_TOKEN Permissions
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9483338Z Contents: read
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9483951Z Metadata: read
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9484637Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9486870Z Secret source: Actions
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9487776Z Cache mode: read
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:35.9488630Z Prepare workflow directory
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:36.0011258Z Prepare all required actions
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:36.0060145Z Getting action download info
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:36.2042384Z Download action repository 'astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7' (SHA:c18668ad3cf93ea998bef934396af7bb5c839dc7)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:36.6403441Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:36.9667300Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.1369968Z Complete job name: analyze-shards (1)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2316927Z ##[group]Run astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2318320Z with:
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2318981Z   version: 0.12.11
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2319853Z   checksum: 4ae93e0f148a18434cc094072547cec88912fc4a72b984183c7d0d0e9586cb5e
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2320856Z   ignore-empty-workdir: true
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2321675Z   enable-cache: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2322348Z   activate-environment: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2323072Z   no-project: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2323787Z   working-directory: /home/runner/work/ruff/ruff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2328707Z   github-token: ***
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2330138Z   cache-dependency-glob: **/*requirements*.txt
+analyze-shards (1)	UNKNOWN STEP	**/*requirements*.in
+analyze-shards (1)	UNKNOWN STEP	**/*constraints*.txt
+analyze-shards (1)	UNKNOWN STEP	**/*constraints*.in
+analyze-shards (1)	UNKNOWN STEP	**/pyproject.toml
+analyze-shards (1)	UNKNOWN STEP	**/uv.lock
+analyze-shards (1)	UNKNOWN STEP	**/*.py.lock
+analyze-shards (1)	UNKNOWN STEP	
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2331521Z   restore-cache: true
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2332192Z   save-cache: auto
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2332839Z   prune-cache: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2333465Z   cache-python: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2334334Z   ignore-nothing-to-cache: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2335047Z   download-from-astral-mirror: true
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2336028Z   add-problem-matchers: true
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2336679Z   quiet: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2337269Z   resolution-strategy: highest
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2338358Z env:
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2338966Z   UV_LOCKED: 1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2339614Z   CARGO_INCREMENTAL: 0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2340239Z   CARGO_NET_RETRY: 10
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2340840Z   CARGO_TERM_COLOR: always
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2341598Z   RUSTUP_MAX_RETRIES: 10
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2342229Z   RUST_BACKTRACE: 1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2342936Z   CARGO_PROFILE_PROFILING_DEBUG: line-tables-only
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2343773Z   EXCLUDE_NEWER: 2026-09-25T21:11:17Z
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2344471Z   TY_UV: scripts
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.2345944Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.4032412Z Empty workdir detected. Ignoring because ignore-empty-workdir is enabled
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.4131910Z Fetching manifest data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.4642326Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.11/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:37.6421475Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/76b44639-5e2c-4ad1-a10d-9df70115d491 -f /home/runner/work/_temp/d2226e86-305c-474a-bc1d-6c9a485b89e4
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.0403997Z Added /home/runner/.local/bin to the path
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.0407469Z Added /opt/hostedtoolcache/uv/0.12.11/x86_64 to the path
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.0409435Z Set UV_PYTHON_INSTALL_DIR to /home/runner/work/_temp/uv-python-dir
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.0411441Z Added /home/runner/work/_temp/uv-python-dir to the path
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.0510434Z Successfully installed uv version 0.12.11
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2382425Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2384356Z with:
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2385464Z   pattern: ty-build-*
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2386584Z   merge-multiple: true
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2387731Z   repository: astral-sh/ruff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2388942Z   run-id: 36190147719
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2390055Z   skip-decompress: false
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2391218Z   digest-mismatch: error
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2392333Z env:
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2393287Z   UV_LOCKED: 1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2394303Z   CARGO_INCREMENTAL: 0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2395504Z   CARGO_NET_RETRY: 10
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2396616Z   CARGO_TERM_COLOR: always
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2397773Z   RUSTUP_MAX_RETRIES: 10
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2398901Z   RUST_BACKTRACE: 1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2400086Z   CARGO_PROFILE_PROFILING_DEBUG: line-tables-only
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2401544Z   EXCLUDE_NEWER: 2026-09-25T21:11:17Z
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2402768Z   TY_UV: scripts
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2404088Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.2405729Z ##[endgroup]
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5121991Z Found 3 artifact(s)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5124036Z Filtering artifacts by pattern 'ty-build-*'
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5140091Z Preparing to download the following artifacts:
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5142879Z - ty-build-base (ID: 10888305036, Size: 57291585, Expected Digest: sha256:682dc372cfd30df67130bdeec9225c955e9199e570bc542a2b4e32871c1088b3)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5147116Z - ty-build-dependencies (ID: 10888126120, Size: 104752, Expected Digest: sha256:7045c4775b25431822159b190f3638b15236b7e0afe4659629e84454cb0649c9)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.5151070Z - ty-build-pr (ID: 10887936603, Size: 57348770, Expected Digest: sha256:1948b9100bc51998d6d914b0424c98a2cbc5d165b474b05e378c7ac4ceb72aa9)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7551303Z Redirecting to blob download url: https://productionresultssa19.blob.core.windows.net/actions-results/f6364032-9271-41af-b115-c4f8957e1d37/workflow-job-run-1d700211-2427-55f3-8a36-865b10879795/artifacts/00c19e988e92a924fb2b6671b6ec7b38ccc2ccb09bbbb859ede0cb5592c3b602.zip
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7556602Z Starting download of artifact to: /home/runner/work/ruff/ruff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7566866Z Redirecting to blob download url: https://productionresultssa19.blob.core.windows.net/actions-results/f6364032-9271-41af-b115-c4f8957e1d37/workflow-job-run-ca12317b-b15b-53e2-9374-194e6ecf6477/artifacts/c5e9745581bd81b7aa36a4101909dea82860ed66cf8c89a2ca40f3e3af02320d.zip
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7572123Z Starting download of artifact to: /home/runner/work/ruff/ruff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7582125Z Redirecting to blob download url: https://productionresultssa19.blob.core.windows.net/actions-results/f6364032-9271-41af-b115-c4f8957e1d37/workflow-job-run-ca12317b-b15b-53e2-9374-194e6ecf6477/artifacts/d8157b912872202a1f0ab56ed2f1a852f22367a3064ad3760677cb9a49cb94d1.zip
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.7587341Z Starting download of artifact to: /home/runner/work/ruff/ruff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.8588372Z (node:2645) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.8593469Z (Use `node --trace-deprecation ...` to show where the warning was created)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.8980193Z SHA256 digest of downloaded artifact is 7045c4775b25431822159b190f3638b15236b7e0afe4659629e84454cb0649c9
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:38.8982609Z Artifact download completed successfully.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.8557614Z SHA256 digest of downloaded artifact is 682dc372cfd30df67130bdeec9225c955e9199e570bc542a2b4e32871c1088b3
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.8558348Z Artifact download completed successfully.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.9944809Z SHA256 digest of downloaded artifact is 1948b9100bc51998d6d914b0424c98a2cbc5d165b474b05e378c7ac4ceb72aa9
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.9946126Z Artifact download completed successfully.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.9946518Z Total of 3 artifact(s) downloaded
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:40.9949297Z Download artifact has finished successfully
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0114858Z ##[group]Run mkdir -p ~/.config/ty
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0115454Z ^[[36;1mmkdir -p ~/.config/ty^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0115834Z ^[[36;1mcp ty-ecosystem.toml ~/.config/ty/ty.toml^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0116190Z ^[[36;1m^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0116431Z ^[[36;1mchmod +x ty-base ty-pr^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0116752Z ^[[36;1mMERGE_BASE="$(< merge-base.txt)"^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0117074Z ^[[36;1mecho "MERGE_BASE: ${MERGE_BASE}"^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0117369Z ^[[36;1m^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0117593Z ^[[36;1muv run \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0117863Z ^[[36;1m  --locked \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0118135Z ^[[36;1m  --only-group=ty-ecosystem \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0118458Z ^[[36;1m  ecosystem-analyzer \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0118748Z ^[[36;1m  --flaky-runs 10 \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0119021Z ^[[36;1m  diff \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0119330Z ^[[36;1m  --projects-flaky projects_flaky.txt \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0119676Z ^[[36;1m  --ty-binary-old ty-base \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0120024Z ^[[36;1m  --ty-binary-new ty-pr \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0120334Z ^[[36;1m  --old "${MERGE_BASE}" \^[[0m
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:41.0120624Z ^[[36;1m  --new "${GITHUB_SHA}" \^[[0m
+analyze-shards 
+
+... [78371 characters truncated] ...
+
+2.8888627Z  + charset-normalizer==3.5.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8888900Z  + cryptography==50.0.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8889290Z  + docutils==0.23
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8889580Z  + id==1.6.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8889792Z  + idna==3.20
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8890021Z  + importlib-metadata==9.0.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8890299Z  + jaraco-classes==3.4.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8890558Z  + jaraco-context==6.1.2
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8890810Z  + jaraco-functools==4.6.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8891062Z  + jeepney==0.9.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8891290Z  + keyring==25.7.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8891529Z  + markdown-it-py==4.2.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8891767Z  + mdurl==0.1.2
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8891998Z  + more-itertools==11.1.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8892256Z  + nh3==0.3.7
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8892470Z  + packaging==26.3
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8892704Z  + pycparser==3.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8892930Z  + pygments==2.21.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8893443Z  + readme-renderer==46.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8893756Z  +Prepared  1 package requestsin 29ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8894044Z ==2.34.2
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8894259Z  + requests-toolbelt==1.0.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8894518Z  + rfc3986==2.0.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8894739Z  + rich==15.0.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8894994Z  + secretstorage==3.5.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8895398Z  + urllib3==2.8.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:52.8895681Z  + zipp==4.1.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0080881Z Installed 14 packages in 118ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0081287Z  + hypothesis==6.168.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0081751Z  + idna==3.20
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0082143Z  + iniconfig==2.3.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0082732Z  + markdown-it-py==4.2.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0083104Z  + mdurl==0.1.2
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0083665Z  + multidict==6.9.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0084024Z  + packaging==26.3
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0084446Z  + pluggy==1.6.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0084822Z  + propcache==0.5.4
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0085383Z  + pygments==2.21.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0086137Z  + pytest==9.1.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0086724Z  + pytest-codspeed==5.0.3
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0087393Z  + rich==15.0.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0087900Z  + sortedcontainers==2.4.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0697028Z Installed 9 packages in 223ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0714779Z  + arraykit==1.2.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0715368Z  + hypothesis==6.168.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0715676Z  + iniconfig==2.3.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0715958Z  + numpy==2.4.6
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0716192Z  + packaging==26.3
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0716426Z  + pluggy==1.6.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0716646Z  + pygments==2.21.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0716876Z  + pytest==9.1.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:53.0717123Z  + sortedcontainers==2.4.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:54.3916844Z       Built pycryptodome-test-vectors==1.0.22
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:54.4166972Z Prepared 1 package in 2.17s
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:54.4837018Z Installed 1 package in 66ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:54.4837382Z  + pycryptodome-test-vectors==1.0.22
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.1567940Z 2026-09-25 21:13:55 - INFO - Installing dependencies: ml_dtypes, numpy, scipy-stubs, requests, absl-py
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.2011331Z Using Python 3.11.16 environment at: /tmp/tmps1639izy/.venv
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.2698565Z Resolved 12 packages in 68ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.2810866Z Prepared 2 packages in 10ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4523353Z Installed 12 packages in 171ms
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4523741Z  + absl-py==2.5.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4524012Z  + certifi==2026.7.22
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4524281Z  + charset-normalizer==3.5.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4524553Z  + idna==3.20
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4524789Z  + ml-dtypes==0.6.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4525036Z  + numpy==2.4.6
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4525494Z  + numpy-typing-compat==20251206.2.4
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4525778Z  + optype==0.17.1
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4526070Z  + requests==2.34.2
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4526305Z  + scipy-stubs==1.17.1.5
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4526586Z  + typing-extensions==4.16.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4526836Z  + urllib3==2.8.0
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4713663Z Traceback (most recent call last):
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4733787Z   File "/home/runner/work/ruff/ruff/.venv/bin/ecosystem-analyzer", line 10, in <module>
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4734373Z     sys.exit(cli())
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4734629Z              ~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4735464Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/core.py", line 1569, in __call__
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4736020Z     return self.main(*args, **kwargs)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4736310Z            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4736821Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/core.py", line 1490, in main
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4737311Z     rv = self.invoke(ctx)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4737832Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/core.py", line 1970, in invoke
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4738413Z     return _process_result(sub_ctx.command.invoke(sub_ctx))
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4738784Z                            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4739319Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/core.py", line 1353, in invoke
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4740106Z     return ctx.invoke(self.callback, **ctx.params)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4740439Z            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4740948Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/core.py", line 907, in invoke
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4741435Z     return callback(*args, **kwargs)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4741971Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/click/decorators.py", line 34, in new_func
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4742524Z     return f(get_current_context(), *args, **kwargs)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4743130Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/main.py", line 390, in diff
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4743693Z     run_outputs_old = manager.run_projects()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4744298Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/manager.py", line 151, in run_projects
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4745245Z     self._ensure_installed()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4745538Z     ~~~~~~~~~~~~~~~~~~~~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4746163Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/manager.py", line 119, in _ensure_installed
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4746765Z     self._install_future.result()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4747034Z     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4747642Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 454, in result
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4748240Z     return self.__get_result()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4748504Z            ~~~~~~~~~~~~~~~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4749129Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4749749Z     raise self._exception
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4750355Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4750960Z     result = ctx.run(self.task)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4751539Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4752116Z     return fn(*args, **kwargs)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4752688Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/manager.py", line 108, in _install_projects
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4753283Z     installed_project = future.result()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4753903Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 447, in result
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4754490Z     return self.__get_result()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4754738Z            ~~~~~~~~~~~~~~~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4755550Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4756203Z     raise self._exception
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4756786Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4757376Z     result = ctx.run(self.task)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4757947Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4758514Z     return fn(*args, **kwargs)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4759115Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/manager.py", line 93, in install_single_project
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4759816Z     return InstalledProject(project, exclude_newer=self._exclude_newer)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4760520Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/installed_project.py", line 66, in __init__
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4761117Z     self._install_dependencies()
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4761548Z     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4762192Z   File "/home/runner/work/ruff/ruff/.venv/lib/python3.14/site-packages/ecosystem_analyzer/installed_project.py", line 274, in _install_dependencies
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4762821Z     subprocess.run(
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4763054Z     ~~~~~~~~~~~~~~^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4763275Z         pip_cmd,
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4763494Z         ^^^^^^^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4763712Z     ...<2 lines>...
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4763943Z         capture_output=False,
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4764213Z         ^^^^^^^^^^^^^^^^^^^^^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4764451Z     )
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4764667Z     ^
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4765415Z   File "/home/runner/work/_temp/uv-python-dir/cpython-3.14.7-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 578, in run
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4766062Z     raise CalledProcessError(retcode, process.args,
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4766434Z                              output=stdout, stderr=stderr)
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:55.4767609Z subprocess.CalledProcessError: Command '['uv', 'pip', 'install', '--python', '/tmp/tmpphzi_evm/.venv/bin/python', '--link-mode=copy', '--exclude-newer', '2026-09-25T21:11:17Z', 'requests', 'types-pyOpenSSL', 'cryptography', 'certifi']' returned non-zero exit status 2.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:58.9058846Z ##[error]Process completed with exit code 1.
+analyze-shards (1)	UNKNOWN STEP	2026-09-25T21:13:58.9161432Z Cleaning up orphan processes

@@ -1,0 +1,222 @@
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	﻿2026-09-26T10:54:18.8803310Z Current runner version: '2.337.0'
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8820140Z ##[group]Runner Image Provisioner
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8820690Z Hosted Compute Agent
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8821070Z Version: 20260828.587
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8821540Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8822070Z Build Date: 2026-08-28T16:44:25Z
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8822610Z Worker ID: {254e1a5b-2045-400a-9954-9250918133a9}
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8823080Z Azure Region: westus
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8823450Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8824500Z ##[group]Operating System
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8824900Z macOS
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8825250Z 26.6.2
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8825640Z 25G83
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8826250Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8826720Z ##[group]Runner Image
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8827180Z Image: macos-26-arm64
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8827590Z Version: 20260907.0351.1
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8828780Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8830030Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8830740Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8831550Z ##[group]GITHUB_TOKEN Permissions
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8832940Z Metadata: read
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8833320Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8834970Z Secret source: None
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8835600Z Cache mode: write
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.8836130Z Prepare workflow directory
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.9276440Z Prepare all required actions
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:18.9315560Z Getting action download info
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:19.1228540Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:20.1675330Z Download action repository 'cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24' (SHA:13d8dd58da0234aa297dedd986986ccb8e7f3e24)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:20.6594040Z Download action repository 'cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866' (SHA:38b082610b782e7e93e209c35fd730d399dee866)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:21.4630580Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4827100Z Uses: nodejs/node/.github/workflows/build-shared.yml@refs/pull/66313/merge (60b26aa5e99054f397f892cbcbc29a06b1ccdd8d)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4830780Z ##[group] Inputs
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4831060Z   runner: macos-latest
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4832040Z   extra-nix-flags: --arg useSeparateDerivationForV8 true \
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	\
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	--arg withAmaro false --arg withLief false --arg withSQLite false --arg withFFI false --arg extraConfigFlags '["--without-inspector" "--without-node-options"]' \
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4833190Z   with-sccache: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4833430Z   v8-nar: 
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4833580Z   pkcs11-store-test: false
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4833780Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.4834040Z Complete job name: aarch64-darwin: with shared libraries / build
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5282150Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5282750Z with:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5282920Z   path: tarballs
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283090Z   pattern: *.tar.gz
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283240Z   merge-multiple: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283430Z   repository: nodejs/node
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283610Z   run-id: 36237136887
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283780Z   skip-decompress: false
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5283970Z   digest-mismatch: error
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5284250Z env:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5284400Z   FLAKY_TESTS: keep_retrying
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:22.5284580Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.0612300Z Found 1 artifact(s)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.0614540Z Filtering artifacts by pattern '*.tar.gz'
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.0669630Z Preparing to download the following artifacts:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.0671240Z - node-v27.0.0-nightly2026-09-2660b26aa5e9-slim.tar.gz (ID: 10904338572, Size: 45863322, Expected Digest: sha256:b61b33cc3f7affbbbffc081538bceab86855d74a0ef42934115c081b3df24912)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.2257870Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/23c08688-6ba4-45a0-a8dc-3248b10f6425/workflow-job-run-02936090-b61d-53a6-859b-4287bd5f1034/artifacts/44d1d0681509a8967869398a55523dc60581a9672c01d433f59c17ad20c170ee.gz
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.2259300Z Starting download of artifact to: /Users/runner/work/node/node/tarballs
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.2884380Z Downloading raw file (non-zip) to: /Users/runner/work/node/node/tarballs/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim.tar.gz
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8376060Z SHA256 digest of downloaded artifact is b61b33cc3f7affbbbffc081538bceab86855d74a0ef42934115c081b3df24912
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8389080Z Artifact download completed successfully.
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8429250Z Total of 1 artifact(s) downloaded
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8436100Z Download artifact has finished successfully
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8581150Z ##[group]Run tar xzf tarballs/*.tar.gz -C "$RUNNER_TEMP"
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8581620Z ^[[36;1mtar xzf tarballs/*.tar.gz -C "$RUNNER_TEMP"^[[0m
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8582020Z ^[[36;1mecho "TAR_DIR=$RUNNER_TEMP/$(basename tarballs/*.tar.gz .tar.gz)" >> "$GITHUB_ENV"^[[0m
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8626640Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8627010Z env:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8627230Z   FLAKY_TESTS: keep_retrying
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:23.8627480Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9036490Z ##[group]Run cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9036920Z with:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9037090Z   extra_nix_config: sandbox = true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9037320Z   enable_kvm: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9037520Z   set_as_trusted_user: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9037690Z env:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9037840Z   FLAKY_TESTS: keep_retrying
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9038150Z   TAR_DIR: /Users/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9038470Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9081380Z ##[start-action display=Run ${GITHUB_ACTION_PATH}/install-nix.sh;id=__cachix_install-nix-action.__run]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9102370Z ##[group]Run ${GITHUB_ACTION_PATH}/install-nix.sh
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9102710Z ^[[36;1m${GITHUB_ACTION_PATH}/install-nix.sh^[[0m
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9133890Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9134260Z env:
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9134440Z   FLAKY_TESTS: keep_retrying
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9135000Z   TAR_DIR: /Users/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9135340Z   INPUT_EXTRA_NIX_CONFIG: sandbox = true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9135780Z   INPUT_GITHUB_ACCESS_TOKEN: 
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9135980Z   INPUT_INSTALL_OPTIONS: 
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9136310Z   INPUT_INSTALL_URL: 
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9149090Z   INPUT_NIX_PATH: 
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9149300Z   INPUT_ENABLE_KVM: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9149540Z   INPUT_SET_AS_TRUSTED_USER: true
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9151590Z   GITHUB_TOKEN: ***
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9151760Z ##[endgroup]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:26.9567640Z ##[group]Installing Nix
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1026480Z installer options: --no-channel-add --nix-extra-conf-file /var/folders/36/tjdph2t965j8snz9_vkdnw0r0000gn/T/tmp.kbHT5m8U0v/nix.conf --daemon --daemon-user-count 6
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1414590Z * Host releases.nixos.org:443 was resolved.
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1415590Z * IPv6: (none)
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1416090Z * IPv4: 151.101.193.91, 151.101.1.91, 151.101.65.91, 151.101.129.91
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1416420Z *   Trying 151.101.193.91:443...
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1428770Z * Connected to releases.nixos.org (151.101.193.91) port 443
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1463550Z * ALPN: curl offers h2,http/1.1
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1466010Z * (304) (OUT), TLS handshake, Client hello (1):
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1466330Z } [323 bytes data]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1515550Z *  CAfile: /etc/ssl/cert.pem
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1516010Z *  CApath: none
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1516210Z * (304) (IN), TLS handshake, Server hello (2):
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1516470Z { [122 bytes data]
+aarch64-darwin: with shared libraries / build	UNKNOWN STEP	2026-09-26T10:54:27.1518640Z * (304) (IN), TLS handshake, Unknown 
+
+... [10868316 characters truncated] ...
+
+ STEP	2026-09-26T11:02:28.8489947Z [       OK ] InspectorSocketTest.HostIPNonRoutable (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8490291Z [ RUN      ] InspectorSocketTest.HostIPv6NonRoutable
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8491819Z [       OK ] InspectorSocketTest.HostIPv6NonRoutable (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8492194Z [ RUN      ] InspectorSocketTest.HostIPv6NonRoutableDual
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8494264Z [       OK ] InspectorSocketTest.HostIPv6NonRoutableDual (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8494802Z [ RUN      ] InspectorSocketTest.HostIPv4InSquareBrackets
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8496297Z [       OK ] InspectorSocketTest.HostIPv4InSquareBrackets (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8496692Z [ RUN      ] InspectorSocketTest.HostIPv6InvalidAbbreviation
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8498919Z [       OK ] InspectorSocketTest.HostIPv6InvalidAbbreviation (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8499425Z [----------] 40 tests from InspectorSocketTest (130 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8499752Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8500071Z [----------] 10 tests from InspectorSocketServerTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8500418Z [ RUN      ] InspectorSocketServerTest.InspectorSessions
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8506336Z [       OK ] InspectorSocketServerTest.InspectorSessions (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8506760Z [ RUN      ] InspectorSocketServerTest.ServerDoesNothing
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8507289Z [       OK ] InspectorSocketServerTest.ServerDoesNothing (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8507683Z [ RUN      ] InspectorSocketServerTest.ServerWithoutTargets
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8511565Z [       OK ] InspectorSocketServerTest.ServerWithoutTargets (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8511970Z [ RUN      ] InspectorSocketServerTest.ServerCannotStart
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8512360Z [       OK ] InspectorSocketServerTest.ServerCannotStart (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8512942Z [ RUN      ] InspectorSocketServerTest.StoppingServerDoesNotKillConnections
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8920081Z [       OK ] InspectorSocketServerTest.StoppingServerDoesNotKillConnections (40 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.8920643Z [ RUN      ] InspectorSocketServerTest.ClosingConnectionReportsDone
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9329459Z [       OK ] InspectorSocketServerTest.ClosingConnectionReportsDone (40 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9330080Z [ RUN      ] InspectorSocketServerTest.ClosingSocketReportsDone
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9333169Z [       OK ] InspectorSocketServerTest.ClosingSocketReportsDone (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9333733Z [ RUN      ] InspectorSocketServerTest.TerminatingSessionReportsDone
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9335969Z [       OK ] InspectorSocketServerTest.TerminatingSessionReportsDone (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9336422Z [ RUN      ] InspectorSocketServerTest.FailsToBindToNodejsHost
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9367879Z [       OK ] InspectorSocketServerTest.FailsToBindToNodejsHost (3 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9368315Z [ RUN      ] InspectorSocketServerTest.BindsToIpV6
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9371251Z [       OK ] InspectorSocketServerTest.BindsToIpV6 (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9371655Z [----------] 10 tests from InspectorSocketServerTest (87 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9371900Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9371989Z [----------] 1 test from JSONUtilsTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9372252Z [ RUN      ] JSONUtilsTest.EscapeJsonChars
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9372544Z [       OK ] JSONUtilsTest.EscapeJsonChars (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9372855Z [----------] 1 test from JSONUtilsTest (0 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9373064Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9373163Z [----------] 11 tests from LinkedBindingTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9373437Z [ RUN      ] LinkedBindingTest.SimpleTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9832931Z [       OK ] LinkedBindingTest.SimpleTest (45 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:28.9833370Z [ RUN      ] LinkedBindingTest.PermissionModelDeniesLinkedBindingTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.0253598Z [       OK ] LinkedBindingTest.PermissionModelDeniesLinkedBindingTest (42 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.0254148Z [ RUN      ] LinkedBindingTest.NoAddonPermissionForLinkedBindingsTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.0679853Z [       OK ] LinkedBindingTest.NoAddonPermissionForLinkedBindingsTest (42 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.0680356Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1091320Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingTest (41 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1091808Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1512464Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiTest (42 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1513034Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiCallbackTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1929462Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiCallbackTest (41 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.1930059Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiRefVersion8Test
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.2338200Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiRefVersion8Test (40 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.2338822Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiRefExperimentalTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.2744942Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiRefExperimentalTest (40 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.2745576Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiInstanceDataTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3155686Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiInstanceDataTest (41 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3156363Z [ RUN      ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiCallbackInstanceDataTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3570172Z [       OK ] LinkedBindingTest.LocallyDefinedLinkedBindingNapiCallbackInstanceDataTest (41 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3570729Z [ RUN      ] LinkedBindingTest.ManyBindingsTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3988414Z [       OK ] LinkedBindingTest.ManyBindingsTest (41 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3988838Z [----------] 11 tests from LinkedBindingTest (461 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3989067Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3989153Z [----------] 10 tests from LRUCache
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3989398Z [ RUN      ] LRUCache.PutAndGet
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3989666Z [       OK ] LRUCache.PutAndGet (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3990455Z [ RUN      ] LRUCache.PutUpdatesExisting
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3990747Z [       OK ] LRUCache.PutUpdatesExisting (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3991027Z [ RUN      ] LRUCache.Eviction
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3991255Z [       OK ] LRUCache.Eviction (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3991507Z [ RUN      ] LRUCache.GetMovesToFront
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3991766Z [       OK ] LRUCache.GetMovesToFront (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3992223Z [ RUN      ] LRUCache.Erase
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3992453Z [       OK ] LRUCache.Erase (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3992685Z [ RUN      ] LRUCache.Exists
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3992907Z [       OK ] LRUCache.Exists (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3993142Z [ RUN      ] LRUCache.Size
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3993353Z [       OK ] LRUCache.Size (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3993589Z [ RUN      ] LRUCache.ZeroSizeCache
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3993839Z [       OK ] LRUCache.ZeroSizeCache (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3994101Z [ RUN      ] LRUCache.OneSizeCache
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3994346Z [       OK ] LRUCache.OneSizeCache (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3994611Z [ RUN      ] LRUCache.ComplexTypes
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3994858Z [       OK ] LRUCache.ComplexTypes (0 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3995132Z [----------] 10 tests from LRUCache (0 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3995326Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3995415Z [----------] 2 tests from NodeApiTest
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.3995667Z [ RUN      ] NodeApiTest.CreateNodeApiEnv
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.4441329Z [       OK ] NodeApiTest.CreateNodeApiEnv (44 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.4441715Z [ RUN      ] NodeApiTest.AsyncCallbacksEnterOwnContext
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5038293Z [       OK ] NodeApiTest.AsyncCallbacksEnterOwnContext (59 ms)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5038711Z [----------] 2 tests from NodeApiTest (104 ms total)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5038919Z 
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5039004Z [----------] 20 tests from NodeCrypto
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5039270Z [ RUN      ] NodeCrypto.NewRootCertStore
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5344585Z make[1]: *** [Makefile:659: test-ci] Segmentation fault (core dumped)
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5346769Z make: *** [Makefile:689: run-ci] Error 2
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5362601Z make: Leaving directory '/home/runner/work/_temp/node-v27.0.0-nightly2026-09-2660b26aa5e9-slim'
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5606623Z ##[error]Process completed with exit code 2.
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.5709157Z Post job cleanup.
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.6338721Z ##[group]Cachix: push
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.6339707Z Pushing is disabled.
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.6340351Z ##[endgroup]
+aarch64-linux: with shared openssl-4.0.2 / build	UNKNOWN STEP	2026-09-26T11:02:29.6446100Z Cleaning up orphan processes

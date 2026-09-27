@@ -1,0 +1,12 @@
+{
+  "name": "pith",
+  "description": "pith: summarise huge logs and CI failures before they reach Claude's context",
+  "owner": { "name": "Goooooooooody", "url": "https://github.com/Goooooooooody" },
+  "plugins": [
+    {
+      "name": "pith",
+      "source": "./",
+      "description": "Summarise your clipboard, CI runs and noisy commands into ~4k tokens; guard against giant pastes."
+    }
+  ]
+}

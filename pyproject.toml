@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pith-cli"
+dynamic = ["version"]
+description = "Get to the pith of huge logs, CI failures and command output before they reach your AI's context."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Goooooooooody" }]
+keywords = ["logs", "ci", "github-actions", "llm", "claude-code", "context", "tokens", "debugging"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Debuggers",
+  "Topic :: System :: Logging",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Goooooooooody/pith"
+Issues = "https://github.com/Goooooooooody/pith/issues"
+
+[project.scripts]
+pith = "pith.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "pith.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

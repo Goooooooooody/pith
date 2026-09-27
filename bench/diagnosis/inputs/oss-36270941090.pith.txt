@@ -1,0 +1,101 @@
+pith · <log> · 1,219 lines → 525 groups · ~44.4k → ~1.7k tokens (96.2% smaller)
+
+jobs: Playwright E2E tests (1/8)
+levels: error 8 · warn 5 · notable 11 · info 665
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Playwright E2E tests (1/8)
+L512      [e91b] ➤ YN0004: │ tree-sitter@npm:0.21.1 lists build scripts, but all build scripts have been disabled. (×2, last L513)
+L514      [655c] ➤ YN0004: │ unrs-resolver@npm:1.11.1 lists build scripts, but all build scripts have been disabled.
+L515    ✱ [d8e2] ➤ YN0007: │ msw@npm:2.10.4 [c815a] must be built because it never has been before or the last one failed
+L517      [4757] ➤ YN0000: └ Completed in 27s 659ms (×3, last L517)
+L518      [140f] ➤ YN0000: · Done with warnings in 30s 106ms
+L520      [9e1b] ▶ Run yarn e2e:plugin:build
+   …
+L981      [42b3] To view the server logs, wait for this job to complete and downloaded the 'grafana-server-log-1' artifact. (×2, last L981)
+L982      [f841] ▶ Run yarn e2e:playwright --shard=1/8 --reporter=dot,blob --output=playwright-test-results
+L983      [5cf8] yarn e2e:playwright --shard=1/8 --reporter=dot,blob --output=playwright-test-results
+   …
+L999      [9d4b] Running 95 tests using 4 workers, shard 1 of 8
+L1000     [9374] ····················································OFREP endpoint not called - OpenFeature may not be enabled
+L1001     [437b] ·········×············F·····
+L1002     [bbc4] ················
+L1004   ✱ [c8c3] 1) [admin] › e2e-playwright/plugin-e2e/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins
+          Error: Error while verifying @grafana/plugin-e2e scenarios: Expected variable edit page to display certain label names after query execution.
+          See https:/…/plugin-e2e/plugin-e2e-api-tests/README.md for more information.
+          Expected: To find preview of values: __name__, action, active, address}
+          Received: Error: expect(locator).toBeVisible() failed
+          Locator: locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+          Expected: visible
+          Timeout: 10000ms
+          Error: element(s) not found
+          Call log:
+          - Expect "toBeVisible" with timeout 10000ms
+          - waiting for locator('[data-testid="data-testid Variable editor Preview of Values option"]').or(locator('[data-testid="data-testid custom-variable-preview-table"]')).first()
+          > 30 |       ).toDisplayPreviews(prometheusLabels.data);
+          Error Context: playwright-test-results/variableEditPage-plugin-e2-98ad9--query-with-mocked-response-admin-retry1/error-context.md
+          at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+          at …/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:30:9
+   …
+L1094   ✱ [b2637] 1 failed
+          [admin] › e2e-playwright/plugin-e2e/plugin-e2e-api-tests/as-admin-user/variableEditPage.spec.ts:20:9 › plugin-e2e-api-tests admin › variable query with mocked response @plugins
+L1096     [ea47] 94 passed (3.1m)
+L1097   ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L1119)
+L1098   ✱ [d6f3] ▶ Run echo "Tests in this shard failed."
+L1099   ✱ [8a9d] echo "Tests in this shard failed."
+L1100     [fdf0] echo ""
+L1101     [6ff7] echo "View combined logs and HTML report in the 'Playwright test report' job once all tests finish."
+L1102     [3133] exit 1
+L1103     [c522] shell: /usr/bin/bash -e {0} (×8, last L1103)
+L1104     [4293] env: (×25, last L1163)
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+          VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+          (+7 lines)
+   …
+L1116   ✱ [137e] Tests in this shard failed.
+L1118     [37a7] View combined logs and HTML report in the 'Playwright test report' job once all tests finish.
+L1119   ✱ [eead] ##[error]Process completed with exit code 1.
+L1120     [ac10] ▶ Run actions/upload-artifact@v7 (×2, last L1153)
+
+== OTHER ERRORS & WARNINGS
+L78     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L598    WARN [a203] (node:4698) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods (×2, last L643)
+L599    WARN [1673] (Use `node --trace-deprecation ...` to show where the warning was created) (×2, last L644)
+L31     NOTA [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×7, last L1214)
+L724    NOTA [4371] ▶ Run set -euo pipefail
+L725    NOTA [c99a] set -euo pipefail
+L949    NOTA [2aab] ▶ Run timeout=60
+L950    NOTA [4bb5] timeout=60
+
+== END OF OUTPUT
+L1153     [ac10] ▶ Run actions/upload-artifact@v7
+L1154     [8d65] with:
+L1163     [4293] env:
+L1174     [bc62] With the provided path, there will be 1 file uploaded
+L1175     [af32] Artifact name is valid!
+L1176     [8719] Root directory input is valid!
+L1177     [d082] Uploading artifact: playwright-blob-1.zip
+L1178     [1b36] Beginning upload of artifact content to blob storage
+L1179     [fce5] Uploaded bytes 7240694
+L1180     [d3e5] Finished uploading artifact content to blob storage!
+L1181     [e64f] SHA256 digest of uploaded artifact is edd9cbad55dd2a1b21a0b67451a3ca6087ce25498890e46b7aa69c7f16c9f9a7
+L1182     [fdc8] Finalizing artifact upload
+L1183     [bd32] Artifact playwright-blob-1 successfully finalized. Artifact ID 10915417925
+L1184     [eb6d] Artifact playwright-blob-1 has been successfully uploaded! Final size is 7240694 bytes. Artifact ID is 10915417925
+L1185     [0c00] Artifact download URL: https://github.com/grafana/grafana/actions/runs/36270941090/artifacts/10915417925
+
+== MOST FREQUENT OTHER LINES
+×20      [c03f] (Reading database ... 5%
+×10      [1f25] Updating files:  90% (21026/23147)
+×5       [cabc] Received 197132288 of 460980620 (42.8%), 188.0 MBs/sec
+×4       [938a] Prepare all required actions
+×4       [a907] Getting action download info
+×4       [a71a] hint:
+×4       [327a] 10 assets
+×4       [659a] 57 modules
+×4       [a78a] webpack 5.105.0 compiled successfully in 1026 ms
+×3       [8399] Removing SSH command configuration
+
+(not shown: 461 groups, 506 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

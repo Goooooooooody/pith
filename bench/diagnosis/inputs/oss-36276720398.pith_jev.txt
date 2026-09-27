@@ -1,0 +1,51 @@
+pith · <log> · 476 lines → 292 groups · ~12.9k → ~695 tokens (94.6% smaller)
+
+jobs: docs
+levels: error 2 · warn 3 · info 346
+raw: <removed for evaluation>
+jev (jev-latest): hid 264/292 groups as confident noise · 1 requests · 1,922 tokens · $0.0001 · 0.5s
+most likely root cause: [38ef] rc=0.49 (confidence 0.46, cause visible p=0.42)
+
+== LIKELY ROOT CAUSE (jev rc=0.49)
+[38ef] ERROR ×1  act=0.76 val=2.3/4 rc=0.49  L459  job: docs
+  make: *** [Makefile:175: black] Error 123
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: docs
+L441      [7e7b] python lint.py
+L442      [0dd9] Running sphinxlint for: /home/runner/work/django/django/docs params=[]
+L443      [70b5] No problems found.
+L445      [ec56] Documentation lint complete.
+L446      [5386] ▶ Run make black
+L447      [d45b] make black
+L449      [4293] env: (×4, last L449)
+          pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+          PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+          Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+          (+3 lines)
+   ...
+L457      [a724] ./ref/models/querysets.txt: Rewriting...
+L458      [e150] 💥 📢 Code blocks in documentation must be reformatted with blacken-docs 📢 💥
+L459    ✱ [38ef] make: *** [Makefile:175: black] Error 123
+L460    ✱ [eead] ##[error]Process completed with exit code 2.
+
+== OTHER ERRORS & WARNINGS
+L193    WARN [d2cc] WARNING: apt does not have a stable CLI interface. Use with caution in scripts. (×2, last L231)
+
+== END OF OUTPUT
+L433      [4293] env:
+L448      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [8d65] with:
+×1       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+×1       [93e5] ▶ Setting up auth
+
+(not shown: 11 groups, 11 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

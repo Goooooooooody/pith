@@ -1,0 +1,67 @@
+pith · <log> · 682 lines → 189 groups · ~18.2k → ~1.0k tokens (94.4% smaller)
+
+jobs: Ruby; Ruby without Bundler
+levels: error 3 · warn 2 · info 354
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Ruby
+L395      [ebb0] 1 installed gem you directly depend on is looking for funding.
+          Run `bundle fund` for details
+L397      [931d] Took   3.23 seconds (×9, last L506)
+L398      [5240] ▶ Run bundle exec rake internal_investigation
+L399      [8d01] bundle exec rake internal_investigation
+L400      [c522] shell: /usr/bin/bash -e {0} (×3, last L635)
+L402      [2453] Running RuboCop...
+L403      [642e] Inspecting 1768 files (×2, last L639)
+L404    ✱ [47e2] RuboCop failed!
+L405      [3340] ............................................................................................................................................................................................................................................................................................................ (×2, last L640)
+L407      [0373] Offenses: (×2, last L642)
+L409      [a8d0] spec/rubocop/cli/autocorrect_spec.rb:363:101: C: Layout/LineLength: Line is too long. [106/100] (×2, last L644)
+          '--only', 'Style/MethodCallWithArgsParentheses,Layout/MultilineMethodCallBraceLayout'
+          ^^^^^^
+   …
+L413      [be05] 1768 files inspected, 1 offense detected (×2, last L648)
+L414    ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L649)
+-- job: Ruby without Bundler
+L632      [1331] 3 gems installed (×2, last L632)
+L633      [6ae2] ▶ Run rubocop
+L634      [d6ac] rubocop
+L637      [109d] `AllCops/UseProjectIndex` is enabled but the `rubydex` gem is not installed.
+L638      [63ee] Analyses that use the project index will be skipped. Add `gem 'rubydex'` to your Gemfile.
+   …
+L649    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L67     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning, (×2, last L541)
+
+== END OF OUTPUT
+L618      [331d] Successfully installed ruby-progressbar-1.13.0
+L619      [7126] Successfully installed ast-2.4.3
+L620      [f418] Successfully installed parser-3.3.12.0
+L621      [9ba9] Successfully installed rubocop-ast-1.50.0
+L622      [8c5b] Successfully installed regexp_parser-2.12.0
+L623      [756f] Successfully installed rainbow-3.1.1
+L624      [f47a] Successfully installed parallel-2.2.0
+L625      [45ce] Successfully installed lint_roller-1.1.0
+L626      [ff2c] Successfully installed language_server-protocol-3.17.0.6
+L627      [c6c2] Successfully installed rubocop-1.91.0
+L628      [1331] 12 gems installed
+L629      [72e7] Successfully installed rubocop-performance-1.27.0
+L630      [2451] Successfully installed rubocop-rake-0.7.1
+L631      [25db] Successfully installed rubocop-rspec-3.10.2
+L635      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×8       [a71a] hint:
+×4       [8d65] with:
+×4       [8963] [command]/usr/bin/git version
+×4       [4e5e] git version 2.55.0
+×4       [d936] Temporarily overriding HOME='/home/runner/work/_temp/7877b9d2-23ba-4c48-afe0-d1f321afd032' before making global git config changes
+×4       [90b0] Adding repository directory to the temporary git global config as a safe directory
+×4       [ae83] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+×4       [8399] Removing SSH command configuration
+×4       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×4       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+
+(not shown: 126 groups, 227 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

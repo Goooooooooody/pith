@@ -1,0 +1,224 @@
+lint	UNKNOWN STEP	﻿2026-09-26T14:07:46.5290688Z Current runner version: '2.337.0'
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5316633Z ##[group]Runner Image Provisioner
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5317621Z Hosted Compute Agent
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5318230Z Version: 20260828.587
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5318854Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5319663Z Build Date: 2026-08-28T16:44:25Z
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5320349Z Worker ID: {998d2742-f442-4631-b1b4-f0b385bff842}
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5321106Z Azure Region: northcentralus
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5321775Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5323325Z ##[group]Operating System
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5324071Z Ubuntu
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5324595Z 24.04.5
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5325129Z LTS
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5325691Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5326241Z ##[group]Runner Image
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5327154Z Image: ubuntu-24.04
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5327735Z Version: 20260920.314.1
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5329078Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5330704Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5331719Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5332838Z ##[group]GITHUB_TOKEN Permissions
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5334796Z Contents: read
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5335429Z Metadata: read
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5336102Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5338631Z Secret source: None
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5339574Z Cache mode: write
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5340382Z Prepare workflow directory
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5908774Z Prepare all required actions
+lint	UNKNOWN STEP	2026-09-26T14:07:46.5980790Z Getting action download info
+lint	UNKNOWN STEP	2026-09-26T14:07:46.8553728Z Download action repository 'actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0' (SHA:9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0)
+lint	UNKNOWN STEP	2026-09-26T14:07:47.0012892Z Download action repository 'j178/prek-action@bdca6f102f98e2b4c7029491a53dfd366469e33d' (SHA:bdca6f102f98e2b4c7029491a53dfd366469e33d)
+lint	UNKNOWN STEP	2026-09-26T14:07:47.3588301Z Complete job name: lint
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4330264Z ##[group]Run actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4331357Z with:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4331803Z   persist-credentials: false
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4332327Z   repository: python/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4336634Z   token: ***
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4337076Z   ssh-strict: true
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4337522Z   ssh-user: git
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4337949Z   clean: true
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4338393Z   sparse-checkout-cone-mode: true
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4338919Z   fetch-depth: 1
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4339394Z   fetch-tags: false
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4339835Z   show-progress: true
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4340280Z   lfs: false
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4340691Z   submodules: false
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4341137Z   set-safe-directory: true
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4341638Z   allow-unsafe-pr-checkout: false
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4342410Z env:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4342825Z   FORCE_COLOR: 1
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4343284Z   RUFF_OUTPUT_FORMAT: github
+lint	UNKNOWN STEP	2026-09-26T14:07:47.4343817Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5369553Z Syncing repository: python/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5372655Z ##[group]Getting Git version info
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5373855Z Working directory is '/home/runner/work/cpython/cpython'
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5375587Z [command]/usr/bin/git version
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5452589Z git version 2.55.0
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5476088Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5489631Z Temporarily overriding HOME='/home/runner/work/_temp/a0a6fdc2-7221-49aa-8d97-88929c172c4e' before making global git config changes
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5492757Z Adding repository directory to the temporary git global config as a safe directory
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5495391Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5549843Z Deleting the contents of '/home/runner/work/cpython/cpython'
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5554012Z ##[group]Determining repository object format
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5555822Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5557561Z ##[group]Initializing the repository
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5561778Z [command]/usr/bin/git init /home/runner/work/cpython/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5708740Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5710613Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5712449Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5713838Z hint: call:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5714565Z hint:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5715502Z hint: 	git config --global init.defaultBranch <name>
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5716992Z hint:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5718116Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5719927Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5721287Z hint:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5722050Z hint: 	git branch -m <name>
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5722903Z hint:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5724051Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5725983Z Initialized empty Git repository in /home/runner/work/cpython/cpython/.git/
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5729759Z [command]/usr/bin/git remote add origin https://github.com/python/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5775969Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5777676Z ##[group]Disabling automatic garbage collection
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5781284Z [command]/usr/bin/git config --local gc.auto 0
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5812878Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5814289Z ##[group]Setting up auth
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5815239Z Removing SSH command configuration
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5819024Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	UNKNOWN STEP	2026-09-26T14:07:47.5853335Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6226802Z Removing HTTP extra header
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6232845Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6264582Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6485372Z Removing includeIf entries pointing to credentials config files
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6491628Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6523569Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6756303Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6806745Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/cpython/cpython/.git.path /home/runner/work/_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6837917Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/cpython/cpython/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6872236Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6903974Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6932466Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6933657Z ##[group]Fetching the repository
+lint	UNKNOWN STEP	2026-09-26T14:07:47.6938918Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9b7ab5376c5764d0c2c36c09fe47af73cc026b23:refs/remotes/pull/158238/merge
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9705791Z From https://github.com/python/cpython
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9708230Z  * [new ref]         9b7ab5376c5764d0c2c36c09fe47af73cc026b23 -> pull/158238/merge
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9739197Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9740578Z ##[group]Determining the checkout info
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9742090Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9742787Z [command]/usr/bin/git sparse-checkout disable
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9775442Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9812229Z ##[group]Checking out the ref
+lint	UNKNOWN STEP	2026-09-26T14:07:52.9816770Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/158238/merge
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6931689Z Note: switching to 'refs/remotes/pull/158238/merge'.
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6933083Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6934046Z You are in 'detached HEAD' state. You can look around, make experimental
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6936612Z changes and commit them, and you can discard any commits you make in this
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6938996Z state without impacting any branches by switching back to a branch.
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6940430Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6941367Z If you want to create a new branch to retain commits you create, you may
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6943436Z do so (now or later) by using -c with the switch command. Example:
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6944692Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6945301Z   git switch -c <new-branch-name>
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6946232Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6947060Z Or undo this operation with:
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6947900Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6948378Z   git switch -
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6948953Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6949930Z Turn off this advice by setting config variable advice.detachedHead to false
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6951388Z 
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6952600Z HEAD is now at 9b7ab53 Merge aca1577a874a1e6547e705a106279092d233ed1c into 8122ff4818f418e8ae984cf6964215689b00808d
+lint	UNKNOWN STEP	2026-09-26T14:07:53.6999091Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7002075Z [command]/usr/bin/git log -1 --format=%H
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7028641Z 9b7ab5376c5764d0c2c36c09fe47af73cc026b23
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7038934Z ##[group]Removing auth
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7039875Z Removing SSH command configuration
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7042963Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7078931Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7313375Z Removing HTTP extra header
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7316284Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7357476Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7597065Z Removing includeIf entries pointing to credentials config files
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7601492Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7650899Z includeif.gitdir:/home/runner/work/cpython/cpython/.git.path
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7653240Z includeif.gitdir:/home/runner/work/cpython/cpython/.git/worktrees/*.path
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7655924Z includeif.gitdir:/github/workspace/.git.path
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7658519Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7663946Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/cpython/cpython/.git.path
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7686952Z /home/runner/work/_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7698658Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/cpython/cpython/.git.path /home/runner/work/_temp/git-credentials-53495102-0d06-4096-ba79-c9cfd5e74098.config
+lint	UNKNOWN STEP	2026-09-26T14:07:53.7730992Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/cp
+
+... [96046 characters truncated] ...
+
+ct metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5895781Z 2026-09-26T14:08:21.044228Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-format
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5897195Z 2026-09-26T14:08:21.044266Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5898490Z 2026-09-26T14:08:21.044318Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-format
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5899902Z 2026-09-26T14:08:21.044363Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5901226Z 2026-09-26T14:08:21.044417Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-format
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5902517Z 2026-09-26T14:08:21.044457Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5903806Z 2026-09-26T14:08:21.044510Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=black
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5905080Z 2026-09-26T14:08:21.044549Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `black`: failed to read from file `/home/runner/.cache/prek/repos/a326fbe3d867f8bd/black`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5906487Z 2026-09-26T14:08:21.044592Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=remove-tabs
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5907830Z 2026-09-26T14:08:21.044628Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `remove-tabs`: failed to read from file `/home/runner/.cache/prek/repos/c5108aaecd579bfe/remove_tabs`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5909178Z 2026-09-26T14:08:21.044691Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-case-conflict
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5910601Z 2026-09-26T14:08:21.044731Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-case-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-case-conflict`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5912030Z 2026-09-26T14:08:21.044772Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-merge-conflict
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5913458Z 2026-09-26T14:08:21.044807Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-merge-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-merge-conflict`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5914843Z 2026-09-26T14:08:21.044848Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-toml
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5916407Z 2026-09-26T14:08:21.044887Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-toml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-toml`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5917743Z 2026-09-26T14:08:21.044928Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-yaml
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5919064Z 2026-09-26T14:08:21.044964Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-yaml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-yaml`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5920404Z 2026-09-26T14:08:21.045005Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=end-of-file-fixer
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5921816Z 2026-09-26T14:08:21.045041Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end-of-file-fixer`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5923215Z 2026-09-26T14:08:21.045082Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=end-of-file-fixer
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5924740Z 2026-09-26T14:08:21.045123Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end-of-file-fixer`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5926125Z 2026-09-26T14:08:21.045167Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=mixed-line-ending
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5927647Z 2026-09-26T14:08:21.045206Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `mixed-line-ending`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/mixed-line-ending`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5929053Z 2026-09-26T14:08:21.045246Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=trailing-whitespace
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5930509Z 2026-09-26T14:08:21.045283Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `trailing-whitespace`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/trailing-whitespace-fixer`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5931967Z 2026-09-26T14:08:21.045323Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=trailing-whitespace
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5933413Z 2026-09-26T14:08:21.045359Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `trailing-whitespace`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/trailing-whitespace-fixer`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5934936Z 2026-09-26T14:08:21.045443Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-dependabot version=>=3.10
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5936512Z 2026-09-26T14:08:21.045478Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-dependabot`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5937996Z 2026-09-26T14:08:21.045560Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-github-workflows version=>=3.10
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5939505Z 2026-09-26T14:08:21.045595Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-github-workflows`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5941186Z 2026-09-26T14:08:21.045682Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-readthedocs version=>=3.10
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5942654Z 2026-09-26T14:08:21.045723Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-readthedocs`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5944071Z 2026-09-26T14:08:21.045781Z TRACE run{hook_id=check-hooks-apply language=system}: Using go.mod-derived language_version hook=actionlint version=>= 1.25.0
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5945005Z 2026-09-26T14:08:21.045835Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=zizmor
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5946401Z 2026-09-26T14:08:21.045878Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `zizmor`: failed to read from file `/home/runner/.cache/prek/repos/8aa5f356979f1ec7/zizmor`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5947778Z 2026-09-26T14:08:21.045957Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=sphinx-lint version=>=3.10
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5949302Z 2026-09-26T14:08:21.046000Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `sphinx-lint`: failed to read from file `/home/runner/.cache/prek/repos/75577db6a0778ed1/sphinx-lint`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5951023Z 2026-09-26T14:08:21.046049Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-capi-macros`: failed to read from file `/home/runner/work/cpython/cpython/python`: No such file or directory (os error 2)
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5952253Z 2026-09-26T14:08:21.049222Z  INFO run{hook_id=check-hooks-apply language=system}: close time.busy=18.5ms time.idle=4.25ms
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5952967Z 2026-09-26T14:08:21.049263Z DEBUG Running priority group with priority 37: ["check-useless-excludes"]
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5953962Z 2026-09-26T14:08:21.049773Z TRACE matching_filenames{hook="check-useless-excludes"}: close time.busy=499µs time.idle=861ns
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5954800Z 2026-09-26T14:08:21.049788Z TRACE Files for hook `check-useless-excludes` after filtering matched=true filenames=1
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5955650Z 2026-09-26T14:08:21.049808Z DEBUG run{hook_id=check-useless-excludes language=system}: Loading project configuration path=.pre-commit-config.yaml
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5957302Z 2026-09-26T14:08:21.052371Z TRACE run{hook_id=check-useless-excludes language=system}:ls_files{cwd="/home/runner/work/cpython/cpython"}: Executing `cd /home/runner/work/cpython/cpython && /usr/bin/git -c core.useBuiltinFSMonitor=false --literal-pathspecs ls-files -z -- /home/runner/work/cpython/cpython`
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5959067Z 2026-09-26T14:08:21.055810Z TRACE run{hook_id=check-useless-excludes language=system}:ls_files{cwd="/home/runner/work/cpython/cpython"}: close time.busy=874µs time.idle=2.57ms
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5960036Z 2026-09-26T14:08:21.055837Z DEBUG run{hook_id=check-useless-excludes language=system}: All files in the workspace: 6416
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5960839Z 2026-09-26T14:08:21.062534Z  INFO run{hook_id=check-useless-excludes language=system}: close time.busy=10.2ms time.idle=2.55ms
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5961836Z 2026-09-26T14:08:21.062984Z TRACE Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false --no-pager diff --no-ext-diff --color=always -- /home/runner/work/cpython/cpython`
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5962780Z ##[endgroup]
+lint	UNKNOWN STEP	2026-09-26T14:08:21.5982467Z ##[error]prek exited with code 1
+lint	UNKNOWN STEP	2026-09-26T14:08:21.6111882Z Post job cleanup.
+lint	UNKNOWN STEP	2026-09-26T14:08:21.7228376Z Cache hit occurred on the primary key prek-v1|Linux|X64||79dd4974bca7b2a16818a8a87c29f189c010a5d23f7f5e94e1ba356c15bd7e74, not saving cache.
+lint	UNKNOWN STEP	2026-09-26T14:08:21.7406115Z Post job cleanup.
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8288297Z [command]/usr/bin/git version
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8328510Z git version 2.55.0
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8369011Z Temporarily overriding HOME='/home/runner/work/_temp/5b604b73-c7bc-4a87-9d74-7d74b51dabe7' before making global git config changes
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8370400Z Adding repository directory to the temporary git global config as a safe directory
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8375816Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8410257Z Removing SSH command configuration
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8417114Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8451672Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8683884Z Removing HTTP extra header
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8689832Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8727802Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8990575Z Removing includeIf entries pointing to credentials config files
+lint	UNKNOWN STEP	2026-09-26T14:08:21.8997177Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	UNKNOWN STEP	2026-09-26T14:08:21.9033975Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	UNKNOWN STEP	2026-09-26T14:08:21.9460989Z Cleaning up orphan processes

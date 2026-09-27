@@ -1,0 +1,59 @@
+pith · <log> · 476 lines → 292 groups · ~12.9k → ~974 tokens (92.4% smaller)
+
+jobs: docs
+levels: error 2 · warn 3 · info 346
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: docs
+L441      [7e7b] python lint.py
+L442      [0dd9] Running sphinxlint for: /home/runner/work/django/django/docs params=[]
+L443      [70b5] No problems found.
+L445      [ec56] Documentation lint complete.
+L446      [5386] ▶ Run make black
+L447      [d45b] make black
+L449      [4293] env: (×4, last L449)
+          pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+          PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+          Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+          (+3 lines)
+   ...
+L457      [a724] ./ref/models/querysets.txt: Rewriting...
+L458      [e150] 💥 📢 Code blocks in documentation must be reformatted with blacken-docs 📢 💥
+L459    ✱ [38ef] make: *** [Makefile:175: black] Error 123
+L460    ✱ [eead] ##[error]Process completed with exit code 2.
+
+== OTHER ERRORS & WARNINGS
+L66     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L193    WARN [d2cc] WARNING: apt does not have a stable CLI interface. Use with caution in scripts. (×2, last L231)
+
+== END OF OUTPUT
+L417      [8b5b] Using cached snowballstemmer-3.1.1-py3-none-any.whl (104 kB)
+L418      [0d70] Using cached sphinxcontrib_applehelp-2.0.0-py3-none-any.whl (119 kB)
+L419      [66c65] Using cached sphinxcontrib_devhelp-2.0.0-py3-none-any.whl (82 kB)
+L420      [65de] Using cached sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl (98 kB)
+L421      [9333] Using cached sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+L422      [f817] Using cached sphinxcontrib_qthelp-2.0.0-py3-none-any.whl (88 kB)
+L423      [2a66] Using cached sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl (92 kB)
+L424      [d098] Using cached polib-1.2.0-py2.py3-none-any.whl (20 kB)
+L425      [ccc5] Downloading regex-2026.9.10-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (803 kB)
+L427      [991d] Installing collected packages: polib, urllib3, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, snowba
+L429      [1aca] Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Pygments-2.21.0 Sphinx-9.1.0 alabaster-1.0.0 babel-2.18.0 black-26.5.1 blacken-docs-1.20.0 certifi-2026.7.22 charset_normalizer-3.5.1 click-8.5.0 d
+L430      [032b] ▶ Run make lint
+L431      [f4ba] make lint
+L433      [4293] env:
+L448      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×20      [c03f] (Reading database ... 5%
+×4       [a71a] hint:
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×3       [4a91] [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+
+(not shown: 253 groups, 267 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

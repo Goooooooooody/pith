@@ -1,0 +1,219 @@
+Format jit codebase windows	UNKNOWN STEP	﻿2026-09-24T22:42:54.4466049Z Current runner version: '2.337.0'
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4493107Z ##[group]Runner Image Provisioner
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4493943Z Hosted Compute Agent
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4494509Z Version: 20260828.587
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4495124Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4495919Z Build Date: 2026-08-28T16:44:25Z
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4496568Z Worker ID: {e24b3b07-65a0-4f95-aebf-0721512a4a1b}
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4497249Z Azure Region: eastus
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4497754Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4499125Z ##[group]Operating System
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4499739Z Microsoft Windows Server 2025
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4500357Z 10.0.26100
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4500877Z Datacenter
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4501349Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4501856Z ##[group]Runner Image
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4502486Z Image: windows-2025-vs2026
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4503039Z Version: 20260907.229.1
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4504485Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260907.229/images/windows/Windows2025-VS2026-Readme.md
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4506124Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260907.229
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4507530Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4508638Z ##[group]GITHUB_TOKEN Permissions
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4510476Z Contents: read
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4511092Z Metadata: read
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4511632Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4513697Z Secret source: None
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4514637Z Cache mode: write
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.4515324Z Prepare workflow directory
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.5020978Z Prepare all required actions
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.5073271Z Getting action download info
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:54.7287501Z Download action repository 'actions/setup-dotnet@v6' (SHA:a98b56852c35b8e3190ac28c8c2271da59106c68)
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.0193914Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.1235446Z Download action repository 'actions/setup-python@v7' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.3000636Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.5481351Z Complete job name: Format jit codebase windows
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.7729059Z ##[group]Run actions/setup-dotnet@v6
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.7730232Z with:
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.7730773Z   dotnet-version: 10.0.x
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.7731338Z   cache: false
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:55.7732092Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:56.3454493Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v6\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Runtime dotnet -Channel LTS
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:58.3236862Z dotnet-install: Downloaded file https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.12/dotnet-runtime-10.0.12-win-x64.zip size is 36960258 bytes.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:58.3240127Z dotnet-install: Either downloaded or local package size can not be measured. One of them may be corrupted.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:58.3266657Z dotnet-install: Extracting the archive.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:59.4137285Z dotnet-install: Note that the script does not ensure your Windows version is supported during the installation.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:59.4144559Z dotnet-install: To check the list of supported versions, go to https://learn.microsoft.com/dotnet/core/install/windows#supported-versions
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:59.4153830Z dotnet-install: Installed version is 10.0.12
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:59.4161498Z dotnet-install: Installation finished
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:42:59.5738671Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'D:\a\_actions\actions\setup-dotnet\v6\externals\install-dotnet.ps1' -SkipNonVersionedFiles -Channel 10.0
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:05.7568453Z dotnet-install: Downloaded file https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-win-x64.zip size is 300608304 bytes.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:05.7575591Z dotnet-install: Either downloaded or local package size can not be measured. One of them may be corrupted.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:05.7604009Z dotnet-install: Extracting the archive.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9104745Z dotnet-install: Note that the script does not ensure your Windows version is supported during the installation.
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9109606Z dotnet-install: To check the list of supported versions, go to https://learn.microsoft.com/dotnet/core/install/windows#supported-versions
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9116946Z dotnet-install: Installed version is 10.0.401
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9124616Z dotnet-install: Installation finished
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9996866Z ##[group]Run actions/checkout@v7
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9997199Z with:
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9997405Z   path: runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:29.9997608Z   repository: dotnet/runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0000328Z   token: ***
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0000526Z   ssh-strict: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0000731Z   ssh-user: git
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0000990Z   persist-credentials: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0001210Z   clean: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0001401Z   sparse-checkout-cone-mode: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0001635Z   fetch-depth: 1
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0001812Z   fetch-tags: false
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0001997Z   show-progress: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0002184Z   lfs: false
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0002355Z   submodules: false
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0002548Z   set-safe-directory: true
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0002791Z   allow-unsafe-pr-checkout: false
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0003013Z env:
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0003192Z   DOTNET_ROOT: C:\Program Files\dotnet
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.0003433Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.1165818Z Syncing repository: dotnet/runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.1169781Z ##[group]Getting Git version info
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.1170264Z Working directory is 'D:\a\runtime\runtime\runtime'
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.2725246Z [command]"C:\Program Files\Git\bin\git.exe" version
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.6375769Z git version 2.55.0.windows.5
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.6427034Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.6444148Z Temporarily overriding HOME='D:\a\_temp\21545a7d-47a3-4b39-b8f2-862cdc920cbb' before making global git config changes
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.6444985Z Adding repository directory to the temporary git global config as a safe directory
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.6454794Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\runtime\runtime\runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.7149699Z ##[group]Determining repository object format
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.7151858Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.7152355Z ##[group]Initializing the repository
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.7161479Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\runtime\runtime\runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.8062173Z Initialized empty Git repository in D:/a/runtime/runtime/runtime/.git/
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.8111099Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/dotnet/runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.8818820Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.8820017Z ##[group]Disabling automatic garbage collection
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.8831555Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.9152138Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.9152818Z ##[group]Setting up auth
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.9153944Z Removing SSH command configuration
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.9163888Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:30.9465129Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:32.4985150Z Removing HTTP extra header
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:32.4995524Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:32.5302784Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.0843545Z Removing includeIf entries pointing to credentials config files
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.0853389Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.1154806Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.6673457Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-25ba7366-c950-4be2-8119-97152554a759.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.6973229Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/runtime/runtime/runtime/.git.path D:\a\_temp\git-credentials-25ba7366-c950-4be2-8119-97152554a759.config
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.7275812Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/runtime/runtime/runtime/.git/worktrees/*.path D:\a\_temp\git-credentials-25ba7366-c950-4be2-8119-97152554a759.config
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.7668785Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/runtime/.git.path /github/runner_temp/git-credentials-25ba7366-c950-4be2-8119-97152554a759.config
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.7980746Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/runtime/.git/worktrees/*.path /github/runner_temp/git-credentials-25ba7366-c950-4be2-8119-97152554a759.config
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.8287289Z ##[endgroup]
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.8287690Z ##[group]Fetching the repository
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:33.8310557Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +60037ec5c7cafb729a7bee5b0eb8d20029967589:refs/remotes/pull/134624/merge
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:48.7088246Z From https://github.com/dotnet/runtime
+Format jit codebase windows	UNKNOWN STEP	2026-09-24T22:43:48.7089286Z  * [new ref]           60037ec5c7cafb729a7bee5b0eb8d20029967
+
+... [2791751 characters truncated] ...
+
+ -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/emitinl.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:51.0404279Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/registerarm.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:51.0635516Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/valuenumtype.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:51.3665766Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/emitarm64.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.5745579Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/fgprofilesynthesis.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.6624047Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/smweights.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.6803980Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/bitset.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.7114961Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/optcse.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.7243610Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/buildstring.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.7524073Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/dataflow.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.7553389Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/unwind.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:52.8064404Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/compiler.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:55.1345008Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/codegencommon.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:49:57.2067492Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/targetloongarch64.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:01.9363242Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/fgprofile.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:01.9992284Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/bitsetasuint64.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:02.0062996Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/compphases.h
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:02.8683380Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/rangecheckcloning.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:02.8841735Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/regset.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:02.8993950Z Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/lsra.cpp
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6438143Z [22:50:05] Creating patch file /__w/runtime/runtime/runtime/format.patch
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6560690Z [22:50:05] There were errors in formatting. Please run jit-format locally with: 
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6561606Z 
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6562593Z [22:50:05] 	jit-format -a x64 -b Checked -o linux -r <absolute-path-to-runtime-root> --verbose --fix --projects dll
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6563333Z 
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6563467Z [22:50:05] 
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6563867Z Or download and apply generated patch:
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6564553Z [22:50:05] 1. From the GitHub 'Checks' page on the Pull Request, click on the Summary link.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6565110Z [22:50:05] 2. Scroll to the bottom of the page to the Artifacts section.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6565646Z [22:50:05] 3. Artifacts are located in alphabetical order, target artifact name is
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6566197Z [22:50:05]    'format.<OS>.patch.'. Find appropriate format patch artifact.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6566596Z [22:50:05] 4. Download the artifact.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6566894Z [22:50:05] 5. Unzip the patch file.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6567180Z [22:50:05] 6. git apply format.patch
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6567358Z 
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6573238Z ##[error]Format job found errors, please apply the format patch.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6769041Z ##[error]Process completed with exit code 254.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6830333Z ##[group]Run actions/upload-artifact@v7
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6830632Z with:
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6830856Z   path: runtime/format.patch
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6831111Z   name: format.linux.patch
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6831354Z   if-no-files-found: warn
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6831589Z   compression-level: 6
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6831814Z   overwrite: false
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6832042Z   include-hidden-files: false
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6832281Z   archive: true
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6832500Z env:
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6832708Z   DOTNET_ROOT: /usr/share/dotnet
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6832960Z ##[endgroup]
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.6836795Z ##[command]/usr/bin/docker exec  891219efc959b31a43d1f9909566a0063f082f5f21d1e4384832489808d0598d sh -c "cat /etc/*release | grep ^ID"
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.9264389Z With the provided path, there will be 1 file uploaded
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.9267690Z Artifact name is valid!
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:05.9268457Z Root directory input is valid!
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.1598605Z Uploading artifact: format.linux.patch.zip
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.1640533Z Beginning upload of artifact content to blob storage
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.3250053Z Uploaded bytes 832
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.3542268Z Finished uploading artifact content to blob storage!
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.3543639Z SHA256 digest of uploaded artifact is fea74d3b22db678bc81903a4316d41dbcefb41d7143d2d101ea50da9a2c50834
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.3544787Z Finalizing artifact upload
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.6241400Z Artifact format.linux.patch successfully finalized. Artifact ID 10837473604
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.6242582Z Artifact format.linux.patch has been successfully uploaded! Final size is 832 bytes. Artifact ID is 10837473604
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.6245675Z Artifact download URL: https://github.com/dotnet/runtime/actions/runs/36068958756/artifacts/10837473604
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.6456846Z Post job cleanup.
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.6464574Z ##[command]/usr/bin/docker exec  891219efc959b31a43d1f9909566a0063f082f5f21d1e4384832489808d0598d sh -c "cat /etc/*release | grep ^ID"
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8201472Z [command]/usr/sbin/git version
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8237065Z git version 2.53.0
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8312779Z Temporarily overriding HOME='/__w/_temp/de3eb258-cbae-4980-8b38-ceec05bf30fe' before making global git config changes
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8313603Z Adding repository directory to the temporary git global config as a safe directory
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8318479Z [command]/usr/sbin/git config --global --add safe.directory /__w/runtime/runtime/runtime
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8353814Z Removing SSH command configuration
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8354462Z [command]/usr/sbin/git config --local --name-only --get-regexp core\.sshCommand
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8392897Z [command]/usr/sbin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8774124Z Removing HTTP extra header
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8775318Z [command]/usr/sbin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.8812225Z [command]/usr/sbin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9166829Z Removing includeIf entries pointing to credentials config files
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9173157Z [command]/usr/sbin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9200351Z includeif.gitdir:/__w/runtime/runtime/runtime/.git.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9201131Z includeif.gitdir:/__w/runtime/runtime/runtime/.git/worktrees/*.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9201865Z includeif.gitdir:/github/workspace/runtime/.git.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9203358Z includeif.gitdir:/github/workspace/runtime/.git/worktrees/*.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9208265Z [command]/usr/sbin/git config --local --get-all includeif.gitdir:/__w/runtime/runtime/runtime/.git.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9230576Z /__w/_temp/git-credentials-039e8783-51c4-4dd3-bf33-a37b9c048ab0.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9240874Z [command]/usr/sbin/git config --local --unset includeif.gitdir:/__w/runtime/runtime/runtime/.git.path \/__w\/_temp\/git\-credentials\-039e8783\-51c4\-4dd3\-bf33\-a37b9c048ab0\.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9277998Z [command]/usr/sbin/git config --local --get-all includeif.gitdir:/__w/runtime/runtime/runtime/.git/worktrees/*.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9300201Z /__w/_temp/git-credentials-039e8783-51c4-4dd3-bf33-a37b9c048ab0.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9308780Z [command]/usr/sbin/git config --local --unset includeif.gitdir:/__w/runtime/runtime/runtime/.git/worktrees/*.path \/__w\/_temp\/git\-credentials\-039e8783\-51c4\-4dd3\-bf33\-a37b9c048ab0\.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9340418Z [command]/usr/sbin/git config --local --get-all includeif.gitdir:/github/workspace/runtime/.git.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9362857Z /github/runner_temp/git-credentials-039e8783-51c4-4dd3-bf33-a37b9c048ab0.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9370982Z [command]/usr/sbin/git config --local --unset includeif.gitdir:/github/workspace/runtime/.git.path \/github\/runner_temp\/git\-credentials\-039e8783\-51c4\-4dd3\-bf33\-a37b9c048ab0\.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9409739Z [command]/usr/sbin/git config --local --get-all includeif.gitdir:/github/workspace/runtime/.git/worktrees/*.path
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9431284Z /github/runner_temp/git-credentials-039e8783-51c4-4dd3-bf33-a37b9c048ab0.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9439817Z [command]/usr/sbin/git config --local --unset includeif.gitdir:/github/workspace/runtime/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-039e8783\-51c4\-4dd3\-bf33\-a37b9c048ab0\.config
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9471161Z [command]/usr/sbin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9813702Z Removing credentials config '/__w/_temp/git-credentials-039e8783-51c4-4dd3-bf33-a37b9c048ab0.config'
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9967529Z Stop and remove container: a0f74a7f9c1d4f50a9aff1096d609422_mcrmicrosoftcomdotnetbuildtoolsprereqsazurelinux40net110crossamd64_7acb96
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:06.9972934Z ##[command]/usr/bin/docker rm --force 891219efc959b31a43d1f9909566a0063f082f5f21d1e4384832489808d0598d
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:07.5402957Z 891219efc959b31a43d1f9909566a0063f082f5f21d1e4384832489808d0598d
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:07.5432094Z Remove container network: github_network_5bf639cfc51146d9981635e74cff85a2
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:07.5436621Z ##[command]/usr/bin/docker network rm github_network_5bf639cfc51146d9981635e74cff85a2
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:07.6415275Z github_network_5bf639cfc51146d9981635e74cff85a2
+Format jit codebase linux	UNKNOWN STEP	2026-09-24T22:50:07.6489462Z Cleaning up orphan processes

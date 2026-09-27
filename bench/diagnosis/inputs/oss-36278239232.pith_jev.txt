@@ -1,0 +1,139 @@
+pith · <log> · 47,394 lines → 1167 groups · ~1980.7k → ~2.9k tokens (99.9% smaller)
+
+jobs: pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)
+levels: error 18 · warn 35 · notable 85 · info 5,308
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 783/1000 groups as confident noise (167 rarest groups not scored) · 2 requests · 9,346 tokens · $0.0004 · 1.2s
+most likely root cause: [e71c] rc=0.86 (confidence 0.85, cause visible p=0.74)
+
+== LIKELY ROOT CAUSE (jev rc=0.86)
+[e71c] ERROR ×1  act=0.89 val=3.1/4 rc=0.86  L46578  job: pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)
+  torch_tpu/eager/amp_policies.cc:122:10: fatal error: 'ATen/ops/qr_ops.h' file not found
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: pallas-tpu-py3.12-inductor / test (inductor-pallas-tpu, 1, 1, linux.google.tpuv7x.1)
+L350      [8dff] if [ -f "/home/runner/_work/_actions/pytorch/pytorch/main/.github/actions/setup-linux/../../scripts/parse_ref.py" ]; then
+          python3 "/home/runner/_work/_actions/pytorch/pytorch/main/.github/actions/setup-linux/../../scripts/parse_ref.py"
+L352      [892c] elif [ -f .github/scripts/parse_ref.py ]; then
+          python3 .github/scripts/parse_ref.py
+L354      [6da2] else (×10, last L47030)
+L355    ✱ [0f7b] echo "ERROR: parse_ref.py not found" >&2
+L356      [3133] exit 1 (×2, last L752)
+L357      [de9d] fi (×20, last L47033)
+L358      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×40, last L47311)
+   …
+L738      [dbcb] if [[ "${DOCKER_IMAGE_NAME}" == *"${DOCKER_REGISTRY}/${REPO_NAME}"* ]]; then
+          # The docker image name already includes the ECR prefix and tag, so we can just
+          # use it as it is, but first let's extract the tag
+          DOCKER_TAG=$(echo "${DOCKER_IMAGE_NAME}" | awk -F '[:,]' '{print $2}')
+          (+2 lines)
+   …
+L2615     [4b1c] + GIT_TERMINAL_PROMPT=0
+L2616     [8a19] + git clone https://github.com/google-pytorch/torch_tpu.git torch_tpu
+L2617     [2be2] Cloning into 'torch_tpu'... (×2, last L3453)
+L2618   ✱ [b408] fatal: could not read Username for 'https://github.com': terminal prompts disabled
+L2619   ✱ [f757] + echo 'Public clone failed. Falling back to authenticated clone...'
+L2620   ✱ [fecb] Public clone failed. Falling back to authenticated clone...
+L2621     [56d8] + echo 'Starting setup_repo.sh...'
+L2622     [616d] Starting setup_repo.sh...
+L2623     [f906] + install_gcloud
+   …
+L46577  ✱ [5069] ERROR: /var/lib/jenkins/torch_tpu/torch_tpu/eager/BUILD:600:21: Compiling torch_tpu/eager/amp_policies.cc failed: (Exit 1): clang failed: error executing CppCompile command (from target //torch_tpu/eager:amp_policies) external/rules_ml_toolchain+/cc/impls/linux_x86_64_linux_x86_64/wrappers/clang -MD
+L46578  ✱ [e71c] torch_tpu/eager/amp_policies.cc:122:10: fatal error: 'ATen/ops/qr_ops.h' file not found
+L46581  ✱ [926c] 1 error generated.
+L46582    [1424] [18,088 / 18,804] 56 actions running (×633, last L46618)
+          Compiling torch_tpu/ops/macros/logging.cc; 26s local, disk-cache
+          Compiling torch_tpu/ops/unary.cc; 21s local, disk-cache
+          Compiling .../c_api_client/pjrt_c_api_client.cc; 21s local, disk-cache
+          (+5 lines)
+   …
+L46636  ✱ [4803] Target //ci/wheel:torch_tpu_wheel failed to build
+L46637    [a3e8] [18,144 / 18,804] checking cached actions (×4, last L46646)
+L46639  ✱ [0064] Use --verbose_failures to see the command lines of failed build steps.
+L46642    [6a0d] INFO: Elapsed time: 573.423s, Critical Path: 70.02s
+L46645    [c123] INFO: 18144 processes: 5883 internal, 12261 local.
+L46648  ✱ [939f] ERROR: Build did NOT complete successfully
+L46649    [d968] + cleanup
+L46650    [86f3] + '[' -f temp_ssh_key ']'
+L46651  ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L751    ERRO [4bbd] echo "ERROR: ci-docker-hash mismatch: expected '${EXPECTED_CI_DOCKER_HASH}', computed '${COMPUTED_CI_DOCKER_HASH}' for '${DOCKER_BUILD_DIR}'"
+L848    ERRO [2bf6] # If no image exists but the hash is the same as the previous hash then we should error out here
+L1044   ERRO [d18c] jq: error (at <stdin>:24): Cannot iterate over null (null)
+L2164   ERRO [5920] ++ docker run -e BUILD_ENVIRONMENT -e PR_NUMBER -e GITHUB_ACTIONS -e GITHUB_REPOSITORY -e GITHUB_WORKFLOW -e GITHUB_JOB -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_RUN_ATTEMPT 
+L4668   ERRO [9fd7] INFO: Reading rc options for 'build' from /var/lib/jenkins/torch_tpu/.bazelrc:
+L47027  ERRO [5fed] elif [[ "${S3_REPORTS_OUTCOME}" == "failure" ]]; then
+L47260  ERRO [4376] [Log Model] Failed to process test log, metadata is None
+L52     WARN [a5ec] (node:865) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×5, last L47105)
+L1342   WARN [442c] (node:1680) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are n (×5, last L46943)
+L3093   WARN [666d] update-alternatives: warning: skip creation of /usr/share/man/man1/rsh.1.gz because associated file /usr/share/man/man1/ssh.1.gz (of link group rsh) doesn't exist
+L3095   WARN [e804] update-alternatives: warning: skip creation of /usr/share/man/man1/rlogin.1.gz because associated file /usr/share/man/man1/slogin.1.gz (of link group rlogin) doesn't exist
+L3959   WARN [e35d] WARNING: requirements_no_torch.txt line 2702 has --hash but no requirement, and will be ignored. (×3, last L3961)
+L4846   WARN [0594] WARNING: For repository 'rules_cc', the root module requires module version rules_cc@0.2.9, but got rules_cc@0.2.17 in the resolved dependency graph. Please update the version in y
+L4849   WARN [9d80] WARNING: For repository 'com_google_protobuf', the root module requires module version protobuf@32.1, but got protobuf@33.5 in the resolved dependency graph. Please update the vers
+L6518   WARN [ea6e] WARNING: /var/lib/jenkins/torch_tpu/torch_tpu/pjrt/BUILD:50:21: in cc_library rule //torch_tpu/pjrt:pjrt_state: Target '//torch_tpu/pjrt:pjrt_state' violates visibility of target '
+L6525   WARN [89c4] WARNING: /var/lib/jenkins/torch_tpu/torch_tpu/ops/BUILD:515:21: in cc_library rule //torch_tpu/ops:custom_kernels: Target '//torch_tpu/ops:custom_kernels' violates visibility of ta
+L6532   WARN [6549] WARNING: /var/lib/jenkins/torch_tpu/torch_tpu/common/BUILD:888:21: in cc_library rule //torch_tpu/common:compilation_cache: Target '//torch_tpu/common:compilation_cache' violates v
+L6539   WARN [01f8] WARNING: /var/lib/jenkins/torch_tpu/torch_tpu/distributed/BUILD:22:21: in cc_library rule //torch_tpu/distributed:process_group_tpu: Target '//torch_tpu/distributed:process_group_t
+L6546   WARN [f5c5] WARNING: /var/lib/jenkins/torch_tpu/ci/wheel/BUILD.bazel:67:22: in py_library rule //ci/wheel:all_torch_tpu_files: Target '//ci/wheel:all_torch_tpu_files' violates visibility of ta
+L47259  WARN [5216] :: warning Failed to parse metadata: Expecting value: line 1 column 1 (char 0) for data: Installed 8 packages in 25ms
+L47394  WARN [c0c1] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4, aws-actions/amazon-ecr-login@062
+L23     NOTA [b77c] Download action repository 'nick-fields/retry@v3.0.0' (SHA:7152eba30c6575329ac0576536151aca5a72780e)
+L55     NOTA [368f] Not on pull request and ciflow reference could not be extracted, skipping adding ssh keys
+L94     NOTA [a3ce] # Retry throttled fetches instead of failing hard. Native in git >= 2.54
+L95     NOTA [5695] # (retries HTTP 429, honoring Retry-After); maxRetries defaults to 0 so
+L97     NOTA [5dcf] # tionally. retryAfter is the fallback delay when no Retry-After header.
+L99     NOTA [015c] git config --global http.retryAfter 2
+L386    NOTA [4371] ▶ Run set -euo pipefail (×3, last L46800)
+L387    NOTA [c99a] set -euo pipefail (×3, last L46801)
+L503    NOTA [5e2f] pip3 not found, installing...
+L799    NOTA [c25e] retry () { (×2, last L994)
+L803    NOTA [9361] retry login "${DOCKER_REGISTRY}" (×2, last L998)
+L873    NOTA [4b4d] + retry login 308535385114.dkr.ecr.us-east-1.amazonaws.com (×2, last L1024)
+L876    NOTA [c4cc] /home/runner/_work/_temp/ce05e95c-c060-45df-a75a-ae3b142dae65.sh: line 5: aws: command not found (×7, last L1039)
+L927    NOTA [41a7] # It's ok if this steps fails, it would then be an anonymous user like what we used to have
+L1050   NOTA [2665] + retry docker pull 308535385114.dkr.ecr.us-east-1.amazonaws.com/pytorch/ci-image:pytorch-linux-jammy-tpu-py3.12-pallas-6d6d9d464d429612b7fd49e4fbb7ad6a6210b9f2
+L1821   NOTA [3829] mv: cannot stat 'td_results.json': No such file or directory
+L1846   NOTA [9260] ▶ Run nick-fields/retry@v3.0.0 (×3, last L47199)
+L1942   NOTA [3955] Setting output ci-no-test-timeout=False
+L2264   NOTA [5c4d] + echo 'Bazel not found. Installing Bazelisk...'
+L2265   NOTA [c090] Bazel not found. Installing Bazelisk...
+L2625   NOTA [eb3e] + echo 'gcloud CLI not found. Installing...'
+L2626   NOTA [99ba] gcloud CLI not found. Installing...
+L3103   NOTA [ca54] debconf: unable to initialize frontend: Dialog
+L3104   NOTA [344c] debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+L3114   NOTA [0779] invoke-rc.d: could not determine current runlevel
+L3115   NOTA [09af] invoke-rc.d: policy-rc.d denied execution of start.
+L47277  NOTA [0670] ▶ Run set -eou pipefail
+
+== END OF OUTPUT
+L47234    [bcc1] uv run --no-project --with python-dateutil==2.8.2 --with boto3==1.35.42 --with pandas==2.1.3 --with dataclasses_json==0.6.7 --with requests==2.32.3 python -m tools.stats.upload_utilization_stats.uploa
+L47255    [d0e1] repo: pytorch/pytorch
+L47256    [0c2b] Search for test log in s3 bucket: ossci-utilization
+L47277    [0670] ▶ Run set -eou pipefail
+L47280    [c0eb] echo "Holding runner for 2 hours until all ssh sessions have logged out"
+L47281    [5c02] for _ in $(seq 1440); do
+L47302    [b10a] Holding runner for 2 hours until all ssh sessions have logged out
+L47308    [5217] docker stop $(docker ps -q) || true
+L47309    [731d] # Prune all of the docker images
+L47310    [0708] docker system prune -af
+L47325    [560b] Deleted Containers:
+L47328    [d7ed] Deleted Images:
+L47329    [afc1] untagged: 308535385114.dkr.ecr.us-east-1.amazonaws.com/pytorch/ci-image:pytorch-linux-jammy-tpu-py3.12-pallas-6d6d9d464d429612b7fd49e4fbb7ad6a6210b9f2
+L47332    [1473] deleted: sha256:586fe3dbf2230551fbf053e0ab8a8f5284da04f5a185764c355db41eb3f1b487
+L47334    [6b00] Total reclaimed space: 59.71GB
+
+== MOST FREQUENT OTHER LINES
+×70      [31fc] 20c3783cc497: Pull complete
+×61      [3628] ts configured)
+×40      [dcdf] Computing main repo mapping:
+×34      [8d65] with:
+×8       [e18c] ip+torch_tpu_pypi_312_jaxlib, jaxlib==0.9.2)
+×7       [672e] password is empty
+×6       [1154] ip+torch_tpu_pypi_312_immutabledict, immutabledict==4.0.0)
+×6       [fe86] ▶ Run seemethere/upload-artifact-s3@v5
+×4       [aca5] ip+torch_tpu_pypi_312_sympy, sympy==1.14.0) ... (18 fetches)
+×4       [9620] he/bazel/_bazel_jenkins/8aa8197853200c1c3f2763e7c3805cca/external/rules_python\
+
+(not shown: 281 groups, 320 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

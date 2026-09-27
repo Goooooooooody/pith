@@ -1,0 +1,168 @@
+pith · <log> · 14,032 lines → 6135 groups · ~704.6k → ~4.0k tokens (99.4% smaller)
+
+jobs: Format jit codebase windows; Format jit codebase linux
+levels: error 107 · warn 22 · notable 96 · info 13,366
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Format jit codebase windows
+L249      [e8ca] ▶ Run python3 runtime/src/coreclr/scripts/jitformat.py -r runtime -o windows -a x64
+   …
+L375      [5553] -- Detecting CXX compile features (×3, last L4069)
+L376      [04b5] -- Detecting CXX compile features - done (×3, last L4070)
+L377      [40b8] -- Performing Test COMPILER_SUPPORTS_W_ERROR_UNGUARDED_AVAILABILITY (×9, last L4120)
+L378    ✱ [2ba5] -- Performing Test COMPILER_SUPPORTS_W_ERROR_UNGUARDED_AVAILABILITY - Failed (×9, last L4121)
+L379      [cd8c] -- The ASM_MASM compiler identification is MSVC (×3, last L4073)
+L380      [40c1] -- Found assembler: C:/Program Files/Microsoft Visual Studio/18/Enterprise/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/ml64.exe (×3, last L4074)
+L381      [da66] -- Performing Test HAVE_DIRENT_D_TYPE (×3, last L4075)
+L382    ✱ [d06f] -- Performing Test HAVE_DIRENT_D_TYPE - Failed (×3, last L4076)
+L383      [4d2e] -- Looking for getauxval (×3, last L4077)
+L384      [d20a] -- Looking for getauxval - not found (×3, last L4078)
+L385      [626d] -- Looking for include file GSS/GSS.h (×3, last L4079)
+   …
+L406      [451c] -- Looking for stddef.h (×3, last L4100)
+L407      [51d1] -- Looking for stddef.h - found (×3, last L4101)
+L408      [1767] -- Check size of off64_t (×3, last L4102)
+L409    ✱ [1c22] -- Check size of off64_t - failed (×3, last L4103)
+L410      [c417] -- Check size of _off64_t (×3, last L4104)
+L411    ✱ [802f] -- Check size of _off64_t - failed (×3, last L4105)
+L412      [8b94] -- Check size of __off64_t (×3, last L4106)
+L413    ✱ [67df] -- Check size of __off64_t - failed (×3, last L4107)
+L414      [2301] -- Looking for fseeko (×3, last L4108)
+L415      [af17] -- Looking for fseeko - not found (×3, last L4109)
+L416    ✱ [c5c7] -- Looking for strerror (×3, last L4110)
+L417    ✱ [12d8] -- Looking for strerror - found (×3, last L4111)
+L418      [6f28] -- Looking for posix_memalign (×3, last L4112)
+L419      [51c9] -- Looking for posix_memalign - not found (×3, last L4113)
+L420      [ab3a] -- Looking for aligned_alloc (×3, last L4114)
+L421      [e7ae] -- Looking for aligned_alloc - not found (×3, last L4115)
+L422      [1035] -- Performing Test HAVE_NO_INTERPOSITION (×3, last L4116)
+L423    ✱ [05e1] -- Performing Test HAVE_NO_INTERPOSITION - Failed (×3, last L4117)
+L425    ✱ [2ba5] -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN - Failed
+L427    ✱ [2ba5] -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL - Failed
+L428      [753f] -- Performing Test HAVE_ATTRIBUTE_ALIGNED (×3, last L4122)
+L429    ✱ [f259] -- Performing Test HAVE_ATTRIBUTE_ALIGNED - Failed (×3, last L4123)
+L430      [c601] -- Performing Test HAVE_BUILTIN_ASSUME_ALIGNED (×3, last L4124)
+L431      [09e3] -- Performing Test HAVE_BUILTIN_ASSUME_ALIGNED - Success (×3, last L4125)
+L432      [8a6e] -- Performing Test HAVE_BUILTIN_CTZ (×3, last L4126)
+L433    ✱ [63d3] -- Performing Test HAVE_BUILTIN_CTZ - Failed (×3, last L4127)
+L434      [1aef] -- Performing Test HAVE_BUILTIN_CTZLL (×3, last L4128)
+L435    ✱ [10a6] -- Performing Test HAVE_BUILTIN_CTZLL - Failed (×3, last L4129)
+L436      [5d8a] -- Performing Test HAVE_PTRDIFF_T (×3, last L4130)
+L437      [be68] -- Performing Test HAVE_PTRDIFF_T - Success (×3, last L4131)
+L438      [fb59] -- Performing Test HAVE_XSAVE_INTRIN (×3, last L4132)
+   …
+L488      [3698] -- The following features have been disabled: (×3, last L4182)
+          * ZLIB_SYMBOL_PREFIX, Publicly exported symbols DO NOT have a custom prefix
+          * ZLIB_ENABLE_TESTS, Build test binaries
+          * ZLIBNG_ENABLE_TESTS, Test zlib-ng specific API
+          (+9 lines)
+   …
+L503      [8294] -- Build type is 'Checked'
+L504      [3cb6] -- Performing Test BROTLI_EMSCRIPTEN (×3, last L4198)
+L505    ✱ [ffb4] -- Performing Test BROTLI_EMSCRIPTEN - Failed (×3, last L4199)
+L506      [48b0] -- Looking for log2 (×6, last L4202)
+L507      [1130] -- Looking for log2 - not found (×6, last L4203)
+   …
+L595      [654c] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Checked\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\jithashtable.cpp (×3, last L1987)
+L596      [3dfe] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Checked\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\regMaskTPOps.cpp (×3, last L1988)
+L597      [7d1b] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Checked\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\async.cpp (×3, last L1989)
+   (+4 more lines here: `pith show <id>` or grep the raw file)
+   …
+L8815     [bd8b] [22:42:18] Creating patch file D:\a\runtime\runtime\runtime\format.patch
+L8816     [c8ca] [22:42:18] There were errors in formatting. Please run jit-format locally with: (×2, last L13952)
+L8818     [71c5] [22:42:18] 	jit-format -a x64 -b Checked -o windows -r <absolute-path-to-runtime-root> --verbose --fix --projects dll
+L8820     [b4a6] [22:42:18] (×2, last L13956)
+L8821     [3f23] Or download and apply generated patch: (×2, last L13957)
+L8822     [0356a] [22:42:18] 1. From the GitHub 'Checks' page on the Pull Request, click on the Summary link. (×2, last L13958)
+L8823     [bd47] [22:42:18] 2. Scroll to the bottom of the page to the Artifacts section. (×2, last L13959)
+L8824     [9847] [22:42:18] 3. Artifacts are located in alphabetical order, target artifact name is (×2, last L13960)
+L8825     [4b19] [22:42:18]    'format.<OS>.patch.'. Find appropriate format patch artifact. (×2, last L13961)
+L8826     [6e99] [22:42:18] 4. Download the artifact. (×2, last L13962)
+L8827     [a216] [22:42:18] 5. Unzip the patch file. (×2, last L13963)
+L8828     [e3c6] [22:42:18] 6. git apply format.patch (×2, last L13964)
+L8830   ✱ [af96] ##[error]Format job found errors, please apply the format patch. (×2, last L13966)
+L8831   ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L13967)
+-- job: Format jit codebase linux
+L9231     [3a4ea] ▶ Run python3 runtime/src/coreclr/scripts/jitformat.py -r runtime -o linux -a x64 --cross
+   …
+L9379     [2a18] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/hostallocator.cpp (×3, last L10770)
+L9380     [b213] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/flowgraph.cpp (×3, last L10771)
+L9381     [58eb] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/codegenxarch.cpp (×3, last L10777)
+L9382   ✱ [0320] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp (×3, last L10773)
+L9383     [b86b] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/sideeffects.cpp (×3, last L10776)
+L9384     [98f66] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/rationalize.cpp (×3, last L10784)
+L9385     [8bdb] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/lclvars.cpp (×3, last L10778)
+   …
+L9533     [ae6b] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/emitarm.cpp (×9, last L13672)
+L9534     [47c0] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/inlinepolicy.h (×9, last L13667)
+L9535     [2bf1] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/targetwasm.cpp (×9, last L13669)
+L9536   ✱ [0739] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp (×9, last L13663)
+L9537     [aa55] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/fgprofilesynthesis.h (×9, last L13666)
+L9538     [dea8] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/rationalize.h (×9, last L13673)
+L9539     [7a77] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/rangecheck.h (×9, last L13674)
+   …
+L9570     [e6fd] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/alloc.cpp (×9, last L13678)
+L9571     [1437] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/lsraarm64.cpp (×9, last L13705)
+L9572     [62fc] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/fgwasm.h (×9, last L13695)
+L9573   ✱ [cbb8] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/error.h (×9, last L13696)
+L9574     [dccb] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/unwindwasm.cpp (×9, last L13703)
+L9575     [7aad3] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/utils.h (×9, last L13700)
+L9576     [ca56] Running: clang-format  -style=file -output-replacements-xml /__w/runtime/runtime/runtime/src/coreclr/jit/fgflow.cpp (×9, last L13713)
+   …
+L9964     [db17] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/smcommon.cpp
+L9965     [cc36] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/switchrecognition.cpp
+L9966     [02d9] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/fgstmt.cpp
+L9967   ✱ [732a] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp
+L9968     [0012] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/lclvars.cpp
+L9969     [ce4c] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/earlyprop.cpp
+L9970     [8b0b] Running: clang-tidy -fix  -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Checked/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/asyncanalysis.cpp
+   …
+L13951    [1ab1] [22:39:59] Creating patch file /__w/runtime/runtime/runtime/format.patch
+L13954    [4fcc] [22:39:59] 	jit-format -a x64 -b Checked -o linux -r <absolute-path-to-runtime-root> --verbose --fix --projects dll
+L13966  ✱ [af96] ##[error]Format job found errors, please apply the format patch.
+L13967  ✱ [eead] ##[error]Process completed with exit code 254.
+
+== OTHER ERRORS & WARNINGS
+L598    ERRO [c30b] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Checked\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp (×3, last L1993)
+L753    ERRO [1785] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp (×9, last L5366)
+L764    ERRO [1e94] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\error.h (×9, last L5369)
+L1104   ERRO [e88a] Running: clang-tidy -fix  -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Checked\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp
+L1235   ERRO [3b52] Running: clang-format -i -style=file  D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp
+L1239   ERRO [e8c1] Running: clang-format -i -style=file  D:\a\runtime\runtime\runtime\src\coreclr\jit\error.h
+L2689   ERRO [68f3] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Debug\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp (×3, last L3597)
+L4290   ERRO [3582] Running: clang-tidy   -p=D:\a\runtime\runtime\runtime\artifacts\obj\coreclr\windows.x64.Release\compile_commands.json D:\a\runtime\runtime\runtime\src\coreclr\jit\error.cpp (×3, last L5205)
+L5646   ERRO [ef9f] [22:42:17] Warning: failed to remove directory "C:\Users\RUNNER~1\AppData\Local\Temp\tmp3cgjjrib": [WinError 5] Access is denied: 'C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp3cg
+L10011  ERRO [6eca] Running: clang-format -i -style=file  /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp
+L10047  ERRO [d10ec] Running: clang-format -i -style=file  /__w/runtime/runtime/runtime/src/coreclr/jit/error.h
+L11233  ERRO [b99a] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Debug/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp (×3, last L12145)
+L12602  ERRO [f4c5] Running: clang-tidy   -p=/__w/runtime/runtime/runtime/artifacts/obj/coreclr/linux.x64.Release/compile_commands.json /__w/runtime/runtime/runtime/src/coreclr/jit/error.cpp (×3, last L13515)
+
+== END OF OUTPUT
+L13969    [8d65] with:
+L13977    [4293] env:
+L13980    [97ef] ##[command]/usr/bin/docker exec  48c1d3d332c651cd79a0684cb7122a77fb6086278f7115636a73c254e6b481c6 sh -c "cat /etc/*release | grep ^ID"
+L13981    [bc62] With the provided path, there will be 1 file uploaded
+L13982    [af32] Artifact name is valid!
+L13983    [8719] Root directory input is valid!
+L13984    [0063] Uploading artifact: format.linux.patch.zip
+L13985    [1b36] Beginning upload of artifact content to blob storage
+L13986    [fce5] Uploaded bytes 805
+L13987    [d3e5] Finished uploading artifact content to blob storage!
+L13988    [e64f] SHA256 digest of uploaded artifact is 27de54d0247d7a74b9a77f591baf5a0d1639c4587ce5c435e081d4c3538b8a61
+L13989    [fdc8] Finalizing artifact upload
+L13990    [0ae7] Artifact format.linux.patch successfully finalized. Artifact ID 10837069787
+L13991    [2173e] Artifact format.linux.patch has been successfully uploaded! Final size is 805 bytes. Artifact ID is 10837069787
+L13992    [8be0] Artifact download URL: https://github.com/dotnet/runtime/actions/runs/36067993543/artifacts/10837069787
+
+== MOST FREQUENT OTHER LINES
+×179     [1f25] Updating files:  10% (5827/58268)
+×30      [6522] -- Using a stub cDAC contract descriptor
+×20      [94ba] Formatting jit directory.
+×20      [9bbc] Running clang-tidy.
+×9       [df8f] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\abi.cpp
+×9       [bad1] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\emitwasm.cpp
+×9       [52b0] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\jitee.h
+×9       [c59d] Running: clang-format  -style=file -output-replacements-xml D:\a\runtime\runtime\runtime\src\coreclr\jit\registerarm.h
+
+(not shown: 5965 groups, 12,828 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

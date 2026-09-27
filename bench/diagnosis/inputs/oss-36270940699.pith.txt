@@ -1,0 +1,75 @@
+pith · <log> · 451 lines → 247 groups · ~12.1k → ~1.9k tokens (84.0% smaller)
+
+jobs: lint-go
+levels: error 2 · warn 5 · notable 5 · info 300
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: lint-go
+L341      [73cd] Restored cache for golangci-lint from key 'golangci-lint.cache-Linux-2960-5daedae988512c7576ea196e552869fd52f01b0d' in 3141ms
+L343      [17a5] ▶ Install
+L344      [9748] Finding needed golangci-lint version...
+L345      [4cb0] Installation mode: binary
+L348      [0f6f] [command]/usr/bin/tar xz --overwrite --warning=no-unknown-keyword --overwrite -C /home/ubuntu -f /opt/actions-runner/_work/_temp/c223d035-7720-4f10-9909-afd7face22fd
+L349      [a1f8] Installed golangci-lint into /home/ubuntu/golangci-lint-2.12.2-linux-amd64/golangci-lint in 663ms
+L351      [6bf9] ▶ run golangci-lint
+L352      [6329] Running [/home/ubuntu/golangci-lint-2.12.2-linux-amd64/golangci-lint config path] in [/opt/actions-runner/_work/grafana/grafana] ...
+L353      [b12f] Running [/home/ubuntu/golangci-lint-2.12.2-linux-amd64/golangci-lint config verify] in [/opt/actions-runner/_work/grafana/grafana] ...
+L354      [41e1] Running [/home/ubuntu/golangci-lint-2.12.2-linux-amd64/golangci-lint run  --verbose $(go list -m -f '{{.Dir}}' | xargs -I{} sh -c 'test ! -f {}/.nolint && echo {}/...')] in [/opt/actions-runner/_work/grafana/grafana] ...
+L355    ✱ [a2d7] ##[error]pkg/registry/apis/query/query_chunked.go:32:25: SA1019: features.IsEnabled is deprecated: FeatureToggles.IsEnabled is deprecated and will be removed in a future release. Evaluate with OpenFeature instead (see [github.com/open-feature/go-sdk/openfeature.Client]), for example: openfeature.New
+          if features == nil || !features.IsEnabled(ctx, featuremgmt.FlagDatasourcesChunkedQueryStreaming) {
+          ^
+   …
+L402      [456c] level=info msg="[runner/exclusion_rules] Skipped 1 issues by rules: [Text: \"G202\", Linters: \"gosec\"]" (×2, last L402)
+L403      [5d0e] level=info msg="[runner/exclusion_rules] Skipped 1 issues by rules: [Text: \"G108\", Linters: \"gosec\"]" (×5, last L403)
+L404      [6f8f] level=info msg="[runner/exclusion_rules] Skipped 67 issues by rules: [Text: \"G124\", Path: \"(.+)_test\\\\.go\", Linters: \"gosec\"]"
+L405      [1567] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Path: \"builtin$\", Linters: \"goimports\"]"
+L406      [be0e] level=warning msg="[runner/nolint_filter] Found unknown linters in //nolint directives: deadcode, staticcheck st1005"
+L407      [55ff] level=info msg="[runner] Issues before processing: 6220, after processing: 1"
+L408      [584d] level=info msg="[runner] Processors filtering stat (in/out): path_relativity: 6220/6220, exclusion_paths: 6220/5832, nolint_filter: 1722/1, fixer: 1/1, max_per_file_from_linter: 1/1, path_absoluter: 6220/6220, filename_unadjuster: 6220/6220, generated_file_filter: 5832/3101, max_same_issues: 1/1, ma
+L409      [9c23] level=info msg="[runner] processing took 445.291132ms with stages: nolint_filter: 418.705737ms, generated_file_filter: 15.898623ms, path_relativity: 4.374389ms, exclusion_rules: 4.014484ms, exclusion_paths: 1.671488ms, cgo: 237.186µs, invalid_issue: 178.42µs, path_absoluter: 133.341µs, filename_unad
+L410      [e709] level=info msg="[runner] linters took 1m40.547360806s with stages: goanalysis_metalinter: 1m40.101994343s"
+L411      [5bf4] level=info msg="File cache stats: 1 entries of total size 3.4KiB"
+L412      [e327] level=info msg="Memory: 2412 samples, avg is 4235.1MB, max is 17162.7MB"
+L413      [1eb9] level=info msg="Execution took 4m7.612846026s"
+L415    ✱ [9b19] ##[error]issues found
+
+== OTHER ERRORS & WARNINGS
+L75     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+L273    WARN [a5ec] (node:4412) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+L274    WARN [1673] (Use `node --trace-deprecation ...` to show where the warning was created)
+L276    WARN [442c] (node:4412) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are n
+L451    WARN [86e9] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: ./.github/actions/report-go-cache-sizes, actions/cache@v4. F
+L30     NOTA [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×2, last L446)
+L320    NOTA [5a9e] cache-invalidation-interval: 7
+
+== END OF OUTPUT
+L380      [25e0] level=info msg="[runner/exclusion_rules] Skipped 2 issues by rules: [Text: \"SA1019: \\\"go.opentelemetry.io/otel/exporters/jaeger\\\"\", Linters: \"staticcheck\"]"
+L381      [4df8] level=info msg="[runner/exclusion_rules] Skipped 80 issues by rules: [Text: \"use fake service and real access control evaluator instead\", Linters: \"staticcheck\"]"
+L382      [ba92] level=info msg="[runner/exclusion_rules] Skipped 51 issues by rules: [Text: \"QF1012\", Linters: \"staticcheck\"]"
+L383      [2048] level=info msg="[runner/exclusion_rules] Skipped 102 issues by rules: [Text: \"G306\", Linters: \"gosec\"]"
+L386      [567e] level=info msg="[runner/exclusion_rules] Skipped 8 issues by rules: [Text: \"SA1019: strings.Title\", Linters: \"staticcheck\"]"
+L391      [456c] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Text: \"G201\", Linters: \"gosec\"]"
+L393      [32cd] level=info msg="[runner/exclusion_rules] Skipped 38 issues by rules: [Text: \"ST1001\", Linters: \"staticcheck\"]"
+L395      [ba21] level=info msg="[runner/exclusion_rules] Skipped 10 issues by rules: [Text: \"501\", Linters: \"gosec\"]"
+L396      [7859] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Path: \"scripts\", Linters: \"goimports\"]"
+L397      [9938] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Path: \"examples$\", Linters: \"goimports\"]"
+L398      [5d0e] level=info msg="[runner/exclusion_rules] Skipped 145 issues by rules: [Text: \"G115\", Linters: \"gosec\"]"
+L399      [04e1] level=info msg="[runner/exclusion_rules] Skipped 184 issues by rules: [Text: \"non-wrapping format verb for fmt.Errorf\", Linters: \"errorlint\"]"
+L400      [2d71] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Path: \"devenv\", Linters: \"goimports\"]"
+L401      [9163] level=info msg="[runner/exclusion_rules] Skipped 0 issues by rules: [Path: \"third_party$\", Linters: \"goimports\"]"
+L416      [6f52] Ran golangci-lint in 248822ms
+
+== MOST FREQUENT OTHER LINES
+×10      [cabc] Received 209715200 of 2273848323 (9.2%), 200.0 MBs/sec
+×6       [4293] env:
+×5       [8d65] with:
+×5       [1f25] Updating files:  95% (22030/23147)
+×4       [a71a] hint:
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [4a91] [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+
+(not shown: 184 groups, 198 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

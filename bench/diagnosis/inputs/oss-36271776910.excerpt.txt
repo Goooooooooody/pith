@@ -1,0 +1,218 @@
+Run prek checks	UNKNOWN STEP	﻿2026-09-26T21:06:32.2153538Z Current runner version: '2.337.0'
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2183960Z ##[group]Runner Image Provisioner
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2184933Z Hosted Compute Agent
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2185518Z Version: 20260828.587
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2186212Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2186936Z Build Date: 2026-08-28T16:44:25Z
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2187651Z Worker ID: {d49ff54a-2c2c-45c2-8340-a0e42f2951a0}
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2188364Z Azure Region: westus2
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2188929Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2190982Z ##[group]Operating System
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2191780Z Ubuntu
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2192309Z 24.04.5
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2192857Z LTS
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2193365Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2193933Z ##[group]Runner Image
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2194545Z Image: ubuntu-24.04
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2195133Z Version: 20260920.314.1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2196418Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2197942Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2198892Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2200032Z ##[group]GITHUB_TOKEN Permissions
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2202721Z Contents: read
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2203308Z Metadata: read
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2203918Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2206333Z Secret source: Actions
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2207269Z Cache mode: write
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2207995Z Prepare workflow directory
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2636301Z Prepare all required actions
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.2695648Z Getting action download info
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.6597647Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:32.7704823Z Download action repository 'j178/prek-action@4e14d07f9231acabce116ccfca13b13dd9755ece' (SHA:4e14d07f9231acabce116ccfca13b13dd9755ece)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1089219Z Complete job name: Run prek checks
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1888558Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1889866Z with:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1890582Z   persist-credentials: false
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1891263Z   repository: home-assistant/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1896357Z   token: ***
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1896959Z   ssh-strict: true
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1897579Z   ssh-user: git
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1898187Z   clean: true
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1898784Z   sparse-checkout-cone-mode: true
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1899457Z   fetch-depth: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1900072Z   fetch-tags: false
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1900733Z   show-progress: true
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1901358Z   lfs: false
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1902355Z   submodules: false
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1902949Z   set-safe-directory: true
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1903660Z   allow-unsafe-pr-checkout: false
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1904904Z env:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1905480Z   CACHE_VERSION: 4
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1906088Z   MYPY_CACHE_VERSION: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1906899Z   HA_SHORT_VERSION: 2026.10
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1907595Z   ADDITIONAL_PYTHON_VERSIONS: []
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1908790Z   MARIADB_VERSIONS: ['mariadb:10.3.32','mariadb:10.6.10','mariadb:10.11.2','mariadb:11.4.9','mariadb:11.8.8','mariadb:12.3.3','mysql:8.0.32']
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1910288Z   POSTGRESQL_VERSIONS: ['postgres:12.22','postgres:15.19', 'postgres:18.6']
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1911653Z   SQLITE_VERSIONS: [{"version": "3.40.1", "year": "2022"}, {"version": "3.53.4", "year": "2026"}]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1913234Z   RECORDER_TEST_DIRS: tests/components/history tests/components/logbook tests/components/recorder tests/components/sensor
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1914626Z   UV_CACHE_DIR: /tmp/uv-cache
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1915308Z   APT_CACHE_VERSION: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1915961Z   SQLALCHEMY_WARN_20: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1916579Z   PYTHONASYNCIODEBUG: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1917240Z   HASS_CI: 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.1917823Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3002625Z Syncing repository: home-assistant/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3005521Z ##[group]Getting Git version info
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3006956Z Working directory is '/home/runner/work/core/core'
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3008285Z [command]/usr/bin/git version
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3076530Z git version 2.55.0
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3097202Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3115547Z Temporarily overriding HOME='/home/runner/work/_temp/92e6ca6c-2747-4fc5-b418-e8a3c7a5fabc' before making global git config changes
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3118079Z Adding repository directory to the temporary git global config as a safe directory
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3124590Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3179510Z Deleting the contents of '/home/runner/work/core/core'
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3184673Z ##[group]Determining repository object format
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3186791Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3188671Z ##[group]Initializing the repository
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3192733Z [command]/usr/bin/git init /home/runner/work/core/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3307557Z hint: Using 'master' as the name for the initial branch. This default branch name
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3309375Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3311182Z hint: to use in all of your new repositories, which will suppress this warning,
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3312827Z hint: call:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3313728Z hint:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3314668Z hint: 	git config --global init.defaultBranch <name>
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3315892Z hint:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3316702Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3317844Z hint: 'development'. The just-created branch can be renamed via this command:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3318996Z hint:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3319880Z hint: 	git branch -m <name>
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3320877Z hint:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3321905Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3323600Z Initialized empty Git repository in /home/runner/work/core/core/.git/
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3326124Z [command]/usr/bin/git remote add origin https://github.com/home-assistant/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3378636Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3379627Z ##[group]Disabling automatic garbage collection
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3382805Z [command]/usr/bin/git config --local gc.auto 0
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3438757Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3440474Z ##[group]Setting up auth
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3441302Z Removing SSH command configuration
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3444486Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3481633Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3889880Z Removing HTTP extra header
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3896351Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.3929473Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4154480Z Removing includeIf entries pointing to credentials config files
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4159563Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4193641Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4422780Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-de3fbcda-031e-4374-ae3b-9d37cfd3e44c.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4463228Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git.path /home/runner/work/_temp/git-credentials-de3fbcda-031e-4374-ae3b-9d37cfd3e44c.config
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4499087Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-de3fbcda-031e-4374-ae3b-9d37cfd3e44c.config
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4538830Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-de3fbcda-031e-4374-ae3b-9d37cfd3e44c.config
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4577704Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-de3fbcda-031e-4374-ae3b-9d37cfd3e44c.config
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4617908Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4619073Z ##[group]Fetching the repository
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:33.4620757Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +47f0d90748131142673acd15fabc7b292b678428:refs/remotes/pull/183243/merge
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9494435Z From https://github.com/home-assistant/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9497872Z  * [new ref]           47f0d90748131142673acd15fabc7b292b678428 -> pull/183243/merge
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9503696Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9505846Z ##[group]Determining the checkout info
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9507604Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9508746Z [command]/usr/bin/git sparse-checkout disable
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9563675Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9598018Z ##[group]Checking out the ref
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:39.9602326Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/183243/merge
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:40.9923304Z Updating files:  87% (24695/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.0031228Z Updating files:  88% (24815/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1087667Z Updating files:  89% (25097/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1218097Z Updating files:  90% (25379/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1313372Z Updating files:  91% (25661/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1421800Z Updating files:  92% (25943/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1551146Z Updating files:  93% (26225/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1705016Z Updating files:  94% (26507/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1819144Z Updating files:  95% (26789/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.1939886Z Updating files:  96% (27071/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2094786Z Updating files:  97% (27353/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2300123Z Updating files:  98% (27635/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2445961Z Updating files:  99% (27917/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2446481Z Updating files: 100% (28198/28198)
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2447060Z Updating files: 100% (28198/28198), done.
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2738087Z Note: switching to 'refs/remotes/pull/183243/merge'.
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.2738577Z 
+Run prek checks	UNKNOWN STEP	2026-09-26T21:06:41.27395
+
+... [43769 characters truncated] ...
+
+P	2026-09-26T21:08:03.4455690Z 2026-09-26T21:06:57.516570Z TRACE run{hook_id=codespell language=python}: Found shebang: ["/home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/python3"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4457130Z 2026-09-26T21:06:57.516683Z TRACE run{hook_id=codespell language=python}: Running codespell total_files=20086 concurrency=4
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4459471Z 2026-09-26T21:06:57.517221Z TRACE run{hook_id=codespell language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/python3 /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/codespell --ignore-words-list=aiport,astroid,checkin,currenty,hass,iif,incomfort,lookin,nam,NotIn --skip="./.*,*.csv,*.json,*.ambr" --quiet-level=2`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4462934Z 2026-09-26T21:06:57.518789Z TRACE run{hook_id=codespell language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/python3 /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/codespell --ignore-words-list=aiport,astroid,checkin,currenty,hass,iif,incomfort,lookin,nam,NotIn --skip="./.*,*.csv,*.json,*.ambr" --quiet-level=2`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4466402Z 2026-09-26T21:06:57.520569Z TRACE run{hook_id=codespell language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/python3 /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/codespell --ignore-words-list=aiport,astroid,checkin,currenty,hass,iif,incomfort,lookin,nam,NotIn --skip="./.*,*.csv,*.json,*.ambr" --quiet-level=2`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4470528Z 2026-09-26T21:06:57.522734Z TRACE run{hook_id=codespell language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/python3 /home/runner/.cache/prek/hooks/python-xVO3gwt8SSZ9QPYH9Z0J/bin/codespell --ignore-words-list=aiport,astroid,checkin,currenty,hass,iif,incomfort,lookin,nam,NotIn --skip="./.*,*.csv,*.json,*.ambr" --quiet-level=2`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4473679Z 2026-09-26T21:07:02.565275Z  INFO run{hook_id=codespell language=python}: close time.busy=9.56ms time.idle=5.04s
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4475936Z 2026-09-26T21:07:02.565344Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/core/core`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4477481Z 2026-09-26T21:07:02.771377Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=423µs time.idle=206ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4478396Z 2026-09-26T21:07:02.771435Z DEBUG Running priority group with priority 4: ["check-json"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4479347Z 2026-09-26T21:07:02.774981Z TRACE matching_filenames{hook="check-json"}: close time.busy=3.53ms time.idle=1.69µs
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4480204Z 2026-09-26T21:07:02.775010Z TRACE Files for hook `check-json` after filtering matched=true filenames=5986
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4482488Z 2026-09-26T21:07:02.775066Z DEBUG run{hook_id=check-json language=python}: Running hook `check-json` with prek's bundled Rust implementation instead of `https://github.com/pre-commit/pre-commit-hooks@v6.0.0` (fast path); behavior and defaults may differ. Set `language: python` for this hook or `PREK_NO_FAST_PATH=1` to run the pinned implementation
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4484250Z 2026-09-26T21:07:02.960448Z  INFO run{hook_id=check-json language=python}: close time.busy=144ms time.idle=41.6ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4485181Z 2026-09-26T21:07:02.960499Z DEBUG Running priority group with priority 5: ["no-commit-to-branch"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4485944Z 2026-09-26T21:07:02.960507Z DEBUG Running priority group with priority 6: ["yamllint"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4486880Z 2026-09-26T21:07:02.960728Z TRACE matching_filenames{hook="yamllint"}: close time.busy=214µs time.idle=915ns
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4487765Z 2026-09-26T21:07:02.960738Z TRACE Files for hook `yamllint` after filtering matched=true filenames=984
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4488998Z 2026-09-26T21:07:02.960821Z TRACE run{hook_id=yamllint language=python}: Found shebang: ["/home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4490140Z 2026-09-26T21:07:02.960866Z TRACE run{hook_id=yamllint language=python}: Running yamllint total_files=984 concurrency=4
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4492024Z 2026-09-26T21:07:02.961009Z TRACE run{hook_id=yamllint language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3 /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/yamllint`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4494083Z 2026-09-26T21:07:02.961583Z TRACE run{hook_id=yamllint language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3 /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/yamllint`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4496094Z 2026-09-26T21:07:02.962181Z TRACE run{hook_id=yamllint language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3 /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/yamllint`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4498106Z 2026-09-26T21:07:02.962710Z TRACE run{hook_id=yamllint language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3 /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/yamllint`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4499445Z 2026-09-26T21:07:06.602672Z  INFO run{hook_id=yamllint language=python}: close time.busy=2.77ms time.idle=3.64s
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4500939Z 2026-09-26T21:07:06.602731Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/core/core`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4502613Z 2026-09-26T21:07:06.809597Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=483µs time.idle=206ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4503453Z 2026-09-26T21:07:06.809651Z DEBUG Running priority group with priority 7: ["prettier"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4504439Z 2026-09-26T21:07:06.810716Z TRACE matching_filenames{hook="prettier"}: close time.busy=1.05ms time.idle=1.36µs
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4505309Z 2026-09-26T21:07:06.810737Z TRACE Files for hook `prettier` after filtering matched=true filenames=28130
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4506105Z 2026-09-26T21:07:06.810908Z TRACE run{hook_id=prettier language=node}: Found shebang: ["node"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4507039Z 2026-09-26T21:07:06.810961Z TRACE run{hook_id=prettier language=node}: Running prettier total_files=28130 concurrency=4
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4508533Z 2026-09-26T21:07:06.811712Z TRACE run{hook_id=prettier language=node}: Executing `cd /home/runner/work/core/core && /usr/local/bin/node /home/runner/.cache/prek/hooks/node-QDMUrNtUvmKtdXx6qsey/bin/prettier --write --ignore-unknown`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4510310Z 2026-09-26T21:07:06.813775Z TRACE run{hook_id=prettier language=node}: Executing `cd /home/runner/work/core/core && /usr/local/bin/node /home/runner/.cache/prek/hooks/node-QDMUrNtUvmKtdXx6qsey/bin/prettier --write --ignore-unknown`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4512477Z 2026-09-26T21:07:06.816134Z TRACE run{hook_id=prettier language=node}: Executing `cd /home/runner/work/core/core && /usr/local/bin/node /home/runner/.cache/prek/hooks/node-QDMUrNtUvmKtdXx6qsey/bin/prettier --write --ignore-unknown`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4514264Z 2026-09-26T21:07:06.819233Z TRACE run{hook_id=prettier language=node}: Executing `cd /home/runner/work/core/core && /usr/local/bin/node /home/runner/.cache/prek/hooks/node-QDMUrNtUvmKtdXx6qsey/bin/prettier --write --ignore-unknown`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4515559Z 2026-09-26T21:08:02.727638Z  INFO run{hook_id=prettier language=node}: close time.busy=277ms time.idle=55.6s
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4517041Z 2026-09-26T21:08:02.727704Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/core/core`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4518570Z 2026-09-26T21:08:02.936821Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=409µs time.idle=209ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4519393Z 2026-09-26T21:08:02.936884Z DEBUG Running priority group with priority 9: ["mypy"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4520193Z 2026-09-26T21:08:02.936893Z DEBUG Running priority group with priority 10: ["pylint"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4520982Z 2026-09-26T21:08:02.936897Z DEBUG Running priority group with priority 11: ["gen_requirements_all"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4521994Z 2026-09-26T21:08:02.936900Z DEBUG Running priority group with priority 12: ["gen_copilot_instructions"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4522967Z 2026-09-26T21:08:02.936945Z TRACE Files for hook `gen_copilot_instructions` after filtering matched=true filenames=0
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4523902Z 2026-09-26T21:08:02.937011Z TRACE run{hook_id=gen_copilot_instructions language=script}: Found shebang: ["sh"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4524989Z 2026-09-26T21:08:02.937121Z TRACE run{hook_id=gen_copilot_instructions language=script}: Running gen_copilot_instructions total_files=0 concurrency=4
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4526588Z 2026-09-26T21:08:02.937278Z TRACE run{hook_id=gen_copilot_instructions language=script}: Executing `cd /home/runner/work/core/core && /usr/bin/sh /home/runner/work/core/core/script/run-in-env.sh python3 -m script.gen_copilot_instructions`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4528031Z 2026-09-26T21:08:02.970383Z  INFO run{hook_id=gen_copilot_instructions language=script}: close time.busy=718µs time.idle=32.7ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4529565Z 2026-09-26T21:08:02.970452Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/core/core`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4531016Z 2026-09-26T21:08:03.394318Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=403µs time.idle=423ms
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4532159Z 2026-09-26T21:08:03.394371Z DEBUG Running priority group with priority 13: ["hassfest"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4532966Z 2026-09-26T21:08:03.394379Z DEBUG Running priority group with priority 14: ["hassfest-metadata"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4533855Z 2026-09-26T21:08:03.394382Z DEBUG Running priority group with priority 15: ["hassfest-mypy-config"]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4535003Z 2026-09-26T21:08:03.394533Z TRACE Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false --no-pager diff --no-ext-diff --color=always -- /home/runner/work/core/core`
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4536071Z ##[endgroup]
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4554949Z ##[error]prek exited with code 1
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.4675939Z Post job cleanup.
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.5908365Z Cache hit occurred on the primary key prek-v1|Linux|X64||2b5bf303f7851b4f73e5b54c5be88d7b547a1640fcd1465df7262e0547714085, not saving cache.
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.6069979Z Post job cleanup.
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.6949552Z [command]/usr/bin/git version
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.6989950Z git version 2.55.0
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7023087Z Temporarily overriding HOME='/home/runner/work/_temp/eefb3849-892b-48d2-96e6-ae943530df91' before making global git config changes
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7024378Z Adding repository directory to the temporary git global config as a safe directory
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7028940Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7063074Z Removing SSH command configuration
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7071858Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7109059Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7376143Z Removing HTTP extra header
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7382692Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7416486Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7659735Z Removing includeIf entries pointing to credentials config files
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7666775Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.7701754Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run prek checks	UNKNOWN STEP	2026-09-26T21:08:03.8090671Z Cleaning up orphan processes

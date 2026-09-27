@@ -1,0 +1,201 @@
+pith · <log> · 3,668 lines → 2730 groups · ~156.4k → ~4.0k tokens (97.4% smaller)
+
+jobs: Sanitizers / UBSan; All required checks pass
+levels: error 450 · warn 8 · notable 26 · info 2,821
+raw: <removed for evaluation>
+jev (jev-latest): hid 877/1000 groups as confident noise (1730 rarest groups not scored) · 1 requests · 8,079 tokens · $0.0003 · 1.0s
+most likely root cause: [4886] rc=0.52 (confidence 0.51, cause visible p=0.46)
+
+== LIKELY ROOT CAUSE (jev rc=0.52)
+[4886] ERROR ×1  act=0.81 val=3.0/4 rc=0.52  L3212  job: Sanitizers / UBSan
+  subprocess.CalledProcessError: Command ['/tmp/test_python_oo69o_yz/tmp_vvwewbw/bin/python', '-c', 'from multiprocessing import Pool; pool = Pool(1); print(pool.apply_async("Python".lower).get(3)); pool.terminate()'] returned non-zero exit status 1.
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Sanitizers / UBSan
+L325      [c519] Get:36 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 libeval-closure-perl all 0.14-3 [10.1 kB]
+L326      [bc11] Get:37 http://azure.archive.ubuntu.com/ubuntu resolute/main amd64v3 libclass-data-inheritable-perl all 0.10-1 [8038 B]
+L327      [bd45] Get:38 http://azure.archive.ubuntu.com/ubuntu resolute/main amd64v3 libdevel-stacktrace-perl all 2.0500-1 [22.1 kB]
+L328    ✱ [859b] Get:39 http://azure.archive.ubuntu.com/ubuntu resolute/main amd64v3 libexception-class-perl all 1.45-1 [28.6 kB]
+L329      [43d1] Get:40 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 libparams-validationcompiler-perl all 0.31-1 [28.3 kB]
+L330      [5855] Get:41 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 libclone-pp-perl all 1.08-2 [8534 B]
+L331      [06fb] Get:42 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 libalgorithm-c3-perl all 0.11-2 [10.2 kB]
+   ...
+L506      [a261] Selecting previously unselected package libdevel-stacktrace-perl.
+L507      [9e07] Preparing to unpack .../36-libdevel-stacktrace-perl_2.0500-1_all.deb ...
+L508      [84d9] Unpacking libdevel-stacktrace-perl (2.0500-1) ...
+L509    ✱ [1f44] Selecting previously unselected package libexception-class-perl.
+L510    ✱ [a035] Preparing to unpack .../37-libexception-class-perl_1.45-1_all.deb ...
+L511    ✱ [6fdc] Unpacking libexception-class-perl (1.45-1) ...
+L512      [b1fe] Selecting previously unselected package libparams-validationcompiler-perl. (×2, last L512)
+L513      [1301] Preparing to unpack .../38-libparams-validationcompiler-perl_0.31-1_all.deb ... (×7, last L528)
+L514      [c0be] Unpacking libparams-validationcompiler-perl (0.31-1) ... (×2, last L514)
+   ...
+L699      [4f7c] Setting up xvfb (2:21.1.22-1ubuntu1.2) ...
+L700      [6fae] Setting up libgdbm-compat-dev:amd64 (1.26-1build1) ...
+L701      [2615] Setting up libsource-highlight4t64:amd64 (3.1.9-4.3build2) ...
+L702    ✱ [0e90] Setting up libexception-class-perl (1.45-1) ...
+L703      [24c0] Setting up libclass-c3-perl (0.35-2) ...
+L704      [ae4a] Setting up libdevel-callchecker-perl:amd64 (0.009-3) ...
+L705      [d0f0] Setting up libfreetype-dev:amd64 (2.14.2+dfsg-1ubuntu0.1) ...
+   ...
+L753      [a888] No containers need to be restarted.
+L755      [a07b] No user sessions are running outdated binaries.
+L757      [ab5a] No VM guests are running outdated hypervisor (qemu) binaries on this host.
+L758    ✱ [9b9d] ▶ Run echo "UBSAN_OPTIONS=${SAN_LOG_OPTION} halt_on_error=1 suppressions=${GITHUB_WORKSPACE}/Tools/ubsan/suppressions.txt" >> "$GITHUB_ENV"
+L759    ✱ [5651] echo "UBSAN_OPTIONS=${SAN_LOG_OPTION} halt_on_error=1 suppressions=${GITHUB_WORKSPACE}/Tools/ubsan/suppressions.txt" >> "$GITHUB_ENV"
+   ...
+L769      [1c68] ▶ Run echo "PATH=/usr/lib/ccache:$PATH" >> "$GITHUB_ENV"
+   ...
+L885      [2258] checking if we can enable clang sign-compare warning... yes
+L886      [7f6e] checking if we can enable clang unreachable-code warning... yes
+L887      [f6e2] checking if we can enable clang strict-prototypes warning... yes
+L888    ✱ [e485] checking if we can make implicit function declaration an error in clang -Werror=implicit-function-declaration... yes
+L889      [c521] checking if we can use visibility in clang -fvisibility=hidden... yes
+L890      [c8ac] checking for --enable-experimental-jit...
+L891      [aeef] checking whether pthreads are available without options... yes
+   ...
+L1162     [b60e] checking for futimens... yes
+L1163     [aa9f] checking for futimes... yes
+L1164     [f87c] checking for futimesat... yes
+L1165   ✱ [9fda] checking for gai_strerror... yes
+L1166     [c529] checking for getdents64... yes
+L1167     [0b82] checking for getegid... yes
+L1168     [0631] checking for geteuid... yes
+   ...
+L1363     [c6d7] checking for broken unsetenv... no
+L1364     [b69d] checking for true... true
+L1365     [c285] checking for inet_aton in -lc... yes
+L1366   ✱ [385b] checking for hstrerror in -lc... yes
+L1367     [ed60] checking for chflags... no
+L1368     [4e84] checking for lchflags... no
+L1369     [196e] checking for --with-zlib... auto
+L1372     [573f] checking for bzip2... yes
+L1373     [6f17] checking for liblzma... yes
+L1374     [5254] checking for libzstd >= 1.4.5... yes
+L1375   ✱ [163a] checking for hstrerror... yes
+L1376     [6a13] checking for getservbyname... yes
+L1377     [bdc0] checking for getservbyport... yes
+L1378     [e6bc] checking for gethostbyname... yes
+   ...
+L1667     [1da0] make -j4
+   ...
+L1678   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter (×174, last L2216)
+L1679   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+L1680   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+L1681   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+   ...
+L1847   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+L1848   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+L1849   ✱ [a006] clang -c -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden  -I./Include/inter
+   (+4 more lines here: `pith show <id>` or grep the raw file)
+   ...
+L3190     [c6f0] test_no_pip_by_default (test.test_venv.EnsurePipTest.test_no_pip_by_default) ... ok
+L3191     [d31d] test_with_pip (test.test_venv.EnsurePipTest.test_with_pip) ... skipped "resource 'cpu' is not enabled"
+L3193     [ee29] ======================================================================
+L3194   ✱ [d2b0] ERROR: test_multiprocessing (test.test_venv.BasicTest.test_multiprocessing)
+L3195     [47fa] Test that the multiprocessing is able to spawn.
+L3196     [af66] ---------------------------------------------------------------------- (×2, last L3214)
+L3197   ✱ [f8e5] Traceback (most recent call last):
+          File ".../Lib/test/test_venv.py", line 988, in test_multiprocessing
+          File ".../Lib/test/test_venv.py", line 57, in check_output
+   ...
+L3212   ✱ [4886] subprocess.CalledProcessError: Command ['/tmp/test_python_oo69o_yz/tmp_vvwewbw/bin/python', '-c', 'from multiprocessing import Pool; pool = Pool(1); print(pool.apply_async("Python".lower).get(3)); pool.terminate()'] returned non-zero exit status 1.
+L3215     [00ce] Ran 53 tests in 9.115s
+L3217   ✱ [3ad5] FAILED (errors=1, skipped=10)
+L3218   ✱ [7667] test test_venv failed
+L3219     [0f01] 0:09:53 load avg: 4.14 mem: 119.5 MiB [475/502/1] test_winapi skipped
+L3220     [78fc] test_winapi skipped -- No module named '_winapi'
+L3221     [6df3] 0:09:53 load avg: 4.14 mem: 112.3 MiB [476/502/1] test_webbrowser passed
+   ...
+L3283   ✱ [c418] 1 test failed:
+          test_venv
+L3286     [b0fb] 473 tests OK.
+L3288     [3673] Total duration: 10 min 47 sec
+L3289     [1926] Total tests: run=52,401 skipped=2,735
+L3290   ✱ [fb86] Total test files: run=491/502 failed=1 skipped=17 resource_denied=11
+L3291   ✱ [b005] Result: FAILURE
+L3292   ✱ [eead] ##[error]Process completed with exit code 2. (×2, last L3666)
+L3293     [eb7d] ▶ Run find "${GITHUB_WORKSPACE}" -name 'san_log.*' | xargs head -n 1000
+L3294     [aced] find "${GITHUB_WORKSPACE}" -name 'san_log.*' | xargs head -n 1000
+L3295     [c522] shell: /usr/bin/bash -e {0} (×9, last L3295)
+L3296     [4293] env: (×13, last L3638)
+          FORCE_COLOR: 1
+          OPENSSL_VER: 3.5.8
+          IMAGE_OS_VERSION: ubuntu26-20260920.143.1
+          (+4 lines)
+-- job: All required checks pass
+L3534     [0b62] ▶ Run python -m normalize_needed_jobs_status \
+   ...
+L3636     [92f5] )"
+L3637     [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+   ...
+L3642   ✱ [eb77] # ❌ Some of the required to succeed jobs failed 😢😢😢
+L3644   ✱ [0b6f] 🛈 All of the allowed to fail dependency jobs succeeded.
+L3645     [3f91] 🛈 Some of the allowed to be skipped jobs did not succeed.
+L3646     [e697] 📝 Job statuses:
+L3647     [e84a] 📝 build-context → ✓ success [required to succeed]
+   ...
+L3653     [ea71] 📝 build-macos → ✓ success [required to succeed]
+L3654     [bf4e] 📝 build-ubuntu → ✓ success [required to succeed]
+L3655     [dac6] 📝 build-ubuntu-installed → ✓ success [required to succeed]
+L3656   ✱ [0e46] 📝 build-ubuntu-ssltests → ✓ success [allowed to fail]
+L3657     [1222] 📝 build-ios → ✓ success [required to succeed]
+L3658   ✱ [213d] 📝 build-emscripten → ✓ success [allowed to fail]
+L3659     [d13b] 📝 build-wasi → ✓ success [required to succeed]
+L3660   ✱ [8127] 📝 test-hypothesis → ✓ success [allowed to fail]
+L3661     [1f6e] 📝 test-lazy-imports-all → ✓ success [required to succeed]
+L3662     [cce9] 📝 build-asan → ✓ success [required to succeed]
+L3663   ✱ [7d34] 📝 build-san → ❌ failure [required to succeed]
+L3664     [dddc] 📝 cross-build-linux → ✓ success [required to succeed]
+L3665   ✱ [bba8] 📝 cifuzz → ✓ success [allowed to fail]
+L3666   ✱ [eead] ##[error]Process completed with exit code 1.
+L3515     [242c] All required checks pass	UNKNOWN STEP	    "outputs": {} (×18, last L3527)
+L3516     [64fb] All required checks pass	UNKNOWN STEP	  }, (×18, last L3524)
+L3517     [6604] All required checks pass	UNKNOWN STEP	  "build-san": {
+L3518   ✱ [d0a1] All required checks pass	UNKNOWN STEP	    "result": "failure",
+L3521     [bdf7] All required checks pass	UNKNOWN STEP	  "cross-build-linux": {
+
+== OTHER ERRORS & WARNINGS
+L1850   ERRO [435b] clang  -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missi (×168, last L2078)
+L1861   ERRO [bee7] clang -I./Modules/_io -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-param (×7, last L1867)
+L1897   ERRO [9097] clang -DHAVE_ZSTD  -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-paramete (×12, last L1908)
+L1917   ERRO [05ad] clang -I/usr/include/x86_64-linux-gnu -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -
+L1918   ERRO [1fde] clang -DUSE_ZLIB_CRC32  -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-par
+L1926   ERRO [83a3] clang -DUSE_GDBM_COMPAT -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-par
+L1928   ERRO [a41a] clang -D_DEFAULT_SOURCE  -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused-pa (×2, last L1968)
+L1929   ERRO [01f9] clang -c -I./Modules/_hacl -I./Modules/_hacl/include -D_BSD_SOURCE -D_DEFAULT_SOURCE -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -W (×10, last L1938)
+L1939   ERRO [c24d] clang -Wno-unused-variable -c -I./Modules/_hacl -I./Modules/_hacl/include -D_BSD_SOURCE -D_DEFAULT_SOURCE -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer 
+L1940   ERRO [dd1f] clang -c -I./Modules/expat -fsanitize=undefined -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  -fstrict-overflow -Wsign-compare -g -Og -Wall    -std=c11 -Wextra -Wno-unused- (×3, last L1942)
+L3090   ERRO [f6a5] 0:09:53 load avg: 4.14 mem: 112.5 MiB [474/502/1] test_venv failed (1 error)
+L3142   ERRO [ae2d] multiprocessing.context.TimeoutError
+
+== END OF OUTPUT
+L3598     [5d59] "build-ios": {
+L3602     [5e30] "build-emscripten": {
+L3606     [dccb] "build-wasi": {
+L3610     [5f34] "test-hypothesis": {
+L3614     [baf8] "test-lazy-imports-all": {
+L3618     [83cc] "build-asan": {
+L3622     [2597] "build-san": {
+L3626     [ea656] "cross-build-linux": {
+L3630     [2ca7a] "cifuzz": {
+L3635     [9c3d] EOM
+L3648     [b7d9] 📝 check-docs → ⬜ skipped [required to succeed or be skipped]
+L3649     [b7d0] 📝 check-autoconf-regen → ✓ success [required to succeed]
+L3650     [d84c] 📝 check-generated-files → ✓ success [required to succeed]
+L3651     [5085] 📝 check-c-api-docs → ✓ success [required to succeed]
+L3652     [a8ea] 📝 build-windows → ✓ success [required to succeed]
+
+== MOST FREQUENT OTHER LINES
+×3       [8d65] with:
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×3       [3d6a] "$(cat << EOM
+×2       [6b4b] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+
+(not shown: 1736 groups, 1,761 lines - including 18 error groups, 39 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

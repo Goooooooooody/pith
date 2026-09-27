@@ -1,0 +1,134 @@
+pith · <log> · 1,290 lines → 221 groups · ~53.9k → ~2.8k tokens (94.9% smaller)
+
+jobs: yarn test -r=www-classic --env=development --variant=false (Shard 2/5); yarn test -r=www-modern --env=development --variant=false (Shard 2/5); yarn test -r=www-classic --env=production --variant=false (Shard 2/5); yarn test -r=www-modern --env=production --variant=false (Shard 2/5)
+levels: error 36 · warn 28 · notable 4 · info 854
+raw: <removed for evaluation>
+jev (jev-latest): hid 181/221 groups as confident noise · 1 requests · 2,490 tokens · $0.0001 · 0.4s
+most likely root cause: [676e] rc=0.97 (confidence 0.96, cause visible p=0.71)
+
+== LIKELY ROOT CAUSE (jev rc=0.97)
+[676e] ERROR ×8  act=0.77 val=3.0/4 rc=0.97  L207 … L1250  job: yarn test -r=www-classic --env=development --variant=false (Shard 2/5)
+  ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+    Gated test was expected to fail, but it passed.
+    > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+    at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+    at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:182:3
+    at Object.<anonymous> (packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:23:1)
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: yarn test -r=www-classic --env=development --variant=false (Shard 2/5)
+L112      [8755] do so (now or later) by using -c with the switch command. Example: (×4, last L1081)
+          git switch -c <new-branch-name>
+   …
+L116      [cee5] Or undo this operation with: (×4, last L1085)
+          git switch -
+   …
+L120      [60ef] Turn off this advice by setting config variable advice.detachedHead to false (×4, last L1089)
+L122    ✱ [5fe9] HEAD is now at e9deab2 Suppress hidden-document and browser-specific InvalidStateError in ViewTransition (×4, last L1091)
+L124      [24a7] [command]/usr/bin/git log -1 --format=%H (×4, last L1093)
+L125      [d656] e9deab248567d0e915569c51084ca22ce1dbd9bf (×4, last L1094)
+L126      [a0b0] ▶ Run actions/setup-node@v4 (×4, last L1095)
+   …
+L189      [13e4] ▶ Run yarn test -r=www-classic --env=development --variant=false --ci --shard=2/5
+   …
+L203      [0263] PASS packages/react-reconciler/src/__tests__/ReactIncrementalErrorHandling-test.internal.js (5.66 s) (×3, last L1171)
+L204      [70a3] PASS packages/react-dom/src/__tests__/ReactDOMLegacyFiber-test.js (×4, last L1172)
+L205      [812d] PASS packages/react-reconciler/src/__tests__/ReactLazy-test.internal.js (5.117 s)
+L206    ✱ [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js (×8, last L1249)
+L207    ✱ [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers (×8, last L1250)
+          Gated test was expected to fail, but it passed.
+          > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:182:3
+          at Object.<anonymous> (packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:23:1)
+   …
+L223      [ce3c] PASS packages/react-reconciler/src/__tests__/ReactTransition-test.js (×4, last L1192)
+L224      [e4d6] PASS packages/react/src/__tests__/ReactChildren-test.js (5.567 s) (×2, last L1191)
+L225      [9af0] PASS packages/react-dom/src/events/plugins/__tests__/BeforeInputEventPlugin-test.js (×4, last L1193)
+   …
+L281    ✱ [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+L282    ✱ [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+          Gated test was expected to fail, but it passed.
+          > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+          (+2 frames hidden)
+   …
+L299    ✱ [c5a5] Test Suites: 1 failed, 64 passed, 65 total (×4, last L1267)
+L300    ✱ [a72a] Tests:       1 failed, 16 skipped, 1170 passed, 1187 total (×4, last L1268)
+L301      [4a12] Snapshots:   107 passed, 107 total (×4, last L1269)
+L302      [ca23] Time:        108.01 s (×4, last L1270)
+L303      [cc96] Ran all test suites. (×4, last L1271)
+L304    ✱ [f3a4] error Command failed with exit code 1. (×4, last L1272)
+L305      [3bf2] info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command. (×4, last L1273)
+L306    ✱ [eead] ##[error]Process completed with exit code 1. (×4, last L1274)
+-- job: yarn test -r=www-modern --env=development --variant=false (Shard 2/5)
+L513      [3f2c] ▶ Run yarn test -r=www-modern --env=development --variant=false --ci --shard=2/5
+   …
+L601      [b431] PASS packages/react-dom/src/__tests__/ReactDOMInReactServer-test.js (×4, last L1245)
+L602      [c0f3] PASS packages/react-dom/src/__tests__/ReactDOMFizzServer-test.js (87.157 s) (×4, last L1246)
+L604      [5fbd] Summary of all failing tests (×4, last L1248)
+L605    ✱ [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+L606    ✱ [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+          Gated test was expected to fail, but it passed.
+          > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+          (+2 frames hidden)
+   …
+L623    ✱ [c5a5] Test Suites: 1 failed, 64 passed, 65 total
+L624    ✱ [a72a] Tests:       1 failed, 16 skipped, 1167 passed, 1184 total
+L628    ✱ [f3a4] error Command failed with exit code 1.
+L630    ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: yarn test -r=www-classic --env=production --variant=false (Shard 2/5)
+L836      [7ad9] ▶ Run yarn test -r=www-classic --env=production --variant=false --ci --shard=2/5
+   …
+L928    ✱ [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+L929    ✱ [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+          Gated test was expected to fail, but it passed.
+          > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+          (+2 frames hidden)
+   …
+L946    ✱ [c5a5] Test Suites: 1 failed, 64 passed, 65 total
+L947    ✱ [a72a] Tests:       1 failed, 15 skipped, 1170 passed, 1186 total
+L951    ✱ [f3a4] error Command failed with exit code 1.
+L953    ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: yarn test -r=www-modern --env=production --variant=false (Shard 2/5)
+L1157     [f567] ▶ Run yarn test -r=www-modern --env=production --variant=false --ci --shard=2/5
+   …
+L1249   ✱ [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+L1250   ✱ [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+          Gated test was expected to fail, but it passed.
+          > 1353 |     it('suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers', async () => {
+          at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+          (+2 frames hidden)
+   …
+L1267   ✱ [c5a5] Test Suites: 1 failed, 64 passed, 65 total
+L1268   ✱ [a72a] Tests:       1 failed, 15 skipped, 1167 passed, 1183 total
+L1272   ✱ [f3a4] error Command failed with exit code 1.
+L1274   ✱ [eead] ##[error]Process completed with exit code 1.
+L323      [aee2] yarn test -r=www-modern --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	﻿2026-09-24T19:47:48.2648677Z Current runner version: '2.337.0'
+
+== OTHER ERRORS & WARNINGS
+L139    WARN [a5ec] (node:2327) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×8, last L1131)
+L165    WARN [442c] (node:2374) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are n (×4, last L1134)
+L322    WARN [5e3e] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/checkout@v4, actions/setup (×4, last L1290)
+
+== END OF OUTPUT
+L1160     [4293] env:
+L1174     [3625] FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+L1175     [676e] ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+L1209     [29df] PASS packages/react-reconciler/src/__tests__/ReactDefaultTransitionIndicator-test.js
+
+== MOST FREQUENT OTHER LINES
+×12      [c522] shell: /usr/bin/bash -e {0}
+×8       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×8       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×8       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×8       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×4       [0c27] [command]/usr/bin/git remote add origin https://github.com/react/react
+×4       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+×4       [93e5] ▶ Setting up auth
+×4       [daee] You are in 'detached HEAD' state. You can look around, make experimental
+×4       [547e] Node version file is not JSON file
+
+(not shown: 12 groups, 21 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

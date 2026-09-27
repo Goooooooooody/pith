@@ -1,0 +1,252 @@
+Windows, SQLite, Python 3.14	UNKNOWN STEP	﻿2026-09-26T16:16:45.5589802Z Current runner version: '2.337.0'
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5812869Z ##[group]Runner Image Provisioner
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5813791Z Hosted Compute Agent
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5814378Z Version: 20260828.587
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5815042Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5815748Z Build Date: 2026-08-28T16:44:25Z
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5816395Z Worker ID: {bbe4f125-a41c-43c8-aa83-70cd4f29053c}
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5817118Z Azure Region: northcentralus
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5817711Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5819252Z ##[group]Operating System
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5819883Z Microsoft Windows Server 2025
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5820448Z 10.0.26100
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5820980Z Datacenter
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5821461Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5822017Z ##[group]Runner Image
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5822571Z Image: windows-2025-vs2026
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5823116Z Version: 20260922.246.2
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5825226Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260922.246/images/windows/Windows2025-VS2026-Readme.md
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5826898Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260922.246
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5827834Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5828883Z ##[group]GITHUB_TOKEN Permissions
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5831146Z Contents: read
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5831696Z Metadata: read
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5832272Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5834515Z Secret source: None
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5835432Z Cache mode: write
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.5836147Z Prepare workflow directory
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.6179220Z Prepare all required actions
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.6227493Z Getting action download info
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.8015990Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:45.9360575Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.2368301Z Complete job name: Windows, SQLite, Python 3.14
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3757367Z ##[group]Run actions/checkout@v7
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3758711Z with:
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3759215Z   persist-credentials: false
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3759841Z   repository: django/django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3764338Z   token: ***
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3764743Z   ssh-strict: true
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3765142Z   ssh-user: git
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3765530Z   clean: true
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3765942Z   sparse-checkout-cone-mode: true
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3766429Z   fetch-depth: 1
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3766818Z   fetch-tags: false
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3767226Z   show-progress: true
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3767636Z   lfs: false
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3768007Z   submodules: false
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3768419Z   set-safe-directory: true
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3768888Z   allow-unsafe-pr-checkout: false
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.3769592Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.5437051Z Syncing repository: django/django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.5438858Z ##[group]Getting Git version info
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.5439540Z Working directory is 'D:\a\django\django'
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:46.6580085Z [command]"C:\Program Files\Git\bin\git.exe" version
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.0460836Z git version 2.55.0.windows.5
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.0512488Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.0530812Z Temporarily overriding HOME='D:\a\_temp\8ff2f61d-8575-4c1d-ad3a-e88dcd5e2587' before making global git config changes
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.0532672Z Adding repository directory to the temporary git global config as a safe directory
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.0543721Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\django\django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.1304229Z Deleting the contents of 'D:\a\django\django'
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.1310514Z ##[group]Determining repository object format
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.1312833Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.1314798Z ##[group]Initializing the repository
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.1321213Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\django\django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.2175462Z Initialized empty Git repository in D:/a/django/django/.git/
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.2223601Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/django/django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.2862628Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.2865055Z ##[group]Disabling automatic garbage collection
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.2872888Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.3186983Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.3189343Z ##[group]Setting up auth
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.3191023Z Removing SSH command configuration
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.3198943Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:47.3523292Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:49.3237688Z Removing HTTP extra header
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:49.3239006Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:49.4457289Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:50.5549987Z Removing includeIf entries pointing to credentials config files
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:50.5565792Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:50.6089635Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:51.9777174Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-977c2e0f-becf-4d34-8aa0-a4656d0a1df9.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.1876059Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/django/django/.git.path D:\a\_temp\git-credentials-977c2e0f-becf-4d34-8aa0-a4656d0a1df9.config
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.3973912Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/django/django/.git/worktrees/*.path D:\a\_temp\git-credentials-977c2e0f-becf-4d34-8aa0-a4656d0a1df9.config
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.5918323Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-977c2e0f-becf-4d34-8aa0-a4656d0a1df9.config
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.7225508Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-977c2e0f-becf-4d34-8aa0-a4656d0a1df9.config
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.9124984Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.9126163Z ##[group]Fetching the repository
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:52.9146667Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ee8b1dd0d365cadc6b9cd26cd17719d9ecb41cd0:refs/remotes/pull/22040/merge
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9203312Z From https://github.com/django/django
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9204559Z  * [new ref]         ee8b1dd0d365cadc6b9cd26cd17719d9ecb41cd0 -> pull/22040/merge
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9297846Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9298498Z ##[group]Determining the checkout info
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9299760Z ##[endgroup]
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:54.9335891Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:55.0523941Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:55.1371508Z ##[group]Checking out the ref
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:55.1387510Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/22040/merge
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.3221328Z Updating files:  37% (2648/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.3453465Z Updating files:  38% (2695/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.3702263Z Updating files:  39% (2766/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.3962588Z Updating files:  40% (2837/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.4199875Z Updating files:  41% (2908/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.4511361Z Updating files:  42% (2979/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.4780138Z Updating files:  43% (3050/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.5095514Z Updating files:  44% (3121/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.5308591Z Updating files:  45% (3191/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.5497935Z Updating files:  46% (3262/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.5711615Z Updating files:  47% (3333/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.5965374Z Updating files:  48% (3404/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.6160075Z Updating files:  49% (3475/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.7017834Z Updating files:  50% (3546/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.8051919Z Updating files:  51% (3617/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.8318249Z Updating files:  52% (3688/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.8596238Z Updating files:  53% (3759/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.8897497Z Updating files:  54% (3830/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.9121004Z Updating files:  55% (3901/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.9369163Z Updating files:  56% (3971/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.9545346Z Updating files:  57% (4042/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.9742352Z Updating files:  58% (4113/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:56.9904534Z Updating files:  59% (4184/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:57.0094077Z Updating files:  60% (4255/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:57.0291012Z Updating files:  61% (4326/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:57.0594702Z Updating files:  62% (4397/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:57.0828072Z Updating files:  63% (4468/7091)
+Windows, SQLite, Python 3.14	UNKNOWN STEP	2026-09-26T16:16:57.0997517Z Updating files:  64% (4539/709
+
+... [9642674 characters truncated] ...
+
+:24.9358955Z Importing application fixtures_regress
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9359285Z Importing application aggregation_regress
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9359623Z Importing application sites_framework
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9359941Z Importing application auth_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9360243Z Importing application syndication_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9360636Z Importing application postgres_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9360965Z Importing application null_fk
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9361257Z Importing application many_to_one
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9361571Z Importing application reserved_names
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9361896Z Importing application model_fields
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9362220Z Importing application db_typecasts
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9362524Z Importing application select_related
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9362837Z Importing application inspectdb
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9363132Z Importing application humanize_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9363564Z Importing application extra_regress
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9363917Z Importing application django.contrib.flatpages
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9364282Z Importing application flatpages_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9364602Z Importing application test_exceptions
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9364941Z Importing application admin_default_site
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9365264Z Importing application indexes
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9365562Z Importing application datatypes
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9365859Z Importing application dates
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9366256Z Importing application select_related_regress
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9366614Z Importing application force_insert_update
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9366955Z Importing application project_template
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9367279Z Importing application constraints
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9367580Z Importing application m2o_recursive
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9367898Z Importing application aggregation
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9368254Z Importing application filtered_relation
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9368600Z Importing application migrations2
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9368925Z Importing application custom_lookups
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9369268Z Importing application expressions
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9369597Z Importing application logging_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9369918Z Importing application m2m_signals
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9370220Z Importing application foreign_object
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9370548Z Importing application transactions
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9370909Z Importing application template_tests
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9371228Z Importing application schema
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9371543Z Importing application pagination
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9371886Z Importing application distinct_on_fields
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9372223Z Importing application timezones
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9372548Z Importing application many_to_one_null
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9372888Z Importing application expressions_window
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9373249Z Importing application introspection
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9373683Z Importing application cache
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9373999Z Importing application deprecation
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9374313Z Importing application builtin_server
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9374622Z Importing application backends
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9374931Z Importing application urlpatterns
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9375240Z Importing application resolve_url
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9375566Z Importing application unmanaged_models
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9375909Z Importing application model_options
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9376270Z Importing application swappable_models
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9376617Z Importing application raw_query
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9478816Z 
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9479431Z ======================================================================
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9480212Z FAIL: test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest.test_col_not_in_list_containing_null)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9480799Z ----------------------------------------------------------------------
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9481105Z Traceback (most recent call last):
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9481660Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 58, in testPartExecutor
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9482134Z     yield
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9482508Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 669, in run
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9482930Z     self._callTestMethod(testMethod)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9483144Z     
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9484123Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 615, in _callTestMethod
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9484576Z     result = method()
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9484764Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9485170Z   File "/home/runner/work/django/django/tests/queries/tests.py", line 3556, in test_col_not_in_list_containing_null
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9485592Z     self.assertQuerySetEqual(
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9485803Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9486145Z   File "/home/runner/work/django/django/django/test/testcases.py", line 1302, in assertQuerySetEqual
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9486570Z     return self.assertEqual(list(items), values, msg=msg)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9486821Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9488941Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 925, in assertEqual
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9489458Z     assertion_func(first, second, msg=msg)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9489735Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9490372Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 1131, in assertListEqual
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9491075Z     self.assertSequenceEqual(list1, list2, msg, seq_type=list)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9491421Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9491952Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 1113, in assertSequenceEqual
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9492598Z     self.fail(msg)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9492829Z     ~~~~~~~~~^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9493484Z   File "/opt/hostedtoolcache/Python/3.14.7/x64-freethreaded/lib/python3.14t/unittest/case.py", line 750, in fail
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9494135Z     raise self.failureException(msg)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9494430Z     ^^^^^^^^^^^^^^^
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9494728Z AssertionError: Lists differ: ['i1', None] != ['i1']
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9494957Z 
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9495088Z First list contains 1 additional elements.
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9495369Z First extra element 1:
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9495677Z None
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9495799Z 
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9495883Z - ['i1', None]
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9496106Z + ['i1']
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9496224Z 
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9496421Z ----------------------------------------------------------------------
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9496810Z Ran 19852 tests in 234.332s
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9496995Z 
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9497173Z FAILED (failures=1, skipped=1508, expected failures=4)
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9497713Z Destroying test database for alias 'default' ('default_1.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9501501Z Destroying test database for alias 'default' ('default_2.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9519341Z Destroying test database for alias 'default' ('default_3.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9535547Z Destroying test database for alias 'default' ('default_4.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9551784Z Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9552356Z Destroying test database for alias 'other' ('other_1.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9569983Z Destroying test database for alias 'other' ('other_2.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9586603Z Destroying test database for alias 'other' ('other_3.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9602781Z Destroying test database for alias 'other' ('other_4.sqlite3')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:24.9619129Z Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:25.9350331Z ##[error]Process completed with exit code 1.
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:25.9474679Z Post job cleanup.
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0166237Z [command]/usr/bin/git version
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0195649Z git version 2.55.0
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0220484Z Temporarily overriding HOME='/home/runner/work/_temp/f23c6fd1-05c5-4c12-b74a-4034ed6edfbd' before making global git config changes
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0221451Z Adding repository directory to the temporary git global config as a safe directory
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0224332Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0247735Z Removing SSH command configuration
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0252929Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0279154Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0451442Z Removing HTTP extra header
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0455617Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0479050Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0638922Z Removing includeIf entries pointing to credentials config files
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0643727Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0665717Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ubuntu, SQLite, Python 3.14t	UNKNOWN STEP	2026-09-26T16:21:26.0945757Z Cleaning up orphan processes

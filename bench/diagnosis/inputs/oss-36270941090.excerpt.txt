@@ -1,0 +1,252 @@
+Playwright E2E tests (1/8)	UNKNOWN STEP	﻿2026-09-26T21:00:05.8283747Z Current runner version: '2.337.0'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8290144Z Runner name: 'ubuntu-x64-large_i-0ed99695b66391434'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8290910Z Runner group name: 'self-hosted-prod'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8291683Z Machine name: 'ip-172-16-216-151'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8307675Z ##[group]Operating System
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8308324Z Distribution: Ubuntu 24.04.5 LTS
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8308928Z Architecture: x86_64
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8309389Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8309870Z ##[group]Runner Image
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8310457Z AMI id: ami-01ac2d2a283f2d22a
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8310943Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8311391Z ##[group]EC2
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8311830Z Instance type: m7i.2xlarge
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8312317Z Availability zone: us-east-2c
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8312842Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8313705Z ##[group]GITHUB_TOKEN Permissions
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8315263Z Contents: read
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8315936Z Metadata: read
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8316601Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8318388Z Secret source: Actions
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8319163Z Cache mode: write
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8319691Z Prepare workflow directory
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8590837Z Prepare all required actions
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:05.8631704Z Getting action download info
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:06.0902393Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:07.4694556Z Download action repository 'actions/download-artifact@v8' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:07.7238061Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:07.9375046Z Complete job name: Playwright E2E tests (1/8)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:07.9958424Z A job started hook has been configured by the self-hosted runner administrator
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:08.0797704Z ##[group]Run '/opt/actions-runner/hook_job_started.sh'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:08.0829340Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:08.0830724Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:08.0998096Z Running job-started scripts
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4662018Z Done
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4906171Z ##[group]Run actions/checkout@v6
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4906661Z with:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4907101Z   persist-credentials: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4907511Z   repository: grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4909872Z   token: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4910247Z   ssh-strict: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4910647Z   ssh-user: git
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4911001Z   clean: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4911373Z   sparse-checkout-cone-mode: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4911776Z   fetch-depth: 1
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4912144Z   fetch-tags: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4912507Z   show-progress: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4912896Z   lfs: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4913211Z   submodules: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4913581Z   set-safe-directory: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4913981Z   allow-unsafe-pr-checkout: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4914383Z env:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4914818Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4915598Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4918364Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4918863Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_REGION: us-west-2
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4919362Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_PROFILE: run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4919878Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_HOST: 52.89.82.158
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4920408Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_KEY: /home/ubuntu/.ssh/run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4921236Z   VC_RUN_PLAYWRIGHT_TESTS_NPM_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4921985Z   VC_RUN_PLAYWRIGHT_TESTS_PYPI_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.4922653Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.5773396Z Syncing repository: grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.5775240Z ##[group]Getting Git version info
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.5776002Z Working directory is '/opt/actions-runner/_work/grafana/grafana'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.5777177Z [command]/usr/bin/git version
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8040953Z git version 2.55.0
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8106269Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8118683Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/f4062350-c37c-4981-92f1-76b79334a6eb' before making global git config changes
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8119986Z Adding repository directory to the temporary git global config as a safe directory
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8124073Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8241700Z Deleting the contents of '/opt/actions-runner/_work/grafana/grafana'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8244808Z ##[group]Determining repository object format
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8246923Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8247586Z ##[group]Initializing the repository
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8250853Z [command]/usr/bin/git init /opt/actions-runner/_work/grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8376808Z hint: Using 'master' as the name for the initial branch. This default branch name
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8377846Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8378768Z hint: to use in all of your new repositories, which will suppress this warning,
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8379519Z hint: call:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8379960Z hint:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8380604Z hint: 	git config --global init.defaultBranch <name>
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8381266Z hint:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8381916Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8382864Z hint: 'development'. The just-created branch can be renamed via this command:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8383536Z hint:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8384052Z hint: 	git branch -m <name>
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8384596Z hint:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8385325Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8386601Z Initialized empty Git repository in /opt/actions-runner/_work/grafana/grafana/.git/
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8388445Z [command]/usr/bin/git remote add origin https://github.com/grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8434205Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8434895Z ##[group]Disabling automatic garbage collection
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8437228Z [command]/usr/bin/git config --local gc.auto 0
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8462701Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8463487Z ##[group]Setting up auth
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8463963Z Removing SSH command configuration
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8468116Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:09.8494606Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.1753839Z Removing HTTP extra header
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.1759125Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.1787287Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.1982045Z Removing includeIf entries pointing to credentials config files
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.1986951Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2013390Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2218797Z [command]/usr/bin/git config --file /opt/actions-runner/_work/_temp/git-credentials-49776abf-dd4c-47e2-b446-e41bed4a8669.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2248462Z [command]/usr/bin/git config --local includeIf.gitdir:/opt/actions-runner/_work/grafana/grafana/.git.path /opt/actions-runner/_work/_temp/git-credentials-49776abf-dd4c-47e2-b446-e41bed4a8669.config
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2278448Z [command]/usr/bin/git config --local includeIf.gitdir:/opt/actions-runner/_work/grafana/grafana/.git/worktrees/*.path /opt/actions-runner/_work/_temp/git-credentials-49776abf-dd4c-47e2-b446-e41bed4a8669.config
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2304395Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-49776abf-dd4c-47e2-b446-e41bed4a8669.config
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2327809Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-49776abf-dd4c-47e2-b446-e41bed4a8669.config
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2348475Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2349025Z ##[group]Fetching the repository
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:10.2354188Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f6059ff52bc9c83dde5627d3448cf61b8169a961:refs/remotes/pull/133643/merge
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1366572Z From https://github.com/grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1367563Z  * [new ref]           f6059ff52bc9c83dde5627d3448cf61b8169a961 -> pull/133643/merge
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1370072Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1370824Z ##[group]Determining the checkout info
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1371431Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1374847Z [command]/usr/bin/git sparse-checkout disable
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1437624Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1460475Z ##[group]Checking out the ref
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:12.1463257Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/133643/merge
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:13.1698740Z Updating files:  90% (21026/23147)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:13.2009141Z Updating files:  91% (21064/23147)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:13.2059542Z Updating files:  92% (21296/23147)
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:00:13.2114306Z Updating files:  93% (21527/23147)
+Playwright E2E tests (1/8)	UNKNOWN STEP	202
+
+... [147769 characters truncated] ...
+
+ight E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6013476Z ##[error]Process completed with exit code 1.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6083989Z ##[group]Run echo "Tests in this shard failed."
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6084365Z ^[[36;1mecho "Tests in this shard failed."^[[0m
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6084654Z ^[[36;1mecho ""^[[0m
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6085060Z ^[[36;1mecho "View combined logs and HTML report in the 'Playwright test report' job once all tests finish."^[[0m
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6085737Z ^[[36;1mexit 1^[[0m
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6111765Z shell: /usr/bin/bash -e {0}
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6112057Z env:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6112416Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6112855Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6115320Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6115806Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_REGION: us-west-2
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6116184Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_PROFILE: run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6116563Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_HOST: 52.89.82.158
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6117000Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_KEY: /home/ubuntu/.ssh/run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6117551Z   VC_RUN_PLAYWRIGHT_TESTS_NPM_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6118128Z   VC_RUN_PLAYWRIGHT_TESTS_PYPI_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6118417Z   RUN_ID: 36270941090
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6118669Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6441198Z Tests in this shard failed.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6441517Z 
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6441876Z View combined logs and HTML report in the 'Playwright test report' job once all tests finish.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6443234Z ##[error]Process completed with exit code 1.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6481358Z ##[group]Run actions/upload-artifact@v7
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6481682Z with:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6481929Z   name: grafana-server-log-1
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6482225Z   path: grafana-server/grafana.log
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6482517Z   retention-days: 7
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6482765Z   if-no-files-found: warn
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6483015Z   compression-level: 6
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6483271Z   overwrite: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6483505Z   include-hidden-files: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6483763Z   archive: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6483979Z env:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6484313Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6484726Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6487369Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6487706Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_REGION: us-west-2
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6488062Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_PROFILE: run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6488456Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_HOST: 52.89.82.158
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6488827Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_KEY: /home/ubuntu/.ssh/run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6489368Z   VC_RUN_PLAYWRIGHT_TESTS_NPM_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6489938Z   VC_RUN_PLAYWRIGHT_TESTS_PYPI_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.6490214Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.7599316Z With the provided path, there will be 1 file uploaded
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.7604868Z Artifact name is valid!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.7605219Z Root directory input is valid!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.9802239Z Uploading artifact: grafana-server-log-1.zip
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:48.9809940Z Beginning upload of artifact content to blob storage
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.0915805Z Uploaded bytes 4243
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.1162190Z Finished uploading artifact content to blob storage!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.1164905Z SHA256 digest of uploaded artifact is 61a62e30d4aa31dfe7f27806fecf4cb1f20af930eabe4ed893d3e6396a953613
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.1165653Z Finalizing artifact upload
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4055578Z Artifact grafana-server-log-1 successfully finalized. Artifact ID 10915298207
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4056403Z Artifact grafana-server-log-1 has been successfully uploaded! Final size is 4243 bytes. Artifact ID is 10915298207
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4057195Z Artifact download URL: https://github.com/grafana/grafana/actions/runs/36270941090/artifacts/10915298207
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4167263Z ##[group]Run actions/upload-artifact@v7
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4167586Z with:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4167849Z   name: playwright-blob-1
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4168139Z   path: blob-report
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4168396Z   retention-days: 1
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4168657Z   if-no-files-found: warn
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4168930Z   compression-level: 6
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4169191Z   overwrite: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4169456Z   include-hidden-files: false
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4169734Z   archive: true
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4169981Z env:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4170346Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_ACCESS_KEY_ID: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4170815Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SECRET_ACCESS_KEY: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4173395Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_SESSION_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4173746Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_REGION: us-west-2
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4174143Z   VC_RUN_PLAYWRIGHT_TESTS_AWS_PROFILE: run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4174599Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_HOST: 52.89.82.158
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4175020Z   VC_RUN_PLAYWRIGHT_TESTS_SSH_KEY: /home/ubuntu/.ssh/run_playwright_tests-admin
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4175796Z   VC_RUN_PLAYWRIGHT_TESTS_NPM_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4176436Z   VC_RUN_PLAYWRIGHT_TESTS_PYPI_TOKEN: ***
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.4176750Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.5325257Z With the provided path, there will be 1 file uploaded
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.5327363Z Artifact name is valid!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.5327849Z Root directory input is valid!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.7702529Z Uploading artifact: playwright-blob-1.zip
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:49.7733020Z Beginning upload of artifact content to blob storage
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.3825844Z Uploaded bytes 7240694
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.4052697Z Finished uploading artifact content to blob storage!
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.4053414Z SHA256 digest of uploaded artifact is edd9cbad55dd2a1b21a0b67451a3ca6087ce25498890e46b7aa69c7f16c9f9a7
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.4053907Z Finalizing artifact upload
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6753979Z Artifact playwright-blob-1 successfully finalized. Artifact ID 10915417925
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6754786Z Artifact playwright-blob-1 has been successfully uploaded! Final size is 7240694 bytes. Artifact ID is 10915417925
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6755797Z Artifact download URL: https://github.com/grafana/grafana/actions/runs/36270941090/artifacts/10915417925
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6892028Z Post job cleanup.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6896330Z ##[start-action display=Cache Playwright browsers;id=__89d04e44-7a5d-4c37-bde8-61b2ef24f633.__actions_cache]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6898577Z ##[end-action id=__89d04e44-7a5d-4c37-bde8-61b2ef24f633.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6977879Z Post job cleanup.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6981929Z ##[start-action display=Restore global npm cache folder;id=__33158b86-0576-41cd-9576-e475a9b099f8.npm-global-cache]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6984005Z ##[end-action id=__33158b86-0576-41cd-9576-e475a9b099f8.npm-global-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6986018Z ##[start-action display=Restore yarn cache;id=__33158b86-0576-41cd-9576-e475a9b099f8.yarn-download-cache]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.6987877Z ##[end-action id=__33158b86-0576-41cd-9576-e475a9b099f8.yarn-download-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7020454Z Post job cleanup.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7023414Z ##[start-action display=Run actions/setup-node@v6;id=__6f2abbbd-4402-478d-a977-c13a19676cbf.__actions_setup-node]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7026022Z ##[end-action id=__6f2abbbd-4402-478d-a977-c13a19676cbf.__actions_setup-node;outcome=skipped;conclusion=skipped;duration_ms=0]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7083725Z Post job cleanup.
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7758881Z [command]/usr/bin/git version
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7792123Z git version 2.55.0
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7819609Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/8679e2e7-9b90-40af-82e7-69d3d1927564' before making global git config changes
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7820339Z Adding repository directory to the temporary git global config as a safe directory
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7824347Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/grafana/grafana
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7851821Z Removing SSH command configuration
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7855793Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.7887886Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8124863Z Removing HTTP extra header
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8128733Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8154111Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8374836Z Removing includeIf entries pointing to credentials config files
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8379672Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8405647Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8693657Z A job completed hook has been configured by the self-hosted runner administrator
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8728690Z ##[group]Run '/opt/actions-runner/hook_job_completed.sh'
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8750639Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8750993Z ##[endgroup]
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8798729Z Running job-completed scripts
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8799029Z Done
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.8847586Z Cleaning up orphan processes
+Playwright E2E tests (1/8)	UNKNOWN STEP	2026-09-26T21:04:50.9271088Z Terminate orphan process: pid (4740) (grafana)

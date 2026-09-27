@@ -1,0 +1,11 @@
+{
+  "name": "pith",
+  "displayName": "pith",
+  "version": "0.1.0",
+  "description": "Get to the pith of huge logs, CI failures and command output before they reach Claude's context. `! pith` summarises your clipboard; `pith gh` summarises a failing GitHub Actions run; a paste guard keeps giant log pastes out of context.",
+  "author": { "name": "Goooooooooody", "url": "https://github.com/Goooooooooody" },
+  "homepage": "https://github.com/Goooooooooody/pith",
+  "repository": "https://github.com/Goooooooooody/pith",
+  "license": "MIT",
+  "keywords": ["logs", "ci", "github-actions", "context", "tokens", "debugging", "stack-traces"]
+}

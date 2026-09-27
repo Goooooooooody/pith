@@ -1,0 +1,169 @@
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	﻿2026-09-26T08:06:42.1310794Z Current runner version: '2.337.0'
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1341251Z ##[group]Runner Image Provisioner
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1342163Z Hosted Compute Agent
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1343061Z Version: 20260828.587
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1343923Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1344711Z Build Date: 2026-08-28T16:44:25Z
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1345516Z Worker ID: {965016cd-ddaf-4323-a28d-edf412406f76}
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1346293Z Azure Region: westus2
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1346856Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1348769Z ##[group]Operating System
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1349412Z Ubuntu
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1350076Z 22.04.5
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1350609Z LTS
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1351148Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1351784Z ##[group]Runner Image
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1352454Z Image: ubuntu-22.04-arm
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1353396Z Version: 20260920.137.1
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1354809Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22-arm64/20260920.137/images/ubuntu/Ubuntu2204-Arm64-Readme.md
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1356515Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22-arm64%2F20260920.137
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1357519Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1358679Z ##[group]GITHUB_TOKEN Permissions
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1361759Z Contents: read
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1362501Z Metadata: read
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1363408Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1366128Z Secret source: Actions
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1367318Z Cache mode: write
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.1368381Z Prepare workflow directory
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.2041327Z Prepare all required actions
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.2098170Z Getting action download info
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.5621803Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7605288Z Uses: apache/airflow/.github/workflows/run-unit-tests.yml@refs/heads/main (1a51ed1b1f557852ca6b2b54aee67030234fc597)
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7610876Z ##[group] Inputs
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7611767Z   runners: ["ubuntu-22.04-arm"]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7612513Z   platform: linux/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7613616Z   test-group: core
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7614917Z   test-types-as-strings-in-json: [{"description": "API...CLI", "test_types": "API Always CLI"}, {"description": "Core...Serialization", "test_types": "Core Other Serialization"}]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7616258Z   backend: postgres
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7616884Z   test-scope: All
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7617499Z   test-name: LatestBoto-Postgres
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7618138Z   test-name-separator: :
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7618827Z   python-versions: ['3.10']
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7619464Z   backend-versions: ['14']
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7620292Z   excluded-providers-as-string: {"3.14": ["apache.cassandra"]}
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7621088Z   excludes: []
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7621660Z   run-migration-tests: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7622383Z   run-coverage: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7623173Z   debug-resources: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7623902Z   include-success-outputs: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7624629Z   downgrade-sqlalchemy: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7625267Z   upgrade-sqlalchemy: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7625960Z   upgrade-boto: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7626596Z   downgrade-pendulum: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7627368Z   force-lowest-dependencies: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7629265Z   monitor-delay-time-in-seconds: 20
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7630009Z   skip-providers-tests: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7630809Z   use-uv: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7631371Z   default-branch: main
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7631978Z   job-timeout-minutes: 65
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7632981Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.7633911Z Complete job name: Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8351546Z ##[group]Run echo "JOB_START_EPOCH=$(date +%s)" >> "${GITHUB_ENV}"
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8353141Z ^[[36;1mecho "JOB_START_EPOCH=$(date +%s)" >> "${GITHUB_ENV}"^[[0m
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8385159Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8387220Z env:
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8387832Z   BACKEND: postgres
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8388559Z   BACKEND_VERSION: 14
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8389147Z   DB_RESET: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8389710Z   DEBUG_RESOURCES: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8390412Z   DOWNGRADE_SQLALCHEMY: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8391090Z   DOWNGRADE_PENDULUM: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8391811Z   ENABLE_COVERAGE: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8392482Z   EXCLUDED_PROVIDERS: {"3.14": ["apache.cassandra"]}
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8393668Z   FORCE_LOWEST_DEPENDENCIES: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8394463Z   GITHUB_REPOSITORY: apache/airflow
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8398410Z   GITHUB_TOKEN: ***
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8399039Z   GITHUB_USERNAME: potiuk
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8399844Z   INCLUDE_SUCCESS_OUTPUTS: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8400534Z   PLATFORM: linux/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8401450Z   JOB_ID: core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8402322Z   MOUNT_SOURCES: skip
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8403325Z   PARALLEL_TEST_TYPES: Core Other Serialization
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8404045Z   PYTHON_MAJOR_MINOR_VERSION: 3.10
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8404739Z   UPGRADE_BOTO: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8405373Z   UPGRADE_SQLALCHEMY: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8406054Z   AIRFLOW_MONITOR_DELAY_TIME_IN_SECONDS: 20
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:06:42.8406845Z   VERBOSE: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	202
+
+... [902542 characters truncated] ...
+
+o-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:10.3730976Z With the provided path, there will be 1 file uploaded
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:10.3734981Z Artifact name is valid!
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:10.3735591Z Root directory input is valid!
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:10.7171301Z Uploading artifact: container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10.zip
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:10.7206589Z Beginning upload of artifact content to blob storage
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.0145620Z Uploaded bytes 1516
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.0865310Z Finished uploading artifact content to blob storage!
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.0865936Z SHA256 digest of uploaded artifact is 77d26f7535d1029790d820b196e8ad88d694cf4951e452126d4782b45b8bb5fb
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.0866399Z Finalizing artifact upload
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4619396Z Artifact container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10 successfully finalized. Artifact ID 10902427970
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4620598Z Artifact container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10 has been successfully uploaded! Final size is 1516 bytes. Artifact ID is 10902427970
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4623633Z Artifact download URL: https://github.com/apache/airflow/actions/runs/36227248243/artifacts/10902427970
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4705583Z ##[end-action id=__self_4.__actions_upload-artifact_2;outcome=success;conclusion=success;duration_ms=1227]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4707929Z ##[start-action display=Upload other logs;id=__self_4.__actions_upload-artifact_3]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4744565Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4744961Z with:
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4745361Z   name: container-logs-core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4745823Z   path: ./files/other_logs*
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4746041Z   retention-days: 7
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4746235Z   if-no-files-found: ignore
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4746451Z   compression-level: 6
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4746653Z   overwrite: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4746847Z   include-hidden-files: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747065Z   archive: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747245Z env:
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747407Z   BACKEND: postgres
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747593Z   BACKEND_VERSION: 14
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747786Z   DB_RESET: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4747970Z   DEBUG_RESOURCES: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4748188Z   DOWNGRADE_SQLALCHEMY: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4748417Z   DOWNGRADE_PENDULUM: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4748635Z   ENABLE_COVERAGE: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4748887Z   EXCLUDED_PROVIDERS: {"3.14": ["apache.cassandra"]}
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4749503Z   FORCE_LOWEST_DEPENDENCIES: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4749920Z   GITHUB_REPOSITORY: apache/airflow
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4752793Z   GITHUB_TOKEN: ***
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4753064Z   GITHUB_USERNAME: potiuk
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4753286Z   INCLUDE_SUCCESS_OUTPUTS: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4753512Z   PLATFORM: linux/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4753858Z   JOB_ID: core-Core...Serialization-All-LatestBoto-Postgres-postgres-14-3.10
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4754245Z   MOUNT_SOURCES: skip
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4754479Z   PARALLEL_TEST_TYPES: Core Other Serialization
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4754761Z   PYTHON_MAJOR_MINOR_VERSION: 3.10
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4754994Z   UPGRADE_BOTO: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4755197Z   UPGRADE_SQLALCHEMY: false
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4755436Z   AIRFLOW_MONITOR_DELAY_TIME_IN_SECONDS: 20
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4755691Z   VERBOSE: true
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4755871Z   DEFAULT_BRANCH: main
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4756069Z   JOB_TIMEOUT_MINUTES: 65
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4756281Z   JOB_START_EPOCH: 1790410002
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4756586Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.21/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4756994Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.21/arm64/lib/pkgconfig
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4757408Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.21/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4757776Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.21/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4758151Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.21/arm64
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4758531Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.21/arm64/lib
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.4758841Z ##[endgroup]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6034701Z No files were found with the provided path: ./files/other_logs*. No artifacts will be uploaded.
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6107764Z ##[end-action id=__self_4.__actions_upload-artifact_3;outcome=success;conclusion=success;duration_ms=139]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6220669Z Post job cleanup.
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6224936Z ##[start-action display=Setup python;id=__9ff4db67-21e4-4c62-b57d-b6d7dcc8063e.__actions_setup-python]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6227109Z ##[end-action id=__9ff4db67-21e4-4c62-b57d-b6d7dcc8063e.__actions_setup-python;outcome=skipped;conclusion=skipped;duration_ms=0]
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.6290249Z Post job cleanup.
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7030015Z [command]/usr/bin/git version
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7071930Z git version 2.55.0
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7115669Z Temporarily overriding HOME='/home/runner/work/_temp/511d38cb-2622-4588-9dea-43eff750377d' before making global git config changes
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7116519Z Adding repository directory to the temporary git global config as a safe directory
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7120806Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/airflow/airflow
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7155897Z Removing SSH command configuration
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7163249Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7201101Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7435100Z Removing HTTP extra header
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7441149Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7481343Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7717321Z Removing includeIf entries pointing to credentials config files
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7725385Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.7764683Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Special tests / Latest Boto test: core / core:LatestBoto-Postgres:14:3.10:Core...Serialization	UNKNOWN STEP	2026-09-26T08:38:11.8143229Z Cleaning up orphan processes

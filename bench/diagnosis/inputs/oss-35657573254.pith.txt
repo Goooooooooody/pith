@@ -1,0 +1,70 @@
+pith · <log> · 854 lines → 241 groups · ~29.6k → ~1.1k tokens (96.3% smaller)
+
+jobs: Check Markdown APIs in new files
+levels: error 2 · warn 1 · info 722
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Check Markdown APIs in new files
+L99       [7d5c] ▶ Fetching the repository
+L100      [6e81] [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +ae1e033c2138ebac93ef305fcbf1fddcda8eb8bd:refs/remotes/pull/58842/merge
+L101      [5f55] From https://github.com/rails/rails
+          * [new branch]            0-5-stable              -> origin/0-5-stable
+          * [new branch]            0-6-stable              -> origin/0-6-stable
+          * [new branch]            0-7-stable              -> origin/0-7-stable
+          (+73 lines)
+   …
+L178    ✱ [6377] * [new branch]            raise-error-for-spot    -> origin/raise-error-for-spot
+L179      [e616] * [new branch]            revert-52720-revert-52717-class-attribute-redefine-once -> origin/revert-52720-revert-52717-class-attribute-redefine-once (×3, last L195)
+L181      [ed83] * [new branch]            rfc3339-with-ruby-time-72 -> origin/rfc3339-with-ruby-time-72
+   …
+L801      [820f] ▶ Installing Bundler
+L802      [e7ed] Using Bundler 4.0.12 from Gemfile.lock BUNDLED WITH 4.0.12
+L803      [85f9] [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/gem install bundler -v 4.0.12
+L805      [63c6] 1 gem installed
+L806      [931d] Took   0.56 seconds (×4, last L806)
+L808      [b811] ▶ Run ruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA
+L809      [daf1] ruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA
+   …
+L815      [d078] New Ruby files must use Markdown for their API documentation.
+L816      [3e4f] Please add `# :markup: markdown` at the top of:
+          activesupport/lib/active_support/connection_pool.rb
+          activesupport/lib/active_support/connection_pool/fork.rb
+          activesupport/lib/active_support/connection_pool/timed_stack.rb
+          (+1 lines)
+   …
+L821    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L66     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+
+== END OF OUTPUT
+L778      [dc01] ▶ Run ruby/setup-ruby@v1
+L779      [8d65] with:
+L784      [6c71] ▶ Modifying PATH
+L785      [1455] Entries added to PATH to use selected Ruby:
+L788      [994e] ▶ Downloading Ruby
+L789      [36fb] https://github.com/ruby/ruby-builder/releases/download/ruby-4.0.7/ruby-4.0.7-ubuntu-24.04-x64.tar.gz
+L792      [cbd2] ▶ Extracting  Ruby
+L793      [437a] [command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/4.0.7 -f /home/runner/work/_temp/f51e0ecd-b2d0-4fc8-8ab5-97553dc85907
+L796      [dc72] ▶ Print Ruby version
+L797      [efe1] [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/ruby --version
+L798      [fd36] ruby 4.0.7 (2026-09-15 revision 229531a6cf) +PRISM [x86_64-linux]
+L799      [931d] Took   0.01 seconds
+L804      [aa01] Successfully installed bundler-4.0.12
+L810      [c522] shell: /usr/bin/bash -e {0}
+L811      [4293] env:
+
+== MOST FREQUENT OTHER LINES
+×40      [3108] * [new tag]               v6.0.2.1                -> v6.0.2.1
+×32      [326f] * [new tag]               v7.0.2.1                -> v7.0.2.1
+×30      [7f8d] * [new tag]               v3.0.0                  -> v3.0.0
+×30      [3e6a] * [new tag]               v4.0.0                  -> v4.0.0
+×27      [8087] * [new tag]               v3.0.10                 -> v3.0.10
+×25      [1312] * [new tag]               v5.0.0                  -> v5.0.0
+×23      [7c6b] * [new tag]               v2.0.0                  -> v2.0.0
+×21      [562c] * [new tag]               v7.0.0                  -> v7.0.0
+×18      [b09a] * [new tag]               v3.0.4.rc1              -> v3.0.4.rc1
+×18      [aa0e] * [new tag]               v5.0.0.1                -> v5.0.0.1
+
+(not shown: 183 groups, 405 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

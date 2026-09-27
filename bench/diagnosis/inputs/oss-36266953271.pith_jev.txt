@@ -1,0 +1,200 @@
+pith · <log> · 3,431 lines → 1743 groups · ~106.7k → ~3.8k tokens (96.4% smaller)
+
+jobs: Run tests Python 3.14.5 (4)
+levels: error 31 · warn 3 · notable 10 · info 1,961 · debug 24
+raw: <removed for evaluation>
+jev (jev-latest): hid 923/1000 groups as confident noise (743 rarest groups not scored) · 1 requests · 4,511 tokens · $0.0002 · 0.7s
+most likely root cause: [ea46] rc=0.44 (confidence 0.42, cause visible p=0.86)
+
+== LIKELY ROOT CAUSE (jev rc=0.44)
+[ea46] ERROR ×2  act=0.86 val=2.9/4 rc=0.44  L2492 … L2539  job: Run tests Python 3.14.5 (4)
+  homeassistant.exceptions.ConfigEntryNotReady: Switchbot device initialization failed because of incorrect configuration parameters: wrong model
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Run tests Python 3.14.5 (4)
+L2162     [83c0] ▶ Run . venv/bin/activate (×2, last L2162)
+   …
+L2347     [f9c06] ................................................................... [8843/8888] (×111, last L2347)
+L2348     [2de7] .............................................                       [8888/8888]
+L2349     [735d] ==================================== ERRORS ====================================
+L2350   ✱ [6af0] _ ERROR at teardown of test_exception_handling_for_device_initialization[exception0-Switchbot device initialization failed because of incorrect configuration parameters: wrong model] _
+L2351     [9253] [gw0] linux -- Python 3.14.5 /home/runner/work/core/core/venv/bin/python3
+          def finalizer() -> None:
+          """Yield again, to finalize."""
+          async def async_finalizer() -> None:
+          (+8 lines)
+   …
+L2366     [3cf4] >       runner.run(async_finalizer(), context=context)
+L2368     [dfb0] venv/lib/python3.14/site-packages/pytest_asyncio/plugin.py:424:
+   …
+L2406     [8af8] self = <bleak.backends.bluezdbus.client.BleakClientBlueZDBus object at 0x7f49f4b4a510>
+L2407     [933f] address_or_ble_device = BLEDevice(AA:BB:CC:DD:EE:FF, WoLock), services = None
+L2408     [f6f4] bluez = {}
+L2409   ✱ [e0ce] kwargs = {'_is_retry_client': True, 'disconnected_callback': <[AttributeError("'BleakClientWithServiceCache' object has no attribute '_backend'") raised in repr()] partial object at 0x7f49f4cf3ac0>, 'timeout': 30, 'winrt': {}}
+          def __init__(
+          self,
+          address_or_ble_device: Union[BLEDevice, str],
+          services: Optional[set[str]] = None,
+          *,
+          bluez: BlueZClientArgs,
+          **kwargs: Any,
+          ):
+          super().__init__(address_or_ble_device, **kwargs)
+          self._adapter = bluez.get("adapter")
+          self._device_path: Optional[str]
+          self._device_info: Optional[dict[str, Any]]
+   …
+L2427     [9f4f] >           self._device_path = address_or_ble_device.details["path"]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+L2429   ✱ [1dec] E           KeyError: 'path'
+L2431   ✱ [fe76] venv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py:79: KeyError
+L2432     [4767] ---------------------------- Captured stderr setup -----------------------------
+L2433     [7b02] INFO:homeassistant.loader:Loaded bluetooth from homeassistant.components.bluetooth
+L2434     [dccb] INFO:homeassistant.loader:Loaded usb from homeassistant.components.usb
+   …
+L2439     [25ed] INFO:homeassistant.setup:Setting up websocket_api
+L2440     [f5a2] INFO:homeassistant.setup:Setting up usb
+L2441     [b375] INFO:homeassistant.setup:Setting up bluetooth
+L2442   ✱ [41c0] ERROR:bleak_retry_connector.bluez:Failed to stop discovery for hci0 because no manager
+L2443     [925b] ------------------------------ Captured log setup ------------------------------
+L2444     [8cc5] 2026-09-26 19:53:42.771 INFO     SyncWorker_0 homeassistant.loader:loader.py:796 Loaded bluetooth from homeassistant.components.bluetooth
+L2445     [2ace] 2026-09-26 19:53:42.772 INFO     SyncWorker_0 homeassistant.loader:loader.py:796 Loaded usb from homeassistant.components.usb
+   …
+L2450     [a554] 2026-09-26 19:53:42.780 INFO     MainThread homeassistant.setup:setup.py:393 Setting up websocket_api
+L2451     [ebba] 2026-09-26 19:53:42.781 INFO     MainThread homeassistant.setup:setup.py:393 Setting up usb
+L2452     [bbd8] 2026-09-26 19:53:42.782 INFO     MainThread homeassistant.setup:setup.py:393 Setting up bluetooth
+L2453   ✱ [2a20] 2026-09-26 19:53:42.786 ERROR    MainThread bleak_retry_connector.bluez:bluez.py:334 Failed to stop discovery for hci0 because no manager
+L2454     [c174] ----------------------------- Captured stderr call -----------------------------
+L2455     [9592] INFO:homeassistant.loader:Loaded switchbot from homeassistant.components.switchbot
+L2456     [7b40] INFO:homeassistant.loader:Loaded bluetooth_adapters from homeassistant.components.bluetooth_adapters
+   …
+L2460     [1d18] DEBUG:homeassistant.helpers.translation:Cache miss for en: {'switchbot'}
+L2461     [b8e2] DEBUG:homeassistant.loader:Component switchbot import took 0.000 seconds (loaded_executor=False)
+L2462     [5367] INFO:homeassistant.setup:Setting up switchbot
+L2463   ✱ [ffee] INFO:homeassistant.config_entries:Config entry 'Mock Title' for switchbot integration not ready yet: Switchbot device initialization failed because of incorrect configuration parameters: wrong model; Retrying in 5 seconds
+L2464     [a505] DEBUG:homeassistant.config_entries:Full exception
+L2465   ✱ [f8e5] Traceback (most recent call last): (×8, last L3246)
+          File "…/components/switchbot/__init__.py", line 387, in async_setup_entry
+          File "…/python3.14/unittest/mock.py", line 1176, in __call__
+          File "…/python3.14/unittest/mock.py", line 1180, in _mock_call
+          File "…/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+   …
+L2480   ✱ [eb57] ValueError: wrong model (×2, last L2527)
+L2482     [f811] The above exception was the direct cause of the following exception: (×2, last L2529)
+L2484   ✱ [f8e5] Traceback (most recent call last):
+          File "…/core/homeassistant/config_entries.py", line 985, in __async_setup_with_context
+          (+1 frames hidden)
+   …
+L2492   ✱ [ea46] homeassistant.exceptions.ConfigEntryNotReady: Switchbot device initialization failed because of incorrect configuration parameters: wrong model (×2, last L2539)
+L2493     [dc49] DEBUG:homeassistant.loader:Importing platforms for switchbot executor=['config_flow'] loop=[] took 0.01s
+L2494     [9766] DEBUG:homeassistant.components.switchbot.config_flow:Discovered bluetooth device: {'name': 'WoLock', 'address': 'AA:BB:CC:DD:EE:FF', 'rssi': -60, 'manufacturer_data': {2409: b'\xca\xbaP\xddv;\x03\x03\x00 '}, 'service_data': {'0000fd3d-0000-1000-8000-00805f9b34fb': b'o\x80d'}, 'service_uuids': ['cba2
+L2495     [279a] DEBUG:switchbot.adv_parsers.lock:mfr_data: caba50dd763b03030020
+   …
+L2507     [b024] 2026-09-26 19:53:42.803 DEBUG    MainThread homeassistant.helpers.translation:translation.py:211 Cache miss for en: {'switchbot'}
+L2508     [63f4] 2026-09-26 19:53:42.804 DEBUG    MainThread homeassistant.loader:loader.py:1025 Component switchbot import took 0.000 seconds (loaded_executor=False)
+L2509     [ab66] 2026-09-26 19:53:42.804 INFO     MainThread homeassistant.setup:setup.py:393 Setting up switchbot
+L2510   ✱ [af59] 2026-09-26 19:53:42.805 INFO     MainThread homeassistant.config_entries:config_entries.py:816 Config entry 'Mock Title' for switchbot integration not ready yet: Switchbot device initialization failed because of incorrect configuration parameters: wrong model; Retrying in 5 seconds
+L2511     [01e6] 2026-09-26 19:53:42.805 DEBUG    MainThread homeassistant.config_entries:config_entries.py:825 Full exception
+L2512   ✱ [f8e5] Traceback (most recent call last):
+          File "…/components/switchbot/__init__.py", line 387, in async_setup_entry
+          (+3 frames hidden)
+   …
+L2527   ✱ [eb57] ValueError: wrong model
+   …
+L2546     [7b85] 2026-09-26 19:53:42.809 DEBUG    MainThread switchbot.devices.device:device.py:1478 WoLock (AA:BB:CC:DD:EE:FF): update advertisement: SwitchBotAdvertisement(address='AA:BB:CC:DD:EE:FF', data={'rawAdvData': b'o\x80d', 'data': {'sequence_number': 3, 'battery': 100, 'calibration': False, 'status': <Loc
+L2547     [b516] 2026-09-26 19:53:42.812 DEBUG    MainThread homeassistant.components.switchbot:config_entries.py:1808 Updating discovery keys for switchbot entry aabbccddeeff {} -> {'bluetooth': (DiscoveryKey(domain='bluetooth', key='AA:BB:CC:DD:EE:FF', version=1),)}
+L2548     [6b57] --------------------------- Captured stderr teardown ---------------------------
+L2549   ✱ [4ccf] ERROR:homeassistant:Error doing job: Task exception was never retrieved (task: None):   File "<string>", line 1, in <module> (×2, last L2761)
+          import sys;exec(eval(sys.stdin.readline()))
+          File "<string>", line 8, in <module>
+          File "…/python3.14/asyncio/runners.py", line 127, in run
+          File "…/python3.14/asyncio/base_events.py", line 706, in run_until_complete
+          File "…/python3.14/asyncio/base_events.py", line 677, in run_forever
+          File "…/python3.14/asyncio/base_events.py", line 2049, in _run_once
+          (+63 frames hidden)
+   …
+L2686   ✱ [f8e5] Traceback (most recent call last):
+          File "…/switchbot/devices/device.py", line 914, in update
+          (+10 frames hidden)
+   …
+L2739   ✱ [4c9b8] KeyError: 'path' (×4, last L3299)
+L2740     [c9a5] INFO:homeassistant.loader:Loaded binary_sensor from homeassistant.components.binary_sensor
+L2741     [7502] INFO:homeassistant.setup:Setting up binary_sensor
+L2742     [475d] INFO:homeassistant.components.binary_sensor:Setting up switchbot.binary_sensor (×2, last L2758)
+   …
+L2870   ✱ [f8e5] Traceback (most recent call last):
+          File "…/switchbot/devices/device.py", line 914, in update
+          (+10 frames hidden)
+   …
+L2923   ✱ [4c9b8] KeyError: 'path'
+L2924     [6a0e] ---------------------------- Captured log teardown -----------------------------
+   (+1 more lines here: `pith show <id>` or grep the raw file)
+   …
+L3062   ✱ [f8e5] Traceback (most recent call last):
+          File "…/switchbot/devices/device.py", line 914, in update
+          (+10 frames hidden)
+   …
+L3115   ✱ [4c9b8] KeyError: 'path'
+   (+1 more lines here: `pith show <id>` or grep the raw file)
+   …
+L3246   ✱ [f8e5] Traceback (most recent call last):
+          File "…/switchbot/devices/device.py", line 914, in update
+          (+10 frames hidden)
+   …
+L3318     [aee7] 2.08s setup    tests/components/matter/test_fan.py::test_fans
+L3319     [0ea0] 2.08s setup    tests/components/matter/test_button.py::test_buttons
+L3320     [5d24] 2.08s setup    tests/components/matter/test_light.py::test_lights
+L3321     [6016] 2.07s setup    tests/components/matter/test_climate.py::test_climates
+L3322     [7257] 2.07s setup    tests/components/matter/test_siren.py::test_sirens
+L3323     [a6b0] 2.07s setup    tests/components/matter/test_event.py::test_events
+L3324     [aa1d] 2.07s setup    tests/components/matter/test_number.py::test_numbers
+L3325     [f7f2] 2.05s setup    tests/components/matter/test_vacuum.py::test_vacuum
+L3326     [8830] 2.05s setup    tests/components/matter/test_water_heater.py::test_water_heaters
+L3328     [709d] (26641 durations < 1s hidden.)
+L3329     [ae21] =========================== short test summary info ============================
+L3330   ✱ [8679] ERROR tests/components/switchbot/test_init.py::test_exception_handling_for_device_initialization[exception0-Switchbot device initialization failed because of incorrect configuration parameters: wrong model] - KeyError: 'path'
+L3331   ✱ [eead] ##[error]Process completed with exit code 1.
+L3332     [a85b] ▶ Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a (×2, last L3371)
+L3333     [8d65] with: (×11, last L3372)
+          name: pytest-365016-3.14.5-4
+          path: pytest-*.txt
+          overwrite: true
+          (+4 lines)
+
+== OTHER ERRORS & WARNINGS
+L2925   ERRO [f544] 2026-09-26 19:53:42.827 ERROR    MainThread homeassistant:runner.py:221 Error doing job: Task exception was never retrieved (task: None):   File "<string>", line 1, in <module> (×2, last L3137)
+L3301   ERRO [e60f] tests/components/esphome/test_diagnostics.py::test_diagnostics
+L1035   WARN [a203] (node:4572) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods
+L2393   NOTA [c132] venv/lib/python3.14/site-packages/switchbot/devices/device.py:504: in _send_command_locked_with_retry
+L2400   NOTA [969b] venv/lib/python3.14/site-packages/bleak_retry_connector/__init__.py:518: in establish_connection
+
+== END OF OUTPUT
+L3311     [9979] 3126 snapshots passed.
+L3312     [cd97] ============================== slowest durations ===============================
+L3313     [711c] 2.55s setup    tests/components/matter/test_sensor.py::test_sensors
+L3314     [388d] 2.19s setup    tests/components/matter/test_lock.py::test_locks
+L3315     [0984] 2.11s setup    tests/components/matter/test_select.py::test_selects
+L3316     [6f557] 2.11s setup    tests/components/matter/test_cover.py::test_covers
+L3317     [1e11] 2.10s setup    tests/components/matter/test_switch.py::test_switches
+L3362     [7f8a] Uploading artifact: pytest-365016-3.14.5-4.zip
+L3368     [15d6] Artifact pytest-365016-3.14.5-4 successfully finalized. Artifact ID 10914686249
+L3369     [3207] Artifact pytest-365016-3.14.5-4 has been successfully uploaded! Final size is 7720 bytes. Artifact ID is 10914686249
+L3372     [8d65] with:
+L3380     [4293] env:
+L3401     [b6d2] Uploading artifact: test-results-full-3.14.5-4.zip
+L3407     [e955] Artifact test-results-full-3.14.5-4 successfully finalized. Artifact ID 10914676358
+L3408     [2324] Artifact test-results-full-3.14.5-4 has been successfully uploaded! Final size is 138707 bytes. Artifact ID is 10914676358
+
+== MOST FREQUENT OTHER LINES
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×3       [c522] shell: /usr/bin/bash -e {0}
+×2       [834d] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+×2       [3f23] _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+(not shown: 721 groups, 721 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

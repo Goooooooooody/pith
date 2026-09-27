@@ -1,0 +1,36 @@
+pith · <log> · 89 lines → 63 groups · ~1.9k → ~538 tokens (71.4% smaller)
+
+jobs: lint title
+levels: error 1 · info 62
+raw: <removed for evaluation>
+jev (jev-latest): hid 55/63 groups as confident noise · 1 requests · 705 tokens · $0.0000 · 0.3s
+most likely root cause: [4ae2] rc=0.55 (confidence 0.48, cause visible p=0.86)
+
+== LIKELY ROOT CAUSE (jev rc=0.55)
+[4ae2] INFO ×1  act=0.11 val=1.9/4 rc=0.55  L67  job: lint title
+  PR title: raw-private/raw-public KeyObject export format
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: lint title
+L57       [afa3] [command]/usr/bin/unzip -o -q /home/runner/work/_temp/3ea35f92-d4c6-4bf9-826a-fec6e3bcf7b3
+L58       [a184] Cached Deno to /opt/hostedtoolcache/deno/0.0.0-b157cd27e153f0a3e2ef10a6a31edfd105fcbf93/x64.
+L59       [a6c0] Installation complete.
+L60       [2414] ▶ Run deno run https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js "$PR_TITLE"
+L61       [637c] deno run https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js "$PR_TITLE"
+   …
+L66       [0317] Download https://raw.githubusercontent.com/denoland/deno/refs/heads/main/tools/verify_pr_title.js
+L67       [4ae2] PR title: raw-private/raw-public KeyObject export format
+L68       [436d] The PR title must start with one of the following prefixes:
+          - chore
+          - fix
+          - feat
+          (+11 lines)
+   …
+L85       [0193] Please fix the PR title according to https://www.conventionalcommits.org
+L86     ✱ [eead] ##[error]Process completed with exit code 1.
+
+== END OF OUTPUT
+L1        [dd61] lint title	UNKNOWN STEP	﻿2026-09-26T20:02:00.7340246Z Current runner version: '2.337.0'
+L47       [7031] Download action repository 'denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282' (SHA:667a34cdef165d8d2b2e98dde39547c9daac7282)
+L62       [c522] shell: /usr/bin/bash -e {0}
+L63       [4293] env:

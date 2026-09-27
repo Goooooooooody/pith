@@ -1,0 +1,254 @@
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	﻿2026-09-26T21:58:05.4336695Z Current runner version: '2.337.0'
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4377378Z ##[group]Runner Image Provisioner
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4378886Z Hosted Compute Agent
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4380372Z Version: 20260828.587
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4381519Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4382840Z Build Date: 2026-08-28T16:44:25Z
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4384033Z Worker ID: {fdfbf13f-6ddf-446f-bbd8-3120fb2b620d}
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4385231Z Azure Region: eastus2
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4386184Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4388614Z ##[group]Operating System
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4389717Z Microsoft Windows Server 2025
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4390751Z 10.0.26100
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4391705Z Datacenter
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4392575Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4393551Z ##[group]Runner Image
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4395668Z Image: windows-2025-vs2026
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4396775Z Version: 20260922.246.2
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4399984Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260922.246/images/windows/Windows2025-VS2026-Readme.md
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4403147Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260922.246
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4404933Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4406920Z ##[group]GITHUB_TOKEN Permissions
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4409517Z Contents: read
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4410539Z Metadata: read
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4411385Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4414301Z Secret source: None
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4415678Z Cache mode: write
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4416767Z Prepare workflow directory
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.4986543Z Prepare all required actions
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.5040521Z Getting action download info
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.6795830Z Download action repository 'actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0' (SHA:9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0)
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9348082Z Uses: python/cpython/.github/workflows/reusable-windows.yml@refs/pull/158253/merge (13a5248d65f5ece0596a7ea22abdc05db3bb2589)
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9353680Z ##[group] Inputs
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9354173Z   arch: x64
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9354947Z   free-threading: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9355417Z   interpreter: switch-case
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9355875Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:05.9356492Z Complete job name: Windows (free-threading) / Build and test (x64, switch-case)
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0663376Z ##[group]Run actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0664753Z with:
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0665176Z   persist-credentials: false
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0665687Z   repository: python/cpython
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0669922Z   token: ***
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0670321Z   ssh-strict: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0670735Z   ssh-user: git
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0671126Z   clean: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0671531Z   sparse-checkout-cone-mode: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0672020Z   fetch-depth: 1
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0672416Z   fetch-tags: false
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0672853Z   show-progress: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0673293Z   lfs: false
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0673670Z   submodules: false
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0674084Z   set-safe-directory: true
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0674976Z   allow-unsafe-pr-checkout: false
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0675790Z env:
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0676165Z   FORCE_COLOR: 1
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0676593Z   ARCH: x64
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.0677006Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.2243911Z Syncing repository: python/cpython
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.2246110Z ##[group]Getting Git version info
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.2246766Z Working directory is 'D:\a\cpython\cpython'
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.3292723Z [command]"C:\Program Files\Git\bin\git.exe" version
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7087679Z git version 2.55.0.windows.5
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7148784Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7167567Z Temporarily overriding HOME='D:\a\_temp\a3d4c134-70c6-468a-a765-18550e83be39' before making global git config changes
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7169099Z Adding repository directory to the temporary git global config as a safe directory
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7181196Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\cpython\cpython
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7844424Z Deleting the contents of 'D:\a\cpython\cpython'
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7849867Z ##[group]Determining repository object format
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7851993Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7853975Z ##[group]Initializing the repository
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.7861659Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\cpython\cpython
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.8715886Z Initialized empty Git repository in D:/a/cpython/cpython/.git/
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.8764609Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/python/cpython
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9400544Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9402543Z ##[group]Disabling automatic garbage collection
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9410385Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9788121Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9790759Z ##[group]Setting up auth
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9792324Z Removing SSH command configuration
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:06.9799812Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:07.0112020Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:08.4494807Z Removing HTTP extra header
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:08.4504363Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:08.4807626Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.0086145Z Removing includeIf entries pointing to credentials config files
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.0100800Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.0425164Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.5747487Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-9a33296d-9711-42ff-83c5-e7e487f3c2c1.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.6073091Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/cpython/cpython/.git.path D:\a\_temp\git-credentials-9a33296d-9711-42ff-83c5-e7e487f3c2c1.config
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.6385205Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/cpython/cpython/.git/worktrees/*.path D:\a\_temp\git-credentials-9a33296d-9711-42ff-83c5-e7e487f3c2c1.config
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.6751974Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-9a33296d-9711-42ff-83c5-e7e487f3c2c1.config
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.7081905Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-9a33296d-9711-42ff-83c5-e7e487f3c2c1.config
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.7406003Z ##[endgroup]
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.7406631Z ##[group]Fetching the repository
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:09.7419592Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +13a5248d65f5ece0596a7ea22abdc05db3bb2589:refs/remotes/pull/158253/merge
+Windows (free-threading) / Build and test (x64, switch-case)	UNKNOWN STEP	2026-09-26T21:58:11.7460992Z From https://github.com/python/cpython
+Windows (
+
+... [1051701 characters truncated] ...
+
+s pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "build-san": {
+All required checks pass	UNKNOWN STEP	    "result": "success",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "cross-build-linux": {
+All required checks pass	UNKNOWN STEP	    "result": "success",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  },
+All required checks pass	UNKNOWN STEP	  "cifuzz": {
+All required checks pass	UNKNOWN STEP	    "result": "success",
+All required checks pass	UNKNOWN STEP	    "outputs": {}
+All required checks pass	UNKNOWN STEP	  }
+All required checks pass	UNKNOWN STEP	}
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2752901Z env:
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2753224Z   FORCE_COLOR: 1
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2753747Z ##[endgroup]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2802931Z ##[start-action display=Decide whether the input jobs succeeded or failed;id=__re-actors_alls-green.outcome]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2843154Z ##[group]Run python -m normalize_needed_jobs_status \
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2843808Z ^[[36;1mpython -m normalize_needed_jobs_status \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2844310Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2845169Z ^[[36;1m  build-android, build-emscripten, build-ubuntu-ssltests, test-hypothesis, cifuzz,^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2845936Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2846276Z ^[[36;1m)" \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2846621Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2846992Z ^[[36;1m             ^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2847356Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2847686Z ^[[36;1m)" \^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2848022Z ^[[36;1m"$(cat << EOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2848374Z ^[[36;1m  {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2848733Z ^[[36;1m  "build-context": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2849135Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2849555Z ^[[36;1m    "outputs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2849946Z ^[[36;1m      "run-android": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2850380Z ^[[36;1m      "run-ci-fuzz": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2850827Z ^[[36;1m      "run-ci-fuzz-stdlib": "false",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2851289Z ^[[36;1m      "run-docs": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2851719Z ^[[36;1m      "run-emscripten": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2852164Z ^[[36;1m      "run-ios": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2852571Z ^[[36;1m      "run-macos": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2852989Z ^[[36;1m      "run-tests": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2853526Z ^[[36;1m      "run-ubuntu": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2853950Z ^[[36;1m      "run-wasi": "true",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2854377Z ^[[36;1m      "run-windows-tests": "true"^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2854808Z ^[[36;1m    }^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2855311Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2855870Z ^[[36;1m  "check-docs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2856265Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2856675Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2857048Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2857414Z ^[[36;1m  "check-autoconf-regen": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2857842Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2858251Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2858638Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2858995Z ^[[36;1m  "check-generated-files": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2859424Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2859829Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2860196Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2860548Z ^[[36;1m  "check-c-api-docs": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2860959Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2861371Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2861742Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2862086Z ^[[36;1m  "build-windows": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2862481Z ^[[36;1m    "result": "failure",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2862886Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2863254Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2863590Z ^[[36;1m  "build-macos": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2863990Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2864399Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2864771Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2865220Z ^[[36;1m  "build-ubuntu": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2865617Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2866020Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2866393Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2866749Z ^[[36;1m  "build-ubuntu-installed": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2867182Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2867583Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2867949Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2868295Z ^[[36;1m  "build-ubuntu-ssltests": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2868717Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2869119Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2869493Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2869833Z ^[[36;1m  "build-ios": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2870215Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2870622Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2871129Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2871482Z ^[[36;1m  "build-emscripten": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2871891Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2872292Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2872659Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2873001Z ^[[36;1m  "build-wasi": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2873395Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2873797Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2874162Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2874511Z ^[[36;1m  "test-hypothesis": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2875001Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2875405Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2875773Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2876123Z ^[[36;1m  "test-lazy-imports-all": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2876547Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2876950Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2877325Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2877738Z ^[[36;1m  "build-asan": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2878128Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2878526Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2878911Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2879241Z ^[[36;1m  "build-san": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2879617Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2880015Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2880385Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2880720Z ^[[36;1m  "cross-build-linux": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2881122Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2881513Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2881874Z ^[[36;1m  },^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2882202Z ^[[36;1m  "cifuzz": {^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2882569Z ^[[36;1m    "result": "success",^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2882966Z ^[[36;1m    "outputs": {}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2883441Z ^[[36;1m  }^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2883765Z ^[[36;1m}^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2884081Z ^[[36;1mEOM^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.2884405Z ^[[36;1m)"^[[0m
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3115433Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3116001Z env:
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3116328Z   FORCE_COLOR: 1
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3116978Z   PYTHONPATH: /home/runner/work/_actions/re-actors/alls-green/05ac9388f0aebcb5727afa17fcccfecd6f8ec5fe/src
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3117692Z ##[endgroup]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3488611Z # ❌ Some of the required to succeed jobs failed 😢😢😢
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3489318Z 
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3489783Z 🛈 All of the allowed to fail dependency jobs succeeded.
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3490772Z 🛈 Some of the allowed to be skipped jobs did not succeed.
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3491653Z 📝 Job statuses:
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3492380Z 📝 build-context → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3493304Z 📝 check-docs → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3494286Z 📝 check-autoconf-regen → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3495520Z 📝 check-generated-files → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3496544Z 📝 check-c-api-docs → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3497508Z 📝 build-windows → ❌ failure [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3498381Z 📝 build-macos → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3499251Z 📝 build-ubuntu → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3500249Z 📝 build-ubuntu-installed → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3501253Z 📝 build-ubuntu-ssltests → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3502168Z 📝 build-ios → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3503027Z 📝 build-emscripten → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3503939Z 📝 build-wasi → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3504809Z 📝 test-hypothesis → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3505903Z 📝 test-lazy-imports-all → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3506833Z 📝 build-asan → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3507691Z 📝 build-san → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3508908Z 📝 cross-build-linux → ✓ success [required to succeed]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3509733Z 📝 cifuzz → ✓ success [allowed to fail]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3527071Z ##[error]Process completed with exit code 1.
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3602202Z ##[end-action id=__re-actors_alls-green.outcome;outcome=failure;conclusion=failure;duration_ms=79]
+All required checks pass	UNKNOWN STEP	2026-09-26T22:30:19.3707588Z Cleaning up orphan processes

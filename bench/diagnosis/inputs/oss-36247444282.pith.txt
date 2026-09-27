@@ -1,0 +1,105 @@
+pith · <log> · 737 lines → 429 groups · ~31.5k → ~4.0k tokens (87.2% smaller)
+
+jobs: lint
+levels: error 69 · warn 1 · info 257 · debug 344
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: lint
+L196      [eda5] [command]/usr/bin/tar -xf /home/runner/work/_temp/ad68fb77-2b2d-4fe1-ab82-f2e65b823f7c/cache.tzst -P -C /home/runner/work/cpython/cpython --use-compress-program unzstd
+L197      [ea01] Cache restored successfully
+L198      [b709] Restored prek cache with key prek-v1|Linux|X64||79dd4974bca7b2a16818a8a87c29f189c010a5d23f7f5e94e1ba356c15bd7e74
+L200    ✱ [be95] [command]/opt/hostedtoolcache/prek/0.5.3/x64/prek run --show-diff-on-failure --color=always --all-files
+L201      [9b92] Run Ruff (lint) on Platforms/Apple/......................................Passed
+L202      [449d] Run Ruff (lint) on Doc/..................................................Passed
+L203      [afba] Run Ruff (lint) on Lib/..................................................Passed
+   …
+L223      [c33d] fix end of files.........................................................Passed (×2, last L224)
+L225      [ade8] mixed line ending........................................................Passed
+L226    ✱ [bd8f] trim trailing whitespace.................................................Failed
+L227      [4c8a] - hook id: trailing-whitespace
+L228      [dfd3] - description: trims trailing whitespace
+L229      [2343] - exit code: 1
+   …
+L264      [d971] ▶ Prek verbose logs
+   …
+L278      [2cea] 2026-09-26T14:07:57.981990Z TRACE Checking lock resource="store" path=/home/runner/.cache/prek/.lock (×2, last L351)
+L279      [e85c] 2026-09-26T14:07:57.982009Z DEBUG Acquired lock resource="store" (×2, last L352)
+L280      [136c] 2026-09-26T14:07:57.992965Z TRACE No requires-python found in pyproject.toml hook=ruff-check (×11, last L300)
+   (+4 more lines here: `pith show <id>` or grep the raw file)
+   …
+L672      [6915] 2026-09-26T14:08:21.044417Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-format (×5, last L672)
+L673    ✱ [68f5] 2026-09-26T14:08:21.044457Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No such file or directory (os error 2) (×5, last L673)
+L674      [9c58] 2026-09-26T14:08:21.044510Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=black
+L675    ✱ [db17] 2026-09-26T14:08:21.044549Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `black`: failed to read from file `/home/runner/.cache/prek/repos/a326fbe3d867f8bd/black`: No such file or directory (os error 2)
+L676      [9527] 2026-09-26T14:08:21.044592Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=remove-tabs
+L677    ✱ [113b] 2026-09-26T14:08:21.044628Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `remove-tabs`: failed to read from file `/home/runner/.cache/prek/repos/c5108aaecd579bfe/remove_tabs`: No such file or directory (os error 2)
+L678      [3f46] 2026-09-26T14:08:21.044691Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-case-conflict
+L679    ✱ [bb32] 2026-09-26T14:08:21.044731Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-case-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-case-conflict`: No such file or directory (os error 2)
+L680      [f26d] 2026-09-26T14:08:21.044772Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-merge-conflict
+L681    ✱ [6510] 2026-09-26T14:08:21.044807Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-merge-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-merge-conflict`: No such file or directory (os error 2)
+L682      [2655] 2026-09-26T14:08:21.044848Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-toml
+L683    ✱ [a98d] 2026-09-26T14:08:21.044887Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-toml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-toml`: No such file or directory (os error 2)
+L684      [664b] 2026-09-26T14:08:21.044928Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=check-yaml
+L685    ✱ [2602] 2026-09-26T14:08:21.044964Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-yaml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-yaml`: No such file or directory (os error 2)
+L686      [0ad0] 2026-09-26T14:08:21.045005Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=end-of-file-fixer (×2, last L688)
+L687    ✱ [649f] 2026-09-26T14:08:21.045041Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end-of-file-fixer`: No such file or directory (os error 2) (×2, last L689)
+L689    ✱ [649f] 2026-09-26T14:08:21.045123Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end-of-file-fixer`: No such file or directory (os error 2)
+L690      [dfa9] 2026-09-26T14:08:21.045167Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=mixed-line-ending
+L691    ✱ [e7c1] 2026-09-26T14:08:21.045206Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `mixed-line-ending`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/mixed-line-ending`: No such file or directory (os error 2)
+L692      [5e90] 2026-09-26T14:08:21.045246Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=trailing-whitespace (×2, last L694)
+L693    ✱ [4386] 2026-09-26T14:08:21.045283Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `trailing-whitespace`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/trailing-whitespace-fixer`: No such file or directory (os error 2) (×2, last L695)
+L695    ✱ [4386] 2026-09-26T14:08:21.045359Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `trailing-whitespace`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/trailing-whitespace-fixer`: No such file or directory (os error 2)
+L696      [e0af] 2026-09-26T14:08:21.045443Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-dependabot version=>=3.10
+L697    ✱ [1fb5] 2026-09-26T14:08:21.045478Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-dependabot`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+L698      [bbb4] 2026-09-26T14:08:21.045560Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-github-workflows version=>=3.10
+L699    ✱ [1f28] 2026-09-26T14:08:21.045595Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-github-workflows`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+L700      [0eaf] 2026-09-26T14:08:21.045682Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=check-readthedocs version=>=3.10
+L701    ✱ [7f3f] 2026-09-26T14:08:21.045723Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-readthedocs`: failed to read from file `/home/runner/.cache/prek/repos/10f42adc00164982/check-jsonschema`: No such file or directory (os error 2)
+L702      [bd58] 2026-09-26T14:08:21.045781Z TRACE run{hook_id=check-hooks-apply language=system}: Using go.mod-derived language_version hook=actionlint version=>= 1.25.0
+L703      [976e] 2026-09-26T14:08:21.045835Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=zizmor
+L704    ✱ [d9ad] 2026-09-26T14:08:21.045878Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `zizmor`: failed to read from file `/home/runner/.cache/prek/repos/8aa5f356979f1ec7/zizmor`: No such file or directory (os error 2)
+L705      [6bbb] 2026-09-26T14:08:21.045957Z TRACE run{hook_id=check-hooks-apply language=system}: Using pyproject.toml-derived language_version hook=sphinx-lint version=>=3.10
+L706    ✱ [3191] 2026-09-26T14:08:21.046000Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `sphinx-lint`: failed to read from file `/home/runner/.cache/prek/repos/75577db6a0778ed1/sphinx-lint`: No such file or directory (os error 2)
+L707    ✱ [fbc1] 2026-09-26T14:08:21.046049Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `check-capi-macros`: failed to read from file `/home/runner/work/cpython/cpython/python`: No such file or directory (os error 2)
+L708      [9949] 2026-09-26T14:08:21.049222Z  INFO run{hook_id=check-hooks-apply language=system}: close time.busy=18.5ms time.idle=4.25ms
+L709      [8e12] 2026-09-26T14:08:21.049263Z DEBUG Running priority group with priority 37: ["check-useless-excludes"]
+L710      [9673] 2026-09-26T14:08:21.049773Z TRACE matching_filenames{hook="check-useless-excludes"}: close time.busy=499µs time.idle=861ns
+L711      [8f68] 2026-09-26T14:08:21.049788Z TRACE Files for hook `check-useless-excludes` after filtering matched=true filenames=1
+L712      [547b] 2026-09-26T14:08:21.049808Z DEBUG run{hook_id=check-useless-excludes language=system}: Loading project configuration path=.pre-commit-config.yaml
+L713      [cae4] 2026-09-26T14:08:21.052371Z TRACE run{hook_id=check-useless-excludes language=system}:ls_files{cwd="/home/runner/work/cpython/cpython"}: Executing `cd /home/runner/work/cpython/cpython && /usr/bin/git -c core.useBuiltinFSMonitor=false --literal-pathspecs ls-files -z -- /home/runner/work/cpython/cpyt
+L714      [a91b] 2026-09-26T14:08:21.055810Z TRACE run{hook_id=check-useless-excludes language=system}:ls_files{cwd="/home/runner/work/cpython/cpython"}: close time.busy=874µs time.idle=2.57ms
+L715      [9e03] 2026-09-26T14:08:21.055837Z DEBUG run{hook_id=check-useless-excludes language=system}: All files in the workspace: 6416
+L716      [5bbb] 2026-09-26T14:08:21.062534Z  INFO run{hook_id=check-useless-excludes language=system}: close time.busy=10.2ms time.idle=2.55ms
+L717      [63a0] 2026-09-26T14:08:21.062984Z TRACE Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false --no-pager diff --no-ext-diff --color=always -- /home/runner/work/cpython/cpython`
+L719    ✱ [fa9c] ##[error]prek exited with code 1
+
+== OTHER ERRORS & WARNINGS
+L281    ERRO [4ca1] 2026-09-26T14:07:57.993040Z TRACE Failed to extract metadata from entry for hook `ruff-check`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No s (×11, last L301)
+L303    ERRO [9678] 2026-09-26T14:07:57.995871Z TRACE Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/54cab41a6fab333c/ruff`: No  (×5, last L311)
+L313    ERRO [9204] 2026-09-26T14:07:57.997093Z TRACE Failed to extract metadata from entry for hook `black`: failed to read from file `/home/runner/.cache/prek/repos/a326fbe3d867f8bd/black`: No such 
+L315    ERRO [29b9] 2026-09-26T14:07:57.997248Z TRACE Failed to extract metadata from entry for hook `remove-tabs`: failed to read from file `/home/runner/.cache/prek/repos/c5108aaecd579bfe/remove_tab
+L317    ERRO [af06] 2026-09-26T14:07:57.997516Z TRACE Failed to extract metadata from entry for hook `check-case-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/ch
+L319    ERRO [cecf] 2026-09-26T14:07:57.997810Z TRACE Failed to extract metadata from entry for hook `check-merge-conflict`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/c
+L321    ERRO [a86f] 2026-09-26T14:07:57.997907Z TRACE Failed to extract metadata from entry for hook `check-toml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-toml`
+L323    ERRO [1f54] 2026-09-26T14:07:57.998367Z TRACE Failed to extract metadata from entry for hook `check-yaml`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/check-yaml`
+L325    ERRO [7a5c] 2026-09-26T14:07:57.998584Z TRACE Failed to extract metadata from entry for hook `end-of-file-fixer`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/end- (×2, last L327)
+L329    ERRO [5ebf] 2026-09-26T14:07:57.998940Z TRACE Failed to extract metadata from entry for hook `mixed-line-ending`: failed to read from file `/home/runner/.cache/prek/repos/7fa7ca4169c8decf/mixe
+L69     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+
+== END OF OUTPUT
+L639      [940a] 2026-09-26T14:08:21.029041Z TRACE run{hook_id=check-hooks-apply language=system}:ls_files{cwd="/home/runner/work/cpython/cpython"}: Executing `cd /home/runner/work/cpython/cpython && /usr/bin/git -c c
+L660      [7cb7] 2026-09-26T14:08:21.043860Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-check
+L661      [9160] 2026-09-26T14:08:21.043899Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-check`: failed to read from file `/home/runner/.cache/prek/repos/
+L670      [6915] 2026-09-26T14:08:21.044318Z TRACE run{hook_id=check-hooks-apply language=system}: No requires-python found in pyproject.toml hook=ruff-format
+L671      [68f5] 2026-09-26T14:08:21.044363Z TRACE run{hook_id=check-hooks-apply language=system}: Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos
+
+== MOST FREQUENT OTHER LINES
+×27      [58eb] 2026-09-26T14:07:58.042942Z TRACE diff_worktree{path="/home/runner/work/cpython/cpython"}: Executing `/usr/bin/git -c core.useBuiltinFSMonit
+×27      [7e20] 2026-09-26T14:07:58.515840Z TRACE diff_worktree{path="/home/runner/work/cpython/cpython"}: close time.busy=351µs time.idle=473ms
+×11      [c486] 2026-09-26T14:07:58.515873Z DEBUG Running priority group with priority 0: ["ruff-check"]
+×11      [9bb2] 2026-09-26T14:07:58.516110Z TRACE matching_filenames{hook="ruff-check"}: close time.busy=215µs time.idle=631ns
+×11      [e997] 2026-09-26T14:07:58.516121Z TRACE Files for hook `ruff-check` after filtering matched=true filenames=2
+×11      [3413] 2026-09-26T14:07:58.516236Z TRACE run{hook_id=ruff-check language=python}: Running ruff-check total_files=2 concurrency=1
+
+(not shown: 346 groups, 435 lines - including 7 error groups, 8 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

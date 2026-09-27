@@ -1,0 +1,182 @@
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	﻿2026-09-26T05:20:16.6793013Z Current runner version: '2.337.0'
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6804596Z Runner name: 'ubuntu-latest-16-core-arm-oss-1045858108'
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6806089Z Runner group name: 'open source'
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6834934Z ##[group]Runner Image Provisioner
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6836278Z Hosted Compute Agent
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6837229Z Version: 20260828.587
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6838328Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6839779Z Build Date: 2026-08-28T16:44:25Z
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6840816Z ##[endgroup]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6843935Z ##[group]Operating System
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6844998Z Ubuntu
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6846034Z 26.04.1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6846899Z LTS
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6847844Z ##[endgroup]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6848783Z ##[group]Runner Image
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6850193Z Image: ubuntu-26.04-arm
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6851313Z Version: 20260920.129.1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6853488Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26-arm64/20260920.129/images/ubuntu/Ubuntu2604-Arm64-Readme.md
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6856166Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26-arm64%2F20260920.129
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6857823Z ##[endgroup]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6859860Z ##[group]GITHUB_TOKEN Permissions
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6863343Z Contents: read
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6864343Z Metadata: read
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6865267Z ##[endgroup]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6868775Z Secret source: Actions
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6870621Z Cache mode: write
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.6872127Z Prepare workflow directory
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.7698074Z Prepare all required actions
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:16.7767891Z Getting action download info
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.0010715Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.1084469Z Download action repository 'vercel/setup-turborepo-remote-cache-action@135046f5efcadb17337d9b29b8d5b4035ae64b10' (SHA:135046f5efcadb17337d9b29b8d5b4035ae64b10)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.2098752Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.3547329Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.4152731Z Download action repository 'actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae' (SHA:27d5ce7f107fe9357f9df03efb73ab90386fccae)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.4956561Z Download action repository 'actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71' (SHA:d746ffe35508b1917358783b479e04febd2b8f71)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8659724Z Uses: vercel/next.js/.github/workflows/build_reusable.yml@refs/heads/canary (abac2089cd97ba3a102747e82434c5c5e6181716)
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8667633Z ##[group] Inputs
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8672118Z   afterBuild: # legacy integration tests with `node run-tests.js`
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	# HACK: Despite the name, these environment variables are just used to
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	# gate tests, so they're applicable to both turbopack and rspack tests
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	export TURBOPACK_DEV=1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	export NEXT_TEST_EMIT_ALL_OUTPUT=1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	export NEXT_RSPACK=1 NEXT_TEST_USE_RSPACK=1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	node run-tests.js \
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	  --group 3/16 \
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	  --retries 2 \
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	  --type integration
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8676505Z   skipInstallBuild: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8677463Z   skipNativeBuild: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8678415Z   skipNativeInstall: yes
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8679542Z   uploadAnalyzerArtifacts: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8680605Z   nodeVersion: 20.19.x
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8681567Z   needsRust: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8682457Z   needsNextest: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8683381Z   needsRustJsInstall: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8684418Z   rustBuildProfile: release-with-assertions
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8685600Z   uploadSwcArtifact: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8686568Z   rustCacheKey: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8687626Z   stepName: test-rspack-development-integration-3
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8690197Z   timeout_minutes: 90
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8691823Z   runs_on_labels: ["ubuntu-latest-16-core-arm-oss"]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8693441Z   overrideProxyAddress: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8694469Z   testTimingsArtifact: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8695474Z   testReportsArtifactPrefix: 
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8697364Z   uploadNativeArtifact: false
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8698423Z   browser: chromium
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8699517Z   needsPlaywright: yes
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8700540Z ##[endgroup]
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:17.8702031Z Complete job name: Rspack integration tests / Next.js integration test (Integration) (3/16) / build
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0287012Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0289674Z with:
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0290582Z   fetch-depth: 25
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0291529Z   persist-credentials: false
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0292590Z   repository: vercel/next.js
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0299810Z   token: ***
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0300708Z   ssh-strict: true
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0301616Z   ssh-user: git
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0302480Z   clean: true
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0303391Z   sparse-checkout-cone-mode: true
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0304481Z   fetch-tags: false
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0305393Z   show-progress: true
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0306312Z   lfs: false
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0307165Z   submodules: false
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0308098Z   set-safe-directory: true
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0309926Z env:
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0310818Z   NAPI_CLI_VERSION: 3.4.1
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0311792Z   TURBO_VERSION: 2.9.4
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0313183Z   TURBO_ARGS: -v --env-mode loose --remote-cache-timeout 300 --log-order stream
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0314671Z   NODE_LTS_VERSION: 20.9.0
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0315645Z   TEST_CONCURRENCY: 8
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0316609Z   TURBO_TASKS_AVAILABLE_PARALLELISM: 4
+Rspack integration tests / Next.js integration test (Integration) (3/16) / build	UNKNOWN STEP	2026-09-26T05:20:18.0317684Z   RUST_BACKTR
+
+... [38302502 characters truncated] ...
+
+egration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8507151Z       at Object.<anonymous> (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:114:9)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8507528Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8507911Z   ● Edge route usage of dynamic code evaluation › shows a warning when running code with eval
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8508261Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8508389Z     expect(received).toContain(expected) // indexOf
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8508608Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8509213Z     Expected substring: "Dynamic Code Evaluation (e. g. 'eval', 'new Function') not allowed in Edge Runtime"
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8509865Z     Received string:    "✓ Running next.config.js took 23ms
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8510398Z     ⚠ The \"middleware\" file convention is deprecated. Please use \"proxy\" instead.·
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8510813Z       To migrate automatically, run:
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8511148Z       npx @next/codemod@canary middleware-to-proxy .·
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8511586Z       Learn more: https://nextjs.org/docs/messages/middleware-to-proxy·
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8512395Z     ⚠ The Edge Runtime is deprecated. You can use the \"nodejs\" runtime instead. Learn more: https://nextjs.org/docs/messages/edge-runtime-deprecated
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8513189Z      GET /api/route?case=using-eval 200 in 113ms
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8513468Z     "
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8513758Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8513862Z       73 |         await retry(async () => {
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8514199Z       74 |           const output = next.cliOutput.slice(outputIndex)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8514576Z     > 75 |           expect(output).toContain(EVAL_ERROR)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8514870Z          |                          ^
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8515113Z       76 |         })
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8515321Z       77 |
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8515574Z       78 |         const output = next.cliOutput.slice(outputIndex)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8515818Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8516067Z       at toContain (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:75:26)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8516525Z       at fn (lib/next-test-utils.ts:940:20)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8516993Z       at Object.<anonymous> (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:73:9)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8517374Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8517776Z   ● Edge route usage of dynamic code evaluation › shows a warning when running WebAssembly.compile
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8518142Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8518271Z     expect(received).toContain(expected) // indexOf
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8518489Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8518806Z     Expected substring: "Dynamic WASM code generation (e. g. 'WebAssembly.compile') not allowed in Edge Runtime"
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8519392Z     Received string:    " GET /api/route?case=not-using-eval 200 in 5ms
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8519814Z      GET /api/route?case=using-webassembly-compile 200 in 3ms
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8520135Z     "
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8520236Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8520341Z        98 |         await retry(async () => {
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8520678Z        99 |           const output = next.cliOutput.slice(outputIndex)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8521069Z     > 100 |           expect(output).toContain(WASM_COMPILE_ERROR)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8521394Z           |                          ^
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8521647Z       101 |         })
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8521848Z       102 |
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8522110Z       103 |         const output = next.cliOutput.slice(outputIndex)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8522358Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8522625Z       at toContain (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:100:26)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8523085Z       at fn (lib/next-test-utils.ts:940:20)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8523748Z       at Object.<anonymous> (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:98:9)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8524137Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8524647Z   ● Edge route usage of dynamic code evaluation › shows a warning when running WebAssembly.instantiate with a buffer parameter
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8525110Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8525240Z     expect(received).toContain(expected) // indexOf
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8525458Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8525857Z     Expected substring: "Dynamic WASM code generation ('WebAssembly.instantiate' with a buffer parameter) not allowed in Edge Runtime"
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8526626Z     Received string:    " GET /api/route?case=using-webassembly-instantiate-with-buffer 200 in 3ms
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8527068Z     "
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8527167Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8527271Z       114 |         await retry(async () => {
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8527938Z       115 |           const output = next.cliOutput.slice(outputIndex)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8528351Z     > 116 |           expect(output).toContain(WASM_INSTANTIATE_ERROR)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8528683Z           |                          ^
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8528925Z       117 |         })
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8529130Z       118 |
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8529419Z       119 |         const output = stripAnsi(next.cliOutput.slice(outputIndex))
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8529703Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8529960Z       at toContain (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:116:26)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8530412Z       at fn (lib/next-test-utils.ts:940:20)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8530886Z       at Object.<anonymous> (e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts:114:9)
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8531418Z 
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8531514Z Test Suites: 1 failed, 1 total
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8531777Z Tests:       6 failed, 5 passed, 11 total
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8532046Z Snapshots:   0 total
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8532262Z Time:        28.508 s
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8532723Z Ran all test suites matching /test\/e2e\/edge-runtime-dynamic-code\/edge-runtime-dynamic-code.test.ts/i.
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8533442Z Test results written to: test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts.results.json
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8534437Z Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8535178Z end of test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts output
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8535834Z ##[endgroup]
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8536197Z Cleaning test files at /home/runner/work/next.js/next.js/test/e2e/edge-runtime-dynamic-code
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:57.8767200Z Starting test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts retry 1/2
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:59.7213290Z test/e2e/image-optimizer/disable-write-to-cache-dir.test.ts finished on retry 0/2 in 22.263s
+Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build	UNKNOWN STEP	2026-09-26T05:27:59.7221201Z ##[group]Result as JSON for tooling

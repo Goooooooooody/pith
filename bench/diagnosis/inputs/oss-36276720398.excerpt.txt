@@ -1,0 +1,275 @@
+docs	UNKNOWN STEP	﻿2026-09-26T22:34:37.1594569Z Current runner version: '2.337.0'
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1619775Z ##[group]Runner Image Provisioner
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1620999Z Hosted Compute Agent
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1621625Z Version: 20260828.587
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1622327Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1623120Z Build Date: 2026-08-28T16:44:25Z
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1623819Z Worker ID: {11747fee-ef7e-4359-85ee-f24efdd55bcb}
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1624614Z Azure Region: northcentralus
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1625243Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1626735Z ##[group]Operating System
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1627576Z Ubuntu
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1628111Z 24.04.5
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1628686Z LTS
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1629226Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1629769Z ##[group]Runner Image
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1630890Z Image: ubuntu-24.04
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1631510Z Version: 20260920.314.1
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1632858Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1634435Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1635463Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1636564Z ##[group]GITHUB_TOKEN Permissions
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1638537Z Contents: read
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1639160Z Metadata: read
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1639853Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1642280Z Secret source: None
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1643295Z Cache mode: write
+docs	UNKNOWN STEP	2026-09-26T22:34:37.1644026Z Prepare workflow directory
+docs	UNKNOWN STEP	2026-09-26T22:34:37.2058799Z Prepare all required actions
+docs	UNKNOWN STEP	2026-09-26T22:34:37.2107426Z Getting action download info
+docs	UNKNOWN STEP	2026-09-26T22:34:37.4737799Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+docs	UNKNOWN STEP	2026-09-26T22:34:37.6000280Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+docs	UNKNOWN STEP	2026-09-26T22:34:37.7745805Z Complete job name: docs
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8521863Z ##[group]Run actions/checkout@v7
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8522888Z with:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8523368Z   persist-credentials: false
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8523902Z   repository: django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8527962Z   token: ***
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8528406Z   ssh-strict: true
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8528849Z   ssh-user: git
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8529280Z   clean: true
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8529736Z   sparse-checkout-cone-mode: true
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8530270Z   fetch-depth: 1
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8531043Z   fetch-tags: false
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8531505Z   show-progress: true
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8531966Z   lfs: false
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8532386Z   submodules: false
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8533009Z   set-safe-directory: true
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8533726Z   allow-unsafe-pr-checkout: false
+docs	UNKNOWN STEP	2026-09-26T22:34:37.8534877Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9598925Z Syncing repository: django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9601961Z ##[group]Getting Git version info
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9602973Z Working directory is '/home/runner/work/django/django'
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9604080Z [command]/usr/bin/git version
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9664398Z git version 2.55.0
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9686307Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9698563Z Temporarily overriding HOME='/home/runner/work/_temp/086594ce-e0ef-45da-88dd-fd0c878fcd28' before making global git config changes
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9701266Z Adding repository directory to the temporary git global config as a safe directory
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9706029Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9757343Z Deleting the contents of '/home/runner/work/django/django'
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9761245Z ##[group]Determining repository object format
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9762945Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9763780Z ##[group]Initializing the repository
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9767329Z [command]/usr/bin/git init /home/runner/work/django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9873907Z hint: Using 'master' as the name for the initial branch. This default branch name
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9875704Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9877610Z hint: to use in all of your new repositories, which will suppress this warning,
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9878659Z hint: call:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9879084Z hint:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9879620Z hint: 	git config --global init.defaultBranch <name>
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9880243Z hint:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9881199Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9882154Z hint: 'development'. The just-created branch can be renamed via this command:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9882904Z hint:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9883331Z hint: 	git branch -m <name>
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9884072Z hint:
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9884963Z hint: Disable this message with "git config set advice.defaultBranchName false"
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9885977Z Initialized empty Git repository in /home/runner/work/django/django/.git/
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9889684Z [command]/usr/bin/git remote add origin https://github.com/django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9938518Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9939355Z ##[group]Disabling automatic garbage collection
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9942407Z [command]/usr/bin/git config --local gc.auto 0
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9973835Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9975183Z ##[group]Setting up auth
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9975767Z Removing SSH command configuration
+docs	UNKNOWN STEP	2026-09-26T22:34:37.9980215Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0012816Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0342577Z Removing HTTP extra header
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0347947Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0380829Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0599446Z Removing includeIf entries pointing to credentials config files
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0605073Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0644293Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0869863Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0907632Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/django/django/.git.path /home/runner/work/_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0939110Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/django/django/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:38.0973066Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:38.1004281Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:38.1032702Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:38.1033626Z ##[group]Fetching the repository
+docs	UNKNOWN STEP	2026-09-26T22:34:38.1039729Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1a5f2e864dcd03223814207a6e4659305bc374b5:refs/remotes/pull/16681/merge
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3086597Z From https://github.com/django/django
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3088460Z  * [new ref]         1a5f2e864dcd03223814207a6e4659305bc374b5 -> pull/16681/merge
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3092280Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3093618Z ##[group]Determining the checkout info
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3095500Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3098166Z [command]/usr/bin/git sparse-checkout disable
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3155664Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3186391Z ##[group]Checking out the ref
+docs	UNKNOWN STEP	2026-09-26T22:34:40.3189586Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/16681/merge
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8482320Z Note: switching to 'refs/remotes/pull/16681/merge'.
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8485278Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8485756Z You are in 'detached HEAD' state. You can look around, make experimental
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8486728Z changes and commit them, and you can discard any commits you make in this
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8487642Z state without impacting any branches by switching back to a branch.
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8488164Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8488631Z If you want to create a new branch to retain commits you create, you may
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8489491Z do so (now or later) by using -c with the switch command. Example:
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8489979Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8490205Z   git switch -c <new-branch-name>
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8490817Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8491083Z Or undo this operation with:
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8491434Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8491663Z   git switch -
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8491951Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8492377Z Turn off this advice by setting config variable advice.detachedHead to false
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8492965Z 
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8493609Z HEAD is now at 1a5f2e8 Merge 8b71e90ba5d0f3e42569ec01214f25ae49fcd3e7 into 4fab678a0739d54401ccee7eb587553657c9f76e
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8501641Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8546550Z [command]/usr/bin/git log -1 --format=%H
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8572269Z 1a5f2e864dcd03223814207a6e4659305bc374b5
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8582761Z ##[group]Removing auth
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8586436Z Removing SSH command configuration
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8587261Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8620622Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8865644Z Removing HTTP extra header
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8869721Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+docs	UNKNOWN STEP	2026-09-26T22:34:40.8904843Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9150278Z Removing includeIf entries pointing to credentials config files
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9153671Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9183688Z includeif.gitdir:/home/runner/work/django/django/.git.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9184844Z includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9185810Z includeif.gitdir:/github/workspace/.git.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9186633Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9194644Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9218493Z /home/runner/work/_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9229558Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-952d5568\-933c\-426b\-8c18\-6990f5a371b1\.config
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9264993Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9288243Z /home/runner/work/_temp/git-credentials-952d5568-933c-426b-8c18-6990f5a371b1.config
+docs	UNKNOWN STEP	2026-09-26T22:34:40.9305949Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git/worktrees
+
+... [21560 characters truncated] ...
+
+8.0-py3-none-any.whl.metadata (2.2 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1424085Z Collecting alabaster>=0.7.14 (from Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1436306Z   Using cached alabaster-1.0.0-py3-none-any.whl.metadata (2.8 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1536170Z Collecting imagesize>=1.3 (from Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1569022Z   Downloading imagesize-2.0.1-py3-none-any.whl.metadata (7.0 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1773012Z Collecting requests>=2.30.0 (from Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1785566Z   Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1896782Z Collecting roman-numerals>=1.0.0 (from Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.1908850Z   Using cached roman_numerals-4.1.0-py3-none-any.whl.metadata (3.3 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2043914Z Collecting packaging>=23.0 (from Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2055886Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2601881Z Collecting black>=22.1 (from blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2615937Z   Using cached black-26.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (95 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2804305Z Collecting polib (from sphinx-lint->-r requirements.txt (line 5))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.2816003Z   Using cached polib-1.2.0-py2.py3-none-any.whl.metadata (15 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.6682864Z Collecting regex (from sphinx-lint->-r requirements.txt (line 5))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.6721656Z   Downloading regex-2026.9.10-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7016757Z Collecting click>=8.0.0 (from black>=22.1->blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7050669Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7154464Z Collecting mypy-extensions>=0.4.3 (from black>=22.1->blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7166182Z   Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7273522Z Collecting pathspec>=1.0.0 (from black>=22.1->blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7285365Z   Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7475836Z Collecting platformdirs>=2 (from black>=22.1->blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7513921Z   Downloading platformdirs-4.12.0-py3-none-any.whl.metadata (5.5 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7663278Z Collecting pytokens~=0.4.0 (from black>=22.1->blacken-docs->-r requirements.txt (line 4))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.7675465Z   Using cached pytokens-0.4.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.8167565Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1->Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.8181501Z   Using cached markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9335218Z Collecting charset_normalizer<4,>=2 (from requests>=2.30.0->Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9373545Z   Downloading charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9563656Z Collecting idna<4,>=2.5 (from requests>=2.30.0->Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9597617Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9827364Z Collecting urllib3<3,>=1.26 (from requests>=2.30.0->Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:57.9861616Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0033543Z Collecting certifi>=2023.5.7 (from requests>=2.30.0->Sphinx>=4.5.0->-r requirements.txt (line 2))
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0046171Z   Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0125106Z Using cached pyenchant-3.3.0-py3-none-any.whl (58 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0136932Z Using cached sphinx-9.1.0-py3-none-any.whl (3.9 MB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0164681Z Using cached docutils-0.22.4-py3-none-any.whl (633 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0178498Z Using cached sphinxcontrib_spelling-8.0.2-py3-none-any.whl (14 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0189881Z Using cached blacken_docs-1.20.0-py3-none-any.whl (8.3 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0201739Z Using cached sphinx_lint-1.0.2-py3-none-any.whl (20 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0213475Z Using cached alabaster-1.0.0-py3-none-any.whl (13 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0224870Z Using cached babel-2.18.0-py3-none-any.whl (10.2 MB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0275265Z Using cached black-26.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0294041Z Using cached pytokens-0.4.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (268 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0333326Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0433936Z Downloading imagesize-2.0.1-py3-none-any.whl (14 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0462158Z Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0474915Z Using cached markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (23 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0486965Z Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0498869Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0511110Z Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0547004Z Downloading platformdirs-4.12.0-py3-none-any.whl (32 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0599207Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0811482Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 72.3 MB/s  0:00:00
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0825356Z Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0861056Z Downloading charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (251 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.0938419Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1088762Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1125943Z Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1138423Z Using cached roman_numerals-4.1.0-py3-none-any.whl (7.7 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1150256Z Using cached snowballstemmer-3.1.1-py3-none-any.whl (104 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1163352Z Using cached sphinxcontrib_applehelp-2.0.0-py3-none-any.whl (119 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1175699Z Using cached sphinxcontrib_devhelp-2.0.0-py3-none-any.whl (82 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1187622Z Using cached sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl (98 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1199605Z Using cached sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1211396Z Using cached sphinxcontrib_qthelp-2.0.0-py3-none-any.whl (88 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1223656Z Using cached sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl (92 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1235485Z Using cached polib-1.2.0-py2.py3-none-any.whl (20 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1271560Z Downloading regex-2026.9.10-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (803 kB)
+docs	UNKNOWN STEP	2026-09-26T22:34:58.1377527Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 803.7/803.7 kB 79.9 MB/s  0:00:00
+docs	UNKNOWN STEP	2026-09-26T22:34:58.4319399Z Installing collected packages: polib, urllib3, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, snowballstemmer, roman-numerals, regex, pytokens, Pygments, pyenchant, platformdirs, pathspec, packaging, mypy-extensions, MarkupSafe, imagesize, idna, docutils, click, charset_normalizer, certifi, babel, alabaster, sphinx-lint, requests, Jinja2, black, Sphinx, blacken-docs, sphinxcontrib-spelling
+docs	UNKNOWN STEP	2026-09-26T22:35:02.7076972Z 
+docs	UNKNOWN STEP	2026-09-26T22:35:02.7115136Z Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Pygments-2.21.0 Sphinx-9.1.0 alabaster-1.0.0 babel-2.18.0 black-26.5.1 blacken-docs-1.20.0 certifi-2026.7.22 charset_normalizer-3.5.1 click-8.5.0 docutils-0.22.4 idna-3.20 imagesize-2.0.1 mypy-extensions-1.1.0 packaging-26.3 pathspec-1.1.1 platformdirs-4.12.0 polib-1.2.0 pyenchant-3.3.0 pytokens-0.4.1 regex-2026.9.10 requests-2.34.2 roman-numerals-4.1.0 snowballstemmer-3.1.1 sphinx-lint-1.0.2 sphinxcontrib-applehelp-2.0.0 sphinxcontrib-devhelp-2.0.0 sphinxcontrib-htmlhelp-2.1.0 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-2.0.0 sphinxcontrib-serializinghtml-2.0.0 sphinxcontrib-spelling-8.0.2 urllib3-2.8.0
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8329965Z ##[group]Run make lint
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8330249Z ^[[36;1mmake lint^[[0m
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8393690Z shell: /usr/bin/bash -e {0}
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8393954Z env:
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8394223Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8394672Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8395105Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8395485Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8395884Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8396267Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8396599Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:35:02.8502657Z python lint.py
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4656670Z Running sphinxlint for: /home/runner/work/django/django/docs params=[]
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4657587Z No problems found.
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4908216Z 
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4915731Z Documentation lint complete.
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4951891Z ##[group]Run make black
+docs	UNKNOWN STEP	2026-09-26T22:35:09.4952171Z ^[[36;1mmake black^[[0m
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5015207Z shell: /usr/bin/bash -e {0}
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5015476Z env:
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5015751Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5016194Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5016640Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5017035Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5017413Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5017788Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+docs	UNKNOWN STEP	2026-09-26T22:35:09.5018127Z ##[endgroup]
+docs	UNKNOWN STEP	2026-09-26T22:35:18.0434126Z ./ref/models/querysets.txt: Rewriting...
+docs	UNKNOWN STEP	2026-09-26T22:35:18.1122261Z 💥 📢 Code blocks in documentation must be reformatted with blacken-docs 📢 💥
+docs	UNKNOWN STEP	2026-09-26T22:35:18.1123744Z make: *** [Makefile:175: black] Error 123
+docs	UNKNOWN STEP	2026-09-26T22:35:18.1138376Z ##[error]Process completed with exit code 2.
+docs	UNKNOWN STEP	2026-09-26T22:35:18.1289632Z Post job cleanup.
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2180161Z [command]/usr/bin/git version
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2218489Z git version 2.55.0
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2254659Z Temporarily overriding HOME='/home/runner/work/_temp/29f54fdc-ec27-4b79-81d9-f2f140f103f4' before making global git config changes
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2256127Z Adding repository directory to the temporary git global config as a safe directory
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2259609Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2291225Z Removing SSH command configuration
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2298779Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2332971Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2569972Z Removing HTTP extra header
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2576117Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2610130Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2843841Z Removing includeIf entries pointing to credentials config files
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2850873Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+docs	UNKNOWN STEP	2026-09-26T22:35:18.2884168Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+docs	UNKNOWN STEP	2026-09-26T22:35:18.3268257Z Cleaning up orphan processes

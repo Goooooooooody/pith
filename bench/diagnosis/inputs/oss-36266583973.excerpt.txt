@@ -1,0 +1,277 @@
+Check hassfest	UNKNOWN STEP	﻿2026-09-26T19:38:15.4707832Z Current runner version: '2.337.0'
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4776208Z ##[group]Runner Image Provisioner
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4777908Z Hosted Compute Agent
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4779010Z Version: 20260828.587
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4780058Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4781346Z Build Date: 2026-08-28T16:44:25Z
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4782612Z Worker ID: {7f116e6f-aef2-4db4-8d12-eca5983064fa}
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4783820Z Azure Region: eastus
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4784745Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4787652Z ##[group]Operating System
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4788671Z Ubuntu
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4789623Z 24.04.5
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4790454Z LTS
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4791364Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4792307Z ##[group]Runner Image
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4793258Z Image: ubuntu-24.04
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4794230Z Version: 20260920.314.1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4796333Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4799331Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4800952Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4803001Z ##[group]GITHUB_TOKEN Permissions
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4805951Z Contents: read
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4807166Z Metadata: read
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4808099Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4811167Z Secret source: None
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4812634Z Cache mode: write
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.4814338Z Prepare workflow directory
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.5378202Z Prepare all required actions
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.5456096Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.7941178Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:15.9072532Z Download action repository 'home-assistant/core@a0857325347e56f7cb8050a04fa125c2b605342a' (SHA:a0857325347e56f7cb8050a04fa125c2b605342a)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:24.5854184Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:24.7199022Z Download action repository 'awalsh128/cache-apt-pkgs-action@553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9' (SHA:553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:24.8880229Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:24.9918462Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:25.2867574Z Download action repository 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:25.5382812Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:25.7021312Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:25.7792059Z Download action repository 'astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4' (SHA:bec219d24cd3e171d82865faccec33120bb574f4)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.4032418Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.4907698Z Getting action download info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.6325048Z Complete job name: Check hassfest
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7025558Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7026273Z with:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7026504Z   persist-credentials: false
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7026780Z   repository: home-assistant/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7029808Z   token: ***
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7030031Z   ssh-strict: true
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7030238Z   ssh-user: git
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7030433Z   clean: true
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7030651Z   sparse-checkout-cone-mode: true
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7030910Z   fetch-depth: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7031118Z   fetch-tags: false
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7031341Z   show-progress: true
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7031560Z   lfs: false
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7031757Z   submodules: false
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7031969Z   set-safe-directory: true
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7032227Z   allow-unsafe-pr-checkout: false
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7032768Z env:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7032968Z   CACHE_VERSION: 4
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7033191Z   MYPY_CACHE_VERSION: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7033478Z   HA_SHORT_VERSION: 2026.10
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7033967Z   ADDITIONAL_PYTHON_VERSIONS: []
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7034497Z   MARIADB_VERSIONS: ['mariadb:10.3.32','mariadb:10.6.10','mariadb:10.11.2','mariadb:11.4.9','mariadb:11.8.8','mariadb:12.3.3','mysql:8.0.32']
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7035152Z   POSTGRESQL_VERSIONS: ['postgres:12.22','postgres:15.19', 'postgres:18.6']
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7035686Z   SQLITE_VERSIONS: [{"version": "3.40.1", "year": "2022"}, {"version": "3.53.4", "year": "2026"}]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7036378Z   RECORDER_TEST_DIRS: tests/components/history tests/components/logbook tests/components/recorder tests/components/sensor
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7037123Z   UV_CACHE_DIR: /tmp/uv-cache
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7037376Z   APT_CACHE_VERSION: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7037597Z   SQLALCHEMY_WARN_20: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7037819Z   PYTHONASYNCIODEBUG: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7038029Z   HASS_CI: 1
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.7038219Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8015370Z Syncing repository: home-assistant/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8016719Z ##[group]Getting Git version info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8017520Z Working directory is '/home/runner/work/core/core'
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8018114Z [command]/usr/bin/git version
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8124758Z git version 2.55.0
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8144803Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8155027Z Temporarily overriding HOME='/home/runner/work/_temp/906cc525-cb3d-4e63-8e3a-6221e9eb280a' before making global git config changes
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8156520Z Adding repository directory to the temporary git global config as a safe directory
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8161657Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8212026Z Deleting the contents of '/home/runner/work/core/core'
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8215554Z ##[group]Determining repository object format
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8217177Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8217778Z ##[group]Initializing the repository
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8221562Z [command]/usr/bin/git init /home/runner/work/core/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8341258Z hint: Using 'master' as the name for the initial branch. This default branch name
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8342070Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8342853Z hint: to use in all of your new repositories, which will suppress this warning,
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8343456Z hint: call:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8343708Z hint:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8344020Z hint: 	git config --global init.defaultBranch <name>
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8344489Z hint:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8345167Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8346035Z hint: 'development'. The just-created branch can be renamed via this command:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8346591Z hint:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8347211Z hint: 	git branch -m <name>
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8347726Z hint:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8348431Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8350178Z Initialized empty Git repository in /home/runner/work/core/core/.git/
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8358092Z [command]/usr/bin/git remote add origin https://github.com/home-assistant/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8409466Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8410149Z ##[group]Disabling automatic garbage collection
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8414570Z [command]/usr/bin/git config --local gc.auto 0
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8444779Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8445483Z ##[group]Setting up auth
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8446043Z Removing SSH command configuration
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8451531Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8482462Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8837965Z Removing HTTP extra header
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8843162Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.8873383Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9120997Z Removing includeIf entries pointing to credentials config files
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9126126Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9156778Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9382772Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-7f3c17dc-93e2-486b-947f-23cb814b9858.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9422764Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git.path /home/runner/work/_temp/git-credentials-7f3c17dc-93e2-486b-947f-23cb814b9858.config
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9459671Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/core/core/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-7f3c17dc-93e2-486b-947f-23cb814b9858.config
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9496289Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-7f3c17dc-93e2-486b-947f-23cb814b9858.config
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9529653Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-7f3c17dc-93e2-486b-947f-23cb814b9858.config
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9557983Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9558729Z ##[group]Fetching the repository
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:26.9566392Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a0857325347e56f7cb8050a04fa125c2b605342a:refs/remotes/pull/183223/merge
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0612893Z From https://github.com/home-assistant/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0613785Z  * [new ref]           a0857325347e56f7cb8050a04fa125c2b605342a -> pull/183223/merge
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0618397Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0618852Z ##[group]Determining the checkout info
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0619822Z ##[endgroup]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0626786Z [command]/usr/bin/git sparse-checkout disable
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0694159Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0713054Z ##[group]Checking out the ref
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:33.0717516Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/183223/merge
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:34.1028823Z Updating files:  66% (18818/28215)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:34.1212406Z Updating files:  67% (18905/28215)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:34.1372825Z Updating files:  68% (19187/28215)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:34.1536382Z Updating files:  69% (19469/28215)
+Check hassfest	UNKNOWN STEP	2026-09-26T19:38:34.1702604Z Updating files:  70% (197
+
+... [85049 characters truncated] ...
+
+26-09-26T19:39:13.0902207Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0902355Z Integration obihai:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0903008Z * [WARNING] [REQUIREMENTS] Package pyobihai has a forbidden top level directory 'tests' in homeassistant
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0903603Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0903752Z Integration opengarage:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0904489Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in open-garage
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0905150Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0905310Z Integration overkiz:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0906080Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in pyoverkiz
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0906783Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0907157Z Integration prosegur:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0907939Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in pyprosegur
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0908657Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0908819Z Integration pterodactyl:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0909497Z * [WARNING] [REQUIREMENTS] Package py-dactyl has a forbidden top level directory 'tests' in homeassistant
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0910111Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0910269Z Integration python_script:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0910972Z * [WARNING] [REQUIREMENTS] Version restrictions for Python are too strict (<3.16,>=3.10) in restrictedpython
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0911599Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0911752Z Integration radio_browser:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0912522Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in radios
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0913220Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0913550Z Integration remote_rpi_gpio:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0914221Z * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in colorzero
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0915323Z * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in colorzero
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0915947Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0916091Z Integration ring:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0916835Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in ring-doorbell
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0917935Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0918086Z Integration rmvtransport:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0918798Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in pyrmvtransport
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0919408Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0919543Z Integration roku:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0920247Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in rokuecp
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0920915Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0921060Z Integration screenlogic:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0921770Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in screenlogicpy
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0922402Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0922533Z Integration sense:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0923192Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in sense-energy
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0923812Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0923962Z Integration sensorpush_cloud:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0924651Z * [WARNING] [REQUIREMENTS] Package sensorpush-api has a forbidden top level directory 'test' in sensorpush-ha
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0925244Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0925381Z Integration simplefin:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0926048Z * [WARNING] [REQUIREMENTS] Package dataclasses-json should be removed (it can break in Python 3.15) in simplefin4py
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0927011Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0927153Z Integration simplisafe:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0927938Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in simplisafe-python
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0928636Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0928763Z Integration slimproto:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0929441Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in aioslimproto
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0930065Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0930196Z Integration smappee:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0930688Z * [WARNING] [REQUIREMENTS] Package pysmappee has a forbidden top level directory 'test' in homeassistant
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0931097Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0931197Z Integration smarty:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0931650Z * [WARNING] [REQUIREMENTS] Version restrictions for pymodbus are too strict (>=3.11.0,<4.0.0) in pysmarty2
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0932058Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0932162Z Integration surepetcare:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0932650Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in surepy
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0933091Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0933193Z Integration tailwind:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0933716Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in gotailwind
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0934195Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0934303Z Integration telegram_bot:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0934785Z * [WARNING] [REQUIREMENTS] Version restrictions for httpx are too strict (>=0.27,<0.29) in python-telegram-bot
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0935207Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0935320Z Integration terrestream_local:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0935757Z * [ERROR] [QUALITY_SCALE] Quality scale tier bronze requires quality scale rules to be met:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0936201Z   brands: todo
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0936335Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0936435Z Integration tibber:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0937056Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in gql
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0937522Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0937614Z Integration toon:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0938253Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in toonapi
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0938747Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0938852Z Integration travisci:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0939246Z * [WARNING] [REQUIREMENTS] Package pytest should not be a runtime dependency in travispy
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0939899Z * [WARNING] [REQUIREMENTS] Package pytest should not be a runtime dependency in pytest-rerunfailures
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0940292Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0940391Z Integration velbus:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0940910Z * [WARNING] [REQUIREMENTS] Package backoff should be replaced with python-backoff (it will break in Python 3.16) in velbus-aio
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0941645Z * [WARNING] [REQUIREMENTS] Package caio has a forbidden top level directory 'tests' in aiofile
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0942017Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0942123Z Integration volkszaehler:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0942646Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in volkszaehler
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0943096Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0943190Z Integration watergate:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0943690Z * [WARNING] [REQUIREMENTS] Package watergate-local-api has a forbidden top level directory 'tests' in homeassistant
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0944150Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0944265Z Integration weatherflow_cloud:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0944795Z * [WARNING] [REQUIREMENTS] Package dataclasses-json should be removed (it can break in Python 3.15) in weatherflow4py
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0945236Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0945342Z Integration whirlpool:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0945880Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in whirlpool-sixth-sense
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0946367Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0946472Z Integration xiaomi_miio:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0947039Z * [WARNING] [REQUIREMENTS] Version restrictions for zeroconf are too strict (>=0,<1) in python-miio
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0947758Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0947864Z Integration xs1:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0948391Z * [WARNING] [REQUIREMENTS] Package xs1-api-client has a forbidden top level directory 'tests' in homeassistant
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0948831Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0948927Z Integration zamg:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0949389Z * [WARNING] [REQUIREMENTS] Package async-timeout should be replaced by asyncio.timeout (Python 3.11+) in zamg
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0949817Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0949920Z Integration zha:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0950329Z * [WARNING] [REQUIREMENTS] Package coloredlogs should be replaced with colorlog in zigpy-znp
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0951037Z * [WARNING] [REQUIREMENTS] Package coloredlogs has a forbidden file 'coloredlogs.pth' in zigpy-znp
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0951714Z * [WARNING] [REQUIREMENTS] Package setuptools should not be a runtime dependency in colorzero
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0952402Z * [WARNING] [REQUIREMENTS] Package setuptools has a forbidden file 'distutils-precedence.pth' in colorzero
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.0952822Z 
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7566579Z ##[error]Process completed with exit code 1.
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7724370Z Post job cleanup.
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7728111Z ##[start-action display=Set up uv and managed Python;id=__8cc2ffe8-5c34-4c41-a1ce-ced68ad65371.python]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7777111Z Post job cleanup.
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7779870Z ##[start-action display=Set up uv;id=__8cc2ffe8-5c34-4c41-a1ce-ced68ad65371.python.uv]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7782033Z ##[end-action id=__8cc2ffe8-5c34-4c41-a1ce-ced68ad65371.python.uv;outcome=skipped;conclusion=skipped;duration_ms=0]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7787792Z ##[end-action id=__8cc2ffe8-5c34-4c41-a1ce-ced68ad65371.python;outcome=success;conclusion=success;duration_ms=5]
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.7851012Z Post job cleanup.
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8703919Z [command]/usr/bin/git version
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8741360Z git version 2.55.0
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8776027Z Temporarily overriding HOME='/home/runner/work/_temp/8e1eb38a-c54e-414f-9c31-80ae82f519ed' before making global git config changes
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8777175Z Adding repository directory to the temporary git global config as a safe directory
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8781713Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/core/core
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8811005Z Removing SSH command configuration
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8817400Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.8850744Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9089451Z Removing HTTP extra header
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9094164Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9125598Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9356404Z Removing includeIf entries pointing to credentials config files
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9362602Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9393028Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check hassfest	UNKNOWN STEP	2026-09-26T19:39:13.9785496Z Cleaning up orphan processes

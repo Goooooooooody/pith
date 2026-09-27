@@ -1,0 +1,231 @@
+pith · <log> · 72,642 lines → 30065 groups · ~2576.2k → ~4.1k tokens (99.8% smaller)
+
+jobs: More Go tests; Go tests for 32-bit x86; Go tests; Go tests on Windows; Go tests with previous Go version (1.26); Go tests with previous Go version
+levels: error 296 · warn 14 · notable 652 · info 45,920
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 718/1000 groups as confident noise (29065 rarest groups not scored) · 2 requests · 9,137 tokens · $0.0004 · 1.2s
+most likely root cause: [bc9a] rc=0.18 (confidence 0.17, cause visible p=0.69)
+
+== LIKELY ROOT CAUSE (jev rc=0.18)
+[bc9a] ERROR ×2  act=0.87 val=3.6/4 rc=0.18  L4499 … L4530  job: Go tests on Windows
+  time=2026-09-24T22:26:08.537Z level=ERROR source=main.go:1652 msg="Fatal error" err="opening storage failed: float chunk encoding \"xor\" is incompatible with start-timestamp storage; XOR chunks do not store start timestamps, use \"xor2\""
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: More Go tests
+L340      [b296] ▶ Run go test --tags=dedupelabels ./...
+   …
+L474      [bca8] go: downloading github.com/go-viper/mapstructure/v2 v2.5.0 (×5, last L72243)
+L475      [e146] go: downloading github.com/hashicorp/go-cleanhttp v0.5.2 (×5, last L72336)
+L476      [7beb] go: downloading github.com/hashicorp/go-hclog v1.6.3 (×5, last L72337)
+L477    ✱ [2678] go: downloading github.com/hashicorp/go-multierror v1.1.1 (×5, last L72338)
+L478      [d1f4] go: downloading github.com/hashicorp/go-rootcerts v1.0.2 (×5, last L72339)
+L479      [53ac] go: downloading github.com/hashicorp/serf v0.10.4 (×5, last L72340)
+L480      [28c4] go: downloading github.com/google/go-querystring v1.2.0 (×5, last L72341)
+   …
+L645      [5a92] ok  	github.com/prometheus/prometheus/prompb/io/prometheus/client	0.007s (×5, last L72476)
+L646      [1b23] ok  	github.com/prometheus/prometheus/prompb/io/prometheus/write/v2	0.003s (×5, last L72477)
+L647      [6e52] ok  	github.com/prometheus/prometheus/prompb/rwcommon	0.008s (×5, last L72478)
+L648    ✱ [8af7] --- FAIL: TestRateAnnotations (0.16s) (×5, last L72479)
+          --- FAIL: TestRateAnnotations/no_info_annotations_when_selecting_one_sample (0.01s)
+          engine_test.go:4627:
+          Error Trace:	/__w/prometheus/prometheus/util/testutil/cmp.go:41
+          /__w/prometheus/prometheus/util/testutil/cmp.go:30
+          /__w/prometheus/prometheus/promql/engine_test.go:4627
+          Error:      	Not equal:
+          expected: []
+          actual  : [PromQL warning: input range too short for metric name "series" (1:6)]  []string{
+          + 	`PromQL warning: input range too short for metric name "series" (1:6)`,
+          }
+          Test:       	TestRateAnnotations/no_info_annotations_when_selecting_one_sample
+   …
+L660    ✱ [3eed] --- FAIL: TestEvaluations (3.87s) (×5, last L72491)
+          --- FAIL: TestEvaluations/testdata/functions.test (1.10s)
+          --- FAIL: TestEvaluations/testdata/functions.test/line_266/irate(http_requests_nan[15m1s]) (0.00s)
+          test.go:1710:
+          Error Trace:	/__w/prometheus/prometheus/promql/promqltest/test.go:1710
+          Error:      	Received unexpected error:
+          unexpected warning annotations evaluating query "irate(http_requests_nan[15m1s])" (line 266): [PromQL warning: input range too short for metric name "http_requests_nan" (1:7)]
+          Test:       	TestEvaluations/testdata/functions.test/line_266/irate(http_requests_nan[15m1s])
+          --- FAIL: TestEvaluations/testdata/functions.test/line_278/irate(http_requests_histogram{path="/b"}[6m]) (0.00s)
+          test.go:1710:
+          Error Trace:	/__w/prometheus/prometheus/promql/promqltest/test.go:1710
+          Error:      	Received unexpected error:
+          unexpected warning annotations evaluating query "irate(http_requests_histogram{path=\"/b\"}[6m])" (line 278): [PromQL warning: input range too short for metric name "http_requests_histogram" (1:7)]
+   …
+L686    ✱ [ffc9] FAIL
+L687    ✱ [68ec] FAIL	github.com/prometheus/prometheus/promql	13.448s (×5, last L72518)
+L688      [c44a] ok  	github.com/prometheus/prometheus/promql/parser	1.576s (×5, last L72519)
+L689      [e12d] ?   	github.com/prometheus/prometheus/promql/parser/posrange	[no test files] (×5, last L72520)
+L690      [bead] ok  	github.com/prometheus/prometheus/promql/promqltest	1.666s (×5, last L72521)
+   …
+L737      [807d] ok  	github.com/prometheus/prometheus/util/strutil	0.181s (×5, last L72568)
+L738      [7c96] ?   	github.com/prometheus/prometheus/util/testrecord	[no test files] (×5, last L72569)
+L739      [e766] ok  	github.com/prometheus/prometheus/util/teststorage	0.020s (×5, last L72570)
+L740      [7682] ?   	github.com/prometheus/prometheus/util/testutil	[no test files] (×5, last L72571)
+L741      [9719] ok  	github.com/prometheus/prometheus/util/testwal	0.008s (×5, last L72572)
+L742      [1ab0] ?   	github.com/prometheus/prometheus/util/treecache	[no test files] (×5, last L72573)
+L743      [d4bd] ok  	github.com/prometheus/prometheus/util/zeropool	0.084s (×5, last L72574)
+L744      [5512] ok  	github.com/prometheus/prometheus/web	4.697s (×4, last L72575)
+L745      [6e17] ?   	github.com/prometheus/prometheus/web/api/testhelpers	[no test files] (×4, last L72576)
+L746      [7368] ok  	github.com/prometheus/prometheus/web/api/v1	10.066s (×4, last L72577)
+L747      [7e09] ?   	github.com/prometheus/prometheus/web/ui	[no test files] (×4, last L72578)
+L748    ✱ [ffc9] FAIL (×10, last L72579)
+L749    ✱ [eead] ##[error]Process completed with exit code 1. (×6, last L72641)
+-- job: Go tests for 32-bit x86
+L1115     [45ac] ▶ Run GOARCH=386 go test -parallel=1 ./...
+   …
+L1523   ✱ [ffc9] FAIL
+L1524   ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Go tests
+L1904     [61eb] ▶ Run make GO_ONLY=1 SKIP_GOLANGCI_LINT=1
+   …
+L2588   ✱ [ffc9] FAIL
+L2589   ✱ [ef84] make: *** [Makefile.common:182: common-test] Error 1 (×2, last L72580)
+L2590   ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: Go tests on Windows
+L4824     [530e] Checking standard input (×3, last L4832)
+          SUCCESS: 5 rules found
+L4827     [fce2] === RUN   TestCheckRules/rules-bad
+L4829   ✱ [37bf] FAILED: (×19, last L5378)
+L4830     [b122] group "alerts", rule 1, "InstanceDown": annotation "summary": template: __alert_InstanceDown:1: undefined variable "$label"
+L4831     [53f6] === RUN   TestCheckRules/rules-lint-fatal
+L4833   ✱ [37bf] FAILED:
+L4834   ✱ [1fbe] lint error 1 duplicate rule(s) found. (×2, last L4860)
+L4835     [7111] Metric: HighRequestLatency (×2, last L4861)
+L4836     [acde] Label(s): (×2, last L4862)
+          severity: page
+L4838     [1c4e] Might cause inconsistency while recording expressions (×2, last L4864)
+   …
+L4905   ✱ [bcaa] FAILED: too long scrape interval found, data point will be marked as stale - job: too_long_scrape_interval_test, interval: 10m (×4, last L4940)
+L4906     [239c] Checking testdata\prometheus-config.rules.good.yml (×9, last L4951)
+          SUCCESS: 0 rules found
+L4909     [42f9] Checking ./testdata/prometheus-config.lint.too_long_scrape_interval.yml (×12, last L4947)
+          SUCCESS: 1 rule files found
+          SUCCESS: ./testdata/prometheus-config.lint.too_long_scrape_interval.yml is valid prometheus config file syntax
+   …
+L4913   ✱ [bcaa] FAILED: too long scrape interval found, data point will be marked as stale - job: too_long_scrape_interval_test, interval: 10m
+   …
+L4974     [b62d] === RUN   TestPushMetricsInvalidProtoMsg
+L4975   ✱ [60da] FAILED: invalid protobuf message "blablalba", must be prometheus.WriteRequest or io.prometheus.write.v2.Request
+L4976     [0a63] --- PASS: TestPushMetricsInvalidProtoMsg (0.00s)
+L4977     [75c3] === RUN   TestBackfillRuleIntegration
+L4978     [a39a] === PAUSE TestBackfillRuleIntegration
+   …
+L5317   ✱ [37bf] FAILED:
+          rule: x, time: 0s, err: @ modifier is disabled
+   …
+L5321     [f99c] === CONT  TestRulesUnitTest/Bad_rules_(error_evaluating)
+L5322   ✱ [37bf] FAILED:
+          rule: joined, time: 0s, err: found duplicate series for the match group {a="1"} on the right hand-side of the operation: [{__name__="join_2", a="1", b="3"}, {__name__="join_2", a="1", b="4"}];many-to-many matching not allowed: matching labe
+   …
+L5326   ✱ [9dde2] === CONT  TestRulesUnitTest/Bad_rules_(syntax_error)
+L5327   ✱ [37bf] FAILED:
+          name: Failing test,
+          alertname: Test, time: 0s,
+          exp:[
+   …
+L5360     [cd7b] === CONT  TestRulesUnitTest/Bad_PromQL
+L5361   ✱ [37bf] FAILED:
+L5362   ✱ [b509] testdata\bad-rules-syntax.yml: 7:15: group "bad-syntax", rule 1, "x": could not parse expression: 1:7: parse error: unexpected end of input
+L5365     [e291] === CONT  TestRulesUnitTest/Bad_input_series
+L5366   ✱ [37bf] FAILED:
+L5367   ✱ [a109] 2:48: parse error: unexpected character inside braces: '0'
+L5370     [0671] === CONT  TestRulesUnitTest/Long_evaluation_interval
+L5371   ✱ [37bf] FAILED:
+          expr: "my_metric@1704067200", time: 5m, err: @ modifier is disabled
+          expr: "my_metric@1704067320", time: 5m, err: @ modifier is disabled
+   …
+L38947    [388b] === RUN   TestRateAnnotations/no_info_annotation_when_rate()_over_series_with__total_suffix
+L38948    [d816] === RUN   TestRateAnnotations/no_info_annotation_when_rate()_over_series_with__count_suffix
+L38949    [b9de] === RUN   TestRateAnnotations/no_info_annotations_when_selecting_one_sample (×5, last L38960)
+          engine_test.go:4627:
+L38951  ✱ [431c] Error Trace:	D:/a/prometheus/prometheus/util/testutil/cmp.go:41
+          D:/a/prometheus/prometheus/util/testutil/cmp.go:30
+          D:/a/prometheus/prometheus/promql/engine_test.go:4627
+L38954  ✱ [9526] Error:      	Not equal:
+          expected: []
+          actual  : [PromQL warning: input range too short for metric name "series" (1:6)]  []string{
+          + 	`PromQL warning: input range too short for metric name "series" (1:6)`,
+          }
+   …
+L39669    [730b] === RUN   TestEvaluations/testdata/functions.test/line_255/irate(http_requests_total[50m]) (×2, last L39670)
+L39671    [81c5] === RUN   TestEvaluations/testdata/functions.test/line_266/irate(http_requests_nan[15m1s])
+          test.go:1710:
+L39673  ✱ [ca84] Error Trace:	D:/a/prometheus/prometheus/promql/promqltest/test.go:1710 (×4, last L39705)
+L39674  ✱ [0621] Error:      	Received unexpected error: (×4, last L39706)
+          unexpected warning annotations evaluating query "irate(http_requests_nan[15m1s])" (line 266): [PromQL warning: input range too short for metric name "http_requests_nan" (1:7)]
+L39676    [0e40] Test:       	TestEvaluations/testdata/functions.test/line_266/irate(http_requests_nan[15m1s])
+   (+2 more lines here: `pith show <id>` or grep the raw file)
+   …
+L71582    [1156] PASS (×86, last L71582)
+L71584  ✱ [ffc9] FAIL
+L71585  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Go tests with previous Go version (1.26)
+L72413    [183f8] ▶ Run make test GO_ONLY=1 test-flags=""
+   …
+L72579  ✱ [ffc9] FAIL
+L72580  ✱ [ef84] make: *** [Makefile.common:182: common-test] Error 1
+L72581  ✱ [eead] ##[error]Process completed with exit code 2.
+-- job: Go tests with previous Go version
+L72626    [d7a6] Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314 (×5, last L72626)
+L72628    [27d2] ▶ GITHUB_TOKEN Permissions (×6, last L72628)
+L72629    [6871] Contents: read (×6, last L72629)
+L72630    [b807] Metadata: read (×6, last L72630)
+L72632    [8cc2] Secret source: None (×6, last L72632)
+L72633    [f1c4] Cache mode: write (×6, last L72633)
+L72634    [7900] Prepare workflow directory (×6, last L72634)
+L72635    [938a] Prepare all required actions (×6, last L72635)
+L72636    [408ad] Complete job name: Go tests with previous Go version
+L72637    [167e7] ▶ Run exit 1
+L72638    [3133a] exit 1
+L72641  ✱ [eead] ##[error]Process completed with exit code 1.
+L2619     [8ec3] Go tests on Windows	UNKNOWN STEP	﻿2026-09-24T22:18:07.0921253Z Current runner version: '2.337.0'
+
+== OTHER ERRORS & WARNINGS
+L2776   ERRO [b759] [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -Assem
+L3212   ERRO [29f2] reload_test.go:187: time=2026-09-24T22:25:29.451Z level=ERROR source=main.go:1435 msg="Failed to generate checksum during configuration reload" err="error unmarshalling YAML: yaml:
+L3215   ERRO [1c2d] reload_test.go:187: time=2026-09-24T22:25:29.451Z level=ERROR source=main.go:1442 msg="Error reloading config" err="couldn't load configuration (--config.file=\"C:\\\\Users\\\\RUNN
+L3335   ERRO [5f34] === NAME  TestAgentFailedStartupWithInvalidConfig (×2, last L3404)
+L4282   ERRO [eb43] time=2026-09-24T22:25:55.355Z level=ERROR source=main.go:1652 msg="Fatal error" err="flag 'storage.tsdb.max-block-chunk-segment-size' must be set over 1MB"
+L4499   ERRO [bc9a] time=2026-09-24T22:26:08.537Z level=ERROR source=main.go:1652 msg="Fatal error" err="opening storage failed: float chunk encoding \"xor\" is incompatible with start-timestamp stora (×2, last L4530)
+L4610   ERRO [81e9] time=2026-09-24T22:26:15.887Z level=ERROR source=main.go:1652 msg="Fatal error" err="flag 'storage.tsdb.wal-segment-size' must be set between 10MB and 256MB" (×3, last L4677)
+L4613   ERRO [1b9d] main_test.go:300: Error parsing command line arguments: units: unknown unit  in 10
+L5046   ERRO [9bb8] === RUN   TestRulesUnitTest/Bad_rules_(syntax_error)
+L5048   ERRO [ea39] === PAUSE TestRulesUnitTest/Bad_rules_(syntax_error)
+L5815   ERRO [8858c] SDK 2026/09/24 22:25:25 WARN falling back to IMDSv1: operation error ec2imds: getToken, http response error StatusCode: 404, request to EC2 IMDS failed (×2, last L5817)
+L6062   ERRO [4c72] === RUN   TestEC2DiscoveryRefreshAZIDs/HandleError
+L6063   ERRO [30fe] --- PASS: TestEC2DiscoveryRefreshAZIDs (0.00s)
+L6473   ERRO [6ec6] === RUN   TestGetDatacenterShouldReturnError (×15, last L65397)
+L6474   ERRO [d3e6] === PAUSE TestGetDatacenterShouldReturnError (×3, last L8005)
+L6512   ERRO [9af2] === CONT  TestGetDatacenterShouldReturnError (×3, last L8032)
+L6544   ERRO [00e3] === RUN   TestDNS/A_record_query_with_error
+
+== END OF OUTPUT
+L72557    [de86] ok  	github.com/prometheus/prometheus/util/junitxml	0.008s
+L72558    [f2c1] ok  	github.com/prometheus/prometheus/util/kahansum	0.005s
+L72559    [ebaa] ok  	github.com/prometheus/prometheus/util/logging	0.209s
+L72560    [9eff] ok  	github.com/prometheus/prometheus/util/namevalidationutil	0.004s
+L72561    [048c] ok  	github.com/prometheus/prometheus/util/netconnlimit	0.618s
+L72562    [a515] ok  	github.com/prometheus/prometheus/util/notifications	0.306s
+L72563    [1d38] ?   	github.com/prometheus/prometheus/util/osutil	[no test files]
+L72564    [ce0e] ok  	github.com/prometheus/prometheus/util/pool	0.003s
+L72565    [c674] ok  	github.com/prometheus/prometheus/util/runtime	0.006s
+L72566    [4c20a] ?   	github.com/prometheus/prometheus/util/runutil	[no test files]
+L72567    [6974] ok  	github.com/prometheus/prometheus/util/stats	0.015s
+L72568    [807d] ok  	github.com/prometheus/prometheus/util/strutil	0.161s
+L72608    [e792] Go tests with previous Go version	UNKNOWN STEP	﻿2026-09-24T22:30:45.2205776Z Current runner version: '2.337.0'
+L72615    [dfa4] Azure Region: northcentralus
+L72639    [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×811     [a55d] === RUN   TestSetFeatureListOptions_MetadataWALRecords
+×44      [31fc] b4e4c0127190: Pull complete
+×19      [4293] env:
+×15      [8d65] with:
+×15      [8399] Removing SSH command configuration
+×15      [66c6] Removing HTTP extra header
+×15      [5c50] Removing includeIf entries pointing to credentials config files
+×12      [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×12      [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+
+(not shown: 29240 groups, 33,346 lines - including 155 error groups, 179 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

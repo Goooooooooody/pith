@@ -1,0 +1,233 @@
+Check Markdown APIs in new files	UNKNOWN STEP	﻿2026-09-21T21:30:38.8463569Z Current runner version: '2.337.0'
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8499525Z ##[group]Runner Image Provisioner
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8501042Z Hosted Compute Agent
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8502143Z Version: 20260828.587
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8503363Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8504586Z Build Date: 2026-08-28T16:44:25Z
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8505840Z Worker ID: {7b91dc67-5da1-461e-ad2c-fb147fd84b4d}
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8507133Z Azure Region: eastus2
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8508124Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8511153Z ##[group]Operating System
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8512233Z Ubuntu
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8513109Z 24.04.5
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8514107Z LTS
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8514935Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8516012Z ##[group]Runner Image
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8517139Z Image: ubuntu-24.04
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8518117Z Version: 20260907.300.1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8520551Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8523336Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8525007Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8526968Z ##[group]GITHUB_TOKEN Permissions
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8530404Z Contents: read
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8531484Z Metadata: read
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8532370Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8535482Z Secret source: Actions
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8537138Z Cache mode: write
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.8538774Z Prepare workflow directory
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.9017270Z Prepare all required actions
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:38.9087806Z Getting action download info
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.1671059Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.2810369Z Download action repository 'ruby/setup-ruby@v1' (SHA:a0102e0972be65f351c307e2d64b9314a57c8073)
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.5365720Z Complete job name: Check Markdown APIs in new files
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6149332Z ##[group]Run actions/checkout@v7
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6150335Z with:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6150799Z   fetch-depth: 0
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6151284Z   repository: rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6155020Z   token: ***
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6155542Z   ssh-strict: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6156010Z   ssh-user: git
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6156484Z   persist-credentials: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6157001Z   clean: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6157485Z   sparse-checkout-cone-mode: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6158034Z   fetch-tags: false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6158500Z   show-progress: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6159145Z   lfs: false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6159589Z   submodules: false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6160061Z   set-safe-directory: true
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6160589Z   allow-unsafe-pr-checkout: false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.6161400Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7148175Z Syncing repository: rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7150454Z ##[group]Getting Git version info
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7151248Z Working directory is '/home/runner/work/rails/rails'
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7152283Z [command]/usr/bin/git version
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7250953Z git version 2.55.0
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7272572Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7283503Z Temporarily overriding HOME='/home/runner/work/_temp/8676ebe9-e54a-43ff-9d98-6dadee0d9cb7' before making global git config changes
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7284956Z Adding repository directory to the temporary git global config as a safe directory
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7298774Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7350603Z Deleting the contents of '/home/runner/work/rails/rails'
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7354050Z ##[group]Determining repository object format
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7355667Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7356397Z ##[group]Initializing the repository
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7360633Z [command]/usr/bin/git init /home/runner/work/rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7527616Z hint: Using 'master' as the name for the initial branch. This default branch name
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7529326Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7530985Z hint: to use in all of your new repositories, which will suppress this warning,
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7531892Z hint: call:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7532629Z hint:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7533625Z hint: 	git config --global init.defaultBranch <name>
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7534682Z hint:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7535604Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7537456Z hint: 'development'. The just-created branch can be renamed via this command:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7538818Z hint:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7539744Z hint: 	git branch -m <name>
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7540419Z hint:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7541101Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7542105Z Initialized empty Git repository in /home/runner/work/rails/rails/.git/
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7544706Z [command]/usr/bin/git remote add origin https://github.com/rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7598424Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7599473Z ##[group]Disabling automatic garbage collection
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7602371Z [command]/usr/bin/git config --local gc.auto 0
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7633110Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7634019Z ##[group]Setting up auth
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7634582Z Removing SSH command configuration
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7639396Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.7670128Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8055268Z Removing HTTP extra header
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8062724Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8100985Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8316829Z Removing includeIf entries pointing to credentials config files
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8324080Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8370106Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8620346Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8668276Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rails/rails/.git.path /home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8704301Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/rails/rails/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8747768Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8783775Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8812604Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8813436Z ##[group]Fetching the repository
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:39.8823424Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +ae1e033c2138ebac93ef305fcbf1fddcda8eb8bd:refs/remotes/pull/58842/merge
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0310957Z From https://github.com/rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0312137Z  * [new branch]            0-5-stable              -> origin/0-5-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0320074Z  * [new branch]            0-6-stable              -> origin/0-6-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0321527Z  * [new branch]            0-7-stable              -> origin/0-7-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0322472Z  * [new branch]            0-8-stable              -> origin/0-8-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0323290Z  * [new branch]            1-2-stable              -> origin/1-2-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0324086Z  * [new branch]            2-0-stable              -> origin/2-0-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0325208Z  * [new branch]            2-1-stable              -> origin/2-1-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0325991Z  * [new branch]            2-2-stable              -> origin/2-2-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0326812Z  * [new branch]            2-3-stable              -> origin/2-3-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0327575Z  * [new branch]            3-0-stable              -> origin/3-0-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0328379Z  * [new branch]            3-1-stable              -> origin/3-1-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0329413Z  * [new branch]            3-2-stable              -> origin/3-2-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0330213Z  * [new branch]            4-0-stable              -> origin/4-0-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0331043Z  * [new branch]            4-1-stable              -> origin/4-1-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0331876Z  * [new branch]            4-2-stable              -> origin/4-2-stable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0332684Z  * [new branch]
+
+... [88395 characters truncated] ...
+
+PIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0687758Z  * [new tag]               v8.1.0.beta1            -> v8.1.0.beta1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0688167Z  * [new tag]               v8.1.0.rc1              -> v8.1.0.rc1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0688576Z  * [new tag]               v8.1.1                  -> v8.1.1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0689272Z  * [new tag]               v8.1.2                  -> v8.1.2
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0689860Z  * [new tag]               v8.1.2.1                -> v8.1.2.1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0690260Z  * [new tag]               v8.1.3                  -> v8.1.3
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0690663Z  * [new tag]               v8.1.3.1                -> v8.1.3.1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0691147Z  * [new ref]               ae1e033c2138ebac93ef305fcbf1fddcda8eb8bd -> pull/58842/merge
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0692610Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0693069Z ##[group]Determining the checkout info
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0693562Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0693856Z [command]/usr/bin/git sparse-checkout disable
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0694689Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0695684Z ##[group]Checking out the ref
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.0696128Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/58842/merge
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4190740Z Note: switching to 'refs/remotes/pull/58842/merge'.
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4191125Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4191393Z You are in 'detached HEAD' state. You can look around, make experimental
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4191961Z changes and commit them, and you can discard any commits you make in this
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4192521Z state without impacting any branches by switching back to a branch.
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4192821Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4193047Z If you want to create a new branch to retain commits you create, you may
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4193566Z do so (now or later) by using -c with the switch command. Example:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4193850Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4193986Z   git switch -c <new-branch-name>
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4194211Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4194342Z Or undo this operation with:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4194528Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4194665Z   git switch -
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4194843Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4195147Z Turn off this advice by setting config variable advice.detachedHead to false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4195479Z 
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4196188Z HEAD is now at ae1e033c21 Merge e13a934120625f935ee3d8b255f15a5b8d679e8e into be63fd9b4449505b90038acb9d51c88c02694e7e
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4264891Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4269624Z [command]/usr/bin/git log -1 --format=%H
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4295248Z ae1e033c2138ebac93ef305fcbf1fddcda8eb8bd
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4545043Z ##[group]Run ruby/setup-ruby@v1
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4563598Z with:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4563893Z   ruby-version: ruby
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4564187Z   bundler-cache: false
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4566724Z   token: ***
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.4566995Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5882416Z ##[group]Modifying PATH
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5883444Z Entries added to PATH to use selected Ruby:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5885981Z   /opt/hostedtoolcache/Ruby/4.0.7/x64/bin
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5895233Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5903711Z ##[group]Downloading Ruby
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:58.5905322Z https://github.com/ruby/ruby-builder/releases/download/ruby-4.0.7/ruby-4.0.7-ubuntu-24.04-x64.tar.gz
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.1367565Z Took   0.55 seconds
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.1368158Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.1368603Z ##[group]Extracting  Ruby
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.1465969Z [command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/4.0.7 -f /home/runner/work/_temp/f51e0ecd-b2d0-4fc8-8ab5-97553dc85907
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7483323Z Took   0.61 seconds
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7484755Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7485865Z ##[group]Print Ruby version
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7504633Z [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/ruby --version
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7592935Z ruby 4.0.7 (2026-09-15 revision 229531a6cf) +PRISM [x86_64-linux]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7600650Z Took   0.01 seconds
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7601521Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7602302Z ##[group]Installing Bundler
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7620004Z Using Bundler 4.0.12 from Gemfile.lock BUNDLED WITH 4.0.12
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:30:59.7621122Z [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/gem install bundler -v 4.0.12
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3132806Z Successfully installed bundler-4.0.12
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3133197Z 1 gem installed
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3178284Z Took   0.56 seconds
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3179382Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3336316Z ##[group]Run ruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3337087Z ^[[36;1mruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA^[[0m
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3379359Z shell: /usr/bin/bash -e {0}
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3379645Z env:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3379905Z   BASE_SHA: be63fd9b4449505b90038acb9d51c88c02694e7e
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3380274Z   HEAD_SHA: e13a934120625f935ee3d8b255f15a5b8d679e8e
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.3380578Z ##[endgroup]
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4012231Z New Ruby files must use Markdown for their API documentation.
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4013049Z Please add `# :markup: markdown` at the top of:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4013653Z   activesupport/lib/active_support/connection_pool.rb
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4014232Z   activesupport/lib/active_support/connection_pool/fork.rb
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4015013Z   activesupport/lib/active_support/connection_pool/timed_stack.rb
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4015913Z   activesupport/lib/active_support/connection_pool/wrapper.rb
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4043611Z ##[error]Process completed with exit code 1.
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.4201724Z Post job cleanup.
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5064483Z [command]/usr/bin/git version
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5108180Z git version 2.55.0
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5145175Z Temporarily overriding HOME='/home/runner/work/_temp/731de154-0add-4625-9717-523305917f1c' before making global git config changes
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5146569Z Adding repository directory to the temporary git global config as a safe directory
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5151568Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5182588Z Removing SSH command configuration
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5188572Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5221635Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5448821Z Removing HTTP extra header
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5453373Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5485425Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5706167Z Removing includeIf entries pointing to credentials config files
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5711996Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5737188Z includeif.gitdir:/home/runner/work/rails/rails/.git.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5737873Z includeif.gitdir:/home/runner/work/rails/rails/.git/worktrees/*.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5738304Z includeif.gitdir:/github/workspace/.git.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5738664Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5747592Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rails/rails/.git.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5770255Z /home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5781400Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rails/rails/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-281b7749\-f932\-48f2\-930c\-60379edf292a\.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5814747Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/rails/rails/.git/worktrees/*.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5836002Z /home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5844153Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/rails/rails/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-281b7749\-f932\-48f2\-930c\-60379edf292a\.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5881918Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5902635Z /github/runner_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5910681Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-281b7749\-f932\-48f2\-930c\-60379edf292a\.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5942200Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5963204Z /github/runner_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.5973305Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-281b7749\-f932\-48f2\-930c\-60379edf292a\.config
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.6004982Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.6226299Z Removing credentials config '/home/runner/work/_temp/git-credentials-281b7749-f932-48f2-930c-60379edf292a.config'
+Check Markdown APIs in new files	UNKNOWN STEP	2026-09-21T21:31:00.6365140Z Cleaning up orphan processes

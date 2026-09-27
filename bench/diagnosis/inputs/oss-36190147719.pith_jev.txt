@@ -1,0 +1,69 @@
+pith · <log> · 1,035 lines → 283 groups · ~27.1k → ~1.2k tokens (95.7% smaller)
+
+jobs: analyze-shards (1)
+levels: error 5 · warn 2 · notable 2 · info 397
+raw: <removed for evaluation>
+jev (jev-latest): hid 261/283 groups as confident noise · 1 requests · 1,492 tokens · $0.0001 · 0.4s
+most likely root cause: [4748] rc=0.89 (confidence 0.88, cause visible p=0.64)
+
+== LIKELY ROOT CAUSE (jev rc=0.89)
+[4748] ERROR ×1  act=0.84 val=3.0/4 rc=0.89  L497  job: analyze-shards (1)
+  error: Required uv version `==0.12.12` does not match the running version `0.12.11`. Update `uv` by running `uv self update 0.12.12`.
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: analyze-shards (1)
+L123      [268d] ▶ Run mkdir -p ~/.config/ty
+   …
+L494      [0267] 2026-09-25 21:13:49 - INFO - Processing project: paasta
+L495      [32ac] 2026-09-25 21:13:49 - INFO - Cloning https://github.com/yelp/paasta into /home/runner/.cache/ecosystem-analyzer/paasta_57ff83d2b117
+L496      [f120] 2026-09-25 21:13:49 - INFO - Installing dependencies: requests, types-pyOpenSSL, cryptography, certifi
+L497    ✱ [4748] error: Required uv version `==0.12.12` does not match the running version `0.12.11`. Update `uv` by running `uv self update 0.12.12`.
+L498      [5104] 2026-09-25 21:13:49 - INFO - Processing project: pandera
+L499    ✱ [2fe2] 2026-09-25 21:13:49 - ERROR - Failed to install project mongo-python-driver: Command '['uv', 'pip', 'install', '--python', '/tmp/tmpphzi_evm/.venv/bin/python', '--link-mode=copy', '--exclude-newer', '2026-09-25T21:11:17Z', 'requests', 'types-pyOpenSSL', 'cryptography', 'certifi']' returned non-zero 
+L500      [f531] 2026-09-25 21:13:49 - INFO - Cloning https://github.com/pandera-dev/pandera into /home/runner/.cache/ecosystem-analyzer/pandera_8a15ffda8069
+L501      [b41e] Resolved 12 packages in 2.20s
+          Building docstring-adder @ file:///home/runner/.cache/ecosystem-analyzer/docstring-adder_17da8ce016d9
+          Building typeshed-client @ git+https://github.com/JelleZijlstra/typeshed_client@9d4b258bbad66421ee2d9ea8cf02768ffb782a1a
+          Built docstring-adder @ file:///home/runner/.cache/ecosystem-analyzer/docstring-adder_17da8ce016d9
+   …
+L505      [d975] 2026-09-25 21:13:49 - INFO - Installing dependencies: types-PyYAML, coverage, types-chevron, types-PyYAML, types-tqdm
+   …
+L915      [df87] ==2.34.2
+          + requests-toolbelt==1.0.0
+          + rfc3986==2.0.0
+          + rich==15.0.0
+          (+3 lines)
+   …
+L922      [83fb] Installed 14 packages in 118ms (×38, last L955)
+          + hypothesis==6.168.1
+          + idna==3.20
+          + iniconfig==2.3.0
+          (+11 lines)
+   …
+L968    ✱ [f8e5] Traceback (most recent call last):
+          File "…/.venv/bin/ecosystem-analyzer", line 10, in <module>
+          File "…/concurrent/futures/_base.py", line 454, in result
+          File "…/concurrent/futures/_base.py", line 396, in __get_result
+          File "…/concurrent/futures/thread.py", line 86, in run
+          File "…/concurrent/futures/thread.py", line 73, in run
+          (+18 frames hidden)
+   …
+L1033   ✱ [28d1] subprocess.CalledProcessError: Command '['uv', 'pip', 'install', '--python', '/tmp/tmpphzi_evm/.venv/bin/python', '--link-mode=copy', '--exclude-newer', '2026-09-25T21:11:17Z', 'requests', 'types-pyOpenSSL', 'cryptography', 'certifi']' returned non-zero exit status 2.
+L1034   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L113    WARN [a203] (node:2645) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods
+
+== MOST FREQUENT OTHER LINES
+×1       [de4e] analyze-shards (1)	UNKNOWN STEP	﻿2026-09-25T21:13:35.9439311Z Current runner version: '2.337.0'
+×1       [c07b] Secret source: Actions
+×1       [6085] ▶ Run astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7
+×1       [c1e8] analyze-shards (1)	UNKNOWN STEP	**/*requirements*.in
+×1       [1d4e] analyze-shards (1)	UNKNOWN STEP	**/*constraints*.txt
+×1       [6543] analyze-shards (1)	UNKNOWN STEP	**/*constraints*.in
+×1       [1917] analyze-shards (1)	UNKNOWN STEP	**/pyproject.toml
+×1       [bbd0] analyze-shards (1)	UNKNOWN STEP	**/uv.lock
+×1       [4e7f] analyze-shards (1)	UNKNOWN STEP	**/*.py.lock
+×1       [41f8] analyze-shards (1)	UNKNOWN STEP
+
+(not shown: 6 groups, 6 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

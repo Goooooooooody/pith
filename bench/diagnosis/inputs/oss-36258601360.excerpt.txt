@@ -1,0 +1,165 @@
+test-macOS	UNKNOWN STEP	﻿2026-09-26T17:19:18.6650870Z Current runner version: '2.337.0'
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6698510Z ##[group]Runner Image Provisioner
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6700320Z Hosted Compute Agent
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6701310Z Version: 20260828.587
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6702380Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6703680Z Build Date: 2026-08-28T16:44:25Z
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6704820Z Worker ID: {9236eda9-52a2-45f2-8850-3089934fa8e2}
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6706980Z Azure Region: westus
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6708370Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6711680Z ##[group]Operating System
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6712230Z macOS
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6712650Z 15.7.9
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6713100Z 24G830
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6713540Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6714040Z ##[group]Runner Image
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6714460Z Image: macos-15-arm64
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6714940Z Version: 20260907.0337.1
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6716010Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20260907.0337/images/macos/macos-15-arm64-Readme.md
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6717230Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20260907.0337
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6718000Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6718850Z ##[group]GITHUB_TOKEN Permissions
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6720730Z Contents: read
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6728550Z Metadata: read
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6729540Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6734560Z Secret source: Actions
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6736110Z Cache mode: write
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.6737330Z Prepare workflow directory
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.7142320Z Prepare all required actions
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.7186220Z Getting action download info
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:18.9404610Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:19.2107170Z Download action repository 'actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:19.3236750Z Download action repository 'Mozilla-Actions/sccache-action@fc920bf0ec8de6ee65d409111f7ec508035751ba' (SHA:fc920bf0ec8de6ee65d409111f7ec508035751ba)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2375340Z Complete job name: test-macOS
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2863190Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2864090Z with:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2864530Z   persist-credentials: false
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2864980Z   path: node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2865320Z   repository: nodejs/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2868250Z   token: ***
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2868630Z   ssh-strict: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2869060Z   ssh-user: git
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2869460Z   clean: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2869800Z   sparse-checkout-cone-mode: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2870210Z   fetch-depth: 1
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2870560Z   fetch-tags: false
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2870960Z   show-progress: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2871370Z   lfs: false
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2871710Z   submodules: false
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2872070Z   set-safe-directory: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2872570Z   allow-unsafe-pr-checkout: false
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2873080Z env:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2873480Z   PYTHON_VERSION: 3.14
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2873900Z   XCODE_VERSION: 16.4
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2874360Z   FLAKY_TESTS: keep_retrying
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2874750Z   RUSTC_VERSION: 1.88
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2875090Z   CC: sccache gcc
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2875420Z   CXX: sccache g++
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2875760Z   SCCACHE_GHA_ENABLED: true
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2876340Z   SCCACHE_IDLE_TIMEOUT: 0
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.2876770Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6427680Z Syncing repository: nodejs/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6429280Z ##[group]Getting Git version info
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6429770Z Working directory is '/Users/runner/work/node/node/node'
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6430500Z [command]/opt/homebrew/bin/git version
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6839630Z git version 2.55.0
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6853810Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6859380Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/98637853-1cb6-41e1-8c8c-88466bf1ccea/.gitconfig'
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6865270Z Temporarily overriding HOME='/Users/runner/work/_temp/98637853-1cb6-41e1-8c8c-88466bf1ccea' before making global git config changes
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6866450Z Adding repository directory to the temporary git global config as a safe directory
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.6868140Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/node/node/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7057550Z ##[group]Determining repository object format
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7058610Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7059400Z ##[group]Initializing the repository
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7061890Z [command]/opt/homebrew/bin/git init /Users/runner/work/node/node/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7350940Z hint: Using 'master' as the name for the initial branch. This default branch name
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7359220Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7360230Z hint: to use in all of your new repositories, which will suppress this warning,
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7361490Z hint: call:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7362980Z hint:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7363580Z hint: 	git config --global init.defaultBranch <name>
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7366050Z hint:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7366900Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7368760Z hint: 'development'. The just-created branch can be renamed via this command:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7370350Z hint:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7370890Z hint: 	git branch -m <name>
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7371420Z hint:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7372100Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7373280Z Initialized empty Git repository in /Users/runner/work/node/node/node/.git/
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7376220Z [command]/opt/homebrew/bin/git remote add origin https://github.com/nodejs/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7444090Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7445220Z ##[group]Disabling automatic garbage collection
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7448420Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7536590Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7538990Z ##[group]Setting up auth
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7544370Z Removing SSH command configuration
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7547070Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.7605940Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.8982840Z Removing HTTP extra header
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.8986740Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.9046080Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.9736060Z Removing includeIf entries pointing to credentials config files
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.9742980Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:20.9807790Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0597120Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0664270Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/node/node/node/.git.path /Users/runner/work/_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0727490Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/node/node/node/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0790880Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/node/.git.path /github/runner_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0851910Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/node/.git/worktrees/*.path /github/runner_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0908550Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0909210Z ##[group]Fetching the repository
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:21.0912620Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +71c63912a716fbe643fbdab42a719dc4de781821:refs/remotes/origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.3938630Z From https://github.com/nodejs/node
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.3939790Z  * [new ref]           71c63912a716fbe643fbdab42a719dc4de781821 -> origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.3947890Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4009670Z   origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4014270Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4064590Z 71c63912a716fbe643fbdab42a719dc4de781821
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4067330Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4068190Z ##[group]Determining the checkout info
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4069160Z ##[endgroup]
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4070920Z [command]/opt/homebrew/bin/git sparse-checkout disable
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4139310Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4201240Z ##[group]Checking out the ref
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:26.4203970Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:27.5537530Z Updating files:  16% (8342/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:27.6640350Z Updating files:  17% (8827/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:27.8172580Z Updating files:  18% (9346/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:27.9057870Z Updating files:  19% (9865/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.0016090Z Updating files:  20% (10384/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.0741840Z Updating files:  21% (10903/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.1368530Z Updating files:  22% (11422/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.1970620Z Updating files:  23% (11942/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.2627310Z Updating files:  24% (12461/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.3187050Z Updating files:  25% (12980/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.3802960Z Updating files:  26% (13499/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.4439790Z Updating files:  27% (14018/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.4576040Z Updating files:  28% (14538/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.4998810Z Updating files:  28% (14658/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.5535410Z Updating files:  29% (15057/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.6828800Z Updating files:  30% (15576/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.7402670Z Updating files:  31% (16095/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.8349260Z Updating files:  32% (16614/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:28.9223390Z Updating files:  33% (17133/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:29.0289330Z Updating files:  34% (17653/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:29.1257040Z Updating files:  35% (18172/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:29.1964930Z Updating files:  36% (18691/51918)
+test-macOS	UNKNOWN STEP	2026-09-26T17:19:29.2669020Z Updating files:  37% (19210/51918)
+test-macOS	UNKNOWN STEP	
+
+... [4648140 characters truncated] ...
+
+o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.1920580Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/collationcompare.o ../deps/icu-small/source/i18n/collationcompare.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/collationcompare.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.3164610Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/rbt_data.o ../deps/icu-small/source/i18n/rbt_data.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/rbt_data.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.3651050Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/units_complexconverter.o ../deps/icu-small/source/i18n/units_complexconverter.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/units_complexconverter.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.4493470Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/csrecog.o ../deps/icu-small/source/i18n/csrecog.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/csrecog.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.5688740Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/number_patternstring.o ../deps/icu-small/source/i18n/number_patternstring.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/number_patternstring.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.5700390Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/udat.o ../deps/icu-small/source/i18n/udat.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/udat.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.6212970Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/tolowtrn.o ../deps/icu-small/source/i18n/tolowtrn.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/tolowtrn.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.7985310Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/numparse_impl.o ../deps/icu-small/source/i18n/numparse_impl.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/numparse_impl.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.7996180Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/messageformat2_evaluation.o ../deps/icu-small/source/i18n/messageformat2_evaluation.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/messageformat2_evaluation.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:06.9388690Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/unum.o ../deps/icu-small/source/i18n/unum.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/unum.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:07.0616690Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/rbtz.o ../deps/icu-small/source/i18n/rbtz.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/rbtz.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:07.1133050Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/uni2name.o ../deps/icu-small/source/i18n/uni2name.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/i18n/uni2name.o.d.raw   -c
+test-macOS	UNKNOWN STEP	2026-09-26T17:27:07.2608990Z   sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/stubdata/stubdata.o ../deps/icu-small/source/stubdata/stubdata.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHARED' '-DOPENSSL_THREADS' '-DU_COMMON_IMPLEMENTATION=1' '-DU_I18N_IMPLEMENTATION=1' '-DU_IO_IMPLEMENTATION=1' '-DU_TOOLUTIL_IMPLEMENTATION=1' '-DU_ATTRIBUTE_DEPRECATED=' '-DU_STATIC_IMPLEMENTATION=1' '-DUCONFIG_NO_SERVICE=1' '-DU_ENABLE_DYLOAD=0' '-DU_HAVE_STD_STRING=1' '-DUCONFIG_NO_BREAK_ITERATION=0' -I../deps/icu-small/source/common -I../deps/icu-small/source/i18n -I../deps/icu-small/source/tools/toolutil  -O3 -gdwarf-2 -fno-strict-aliasing -mmacosx-version-min=13.5 -arch arm64 -Wall -Wendif-labels -W -Wno-unused-parameter -std=gnu++20 -stdlib=libc++ -fno-exceptions -MMD -MF /Users/runner/work/node/node/node/out/Release/.deps//Users/runner/work/node/node/node/out/Release/obj.target/icutools/deps/icu-small/source/stubdata/stubdata.o.d.raw   -c

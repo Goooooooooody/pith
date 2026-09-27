@@ -1,0 +1,196 @@
+pith · <log> · 167,924 lines → 7951 groups · ~9583.1k → ~4.6k tokens (100.0% smaller)
+
+jobs: Rspack integration tests / Next.js integration test (Integration) (3/16) / build; Rspack integration tests / Next.js integration test (Integration) (4/16) / build; Rspack integration tests / Next.js integration test (Integration) (8/16) / build; Rspack integration tests / Next.js integration test (Integration) (9/16) / build; Rspack integration tests / Next.js integration test (Integration) (7/16) / build; Rspack integration tests / Next.js integration test (Integration) (6/16) / build; Rspack integration tests / Next.js integration test (Integration) (5/16) / build; Rspack integration tests / Next.js integration test (Integration) (1/16) / build
+levels: fatal 3 · error 6,067 · warn 1,693 · notable 4,695 · info 67,967
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 93/1000 groups as confident noise (6951 rarest groups not scored) · 9 requests · 26,886 tokens · $0.0011 · 1.9s
+most likely root cause: [7021] rc=0.19 (confidence 0.17, cause visible p=0.61)
+
+== LIKELY ROOT CAUSE (jev rc=0.19)
+[7021] ERROR ×21  act=0.83 val=3.4/4 rc=0.19  L36555 … L148709  job: Rspack integration tests / Next.js integration test (E2E and development) (16/16) / build
+  [browser] Uncaught ModuleBuildError:   × Module build failed (from ./node_modules/.pnpm/next@file+..+..+home+runner+work+next.js+next.js+packages+next+packed.tgz_@types+node@2_5664e560357c848a0030e01426333789/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+    ╰─▶   × Error:   x Route segment config "revalidate" is not compatible with `nextConfig.cacheComponents`. Please remove it.
+    │    ,-[1:1]
+    │  1 | export const revalidate = 10
+    │    :              ^^^^^^^^^^
+    │  2 | export default function Page() {
+    │  3 |   return (
+    │  4 |     <div>Hello World</div>
+    │    `----
+    │
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Rspack integration tests / Next.js integration test (Integration) (3/16) / build
+L888    ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu (×23, last L159113)
+   …
+L3245     [1717] exiting with code 1 (×41, last L160503)
+L3246   ✱ [eead] ##[error]Process completed with exit code 1. (×18, last L157803)
+L3247     [3660] ▶ Run actions/cache/save@27d5ce7f107fe9357f9df03efb73ab90386fccae (×18, last L157804)
+-- job: Rspack integration tests / Next.js integration test (Integration) (4/16) / build
+L4569   ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L6925   ✱ [bbfc] Some tests failed (×19, last L157799)
+L6927   ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (8/16) / build
+L8206   ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L10599  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (9/16) / build
+L11900  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L14253  ✱ [bbfc] Some tests failed
+L14255  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (7/16) / build
+L15555  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L17910  ✱ [bbfc] Some tests failed
+L17912  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (6/16) / build
+L19213  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L21606  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (5/16) / build
+L22907  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L25262  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (1/16) / build
+L26563  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L28916  ✱ [bbfc] Some tests failed
+L28918  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (Integration) (2/16) / build
+L30218  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L32574  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (16/16) / build
+L33894  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L36346    [fc35] - Network:       http://10.0.0.104:37549 (×223, last L167648)
+L36347    [0b71] ✓ Ready in 548ms (×235, last L167649)
+L36348    [d110] ✓ Running next.config.js took 32ms (×108, last L167650)
+L36349  ✱ [3c69] [05:23:20.568Z] Loading browser with http://localhost:37549/error (×4, last L74605)
+          We detected TypeScript in your project and created a tsconfig.json file for you.
+L36352    [5068] - Cache Components enabled (×25, last L163408)
+L36353    [b381] - Partial Prefetching enabled (×2, last L37526)
+L36354    [9f66] - Experiments (use with caution): (×44, last L164990)
+          · instantInsights
+L36357  ✱ [e114] GET /error 200 in 618ms (next.js: 331ms, application-code: 287ms) (×4, last L74612)
+L36358  ✱ [d764] Error: Route "/error": Next.js encountered the unstable value `Math.random()` while prerendering. (×8, last L74672)
+L36360    [5d38] This value can change between renders, so it must be either prerendered or computed later. (×16, last L74694)
+L36362    [41fc] Ways to fix this: (×76, last L100459)
+          - [dynamic] Render at request time by adding a dynamic data access (e.g. `await connection()`) before this call
+          - [cache] Prerender and cache the value with `"use cache"`
+          - [client] Render the value on the client with `"use client"`
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (13/16) / build
+L44931  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L54774  ✱ [f7f1] Test Suites: 1 failed, 1 total (×97, last L167912)
+L54775  ✱ [50f1] Tests:       1 failed, 62 passed, 63 total (×56, last L167913)
+L54776    [f8af] Snapshots:   0 total (×65, last L167914)
+L54777    [ca23] Time:        195.322 s (×97, last L167915)
+L54778    [61ab] Ran all test suites matching /test\/e2e\/next-image-new\/app-dir\/app-dir.test.ts/i. (×3, last L54778)
+L54779    [19e6] Test results written to: test/e2e/next-image-new/app-dir/app-dir.test.ts.results.json (×3, last L54779)
+L54780    [f6ae] Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished? (×97, last L167918)
+L54781    [c3a6] end of test/e2e/next-image-new/app-dir/app-dir.test.ts output (×3, last L54781)
+L54783    [81ad] ▶ Result as JSON for tooling (×1,268, last L167924)
+L54784  ✱ [5c1e] --test output start-- {"numFailedTestSuites":1,"numFailedTests":1,"numPassedTestSuites":0,"numPassedTests":62,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":63,"openHandles":[],"snapshot":{"added":0,"didUpdate":false (×1,223, last L167435)
+L54787  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (10/16) / build
+L56099  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L60866  ✱ [5c1e] --test output start-- {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":1,"numPendingTestSuites":0,"numPendingTests":4,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":5,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"
+L60868    [623d] test/e2e/undici-fetch/index.test.ts finished on retry 0/2 in 6.325s
+L60870  ✱ [5c1e] --test output start-- {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":4,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":4,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"
+L60872    [458f] test/e2e/middleware-matcher/index.test.ts finished on retry 0/2 in 55.32s
+L60874  ✱ [5c1e] --test output start-- {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":47,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":47,"openHandles":[],"snapshot":{"added":0,"didUpdate":false
+L60876    [a680] test/e2e/app-dir/instant-validation/head-and-reporting.partial-prefetching.test.ts finished on retry 0/2 in 417.695s
+L60878  ✱ [5c1e] --test output start-- {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":100,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":100,"openHandles":[],"snapshot":{"added":0,"didUpdate":fal
+L60880  ✱ [bbfc] Some tests failed
+L60882  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (8/16) / build
+L62235  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L70327  ✱ [f7f1] Test Suites: 1 failed, 1 total
+L70328  ✱ [50f1] Tests:       1 failed, 51 passed, 52 total
+L70331    [b563] Ran all test suites matching /test\/e2e\/app-dir\/use-cache\/use-cache.test.ts/i.
+L70332    [383c] Test results written to: test/e2e/app-dir/use-cache/use-cache.test.ts.results.json
+L70334    [642a] end of test/e2e/app-dir/use-cache/use-cache.test.ts output
+L70336    [4a93] Cleaning test files at /home/runner/work/next.js/next.js/test/e2e/app-dir/use-cache
+L70337    [d870] Starting test/e2e/app-dir/use-cache/use-cache.test.ts retry 1/2 (×2, last L70337)
+L70338    [f453] test/e2e/app-dir/use-cache/use-cache.test.ts finished on retry 1/2 in 222.297s
+L70340  ✱ [5c1e] --test output start-- {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":52,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":52,"openHandles":[],"snapshot":{"added":0,"didUpdate":false
+L70342  ✱ [bbfc] Some tests failed
+L70344  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (1/16) / build
+L71649  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L75909    [d15d] Test results written to: test/e2e/app-dir/app-middleware-proxy/app-middleware-proxy.test.ts.results.json (×3, last L75909)
+L75911    [eb8f] end of test/e2e/app-dir/app-middleware-proxy/app-middleware-proxy.test.ts output (×3, last L75911)
+L75913  ✱ [bdb1] test/e2e/app-dir/app-middleware-proxy/app-middleware-proxy.test.ts failed due to Error: failed with code: 1
+L75914  ✱ [46a9] test/e2e/app-dir/app-middleware-proxy/app-middleware-proxy.test.ts failed to pass within 2 retries
+   (+15 more lines here: `pith show <id>` or grep the raw file)
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (7/16) / build
+L77246  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+   …
+L88839  ✱ [f7f1] Test Suites: 1 failed, 1 total
+L88840  ✱ [50f1] Tests:       12 failed, 9 passed, 21 total
+   (+8 more lines here: `pith show <id>` or grep the raw file)
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (6/16) / build
+L90163  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (11/16) / build
+L95195  ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (4/16) / build
+L118594 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (15/16) / build
+L126731 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (3/16) / build
+L135051 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (5/16) / build
+L149965 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (14/16) / build
+L153575 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+-- job: Rspack integration tests / Next.js integration test (E2E and development) (2/16) / build
+L159113 ✱ [f8e5] ##[error]Unable to download artifact(s): Artifact not found for name: next-swc-aarch64-unknown-linux-gnu
+
+== OTHER ERRORS & WARNINGS
+L88583  FATA [a9f64] thread '<unnamed>' (26609) panicked at /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rspack_core-0.100.4/src/utils/steal_cell.rs:60:26: (×3, last L157457)
+L300    ERRO [82b8] echo "::error::OIDC environment variables are missing. The calling job needs \"permissions: id-token: <redacted>\"." (×23, last L158525)
+L322    ERRO [4ab5] echo "::error::Failed to obtain GitHub OIDC ID token" (×23, last L158547)
+L343    ERRO [3d65] echo "::error::Failed to exchange OIDC token for Vercel access token" (×23, last L158568)
+L406    ERRO [0ea9] echo "::error::Unsupported architecture: $ARCH" (×23, last L158631)
+L418    ERRO [5957] echo "::error::Unsupported RUNNER_OS: $RUNNER_OS" (×23, last L158643)
+L970    ERRO [7142] @next/swc:build-native-release-with-assertions:   Downloaded quick-error v2.0.1 (×23, last L159195)
+L1056   ERRO [b0c4] @next/swc:build-native-release-with-assertions:    Compiling thiserror v1.0.69 (×23, last L159281)
+L1096   ERRO [aa37] @next/swc:build-native-release-with-assertions:    Compiling proc-macro-error-attr v1.0.4 (×23, last L159321)
+L1101   ERRO [6b79] @next/swc:build-native-release-with-assertions:    Compiling proc-macro-error v1.0.4 (×23, last L159326)
+L1123   ERRO [beee] @next/swc:build-native-release-with-assertions:    Compiling thiserror-impl v1.0.69 (×23, last L159348)
+L1265   ERRO [55cb] @next/swc:build-native-release-with-assertions:    Compiling fs-err v3.3.1 (×23, last L159490)
+L1282   ERRO [1807] @next/swc:build-native-release-with-assertions:    Compiling thiserror v2.0.12 (×23, last L159507)
+L1290   ERRO [3a12] @next/swc:build-native-release-with-assertions:    Compiling serde_path_to_error v0.1.20 (×23, last L159515)
+L1299   ERRO [e5bc] @next/swc:build-native-release-with-assertions:    Compiling thiserror-impl v2.0.12 (×23, last L159524)
+L1455   ERRO [2a04] @next/swc:build-native-release-with-assertions:    Compiling easy-error v1.0.0 (×23, last L159680)
+L1570   ERRO [f68d] @next/swc:build-native-release-with-assertions:    Compiling quick-error v2.0.1 (×23, last L159795)
+L145288 ERRO [1948] ⨯ Error: oops
+
+== END OF OUTPUT
+L167706   [0d24] console.error
+L167729   [4a9b] ✕ shows a warning when running WebAssembly.compile (2527 ms)
+L167730   [cade] ✕ shows a warning when running WebAssembly.instantiate with a buffer parameter (2529 ms)
+L167731   [304e] ✓ does not show a warning when running WebAssembly.instantiate with a module parameter (10 ms)
+L167732   [8baa] Edge route usage of dynamic code evaluation
+L167734   [1c72] ✓ does not show warning when no code uses eval (10 ms)
+L167915   [ca23] Time:        28.508 s
+L167916   [26b9] Ran all test suites matching /test\/e2e\/edge-runtime-dynamic-code\/edge-runtime-dynamic-code.test.ts/i.
+L167917   [a10a] Test results written to: test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts.results.json
+L167918   [f6ae] Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+L167919   [23fd1] end of test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts output
+L167921   [d6e9] Cleaning test files at /home/runner/work/next.js/next.js/test/e2e/edge-runtime-dynamic-code
+L167922   [9cb5] Starting test/e2e/edge-runtime-dynamic-code/edge-runtime-dynamic-code.test.ts retry 1/2
+L167923   [38ce] test/e2e/image-optimizer/disable-write-to-cache-dir.test.ts finished on retry 0/2 in 22.263s
+L167924   [81ad] ▶ Result as JSON for tooling
+
+== MOST FREQUENT OTHER LINES
+×2,592   [6ec0] ./node_modules/.pnpm/next@file+..+..+home+runner+work+next.js+next.js+packages+next+packed.tgz_@types+node@2_5664e560357c848a0030e0142633378
+×1,584   [2e79] ./node_modules/.pnpm/next@file+..+..+home+runner+work+next.js+next.js+packages+next+packed.tgz_@types+node@2_5664e560357c848a0030e0142633378
+
+(not shown: 7782 groups, 70,527 lines - including 797 error groups, 4,016 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

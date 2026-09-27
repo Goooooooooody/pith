@@ -1,0 +1,82 @@
+pith · <log> · 335 lines → 144 groups · ~8.9k → ~1.5k tokens (83.2% smaller)
+
+jobs: lint-js-and-md
+levels: error 6 · warn 1 · notable 1 · info 254
+raw: <removed for evaluation>
+jev (jev-latest): hid 103/144 groups as confident noise · 1 requests · 2,568 tokens · $0.0001 · 0.4s
+most likely root cause: [1430] rc=0.77 (confidence 0.75, cause visible p=0.66)
+
+== LIKELY ROOT CAUSE (jev rc=0.77)
+[1430] ERROR ×1  act=0.64 val=3.0/4 rc=0.77  L308  job: lint-js-and-md
+  ##[error]  2758:15  error  Unexpected use of 'process'. Import 'process' instead of using the global  no-restricted-globals
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: lint-js-and-md
+L267      [2a05] ▶ Run set +e
+L269      [5da4] NODE=$(command -v node) make lint-js
+L270      [d279] EXIT_CODE="$?"
+L271      [bd26] if [ "$EXIT_CODE" != "0" ]; then
+          echo
+L273    ✱ [2fef] echo 'ERROR: The JavaScript lint validation failed (the errors are logged above).'
+L274      [6f40] echo '       Please fix the lint errors.'
+L275      [95ee] if NODE=$(command -v node) make lint-js-fix > /dev/null 2>&1; then
+          echo '       Run:'
+          echo '          make lint-js-fix'
+          echo '       to fix the lint issues.'
+          (+1 lines)
+   …
+L280      [fe36] elif git diff --quiet --exit-code; then
+          echo '       None of the issue is auto-fixable, so manual fixes for'
+          echo '       all of the issues are required.'
+   …
+L288      [de9d] fi (×2, last L291)
+L289      [0099] echo
+L290      [d9af] exit "$EXIT_CODE"
+   …
+L297      [62ee] cd tools/eslint && if [ -x '/opt/hostedtoolcache/node/24.21.0/x64/bin/node' ] && [ -e '/opt/hostedtoolcache/node/24.21.0/x64/bin/node' ]; then PATH='/home/runner/work/node/node/out/Release:$PATH' '/opt/hostedtoolcache/node/24.21.0/x64/bin/node' /home/runner/work/node/node/./deps/npm/bin/npm-cli.js c
+L299      [78a7] added 235 packages, and audited 236 packages in 7s
+L301      [d7cf] 99 packages are looking for funding
+          run `npm fund` for details
+L304      [fdbb] found 0 vulnerabilities
+L305      [9236] Running JS linter...
+L307      [cc46] /home/runner/work/node/node/doc/api/process.md
+L308    ✱ [1430] ##[error]  2758:15  error  Unexpected use of 'process'. Import 'process' instead of using the global  no-restricted-globals
+L310    ✱ [71cc] ✖ 1 problem (1 error, 0 warnings)
+L312    ✱ [1c4b] make: *** [Makefile:1537: lint-js] Error 1
+L314    ✱ [960a] ERROR: The JavaScript lint validation failed (the errors are logged above).
+          Please fix the lint errors.
+          None of the issue is auto-fixable, so manual fixes for
+          all of the issues are required.
+   …
+L319    ✱ [eead] ##[error]Process completed with exit code 2.
+
+== END OF OUTPUT
+L224      [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://git
+L225      [5c50] Removing includeIf entries pointing to credentials config files
+L228      [772a] includeif.gitdir:/home/runner/work/node/node/.git/worktrees/*.path
+L231      [36f3] [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/node/node/.git.path
+L233      [b349] [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/node/node/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-2620ea5d\-4b9a\-4821\-b7b3\-d460c693a2ba\.config
+L234      [26e8] [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/node/node/.git/worktrees/*.path
+L236      [8644] [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/node/node/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-2620ea5d\-4b9a\-4821\-b7b3\-d460c693a2ba\
+L239      [0473] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-2620ea5d\-4b9a\-4821\-b7b3\-d460c693a2ba\.config
+L240      [ddf3] [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+L242      [ebd4] [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-2620ea5d\-4b9a\-4821\-b7b3\-d460c693a2ba\.config
+L244      [f305] Removing credentials config '/home/runner/work/_temp/git-credentials-2620ea5d-4b9a-4821-b7b3-d460c693a2ba.config'
+L247      [8d65] with:
+L260      [3aca] [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/7f289230-c7f4-45bb-9901-3d6c331c37cb -f /home/runner/work/_temp/74f9fc82-e9c6-44c1-9453-f764c7a53
+L283      [6da2] else
+L292      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [5875] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/node/node
+×1       [a764] lint-js-and-md	UNKNOWN STEP	﻿2026-09-26T15:58:55.6677829Z Current runner version: '2.337.0'
+×1       [5d99] ▶ Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+×1       [6d0d] Deleting the contents of '/home/runner/work/node/node'
+×1       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+
+(not shown: 2 groups, 2 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

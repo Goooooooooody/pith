@@ -1,0 +1,82 @@
+pith · <log> · 902 lines → 182 groups · ~23.5k → ~1.4k tokens (94.1% smaller)
+
+jobs: cargo hawk; all required checks passed
+levels: error 5 · warn 1 · notable 7 · info 270
+raw: <removed for evaluation>
+jev (jev-latest): hid 139/182 groups as confident noise · 1 requests · 2,607 tokens · $0.0001 · 0.4s
+most likely root cause: [a40e] rc=0.84 (confidence 0.82, cause visible p=0.78)
+
+== LIKELY ROOT CAUSE (jev rc=0.84)
+[a40e] ERROR ×1  act=0.71 val=3.0/4 rc=0.84  L756  job: cargo hawk
+  error[hawk::unnecessary_restricted_visibility]: `path::ModuleDirectory::<'db>::exists_at` has explicit restricted visibility but all compiled uses fit within the defining module; it can be private
+    --> crates/ty_module_resolver/src/path.rs:303:5
+    |     ^^^ restricted-visibility declaration
+    = help: remove this declaration's visibility modifier
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: cargo hawk
+L324      [26c8] curl --proto '=https' --tlsv1.2 -LsSf \
+          "https://github.com/astral-sh/hawk/releases/download/${HAWK_VERSION}/cargo-hawk-installer.sh" | sh
+   …
+L342      [c4cf] downloading cargo-hawk 0.1.13 x86_64-unknown-linux-gnu
+L343      [d5a6] installing to /home/runner/.cargo/bin
+          cargo-hawk
+          cargo-hawk-driver
+L346      [bf96] everything's installed!
+L347      [9cba] ▶ Run cargo +1.98.0 hawk check --target-dir target/hawk -D warnings
+L348      [01e7] cargo +1.98.0 hawk check --target-dir target/hawk -D warnings
+L349      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×4, last L819)
+L350      [4293] env: (×6, last L820)
+          UV_LOCKED: 1
+          CARGO_INCREMENTAL: 0
+          CARGO_NET_RETRY: 10
+          (+297 lines)
+   …
+L756    ✱ [a40e] error[hawk::unnecessary_restricted_visibility]: `path::ModuleDirectory::<'db>::exists_at` has explicit restricted visibility but all compiled uses fit within the defining module; it can be private
+          --> crates/ty_module_resolver/src/path.rs:303:5
+          |     ^^^ restricted-visibility declaration
+          = help: remove this declaration's visibility modifier
+   …
+L763      [f79c] hawk: 1 finding(s) for 6 configured production binaries and workspace non-production targets on the host target
+          hawk::unnecessary_restricted_visibility: 1 (ty_module_resolver: 1)
+L765    ✱ [eead] ##[error]Process completed with exit code 1. (×2, last L901)
+-- job: all required checks passed
+L813      [98d9] ▶ Run failing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')
+   …
+L900    ✱ [29b8] hawk: failure
+L901    ✱ [eead] ##[error]Process completed with exit code 1.
+L782      [5246] all required checks passed	UNKNOWN STEP	﻿2026-09-26T20:31:21.5047031Z Current runner version: '2.337.0'
+   …
+L860      [445f] all required checks passed	UNKNOWN STEP	    "outputs": {} (×12, last L896)
+L861      [9142] all required checks passed	UNKNOWN STEP	  }, (×12, last L893)
+L862      [e45a] all required checks passed	UNKNOWN STEP	  "hawk": {
+L863    ✱ [2eae] all required checks passed	UNKNOWN STEP	    "result": "failure",
+L866      [6837] all required checks passed	UNKNOWN STEP	  "cargo-test-linux": {
+
+== OTHER ERRORS & WARNINGS
+L814    NOTA [6f33] failing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')
+L815    NOTA [56a0] if [ -n "$failing" ]; then
+
+== END OF OUTPUT
+L808      [c07b] Secret source: Actions
+L814      [6f33] failing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')
+L815      [56a0] if [ -n "$failing" ]; then
+L834      [64f4] all required checks passed	UNKNOWN STEP	  "determine_changes": {
+L836      [683f] all required checks passed	UNKNOWN STEP	    "outputs": {
+L841      [6910] all required checks passed	UNKNOWN STEP	      "py-fuzzer": "false",
+L842      [3dc0] all required checks passed	UNKNOWN STEP	      "playground": "false",
+L847      [4dd1] all required checks passed	UNKNOWN STEP	      "comparison_base": "1e92f537e426617a62ab16257cb435c7e15ca7b2"
+
+== MOST FREQUENT OTHER LINES
+×3       [8399] Removing SSH command configuration
+×3       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×3       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×3       [66c6] Removing HTTP extra header
+×3       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×3       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [8d65] with:
+×1       [343c] cargo hawk	UNKNOWN STEP	﻿2026-09-26T20:26:10.5092463Z Current runner version: '2.337.0'
+×1       [5336] Download action repository 'Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6' (SHA:6323deb102c322ba6fcbdcafc7e3dddab59af2b6)
+
+(not shown: 19 groups, 19 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

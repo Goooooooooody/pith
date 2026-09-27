@@ -1,0 +1,197 @@
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	﻿2026-09-26T10:07:14.0736393Z ##[debug]Starting: test (linux, ubuntu-latest, 2, 3, (3/3))
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0753734Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0874104Z ##[debug]Starting: Set up job
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0874859Z Current runner version: '2.337.0'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0890388Z ##[group]Runner Image Provisioner
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0891129Z Hosted Compute Agent
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0891744Z Version: 20260828.587
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0892265Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0892958Z Build Date: 2026-08-28T16:44:25Z
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0893526Z Worker ID: {fd33fda1-84bd-4c84-a9b4-56acc6e1d03d}
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0894132Z Azure Region: westus3
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0894619Z ##[endgroup]
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0895675Z ##[group]Operating System
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0896245Z Ubuntu
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0896689Z 24.04.5
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0897128Z LTS
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0897593Z ##[endgroup]
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0898062Z ##[group]Runner Image
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0898975Z Image: ubuntu-24.04
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0899469Z Version: 20260920.314.1
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0900795Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0901956Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0902785Z ##[endgroup]
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0905270Z ##[group]GITHUB_TOKEN Permissions
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0907273Z Actions: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0907772Z ArtifactMetadata: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0908312Z Attestations: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0908919Z Checks: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0909370Z CodeQuality: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0909894Z Contents: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0910531Z CopilotRequests: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0911052Z Deployments: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0911520Z Discussions: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0912070Z Drives: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0912548Z Issues: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0913050Z Metadata: read
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0913524Z Models: read
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0913972Z Packages: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0914419Z Pages: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0914949Z PullRequests: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0915462Z RepositoryProjects: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0916012Z SecurityEvents: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0916482Z Statuses: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0916938Z VulnerabilityAlerts: read
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0917458Z ##[endgroup]
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0919474Z Secret source: Actions
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0920276Z Cache mode: write
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0920832Z ##[debug]Primary repository: denoland/deno
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.0921497Z Prepare workflow directory
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.1900141Z ##[debug]Creating pipeline directory: '/home/runner/work/deno'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.1902748Z ##[debug]Creating workspace directory: '/home/runner/work/deno/deno'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.1903790Z ##[debug]Update context data
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.1906689Z ##[debug]Evaluating job-level environment variables
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.2081997Z ##[debug]Evaluating job container
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.2084985Z ##[debug]Evaluating job service containers
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.2086802Z ##[debug]Evaluating job defaults
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.2110774Z Prepare all required actions
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.2151037Z Getting action download info
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.5367545Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.6000452Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd.tar.gz' to '/home/runner/work/_actions/_temp_b4a36e85-5e59-4d0a-8eae-eb35837d5e7f/b0800fe9-192a-4343-bde6-f8dc634a2dfb.tar.gz'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:14.9037968Z ##[debug]Unwrap 'actions-checkout-de0fac2' to '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.2786209Z ##[debug]Archive '/home/runner/work/_actions/_temp_b4a36e85-5e59-4d0a-8eae-eb35837d5e7f/b0800fe9-192a-4343-bde6-f8dc634a2dfb.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.2867813Z Download action repository 'dsherret/rust-toolchain-file@3551321aa44dd44a0393eb3b6bdfbc5d25ecf621' (SHA:3551321aa44dd44a0393eb3b6bdfbc5d25ecf621)
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.5187095Z ##[debug]Download 'https://codeload.github.com/dsherret/rust-toolchain-file/tar.gz/3551321aa44dd44a0393eb3b6bdfbc5d25ecf621' to '/home/runner/work/_actions/_temp_8eedf977-e6b8-47f7-b40d-72d6adcaab53/abd66efb-0f81-480b-8ce9-2c13538595b5.tar.gz'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.5251690Z ##[debug]Unwrap 'rust-toolchain-file-3551321aa44dd44a0393eb3b6bdfbc5d25ecf621' to '/home/runner/work/_actions/dsherret/rust-toolchain-file/3551321aa44dd44a0393eb3b6bdfbc5d25ecf621'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.5262448Z ##[debug]Archive '/home/runner/work/_actions/_temp_8eedf977-e6b8-47f7-b40d-72d6adcaab53/abd66efb-0f81-480b-8ce9-2c13538595b5.tar.gz' has been unzipped into '/home/runner/work/_actions/dsherret/rust-toolchain-file/3551321aa44dd44a0393eb3b6bdfbc5d25ecf621'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:15.5280740Z Download action repository 'denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282' (SHA:667a34cdef165d8d2b2e98dde39547c9daac7282)
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.1371420Z ##[debug]Download 'https://codeload.github.com/denoland/setup-deno/tar.gz/667a34cdef165d8d2b2e98dde39547c9daac7282' to '/home/runner/work/_actions/_temp_85dc94df-e829-47e7-9d28-5cffd4ac0b91/1c39660e-9fff-49e2-8555-7e2940af338e.tar.gz'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.1583819Z ##[debug]Unwrap 'setup-deno-667a34cdef165d8d2b2e98dde39547c9daac7282' to '/home/runner/work/_actions/denoland/setup-deno/667a34cdef165d8d2b2e98dde39547c9daac7282'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.1607910Z ##[debug]Archive '/home/runner/work/_actions/_temp_85dc94df-e829-47e7-9d28-5cffd4ac0b91/1c39660e-9fff-49e2-8555-7e2940af338e.tar.gz' has been unzipped into '/home/runner/work/_actions/denoland/setup-deno/667a34cdef165d8d2b2e98dde39547c9daac7282'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.1621559Z Download action repository 'actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405' (SHA:a309ff8b426b58ec0e2a45f0f869d46889d02405)
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.2104142Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_setup-python/a309ff8b426b58ec0e2a45f0f869d46889d02405.tar.gz' to '/home/runner/work/_actions/_temp_abfa5413-2f1b-4862-b1cf-0d34523669b3/264b7695-8f6c-4a69-86ee-d0ce8a2d546b.tar.gz'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.2520741Z ##[debug]Unwrap 'actions-setup-python-a309ff8' to '/home/runner/work/_actions/actions/setup-python/a309ff8b426b58ec0e2a45f0f869d46889d02405'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3019393Z ##[debug]Archive '/home/runner/work/_actions/_temp_abfa5413-2f1b-4862-b1cf-0d34523669b3/264b7695-8f6c-4a69-86ee-d0ce8a2d546b.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/setup-python/a309ff8b426b58ec0e2a45f0f869d46889d02405'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3062212Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd/action.yml'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3672703Z ##[debug]action.yml for action: '/home/runner/work/_actions/dsherret/rust-toolchain-file/3551321aa44dd44a0393eb3b6bdfbc5d25ecf621/action.yml'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3825718Z ##[debug]action.yml for action: '/home/runner/work/_actions/denoland/setup-deno/667a34cdef165d8d2b2e98dde39547c9daac7282/action.yml'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3852576Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/setup-python/a309ff8b426b58ec0e2a45f0f869d46889d02405/action.yml'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3950510Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3953588Z ##[debug]Set step '__run' display name to: 'Clone node_compat suite submodule'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3955492Z ##[debug]Set step '__dsherret_rust-toolchain-file' display name to: 'Setup Rust'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3957047Z ##[debug]Set step '__denoland_setup-deno' display name to: 'Setup Deno'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3958857Z ##[debug]Set step '__actions_setup-python' display name to: 'Install Python'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3960530Z ##[debug]Set step '__run_2' display name to: 'Run tests'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3962121Z ##[debug]Set step '__run_3' display name to: 'Gzip the report'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3963745Z ##[debug]Set step '__run_4' display name to: 'Upload the report to dl.deno.land'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3964323Z Complete job name: test (linux, ubuntu-latest, 2, 3, (3/3))
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.3992483Z ##[debug]Collect running processes for tracking orphan processes.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4152917Z ##[debug]Finishing: Set up job
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4277118Z ##[debug]Evaluating condition for step: 'Checkout'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4305894Z ##[debug]Evaluating: success()
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4309563Z ##[debug]Evaluating success:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4323566Z ##[debug]=> true
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4328691Z ##[debug]Result: true
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4351266Z ##[debug]Starting: Checkout
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4406814Z ##[debug]Register post job cleanup for action: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4481429Z ##[debug]Loading inputs
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4504225Z ##[debug]Evaluating: github.repository
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4505080Z ##[debug]Evaluating Index:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4506476Z ##[debug]..Evaluating github:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4507261Z ##[debug]..=> Object
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:07:16.4512113Z ##[debug]..Eva
+
+... [499320 characters truncated] ...
+
+ntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:16.8000359Z test node_compat::parallel::test-timers-user-call.js ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(195ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:16.9253445Z test node_compat::parallel::test-process-exit-code-validation.js ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(3525ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:16.9279602Z test node_compat::test-runner::test-output-output-cli.mjs ... ^[[0m^[[38;5;245mignored^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.0649971Z test node_compat::test-runner::test-output-tap-escape.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(325ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.2904557Z test node_compat::test-runner::test-output-dot-reporter.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(364ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.2941146Z test node_compat::test-runner::test-output-coverage-width-infinity-uncovered-lines.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(229ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.5020150Z test node_compat::test-runner::test-output-hooks-with-no-global-test.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(210ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.5717314Z test node_compat::test-runner::test-output-hooks.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(279ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:17.8202750Z test node_compat::test-runner::test-output-name-and-skip-patterns.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(250ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:18.0180982Z test node_compat::test-runner::test-output-randomize-nested-scenarios-output-cli-none.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(197ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:18.1635236Z test node_compat::test-runner::test-run-watch-cwd-isolation-none.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(145ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:18.3605435Z test node_compat::test-runner::test-run-watch-emit-restarted.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(196ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:27.0911779Z test node_compat::test-runner::test-watch-rename-isolation-process.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10007ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:27.8173390Z test node_compat::test-runner::test-watch-create-isolation-process.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10315ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:28.5682749Z test node_compat::test-runner::test-watch-no-file-isolation-process.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10205ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:29.7010017Z test node_compat::test-runner::test-output-arbitrary-output.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(1134ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:30.1021820Z test node_compat::test-runner::test-output-suite-skip-hooks.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(398ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:30.3057908Z test node_compat::test-runner::test-output-coverage-width-100-uncovered-lines.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(205ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:30.4709932Z test node_compat::test-runner::test-output-assertion-color-tty.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(165ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:31.3154918Z test node_compat::test-runner::test-output-coverage-width-80-uncovered-lines.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(841ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:31.7098209Z test node_compat::test-runner::test-output-filtered-suite-throws.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(396ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:32.7012895Z test node_compat::test-runner::test-output-abort-runs-after-hook.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(990ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:33.0557290Z test node_compat::test-runner::test-output-coverage-with-mock.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(353ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:33.4061018Z test node_compat::test-runner::test-output-coverage-width-150-uncovered-lines.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(350ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:34.8617447Z test node_compat::test-runner::test-output-no-refs.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(1446ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:35.4650893Z test node_compat::test-runner::test-output-coverage-width-80.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(612ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:35.6703681Z test node_compat::test-runner::test-output-coverage-width-80-uncovered-lines-color.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(205ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:35.9996434Z test node_compat::test-runner::test-output-unfinished-suite-async-error.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(323ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:37.0204560Z test node_compat::test-runner::test-run-watch-cwd.mjs ... ^[[0m^[[1m^[[32mok^[[0m ^[[0m^[[38;5;245m(1026ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:47.1002514Z test node_compat::test-runner::test-output-test-timeout-flag.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10067ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:12:57.2534590Z test node_compat::test-runner::test-output-filtered-suite-order.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10146ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:13:08.4593016Z test node_compat::test-runner::test-output-coverage-with-mock-cjs.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10960ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:13:18.6066372Z test node_compat::test-runner::test-output-output.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10378ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:13:29.4407246Z test node_compat::test-runner::test-output-abort-hooks.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10705ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:13:40.2368804Z test node_compat::test-runner::test-output-coverage-width-100.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10664ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:13:51.4388949Z test node_compat::test-runner::test-run-watch-different-cwd-rename.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(11258ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:02.6235137Z test node_compat::test-runner::test-watch-run-repeatedly-isolation-none.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(11191ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:13.5369404Z test node_compat::test-runner::test-output-coverage-width-40.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10627ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:24.5211897Z test node_compat::test-runner::test-run-watch-rename.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(11087ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:35.2260058Z test node_compat::test-runner::test-output-test-runner-watch-spec.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(10931ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:36.7307106Z test node_compat::test-runner::test-output-async-test-scheduling.mjs ... ^[[0m^[[1m^[[31mfail^[[0m ^[[0m^[[38;5;245m(1506ms)^[[0m
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.5761518Z ##[error]Process completed with exit code 143.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.5763905Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.5997787Z ##[debug]Re-evaluate condition on job cancellation for step: 'Run tests'.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6000561Z ##[debug]Skip Re-evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6098896Z ##[debug]Finishing: Run tests
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6293941Z ##[debug]Evaluating condition for step: 'Gzip the report'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6298226Z ##[debug]Skip evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6453224Z ##[debug]Evaluating: vars.S3_ACCESS_KEY_ID
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6456223Z ##[debug]Evaluating Index:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6459022Z ##[debug]..Evaluating vars:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6466449Z ##[debug]..=> Object
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6468841Z ##[debug]..Evaluating String:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6471992Z ##[debug]..=> 'S3_ACCESS_KEY_ID'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6480120Z ##[debug]=> 'b92668e5b35d8ad74ea1a5a5007ffc2a'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6482617Z ##[debug]Result: 'b92668e5b35d8ad74ea1a5a5007ffc2a'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6491379Z ##[debug]Evaluating: secrets.S3_SECRET_ACCESS_KEY
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6494260Z ##[debug]Evaluating Index:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6496596Z ##[debug]..Evaluating secrets:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6496887Z ##[debug]..=> Object
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6499101Z ##[debug]..Evaluating String:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6501361Z ##[debug]..=> 'S3_SECRET_ACCESS_KEY'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6522283Z ##[debug]=> '***'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6524660Z ##[debug]Result: '***'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6527472Z ##[debug]Evaluating: vars.S3_ENDPOINT
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6529709Z ##[debug]Evaluating Index:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6531899Z ##[debug]..Evaluating vars:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6534069Z ##[debug]..=> Object
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6534342Z ##[debug]..Evaluating String:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6536585Z ##[debug]..=> 'S3_ENDPOINT'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6539068Z ##[debug]=> 'https://895762025d37fc687ecd72d7cc80204a.r2.cloudflarestorage.com'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6541340Z ##[debug]Result: 'https://895762025d37fc687ecd72d7cc80204a.r2.cloudflarestorage.com'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6546212Z ##[debug]Evaluating: vars.S3_REGION
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6548615Z ##[debug]Evaluating Index:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6550710Z ##[debug]..Evaluating vars:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6551007Z ##[debug]..=> Object
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6553027Z ##[debug]..Evaluating String:
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6555236Z ##[debug]..=> 'S3_REGION'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6557384Z ##[debug]=> 'auto'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6559610Z ##[debug]Result: 'auto'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6563692Z ##[debug]Evaluating condition for step: 'Upload the report to dl.deno.land'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6565970Z ##[debug]Skip evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6774774Z ##[debug]Evaluating condition for step: 'Post Install Python'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6777594Z ##[debug]Skip evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6794893Z ##[debug]Evaluating condition for step: 'Post Setup Deno'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6797471Z ##[debug]Skip evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6815507Z ##[debug]Evaluating condition for step: 'Post Checkout'
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.6818175Z ##[debug]Skip evaluate condition on runner shutdown.
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.7062495Z ##[debug]Starting: Complete job
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.7074737Z Cleaning up orphan processes
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.8878998Z ##[debug]Finishing: Complete job
+test (linux, ubuntu-latest, 2, 3, (3/3))	UNKNOWN STEP	2026-09-26T10:14:40.9006181Z ##[debug]Finishing: test (linux, ubuntu-latest, 2, 3, (3/3))

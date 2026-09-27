@@ -1,0 +1,233 @@
+pith · <log> · 32,921 lines → 21430 groups · ~1172.8k → ~4.0k tokens (99.7% smaller)
+
+jobs: PR - test-aarch64-gnu-llvm-21-1
+levels: error 84 · warn 20 · notable 74 · info 30,138 · debug 2
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: PR - test-aarch64-gnu-llvm-21-1
+L534      [c14e] 5344	./src/tools/rustfmt/tests/target
+L535      [6580] 5196	./src/tools/rust-analyzer/crates/parser
+L536      [1bcf] 4836	./src/tools/rust-analyzer/crates/parser/test_data
+L537    ✱ [8135] 4804	./src/tools/miri/tests/fail
+L538      [eede] 4668	./tests/rustdoc-html
+L539      [0e73] 4544	./src/librustdoc
+L540      [53ae] 4340	./tests/ui/suggestions
+   …
+L720      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×25, last L32798)
+L721      [4293] env: (×26, last L32799)
+          TOOLSTATE_REPO: https://github.com/rust-lang-nursery/rust-toolstate
+          TOOLSTATE_REPO_ACCESS_TOKEN:
+          CI_JOB_NAME: test-aarch64-gnu-llvm-21-1
+          (+13 lines)
+   …
+L739      [80ab] Attempting with retry: sh -c git submodule deinit -f  src/doc/nomicon src/tools/cargo src/doc/reference src/doc/book src/doc/rust-by-example src/doc/edition-guide src/llvm-project src/doc/embedded-book library/backtrace src/tools/rustc-perf src/tools/enzyme src/gcc &&     git submodule sync &&     g
+L740    ✱ [92cb] error: could not lock config file .git/modules/library/backtrace/config: No such file or directory
+L741      [8453] warning: Could not unset core.worktree setting in submodule 'library/backtrace'
+L742      [dd61] Cleared directory 'library/backtrace'
+L743    ✱ [ba40] error: could not lock config file .git/modules/src/doc/book/config: No such file or directory
+L744      [da15] Cleared directory 'src/doc/book'
+L745      [b7d3] warning: Could not unset core.worktree setting in submodule 'src/doc/book'
+L746    ✱ [70b6] error: could not lock config file .git/modules/src/doc/edition-guide/config: No such file or directory
+L747      [e491] Cleared directory 'src/doc/edition-guide'
+L748      [b055] warning: Could not unset core.worktree setting in submodule 'src/doc/edition-guide'
+L749    ✱ [53c9] error: could not lock config file .git/modules/src/doc/embedded-book/config: No such file or directory
+L750      [5a6b] warning: Could not unset core.worktree setting in submodule 'src/doc/embedded-book'
+L751      [1291] Cleared directory 'src/doc/embedded-book'
+L752    ✱ [045a] error: could not lock config file .git/modules/src/doc/nomicon/config: No such file or directory
+L753      [5ea1] Cleared directory 'src/doc/nomicon'
+L754      [f8db] warning: Could not unset core.worktree setting in submodule 'src/doc/nomicon'
+L755    ✱ [74be] error: could not lock config file .git/modules/src/doc/reference/config: No such file or directory
+L756      [aa3a5] warning: Could not unset core.worktree setting in submodule 'src/doc/reference'
+L757      [ea82] Cleared directory 'src/doc/reference'
+L758    ✱ [251a] error: could not lock config file .git/modules/src/doc/rust-by-example/config: No such file or directory
+L759      [9ffe] Cleared directory 'src/doc/rust-by-example'
+L760      [1d3d] warning: Could not unset core.worktree setting in submodule 'src/doc/rust-by-example'
+L761    ✱ [1f5a] error: could not lock config file .git/modules/src/gcc/config: No such file or directory
+L762      [54e3] warning: Could not unset core.worktree setting in submodule 'src/gcc'
+L763      [30e7] Cleared directory 'src/gcc'
+L764    ✱ [63dc] error: could not lock config file .git/modules/src/llvm-project/config: No such file or directory
+L765      [a329] warning: Could not unset core.worktree setting in submodule 'src/llvm-project'
+L766      [6503] Cleared directory 'src/llvm-project'
+L767    ✱ [e4d2] error: could not lock config file .git/modules/src/tools/cargo/config: No such file or directory
+L768      [a196] warning: Could not unset core.worktree setting in submodule 'src/tools/cargo'
+L769      [0b1f] Cleared directory 'src/tools/cargo'
+L770    ✱ [1e1b] error: could not lock config file .git/modules/src/tools/enzyme/config: No such file or directory
+L771      [5c8a] Cleared directory 'src/tools/enzyme'
+L772      [eb0b] warning: Could not unset core.worktree setting in submodule 'src/tools/enzyme'
+L773    ✱ [dbc6] error: could not lock config file .git/modules/src/tools/rustc-perf/config: No such file or directory
+L774      [1a58] Cleared directory 'src/tools/rustc-perf'
+L775      [6c2d] warning: Could not unset core.worktree setting in submodule 'src/tools/rustc-perf'
+L776      [4720] Submodule 'library/backtrace' (https://github.com/rust-lang/backtrace-rs.git) registered for path 'library/backtrace'
+   …
+L1627     [dff5] function hide_output {
+L1628     [9894] { set +x; } 2>/dev/null
+L1629     [25e8] on_err="
+L1630   ✱ [d790] echo ERROR: An error was encountered with the build.
+L1631     [78ee] cat /tmp/build.log
+L1632     [3133] exit 1 (×2, last L1673)
+L1633   ✱ [ad69] "
+          trap "$on_err" ERR
+          bash -c "while true; do sleep 30; echo \$(date) - building ...; done" &
+          PING_LOOP_PID=$!
+          "$@" &> /tmp/build.log
+          trap - ERR
+          kill $PING_LOOP_PID
+          set -x
+          }
+   …
+L1643     [6020] # See https://unix.stackexchange.com/questions/82598
+L1644     [564e] # Duplicated in src/ci/shared.sh
+L1645     [8432] function retry {
+          echo "Attempting with retry:" "$@"
+          local n=1
+          local max=5
+          (+13 lines)
+   …
+L1663     [8f8b] download_tar_and_extract_into_dir() {
+          local url="$1"
+          local sum="$2"
+          local dir="$3"
+          (+4 lines)
+   …
+L1672   ✱ [8601] printf 'ERROR: reading hash\n' >&2
+L1674     [de9d] fi (×10, last L1752)
+L1676     [b6b2] if [[ "$h" == "$sum" ]]; then
+          break
+   …
+L1698     [e723] set -ex (×3, last L1725)
+L1700     [0afd] # Run a subset of tests. Used to run tests in parallel in multiple jobs. (×2, last L1727)
+L1702     [6000] # NOTE: keep in sync with `aarch64-apple*-{1,2}` jobs. (×2, last L1729)
+L1704   ✱ [a633] # When this job partition is run as part of PR CI, skip tidy to allow revealing more failures. The (×2, last L1731)
+L1705   ✱ [f7ec] # dedicated `tidy` job failing won't block other PR CI jobs from completing, and so tidy failures (×2, last L1732)
+L1706   ✱ [3033] # shouldn't inhibit revealing other failures in PR CI jobs. (×2, last L1733)
+L1707     [4d35] if [ "$PR_CI_JOB" == "1" ]; then (×2, last L1734)
+          echo "PR_CI_JOB set; skipping tidy"
+          SKIP_TIDY="--skip tidy"
+L1712   ✱ [ed2d] # Skip intrinsic-test on LLVM 21 to avoid CI failures. (×2, last L1748)
+L1713     [4799] if [ "$LLVM_VERSION" = "21" ]; then (×2, last L1749)
+          echo "LLVM_VERSION is 21; skipping intrinsic-test"
+          SKIP_INTRINSICS="--skip intrinsic-test"
+L1718     [041f] ../x.py --stage 2 test \ (×2, last L1754)
+          ${SKIP_TIDY:+$SKIP_TIDY} \
+          ${SKIP_INTRINSICS:+$SKIP_INTRINSICS} \
+          --skip compiler \
+          (+1 lines)
+   …
+L2537     [98e6] [RUSTC-TIMING] proc_macro2 test:false 0.371 (×9, last L31084)
+L2538     [9537] [RUSTC-TIMING] memchr test:false 0.548 (×12, last L30959)
+          Compiling bitflags v2.10.0
+L2540     [4acd] [RUSTC-TIMING] smallvec test:false 0.136 (×10, last L30983)
+          Compiling find-msvc-tools v0.1.11
+   (+4 more lines here: `pith show <id>` or grep the raw file)
+   …
+L32034    [6bdb] test [pretty] tests/pretty/vec-comments.rs ... ok
+L32035    [6c95b] test [pretty] tests/pretty/where-clauses.rs ... ok
+L32036    [9097] test [pretty] tests/pretty/yeet-expr.rs ... ok
+L32038  ✱ [e85e] failures: (×2, last L32779)
+L32040    [098d7] ---- [pretty] tests/pretty/autodiff/autodiff_forward.rs stdout ----
+L32042  ✱ [0b115] error: pretty-printed source does not match expected source (×2, last L32473)
+L32043    [f16c] expected: (×2, last L32474)
+L32045    [e272] #![feature(prelude_import)] (×6, last L32726)
+   …
+L32467  ✱ [5388] thread '[pretty] tests/pretty/autodiff/autodiff_forward.rs' panicked at src/tools/compiletest/src/runtest.rs:456:18:
+L32468  ✱ [21fd] fatal error (×2, last L32665)
+L32469    [04675] note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace (×2, last L32666)
+L32470    [dcd1] ---- [pretty] tests/pretty/autodiff/autodiff_forward.rs stdout end ----
+L32471    [f7cd] ---- [pretty] tests/pretty/autodiff/autodiff_reverse.rs stdout ----
+   …
+L32664  ✱ [fb7b] thread '[pretty] tests/pretty/autodiff/autodiff_reverse.rs' panicked at src/tools/compiletest/src/runtest.rs:456:18:
+L32665  ✱ [21fd] fatal error
+L32667    [ad7e] ---- [pretty] tests/pretty/autodiff/autodiff_reverse.rs stdout end ----
+   …
+L32707    [b39c] ------rustc stderr------------------------------
+L32708  ✱ [5d4c] error[E0433]: cannot find module or crate `df` in this scope (×2, last L32764)
+L32709  ✱ [453c] ##[error]  --> /checkout/tests/pretty/autodiff/inherent_impl.rs:20:5 (×2, last L32765)
+          |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `df`
+          = help: you might be missing a crate named `df`
+   …
+L32716  ✱ [a6e4] error: aborting due to 1 previous error (×2, last L32772)
+L32718  ✱ [69eb] For more information about this error, try `rustc --explain E0433`. (×2, last L32774)
+L32722  ✱ [8988] error: pretty-printing failed in round 0 revision None
+L32723    [137e] status: exit status: 1
+L32724    [a5d3] command: RUSTC_ICE="0" RUST_BACKTRACE="short" "/checkout/obj/build/aarch64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/tests/pretty/autodiff/inherent_impl.rs" "-Z" "unpretty=expanded" "-Zunstable-options" "--target" "aarch64-unknown-linux-gnu" "-L" "/checkout/obj/build/aarch64-unknown-linux-gnu/t
+L32725    [6797] --- stdout -------------------------------
+   …
+L32762    [761fc] ------------------------------------------ (×13, last L32775)
+L32763    [6711] --- stderr -------------------------------
+L32764  ✱ [5d4c] error[E0433]: cannot find module or crate `df` in this scope
+L32765  ✱ [453c] ##[error]  --> /checkout/tests/pretty/autodiff/inherent_impl.rs:20:5
+          |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `df`
+          = help: you might be missing a crate named `df`
+   …
+L32772  ✱ [a6e4] error: aborting due to 1 previous error
+L32774  ✱ [69eb] For more information about this error, try `rustc --explain E0433`.
+L32777    [56946] ---- [pretty] tests/pretty/autodiff/inherent_impl.rs stdout end ----
+L32779  ✱ [e85e] failures:
+          [pretty] tests/pretty/autodiff/autodiff_forward.rs
+          [pretty] tests/pretty/autodiff/autodiff_reverse.rs
+          [pretty] tests/pretty/autodiff/inherent_impl.rs
+   …
+L32784  ✱ [565e] test result: FAILED. 108 passed; 3 failed; 4 ignored; 0 measured; 0 filtered out; finished in 1.46s
+L32786  ✱ [de80] Some tests failed in compiletest suite=pretty mode=pretty host=aarch64-unknown-linux-gnu target=aarch64-unknown-linux-gnu
+L32787  ✱ [82ae3] Bootstrap failed while executing `--stage 2 test --skip tidy --skip intrinsic-test --skip compiler --skip src`
+L32788    [d8896] Currently active steps:
+L32789    [fbf55] test::Pretty { test_compiler: Compiler { stage: 2, host: aarch64-unknown-linux-gnu, forced_compiler: false }, target: aarch64-unknown-linux-gnu } at src/bootstrap/src/core/build_steps/test.rs:2016
+L32790    [1219] test::Compiletest { test_compiler: Compiler { stage: 2, host: aarch64-unknown-linux-gnu, forced_compiler: false }, target: aarch64-unknown-linux-gnu, mode: pretty, suite: "pretty", path: "tests/pretty", compare_mode: None } at src/bootstrap/src/core/build_steps/test.rs:2016
+L32791    [a3ba7] Build completed unsuccessfully in 0:36:03
+          local time: Sat Sep 26 22:17:13 UTC 2026
+          network time: Sat, 26 Sep 2026 22:17:13 GMT
+L32794  ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L2542   ERRO [4652] [RUSTC-TIMING] find_msvc_tools test:false 0.113
+L2566   ERRO [d100] [RUSTC-TIMING] build_script_build test:false 0.161
+L2627   ERRO [c251] [RUSTC-TIMING] thiserror test:false 0.026 (×7, last L4505)
+L2890   ERRO [1d7b] [RUSTC-TIMING] rustc_fs_util test:false 0.049
+L2896   ERRO [7c95] [RUSTC-TIMING] serde_path_to_error test:false 0.380 (×2, last L3899)
+L3377   ERRO [8757] ▶ Building stage1 llvm-bitcode-linker (stage0 -> stage1, aarch64-unknown-linux-gnu)
+L3400   ERRO [0232] [RUSTC-TIMING] heck test:false 0.104
+L3425   ERRO [2046] [RUSTC-TIMING] syn test:false 2.643 (×2, last L4375)
+L3543   ERRO [aede] [RUSTC-TIMING] memchr test:false 1.381
+L3614   ERRO [c708] [RUSTC-TIMING] hashbrown test:false 1.322
+L3893   ERRO [fe14] [RUSTC-TIMING] wasmparser test:false 7.817
+L4344   ERRO [e4e2] [RUSTC-TIMING] anstream test:false 0.736
+L5015   ERRO [4451] test [ui] tests/ui/asm/const-error.rs ... ignored, only executed when the architecture is x86_64
+L7192   ERRO [5c08] test [ui] tests/ui/borrowck/move-error-snippets-ext.rs ... ignored, ignored used by another main test file ((used by `./move-error-snippets.rs`))
+L8094   ERRO [7d68] test [ui] tests/ui/codegen/duplicated-path-in-error.rs#musl ... ignored, only executed when the target environment is musl
+L15598  ERRO [5f32] test [ui] tests/ui/linkage-attr/raw-dylib/windows/dlltool-failed.rs ... ignored, ignored when dlltool for the current architecture is not present
+L17666  ERRO [2c27] test [ui] tests/ui/move-expr/name-resolution.rs ... ignored, ignored always ((#155050): currently ICEs instead of reporting a name-resolution error)
+L18396  ERRO [a54e] test [ui] tests/ui/offload/check_config.rs#fail ... ignored, ignored when LLVM Offload is disabled or LLVM is not the default codegen backend
+L20472  ERRO [65cf] test [ui] tests/ui/proc-macro/module.rs ... ignored, ignored used by another main test file ((used by `./attributes-on-modules-fail.rs` and `modules-in-input.rs`))
+L20493  ERRO [1acd] test [ui] tests/ui/proc-macro/outer/inner.rs ... ignored, ignored used by another main test file ((used by `../attributes-on-modules-fail.rs`))
+
+== END OF OUTPUT
+L32795    [666e] ▶ Run echo "disk usage:"
+L32796    [a39d9] echo "disk usage:"
+L32797    [b6c7] df -h
+L32798    [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+L32799    [4293] env:
+L32817    [b054] disk usage:
+L32818    [c6b5] Filesystem      Size  Used Avail Use% Mounted on
+L32819    [3fe3] /dev/root       145G   53G   92G  37% /
+L32820    [e469] tmpfs           7.8G  100K  7.8G   1% /dev/shm
+L32821    [4b3d6] tmpfs           3.2G  1.1M  3.2G   1% /run
+L32822    [d93b] tmpfs           5.0M     0  5.0M   0% /run/lock
+L32823    [922f] efivarfs        128M   13K  128M   1% /sys/firmware/efi/efivars
+L32824    [afc6] /dev/sda16      891M   63M  766M   8% /boot
+L32825    [6516] /dev/sda15       98M  6.4M   92M   7% /boot/efi
+L32826    [174d] tmpfs           1.6G   16K  1.6G   1% /run/user/1001
+
+== MOST FREQUENT OTHER LINES
+×219     [33148] test [ui] tests/ui/error-codes/E0001.rs ... ok
+×182     [5b5d] test [crashes] tests/crashes/101036.rs ... ok
+×174     [db87] test [ui] tests/ui/borrowck/accidentally-cloning-ref-borrow-error.rs ... ok
+×135     [6218] test [ui] tests/ui/associated-types/ambiguous-associated-type-default.rs ... ok
+×133     [a5ad] [RUSTC-TIMING] build_script_build test:false 0.140
+×124     [f376] test [ui] tests/ui/suggestions/adt-param-with-implicit-sized-bound.rs ... ok
+×116     [22d34] test [ui] tests/ui/parser/issues/issue-101540.rs ... ok
+×103     [c242] test [ui] tests/ui/regions/better-blame-constraint-for-outlives-static.rs ... ok
+×101     [25e3] test [ui] tests/ui/feature-gates/feature-gate-abi-msp430-interrupt.rs ... ok
+×82      [3649] test [ui] tests/ui/traits/ambiguous-where-bounds-differ-by-lifetime.rs ... ok
+
+(not shown: 21224 groups, 28,572 lines - including 9 error groups, 11 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

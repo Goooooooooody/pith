@@ -1,0 +1,54 @@
+pith · <log> · 251 lines → 164 groups · ~9.4k → ~874 tokens (90.7% smaller)
+
+jobs: Check spelling of all files with codespell
+levels: error 2 · warn 2 · info 196
+raw: <removed for evaluation>
+jev (jev-latest): hid 142/164 groups as confident noise · 1 requests · 1,475 tokens · $0.0001 · 0.4s
+most likely root cause: [fa98] rc=0.80 (confidence 0.78, cause visible p=0.75)
+
+== LIKELY ROOT CAUSE (jev rc=0.80)
+[fa98] ERROR ×2  act=0.30 val=2.5/4 rc=0.80  L216 … L217  job: Check spelling of all files with codespell
+  ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:360: currrent ==> current
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Check spelling of all files with codespell
+L199      [dcd5] ▶ Run codespell-project/actions-codespell@v2
+   …
+L204      [3173] Running codespell on '' with the following options...
+L205      [2d8c] Builtin dictionaries ''
+L206      [96a5] Check filenames? ''
+L207      [672a] Check hidden? ''
+L208      [6137] Config ''
+L209      [187a] Exclude file ''
+L210      [63b6] Ignore words file ''
+L211      [df10] Ignore words list ''
+L212      [338d] Ignore URI words list ''
+L213      [728f] Skipping './.git'
+L214      [fe27] Resulting CLI options  --skip ./.git
+L215      [d01c] 2
+L216    ✱ [fa98] ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:360: currrent ==> current (×2, last L217)
+L217    ✱ [fa98] ##[error]./spec/rubocop/cop/lint/name_typo_spec.rb:361: currrent ==> current
+
+== OTHER ERRORS & WARNINGS
+L91     WARN [4a34] #8 5.309 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable
+
+== END OF OUTPUT
+L126      [ae83] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rubocop/rubocop
+L127      [4d69] Deleting the contents of '/home/runner/work/rubocop/rubocop'
+L131      [fa8a] [command]/usr/bin/git init /home/runner/work/rubocop/rubocop
+L149      [d0dc] [command]/usr/bin/git config --local gc.auto 0
+L151      [93e5] ▶ Setting up auth
+L152      [8399] Removing SSH command configuration
+L153      [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+L154      [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+L155      [66c6] Removing HTTP extra header
+L156      [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+L157      [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://git
+L158      [5c50] Removing includeIf entries pointing to credentials config files
+L180      [daee] You are in 'detached HEAD' state. You can look around, make experimental
+L200      [8d65] with:
+L218      [ca1a] Codespell found one or more problems
+
+== MOST FREQUENT OTHER LINES
+×1       [a7d7] Check spelling of all files with codespell	UNKNOWN STEP	﻿2026-09-16T12:43:47.1907197Z Current runner version: '2.337.0'
+×1       [0cc7] Working directory is '/home/runner/work/rubocop/rubocop'

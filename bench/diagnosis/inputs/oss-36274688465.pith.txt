@@ -1,0 +1,196 @@
+pith · <log> · 5,300 lines → 1753 groups · ~270.4k → ~3.9k tokens (98.6% smaller)
+
+jobs: Windows (free-threading) / Build and test (x64, switch-case); All required checks pass
+levels: error 94 · notable 28 · info 2,461
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Windows (free-threading) / Build and test (x64, switch-case)
+L247      [2804] D:\a\cpython\cpython>"C:\Program Files\Microsoft Visual Studio\18\Enterprise\MSBuild\Current\Bin\msbuild.exe" "D:\a\cpython\cpython\PCbuild\pcbuild.proj" /t:Build /m /v:n /p:Configuration=Debug /p:Platform=x64 /p:IncludeExternals=true /p:IncludeCTypes=true /p:IncludeSSL=true /p:IncludeTkinter=true /
+L248      [2594] MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+L249      [9748] Build started 9/26/2026 9:58:30 PM.
+          1>Project "D:\a\cpython\cpython\PCbuild\pcbuild.proj" on node 1 (Build target(s)).
+          1>Project "D:\a\cpython\cpython\PCbuild\pcbuild.proj" (1) is building "D:\a\cpython\cpython\PCbuild\_freeze_module.vcxproj" (2) on node 1 (Build target(s)).
+          2>PrepareForBuild:
+          (+1 lines)
+   ...
+L255    ✱ [0f5f] Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details. (×46, last L3073)
+L256      [cd47] Creating directory "D:\a\cpython\cpython\PCbuild\win32t\".
+L257      [6439] Creating directory "D:\a\cpython\cpython\PCbuild\obj\316win32t_Debug\_freeze_module\_freeze_module.tlog\".
+L258      [5688] InitializeBuildStatus: (×43, last L3075)
+          Creating "D:\a\cpython\cpython\PCbuild\obj\316win32t_Debug\_freeze_module\_freeze_module.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "D:\a\cpython\cpython\PCbuild\obj\316win32t_Debug\_freeze_module\_freeze_module.tlog\unsuccessfulbuild".
+   ...
+L3091     [75f7] FinalizeBuildStatus: (×19, last L3091)
+          Deleting file "D:\a\cpython\cpython\PCbuild\obj\316amd64t_Debug\pythonw\pythonw.tlog\unsuccessfulbuild".
+          Touching "D:\a\cpython\cpython\PCbuild\obj\316amd64t_Debug\pythonw\pythonw.tlog\pythonw.lastbuildstate".
+L3094     [9b76] 47>Done Building Project "D:\a\cpython\cpython\PCbuild\pythonw.vcxproj" (Build target(s)).
+          1>Done Building Project "D:\a\cpython\cpython\PCbuild\pcbuild.proj" (Build target(s)).
+L3097     [83f4] Build succeeded.
+          0 Warning(s)
+L3099   ✱ [254a] 0 Error(s)
+L3101     [cf81] Time Elapsed 00:02:07.03
+L3102     [c4bf] ▶ Run .\\python.bat -m test.pythoninfo
+L3103     [d70e] .\\python.bat -m test.pythoninfo
+   ...
+L3387     [61e1] ▶ Run .\\PCbuild\\rt.bat -p "${ARCH}" -q --fast-ci -d --disable-gil
+L3389     [20d6] shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0} (×2, last L3389)
+   ...
+L3395     [7cb3] D:\a\cpython\cpython>"D:\a\cpython\cpython\PCbuild\amd64t\python_d.exe"  -m test --fast-ci --fast-ci
+L3396   ✱ [3d05] + 'D:\a\cpython\cpython\PCbuild\amd64t\python_d.exe' -u -W error -bb -E -m test --fast-ci --fast-ci --dont-add-python-opts
+L3397     [2167] == CPython 3.16.0a0 free-threading build (remotes/pull/158253/merge:13a5248, Sep 26 2026, 21:59:53) [MSC v.1951 64 bit (AMD64)]
+   (+2 more lines here: `pith show <id>` or grep the raw file)
+   ...
+L3643     [1a54] test_semaphore (test.test_multiprocessing_spawn.test_manager.WithManagerTestSemaphore.test_semaphore) ... ok
+L3644     [e5d0] test_timeout (test.test_multiprocessing_spawn.test_manager.WithManagerTestSemaphore.test_timeout) ... skipped 'test not appropriate for manager'
+L3646     [ee29] ====================================================================== (×2, last L3796)
+L3647   ✱ [6460] FAIL: test_default_timeout (test.test_multiprocessing_spawn.test_manager.WithManagerTestBarrier.test_default_timeout)
+L3648     [e4ed] Test the barrier's default timeout
+L3649     [af66] ---------------------------------------------------------------------- (×9, last L4952)
+L3650   ✱ [f8e5] Traceback (most recent call last): (×6, last L4607)
+          File "D:\a\cpython\cpython\Lib\contextlib.py", line 116, in inner
+          File "D:\a\cpython\cpython\Lib\test\_test_multiprocessing.py", line 2479, in test_default_timeout
+   ...
+L3656   ✱ [62af] AssertionError: 0 != 5 (×2, last L3806)
+L3659     [00ce] Ran 91 tests in 163.716s (×6, last L4953)
+L3661   ✱ [deed] FAILED (failures=1, skipped=19) (×2, last L3811)
+L3662   ✱ [aef2] test test.test_multiprocessing_spawn.test_manager failed
+L3663     [7b18] 0:06:28 load avg: 17.20 mem: 490.7 MiB running (6): test_tarfile (3 min 11 sec), test_profiling (54.9 sec), test.test_multiprocessing_spawn.test_processes (3 min 24 sec), test_json (32.3 sec), test.test_multiprocessing_spawn.test_threads (1 min 24 sec), test_free_threading (2 min 27 sec)
+L3664     [86e9] 0:06:47 load avg: 15.33 mem: 361.3 MiB [123/502/1] test_tarfile passed (3 min 30 sec) -- running (5): test_profiling (1 min 13 sec), test.test_multiprocessing_spawn.test_processes (3 min 43 sec), test_json (51.3 sec), test.test_multiprocessing_spawn.test_threads (1 min 43 sec), test_free_threading (
+L3665   ✱ [b4c2] 0:07:12 load avg: 13.50 mem: 767.7 MiB [124/502/2] test.test_multiprocessing_spawn.test_threads failed (1 failure) (2 min 8 sec) -- running (4): test_profiling (1 min 38 sec), test.test_multiprocessing_spawn.test_processes (4 min 8 sec), test_json (1 min 16 sec), test_free_threading (3 min 11 sec)
+L3666     [2060] test_abort (test.test_multiprocessing_spawn.test_threads.WithThreadsTestBarrier.test_abort)
+L3667     [2270] Test that an abort will put the barrier in a broken state ... ok (×2, last L3667)
+L3668     [020a] test_abort_and_reset (test.test_multiprocessing_spawn.test_threads.WithThreadsTestBarrier.test_abort_and_reset)
+   ...
+L3793     [8869] test_semaphore (test.test_multiprocessing_spawn.test_threads.WithThreadsTestSemaphore.test_semaphore) ... ok
+L3794     [3a60] test_timeout (test.test_multiprocessing_spawn.test_threads.WithThreadsTestSemaphore.test_timeout) ... skipped 'test not appropriate for threads' (×2, last L4566)
+L3797   ✱ [1b46] FAIL: test_timeout (test.test_multiprocessing_spawn.test_threads.WithThreadsTestBarrier.test_timeout)
+L3798     [f4bf] Test wait(timeout)
+L3800   ✱ [f8e5] Traceback (most recent call last):
+          File "D:\a\cpython\cpython\Lib\contextlib.py", line 116, in inner
+          (+1 frames hidden)
+   ...
+L3811   ✱ [deed] FAILED (failures=1, skipped=32)
+L3812   ✱ [005a] test test.test_multiprocessing_spawn.test_threads failed
+L3813     [cb31] 0:07:14 load avg: 13.35 mem: 852.7 MiB [125/502/2] test_json passed (1 min 17 sec) -- running (3): test_profiling (1 min 40 sec), test.test_multiprocessing_spawn.test_processes (4 min 9 sec), test_free_threading (3 min 12 sec)
+L3814     [72c7] 0:07:14 load avg: 13.35 mem: 836.6 MiB [126/502/2] test_pty skipped -- running (3): test_profiling (1 min 41 sec), test.test_multiprocessing_spawn.test_processes (4 min 10 sec), test_free_threading (3 min 13 sec)
+L3815     [3606] test_pty skipped -- No module named 'termios'
+   ...
+L4335     [9b15] 0:22:31 load avg: 7.66 mem: 246.8 MiB [422/502/3] test_keywordonlyarg passed -- running (2): test_traceback (1 min 7 sec), test_compileall (59.8 sec)
+L4336     [613e] 0:22:32 load avg: 7.78 mem: 212.2 MiB [423/502/3] test_dbm_ndbm skipped -- running (2): test_traceback (1 min 8 sec), test_compileall (1 min)
+L4337     [e339] test_dbm_ndbm skipped -- No module named '_dbm'
+L4338   ✱ [f972] 0:22:48 load avg: 8.13 mem: 359.2 MiB [424/502/4] test.test_asyncio.test_sslproto failed (env changed) -- running (2): test_traceback (1 min 24 sec), test_compileall (1 min 16 sec)
+L4339     [86df] test_buf_feed_data (test.test_asyncio.test_sslproto.ProactorStartTLSTests.test_buf_feed_data) ... ok (×2, last L4583)
+L4340     [a983] test_create_connection_memory_leak (test.test_asyncio.test_sslproto.ProactorStartTLSTests.test_create_connection_memory_leak) ... ok (×16, last L4628)
+L4344     [d584] test_handshake_timeout (test.test_asyncio.test_sslproto.ProactorStartTLSTests.test_handshake_timeout) ... ok (×2, last L4588)
+L4345   ✱ [7d30] test_shutdown_corrupted_ssl_sends_close_notify (test.test_asyncio.test_sslproto.ProactorStartTLSTests.test_shutdown_corrupted_ssl_sends_close_notify) ... Warning -- Uncaught thread exception: AssertionError (×2, last L4589)
+L4346     [2417] Exception in thread test-server: (×2, last L4590)
+L4347   ✱ [f8e5] Traceback (most recent call last):
+          File "D:\a\cpython\cpython\Lib\test\test_asyncio\functional.py", line 255, in _run
+          (+3 frames hidden)
+   ...
+L4359   ✱ [6bf4] ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine (×2, last L4603)
+L4361     [874f] During handling of the above exception, another exception occurred: (×2, last L4605)
+L4363   ✱ [f8e5] Traceback (most recent call last):
+          File "D:\a\cpython\cpython\Lib\threading.py", line 1218, in _bootstrap_inner
+          (+4 frames hidden)
+   ...
+L5005     [b0fb] 451 tests OK. (×2, last L5005)
+L5007     [3673] Total duration: 29 min 23 sec
+L5008   ✱ [0e7b] Total tests: run=53,085 failures=2 skipped=3,694
+L5009     [5f8a] Total test files: run=503/502 env_changed=1 skipped=47 resource_denied=3 rerun=4
+L5010   ✱ [fd8b] Result: FAILURE then ENV CHANGED
+L5011   ✱ [eead] ##[error]Process completed with exit code 3. (×2, last L5298)
+-- job: All required checks pass
+L5038     [94cd] ▶ Runner Image Provisioner (×2, last L5038)
+   ...
+L5166     [0b62] ▶ Run python -m normalize_needed_jobs_status \
+   ...
+L5268     [92f5] )"
+L5269     [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+L5270     [4293] env: (×7, last L5270)
+          FORCE_COLOR: 1
+          PYTHONPATH: /home/runner/work/_actions/re-actors/alls-green/05ac9388f0aebcb5727afa17fcccfecd6f8ec5fe/src
+   ...
+L5274   ✱ [eb77] # ❌ Some of the required to succeed jobs failed 😢😢😢
+L5276   ✱ [0b6f] 🛈 All of the allowed to fail dependency jobs succeeded.
+L5277     [3f91] 🛈 Some of the allowed to be skipped jobs did not succeed.
+L5278     [e697] 📝 Job statuses:
+L5279     [e84a] 📝 build-context → ✓ success [required to succeed]
+L5281     [b7d0] 📝 check-autoconf-regen → ✓ success [required to succeed]
+L5282     [d84c] 📝 check-generated-files → ✓ success [required to succeed]
+L5283     [50850] 📝 check-c-api-docs → ✓ success [required to succeed]
+L5284   ✱ [a425] 📝 build-windows → ❌ failure [required to succeed]
+L5285     [ea71] 📝 build-macos → ✓ success [required to succeed]
+L5286     [bf4e8] 📝 build-ubuntu → ✓ success [required to succeed]
+L5287     [dac6] 📝 build-ubuntu-installed → ✓ success [required to succeed]
+L5288   ✱ [0e46] 📝 build-ubuntu-ssltests → ✓ success [allowed to fail]
+L5289     [1222] 📝 build-ios → ✓ success [required to succeed]
+L5290   ✱ [213d] 📝 build-emscripten → ✓ success [allowed to fail]
+L5291     [d13b] 📝 build-wasi → ✓ success [required to succeed]
+L5292   ✱ [8127] 📝 test-hypothesis → ✓ success [allowed to fail]
+L5293     [1f6e] 📝 test-lazy-imports-all → ✓ success [required to succeed]
+L5294     [cce9] 📝 build-asan → ✓ success [required to succeed]
+L5295     [7cae] 📝 build-san → ✓ success [required to succeed]
+L5296     [dddc] 📝 cross-build-linux → ✓ success [required to succeed]
+L5297   ✱ [bba8] 📝 cifuzz → ✓ success [allowed to fail]
+L5298   ✱ [eead] ##[error]Process completed with exit code 1.
+L5037     [6da9] All required checks pass	UNKNOWN STEP	﻿2026-09-26T22:30:18.4349937Z Current runner version: '2.337.0'
+   ...
+L5103     [242c] All required checks pass	UNKNOWN STEP	    "outputs": {} (×18, last L5159)
+L5104     [64fb] All required checks pass	UNKNOWN STEP	  }, (×18, last L5156)
+L5105     [96ab] All required checks pass	UNKNOWN STEP	  "build-windows": {
+L5106   ✱ [d0a1] All required checks pass	UNKNOWN STEP	    "result": "failure",
+L5109     [4bf8] All required checks pass	UNKNOWN STEP	  "build-macos": {
+
+== OTHER ERRORS & WARNINGS
+L3461   ERRO [fee5] 0:01:23 load avg: 6.71 mem: 317.8 MiB [ 50/502] test_baseexception passed
+L3540   ERRO [9bfa] 0:05:56 load avg: 16.71 mem: 428.2 MiB [122/502/1] test.test_multiprocessing_spawn.test_manager failed (1 failure) (2 min 45 sec) -- running (4): test_tarfile (2 min 39 sec), test.
+L3552   ERRO [1ab4] Test the barrier's default timeout ... FAIL
+L3683   ERRO [1ff9] Test wait(timeout) ... FAIL
+L3939   ERRO [f2e4] 0:14:04 load avg: 13.38 mem: 296.6 MiB [242/502/3] test_free_threading worker non-zero exit code (Exit code 1) -- running (4): test_regrtest (4 min 37 sec), test_logging (1 min 5 s
+L4378   ERRO [9017] AssertionError: [WinError 10053] An established connection was aborted by the software in your host machine (×2, last L4622)
+L4509   ERRO [e12c] == Tests result: FAILURE ==
+L4548   ERRO [1a29] 1 test altered the execution environment (env changed): (×2, last L4996)
+L4552   ERRO [4b88] 3 tests failed:
+L4558   ERRO [0ce8] 0:27:22 load avg: 1.33 Re-running 4 failed tests in verbose mode in subprocesses
+L4581   ERRO [19ed] 0:27:33 load avg: 1.50 mem: 88.1 MiB [3/4/1] test.test_asyncio.test_sslproto failed (env changed)
+L4957   ERRO [549d] == Tests result: FAILURE then ENV CHANGED ==
+L3121   NOTA [3fc0] build.Py_TRACE_REFS: No (sys.getobjects() missing)
+L3406   NOTA [8628] 0:00:00 mem: 45.7 MiB Run 502 tests in parallel using 6 worker processes (timeout: 10 min, worker timeout: 15 min)
+L3420   NOTA [804b] 0:00:15 load avg: 6.48 mem: 251.6 MiB [ 13/502] test_zipfile64 skipped (resource denied)
+L3509   NOTA [6665] 0:02:51 load avg: 6.02 mem: 318.1 MiB [ 93/502] test_timeout passed -- running (3): test_tools (50.1 sec), test_userstring (33.2 sec), test_ssl (31.4 sec)
+L3551   NOTA [ff2e] test_default_timeout (test.test_multiprocessing_spawn.test_manager.WithManagerTestBarrier.test_default_timeout) (×2, last L4574)
+L3557   NOTA [89c9] test_timeout (test.test_multiprocessing_spawn.test_manager.WithManagerTestBarrier.test_timeout)
+L3676   NOTA [ea7e] test_default_timeout (test.test_multiprocessing_spawn.test_threads.WithThreadsTestBarrier.test_default_timeout)
+
+== END OF OUTPUT
+L5214     [8542] "build-macos": {
+L5218     [bbeb] "build-ubuntu": {
+L5222     [133c] "build-ubuntu-installed": {
+L5226     [abec] "build-ubuntu-ssltests": {
+L5230     [5d59] "build-ios": {
+L5234     [5e30] "build-emscripten": {
+L5238     [dccb] "build-wasi": {
+L5242     [5f34] "test-hypothesis": {
+L5246     [baf8] "test-lazy-imports-all": {
+L5250     [83cc] "build-asan": {
+L5254     [2597] "build-san": {
+L5258     [ea65] "cross-build-linux": {
+L5262     [2ca7] "cifuzz": {
+L5267     [9c3d] EOM
+L5280     [259c] 📝 check-docs → ✓ success [required to succeed]
+
+== MOST FREQUENT OTHER LINES
+×61      [1f25] Updating files:  40% (2616/6422)
+×53      [00f7] 21>Link:
+×48      [3bc6] 22>ClCompile:
+×45      [7384] 5>PrepareForBuild:
+×35      [71d8] ClCompile:
+×25      [0f9e] 21>ResourceCompile:
+×18      [97d5] Link:
+×18      [cff3] test_create_connection_memory_leak (test.test_asyncio.test_sslproto.SelectorStartTLSTests.test_create_connection_memory_leak) ... ok
+×18      [e449] All required checks pass	UNKNOWN STEP	    "result": "success",
+×17      [2fd0] ResourceCompile:
+
+(not shown: 1613 groups, 1,916 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

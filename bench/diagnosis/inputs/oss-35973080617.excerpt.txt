@@ -1,0 +1,273 @@
+Devcontainer smoke test	UNKNOWN STEP	﻿2026-09-24T08:04:06.7964815Z Current runner version: '2.337.0'
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7987167Z ##[group]Runner Image Provisioner
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7988177Z Hosted Compute Agent
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7988748Z Version: 20260828.587
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7989276Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7989899Z Build Date: 2026-08-28T16:44:25Z
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7990484Z Worker ID: {9b81a2a6-3c36-4b1a-b182-8725e9b291f6}
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7991101Z Azure Region: westus3
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7991660Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7992832Z ##[group]Operating System
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7993373Z Ubuntu
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7993816Z 24.04.5
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7994278Z LTS
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7994738Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7995193Z ##[group]Runner Image
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7995686Z Image: ubuntu-24.04
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7996202Z Version: 20260907.300.1
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7997251Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7998747Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.7999516Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8000596Z ##[group]GITHUB_TOKEN Permissions
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8002124Z Contents: read
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8002730Z Metadata: read
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8003191Z Packages: write
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8003690Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8005422Z Secret source: Actions
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8006210Z Cache mode: write
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8006824Z Prepare workflow directory
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8275859Z Prepare all required actions
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:06.8316421Z Getting action download info
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:07.2020655Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:07.3129294Z Download action repository 'docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772' (SHA:74a5d142397b4f367a81961eba4e8cd7edddf772)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:08.3729250Z Download action repository 'ruby/setup-ruby@v1' (SHA:762794c140bbeda0f1224786aa33b4b46783a6c1)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.0133271Z Download action repository 'devcontainers/ci@8bf61b26e9c3a98f69cb6ce2f88d24ff59b785c6' (SHA:8bf61b26e9c3a98f69cb6ce2f88d24ff59b785c6)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.6979235Z Complete job name: Devcontainer smoke test
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7640666Z ##[group]Run actions/checkout@v4
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7641127Z with:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7641312Z   repository: rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7643489Z   token: ***
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7643681Z   ssh-strict: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7643860Z   ssh-user: git
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7644047Z   persist-credentials: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7644261Z   clean: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7644450Z   sparse-checkout-cone-mode: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7644749Z   fetch-depth: 1
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7645023Z   fetch-tags: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7645283Z   show-progress: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7645553Z   lfs: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7645796Z   submodules: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7646072Z   set-safe-directory: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7646418Z   allow-unsafe-pr-checkout: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.7647056Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8497965Z Syncing repository: rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8499735Z ##[group]Getting Git version info
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8500376Z Working directory is '/home/runner/work/rails/rails'
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8501102Z [command]/usr/bin/git version
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8563072Z git version 2.55.0
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8579424Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8592865Z Temporarily overriding HOME='/home/runner/work/_temp/b7cd4182-9c18-4854-b3df-08426ce47d83' before making global git config changes
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8594095Z Adding repository directory to the temporary git global config as a safe directory
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8597764Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8641221Z Deleting the contents of '/home/runner/work/rails/rails'
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8645522Z ##[group]Initializing the repository
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8648974Z [command]/usr/bin/git init /home/runner/work/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8719177Z hint: Using 'master' as the name for the initial branch. This default branch name
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8720215Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8721013Z hint: to use in all of your new repositories, which will suppress this warning,
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8721497Z hint: call:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8721777Z hint:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8722266Z hint: 	git config --global init.defaultBranch <name>
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8722851Z hint:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8723357Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8724190Z hint: 'development'. The just-created branch can be renamed via this command:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8724875Z hint:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8725286Z hint: 	git branch -m <name>
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8725731Z hint:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8726347Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8727385Z Initialized empty Git repository in /home/runner/work/rails/rails/.git/
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8732134Z [command]/usr/bin/git remote add origin https://github.com/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8770902Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8771476Z ##[group]Disabling automatic garbage collection
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8775345Z [command]/usr/bin/git config --local gc.auto 0
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8808443Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8809362Z ##[group]Setting up auth
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8813573Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.8843734Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9109684Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9135723Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9322130Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9349362Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9534481Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9564033Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9571576Z ##[group]Fetching the repository
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:09.9572652Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +95e9ac398b53afb7ab59d99669733497b9762762:refs/remotes/origin/8-0-stable
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0326012Z From https://github.com/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0326491Z  * [new ref]         95e9ac398b53afb7ab59d99669733497b9762762 -> origin/8-0-stable
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0329564Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0330079Z ##[group]Determining the checkout info
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0331653Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0337467Z [command]/usr/bin/git sparse-checkout disable
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0387034Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0403301Z ##[group]Checking out the ref
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.0427796Z [command]/usr/bin/git checkout --progress --force -B 8-0-stable refs/remotes/origin/8-0-stable
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.2795324Z Switched to a new branch '8-0-stable'
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.2798168Z branch '8-0-stable' set up to track 'origin/8-0-stable'.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.2807140Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.2846186Z [command]/usr/bin/git log -1 --format=%H
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.2866304Z 95e9ac398b53afb7ab59d99669733497b9762762
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3060768Z ##[group]Run docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3061486Z with:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3061653Z   registry: ghcr.io
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3061833Z   username: rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3063997Z   password: ***
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3064195Z   ecr: auto
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3064355Z   logout: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.3064520Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.5426154Z Logging into ghcr.io...
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.5445345Z (node:2074) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:12.5446563Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3207593Z Login Succeeded!
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3362921Z ##[group]Run ruby/setup-ruby@v1
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3363166Z with:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3363336Z   ruby-version: 3.4
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3363550Z   bundler-cache: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3365584Z   token: ***
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.3365762Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4473887Z ##[group]Modifying PATH
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4474544Z Entries added to PATH to use selected Ruby:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4475848Z   /opt/hostedtoolcache/Ruby/3.4.11/x64/bin
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4482979Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4487544Z ##[group]Downloading Ruby
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.4490240Z https://github.com/ruby/ruby-builder/releases/download/ruby-3.4.11/ruby-3.4.11-ubuntu-24.04-x64.tar.gz
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.9157491Z Took   0.47 seconds
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.9158023Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.9158324Z ##[group]Extracting  Ruby
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:13.9180287Z [command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/3.4.11 -f /home/runner/work/_temp/f5f69cf3-12c8-4ba2-90f9-48ec712ec5d0
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:04:14.3129439Z Took   0.40 seconds
+Devcontainer
+
+... [146128 characters truncated] ...
+
+P	2026-09-24T08:05:46.4765732Z   push: filter
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4765922Z   refFilterForPush: refs/heads/main
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4766248Z   runCmd: bin/rails g scaffold Post && bin/rails db:migrate && bin/rails test
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4766576Z   checkoutPath: .
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4766763Z   eventFilterForPush: push
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4766960Z   inheritEnv: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4767160Z   skipContainerUserIdUpdate: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4767378Z   noCache: false
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.4767551Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:46.5373995Z Starting...
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:50.4637607Z Installing @devcontainers/cli...
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:50.4638771Z ** Installing @devcontainers/cli
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:50.4649054Z [command]/usr/bin/bash -c npm install -g @devcontainers/cli@0
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.4542936Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.4543361Z added 1 package in 1s
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.4883679Z Adding --cache-from ghcr.io/rails/smoke-test-devcontainer:sqlite3 to build args
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.4885725Z ##[group]🏗️ build container
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.4891495Z About to run devcontainer build --workspace-folder /home/runner/work/rails/rails/myapp_sqlite --image-name ghcr.io/rails/smoke-test-devcontainer:sqlite3 --cache-from ghcr.io/rails/smoke-test-devcontainer:sqlite3 --cache-from ghcr.io/rails/smoke-test-devcontainer
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.5733430Z [2026-09-24T08:05:52.572Z] @devcontainers/cli 0.89.0. Node.js v22.23.2. linux 6.17.0-1022-azure x64.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:52.5734149Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.7337451Z [2026-09-24T08:05:54.733Z] Start: Run: docker compose -f /home/runner/work/rails/rails/myapp_sqlite/.devcontainer/compose.yaml --profile * config
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.7338292Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.8584283Z [2026-09-24T08:05:54.858Z] Start: Run: docker compose -f /home/runner/work/rails/rails/myapp_sqlite/.devcontainer/compose.yaml --profile * config
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.8585252Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9173086Z [2026-09-24T08:05:54.916Z] name: myapp_sqlite
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9173486Z services:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9173660Z   rails-app:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9173824Z     build:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9174042Z       context: /home/runner/work/rails/rails/myapp_sqlite
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9174342Z       dockerfile: .devcontainer/Dockerfile
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9174580Z     command:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9174798Z       - sleep
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9174973Z       - infinity
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9175141Z     depends_on:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9175307Z       selenium:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9175580Z         condition: service_started
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9175871Z         required: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9176122Z     networks:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9176318Z       default: null
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9176591Z     volumes:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9176843Z       - type: bind
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9177090Z         source: /home/runner/work/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9177324Z         target: /workspaces
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9177503Z         bind:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9177672Z           create_host_path: true
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9178003Z   selenium:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9178251Z     image: selenium/standalone-chromium
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9178469Z     networks:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9178634Z       default: null
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9178812Z     restart: unless-stopped
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9179000Z networks:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9179440Z   default:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9179602Z     name: myapp_sqlite_default
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9179736Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9192215Z [2026-09-24T08:05:54.919Z] Start: Run: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:54.9192739Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:55.6881968Z [2026-09-24T08:05:55.687Z] Error fetching image details: No manifest found for ghcr.io/rails/devcontainer/images/ruby:3.4.11.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:55.6882631Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:55.6884787Z [2026-09-24T08:05:55.688Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:55.6885081Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4513572Z [2026-09-24T08:05:56.450Z] Error response from daemon: manifest unknown
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4513853Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4529370Z [2026-09-24T08:05:56.452Z] Retrying (Attempt 0) with error 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4529966Z 			  'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4530353Z '
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:56.4530448Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:57.4545761Z [2026-09-24T08:05:57.454Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:57.4546291Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2463085Z [2026-09-24T08:05:58.245Z] Error response from daemon: manifest unknown
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2463491Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2476809Z [2026-09-24T08:05:58.247Z] Retrying (Attempt 1) with error 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2477454Z 			  'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2477834Z '
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:58.2478085Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.2492841Z [2026-09-24T08:05:59.248Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.2493363Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9869223Z [2026-09-24T08:05:59.986Z] Error response from daemon: manifest unknown
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9869736Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9882482Z [2026-09-24T08:05:59.988Z] Retrying (Attempt 2) with error 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9883064Z 			  'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9883449Z '
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:05:59.9883540Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:00.9889248Z [2026-09-24T08:06:00.988Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:00.9889766Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7562233Z [2026-09-24T08:06:01.755Z] Error response from daemon: manifest unknown
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7562512Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7572715Z [2026-09-24T08:06:01.757Z] Retrying (Attempt 3) with error 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7573317Z 			  'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7573693Z '
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:01.7573775Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:02.7587807Z [2026-09-24T08:06:02.758Z] Start: Run: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:02.7588407Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5131808Z [2026-09-24T08:06:03.512Z] Error response from daemon: manifest unknown
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5132178Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5142353Z [2026-09-24T08:06:03.514Z] Retrying (Attempt 4) with error 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5142968Z 			  'Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5143334Z '
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:03.5143419Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5159894Z [2026-09-24T08:06:04.515Z] Command failed: docker inspect --type image ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5160587Z [2026-09-24T08:06:04.515Z] []
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5161158Z [2026-09-24T08:06:04.515Z] Error response from daemon: No such image: ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5161684Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5162011Z [2026-09-24T08:06:04.515Z] Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5163671Z 
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5248136Z ##[error]Dev container build failed: Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11 (exit code: undefined)
+Devcontainer smoke test	UNKNOWN STEP	An error occurred building the container.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5255319Z ##[error]Command failed: docker pull ghcr.io/rails/devcontainer/images/ruby:3.4.11
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5256260Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.5396741Z Post job cleanup.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7833821Z (node:6506) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7834394Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7851640Z [command]/usr/bin/docker logout ghcr.io
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7965634Z Removing login credentials for ghcr.io
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7989757Z ##[group]Post cache
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7990569Z State not set
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.7991386Z ##[endgroup]
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8142194Z Post job cleanup.
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8823950Z [command]/usr/bin/git version
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8855147Z git version 2.55.0
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8883650Z Temporarily overriding HOME='/home/runner/work/_temp/df12d117-0a46-43cb-a7c9-bd66a51b65ca' before making global git config changes
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8884359Z Adding repository directory to the temporary git global config as a safe directory
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8887615Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8916734Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.8942915Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9135333Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9156330Z http.https://github.com/.extraheader
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9165240Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9191765Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9383322Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9408743Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:04.9761522Z Cleaning up orphan processes
+Devcontainer smoke test	UNKNOWN STEP	2026-09-24T08:06:05.0002140Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, devcontainers/ci@8bf61b26e9c3a98f69cb6ce2f88d24ff59b785c6, docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

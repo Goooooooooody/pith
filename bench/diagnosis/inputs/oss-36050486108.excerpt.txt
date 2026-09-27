@@ -1,0 +1,180 @@
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	﻿2026-09-24T19:47:48.4463245Z Current runner version: '2.337.0'
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4488311Z ##[group]Runner Image Provisioner
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4489297Z Hosted Compute Agent
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4489899Z Version: 20260828.587
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4490655Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4491426Z Build Date: 2026-08-28T16:44:25Z
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4492170Z Worker ID: {8bab41c7-c065-432f-a148-31b2a364ee9c}
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4492977Z Azure Region: westcentralus
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4493902Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4495737Z ##[group]Operating System
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4496402Z Ubuntu
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4496934Z 24.04.5
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4497637Z LTS
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4498179Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4498809Z ##[group]Runner Image
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4499459Z Image: ubuntu-24.04
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4500052Z Version: 20260920.314.1
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4501449Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4503109Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4504278Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4505444Z ##[group]GITHUB_TOKEN Permissions
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4507430Z Metadata: read
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4508030Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4510224Z Secret source: None
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4511220Z Cache mode: write
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4512032Z Prepare workflow directory
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4945558Z Prepare all required actions
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.4992701Z Getting action download info
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.8087006Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:48.9106087Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.0094562Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2136916Z Complete job name: yarn test -r=www-classic --env=development --variant=false (Shard 2/5)
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2836297Z ##[group]Run actions/checkout@v4
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2837096Z with:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2837568Z   ref: e9deab248567d0e915569c51084ca22ce1dbd9bf
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2838169Z   repository: react/react
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2841925Z   token: ***
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2842379Z   ssh-strict: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2842820Z   ssh-user: git
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2843256Z   persist-credentials: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2843910Z   clean: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2844358Z   sparse-checkout-cone-mode: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2844876Z   fetch-depth: 1
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2845299Z   fetch-tags: false
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2845734Z   show-progress: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2846167Z   lfs: false
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2846571Z   submodules: false
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2847011Z   set-safe-directory: true
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2847509Z   allow-unsafe-pr-checkout: false
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2848231Z env:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2848672Z   TZ: /usr/share/zoneinfo/America/Los_Angeles
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2849315Z   SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.2849827Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3862382Z Syncing repository: react/react
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3864491Z ##[group]Getting Git version info
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3865193Z Working directory is '/home/runner/work/react/react'
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3866371Z [command]/usr/bin/git version
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3919218Z git version 2.55.0
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3938678Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3951980Z Temporarily overriding HOME='/home/runner/work/_temp/e6ddd75e-5daf-42c3-975b-50d49a442095' before making global git config changes
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3956888Z Adding repository directory to the temporary git global config as a safe directory
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.3958236Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4000614Z Deleting the contents of '/home/runner/work/react/react'
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4006301Z ##[group]Initializing the repository
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4011091Z [command]/usr/bin/git init /home/runner/work/react/react
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4096290Z hint: Using 'master' as the name for the initial branch. This default branch name
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4097729Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4099046Z hint: to use in all of your new repositories, which will suppress this warning,
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4099970Z hint: call:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4100614Z hint:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4101422Z hint: 	git config --global init.defaultBranch <name>
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4102408Z hint:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4103669Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4105245Z hint: 'development'. The just-created branch can be renamed via this command:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4106452Z hint:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4107172Z hint: 	git branch -m <name>
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4107937Z hint:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4109007Z hint: Disable this message with "git config set advice.defaultBranchName false"
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4110638Z Initialized empty Git repository in /home/runner/work/react/react/.git/
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4113079Z [command]/usr/bin/git remote add origin https://github.com/react/react
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4158114Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4158960Z ##[group]Disabling automatic garbage collection
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4163221Z [command]/usr/bin/git config --local gc.auto 0
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4197276Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4198075Z ##[group]Setting up auth
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4205950Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4242160Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4579011Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4623071Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4863880Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.4896964Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.5154402Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.5200025Z ##[endgroup]
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.5200818Z ##[group]Fetching the repository
+yarn test -r=www-classic --env=development --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:47:49.5212310Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin e9deab2485
+
+... [185745 characters truncated] ...
+
+v=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:02.4196223Z PASS packages/react-reconciler/src/__tests__/ReactDefaultTransitionIndicator-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:03.2411552Z PASS packages/react-reconciler/src/__tests__/ReactIncrementalScheduling-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:03.9076909Z PASS packages/dom-event-testing-library/__tests__/index-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:04.8255735Z PASS packages/react/src/__tests__/ReactElementClone-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:04.9631759Z PASS packages/react-server-dom-turbopack/src/__tests__/ReactFlightTurbopackDOMEdge-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:05.5077148Z PASS packages/react-reconciler/src/__tests__/ReactCache-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:06.1769335Z PASS packages/react-is/src/__tests__/ReactIs-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:07.3464320Z PASS packages/react-dom/src/__tests__/ReactFunctionComponent-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:07.5877269Z PASS packages/react-native-renderer/src/__tests__/EventPluginRegistry-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:07.9293015Z PASS packages/react-dom/src/__tests__/validateDOMNesting-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:08.1927077Z PASS packages/react-dom/src/__tests__/ReactDOMShorthandCSSPropertyCollision-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:09.2033287Z PASS packages/react-dom/src/__tests__/ReactDOMFizzServerEdge-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:09.6925654Z PASS packages/react/src/__tests__/ReactMismatchedVersions-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:10.2236609Z PASS packages/react-dom/src/__tests__/ReactDOMFizzDeferredValue-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:10.7740420Z PASS packages/react-dom/src/__tests__/ReactDOMHooks-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:10.9740713Z PASS packages/react-reconciler/src/__tests__/ReactSubtreeFlagsWarning-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:11.9237834Z PASS packages/react-test-renderer/src/__tests__/ReactTestRenderer-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:12.2034206Z PASS packages/react-reconciler/src/__tests__/ReactConditionalUseWarning-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:12.7477369Z PASS packages/react-reconciler/src/__tests__/ReactTopLevelFragment-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:12.8906585Z PASS packages/react-reconciler/src/__tests__/ReactFiberHostContext-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:14.3177377Z PASS packages/react-dom/src/__tests__/ReactDOMInvalidARIAHook-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:14.7320625Z PASS packages/react-dom/src/__tests__/ReactDOMSafariMicrotaskBug-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:15.0141734Z PASS packages/react-dom/src/events/__tests__/SyntheticEvent-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:18.6871814Z PASS packages/react-dom/src/__tests__/ReactDOMServerIntegrationSelect-test.js (12.492 s)
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:19.0457916Z PASS packages/react-dom/src/__tests__/InvalidEventListeners-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:19.6300754Z PASS packages/react-reconciler/src/__tests__/ErrorBoundaryReconciliation-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:19.9984895Z PASS scripts/eslint-rules/__tests__/warning-args-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.2619039Z PASS packages/react-dom/src/__tests__/ReactDOMNestedEvents-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.3220576Z PASS packages/react-dom/src/__tests__/ReactDOMServerIntegrationCheckbox-test.js (5.291 s)
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.4057297Z PASS packages/react/src/__tests__/onlyChild-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.5373111Z PASS packages/react-reconciler/src/__tests__/ViewTransitionReactServer-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.7467120Z PASS packages/react-dom/src/__tests__/ReactDOMBrowser-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.8237056Z PASS packages/react-reconciler/src/__tests__/ReactTopLevelText-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.8578435Z PASS scripts/error-codes/__tests__/invertObject-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:20.9484841Z PASS packages/shared/__tests__/ReactSymbols-test.internal.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:21.0836750Z PASS packages/react/src/__tests__/React-hooks-arity.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:21.1067654Z PASS packages/react-dom/src/__tests__/ReactDOMInReactServer-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.6829674Z PASS packages/react-dom/src/__tests__/ReactDOMFizzServer-test.js (104.258 s)
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9626754Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9627531Z Summary of all failing tests
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9646428Z FAIL packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9662024Z   ● ReactDOMViewTransition › ViewTransition event callbacks › [GATED, SHOULD FAIL] suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9662750Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9662942Z     Gated test was expected to fail, but it passed.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9663179Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9663321Z     ^[[0m ^[[90m 1351 |^[[39m
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9663740Z      ^[[90m 1352 |^[[39m     ^[[90m// @gate enableViewTransition^[[39m
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9666858Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 1353 |^[[39m     it(^[[32m'suppresses InvalidStateError when ViewTransition is skipped due to hidden document or resize across browsers'^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9668348Z      ^[[90m      |^[[39m     ^[[31m^[[1m^^[[22m^[[39m
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9669227Z      ^[[90m 1354 |^[[39m       ^[[36mfunction^[[39m ^[[33mApp^[[39m({count}) {
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9670044Z      ^[[90m 1355 |^[[39m         ^[[36mreturn^[[39m (
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9673545Z      ^[[90m 1356 |^[[39m           ^[[33m<^[[39m^[[33mViewTransition^[[39m^[[33m>^[[39m^[[0m
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9674070Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9677158Z       at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:1353:5
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9679942Z       at packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:182:3
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9683523Z       at Object.<anonymous> (packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js:23:1)
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9683998Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9684114Z 
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9686811Z Test Suites: 1 failed, 64 passed, 65 total
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9687461Z Tests:       1 failed, 15 skipped, 1167 passed, 1183 total
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9687946Z Snapshots:   70 passed, 70 total
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9688228Z Time:        106.01 s
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9688481Z Ran all test suites.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9952863Z error Command failed with exit code 1.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:54.9953804Z info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.0048326Z ##[error]Process completed with exit code 1.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.0169137Z Post job cleanup.
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1020688Z [command]/usr/bin/git version
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1057420Z git version 2.55.0
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1091852Z Temporarily overriding HOME='/home/runner/work/_temp/323e787a-c996-4f55-b482-2f41643bb8c2' before making global git config changes
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1093214Z Adding repository directory to the temporary git global config as a safe directory
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1096630Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1133869Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1169116Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1425025Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1450926Z http.https://github.com/.extraheader
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1461271Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1493051Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1736283Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.1799399Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.2197787Z Cleaning up orphan processes
+yarn test -r=www-modern --env=production --variant=false (Shard 2/5)	UNKNOWN STEP	2026-09-24T19:49:55.2479164Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

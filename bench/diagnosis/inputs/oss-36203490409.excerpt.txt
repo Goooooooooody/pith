@@ -1,0 +1,236 @@
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	﻿2026-09-26T00:07:25.3039731Z Current runner version: '2.337.0'
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3075029Z ##[group]Runner Image Provisioner
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3076443Z Hosted Compute Agent
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3077528Z Version: 20260828.587
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3078637Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3079845Z Build Date: 2026-08-28T16:44:25Z
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3081075Z Worker ID: {5d718a21-bdc7-46cf-b9ea-121dddbcd72c}
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3082670Z Azure Region: eastus
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3083945Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3086115Z ##[group]Operating System
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3087253Z Ubuntu
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3088841Z 24.04.5
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3089704Z LTS
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3090767Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3091944Z ##[group]Runner Image
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3093028Z Image: ubuntu-24.04
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3094053Z Version: 20260920.314.1
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3096788Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3099594Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3101412Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3103332Z ##[group]GITHUB_TOKEN Permissions
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3106378Z Metadata: read
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3107406Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3110412Z Secret source: Actions
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3112233Z Cache mode: write
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3113807Z Prepare workflow directory
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3682932Z Prepare all required actions
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.3754133Z Getting action download info
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.6298490Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.7179339Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.8060548Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:25.8987798Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.1785309Z Complete job name: Run DevTools tests for versions (18.0)
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2502197Z ##[group]Run actions/checkout@v4
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2503180Z with:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2503643Z   repository: react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2507592Z   token: ***
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2508051Z   ssh-strict: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2508517Z   ssh-user: git
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2508988Z   persist-credentials: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2509503Z   clean: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2509972Z   sparse-checkout-cone-mode: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2510520Z   fetch-depth: 1
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2510976Z   fetch-tags: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2511452Z   show-progress: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2512130Z   lfs: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2512566Z   submodules: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2513034Z   set-safe-directory: true
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2513547Z   allow-unsafe-pr-checkout: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2514338Z env:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2514884Z   TZ: /usr/share/zoneinfo/America/Los_Angeles
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2515523Z   SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.2516048Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.3997661Z Syncing repository: react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.3999492Z ##[group]Getting Git version info
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.4000223Z Working directory is '/home/runner/work/react/react'
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.4001215Z [command]/usr/bin/git version
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.6999204Z git version 2.55.0
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7021877Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7038920Z Temporarily overriding HOME='/home/runner/work/_temp/fd0688a0-1a29-4376-aef1-a249d0c373d5' before making global git config changes
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7041818Z Adding repository directory to the temporary git global config as a safe directory
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7045916Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7093752Z Deleting the contents of '/home/runner/work/react/react'
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7098184Z ##[group]Initializing the repository
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7103270Z [command]/usr/bin/git init /home/runner/work/react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7200135Z hint: Using 'master' as the name for the initial branch. This default branch name
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7202608Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7204657Z hint: to use in all of your new repositories, which will suppress this warning,
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7206011Z hint: call:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7206968Z hint:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7208074Z hint: 	git config --global init.defaultBranch <name>
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7209361Z hint:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7210464Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7212373Z hint: 'development'. The just-created branch can be renamed via this command:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7213771Z hint:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7214674Z hint: 	git branch -m <name>
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7215725Z hint:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7216822Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7218111Z Initialized empty Git repository in /home/runner/work/react/react/.git/
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7220358Z [command]/usr/bin/git remote add origin https://github.com/react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7266843Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7268258Z ##[group]Disabling automatic garbage collection
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7269788Z [command]/usr/bin/git config --local gc.auto 0
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7299709Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7301054Z ##[group]Setting up auth
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7305929Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7336294Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7679436Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7712650Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7929834Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.7963106Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.8182006Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.8217823Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.8219427Z ##[group]Fetching the repository
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:26.8228644Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d083ec1da1e5252abd3ddfdde6dfbc09701a2c51:refs/remotes/origin/main
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9549654Z From https://github.com/react/react
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9551193Z  * [new ref]         d083ec1da1e5252abd3ddfdde6dfbc09701a2c51 -> origin/main
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9558464Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9559057Z ##[group]Determining the checkout info
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9559698Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9563818Z [command]/usr/bin/git sparse-checkout disable
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9609903Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9636920Z ##[group]Checking out the ref
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:28.9640709Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3397678Z Switched to a new branch 'main'
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3398283Z branch 'main' set up to track 'origin/main'.
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3403086Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3453791Z [command]/usr/bin/git log -1 --format=%H
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3479848Z d083ec1da1e5252abd3ddfdde6dfbc09701a2c51
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3800949Z ##[group]Run actions/setup-node@v4
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3801283Z with:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3801700Z   node-version-file: .nvmrc
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3802167Z   always-auth: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3802390Z   check-latest: false
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3805058Z   token: ***
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3805264Z env:
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3805485Z   TZ: /usr/share/zoneinfo/America/Los_Angeles
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3805788Z   SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.3806036Z ##[endgroup]
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.5156068Z Node version file is not JSON file
+Run DevTools tests for versions (18.0)	UNKNOWN STEP	2026-09-26T00:07:29.5157771Z Resolved .nvm
+
+... [1660510 characters truncated] ...
+
+s tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2302099Z      ^[[90m 3673 |^[[39m ^[[32m          ▾ <Suspense name="root">^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2303107Z      ^[[90m 3674 |^[[39m ^[[32m              <Component key="root-fallback">^[[39m^[[0m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2303628Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2304263Z       at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:3671:21)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2304979Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2305863Z   ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2306645Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2306982Z     expect(received).toMatchInlineSnapshot(snapshot)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2307426Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2308268Z     Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 1`
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2309155Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2309347Z     - Snapshot  - 0
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2309987Z     + Received  + 1
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2310236Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2310406Z       [root]
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2310860Z           <Suspense name="outer">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2311430Z       [suspense-root]  rects={null}
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2312191Z         <Suspense name="outer" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2313099Z     +     <Suspense name="inner" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2313621Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2313966Z     ^[[0m ^[[90m 4031 |^[[39m     })^[[33m;^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2314578Z      ^[[90m 4032 |^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2315571Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 4033 |^[[39m     expect(store)^[[33m.^[[39mtoMatchInlineSnapshot(^[[32m`^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2316675Z      ^[[90m      |^[[39m                   ^[[31m^[[1m^^[[22m^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2317454Z      ^[[90m 4034 |^[[39m ^[[32m      [root]^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2318294Z      ^[[90m 4035 |^[[39m ^[[32m          <Suspense name="outer">^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2319334Z      ^[[90m 4036 |^[[39m ^[[32m      [suspense-root]  rects={null}^[[39m^[[0m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2320132Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2320804Z       at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4033:19)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2321577Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2322556Z   ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2323397Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2323759Z     expect(received).toMatchInlineSnapshot(snapshot)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2324212Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2325056Z     Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 2`
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2325966Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2326163Z     - Snapshot  - 1
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2326623Z     + Received  + 1
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2326894Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2327071Z     @@ -4,6 +4,6 @@
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2327585Z             <Component key="two">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2328315Z           ▾ <Suspense name="inner">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2328936Z               <Component key="three">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2329859Z       [suspense-root]  rects={null}
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2330664Z         <Suspense name="outer" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2331901Z     -     <Suspense name="inner" uniqueSuspenders={false} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2332824Z     +     <Suspense name="inner" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2333507Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2333858Z     ^[[0m ^[[90m 4042 |^[[39m     })^[[33m;^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2334605Z      ^[[90m 4043 |^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2335896Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 4044 |^[[39m     expect(store)^[[33m.^[[39mtoMatchInlineSnapshot(^[[32m`^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2337260Z      ^[[90m      |^[[39m                   ^[[31m^[[1m^^[[22m^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2338241Z      ^[[90m 4045 |^[[39m ^[[32m      [root]^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2339326Z      ^[[90m 4046 |^[[39m ^[[32m        ▾ <Suspense name="outer">^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2340811Z      ^[[90m 4047 |^[[39m ^[[32m            <Component key="one">^[[39m^[[0m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2341419Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2342268Z       at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4044:19)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2343179Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2344343Z   ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2345367Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2345769Z     expect(received).toMatchInlineSnapshot(snapshot)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2346193Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2346932Z     Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 4`
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2347813Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2348008Z     - Snapshot  - 1
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2348410Z     + Received  + 1
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2348647Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2348846Z     @@ -2,6 +2,6 @@
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2349612Z         ▾ <Suspense name="outer">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2350299Z           ▾ <Suspense name="inner">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2350920Z               <Component key="three">
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2351525Z       [suspense-root]  rects={null}
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2352301Z         <Suspense name="outer" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2353298Z     -     <Suspense name="inner" uniqueSuspenders={true} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2354261Z     +     <Suspense name="inner" uniqueSuspenders={false} rects={null}>
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2354914Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2355254Z     ^[[0m ^[[90m 4093 |^[[39m     })^[[33m;^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2355904Z      ^[[90m 4094 |^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2356935Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 4095 |^[[39m     expect(store)^[[33m.^[[39mtoMatchInlineSnapshot(^[[32m`^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2358024Z      ^[[90m      |^[[39m                   ^[[31m^[[1m^^[[22m^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2358812Z      ^[[90m 4096 |^[[39m ^[[32m      [root]^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2359965Z      ^[[90m 4097 |^[[39m ^[[32m        ▾ <Suspense name="outer">^[[39m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2360967Z      ^[[90m 4098 |^[[39m ^[[32m          ▾ <Suspense name="inner">^[[39m^[[0m
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2361470Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2362123Z       at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4095:19)
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2362838Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2362858Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2363070Z Snapshot Summary
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2364249Z  › 5 snapshots failed from 1 test suite. Inspect your code changes or re-run jest with `-u` to update them.
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2365056Z 
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2365518Z Test Suites: 1 failed, 27 skipped, 14 passed, 15 of 42 total
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2366423Z Tests:       3 failed, 518 skipped, 100 passed, 621 total
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2367166Z Snapshots:   5 failed, 92 passed, 97 total
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2367776Z Time:        14.648 s
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2368255Z Ran all test suites.
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2503848Z ##[error]Process completed with exit code 1.
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.2627675Z Post job cleanup.
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3468683Z [command]/usr/bin/git version
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3506154Z git version 2.55.0
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3545366Z Temporarily overriding HOME='/home/runner/work/_temp/e9fd38ad-caa5-4e95-b5af-22076191ece1' before making global git config changes
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3547080Z Adding repository directory to the temporary git global config as a safe directory
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3551570Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3587374Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3621640Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3856525Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3882714Z http.https://github.com/.extraheader
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3893491Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.3925784Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.4153593Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.4215333Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.4644344Z Cleaning up orphan processes
+Run DevTools tests for versions (17.0)	UNKNOWN STEP	2026-09-26T00:08:01.5054350Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/download-artifact@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

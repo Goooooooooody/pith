@@ -1,0 +1,210 @@
+pith · <log> · 68,947 lines → 29607 groups · ~2464.0k → ~4.1k tokens (99.8% smaller)
+
+jobs: Go tests on Windows
+levels: error 256 · warn 1 · notable 624 · info 42,848
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Go tests on Windows
+L155      [f8d1] matching 1.27.x...
+L156      [cb84] Acquiring 1.27.1 from https://github.com/actions/go-versions/releases/download/1.27.1-33583469715/go-1.27.1-win32-x64.zip
+L157      [26c2] Extracting Go...
+L158    ✱ [b759] [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { [System.IO.Compression.ZipFile]::ExtractToDirectory('D:\a\_tem
+L159      [dd58] Successfully extracted go to D:\a\_temp\434967a7-23cd-471d-a64c-6ab7880157f2
+L160      [274e] Adding to the cache ...
+L161      [0deb] Created link C:\hostedtoolcache\windows\go\1.27.1\x64 => D:\hostedtoolcache\windows\go\1.27.1\x64
+   …
+L223      [3194] ▶ Run $TestTargets = go list ./... | Where-Object { $_ -NotMatch "(github.com/prometheus/prometheus/config|github.com/prometheus/prometheus/web)"}
+   …
+L359      [bca8] go: downloading github.com/go-viper/mapstructure/v2 v2.5.0
+L360      [e146] go: downloading github.com/hashicorp/go-cleanhttp v0.5.2
+L361      [7beb] go: downloading github.com/hashicorp/go-hclog v1.6.3
+L362    ✱ [2678] go: downloading github.com/hashicorp/go-multierror v1.1.1
+L363      [d1f4] go: downloading github.com/hashicorp/go-rootcerts v1.0.2
+L364      [53ac] go: downloading github.com/hashicorp/serf v0.10.4
+L365      [8104] go: downloading github.com/aws/aws-sdk-go-v2/internal/v4a v1.5.3
+   …
+L534      [a55d] === RUN   TestAutoReloadConfig_ValidToValid (×812, last L68908)
+          reload_test.go:117: Config file path: C:\Users\RUNNER~1\AppData\Local\Temp\TestAutoReloadConfig_ValidToValid3376809706\001\prometheus.yml
+          reload_test.go:187: time=2026-09-26T01:58:21.892Z level=INFO source=main.go:699 msg="Automatic configuration file reloading enabled" interval=1s
+          reload_test.go:187: time=2026-09-26T01:58:21.938Z level=INFO source=main.go:821 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+          (+28 lines)
+   …
+L566      [ccb8] --- PASS: TestAutoReloadConfig_ValidToValid (2.56s) (×804, last L68911)
+L567      [fd76] === RUN   TestAutoReloadConfig_ValidToInvalidToValid (×53, last L62745)
+          reload_test.go:117: Config file path: C:\Users\RUNNER~1\AppData\Local\Temp\TestAutoReloadConfig_ValidToInvalidToValid1405871150\001\prometheus.yml
+          reload_test.go:187: time=2026-09-26T01:58:24.412Z level=INFO source=main.go:699 msg="Automatic configuration file reloading enabled" interval=1s
+          reload_test.go:187: time=2026-09-26T01:58:24.476Z level=INFO source=main.go:821 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+          (+23 lines)
+   …
+L594    ✱ [29f2] reload_test.go:187: time=2026-09-26T01:58:25.672Z level=ERROR source=main.go:1435 msg="Failed to generate checksum during configuration reload" err="error unmarshalling YAML: yaml: line 5: could not find expected ':'"
+L595      [f594] reload_test.go:187: time=2026-09-26T01:58:25.672Z level=INFO source=main.go:1439 msg="Configuration file change detected, reloading the configuration." (×2, last L599)
+L596      [23a9] reload_test.go:187: time=2026-09-26T01:58:25.672Z level=INFO source=main.go:1718 msg="Loading configuration file" filename=C:\Users\RUNNER~1\AppData\Local\Temp\TestAutoReloadConfig_ValidToInvalidToValid1405871150\001\prometheus.yml (×2, last L600)
+L597    ✱ [1c2d] reload_test.go:187: time=2026-09-26T01:58:25.673Z level=ERROR source=main.go:1442 msg="Error reloading config" err="couldn't load configuration (--config.file=\"C:\\\\Users\\\\RUNNER~1\\\\AppData\\\\Local\\\\Temp\\\\TestAutoReloadConfig_ValidToInvalidToValid1405871150\\\\001\\\\prometheus.yml\"): pa
+L598      [d7ce] reload_test.go:129: Step 2
+   …
+L868      [424e] === PAUSE TestModeSpecificFlags/agent_mode_with_option_--storage.tsdb.path (×2, last L868)
+L869      [907b] === CONT  TestDocumentation
+L870      [f676] --- PASS: TestDocumentation (0.06s)
+L871    ✱ [9af2] === CONT  TestAgentFailedStartupWithInvalidConfig (×5, last L5415)
+          main_test.go:650: prometheus agent should not be running: exit status 2
+L873      [825f] --- PASS: TestAgentFailedStartupWithInvalidConfig (0.10s) (×53, last L62746)
+L874    ✱ [9af2] === CONT  TestAgentFailedStartupWithServerFlag
+          main_test.go:624: prometheus agent should not be running: exit status 3
+   …
+L893      [d73c] === PAUSE TestRuntimeGOGCConfig/unrelated_config_and_GOGC_env_var_set (×4, last L893)
+L894      [495b] === CONT  TestQueryLog/api_queries,_127.0.0.1,_enabled_at_start
+          query_log_test.go:315: time=2026-09-26T01:58:37.905Z level=INFO source=main.go:821 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+          time=2026-09-26T01:58:37.944Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=15456924057 previou
+          time=2026-09-26T01:58:37.944Z level=INFO source=main.go:930 msg="Starting Prometheus Server" mode=server version="(version=, branch=, revision=unknown)"
+          (+21 lines)
+   …
+L920      [3fa2] === CONT  TestWALSegmentSizeBounds/9MB (×3, last L1486)
+          main_test.go:300: time=2026-09-26T01:58:38.472Z level=INFO source=main.go:821 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+          time=2026-09-26T01:58:38.518Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=15456924057 previou
+          time=2026-09-26T01:58:38.518Z level=INFO source=main.go:930 msg="Starting Prometheus Server" mode=server version="(version=, branch=, revision=unknown)"
+          (+24 lines)
+   …
+L948    ✱ [81e9] time=2026-09-26T01:58:38.905Z level=ERROR source=main.go:1652 msg="Fatal error" err="flag 'storage.tsdb.wal-segment-size' must be set between 10MB and 256MB" (×3, last L1516)
+L950      [9624] === CONT  TestQueryLog/rule_queries,_[::1],_with_prefix_/foobar
+          query_log_test.go:59: changing prefix has no effect on rules
+L952      [e4be] === CONT  TestQueryLog/console_queries,_[::1],_with_prefix_/foobar
+          query_log_test.go:315: time=2026-09-26T01:58:39.154Z level=INFO source=main.go:821 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+          time=2026-09-26T01:58:39.198Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=15456924057 previou
+          time=2026-09-26T01:58:39.199Z level=INFO source=main.go:930 msg="Starting Prometheus Server" mode=server version="(version=, branch=, revision=unknown)"
+          (+24 lines)
+   …
+L2203     [530e] Checking standard input (×3, last L2211)
+          SUCCESS: 5 rules found
+L2206     [fce2] === RUN   TestCheckRules/rules-bad
+L2208   ✱ [37bf] FAILED: (×19, last L2900)
+L2209     [b122] group "alerts", rule 1, "InstanceDown": annotation "summary": template: __alert_InstanceDown:1: undefined variable "$label"
+L2210     [53f6] === RUN   TestCheckRules/rules-lint-fatal
+L2212   ✱ [37bf] FAILED:
+L2213   ✱ [1fbe] lint error 1 duplicate rule(s) found. (×2, last L2239)
+L2214     [7111] Metric: HighRequestLatency (×2, last L2240)
+L2215     [acde] Label(s): (×2, last L2241)
+          severity: page
+L2217     [1c4e] Might cause inconsistency while recording expressions (×2, last L2243)
+   …
+L2284   ✱ [bcaa] FAILED: too long scrape interval found, data point will be marked as stale - job: too_long_scrape_interval_test, interval: 10m (×4, last L2319)
+L2285     [239c] Checking testdata\prometheus-config.rules.good.yml (×9, last L2330)
+          SUCCESS: 0 rules found
+L2288     [42f9] Checking ./testdata/prometheus-config.lint.too_long_scrape_interval.yml (×12, last L2326)
+          SUCCESS: 1 rule files found
+          SUCCESS: ./testdata/prometheus-config.lint.too_long_scrape_interval.yml is valid prometheus config file syntax
+   …
+L2292   ✱ [bcaa] FAILED: too long scrape interval found, data point will be marked as stale - job: too_long_scrape_interval_test, interval: 10m
+   …
+L2353     [b62d] === RUN   TestPushMetricsInvalidProtoMsg
+L2354   ✱ [60da] FAILED: invalid protobuf message "blablalba", must be prometheus.WriteRequest or io.prometheus.write.v2.Request
+L2355     [0a63] --- PASS: TestPushMetricsInvalidProtoMsg (0.00s)
+L2356     [75c3] === RUN   TestBackfillRuleIntegration
+L2357     [a39a] === PAUSE TestBackfillRuleIntegration
+   …
+L2864     [cb0d] === CONT  TestRulesUnitTest/Enabled_feature_(@_modifier)
+L2865   ✱ [37bf] FAILED:
+          expr: "my_metric@1704067200", time: 5m, err: @ modifier is disabled
+          expr: "my_metric@1704067320", time: 5m, err: @ modifier is disabled
+   …
+L2871   ✱ [9dde] === CONT  TestRulesUnitTest/Bad_rules_(syntax_error)
+L2872   ✱ [37bf] FAILED:
+L2873   ✱ [b509] testdata\bad-rules-syntax.yml: 7:15: group "bad-syntax", rule 1, "x": could not parse expression: 1:7: parse error: unexpected end of input
+L2876     [8a12] === CONT  TestRulesUnitTest/Simple_failing_test
+L2877   ✱ [37bf] FAILED:
+          rule: x, time: 0s, err: negative offset is disabled
+   …
+L2881     [f99c] === CONT  TestRulesUnitTest/Bad_rules_(error_evaluating)
+          SUCCESS
+L2884     [e291] === CONT  TestRulesUnitTest/Bad_input_series
+L2885   ✱ [37bf] FAILED:
+L2886   ✱ [a109] 2:48: parse error: unexpected character inside braces: '0'
+L2889     [cd7b] === CONT  TestRulesUnitTest/Bad_PromQL
+L2890   ✱ [37bf] FAILED:
+          expr: "join_1 + on(a) join_2", time: 0s, err: found duplicate series for the match group {a="1"} on the right hand-side of the operation: [{__name__="join_2", a="1", b="3"}, {__name__="join_2", a="1", b="4"}];many-to-many matching not allow
+   …
+L44491    [976b] === NAME  TestTargetDisappearsAfterProviderRemoved (×39, last L44491)
+          manager_test.go:1473:
+L44493  ✱ [82dd] Error Trace:	D:/a/prometheus/prometheus/scrape/manager_test.go:1413
+          D:/a/prometheus/prometheus/scrape/manager_test.go:1473
+L44495  ✱ [8366] Error:      	Condition never satisfied
+L44496    [a39a0] Test:       	TestTargetDisappearsAfterProviderRemoved
+L44497  ✱ [6fb8b] --- FAIL: TestTargetDisappearsAfterProviderRemoved (1.00s)
+L44498    [b9034] === CONT  TestScrapePoolStop
+L44499    [4a7b] === RUN   TestManagerSTZeroIngestion/format=OpenMetricsText1.0.0/withST=false/stZeroIngest=true
+          manager_test.go:957: produced OM text to expose: # TYPE expected_metric counter
+          expected_metric_total 17.0 1.790387962771e+09
+          # EOF
+   …
+L44539  ✱ [ffc9] FAIL
+L44540  ✱ [9b03] FAIL	github.com/prometheus/prometheus/scrape	35.702s
+L44541    [4280] === RUN   TestSampleRing
+L44542    [ed03] --- PASS: TestSampleRing (0.00s)
+L44543    [0fba5] === RUN   TestSampleRingFloatST
+   …
+L68928    [1156] PASS (×86, last L68928)
+L68929    [d4bd2] ok  	github.com/prometheus/prometheus/util/zeropool	0.108s
+L68930  ✱ [ffc9] FAIL (×2, last L68930)
+L68931  ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L1484   ERRO [1b9d] main_test.go:300: Error parsing command line arguments: units: unknown unit  in 10
+L1575   ERRO [eb43] time=2026-09-26T01:58:53.288Z level=ERROR source=main.go:1652 msg="Fatal error" err="flag 'storage.tsdb.max-block-chunk-segment-size' must be set over 1MB"
+L1691   ERRO [bc9a] time=2026-09-26T01:58:59.982Z level=ERROR source=main.go:1652 msg="Fatal error" err="opening storage failed: float chunk encoding \"xor\" is incompatible with start-timestamp stora (×2, last L1768)
+L2528   ERRO [9bb8] === RUN   TestRulesUnitTest/Bad_rules_(syntax_error)
+L2529   ERRO [ea39] === PAUSE TestRulesUnitTest/Bad_rules_(syntax_error)
+L3194   ERRO [8858c] SDK 2026/09/26 01:58:22 WARN falling back to IMDSv1: operation error ec2imds: getToken, http response error StatusCode: 404, request to EC2 IMDS failed (×2, last L3196)
+L3567   ERRO [4c72] === RUN   TestEC2DiscoveryRefreshAZIDs/HandleError
+L3568   ERRO [30fe] --- PASS: TestEC2DiscoveryRefreshAZIDs (0.00s)
+L3852   ERRO [6ec6] === RUN   TestGetDatacenterShouldReturnError (×15, last L62753)
+L3853   ERRO [d3e6] === PAUSE TestGetDatacenterShouldReturnError (×3, last L5390)
+L3883   ERRO [f2a1] --- PASS: TestGetDatacenterShouldReturnError (0.00s) (×17, last L62756)
+L3923   ERRO [00e3] === RUN   TestDNS/A_record_query_with_error
+L3924   ERRO [cb92] === PAUSE TestDNS/A_record_query_with_error
+L3937   ERRO [45d9] === CONT  TestDNS/A_record_query_with_error
+L3944   ERRO [79cc] --- PASS: TestDNS (0.00s)
+L3974   ERRO [d970] === RUN   TestEurekaSDHandleError
+L3975   ERRO [35f3] === PAUSE TestEurekaSDHandleError
+L3980   ERRO [9fac] === CONT  TestEurekaSDHandleError
+L3983   ERRO [d977] --- PASS: TestEurekaSDHandleError (0.00s)
+L4043   ERRO [1c3b] === RUN   TestRobotSDRefreshHandleError
+L4044   ERRO [21c4] === PAUSE TestRobotSDRefreshHandleError
+L4046   ERRO [1642] === CONT  TestRobotSDRefreshHandleError
+L4048   ERRO [9c8c] --- PASS: TestRobotSDRefreshHandleError (0.01s)
+L4240   ERRO [0958] === RUN   TestRetryOnError
+L4241   ERRO [149c] === PAUSE TestRetryOnError
+L4419   ERRO [fcd3c] === CONT  TestRetryOnError
+L4420   ERRO [7894] --- PASS: TestRetryOnError (0.00s)
+L4552   ERRO [775c] E0926 01:58:37.491391     632 reflector.go:227] "Failed to watch" err="unauthorized" logger="UnhandledError" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:34
+L4553   ERRO [b711] E0926 01:58:37.537497     632 reflector.go:227] "Failed to watch" err="unauthorized" logger="UnhandledError" reflector="pkg/mod/k8s.io/client-go@v0.37.0/tools/cache/reflector.go:34
+L4622   ERRO [6e28] === RUN   TestMarathonSDHandleError
+
+== END OF OUTPUT
+L68888    [93db] --- PASS: TestSample_RequireEqual (0.00s)
+L68893    [7ae4] === RUN   TestReorderExpectedForStaleness
+L68894    [c09f4] === RUN   TestReorderExpectedForStaleness/no_staleness_markers
+L68895    [408a] === RUN   TestReorderExpectedForStaleness/with_staleness_markers
+L68897    [cb7ef] === RUN   TestReorderExpectedForStaleness/with_staleness_markers_wrong_order_but_not_consecutive
+L68898    [cdee4] --- PASS: TestReorderExpectedForStaleness (0.00s)
+L68903    [217d56] === RUN   TestSampleIsStale
+L68904    [4608] --- PASS: TestSampleIsStale (0.00s)
+L68905    [1156] PASS
+L68906    [e766f] ok  	github.com/prometheus/prometheus/util/teststorage	0.037s
+L68907    [76826] ?   	github.com/prometheus/prometheus/util/testutil	[no test files]
+L68908    [a55d] === RUN   TestGenerateRecordsStartTimestamps
+L68909    [a7d1] === RUN   TestGenerateRecordsStartTimestamps/with_start_timestamp
+L68910    [6ee9] === RUN   TestGenerateRecordsStartTimestamps/without_start_timestamp
+L68911    [ccb8] --- PASS: TestGenerateRecordsStartTimestamps (0.00s)
+
+== MOST FREQUENT OTHER LINES
+×2,336   [684c6] === RUN   FuzzParseExpr/seed#0
+×945     [7b4ba] === RUN   TestFloatHistogramSTChunkST/[{0_1000_0.5}_{0_2000_1.5}_{0_3000_2.5}_{0_4000_3.5}]
+×945     [a873] === RUN   TestHistogramSTChunkST/[{0_1000_0.5}_{0_2000_1.5}_{0_3000_2.5}_{0_4000_3.5}]
+×945     [779eb] === RUN   TestXOR2ChunkST/[{0_1000_0.5}_{0_2000_1.5}_{0_3000_2.5}_{0_4000_3.5}]
+×336     [c5eb8] === RUN   FuzzParseProtobuf/seed#0
+×280     [7cc3] --- PASS: TestFloatHistogramSTChunkST/[{1000_1000_0.5}_{0_2000_1.5}_{1500_3000_2.5}_{4000_4000_3.5}] (0.00s)
+×212     [e205] === PAUSE TestMaxBlockChunkSegmentSizeBounds
+×212     [f06d] === CONT  TestRemoteWrite_ReshardingWithoutDeadlock
+×184     [bd3a] === RUN   TestChunkEncodingStartupValidation/xor2-encoding_flag_with_explicit_xor_in_config
+
+(not shown: 29480 groups, 35,278 lines - including 136 error groups, 144 error lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

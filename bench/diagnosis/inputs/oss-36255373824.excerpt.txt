@@ -1,0 +1,297 @@
+flake8	UNKNOWN STEP	﻿2026-09-26T16:25:05.3578974Z Current runner version: '2.337.0'
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3605766Z ##[group]Runner Image Provisioner
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3606800Z Hosted Compute Agent
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3607450Z Version: 20260828.587
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3608247Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3609003Z Build Date: 2026-08-28T16:44:25Z
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3609687Z Worker ID: {185d6edb-f6a2-482a-8100-bd5d29c5e3c8}
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3610594Z Azure Region: northcentralus
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3611288Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3613469Z ##[group]Operating System
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3614176Z Ubuntu
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3614718Z 24.04.5
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3615339Z LTS
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3615870Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3616498Z ##[group]Runner Image
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3617160Z Image: ubuntu-24.04
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3617797Z Version: 20260920.314.1
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3619200Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3620898Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3622201Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3623381Z ##[group]GITHUB_TOKEN Permissions
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3625444Z Contents: read
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3626163Z Metadata: read
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3626932Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3629184Z Secret source: None
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3630348Z Cache mode: write
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3631202Z Prepare workflow directory
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.3993617Z Prepare all required actions
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.4043964Z Getting action download info
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.6933831Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.7852324Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+flake8	UNKNOWN STEP	2026-09-26T16:25:05.8725840Z Download action repository 'liskin/gh-problem-matcher-wrap@d31bb388d13cf879e93f878cb2550299f0afb460' (SHA:d31bb388d13cf879e93f878cb2550299f0afb460)
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.3152024Z Complete job name: flake8
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4031254Z ##[group]Run actions/checkout@v7
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4032672Z with:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4033198Z   persist-credentials: false
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4033784Z   repository: django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4038100Z   token: ***
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4038580Z   ssh-strict: true
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4039065Z   ssh-user: git
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4039526Z   clean: true
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4040021Z   sparse-checkout-cone-mode: true
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4040601Z   fetch-depth: 1
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4041080Z   fetch-tags: false
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4041756Z   show-progress: true
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4042257Z   lfs: false
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4042742Z   submodules: false
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4043254Z   set-safe-directory: true
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4043820Z   allow-unsafe-pr-checkout: false
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.4044685Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5120998Z Syncing repository: django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5123665Z ##[group]Getting Git version info
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5124638Z Working directory is '/home/runner/work/django/django'
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5125718Z [command]/usr/bin/git version
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5188270Z git version 2.55.0
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5211796Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5223947Z Temporarily overriding HOME='/home/runner/work/_temp/e77c280c-f8f0-446f-9a00-2bf5f9e3eea2' before making global git config changes
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5225920Z Adding repository directory to the temporary git global config as a safe directory
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5230329Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5280110Z Deleting the contents of '/home/runner/work/django/django'
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5284036Z ##[group]Determining repository object format
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5285889Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5286796Z ##[group]Initializing the repository
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5290734Z [command]/usr/bin/git init /home/runner/work/django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5442017Z hint: Using 'master' as the name for the initial branch. This default branch name
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5445388Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5448302Z hint: to use in all of your new repositories, which will suppress this warning,
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5449903Z hint: call:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5451148Z hint:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5452521Z hint: 	git config --global init.defaultBranch <name>
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5453739Z hint:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5454951Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5457013Z hint: 'development'. The just-created branch can be renamed via this command:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5458642Z hint:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5459445Z hint: 	git branch -m <name>
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5460325Z hint:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5461861Z hint: Disable this message with "git config set advice.defaultBranchName false"
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5463797Z Initialized empty Git repository in /home/runner/work/django/django/.git/
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5466685Z [command]/usr/bin/git remote add origin https://github.com/django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5512856Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5514375Z ##[group]Disabling automatic garbage collection
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5516740Z [command]/usr/bin/git config --local gc.auto 0
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5560200Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5562233Z ##[group]Setting up auth
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5563290Z Removing SSH command configuration
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5568054Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5605026Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5960013Z Removing HTTP extra header
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.5966499Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6001164Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6226509Z Removing includeIf entries pointing to credentials config files
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6231125Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6305870Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6539665Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6580700Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/django/django/.git.path /home/runner/work/_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6614397Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/django/django/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6650865Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6686601Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6717195Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6718585Z ##[group]Fetching the repository
+flake8	UNKNOWN STEP	2026-09-26T16:25:06.6724189Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ad0f0e809a114278016a0ba50b43c688424b5220:refs/remotes/pull/16681/merge
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8193421Z From https://github.com/django/django
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8205880Z  * [new ref]         ad0f0e809a114278016a0ba50b43c688424b5220 -> pull/16681/merge
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8208255Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8208775Z ##[group]Determining the checkout info
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8209302Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8211575Z [command]/usr/bin/git sparse-checkout disable
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8264015Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8294573Z ##[group]Checking out the ref
+flake8	UNKNOWN STEP	2026-09-26T16:25:08.8299031Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/16681/merge
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3596249Z Note: switching to 'refs/remotes/pull/16681/merge'.
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3596855Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3597223Z You are in 'detached HEAD' state. You can look around, make experimental
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3598134Z changes and commit them, and you can discard any commits you make in this
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3598938Z state without impacting any branches by switching back to a branch.
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3599443Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3599887Z If you want to create a new branch to retain commits you create, you may
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3600719Z do so (now or later) by using -c with the switch command. Example:
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3601185Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3601703Z   git switch -c <new-branch-name>
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3602062Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3602265Z Or undo this operation with:
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3602553Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3602712Z   git switch -
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3602969Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3603344Z Turn off this advice by setting config variable advice.detachedHead to false
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3603916Z 
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3604564Z HEAD is now at ad0f0e8 Merge bd22b3539c6178a8c8a8a181257648020bcab857 into 4fab678a0739d54401ccee7eb587553657c9f76e
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3614483Z ##[endgroup]
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3660606Z [command]/usr/bin/git log -1 --format=%H
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3686864Z ad0f0e809a114278016a0ba50b43c688424b5220
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3700493Z ##[group]Removing auth
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3700934Z Removing SSH command configuration
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3703544Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3736665Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3978822Z Removing HTTP extra header
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.3983259Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4019304Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4262158Z Removing includeIf entries pointing to credentials config files
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4265452Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4294669Z includeif.gitdir:/home/runner/work/django/django/.git.path
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4295803Z includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4296719Z includeif.gitdir:/github/workspace/.git.path
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4297491Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4304788Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git.path
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4330384Z /home/runner/work/_temp/git-credentials-97d00fb7-aee6-4275-ba1d-54d68b8178e2.config
+flake8	UNKNOWN STEP	2026-09-26T16:25:09.4343619Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-97d00fb7\
+
+... [19547 characters truncated] ...
+
+	UNKNOWN STEP	2026-09-26T16:25:08.2993645Z ##[group]Checking out the ref
+black	UNKNOWN STEP	2026-09-26T16:25:08.2997939Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/16681/merge
+black	UNKNOWN STEP	2026-09-26T16:25:08.8086386Z Note: switching to 'refs/remotes/pull/16681/merge'.
+black	UNKNOWN STEP	2026-09-26T16:25:08.8087407Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8087897Z You are in 'detached HEAD' state. You can look around, make experimental
+black	UNKNOWN STEP	2026-09-26T16:25:08.8088943Z changes and commit them, and you can discard any commits you make in this
+black	UNKNOWN STEP	2026-09-26T16:25:08.8089943Z state without impacting any branches by switching back to a branch.
+black	UNKNOWN STEP	2026-09-26T16:25:08.8090513Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8090968Z If you want to create a new branch to retain commits you create, you may
+black	UNKNOWN STEP	2026-09-26T16:25:08.8091883Z do so (now or later) by using -c with the switch command. Example:
+black	UNKNOWN STEP	2026-09-26T16:25:08.8092452Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8092698Z   git switch -c <new-branch-name>
+black	UNKNOWN STEP	2026-09-26T16:25:08.8093079Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8093325Z Or undo this operation with:
+black	UNKNOWN STEP	2026-09-26T16:25:08.8093668Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8093879Z   git switch -
+black	UNKNOWN STEP	2026-09-26T16:25:08.8094182Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8094633Z Turn off this advice by setting config variable advice.detachedHead to false
+black	UNKNOWN STEP	2026-09-26T16:25:08.8095276Z 
+black	UNKNOWN STEP	2026-09-26T16:25:08.8095994Z HEAD is now at ad0f0e8 Merge bd22b3539c6178a8c8a8a181257648020bcab857 into 4fab678a0739d54401ccee7eb587553657c9f76e
+black	UNKNOWN STEP	2026-09-26T16:25:08.8107353Z ##[endgroup]
+black	UNKNOWN STEP	2026-09-26T16:25:08.8153876Z [command]/usr/bin/git log -1 --format=%H
+black	UNKNOWN STEP	2026-09-26T16:25:08.8180035Z ad0f0e809a114278016a0ba50b43c688424b5220
+black	UNKNOWN STEP	2026-09-26T16:25:08.8193663Z ##[group]Removing auth
+black	UNKNOWN STEP	2026-09-26T16:25:08.8194308Z Removing SSH command configuration
+black	UNKNOWN STEP	2026-09-26T16:25:08.8203273Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+black	UNKNOWN STEP	2026-09-26T16:25:08.8229006Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+black	UNKNOWN STEP	2026-09-26T16:25:08.8458222Z Removing HTTP extra header
+black	UNKNOWN STEP	2026-09-26T16:25:08.8461327Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+black	UNKNOWN STEP	2026-09-26T16:25:08.8493371Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+black	UNKNOWN STEP	2026-09-26T16:25:08.8718628Z Removing includeIf entries pointing to credentials config files
+black	UNKNOWN STEP	2026-09-26T16:25:08.8722108Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+black	UNKNOWN STEP	2026-09-26T16:25:08.8748257Z includeif.gitdir:/home/runner/work/django/django/.git.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8749563Z includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8750972Z includeif.gitdir:/github/workspace/.git.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8751965Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8758198Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8780168Z /home/runner/work/_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8790625Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8823061Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8844550Z /home/runner/work/_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8853362Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/django/django/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8889947Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8910901Z /github/runner_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8918955Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8952041Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+black	UNKNOWN STEP	2026-09-26T16:25:08.8973793Z /github/runner_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.8985882Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-f19be5c9\-2a5a\-45b3\-838e\-2fef8bb958a3\.config
+black	UNKNOWN STEP	2026-09-26T16:25:08.9019631Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+black	UNKNOWN STEP	2026-09-26T16:25:08.9241058Z Removing credentials config '/home/runner/work/_temp/git-credentials-f19be5c9-2a5a-45b3-838e-2fef8bb958a3.config'
+black	UNKNOWN STEP	2026-09-26T16:25:08.9250442Z ##[endgroup]
+black	UNKNOWN STEP	2026-09-26T16:25:08.9579887Z ##[group]Run psf/black@stable
+black	UNKNOWN STEP	2026-09-26T16:25:08.9580285Z with:
+black	UNKNOWN STEP	2026-09-26T16:25:08.9580598Z   options: --check --diff
+black	UNKNOWN STEP	2026-09-26T16:25:08.9580912Z   src: .
+black	UNKNOWN STEP	2026-09-26T16:25:08.9581172Z   jupyter: false
+black	UNKNOWN STEP	2026-09-26T16:25:08.9581461Z   use_pyproject: false
+black	UNKNOWN STEP	2026-09-26T16:25:08.9581764Z   summary: true
+black	UNKNOWN STEP	2026-09-26T16:25:08.9582038Z ##[endgroup]
+black	UNKNOWN STEP	2026-09-26T16:25:08.9645300Z ##[start-action display=black;id=__psf_black.__run]
+black	UNKNOWN STEP	2026-09-26T16:25:08.9688988Z ##[group]Run # Even when black fails, do not close the shell
+black	UNKNOWN STEP	2026-09-26T16:25:08.9689617Z ^[[36;1m# Even when black fails, do not close the shell^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9690043Z ^[[36;1mset +e^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9690320Z ^[[36;1m^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9690648Z ^[[36;1mif [ "$RUNNER_OS" == "Windows" ]; then^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9691043Z ^[[36;1m  runner="python"^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9691357Z ^[[36;1melse^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9691650Z ^[[36;1m  runner="python3"^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9691966Z ^[[36;1mfi^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9692254Z ^[[36;1m^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9692605Z ^[[36;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9693030Z ^[[36;1mexit_code=$?^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9693318Z ^[[36;1m^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9693623Z ^[[36;1m# Display the raw output in the step^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9694034Z ^[[36;1mecho "${out}"^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9694352Z ^[[36;1m^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9694690Z ^[[36;1mif [ "${INPUT_SUMMARY}" == "true" ]; then^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9695175Z ^[[36;1m  # Display the Markdown output in the job summary^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9695667Z ^[[36;1m  echo "\`\`\`python" >> $GITHUB_STEP_SUMMARY^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9696119Z ^[[36;1m  echo "${out}" >> $GITHUB_STEP_SUMMARY^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9696562Z ^[[36;1m  echo "\`\`\`" >> $GITHUB_STEP_SUMMARY^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9697143Z ^[[36;1mfi^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9697436Z ^[[36;1m^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9697780Z ^[[36;1m# Exit with the exit-code returned by Black^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9698214Z ^[[36;1mexit ${exit_code}^[[0m
+black	UNKNOWN STEP	2026-09-26T16:25:08.9983750Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+black	UNKNOWN STEP	2026-09-26T16:25:08.9984323Z env:
+black	UNKNOWN STEP	2026-09-26T16:25:08.9984682Z   INPUT_OPTIONS: --check --diff
+black	UNKNOWN STEP	2026-09-26T16:25:08.9985108Z   INPUT_SRC: .
+black	UNKNOWN STEP	2026-09-26T16:25:08.9985475Z   INPUT_JUPYTER: false
+black	UNKNOWN STEP	2026-09-26T16:25:08.9985852Z   INPUT_BLACK_ARGS: 
+black	UNKNOWN STEP	2026-09-26T16:25:08.9986231Z   INPUT_VERSION: 
+black	UNKNOWN STEP	2026-09-26T16:25:08.9986606Z   INPUT_USE_PYPROJECT: false
+black	UNKNOWN STEP	2026-09-26T16:25:08.9987216Z   INPUT_SUMMARY: true
+black	UNKNOWN STEP	2026-09-26T16:25:08.9987599Z   OUTPUT_FILE: 
+black	UNKNOWN STEP	2026-09-26T16:25:08.9987963Z   pythonioencoding: utf-8
+black	UNKNOWN STEP	2026-09-26T16:25:08.9988315Z ##[endgroup]
+black	UNKNOWN STEP	2026-09-26T16:25:59.9562599Z Installing black[colorama]==26.5.1...
+black	UNKNOWN STEP	2026-09-26T16:25:59.9564345Z --- /home/runner/work/django/django/tests/extra_regress/tests.py	2026-09-26 16:25:08.691112+00:00
+black	UNKNOWN STEP	2026-09-26T16:25:59.9565557Z +++ /home/runner/work/django/django/tests/extra_regress/tests.py	2026-09-26 16:25:39.629257+00:00
+black	UNKNOWN STEP	2026-09-26T16:25:59.9566880Z @@ -499,14 +499,16 @@
+black	UNKNOWN STEP	2026-09-26T16:25:59.9567547Z              "OrderBy(RawSQL('extra_regress_testobject.first', ()), descending=True), "
+black	UNKNOWN STEP	2026-09-26T16:25:59.9568345Z              "OrderBy(RawSQL('random()', ()), descending=True), "
+black	UNKNOWN STEP	2026-09-26T16:25:59.9568967Z              "'-second') instead."
+black	UNKNOWN STEP	2026-09-26T16:25:59.9569261Z          )
+black	UNKNOWN STEP	2026-09-26T16:25:59.9569674Z          with self.assertWarnsMessage(RemovedInDjango2029Warning, msg) as ctx:
+black	UNKNOWN STEP	2026-09-26T16:25:59.9570188Z -            TestObject.objects.extra(order_by=[
+black	UNKNOWN STEP	2026-09-26T16:25:59.9570582Z -                "extra_regress_testobject.first",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9570948Z -                "random()",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9571229Z -                "second",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9571572Z -                "-extra_regress_testobject.first",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9571940Z -                "-random()",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9572254Z -                "-second",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9572515Z -            ])
+black	UNKNOWN STEP	2026-09-26T16:25:59.9572771Z +            TestObject.objects.extra(
+black	UNKNOWN STEP	2026-09-26T16:25:59.9573313Z +                order_by=[
+black	UNKNOWN STEP	2026-09-26T16:25:59.9573635Z +                    "extra_regress_testobject.first",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9573986Z +                    "random()",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9574268Z +                    "second",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9574586Z +                    "-extra_regress_testobject.first",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9574934Z +                    "-random()",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9575229Z +                    "-second",
+black	UNKNOWN STEP	2026-09-26T16:25:59.9575509Z +                ]
+black	UNKNOWN STEP	2026-09-26T16:25:59.9575740Z +            )
+black	UNKNOWN STEP	2026-09-26T16:25:59.9576006Z          self.assertEqual(ctx.filename, __file__)
+black	UNKNOWN STEP	2026-09-26T16:25:59.9576512Z would reformat /home/runner/work/django/django/tests/extra_regress/tests.py
+black	UNKNOWN STEP	2026-09-26T16:25:59.9577271Z 
+black	UNKNOWN STEP	2026-09-26T16:25:59.9577601Z Oh no! 💥 💔 💥
+black	UNKNOWN STEP	2026-09-26T16:25:59.9577951Z 1 file would be reformatted, 2930 files would be left unchanged.
+black	UNKNOWN STEP	2026-09-26T16:25:59.9591247Z ##[error]Process completed with exit code 1.
+black	UNKNOWN STEP	2026-09-26T16:25:59.9618058Z ##[end-action id=__psf_black.__run;outcome=failure;conclusion=failure;duration_ms=50997]
+black	UNKNOWN STEP	2026-09-26T16:25:59.9782054Z Post job cleanup.
+black	UNKNOWN STEP	2026-09-26T16:26:00.0604038Z [command]/usr/bin/git version
+black	UNKNOWN STEP	2026-09-26T16:26:00.0648978Z git version 2.55.0
+black	UNKNOWN STEP	2026-09-26T16:26:00.0683689Z Temporarily overriding HOME='/home/runner/work/_temp/782844cd-c13e-45d4-94bb-73f93b63257c' before making global git config changes
+black	UNKNOWN STEP	2026-09-26T16:26:00.0685058Z Adding repository directory to the temporary git global config as a safe directory
+black	UNKNOWN STEP	2026-09-26T16:26:00.0688872Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+black	UNKNOWN STEP	2026-09-26T16:26:00.0718930Z Removing SSH command configuration
+black	UNKNOWN STEP	2026-09-26T16:26:00.0724837Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+black	UNKNOWN STEP	2026-09-26T16:26:00.0756595Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+black	UNKNOWN STEP	2026-09-26T16:26:00.0986245Z Removing HTTP extra header
+black	UNKNOWN STEP	2026-09-26T16:26:00.0991268Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+black	UNKNOWN STEP	2026-09-26T16:26:00.1024527Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+black	UNKNOWN STEP	2026-09-26T16:26:00.1244508Z Removing includeIf entries pointing to credentials config files
+black	UNKNOWN STEP	2026-09-26T16:26:00.1250261Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+black	UNKNOWN STEP	2026-09-26T16:26:00.1278804Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+black	UNKNOWN STEP	2026-09-26T16:26:00.1654994Z Cleaning up orphan processes

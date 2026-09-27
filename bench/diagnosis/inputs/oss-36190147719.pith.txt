@@ -1,0 +1,83 @@
+pith · <log> · 1,035 lines → 283 groups · ~27.1k → ~1.5k tokens (94.3% smaller)
+
+jobs: analyze-shards (1)
+levels: error 5 · warn 2 · notable 2 · info 397
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: analyze-shards (1)
+L123      [268d] ▶ Run mkdir -p ~/.config/ty
+   …
+L494      [0267] 2026-09-25 21:13:49 - INFO - Processing project: paasta
+L495      [32ac] 2026-09-25 21:13:49 - INFO - Cloning https://github.com/yelp/paasta into /home/runner/.cache/ecosystem-analyzer/paasta_57ff83d2b117
+L496      [f120] 2026-09-25 21:13:49 - INFO - Installing dependencies: requests, types-pyOpenSSL, cryptography, certifi
+L497    ✱ [4748] error: Required uv version `==0.12.12` does not match the running version `0.12.11`. Update `uv` by running `uv self update 0.12.12`.
+L498      [5104] 2026-09-25 21:13:49 - INFO - Processing project: pandera
+L499    ✱ [2fe2] 2026-09-25 21:13:49 - ERROR - Failed to install project mongo-python-driver: Command '['uv', 'pip', 'install', '--python', '/tmp/tmpphzi_evm/.venv/bin/python', '--link-mode=copy', '--exclude-newer', '2026-09-25T21:11:17Z', 'requests', 'types-pyOpenSSL', 'cryptography', 'certifi']' returned non-zero 
+L500      [f531] 2026-09-25 21:13:49 - INFO - Cloning https://github.com/pandera-dev/pandera into /home/runner/.cache/ecosystem-analyzer/pandera_8a15ffda8069
+L501      [b41e] Resolved 12 packages in 2.20s
+          Building docstring-adder @ file:///home/runner/.cache/ecosystem-analyzer/docstring-adder_17da8ce016d9
+          Building typeshed-client @ git+https://github.com/JelleZijlstra/typeshed_client@9d4b258bbad66421ee2d9ea8cf02768ffb782a1a
+          Built docstring-adder @ file:///home/runner/.cache/ecosystem-analyzer/docstring-adder_17da8ce016d9
+   …
+L505      [d975] 2026-09-25 21:13:49 - INFO - Installing dependencies: types-PyYAML, coverage, types-chevron, types-PyYAML, types-tqdm
+   …
+L915      [df87] ==2.34.2
+          + requests-toolbelt==1.0.0
+          + rfc3986==2.0.0
+          + rich==15.0.0
+          (+3 lines)
+   …
+L922      [83fb] Installed 14 packages in 118ms (×38, last L955)
+          + hypothesis==6.168.1
+          + idna==3.20
+          + iniconfig==2.3.0
+          (+11 lines)
+   …
+L968    ✱ [f8e5] Traceback (most recent call last):
+          File "…/.venv/bin/ecosystem-analyzer", line 10, in <module>
+          File "…/concurrent/futures/_base.py", line 454, in result
+          File "…/concurrent/futures/_base.py", line 396, in __get_result
+          File "…/concurrent/futures/thread.py", line 86, in run
+          File "…/concurrent/futures/thread.py", line 73, in run
+          (+18 frames hidden)
+   …
+L1033   ✱ [28d1] subprocess.CalledProcessError: Command '['uv', 'pip', 'install', '--python', '/tmp/tmpphzi_evm/.venv/bin/python', '--link-mode=copy', '--exclude-newer', '2026-09-25T21:11:17Z', 'requests', 'types-pyOpenSSL', 'cryptography', 'certifi']' returned non-zero exit status 2.
+L1034   ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L113    WARN [a203] (node:2645) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods
+L114    WARN [1673] (Use `node --trace-deprecation ...` to show where the warning was created)
+L147    NOTA [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+L558    NOTA [2a5d] 2026-09-25 21:13:49 - INFO - Installing dependencies: types-cachetools, types-croniter, types-python-dateutil, types-pytz, types-PyYAML, requests, types-retry, types-simplejson, ty
+
+== END OF OUTPUT
+L841      [fff3] 2026-09-25 21:13:52 - INFO - Cloning https://github.com/aio-libs/yarl into /home/runner/.cache/ecosystem-analyzer/yarl_f9f875ec6920
+L842      [7b47] 2026-09-25 21:13:52 - INFO - Installing dependencies: pytest, filelock, ini2toml, packaging, tomli, tomli-w, jaraco.functools
+L843      [0405] Using Python 3.11.16 environment at: /tmp/tmpzpwlhf4k/.venv
+L873      [8755] 2026-09-25 21:13:52 - INFO - Installing dependencies: id, keyring, packaging, readme-renderer, requests-toolbelt, rfc3986, rich, requests
+L874      [8e48] 2026-09-25 21:13:52 - INFO - Installing dependencies: types-contextvars, types-pycurl
+L875      [d1a2] Using Python 3.11.16 environment at: /tmp/tmpdswi20kz/.venv
+L876      [cd82] 2026-09-25 21:13:52 - INFO - Installing dependencies: numpy, arraykit==1.2.0, hypothesis, pytest
+L877      [927d] Using Python 3.11.16 environment at: /tmp/tmpv8c1adf0/.venv
+L878      [3fd0] 2026-09-25 21:13:52 - INFO - Installing dependencies: idna, multidict, propcache, pytest, hypothesis, pytest-codspeed
+L879      [971a] Using Python 3.11.16 environment at: /tmp/tmpdwiwd3qq/.venv
+L880      [95c1] Using Python 3.11.16 environment at: /tmp/tmp_82l2tx8/.venv
+L887      [fdd6] Prepared 12 packages in 28ms
+L889      [af22] Prepared 1 package in 13ms
+L890      [d09c] Resolved 14 packages in 97ms
+L891      [83fb] Installed 29 packages in 87ms
+
+== MOST FREQUENT OTHER LINES
+×4       [57e2] 2026-09-25 21:13:45 - INFO - No project dependencies to install
+×3       [4293] env:
+×3       [db72] Redirecting to blob download url: https://productionresultssa19.blob.core.windows.net/actions-results/f6364032-9271-41af-b115-c4f8957e1d37/w
+×3       [10f6] Starting download of artifact to: /home/runner/work/ruff/ruff
+×3       [61f8] SHA256 digest of downloaded artifact is 7045c4775b25431822159b190f3638b15236b7e0afe4659629e84454cb0649c9
+×3       [77f8] Artifact download completed successfully.
+×2       [8d65] with:
+×2       [d063] 2026-09-25 21:13:46 - INFO - Installing dependencies: pytest, setuptools
+×2       [62a2] 2026-09-25 21:13:46 - INFO - Running custom install command: {install} .
+×2       [2603] Using Python 3.11.16 environment at: /tmp/tmpiu3kkdw7/.venv
+
+(not shown: 239 groups, 242 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

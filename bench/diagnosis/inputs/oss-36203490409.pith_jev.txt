@@ -1,0 +1,221 @@
+pith · <log> · 13,733 lines → 771 groups · ~422.6k → ~3.6k tokens (99.1% smaller)
+
+jobs: Run DevTools tests for versions (18.0); Run DevTools tests for versions (18.2); Run DevTools tests for versions (17.0)
+levels: error 149 · warn 30 · notable 3 · info 6,590
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 729/771 groups as confident noise · 2 requests · 3,197 tokens · $0.0001 · 0.8s
+most likely root cause: [6b7a] rc=0.39 (confidence 0.36, cause visible p=0.28)
+
+== LIKELY ROOT CAUSE (jev rc=0.39)
+[6b7a] INFO ×16  act=0.45 val=2.3/4 rc=0.39  L2466 … L13471  job: Run DevTools tests for versions (18.0)
+  ● Console
+    console.error
+    Warning: A suspended resource finished loading inside a test, but the event was not wrapped in act(...).
+    When testing, code that resolves suspended data should be wrapped into act(...):
+    act(() => {
+    /* finish loading suspended data */
+    });
+    /* assert on the output */
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    > 190 |     originalConsoleError.apply(console, args);
+    console.error
+    Warning: A suspended resource finished loading inside a test, but the event was not wrapped in act(...).
+    When testing, code that resolves suspended data should be wrapped into act(...):
+    at console.error (packages/react-devtools-shared/src/__tests__/setupTests.js:190:26)
+    at console.overrideMethod (packages/react-devtools-shared/src/hook.js:586:26)
+    at console.error (packages/react-devtools-shared/src/__tests__/setupTests.js:190:26)
+    at console.overrideMethod (packages/react-devtools-shared/src/hook.js:586:26)
+    at console.error (packages/react-devtools-shared/src/__tests__/setupTests.js:190:26)
+    (+125 frames hidden)
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Run DevTools tests for versions (18.0)
+L2465   ✱ [24b0] FAIL packages/react-devtools-shared/src/__tests__/store-test.js (12.61 s) (×6, last L13569)
+L2466     [6b7a] ● Console (×16, last L13471)
+          console.error
+          Warning: A suspended resource finished loading inside a test, but the event was not wrapped in act(...).
+          When testing, code that resolves suspended data should be wrapped into act(...):
+          (+157 lines)
+   …
+L2640   ✱ [0d77] ● Store › Lazy › should support Lazy components that are unmounted before they finish loading in (createRoot) (×4, last L9911)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store Lazy should support Lazy components that are unmounted before they finish loading in (createRoot) 1`
+          - Snapshot  - 1
+          + Received  + 1
+          [root]
+          ▾ <App>
+          <Suspense>
+          [suspense-root]  rects={null}
+          -   <Suspense name="App" rects={null}>
+          +   <Suspense name="App" uniqueSuspenders={true} rects={null}>
+          > 2479 |       expect(store).toMatchInlineSnapshot(`
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:2479:21)
+   …
+L2666   ✱ [bbfd] ● Store › can reconcile resuspended Suspense with Suspense in fallback positions
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store can reconcile resuspended Suspense with Suspense in fallback positions 3`
+          - Snapshot  - 1
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:3471:19)
+   …
+L2695   ✱ [c3a8] ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 4`
+          - Snapshot  - 1
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4095:19)
+   …
+L2723   ✱ [fc07] › 3 snapshots failed. (×5, last L13348)
+L2724   ✱ [21b8] FAIL packages/react-devtools-shared/src/__tests__/storeStressSync-test.js (11.456 s) (×4, last L9994)
+L2725   ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+          expect(received).toEqual(expected) // deep equality
+          - Expected  - 1
+          + Received  + 1
+          at _loop29 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1475:30)
+          (+2 frames hidden)
+   …
+L2753   ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+   …
+L5345     [455f] Snapshot Summary (×3, last L13709)
+          › 27 snapshots failed from 2 test suites. Inspect your code changes or re-run jest with `-u` to update them.
+L5348   ✱ [3b59] Test Suites: 2 failed, 21 skipped, 19 passed, 21 of 42 total (×3, last L13712)
+L5349   ✱ [a72a] Tests:       4 failed, 437 skipped, 180 passed, 621 total (×3, last L13713)
+L5350   ✱ [7a27] Snapshots:   27 failed, 260 passed, 287 total (×3, last L13714)
+L5351     [ca23] Time:        23.313 s (×3, last L13715)
+L5352     [cc96] Ran all test suites. (×3, last L13716)
+L5353   ✱ [eead] ##[error]Process completed with exit code 1. (×3, last L13717)
+-- job: Run DevTools tests for versions (18.2)
+L10545  ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode) (×100, last L10690)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `StoreStress (Legacy Mode) should handle a stress test for Suspense without type change (Legacy Mode) 19`
+          - Snapshot  - 1
+          + Received  + 1
+          @@ -4,6 +4,6 @@
+          ▾ <Suspense>
+          <C key="c">
+          <A key="a">
+          <Y>
+          [suspense-root]  rects={[]}
+          -   <Suspense name="Unknown" rects={null}>
+          +   <Suspense name="Unknown" uniqueSuspenders={true} rects={null}>
+          at _loop21 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1300:21)
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1303:311)
+   …
+L10574  ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `StoreStress (Legacy Mode) should handle a stress test for Suspense without type change (Legacy Mode) 20`
+          - Snapshot  - 1
+          at _loop21 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1300:21)
+          (+1 frames hidden)
+   …
+L10603  ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `StoreStress (Legacy Mode) should handle a stress test for Suspense without type change (Legacy Mode) 21`
+          - Snapshot  - 1
+          at _loop21 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1300:21)
+          (+1 frames hidden)
+   …
+L10632  ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `StoreStress (Legacy Mode) should handle a stress test for Suspense without type change (Legacy Mode) 22`
+          - Snapshot  - 1
+          at _loop21 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1300:21)
+          (+1 frames hidden)
+   …
+L10661  ✱ [d581] ● StoreStress (Legacy Mode) › should handle a stress test for Suspense without type change (Legacy Mode)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `StoreStress (Legacy Mode) should handle a stress test for Suspense without type change (Legacy Mode) 23`
+          - Snapshot  - 1
+          at _loop21 (packages/react-devtools-shared/src/__tests__/storeStressSync-test.js:1300:21)
+          (+1 frames hidden)
+   …
+L10723  ✱ [3b59] Test Suites: 2 failed, 20 skipped, 20 passed, 22 of 42 total
+L10724  ✱ [a72a] Tests:       4 failed, 435 skipped, 182 passed, 621 total
+L10725  ✱ [7a27] Snapshots:   27 failed, 260 passed, 287 total
+L10728  ✱ [eead] ##[error]Process completed with exit code 1.
+-- job: Run DevTools tests for versions (17.0)
+L13209  ✱ [24b0] FAIL packages/react-devtools-shared/src/__tests__/store-test.js (6.808 s)
+L13210  ✱ [bbfd] ● Store › can reconcile resuspended Suspense with Suspense in fallback positions (×6, last L13570)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store can reconcile resuspended Suspense with Suspense in fallback positions 3`
+          - Snapshot  - 1
+          + Received  + 1
+          @@ -7,7 +7,7 @@
+          ▾ <WithSuspenseInFallback>
+          ▾ <Suspense name="main">
+          <Component key="main-content">
+          [suspense-root]  rects={[{x:1,y:2,width:4,height:1}, {x:1,y:2,width:10,height:1}, {x:1,y:2,width:4,height:1}]}
+          <Suspense name="head" uniqueSuspenders={true} rects={[{x:1,y:2,width:4,height:1}]}>
+          -   <Suspense name="head-fallback" uniqueSuspenders={true} rects={[{x:1,y:2,width:10,height:1}]}>
+          +   <Suspense name="head-fallback" uniqueSuspenders={false} rects={[{x:1,y:2,width:10,height:1}]}>
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:3471:19)
+   …
+L13239  ✱ [bb61] ● Store › should track suspended-by in filtered fallback (×2, last L13599)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store should track suspended-by in filtered fallback 1`
+          - Snapshot  - 2
+          + Received  + 2
+          [root]
+          ▾ <Suspense name="root">
+          <Component key="root-fallback">
+          [suspense-root]  rects={null}
+          -   <Suspense name="root" rects={null}>
+          -     <Suspense name="main" rects={null}>
+          +   <Suspense name="root" uniqueSuspenders={true} rects={null}>
+          +     <Suspense name="main" uniqueSuspenders={true} rects={null}>
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:3671:21)
+   …
+L13267  ✱ [c3a8] ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io (×10, last L13680)
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 1`
+          - Snapshot  - 0
+          + Received  + 1
+          [root]
+          <Suspense name="outer">
+          [suspense-root]  rects={null}
+          <Suspense name="outer" uniqueSuspenders={true} rects={null}>
+          +     <Suspense name="inner" uniqueSuspenders={true} rects={null}>
+          > 4033 |     expect(store).toMatchInlineSnapshot(`
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4033:19)
+   …
+L13292  ✱ [c3a8] ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+          expect(received).toMatchInlineSnapshot(snapshot)
+          Snapshot name: `Store continues to consider Suspense boundary as blocking if some child still is suspended on removed io 2`
+          - Snapshot  - 1
+          at Object.<anonymous> (packages/react-devtools-shared/src/__tests__/store-test.js:4044:19)
+   …
+L13320  ✱ [c3a8] ● Store › continues to consider Suspense boundary as blocking if some child still is suspended on removed io
+   …
+L13712  ✱ [3b59] Test Suites: 1 failed, 27 skipped, 14 passed, 15 of 42 total
+L13713  ✱ [a72a] Tests:       3 failed, 518 skipped, 100 passed, 621 total
+L13714  ✱ [7a27] Snapshots:   5 failed, 92 passed, 97 total
+L13717  ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L123    WARN [a5ec] (node:2219) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. (×9, last L10910)
+L150    WARN [442c] (node:2267) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are n (×3, last L10894)
+L184    WARN [a203] (node:2317) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods (×3, last L10928)
+L5369   WARN [e78c] ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/download-arti (×3, last L13733)
+L4534   NOTA [5fbd] Summary of all failing tests (×3, last L13568)
+
+== END OF OUTPUT
+L13174    [1615] ▶ Run ./scripts/ci/download_devtools_regression_build.js 17.0 --replaceBuild
+L13175    [8bab] ./scripts/ci/download_devtools_regression_build.js 17.0 --replaceBuild
+L13177    [4293] env:
+L13204    [c522] shell: /usr/bin/bash -e {0}
+L13348    [fc07] › 5 snapshots failed.
+L13469    [7553] PASS packages/react-devtools-shared/src/__tests__/profilerStore-test.js
+L13471    [6b7a] ● Console
+L13568    [5fbd] Summary of all failing tests
+
+== MOST FREQUENT OTHER LINES
+×12      [8d65] with:
+×6       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×6       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×6       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×6       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×3       [5b8f] Run DevTools tests for versions (18.0)	UNKNOWN STEP	﻿2026-09-26T00:07:25.3039731Z Current runner version: '2.337.0'
+×3       [c07b] Secret source: Actions
+×3       [0c27] [command]/usr/bin/git remote add origin https://github.com/react/react
+×3       [d0dc] [command]/usr/bin/git config --local gc.auto 0
+×3       [93e5] ▶ Setting up auth
+
+(not shown: 5 groups, 15 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

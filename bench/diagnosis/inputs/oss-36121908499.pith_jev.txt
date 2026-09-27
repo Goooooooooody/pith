@@ -1,0 +1,133 @@
+pith · <log> · 2,739 lines → 1624 groups · ~71.5k → ~2.8k tokens (96.1% smaller)
+
+jobs: Java 21
+levels: error 14 · warn 6 · notable 10 · info 2,097
+raw: <removed for evaluation>
+jev (jev-1.13.0): hid 949/1000 groups as confident noise (624 rarest groups not scored) · 2 requests · 3,489 tokens · $0.0001 · 1.0s
+most likely root cause: [2c5f] rc=0.98 (confidence 0.97, cause visible p=0.48)
+
+== LIKELY ROOT CAUSE (jev rc=0.98)
+[2c5f] ERROR ×4  act=0.86 val=2.6/4 rc=0.98  L2362 … L2392  job: Java 21
+  PaketoBuilderTests > executableWarApp() FAILED
+    org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+    Caused by: org.rnorth.ducttape.RetryCountExceededException at PaketoBuilderTests.java:243
+    Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+    Caused by: java.lang.IllegalStateException at PaketoBuilderTests.java:243
+    Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+    Caused by: org.rnorth.ducttape.TimeoutException at PaketoBuilderTests.java:243
+    Caused by: java.lang.RuntimeException at HttpWaitStrategy.java:312
+    Caused by: java.net.ConnectException at Net.java:-2
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Java 21
+L1090     [bed8] Package 'php-symfony-doctrine-bridge' is not installed, so not removed
+L1091     [977c] Package 'php-symfony-dom-crawler' is not installed, so not removed
+L1092     [c34c] Package 'php-symfony-dotenv' is not installed, so not removed
+L1093   ✱ [8de0] Package 'php-symfony-error-handler' is not installed, so not removed
+L1094     [cc7c] Package 'php-symfony-event-dispatcher' is not installed, so not removed
+L1095     [fd5a] Package 'php-symfony-form' is not installed, so not removed
+L1096     [4ef6] Package 'php-symfony-framework-bundle' is not installed, so not removed
+   …
+L1977     [4db9] ▶ Run ./gradlew systemTest
+   …
+L2358     [bd7e] > Task :system-test:spring-boot-image-system-tests:systemTestClasses
+L2359     [c292] > Task :system-test:spring-boot-deployment-system-tests:systemTest
+L2360     [fc6c] > Task :system-test:spring-boot-image-system-tests:systemTest
+L2362   ✱ [2c5f] PaketoBuilderTests > executableWarApp() FAILED (×4, last L2392)
+          org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: org.rnorth.ducttape.RetryCountExceededException at PaketoBuilderTests.java:243
+          Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: java.lang.IllegalStateException at PaketoBuilderTests.java:243
+          Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: org.rnorth.ducttape.TimeoutException at PaketoBuilderTests.java:243
+          Caused by: java.lang.RuntimeException at HttpWaitStrategy.java:312
+          Caused by: java.net.ConnectException at Net.java:-2
+   …
+L2372   ✱ [2c5f] PaketoBuilderTests > executableWarApp() FAILED
+          org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: org.rnorth.ducttape.RetryCountExceededException at PaketoBuilderTests.java:243
+          Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+   …
+L2382   ✱ [2c5f] PaketoBuilderTests > executableWarApp() FAILED
+          org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: org.rnorth.ducttape.RetryCountExceededException at PaketoBuilderTests.java:243
+          Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+   …
+L2392   ✱ [2c5f] PaketoBuilderTests > executableWarApp() FAILED
+          org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+          Caused by: org.rnorth.ducttape.RetryCountExceededException at PaketoBuilderTests.java:243
+          Caused by: org.testcontainers.containers.ContainerLaunchException at PaketoBuilderTests.java:243
+   …
+L2402   ✱ [b19d] 12 tests completed, 4 failed, 1 skipped
+L2404   ✱ [61ad] > Task :system-test:spring-boot-image-system-tests:systemTest FAILED
+L2406     [adb8] gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/run-system-tests-1790330805291.json
+L2407   ✱ [3f850] Found test failures in 1 test task:
+L2409     [3d8b] :system-test:spring-boot-image-system-tests:systemTest
+          org.springframework.boot.image.paketo.PaketoBuilderTests > executableWarApp()
+          org.springframework.boot.image.paketo.PaketoBuilderTests > executableWarApp()
+          org.springframework.boot.image.paketo.PaketoBuilderTests > executableWarApp()
+          (+1 lines)
+   …
+L2415   ✱ [9bdc] FAILURE: Build failed with an exception.
+L2417     [c8a0] * What went wrong:
+L2418   ✱ [9aff] Execution failed for task ':system-test:spring-boot-image-system-tests:systemTest'.
+L2419     [083c] > There were failing tests. See the report at: file:///home/runner/work/spring-boot/spring-boot/system-test/spring-boot-image-system-tests/build/reports/tests/systemTest/index.html
+L2421   ✱ [aa92] BUILD FAILED in 19m 49s
+L2423     [cb9c] [Incubating] Problems report is available at: file:///home/runner/work/spring-boot/spring-boot/build/reports/problems/problems-report.html
+L2425     [3e25] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+L2427     [b3e8] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+L2429     [ea8a] For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+L2430     [7c49] 273 actionable tasks: 255 executed, 18 from cache
+L2432     [f920] Publishing Build Scan to Develocity...
+L2433     [ef2d] gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-scans/run-system-tests-1790330805291.json
+L2434     [ee43] https://ge.spring.io/s/lfafysujqy4zg
+L2436   ✱ [eead] ##[error]Process completed with exit code 1.
+   …
+L2595     [58ca] echo "RUN_URL=https://github.com/spring-projects/spring-boot/actions/runs/36121908499" >> "$GITHUB_ENV"
+L2596     [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0} (×9, last L2617)
+L2597     [4293] env: (×9, last L2618)
+          JAVA_HOME: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+          JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Liberica_jdk/21.0.12-10/x64
+          JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Liberica_jdk/25.0.4-9/x64
+          (+9 lines)
+   …
+L2615   ✱ [dae2] ▶ Run curl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/36121908499|4.1.x | System Tests | Java 21> failed*  [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]"}' || true
+L2616   ✱ [c32f] curl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/36121908499|4.1.x | System Tests | Java 21> failed*  [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]"}' || true
+   …
+L2638     [e50c] 100   602    0   413  100   189    876    401 --:--:-- --:--:-- --:--:--  1278
+
+== OTHER ERRORS & WARNINGS
+L824    WARN [62f2] Package 'php-symfony-deprecation-contracts' is not installed, so not removed
+L873    WARN [ac34] Package 'php-doctrine-deprecations' is not installed, so not removed
+L2019   WARN [afea] OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+== END OF OUTPUT
+L2561     [dc65] paketobuildpacks/ubuntu-noble-run-tiny       0.0.134         sha256:62f53101d37fc816bd612fee0a4f899fd3fb0452c33faff33d7d0a87c6962ec1   d16074aac27a   3 days ago      24.9MB
+L2562     [a4b8a] ghcr.io/github/gh-aw-mcpg                    latest          sha256:9be0a86220e807a0ecc89e53d7453468f7a53fbc6b3d1efd2299025ffe01d086   8fd5ed88dce2   7 days ago      181MB
+L2563     [23e1] ghcr.io/github/gh-aw-firewall/agent          latest          sha256:1bacef0f405d77999d01d8c00cb731222531b3f43ef9dc8312c513d6d9038bb1   dc9d80ee1508   8 days ago      565MB
+L2564     [2397] ghcr.io/github/github-mcp-server             latest          sha256:508a0857ec762b1ab1cece29193345b501fab1dd9d1228a7b617062954cecac6   09777492cb75   9 days ago      46.9MB
+L2565     [1d91] ghcr.io/dependabot/dependabot-updater-core   latest          sha256:9449e9908fd44ed006f2fbde2066eba314d45c564c765d50eaa1aedb96cabde0   8c87fce2da7e   9 days ago      828MB
+L2566     [898c] ghcr.io/github/gh-aw-firewall/api-proxy      latest          sha256:30ab6d3261dd95364281fa0b52ab78450e1c01aa074eccc3a8d4f04b12a6560b   008b8653cd89   10 days ago     209MB
+L2567     [418b] ghcr.io/github/gh-aw-firewall/squid          latest          sha256:cba5f56857e4869c4a00c1cce29c3056516cf1a746e18ce380753ecfbe40f112   ebc9c9e5ccbd   6 weeks ago     43.1MB
+L2568     [52dd] testcontainers/ryuk                          0.14.0          sha256:7c1a8a9a47c780ed0f983770a662f80deb115d95cce3e2daa3d12115b8cd28f0   9a5f93e8f930   12 months ago   2.4MB
+L2569     [1d5b] tomcat                                       11.0.10-jdk17   sha256:e1fe6ae3e857f06a4a3e92d82df4e32fc5208467fc3164d8b12113b9b38c6c77   5cdeb474b031   13 months ago   440MB
+L2570     [3d09] paketobuildpacks/builder-noble-java-tiny     latest          sha256:6553807caa811f6bb1f5bdd79318c56f275bc7da7e0d7ffc6470885c24919526   d89fb75bc401   46 years ago    863MB
+L2572     [7c0d] ▶ Run ./.github/actions/send-notification
+L2573     [8d65] with:
+L2593     [1583] ▶ Run echo "BUILD_SCAN= [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]" >> "$GITHUB_ENV"
+L2594     [6cc4] echo "BUILD_SCAN= [<https://ge.spring.io/s/lfafysujqy4zg|Build Scan>]" >> "$GITHUB_ENV"
+L2639     [221f] {
+
+== MOST FREQUENT OTHER LINES
+×47      [0374] Package 'gosa-plugin-phpscheduleit-schema' is not installed, so not removed
+×16      [fd70] ********************************************************************************
+×7       [4ad0] Package 'llvm-spirv-14' is not installed, so not removed
+×6       [45df] if [[ true == 'true' ]]; then
+×6       [75a6] The following packages will be REMOVED:
+×6       [33d0] After this operation, 1575 MB disk space will be freed.
+×5       [467c] Package 'llvm-21' is not installed, so not removed
+×5       [96f6] Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+×2       [8399] Removing SSH command configuration
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+
+(not shown: 589 groups, 596 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

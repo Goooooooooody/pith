@@ -1,0 +1,89 @@
+pith · <log> · 507 lines → 308 groups · ~18.4k → ~2.6k tokens (86.0% smaller)
+
+jobs: Run prek checks
+levels: error 11 · warn 1 · info 237 · debug 147
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Run prek checks
+L256      [d7cd] [command]/usr/bin/tar -xf /home/runner/work/_temp/abaeed25-6793-4bf1-bc79-f8f0f10dd32e/cache.tzst -P -C /home/runner/work/core/core --use-compress-program unzstd
+L257      [ea01] Cache restored successfully
+L258      [b709] Restored prek cache with key prek-v1|Linux|X64||2b5bf303f7851b4f73e5b54c5be88d7b547a1640fcd1465df7262e0547714085
+L260    ✱ [be95] [command]/opt/hostedtoolcache/prek/0.5.3/x64/prek run --show-diff-on-failure --color=always --all-files
+L261      [e0ef] ruff check...............................................................Passed
+L262    ✱ [4cf1] ruff format..............................................................Failed
+L263      [b85e] - hook id: ruff-format
+L264      [f297] - description: Run 'ruff format' for extremely fast Python formatting
+L265      [95c0] - files were modified by this hook
+   …
+L300      [d971] ▶ Prek verbose logs
+   …
+L314      [2cea] 2026-09-26T21:06:46.240210Z TRACE Checking lock resource="store" path=/home/runner/.cache/prek/.lock (×2, last L337)
+L315      [e85c] 2026-09-26T21:06:46.240227Z DEBUG Acquired lock resource="store" (×2, last L338)
+L316      [136c] 2026-09-26T21:06:46.242019Z TRACE No requires-python found in pyproject.toml hook=ruff-check
+L317    ✱ [4ca1] 2026-09-26T21:06:46.242074Z TRACE Failed to extract metadata from entry for hook `ruff-check`: failed to read from file `/home/runner/.cache/prek/repos/419f032ba23dc6cf/ruff`: No such file or directory (os error 2)
+L318      [c220] 2026-09-26T21:06:46.242136Z TRACE No requires-python found in pyproject.toml hook=ruff-format
+L319    ✱ [9678] 2026-09-26T21:06:46.242169Z TRACE Failed to extract metadata from entry for hook `ruff-format`: failed to read from file `/home/runner/.cache/prek/repos/419f032ba23dc6cf/ruff`: No such file or directory (os error 2)
+L320      [5bbe] 2026-09-26T21:06:46.242276Z TRACE Using pyproject.toml-derived language_version hook=codespell version=>=3.9
+L321    ✱ [3c66] 2026-09-26T21:06:46.242307Z TRACE Failed to extract metadata from entry for hook `codespell`: failed to read from file `/home/runner/.cache/prek/repos/acc57484f9af19df/codespell`: No such file or directory (os error 2)
+L322      [2133] 2026-09-26T21:06:46.242337Z TRACE No requires-python found in pyproject.toml hook=check-executables-have-shebangs
+L323    ✱ [107c] 2026-09-26T21:06:46.242360Z TRACE Failed to extract metadata from entry for hook `check-executables-have-shebangs`: failed to read from file `/home/runner/.cache/prek/repos/0321a11f464e05f4/check-executables-have-shebangs`: No such file or directory (os error 2)
+L324      [6e61] 2026-09-26T21:06:46.242385Z TRACE No requires-python found in pyproject.toml hook=check-json
+L325    ✱ [5ff0] 2026-09-26T21:06:46.242407Z TRACE Failed to extract metadata from entry for hook `check-json`: failed to read from file `/home/runner/.cache/prek/repos/0321a11f464e05f4/check-json`: No such file or directory (os error 2)
+L326      [951c] 2026-09-26T21:06:46.242432Z TRACE No requires-python found in pyproject.toml hook=no-commit-to-branch
+L327    ✱ [5649] 2026-09-26T21:06:46.242455Z TRACE Failed to extract metadata from entry for hook `no-commit-to-branch`: failed to read from file `/home/runner/.cache/prek/repos/0321a11f464e05f4/no-commit-to-branch`: No such file or directory (os error 2)
+L328      [b120] 2026-09-26T21:06:46.242519Z TRACE Using pyproject.toml-derived language_version hook=yamllint version=>=3.10
+L329    ✱ [b78a] 2026-09-26T21:06:46.242547Z TRACE Failed to extract metadata from entry for hook `yamllint`: failed to read from file `/home/runner/.cache/prek/repos/e608809ebabc942d/yamllint`: Is a directory (os error 21)
+L330      [ac53] 2026-09-26T21:06:46.242619Z TRACE Using pyproject.toml-derived language_version hook=python-typing-update version=>=3.8
+L331    ✱ [5f6e] 2026-09-26T21:06:46.242644Z TRACE Failed to extract metadata from entry for hook `python-typing-update`: failed to read from file `/home/runner/.cache/prek/repos/b49a23cc3e63d2d6/python-typing-update`: No such file or directory (os error 2)
+L332      [bb1f] 2026-09-26T21:06:46.242679Z TRACE Released lock path=/home/runner/.cache/prek/.lock (×2, last L411)
+L333      [7cf4] 2026-09-26T21:06:46.242695Z DEBUG Hooks going to run: ["ruff-check", "ruff-format", "codespell", "check-json", "no-commit-to-branch", "yamllint", "prettier", "mypy", "pylint", "gen_requirements_all", "gen_copilot_instructions", "hassfest", "hassfest-metadata", "hassfest-mypy-config"]
+L334      [f5c0] 2026-09-26T21:06:46.242719Z TRACE ls_files{cwd="/home/runner/work/core/core"}: Executing `cd /home/runner/work/core/core && /usr/bin/git -c core.useBuiltinFSMonitor=false --literal-pathspecs ls-files -z -- /home/runner/work/core/core`
+   …
+L476      [2422] 2026-09-26T21:08:02.936900Z DEBUG Running priority group with priority 12: ["gen_copilot_instructions"]
+L477      [de99] 2026-09-26T21:08:02.936945Z TRACE Files for hook `gen_copilot_instructions` after filtering matched=true filenames=0
+L478      [ae16] 2026-09-26T21:08:02.937011Z TRACE run{hook_id=gen_copilot_instructions language=script}: Found shebang: ["sh"]
+L479      [231c] 2026-09-26T21:08:02.937121Z TRACE run{hook_id=gen_copilot_instructions language=script}: Running gen_copilot_instructions total_files=0 concurrency=4
+L480      [c311] 2026-09-26T21:08:02.937278Z TRACE run{hook_id=gen_copilot_instructions language=script}: Executing `cd /home/runner/work/core/core && /usr/bin/sh /home/runner/work/core/core/script/run-in-env.sh python3 -m script.gen_copilot_instructions`
+L481      [ad63] 2026-09-26T21:08:02.970383Z  INFO run{hook_id=gen_copilot_instructions language=script}: close time.busy=718µs time.idle=32.7ms
+L482      [2b23] 2026-09-26T21:08:02.970452Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-submodules -- /home/runner/work/core/core` (×7, last L482)
+L483      [10e0] 2026-09-26T21:08:03.394318Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=403µs time.idle=423ms (×7, last L483)
+L484      [5461] 2026-09-26T21:08:03.394371Z DEBUG Running priority group with priority 13: ["hassfest"]
+L485      [54bd] 2026-09-26T21:08:03.394379Z DEBUG Running priority group with priority 14: ["hassfest-metadata"]
+L486      [cc78] 2026-09-26T21:08:03.394382Z DEBUG Running priority group with priority 15: ["hassfest-mypy-config"]
+L487      [67a7] 2026-09-26T21:08:03.394533Z TRACE Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false --no-pager diff --no-ext-diff --color=always -- /home/runner/work/core/core`
+L489    ✱ [fa9c] ##[error]prek exited with code 1
+
+== OTHER ERRORS & WARNINGS
+L80     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning,
+
+== END OF OUTPUT
+L453      [02d2] 2026-09-26T21:07:02.960866Z TRACE run{hook_id=yamllint language=python}: Running yamllint total_files=984 concurrency=4
+L457      [25b2] 2026-09-26T21:07:02.962710Z TRACE run{hook_id=yamllint language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/prek/hooks/python-52gWUbOo1pK8Qlg5ePfc/bin/python3 /home/runne
+L458      [8ff8] 2026-09-26T21:07:06.602672Z  INFO run{hook_id=yamllint language=python}: close time.busy=2.77ms time.idle=3.64s
+L461      [58a9] 2026-09-26T21:07:06.809651Z DEBUG Running priority group with priority 7: ["prettier"]
+L462      [0d5b] 2026-09-26T21:07:06.810716Z TRACE matching_filenames{hook="prettier"}: close time.busy=1.05ms time.idle=1.36µs
+L463      [eccf] 2026-09-26T21:07:06.810737Z TRACE Files for hook `prettier` after filtering matched=true filenames=28130
+L464      [c936] 2026-09-26T21:07:06.810908Z TRACE run{hook_id=prettier language=node}: Found shebang: ["node"]
+L465      [449d] 2026-09-26T21:07:06.810961Z TRACE run{hook_id=prettier language=node}: Running prettier total_files=28130 concurrency=4
+L469      [2591] 2026-09-26T21:07:06.819233Z TRACE run{hook_id=prettier language=node}: Executing `cd /home/runner/work/core/core && /usr/local/bin/node /home/runner/.cache/prek/hooks/node-QDMUrNtUvmKtdXx6qsey/bin/pre
+L470      [aebb] 2026-09-26T21:08:02.727638Z  INFO run{hook_id=prettier language=node}: close time.busy=277ms time.idle=55.6s
+L471      [2b23] 2026-09-26T21:08:02.727704Z TRACE diff_worktree{path="/home/runner/work/core/core"}: Executing `/usr/bin/git -c core.useBuiltinFSMonitor=false diff --full-index --no-ext-diff --no-textconv --ignore-su
+L472      [10e0] 2026-09-26T21:08:02.936821Z TRACE diff_worktree{path="/home/runner/work/core/core"}: close time.busy=409µs time.idle=209ms
+L473      [dab9] 2026-09-26T21:08:02.936884Z DEBUG Running priority group with priority 9: ["mypy"]
+L474      [59a1] 2026-09-26T21:08:02.936893Z DEBUG Running priority group with priority 10: ["pylint"]
+L475      [46c5] 2026-09-26T21:08:02.936897Z DEBUG Running priority group with priority 11: ["gen_requirements_all"]
+
+== MOST FREQUENT OTHER LINES
+×13      [1f25] Updating files:  87% (24695/28198)
+×4       [a71a] hint:
+×4       [b60b] 2026-09-26T21:06:46.284755Z TRACE Found compatible managed uv uv=/home/runner/.cache/prek/tools/uv/uv
+×4       [6577] 2026-09-26T21:06:46.383693Z TRACE Installing dependencies from repo path: /home/runner/.cache/prek/repos/acc57484f9af19df
+×4       [b89e] 2026-09-26T21:06:46.383702Z TRACE Executing `cd /home/runner/.cache/prek/repos/acc57484f9af19df && /home/runner/.cache/prek/tools/uv/uv pip 
+×4       [1ba2] info = {
+×4       [1806] print(json.dumps(info))
+×4       [6950] `
+×4       [3656] 2026-09-26T21:06:57.517221Z TRACE run{hook_id=codespell language=python}: Executing `cd /home/runner/work/core/core && /home/runner/.cache/p
+×3       [4293] env:
+
+(not shown: 237 groups, 265 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

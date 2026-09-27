@@ -1,0 +1,66 @@
+pith · <log> · 482 lines → 179 groups · ~12.4k → ~1.0k tokens (91.8% smaller)
+
+jobs: flake8; black
+levels: error 3 · warn 2 · notable 3 · info 333
+raw: <removed for evaluation>
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: flake8
+L198      [e1c2] ▶ Run liskin/gh-problem-matcher-wrap@d31bb388d13cf879e93f878cb2550299f0afb460
+   ...
+L210      [7581] [command]/opt/hostedtoolcache/Python/3.14.7/x64/bin/flake8
+L211    ✱ [820d] ##[error]./tests/extra_regress/tests.py:478:89: E501 line too long (91 > 88 characters)
+L212    ✱ [46c0] ##[error]The process '/opt/hostedtoolcache/Python/3.14.7/x64/bin/flake8' failed with exit code 1
+-- job: black
+L396      [1cb5] ▶ Run # Even when black fails, do not close the shell
+   ...
+L451      [9c91] +                order_by=[
+L452      [e67b] +                    "extra_regress_testobject.first",
+L453      [9598] +                    "random()",
+L454      [49fc] +                    "second",
+L455      [899a] +                    "-extra_regress_testobject.first",
+L456      [7f8d] +                    "-random()",
+L457      [c3e3] +                    "-second",
+L458      [5833] +                ]
+L459      [5f7d] +            )
+          self.assertEqual(ctx.filename, __file__)
+L461      [f921] would reformat /home/runner/work/django/django/tests/extra_regress/tests.py
+L463      [f57a] Oh no! 💥 💔 💥
+L464      [f4b3] 1 file would be reformatted, 2930 files would be left unchanged.
+L465    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== OTHER ERRORS & WARNINGS
+L67     WARN [4994] hint: to use in all of your new repositories, which will suppress this warning, (×2, last L294)
+L397    NOTA [4e87] # Even when black fails, do not close the shell
+L421    NOTA [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+
+== END OF OUTPUT
+L421      [c937] shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+L422      [4293] env:
+L433      [9a3d] Installing black[colorama]==26.5.1...
+L434      [ef67] --- /home/runner/work/django/django/tests/extra_regress/tests.py	2026-09-26 16:25:08.691112+00:00
+L435      [9a69] +++ /home/runner/work/django/django/tests/extra_regress/tests.py	2026-09-26 16:25:39.629257+00:00
+L436      [dc44] @@ -499,14 +499,16 @@
+L442      [f053] -            TestObject.objects.extra(order_by=[
+L443      [f381] -                "extra_regress_testobject.first",
+L444      [1fc8] -                "random()",
+L445      [fdae] -                "second",
+L446      [9e09] -                "-extra_regress_testobject.first",
+L447      [b18c] -                "-random()",
+L448      [f92a] -                "-second",
+L449      [5ce3] -            ])
+L450      [91b0] +            TestObject.objects.extra(
+
+== MOST FREQUENT OTHER LINES
+×8       [a71a] hint:
+×6       [8399] Removing SSH command configuration
+×6       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×6       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×6       [66c6] Removing HTTP extra header
+×6       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×6       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×6       [5c50] Removing includeIf entries pointing to credentials config files
+×6       [4a91] [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+×6       [28ba] [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+
+(not shown: 132 groups, 237 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

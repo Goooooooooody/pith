@@ -1,0 +1,259 @@
+fmt	UNKNOWN STEP	﻿2026-08-18T22:00:35.7435323Z Current runner version: '2.336.0'
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7459302Z ##[group]Runner Image Provisioner
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7460485Z Hosted Compute Agent
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7461091Z Version: 20260729.566
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7461706Z Commit: cf7153fe6e25b664e8693c24944bf2b00355d109
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7462528Z Build Date: 2026-07-29T19:17:02Z
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7463208Z Worker ID: {471d1da6-fe9d-4004-b624-793bc269551f}
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7463946Z Azure Region: westus
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7464515Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7465944Z ##[group]Operating System
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7466650Z Ubuntu
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7467200Z 24.04.4
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7467678Z LTS
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7468233Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7468764Z ##[group]Runner Image
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7469379Z Image: ubuntu-24.04
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7470348Z Version: 20260810.271.1
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7471680Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260810.271/images/ubuntu/Ubuntu2404-Readme.md
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7473231Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260810.271
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7474157Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7475334Z ##[group]GITHUB_TOKEN Permissions
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7477161Z Contents: read
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7477880Z Metadata: read
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7478435Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7480944Z Secret source: None
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7482075Z Prepare workflow directory
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.7962196Z Prepare all required actions
+fmt	UNKNOWN STEP	2026-08-18T22:00:35.8010645Z Getting action download info
+fmt	UNKNOWN STEP	2026-08-18T22:00:36.1355323Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+fmt	UNKNOWN STEP	2026-08-18T22:00:36.2670382Z Download action repository 'dtolnay/rust-toolchain@stable' (SHA:4360b52568e2003a75bf9bc1d59f33a8e3fc893c)
+fmt	UNKNOWN STEP	2026-08-18T22:00:36.4544868Z Download action repository 'Swatinem/rust-cache@v2' (SHA:6323deb102c322ba6fcbdcafc7e3dddab59af2b6)
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.1300273Z Complete job name: fmt
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2069116Z ##[group]Run actions/checkout@v7
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2070298Z with:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2070795Z   repository: tokio-rs/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2074608Z   token: ***
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2075074Z   ssh-strict: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2075547Z   ssh-user: git
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2076018Z   persist-credentials: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2076529Z   clean: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2076998Z   sparse-checkout-cone-mode: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2077553Z   fetch-depth: 1
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2078002Z   fetch-tags: false
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2078472Z   show-progress: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2078990Z   lfs: false
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2079436Z   submodules: false
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2080067Z   set-safe-directory: true
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2080619Z   allow-unsafe-pr-checkout: false
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2081441Z env:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2081903Z   RUSTFLAGS: -Dwarnings
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2082414Z   RUST_BACKTRACE: 1
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2082905Z   RUSTUP_WINDOWS_PATH_ADD_BIN: 1
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2083522Z   rust_stable: stable
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2084041Z   rust_nightly: nightly-2025-10-12
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2084623Z   rust_miri_nightly: nightly-2026-06-29
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2085201Z   rust_clippy: 1.88
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2085660Z   rust_min: 1.71
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2086142Z   TOKIO_STABLE_FEATURES: full,test-util
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.2086721Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3108909Z Syncing repository: tokio-rs/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3111173Z ##[group]Getting Git version info
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3111962Z Working directory is '/home/runner/work/tokio/tokio'
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3113067Z [command]/usr/bin/git version
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3178057Z git version 2.54.0
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3198810Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3210601Z Temporarily overriding HOME='/home/runner/work/_temp/5bf44461-3629-4eac-8702-7316db128831' before making global git config changes
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3213485Z Adding repository directory to the temporary git global config as a safe directory
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3216386Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tokio/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3265319Z Deleting the contents of '/home/runner/work/tokio/tokio'
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3268656Z ##[group]Determining repository object format
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3270484Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3271434Z ##[group]Initializing the repository
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3274746Z [command]/usr/bin/git init /home/runner/work/tokio/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3423837Z hint: Using 'master' as the name for the initial branch. This default branch name
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3425854Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3427225Z hint: to use in all of your new repositories, which will suppress this warning,
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3428852Z hint: call:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3430143Z hint:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3431393Z hint: 	git config --global init.defaultBranch <name>
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3432848Z hint:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3434224Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3435822Z hint: 'development'. The just-created branch can be renamed via this command:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3437043Z hint:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3437973Z hint: 	git branch -m <name>
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3438906Z hint:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3440733Z hint: Disable this message with "git config set advice.defaultBranchName false"
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3442337Z Initialized empty Git repository in /home/runner/work/tokio/tokio/.git/
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3444757Z [command]/usr/bin/git remote add origin https://github.com/tokio-rs/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3489319Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3490558Z ##[group]Disabling automatic garbage collection
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3494098Z [command]/usr/bin/git config --local gc.auto 0
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3523153Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3524715Z ##[group]Setting up auth
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3525777Z Removing SSH command configuration
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3530569Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3564776Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3928190Z Removing HTTP extra header
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3933369Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.3964667Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4176818Z Removing includeIf entries pointing to credentials config files
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4181272Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4210711Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4425758Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-f250864e-6570-49e4-8947-28de21b277e7.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4459161Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/tokio/tokio/.git.path /home/runner/work/_temp/git-credentials-f250864e-6570-49e4-8947-28de21b277e7.config
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4486710Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-f250864e-6570-49e4-8947-28de21b277e7.config
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4518838Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-f250864e-6570-49e4-8947-28de21b277e7.config
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4548593Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-f250864e-6570-49e4-8947-28de21b277e7.config
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4575488Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4576886Z ##[group]Fetching the repository
+fmt	UNKNOWN STEP	2026-08-18T22:00:37.4581254Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d51ebb69d08251947f49000ef2b072eb8a8dcc31:refs/remotes/pull/8370/merge
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2271886Z From https://github.com/tokio-rs/tokio
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2273288Z  * [new ref]         d51ebb69d08251947f49000ef2b072eb8a8dcc31 -> pull/8370/merge
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2310878Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2311853Z ##[group]Determining the checkout info
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2312797Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2317122Z [command]/usr/bin/git sparse-checkout disable
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2363479Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2390584Z ##[group]Checking out the ref
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2393816Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/8370/merge
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2967021Z Note: switching to 'refs/remotes/pull/8370/merge'.
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2967963Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2968624Z You are in 'detached HEAD' state. You can look around, make experimental
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2970401Z changes and commit them, and you can discard any commits you make in this
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2971910Z state without impacting any branches by switching back to a branch.
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2972801Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2973284Z If you want to create a new branch to retain commits you create, you may
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2974164Z do so (now or later) by using -c with the switch command. Example:
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2974661Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2974885Z   git switch -c <new-branch-name>
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2975371Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2975725Z Or undo this operation with:
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2976248Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2976446Z   git switch -
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2976727Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2977435Z Turn off this advice by setting config variable advice.detachedHead to false
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2978048Z 
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2978820Z HEAD is now at d51ebb6 Merge ed02beccb5050767cf06586f7f791efe3c12c5cc into 625954f365727668cb02d04172b34f1149637728
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.2981110Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3017408Z [command]/usr/bin/git log -1 --format=%H
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3040360Z d51ebb69d08251947f49000ef2b072eb8a8dcc31
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3467688Z ##[group]Run dtolnay/rust-toolchain@stable
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3468294Z with:
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3468686Z   toolchain: stable
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3469117Z   components: rustfmt
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3469544Z env:
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3470271Z   RUSTFLAGS: -Dwarnings
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3470736Z   RUST_BACKTRACE: 1
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3471183Z   RUSTUP_WINDOWS_PATH_ADD_BIN: 1
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3471669Z   rust_stable: stable
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3472125Z   rust_nightly: nightly-2025-10-12
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3472662Z   rust_miri_nightly: nightly-2026-06-29
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3473195Z   rust_clippy: 1.88
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3473614Z   rust_min: 1.71
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3474072Z   TOKIO_STABLE_FEATURES: full,test-util
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3474591Z ##[endgroup]
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3543754Z ##[start-action display=Parse toolchain version;id=__dtolnay_rust-toolchain.parse]
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3592347Z ##[group]Run if [[ -z $toolchain ]]; then
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3593076Z ^[[36;1mif [[ -z $toolchain ]]; then^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3594031Z ^[[36;1m  # GitHub does not enforce `required: true` inputs itself. https://github.com/actions/runner/issues/1070^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3595032Z ^[[36;1m  echo "'toolchain' is a required input" >&2^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3595612Z ^[[36;1m  exit 1^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3596267Z ^[[36;1melif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3597038Z ^[[36;1m  if [[ Linux == macOS ]]; then^[[0m
+fmt	UNKNOWN STEP	2026-08-18T22:00:38.3597984Z ^[[36;1m    echo "toolchain=1.$
+
+... [143957 characters truncated] ...
+
+6-08-18T22:02:42.5090267Z         8:  0xedc24 - tokio-ef380d78a7acf3f3.wasm!std[3284c222fc8728bd]::sys::backtrace::__rust_end_short_backtrace::<std[3284c222fc8728bd]::panicking::panic_handler::{closure#0}, !>
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5091874Z         9:  0xef339 - tokio-ef380d78a7acf3f3.wasm!__rustc[6ef78fba13ac776c]::rust_begin_unwind
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5092815Z        10: 0x105108 - tokio-ef380d78a7acf3f3.wasm!core[205c2a983f01b9ff]::panicking::panic_fmt
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5093742Z        11: 0x109bde - tokio-ef380d78a7acf3f3.wasm!core[205c2a983f01b9ff]::result::unwrap_failed
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5095883Z        12:  0x179ee - tokio-ef380d78a7acf3f3.wasm!std[3284c222fc8728bd]::thread::functions::spawn::<tokio[22fc2ced228a0054]::loom::std::barrier::tests::wait_timeout_rolls_back_arrival::{closure#0}, core[205c2a983f01b9ff]::option::Option<tokio[22fc2ced228a0054]::loom::std::barrier::BarrierWaitResult>>
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5098171Z        13:  0x45dca - tokio-ef380d78a7acf3f3.wasm!tokio[22fc2ced228a0054]::loom::std::barrier::tests::wait_timeout_rolls_back_arrival
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5099592Z        14:  0x45c74 - tokio-ef380d78a7acf3f3.wasm!tokio[22fc2ced228a0054]::loom::std::barrier::tests::wait_timeout_rolls_back_arrival::{closure#0}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5101424Z        15:  0x57c56 - tokio-ef380d78a7acf3f3.wasm!<tokio[22fc2ced228a0054]::loom::std::barrier::tests::wait_timeout_rolls_back_arrival::{closure#0} as core[205c2a983f01b9ff]::ops::function::FnOnce<()>>::call_once
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5105164Z        16:  0xb4395 - tokio-ef380d78a7acf3f3.wasm!test[f32b70b08f949964]::__rust_begin_short_backtrace::<core[205c2a983f01b9ff]::result::Result<(), alloc[20c66d48a906c4a6]::string::String>, fn() -> core[205c2a983f01b9ff]::result::Result<(), alloc[20c66d48a906c4a6]::string::String>>
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5107093Z        17:  0xcbd2f - tokio-ef380d78a7acf3f3.wasm!<test[f32b70b08f949964]::types::RunnableTest>::run
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5107977Z        18:  0xcce07 - tokio-ef380d78a7acf3f3.wasm!test[f32b70b08f949964]::run_test
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5108860Z        19:  0xca9a5 - tokio-ef380d78a7acf3f3.wasm!test[f32b70b08f949964]::console::run_tests_console
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5109905Z     note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5110750Z         2: wasm trap: wasm `unreachable` instruction executed
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5111116Z 
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5111235Z     Stack backtrace:
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5111830Z        0: wasmtime_internal_core::error::backtrace::capture
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5112388Z        1: wasmtime_internal_core::error::error::Error::new
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5112893Z        2: wasmtime::runtime::trap::from_runtime_box
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5113410Z        3: wasmtime::runtime::vm::traphandlers::catch_traps
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5113939Z        4: wasmtime::runtime::func::Func::call_unchecked_raw
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5114940Z        5: wasmtime::runtime::component::concurrent::<impl wasmtime::runtime::component::instance::Instance>::queue_call::make_call::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5115984Z        6: core::ops::function::FnOnce::call_once{{vtable.shim}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5116825Z        7: wasmtime::runtime::component::concurrent::handle_guest_call
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5117534Z        8: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5118148Z        9: wasmtime_internal_fiber::unix::fiber_start
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5118752Z       10: wasmtime_internal_fiber::stackswitch::x86_64::wasmtime_fiber_start
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5119449Z       11: wasmtime_internal_fiber::Fiber<Resume,Yield,Return>::resume
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5120015Z       12: wasmtime::runtime::fiber::resume_fiber
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5120644Z       13: <wasmtime::runtime::fiber::FiberFuture as core::future::future::Future>::poll
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5121964Z       14: wasmtime::runtime::component::concurrent::<impl wasmtime::runtime::store::StoreOpaque>::resume_fiber::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5123484Z       15: wasmtime::runtime::component::concurrent::<impl wasmtime::runtime::store::context::StoreContextMut<T>>::run_on_worker::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5124941Z       16: wasmtime::runtime::component::concurrent::<impl wasmtime::runtime::store::context::StoreContextMut<T>>::handle_work_item::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5126041Z       17: wasmtime_cli::commands::run::RunCommand::load_main_module::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5126797Z       18: <tokio::time::timeout::Timeout<T> as core::future::future::Future>::poll
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5127561Z       19: wasmtime_cli::commands::run::RunCommand::instantiate_and_run::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5128239Z       20: tokio::runtime::park::CachedParkThread::block_on
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5128769Z       21: tokio::runtime::context::runtime::enter_runtime
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5129273Z       22: tokio::runtime::runtime::Runtime::block_on
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5129777Z       23: wasmtime_cli::commands::run::RunCommand::execute
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5130237Z       24: wasmtime::main
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5130636Z       25: std::sys::backtrace::__rust_begin_short_backtrace
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5131118Z       26: std::rt::lang_start::{{closure}}
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5131523Z       27: std::rt::lang_start_internal
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5132106Z       28: main
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5132541Z     ^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5132694Z 
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5132952Z     (test ^[[31;1mfailed^[[0m with exit code ^[[1m134^[[0m)
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5133273Z 
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5133677Z ^[[31;1m  Cancelling^[[0m due to ^[[31;1mtest failure^[[0m: ^[[1m3^[[0m tests still running
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5135051Z ^[[32;1m        PASS^[[0m [   0.040s] ( 25/460) ^[[35;1mtokio^[[0m ^[[36mruntime::metrics::histogram::test^[[0m^[[36m::^[[0m^[[34;1mtest_legacy_builder^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5275931Z ^[[32;1m        PASS^[[0m [   0.033s] ( 26/460) ^[[35;1mtokio^[[0m ^[[36mruntime::task::core^[[0m^[[36m::^[[0m^[[34;1mheader_lte_cache_line^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5301113Z ^[[32;1m        PASS^[[0m [   0.032s] ( 27/460) ^[[35;1mtokio^[[0m ^[[36mruntime::task::list::tests^[[0m^[[36m::^[[0m^[[34;1mtest_id_not_broken^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5302154Z ────────────
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5302904Z ^[[31;1m     Summary^[[0m [   0.294s] ^[[1m27^[[0m/^[[1m460^[[0m tests run: ^[[1m26^[[0m ^[[32;1mpassed^[[0m, ^[[1m1^[[0m ^[[31;1mfailed^[[0m, ^[[1m15^[[0m ^[[33;1mskipped^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5304251Z ^[[31;1m        FAIL^[[0m [   0.153s] ( 24/460) ^[[35;1mtokio^[[0m ^[[36mloom::std::barrier::tests^[[0m^[[36m::^[[0m^[[34;1mwait_timeout_rolls_back_arrival^[[0m
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5305278Z ^[[33;1mwarning^[[0m: ^[[1m433^[[0m/^[[1m460^[[0m tests were not run due to ^[[33;1mtest failure^[[0m (run with ^[[1m--no-fail-fast^[[0m to run all tests, or run with ^[[1m--max-fail^[[0m)
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5312637Z ^[[31;1merror^[[0m: test run failed
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5337236Z ##[error]Process completed with exit code 100.
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.5452981Z Post job cleanup.
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6287630Z [command]/usr/bin/git version
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6326983Z git version 2.54.0
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6365244Z Temporarily overriding HOME='/home/runner/work/_temp/bc02df7b-989e-43f0-b453-f04eabca0d0b' before making global git config changes
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6366932Z Adding repository directory to the temporary git global config as a safe directory
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6372001Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tokio/tokio
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6402557Z Removing SSH command configuration
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6408685Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6444992Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6672388Z Removing HTTP extra header
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6677672Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6711322Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6926169Z Removing includeIf entries pointing to credentials config files
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6932528Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6992675Z includeif.gitdir:/home/runner/work/tokio/tokio/.git.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6993474Z includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6994157Z includeif.gitdir:/github/workspace/.git.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.6994581Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7002278Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/tokio/tokio/.git.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7023249Z /home/runner/work/_temp/git-credentials-7f457bc0-3d34-4d5c-a9d0-db5b708fa879.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7033761Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/tokio/tokio/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-7f457bc0\-3d34\-4d5c\-a9d0\-db5b708fa879\.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7075289Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7098819Z /home/runner/work/_temp/git-credentials-7f457bc0-3d34-4d5c-a9d0-db5b708fa879.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7109603Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/tokio/tokio/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-7f457bc0\-3d34\-4d5c\-a9d0\-db5b708fa879\.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7141553Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7162582Z /github/runner_temp/git-credentials-7f457bc0-3d34-4d5c-a9d0-db5b708fa879.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7169574Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-7f457bc0\-3d34\-4d5c\-a9d0\-db5b708fa879\.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7200181Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7221585Z /github/runner_temp/git-credentials-7f457bc0-3d34-4d5c-a9d0-db5b708fa879.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7230839Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-7f457bc0\-3d34\-4d5c\-a9d0\-db5b708fa879\.config
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7264176Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7484650Z Removing credentials config '/home/runner/work/_temp/git-credentials-7f457bc0-3d34-4d5c-a9d0-db5b708fa879.config'
+test tokio for wasm32-wasip2	UNKNOWN STEP	2026-08-18T22:02:42.7639060Z Cleaning up orphan processes

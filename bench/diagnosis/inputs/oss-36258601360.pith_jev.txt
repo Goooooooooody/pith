@@ -1,0 +1,99 @@
+pith · <log> · 4,109 lines → 903 groups · ~1169.5k → ~2.9k tokens (99.7% smaller)
+
+jobs: test-macOS
+levels: error 9 · warn 28 · notable 363 · info 650
+raw: <removed for evaluation>
+jev (jev-latest): hid 856/903 groups as confident noise · 1 requests · 3,644 tokens · $0.0002 · 3.7s
+most likely root cause: [88a3] rc=0.41 (confidence 0.39, cause visible p=0.31)
+
+== LIKELY ROOT CAUSE (jev rc=0.41)
+[88a3] WARN ×1  act=0.53 val=2.2/4 rc=0.41  L373  job: test-macOS
+  npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: test-macOS
+L435      [b5a0] /dev/disk2s5     320Gi   246Gi    56Gi    82%    2.0M  582M    0%   /System/Volumes/Data (×2, last L435)
+L436      [3c0a] /dev/disk4s1     4.0Mi   676Ki   3.0Mi    19%      18   31k    0%   /System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData (×2, last L436)
+L437      [9ce3] map auto_home      0Bi     0Bi     0Bi   100%       0     0     -   /System/Volumes/Data/home (×2, last L437)
+L439    ✱ [d071] ▶ Run make -C node build-ci -j$(getconf _NPROCESSORS_ONLN) V=1 CONFIG_FLAGS="--error-on-warn --v8-enable-temporal-support"
+L440    ✱ [56cd] make -C node build-ci -j$(getconf _NPROCESSORS_ONLN) V=1 CONFIG_FLAGS="--error-on-warn --v8-enable-temporal-support"
+L441      [50df] shell: /bin/bash -e {0} (×5, last L441)
+L442      [4293] env: (×8, last L442)
+          PYTHON_VERSION: 3.14
+          XCODE_VERSION: 16.4
+          FLAKY_TESTS: keep_retrying
+          (+14 lines)
+   …
+L461    ✱ [70b8] python3 ./configure --verbose --error-on-warn --v8-enable-temporal-support
+L462      [6510] Node.js configure: Found Python 3.14.7...
+L463      [54a2] Detected Apple clang C++ compiler (CXX=sccache g++) version: 17.0.0
+L464      [0d4e] Detected Apple clang C compiler (CC=sccache gcc) version: 17.0.0
+   …
+L2352     [fbb5] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/scoped_set_env.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/scoped_set_env.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nod
+L2353     [43c8] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/spinlock.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/spinlock.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-
+L2354     [d6cc] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/spinlock_wait.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/spinlock_wait.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodej
+L2355   ✱ [bd71] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/strerror.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/strerror.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-
+L2356     [33ad] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/sysinfo.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/sysinfo.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DI
+L2357     [d572] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/thread_identity.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/thread_identity.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=n
+L2358     [a8dd] sccache g++ -o /Users/runner/work/node/node/node/out/Release/obj.target/abseil/deps/v8/third_party/abseil-cpp/absl/base/internal/throw_delegate.o ../deps/v8/third_party/abseil-cpp/absl/base/internal/throw_delegate.cc '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nod
+   …
+L2796     [4894] 1 warning generated. (×5, last L3891)
+          sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/v8_zlib/deps/v8/third_party/zlib/crc32.o ../deps/v8/third_party/zlib/crc32.c '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=6
+          sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/v8_zlib/deps/v8/third_party/zlib/deflate.o ../deps/v8/third_party/zlib/deflate.c '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BI
+          sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/v8_zlib/deps/v8/third_party/zlib/gzclose.o ../deps/v8/third_party/zlib/gzclose.c '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BI
+          (+181 lines)
+   …
+L2981     [d43d] ../deps/sqlite/sqlite3.c:226966:16: warning: comparison of integers of different signs: 'unsigned int' and 'int' [-Wsign-compare]
+          226966 |         if( cnt>lenDelta ){
+          |             ~~~^~~~~~~~~
+L2984     [bc22] ../deps/sqlite/sqlite3.c:234114:11: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+          234114 |   if( nBuf<sizeof(aCopy) ){
+          |       ~~~~^~~~~~~~~~~~~~
+L2987   ✱ [2e0f] 2 warnings generated. (×2, last L3044)
+          sccache g++ -o …/src/Abstract/Function.o ../deps/LIEF/src/Abstract/Function.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPE
+          sccache g++ -o …/src/Abstract/hash.o ../deps/LIEF/src/Abstract/hash.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_
+          sccache g++ -o …/src/Abstract/json_api.o ../deps/LIEF/src/Abstract/json_api.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPE
+          sccache g++ -o …/src/Abstract/debug_info.o ../deps/LIEF/src/Abstract/debug_info.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-
+          sccache g++ -o …/platforms/android/version.o ../deps/LIEF/src/platforms/android/version.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INO
+          sccache g++ -o …/src/ELF/Binary.o ../deps/LIEF/src/ELF/Binary.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINSHA
+          sccache g++ -o …/src/ELF/Builder.o ../deps/LIEF/src/ELF/Builder.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENSSL_NO_PINS
+          sccache g++ -o …/src/ELF/endianness_support.o ../deps/LIEF/src/ELF/endianness_support.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE
+          sccache g++ -o …/ELF/DataHandler/Handler.o ../deps/LIEF/src/ELF/DataHandler/Handler.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1
+          sccache g++ -o …/ELF/DataHandler/Node.o ../deps/LIEF/src/ELF/DataHandler/Node.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DO
+          sccache g++ -o …/src/ELF/DynamicEntry.o ../deps/LIEF/src/ELF/DynamicEntry.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1' '-DOPENS
+          sccache g++ -o …/src/ELF/DynamicEntryArray.o ../deps/LIEF/src/ELF/DynamicEntryArray.cpp '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_CONF_NAME=nodejs_conf' '-DICU_NO_USER_DATA_OVERRIDE' '-D_DARWIN_USE_64_BIT_INODE=1
+   …
+L3016     [d19b] In file included from ../deps/LIEF/src/ELF/Builder.cpp:30: (×2, last L3030)
+L3017     [2c11] In file included from ../deps/LIEF/src/ELF/Builder.tcc:53: (×2, last L3031)
+L3018     [ea27] ../deps/LIEF/src/ELF/ExeLayout.hpp:555:8: warning: lambda capture 'elf_class' is not required to be captured for this use [-Wunused-lambda-capture] (×2, last L3032)
+          555 |       [elf_class] (const Relocation* lhs, const Relocation* rhs) {
+          |        ^
+
+== OTHER ERRORS & WARNINGS
+L3305   ERRO [51b9] sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/liblief/deps/LIEF/third-party/mbedtls/library/error.o ../deps/LIEF/third-party/mbedtls/library/error.c '-D_G
+L3391   ERRO [0fd7] sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/nop/test/nop/nop.o ../test/nop/nop.c '-D_GLIBCXX_USE_CXX11_ABI=1' '-D_FILE_OFFSET_BITS=64' '-DNODE_OPENSSL_C
+L3392   ERRO [627f] sccache gcc -o /Users/runner/work/node/node/node/out/Release/obj.target/overlapped-checker/test/overlapped-checker/main_unix.o ../test/overlapped-checker/main_unix.c '-D_GLIBCXX_US
+L373    WARN [88a3] npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+L374    WARN [8f90] npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+L375    WARN [cc2a] npm warn install-scripts
+L376    WARN [7387] npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+L2496   WARN [8c71] ../tools/icu/patches/78/source/i18n/dtfmtsym.cpp:2419:16: warning: variable 'oldStatus' set but not used [-Wunused-but-set-variable] (×2, last L3888)
+L3419   WARN [6616] ../deps/libffi/src/aarch64/ffi.c:987:17: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare] (×2, last L3422)
+
+== END OF OUTPUT
+L3888     [8c71] ../tools/icu/patches/78/source/i18n/dtfmtsym.cpp:2419:16: warning: variable 'oldStatus' set but not used [-Wunused-but-set-variable]
+L3891     [4894] 1 warning generated.
+
+== MOST FREQUENT OTHER LINES
+×3       [8d65] with:
+×3       [d9f1] 3 warnings generated.
+×2       [8399] Removing SSH command configuration
+×2       [2f21] [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git co
+×2       [66c6] Removing HTTP extra header
+×2       [3b01] [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [df70] [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.co
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+×2       [7109] /Users/runner/work/_temp/git-credentials-e27c55e6-44b6-4862-be75-301a83fb2117.config
+×1       [33bf] test-macOS	UNKNOWN STEP	﻿2026-09-26T17:19:18.6650870Z Current runner version: '2.337.0'
+
+(not shown: 21 groups, 21 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)

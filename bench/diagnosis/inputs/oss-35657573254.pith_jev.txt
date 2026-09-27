@@ -1,0 +1,64 @@
+pith · <log> · 854 lines → 241 groups · ~29.6k → ~1.1k tokens (96.4% smaller)
+
+jobs: Check Markdown APIs in new files
+levels: error 2 · warn 1 · info 722
+raw: <removed for evaluation>
+jev (jev-latest): hid 215/241 groups as confident noise · 1 requests · 1,800 tokens · $0.0001 · 0.4s
+most likely root cause: [3e4f] rc=0.39 (confidence 0.36, cause visible p=0.46)
+
+== LIKELY ROOT CAUSE (jev rc=0.39)
+[3e4f] INFO ×1  act=0.18 val=1.6/4 rc=0.39  L816  job: Check Markdown APIs in new files
+  Please add `# :markup: markdown` at the top of:
+    activesupport/lib/active_support/connection_pool.rb
+    activesupport/lib/active_support/connection_pool/fork.rb
+    activesupport/lib/active_support/connection_pool/timed_stack.rb
+    activesupport/lib/active_support/connection_pool/wrapper.rb
+
+== FAILURES (✱ = error; lines shown in context, L = line number in raw)
+-- job: Check Markdown APIs in new files
+L99       [7d5c] ▶ Fetching the repository
+L100      [6e81] [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +ae1e033c2138ebac93ef305fcbf1fddcda8eb8bd:refs/remotes/pull/58842/merge
+L101      [5f55] From https://github.com/rails/rails
+          * [new branch]            0-5-stable              -> origin/0-5-stable
+          * [new branch]            0-6-stable              -> origin/0-6-stable
+          * [new branch]            0-7-stable              -> origin/0-7-stable
+          (+73 lines)
+   …
+L178    ✱ [6377] * [new branch]            raise-error-for-spot    -> origin/raise-error-for-spot
+L179      [e616] * [new branch]            revert-52720-revert-52717-class-attribute-redefine-once -> origin/revert-52720-revert-52717-class-attribute-redefine-once (×3, last L195)
+L181      [ed83] * [new branch]            rfc3339-with-ruby-time-72 -> origin/rfc3339-with-ruby-time-72
+   …
+L801      [820f] ▶ Installing Bundler
+L802      [e7ed] Using Bundler 4.0.12 from Gemfile.lock BUNDLED WITH 4.0.12
+L803      [85f9] [command]/opt/hostedtoolcache/Ruby/4.0.7/x64/bin/gem install bundler -v 4.0.12
+L805      [63c6] 1 gem installed
+L806      [931d] Took   0.56 seconds (×4, last L806)
+L808      [b811] ▶ Run ruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA
+L809      [daf1] ruby .github/workflows/scripts/check-markdown-api.rb $BASE_SHA $HEAD_SHA
+   …
+L815      [d078] New Ruby files must use Markdown for their API documentation.
+L816      [3e4f] Please add `# :markup: markdown` at the top of:
+          activesupport/lib/active_support/connection_pool.rb
+          activesupport/lib/active_support/connection_pool/fork.rb
+          activesupport/lib/active_support/connection_pool/timed_stack.rb
+          (+1 lines)
+   …
+L821    ✱ [eead] ##[error]Process completed with exit code 1.
+
+== END OF OUTPUT
+L759      [daee] You are in 'detached HEAD' state. You can look around, make experimental
+L810      [c522] shell: /usr/bin/bash -e {0}
+
+== MOST FREQUENT OTHER LINES
+×2       [f23c] [command]/usr/bin/git config --global --add safe.directory /home/runner/work/rails/rails
+×2       [8399] Removing SSH command configuration
+×2       [beb1] [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+×2       [1773] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --lo
+×2       [66c6] Removing HTTP extra header
+×2       [e0cb] [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+×2       [4630] [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extr
+×2       [5c50] Removing includeIf entries pointing to credentials config files
+×1       [21dd] Check Markdown APIs in new files	UNKNOWN STEP	﻿2026-09-21T21:30:38.8463569Z Current runner version: '2.337.0'
+×1       [c07b] Secret source: Actions
+
+(not shown: 2 groups, 2 lines. Narrow with --grep REGEX or --level error, raise --budget, or grep the raw file.)
