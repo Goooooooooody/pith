@@ -129,7 +129,7 @@ class TestParsing(unittest.TestCase):
         self.assertTrue(all(not h.startswith("2026") for h in heads))
 
     def test_byte_order_mark(self):
-        rec = list(engine.records(["\ufeff" + GH_LOG.splitlines(True)[0]]))[0]
+        rec = list(engine.records(["\ufeff" + GH_LOG.splitlines(True)[0].replace("\t2026", "\t\ufeff2026")]))[0]
         self.assertEqual((rec.job, rec.head), ("build", "▶ Run npm test"))
 
     def test_gh_prefix_spaces(self):

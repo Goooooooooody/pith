@@ -38,5 +38,6 @@ Regenerating the pith inputs from the raw logs reproduces them exactly only when
 the same length as ours (the `raw:` header line counts against the output budget); at other paths a
 few summaries differ by a line or two.
 
-The pith inputs were produced and graded with this release. The excerpt inputs don't depend on pith;
+The pith inputs were produced and graded with pith 0.1.0 as first published (commit b812d8b); later
+patch releases may produce slightly different summaries. The excerpt inputs don't depend on pith;
 they were graded in an earlier run with the same prompts, and are unchanged.
