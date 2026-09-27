@@ -184,7 +184,7 @@ def records(lines):
     rec = None
     in_key = False
     for no, raw in enumerate(lines, 1):
-        line = ANSI.sub("", raw.rstrip("\n"))
+        line = ANSI.sub("", raw.rstrip("\n")).lstrip("\ufeff")
         if in_key:  # never let private key material into groups, examples or output
             in_key = not PEM_END.search(line)
             continue

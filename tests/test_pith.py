@@ -128,6 +128,10 @@ class TestParsing(unittest.TestCase):
         self.assertTrue(any("Expected: 2" in c for c in fail.cont))
         self.assertTrue(all(not h.startswith("2026") for h in heads))
 
+    def test_byte_order_mark(self):
+        rec = list(engine.records(["\ufeff" + GH_LOG.splitlines(True)[0]]))[0]
+        self.assertEqual((rec.job, rec.head), ("build", "▶ Run npm test"))
+
     def test_gh_prefix_spaces(self):
         spaced = GH_LOG.replace("\t", "    ")
         self.assertEqual([r.job for r in engine.records(spaced.splitlines(True))][0], "build")
@@ -414,6 +418,7 @@ class TestCli(Isolated):
 
 
 class TestStdinDetection(unittest.TestCase):
+    @unittest.skipUnless(os.name == "posix", "sockets aren't file descriptors on Windows")
     def test_socket_counts_as_piped(self):
         a, b = socket.socketpair()
         try:
