@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "P=\"${CLAUDE_PLUGIN_ROOT}/bin/pith\"; if command -v python3 >/dev/null 2>&1; then python3 \"$P\" hook prompt; else python \"$P\" hook prompt; fi",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/pith\" hook prompt",
             "timeout": 20
           }
         ]
@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "P=\"${CLAUDE_PLUGIN_ROOT}/bin/pith\"; if command -v python3 >/dev/null 2>&1; then python3 \"$P\" hook post-bash; else python \"$P\" hook post-bash; fi",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/pith\" hook post-bash",
             "timeout": 30
           }
         ]
